@@ -1,53 +1,43 @@
 Assets {
-  Id: 457972271455997478
-  Name: "Torch"
+  Id: 11291358936099880271
+  Name: "Fantasy Candle Lit - 04 (Prop)"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 2692120690036244047
+      RootId: 1446354904182978224
       Objects {
-        Id: 2692120690036244047
-        Name: "Torch"
+        Id: 1446354904182978224
+        Name: "Candle Lit - Single 04 (Prop)"
         Transform {
           Scale {
-            X: 0.7
-            Y: 0.7
-            Z: 0.7
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 13260946959368870698
-        ChildIds: 17225136151556400610
+        ParentId: 4781671109827199097
+        ChildIds: 11449431668859561388
+        ChildIds: 11706440461882191772
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        CoreMesh {
-          MeshAsset {
-            Id: 18007119625671737194
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
+        Folder {
+          IsGroup: true
         }
       }
       Objects {
-        Id: 17225136151556400610
-        Name: "Torch Metal"
+        Id: 11449431668859561388
+        Name: "ClientContext"
         Transform {
           Location {
-            Y: 25
-            Z: 5
+            X: -2.04512596
+            Y: 1.15266275
+            Z: 42.2127762
           }
           Rotation {
-            Roll: 24.9999409
           }
           Scale {
             X: 1
@@ -55,51 +45,34 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2692120690036244047
-        ChildIds: 15146925204903486944
-        ChildIds: 13942691728744513144
-        UnregisteredParameters {
-        }
+        ParentId: 1446354904182978224
+        ChildIds: 2376150865840557376
+        ChildIds: 8863833470049518112
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        CoreMesh {
-          MeshAsset {
-            Id: 18049287918770545507
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
+        NetworkContext {
         }
       }
       Objects {
-        Id: 15146925204903486944
+        Id: 2376150865840557376
         Name: "Candle Flame VFX"
         Transform {
           Location {
-            X: 5
-            Y: 1.22147083
-            Z: 44.7046738
+            X: -0.234558105
           }
           Rotation {
-            Roll: -24.9999199
           }
           Scale {
-            X: 9.75000095
-            Y: 9.75000095
-            Z: 9.75000095
+            X: 3
+            Y: 3
+            Z: 3
           }
         }
-        ParentId: 17225136151556400610
+        ParentId: 11449431668859561388
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -122,15 +95,14 @@ Assets {
         }
       }
       Objects {
-        Id: 13942691728744513144
+        Id: 8863833470049518112
         Name: "Point Light"
         Transform {
           Location {
+            X: 0.234558105
+            Z: 7.21635056
           }
           Rotation {
-            Pitch: -10.2883339
-            Yaw: -22.9092464
-            Roll: -22.909832
           }
           Scale {
             X: 1
@@ -138,7 +110,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17225136151556400610
+        ParentId: 11449431668859561388
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -146,25 +118,25 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 50
+          Intensity: 1
           Color {
             R: 1
-            G: 1
-            B: 1
+            G: 0.726868153
+            B: 0.477918148
             A: 1
           }
           VolumetricIntensity: 5
           TeamSettings {
           }
           Light {
-            Temperature: 6500
+            UseTemperature: true
+            Temperature: 2000
             LocalLight {
-              AttenuationRadius: 1000
+              AttenuationRadius: 80
               PointLight {
-                SourceRadius: 20
-                SoftSourceRadius: 20
+                SourceRadius: 9.23469257
+                SoftSourceRadius: 80
                 FallOffExponent: 8
-                UseFallOffExponent: true
               }
             }
             MaxDrawDistance: 5000
@@ -172,23 +144,41 @@ Assets {
           }
         }
       }
-    }
-    Assets {
-      Id: 18007119625671737194
-      Name: "Torch Holder Metal"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_torch_holder_001"
-      }
-    }
-    Assets {
-      Id: 18049287918770545507
-      Name: "Torch Metal"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_torch_001"
+      Objects {
+        Id: 11706440461882191772
+        Name: "Candle 02"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1446354904182978224
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 8946705668394899138
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
       }
     }
     Assets {
@@ -200,9 +190,18 @@ Assets {
         AssetId: "fxsm_candleflame"
       }
     }
+    Assets {
+      Id: 8946705668394899138
+      Name: "Candle 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_fantasy_candle_004"
+      }
+    }
     PrimaryAssetId {
-      AssetType: "None"
-      AssetId: "None"
+      AssetType: "TemplateAssetRef"
+      AssetId: "tm_fan_candle_004_lit_01"
     }
   }
   SerializationVersion: 62

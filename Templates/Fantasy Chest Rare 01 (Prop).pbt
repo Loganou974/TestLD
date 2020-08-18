@@ -1,22 +1,49 @@
 Assets {
-  Id: 457972271455997478
-  Name: "Torch"
+  Id: 15830487202351888839
+  Name: "Fantasy Chest Rare 01 (Prop)"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 2692120690036244047
+      RootId: 1763424924619870858
       Objects {
-        Id: 2692120690036244047
-        Name: "Torch"
+        Id: 1763424924619870858
+        Name: "Fantasy Chest Rare 01 (Prop)"
         Transform {
           Scale {
-            X: 0.7
-            Y: 0.7
-            Z: 0.7
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 13260946959368870698
-        ChildIds: 17225136151556400610
+        ParentId: 4781671109827199097
+        ChildIds: 5156986345128160226
+        ChildIds: 8477966839144775896
+        ChildIds: 15924494575607723574
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 5156986345128160226
+        Name: "Fantasy Chest Base 02"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1763424924619870858
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -25,7 +52,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18007119625671737194
+            Id: 8452502681248844190
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -39,15 +66,15 @@ Assets {
         }
       }
       Objects {
-        Id: 17225136151556400610
-        Name: "Torch Metal"
+        Id: 8477966839144775896
+        Name: "Fantasy Chest Lid 02"
         Transform {
           Location {
-            Y: 25
-            Z: 5
+            Y: 45
+            Z: 65
           }
           Rotation {
-            Roll: 24.9999409
+            Yaw: -179.999954
           }
           Scale {
             X: 1
@@ -55,10 +82,60 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2692120690036244047
-        ChildIds: 15146925204903486944
-        ChildIds: 13942691728744513144
+        ParentId: 1763424924619870858
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6013290205953027442
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15924494575607723574
+        Name: "Fantasy Chest Treasure Pile 01"
+        Transform {
+          Location {
+            Z: 60
+          }
+          Rotation {
+            Pitch: -9.15527344e-05
+            Yaw: -179.999939
+            Roll: -179.999954
+          }
+          Scale {
+            X: 1.56327534
+            Y: 1.25
+            Z: 1.2
+          }
+        }
+        ParentId: 1763424924619870858
         UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 1.25
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1.5
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -68,7 +145,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18049287918770545507
+            Id: 3533190463953898497
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -81,128 +158,37 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 15146925204903486944
-        Name: "Candle Flame VFX"
-        Transform {
-          Location {
-            X: 5
-            Y: 1.22147083
-            Z: 44.7046738
-          }
-          Rotation {
-            Roll: -24.9999199
-          }
-          Scale {
-            X: 9.75000095
-            Y: 9.75000095
-            Z: 9.75000095
-          }
-        }
-        ParentId: 17225136151556400610
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9199751096616988864
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 13942691728744513144
-        Name: "Point Light"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Pitch: -10.2883339
-            Yaw: -22.9092464
-            Roll: -22.909832
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 17225136151556400610
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Light {
-          Intensity: 50
-          Color {
-            R: 1
-            G: 1
-            B: 1
-            A: 1
-          }
-          VolumetricIntensity: 5
-          TeamSettings {
-          }
-          Light {
-            Temperature: 6500
-            LocalLight {
-              AttenuationRadius: 1000
-              PointLight {
-                SourceRadius: 20
-                SoftSourceRadius: 20
-                FallOffExponent: 8
-                UseFallOffExponent: true
-              }
-            }
-            MaxDrawDistance: 5000
-            MaxDistanceFadeRange: 1000
-          }
-        }
-      }
     }
     Assets {
-      Id: 18007119625671737194
-      Name: "Torch Holder Metal"
+      Id: 8452502681248844190
+      Name: "Fantasy Chest Base 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_torch_holder_001"
+        AssetId: "sm_fantasy_chest_002_ref"
       }
     }
     Assets {
-      Id: 18049287918770545507
-      Name: "Torch Metal"
+      Id: 6013290205953027442
+      Name: "Fantasy Chest Lid 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_torch_001"
+        AssetId: "sm_fantasy_chest_lid_002_ref"
       }
     }
     Assets {
-      Id: 9199751096616988864
-      Name: "Candle Flame VFX"
+      Id: 3533190463953898497
+      Name: "Fantasy Chest Treasure Pile 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "fxsm_candleflame"
+        AssetId: "sm_fantasy_chest_treasure_pile_001_ref"
       }
     }
     PrimaryAssetId {
-      AssetType: "None"
-      AssetId: "None"
+      AssetType: "TemplateAssetRef"
+      AssetId: "Fantasy_Chest_Rare_01__Prop_"
     }
   }
   SerializationVersion: 62

@@ -1,28 +1,19 @@
 Assets {
-  Id: 18049287918770545507
-  Name: "Torch Metal"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torch_001"
-  }
-}
-Assets {
-  Id: 18007119625671737194
-  Name: "Torch Holder Metal"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torch_holder_001"
-  }
-}
-Assets {
   Id: 17676472491366288434
   Name: "Rocks River Bed 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "puddle_river_bed_001"
+  }
+}
+Assets {
+  Id: 17627719049220088624
+  Name: "Bench Full"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bench_001"
   }
 }
 Assets {
@@ -116,12 +107,30 @@ Assets {
   }
 }
 Assets {
+  Id: 14937890536117064298
+  Name: "Simple Crate 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_simple_150cm_001"
+  }
+}
+Assets {
   Id: 14859448756675210646
   Name: "Rock Block 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_007"
+  }
+}
+Assets {
+  Id: 14665177249369052506
+  Name: "Bottle 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_004"
   }
 }
 Assets {
@@ -269,6 +278,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10669062560289089671
+  Name: "Bottle 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_001"
+  }
+}
+Assets {
   Id: 10392002955905592433
   Name: "Large Wood Beam 8m"
   PlatformAssetType: 1
@@ -332,12 +350,12 @@ Assets {
   }
 }
 Assets {
-  Id: 9199751096616988864
-  Name: "Candle Flame VFX"
+  Id: 8752278443307564032
+  Name: "Chest Small Closed"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "fxsm_candleflame"
+    AssetId: "sm_chest_001"
   }
 }
 Assets {
@@ -395,6 +413,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6988424781694793978
+  Name: "Bottle 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_002"
+  }
+}
+Assets {
   Id: 6796769041854594011
   Name: "Weapon Pickup Reload 01 SFX"
   PlatformAssetType: 7
@@ -428,6 +455,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_portal"
+  }
+}
+Assets {
+  Id: 6641936587538601494
+  Name: "Bottle 06"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_006"
   }
 }
 Assets {
@@ -485,6 +521,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5277626832041629108
+  Name: "Wooden Bucket"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bucket_001"
+  }
+}
+Assets {
   Id: 5196377603841433560
   Name: "Background Flat 020"
   PlatformAssetType: 9
@@ -509,6 +554,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_marble_tiles_003_uv"
+  }
+}
+Assets {
+  Id: 3730360050292557886
+  Name: "Table Assembled"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_table_001"
   }
 }
 Assets {
@@ -599,6 +653,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_broken_04"
+  }
+}
+Assets {
+  Id: 1734184174647259156
+  Name: "Bottle 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_003"
+  }
+}
+Assets {
+  Id: 1535942180105123276
+  Name: "Bottle 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_005"
   }
 }
 Assets {
