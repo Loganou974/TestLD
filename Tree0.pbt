@@ -19,6 +19,10 @@ Objects {
   ChildIds: 10005074784157121906
   ChildIds: 59773418182322829
   ChildIds: 2415113940323994619
+  ChildIds: 13712757013129852535
+  ChildIds: 2811159824774815329
+  ChildIds: 16885063174004197881
+  ChildIds: 4768265627895995260
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -28,6 +32,352 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 4768265627895995260
+  Name: "Torch Holder Metal"
+  Transform {
+    Location {
+      X: 1565
+      Y: -90
+      Z: 370
+    }
+    Rotation {
+      Yaw: 165.000015
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 13223842232805928768
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18007119625671737194
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13223842232805928768
+  Name: "Torch Metal"
+  Transform {
+    Location {
+      Y: 25
+      Z: 5
+    }
+    Rotation {
+      Roll: 24.9999409
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4768265627895995260
+  ChildIds: 9177142082932579876
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18049287918770545507
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9177142082932579876
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: 5
+      Y: 1.22147083
+      Z: 44.7046738
+    }
+    Rotation {
+      Roll: -24.9999199
+    }
+    Scale {
+      X: 9.75000095
+      Y: 9.75000095
+      Z: 9.75000095
+    }
+  }
+  ParentId: 13223842232805928768
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16885063174004197881
+  Name: "Torch Holder Metal"
+  Transform {
+    Location {
+      X: 1565
+      Y: -910
+      Z: 370
+    }
+    Rotation {
+      Yaw: 24.9999866
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 9472859080473344535
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18007119625671737194
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9472859080473344535
+  Name: "Torch Metal"
+  Transform {
+    Location {
+      Y: 25
+      Z: 5
+    }
+    Rotation {
+      Roll: 24.9999409
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16885063174004197881
+  ChildIds: 17158922602090082070
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18049287918770545507
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17158922602090082070
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: 5
+      Y: 1.22147083
+      Z: 44.7046738
+    }
+    Rotation {
+      Roll: -24.9999199
+    }
+    Scale {
+      X: 9.75000095
+      Y: 9.75000095
+      Z: 9.75000095
+    }
+  }
+  ParentId: 9472859080473344535
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2811159824774815329
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 2050
+      Y: -400
+      Z: 300
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 50
+    Color {
+      R: 0.0900665224
+      B: 0.799999952
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 13712757013129852535
+  Name: "Rock Block 02"
+  Transform {
+    Location {
+      X: 2200
+      Y: -450
+      Z: 500
+    }
+    Rotation {
+      Pitch: 84.9995728
+      Yaw: -179.999924
+      Roll: -179.999924
+    }
+    Scale {
+      X: 3.25
+      Y: 6.25
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8476987445298254686
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14859448756675210646
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -48,7 +398,6 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 2606135116267092152
   ChildIds: 13655496593076947044
   ChildIds: 6187525521609082060
   ChildIds: 8281375394817579055
@@ -65,6 +414,11 @@ Objects {
   ChildIds: 8236617013658244766
   ChildIds: 10304945920530882317
   ChildIds: 16813558807825262224
+  ChildIds: 11620240497189781713
+  ChildIds: 2606135116267092152
+  ChildIds: 13370012645142008830
+  ChildIds: 13449386610044776551
+  ChildIds: 16994612172625135120
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -73,6 +427,263 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 16994612172625135120
+  Name: "Player Launcher"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2415113940323994619
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7475782904616284279
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Player Launcher"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -500
+            Y: -325
+            Z: -75
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10793738826949019404
+    }
+  }
+}
+Objects {
+  Id: 13449386610044776551
+  Name: "Resource Display"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2415113940323994619
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12815525979607197974
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Resource Display"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -500
+            Y: -475
+            Z: -100
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5725242556016635000
+    }
+  }
+}
+Objects {
+  Id: 13370012645142008830
+  Name: "Resource Pickup"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2415113940323994619
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 595226879220310474
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Resource Pickup"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -600
+            Y: -400
+            Z: -75
+          }
+        }
+        Overrides {
+          Name: "cs:PickupEffects"
+          AssetReference {
+            Id: 6796769041854594011
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14733758494130820236
+      value {
+        Overrides {
+          Name: "Interactable"
+          Bool: true
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3302786312727831383
+    }
+  }
+}
+Objects {
+  Id: 2606135116267092152
+  Name: "Castle Gatehouse"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2415113940323994619
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9218488862609064200
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Castle Gatehouse"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 725
+            Y: -625
+            Z: -50
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14438668111081485594
+    }
+  }
+}
+Objects {
+  Id: 11620240497189781713
+  Name: "Teleporter"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2415113940323994619
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7211869368397496173
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Teleporter"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 225
+            Y: -400
+            Z: -50
+          }
+        }
+        Overrides {
+          Name: "cs:Target"
+          ObjectReference {
+            SelfId: 16813558807825262224
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3021912993263404793
+    }
   }
 }
 Objects {
@@ -841,53 +1452,6 @@ Objects {
   }
 }
 Objects {
-  Id: 2606135116267092152
-  Name: "Castle Gatehouse"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2415113940323994619
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 9218488862609064200
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Castle Gatehouse"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 725
-            Y: -625
-            Z: -50
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14438668111081485594
-    }
-  }
-}
-Objects {
   Id: 59773418182322829
   Name: "Terrain"
   Transform {
@@ -1026,7 +1590,7 @@ Objects {
       CastShadow: true
       ReceivesDecals: true
       GroundSlopeAngle {
-        Max: 90
+        Max: 65
       }
       Scaling {
         ScaleX {
