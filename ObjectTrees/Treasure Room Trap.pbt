@@ -107,35 +107,6 @@ Objects {
   }
 }
 Objects {
-  Id: 1132351605590295764
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: -4395
-      Y: 65
-      Z: -3240
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 572237220973730707
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-  }
-}
-Objects {
   Id: 18417337762700917829
   Name: "Dragon"
   Transform {

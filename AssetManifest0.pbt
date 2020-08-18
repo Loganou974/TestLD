@@ -215,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13868889675930197036
+  Name: "Fantasy Castle Floor 02 - Corner 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_002_4m_corner_001"
+  }
+}
+Assets {
   Id: 13836313876728162481
   Name: "Stone Block BIg"
   PlatformAssetType: 1
@@ -566,12 +575,30 @@ Assets {
   }
 }
 Assets {
+  Id: 6489011520945115537
+  Name: "Raptor Mob"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_raptor_default_basic_001_ref"
+  }
+}
+Assets {
   Id: 6474768715633236406
   Name: "Fire Volume VFX"
   PlatformAssetType: 8
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_fire_volume_vfx"
+  }
+}
+Assets {
+  Id: 6349783742165771315
+  Name: "Bannister Single Post"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bannister_post_001"
   }
 }
 Assets {
@@ -755,6 +782,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2451360824092825724
+  Name: "Fantasy Castle Floor 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_002_4m"
+  }
+}
+Assets {
   Id: 2194913866236257114
   Name: "Stone Block Small Broken"
   PlatformAssetType: 1
@@ -797,6 +833,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_001"
+  }
+}
+Assets {
+  Id: 1045886897154383739
+  Name: "Skeleton Mob"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_skelington_001_ref"
   }
 }
 Assets {
