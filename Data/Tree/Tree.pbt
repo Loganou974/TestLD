@@ -31,6 +31,7 @@ Objects {
   ChildIds: 8825500732694114543
   ChildIds: 2473612057773493981
   ChildIds: 13147823510287373325
+  ChildIds: 7325188509556477206
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -40,6 +41,40 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 7325188509556477206
+  Name: "FullProjectSeb"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2759206006183996102
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FullProjectSeb"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -13264.373
+            Y: 7121.77832
+            Z: -186.661621
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12297083717308864026
+    }
   }
 }
 Objects {
@@ -46099,6 +46134,7 @@ Objects {
     IsDefault: true
     GameSettings {
       RagdollOnDeath: true
+      EnablePlayerStorage: true
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }
