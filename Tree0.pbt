@@ -312,7 +312,6 @@ Objects {
     }
   }
   ParentId: 14604704220691966294
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2845,9 +2844,9 @@ Objects {
       Yaw: -90
     }
     Scale {
-      X: 0.7
-      Y: 43.2999878
-      Z: 12.8
+      X: 0.700000107
+      Y: 116.527687
+      Z: 12.7999983
     }
   }
   ParentId: 13400303163455266015
@@ -2983,9 +2982,9 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 44.1999969
-      Y: 23.5
-      Z: 1
+      X: 44.2000046
+      Y: 63.2425385
+      Z: 0.999999881
     }
   }
   ParentId: 13400303163455266015
