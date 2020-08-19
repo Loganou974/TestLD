@@ -1,6 +1,160 @@
 Name: "Fantasy Castle 01"
 RootId: 493094663894712063
 Objects {
+  Id: 9843597882214114854
+  Name: "Rustic Wooden Fence Panel (broken)"
+  Transform {
+    Location {
+      X: -5047.58203
+      Y: 8068.51904
+      Z: 745.656494
+    }
+    Rotation {
+      Yaw: 6.36939573
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 493094663894712063
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 861713250353254354
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Rustic Wooden Fence Panel (broken)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1395.20947
+            Y: 16.1782227
+            Z: 920.656494
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -10.9831848
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3436797639530522162
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 25.7397842
+            Y: 50.8417778
+            Z: 109.047852
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -5.73477173
+            Yaw: -9.00640869
+            Roll: 104.178589
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6350421232979342945
+    }
+  }
+}
+Objects {
+  Id: 13925397057743436043
+  Name: "Rustic Wooden Fence Panel (broken)"
+  Transform {
+    Location {
+      X: -5047.58203
+      Y: 7745
+      Z: 745.656494
+    }
+    Rotation {
+      Yaw: -71.7560883
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 493094663894712063
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 861713250353254354
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Rustic Wooden Fence Panel (broken)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1387.41797
+            Y: 233.519043
+            Z: 920.656494
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 6.36939573
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3436797639530522162
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 25.7397842
+            Y: 50.8417778
+            Z: 109.047852
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -5.73477173
+            Yaw: -9.00640869
+            Roll: 104.178589
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6350421232979342945
+    }
+  }
+}
+Objects {
   Id: 10031866603513192582
   Name: "Inside Support Pillar"
   Transform {
@@ -45580,16 +45734,16 @@ Objects {
   }
 }
 Objects {
-  Id: 13852653306890511091
+  Id: 14568029140175490331
   Name: "Rustic Wooden Fence Panel (broken)"
   Transform {
     Location {
-      X: -5615
-      Y: 8920
-      Z: 735
+      X: -761.48877
+      Y: 1085
+      Z: 910
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 89.9999542
     }
     Scale {
       X: 0.5
@@ -45598,41 +45752,21 @@ Objects {
     }
   }
   ParentId: 493094663894712063
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 861713250353254354
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Rustic Wooden Fence Panel (broken)"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -761.48877
-            Y: 1085
-            Z: 910
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 89.9999542
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 6350421232979342945
-    }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 14568029140175490331
+    SubobjectId: 861713250353254354
+    InstanceId: 13852653306890511091
+    TemplateId: 6350421232979342945
+    WasRoot: true
   }
 }
 Objects {
@@ -45843,15 +45977,16 @@ Objects {
   }
 }
 Objects {
-  Id: 3385707843338701703
+  Id: 7530124291534355594
   Name: "Rustic Wooden Fence Panel (broken)"
   Transform {
     Location {
-      X: -5160
-      Y: 8050
-      Z: 735
+      X: 820
+      Y: 1085
+      Z: 910
     }
     Rotation {
+      Yaw: 89.9999619
     }
     Scale {
       X: 0.5
@@ -45860,41 +45995,250 @@ Objects {
     }
   }
   ParentId: 493094663894712063
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 861713250353254354
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Rustic Wooden Fence Panel (broken)"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 820
-            Y: 1085
-            Z: 910
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 89.9999619
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
+  ChildIds: 1337425583105147639
+  ChildIds: 5531826315723953514
+  ChildIds: 4369794676300119265
+  ChildIds: 318932042990790546
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 7530124291534355594
+    SubobjectId: 861713250353254354
+    InstanceId: 3385707843338701703
+    TemplateId: 6350421232979342945
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 318932042990790546
+  Name: "Fence_upright"
+  Transform {
+    Location {
+      X: -0.00131797791
+      Y: 260.463593
+      Z: 50
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 3
+    }
+  }
+  ParentId: 7530124291534355594
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14181301450008760998
       }
     }
-    TemplateAsset {
-      Id: 6350421232979342945
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1137112816547272582
     }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 318932042990790546
+    SubobjectId: 7428714557591835850
+    InstanceId: 3385707843338701703
+    TemplateId: 6350421232979342945
+  }
+}
+Objects {
+  Id: 4369794676300119265
+  Name: "Chamfered Cube"
+  Transform {
+    Location {
+      X: -1.14806128
+      Y: 49.8348503
+      Z: -26.449707
+    }
+    Rotation {
+      Pitch: -2.48391724
+      Yaw: -0.116424561
+      Roll: 90.36203
+    }
+    Scale {
+      X: 0.25
+      Y: 0.5
+      Z: 4
+    }
+  }
+  ParentId: 7530124291534355594
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16062923512930981452
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8766032951383490347
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 4369794676300119265
+    SubobjectId: 6904487291545096121
+    InstanceId: 3385707843338701703
+    TemplateId: 6350421232979342945
+  }
+}
+Objects {
+  Id: 5531826315723953514
+  Name: "Chamfered Cube"
+  Transform {
+    Location {
+      X: 25.7397842
+      Y: 50.8417778
+      Z: 109.047852
+    }
+    Rotation {
+      Pitch: -5.73477173
+      Yaw: -9.00640869
+      Roll: 104.178589
+    }
+    Scale {
+      X: 0.25
+      Y: 0.5
+      Z: 4
+    }
+  }
+  ParentId: 7530124291534355594
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16062923512930981452
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8766032951383490347
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5531826315723953514
+    SubobjectId: 3436797639530522162
+    InstanceId: 3385707843338701703
+    TemplateId: 6350421232979342945
+  }
+}
+Objects {
+  Id: 1337425583105147639
+  Name: "Fence_upright"
+  Transform {
+    Location {
+      Y: -150
+      Z: 50
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 3
+    }
+  }
+  ParentId: 7530124291534355594
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14181301450008760998
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1137112816547272582
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 1337425583105147639
+    SubobjectId: 8213007697121702319
+    InstanceId: 3385707843338701703
+    TemplateId: 6350421232979342945
   }
 }
 Objects {

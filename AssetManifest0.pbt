@@ -161,6 +161,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14181301450008760998
+  Name: "Wood Planks"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_001_uv"
+  }
+}
+Assets {
   Id: 13868889675930197036
   Name: "Fantasy Castle Floor 02 - Corner 01"
   PlatformAssetType: 1
@@ -248,6 +257,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Skylight"
+  }
+}
+Assets {
+  Id: 11311872554868312005
+  Name: "\"A Slice of Life\" Music Construction Kit (Layers) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_asliceoflife_LayersKit_ref"
   }
 }
 Assets {
@@ -467,6 +485,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6668430063977139298
+  Name: "Fox Mob"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_fox_default_basic_001_ref"
+  }
+}
+Assets {
   Id: 6641936587538601494
   Name: "Bottle 06"
   PlatformAssetType: 1
@@ -554,6 +581,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
+  }
+}
+Assets {
+  Id: 4262625313857521013
+  Name: "Rock Hexagonal"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_008"
   }
 }
 Assets {
@@ -671,6 +707,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_bottle_003"
+  }
+}
+Assets {
+  Id: 1715337818415023444
+  Name: "Carpet Tile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_carpet_tile_001"
   }
 }
 Assets {

@@ -71,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16062923512930981452
+  Name: "Bark Redwood 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_redwood_001_uv"
+  }
+}
+Assets {
   Id: 15212185774203157141
   Name: "Fantasy Castle Floor 01 - Curved 4m "
   PlatformAssetType: 1
@@ -149,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_battlement_001_4m"
+  }
+}
+Assets {
+  Id: 14181301450008760998
+  Name: "Wood Planks"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_001_uv"
   }
 }
 Assets {
@@ -293,6 +311,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_stairs_spiral_wall_001_strt"
+  }
+}
+Assets {
+  Id: 8766032951383490347
+  Name: "Chamfered Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_chamfer"
   }
 }
 Assets {
@@ -509,6 +536,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_curve_003_top_01"
+  }
+}
+Assets {
+  Id: 1137112816547272582
+  Name: "Cylinder"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_002"
   }
 }
 Assets {
