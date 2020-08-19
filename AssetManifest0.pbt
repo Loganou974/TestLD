@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16740235137211270422
+  Name: "Column Segment 1m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_segment_001"
+  }
+}
+Assets {
   Id: 16370875990012174012
   Name: "Terrain - Grass"
   PlatformAssetType: 2
