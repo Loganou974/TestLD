@@ -1,9 +1,50 @@
 ﻿Entries {
   Key {
+    StringVar: "class"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Barbarian"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 12
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
     StringVar: "race"
   }
   SimpleValue {
     Table {
+      Entries {
+        Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 30
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Dragonborn"
+        }
+      }
       Entries {
         Key {
           StringVar: "bonus"
@@ -15,7 +56,7 @@
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -39,7 +80,7 @@
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -55,7 +96,7 @@
                 IntVar: 6
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -67,47 +108,6 @@
               }
             }
           }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Dwarf"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 25
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
-    StringVar: "class"
-  }
-  SimpleValue {
-    Table {
-      Entries {
-        Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 12
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Barbarian"
         }
       }
     }

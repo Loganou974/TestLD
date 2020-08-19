@@ -91,6 +91,115 @@ Objects {
   }
 }
 Objects {
+  Id: 8795434327073085566
+  Name: "CombatZone"
+  Transform {
+    Location {
+      X: -143.503418
+      Y: -98.2480469
+      Z: 917.312622
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 493094663894712063
+  ChildIds: 6739209084703149660
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 8795434327073085566
+    SubobjectId: 16928087609515676765
+    InstanceId: 7325188509556477206
+    TemplateId: 12297083717308864026
+  }
+}
+Objects {
+  Id: 6739209084703149660
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 414.747925
+      Y: -0.000296650891
+    }
+    Rotation {
+    }
+    Scale {
+      X: 21.287775
+      Y: 13.2075634
+      Z: 5.25000048
+    }
+  }
+  ParentId: 8795434327073085566
+  ChildIds: 15367335385567384972
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 6739209084703149660
+    SubobjectId: 14800367565342851711
+    InstanceId: 7325188509556477206
+    TemplateId: 12297083717308864026
+  }
+}
+Objects {
+  Id: 15367335385567384972
+  Name: "CombatZone"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.235294119
+      Y: 0.0396039598
+      Z: 0.190476179
+    }
+  }
+  ParentId: 6739209084703149660
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17051536529361390619
+    }
+  }
+  InstanceHistory {
+    SelfId: 15367335385567384972
+    SubobjectId: 5017206846673426863
+    InstanceId: 7325188509556477206
+    TemplateId: 12297083717308864026
+  }
+}
+Objects {
   Id: 3783357018459072624
   Name: "Fantasy Chest Common 01 (Prop)"
   Transform {
