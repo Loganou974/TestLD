@@ -30,6 +30,7 @@ Objects {
   ChildIds: 6146817256492984396
   ChildIds: 8825500732694114543
   ChildIds: 2473612057773493981
+  ChildIds: 13147823510287373325
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,6 +40,61 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 13147823510287373325
+  Name: "Kill Zone"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13591331349196528036
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 30
+            Y: 30
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -150
+            Y: 800
+            Z: -10
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13648825478633622894
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Kill Zone"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12400
+            Y: 19200
+            Z: 2600
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2853075491258239451
+    }
   }
 }
 Objects {
