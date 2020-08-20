@@ -723,7 +723,7 @@ function OnObjectDestroyed(id)
 	if IsAlive() then
 		local myId = ROOT:GetCustomProperty("ObjectId")
 		if (myId == id) then
-			Events.Broadcast("END_COMBAT")
+			Events.Broadcast("NPC_DIED",script.parent.id)
 			SetState(STATE_DEAD_1)
 		end
 	end

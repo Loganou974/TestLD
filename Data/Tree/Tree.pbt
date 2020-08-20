@@ -31,6 +31,8 @@ Objects {
   ChildIds: 15895668048108029803
   ChildIds: 14291100318175227123
   ChildIds: 95063269926583494
+  ChildIds: 667785931137269612
+  ChildIds: 6852619860089889278
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -40,6 +42,174 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 6852619860089889278
+  Name: "NPC - Dragon"
+  Transform {
+    Location {
+      X: -5893.99365
+      Y: 7562.79248
+      Z: 707.00354
+    }
+    Rotation {
+      Yaw: 177.890457
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6437137228495040271
+      value {
+        Overrides {
+          Name: "cs:DamageToPlayers"
+          Int: 1
+        }
+        Overrides {
+          Name: "cs:DamageToNPCs"
+          Float: 1
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18005923331114773312
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NPC - Dragon"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5893.99365
+            Y: 8110.32031
+            Z: 707.00354
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 177.890457
+          }
+        }
+        Overrides {
+          Name: "cs:Speed"
+          Int: 2
+        }
+        Overrides {
+          Name: "cs:AttackRange"
+          Float: 500
+        }
+        Overrides {
+          Name: "cs:RewardResourceAmount"
+          Int: 1
+        }
+        Overrides {
+          Name: "cs:CurrentHealth"
+          Float: 10
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15728781663253921388
+    }
+  }
+}
+Objects {
+  Id: 667785931137269612
+  Name: "NPC - Dragon"
+  Transform {
+    Location {
+      X: -5893.99365
+      Y: 7791.03271
+      Z: 707.00354
+    }
+    Rotation {
+      Yaw: 177.890457
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6437137228495040271
+      value {
+        Overrides {
+          Name: "cs:DamageToPlayers"
+          Int: 1
+        }
+        Overrides {
+          Name: "cs:DamageToNPCs"
+          Float: 1
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18005923331114773312
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NPC - Dragon"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5893.99365
+            Y: 7562.79248
+            Z: 707.00354
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 177.890457
+          }
+        }
+        Overrides {
+          Name: "cs:Speed"
+          Int: 2
+        }
+        Overrides {
+          Name: "cs:AttackRange"
+          Float: 500
+        }
+        Overrides {
+          Name: "cs:RewardResourceAmount"
+          Int: 1
+        }
+        Overrides {
+          Name: "cs:CurrentHealth"
+          Float: 10
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15728781663253921388
+    }
   }
 }
 Objects {

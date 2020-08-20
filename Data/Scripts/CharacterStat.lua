@@ -346,7 +346,39 @@ function startRound1()
            newTurn()
      end
 end
+function npcDied(idCible)
+
+    print(idCible.." est mort cela mets il fin au combat? "..initiativeCombatLength)
+    local tempInit={}
+    tempLength=0
+    for id,i in pairs(initiativeCombat)  do
+        if id ~= idCible then
+            tempInit[id]=i
+            tempLength=tempLength+1
+        end
+       
+    end
+    print("il rest"..tempLength.." et "..#playersInCombat.." joueurs")
+    
+    initiativeCombat=tempInit
+    initiativeCombatLength=tempLength
+
+    if initiativeCombatLength == #playersInCombat then
+        endCombat()
+    else    
+        for k,v in spairs(initiativeCombat, function(t,a,b) return t[b] < t[a] end) do
+            combatOrder[#combatOrder+1]=k
+        end
+        print("APRES TRI")
+        for i=1,#combatOrder  do
+            print("initiative "..i.."= "..combatOrder[i])
+        
+        end
+    end
+end
 function endCombat()
+
+    
     for i,p in ipairs(playersInCombat) do
         p:SetResource("incombat",0)
        
@@ -372,10 +404,10 @@ function startCombat(player,combatZone)
         for i= 1,maxMob do
             local mobTemp=cZ:GetCustomProperty("Monster"..i):WaitForObject()
             mobs[#mobs+1]=mobTemp
-            local nom=mobTemp.name..""..i
+            local id=mobTemp.id
             local r=math.random(20)
-            initiativeCombat[nom]=r
-            print("Tour "..currentTurn..":"..nom.." initiative="..initiativeCombat[nom].." ")
+            initiativeCombat[id]=r
+            print("Tour "..currentTurn..":"..id.." initiative="..initiativeCombat[id].." ")
             initiativeCombatLength=initiativeCombatLength+1
         end
         
@@ -460,6 +492,7 @@ function isPlayer(p)
 end
 
 function newTurn()
+    Task.Wait(0.5)
     currentTurn=currentTurn+1
     freezePlayers()
     
@@ -482,7 +515,7 @@ function newTurn()
     else
         currentPlayer=getCurrentPlayer()
         print("1er joueur(npc): "..currentPlayer)
-        Events.Broadcast("BEGIN_TURN_NPC","9FCF9C324FACE84B:NPC - Dragon")
+        Events.Broadcast("BEGIN_TURN_NPC",currentPlayer)
         
     end
     if currentPlayer == nill then
@@ -578,4 +611,5 @@ Events.Connect("DESACTIVATE_ABILITIES", desactivateAllAbilities)
 
 Events.Connect("START_COMBAT", startCombat)
 Events.Connect("END_COMBAT", endCombat)
+Events.Connect("NPC_DIED", npcDied)
 Events.Connect("ROLL_DICE", rollDice)
