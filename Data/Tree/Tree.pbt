@@ -29,6 +29,7 @@ Objects {
   ChildIds: 10065337408434372588
   ChildIds: 12260037686387626650
   ChildIds: 15311088309906578993
+  ChildIds: 15895668048108029803
   ChildIds: 14291100318175227123
   UnregisteredParameters {
   }
@@ -1635,6 +1636,43 @@ Objects {
       Physics {
       }
     }
+  }
+}
+Objects {
+  Id: 15895668048108029803
+  Name: "Combat_Spawn"
+  Transform {
+    Location {
+      X: -8420.61719
+      Y: 7708.53418
+      Z: 870.562256
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+  }
+  InstanceHistory {
+    SelfId: 12045935790775384660
+    SubobjectId: 12320307678961597726
+    InstanceId: 8958019517201597513
+    TemplateId: 16799117021481401644
   }
 }
 Objects {

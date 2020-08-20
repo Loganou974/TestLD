@@ -35,11 +35,16 @@ function rollDice(player)
     
     World.SpawnAsset("B1FC3DA40EE45031:Dice20", {position = pos})
 end
+canRoll=true
 function appuye(player,touche)     
    --print("touche "..touche)
    if touche == "ability_extra_17" then
-        if player:GetResource("dice")==1 then
+        print(player.name.." want to roll a dice, he has "..player:GetResource("dice").." local has "..me:GetResource("dice"))
+        if player:GetResource("dice")==1 and canRoll then
+            canRoll=false
+            Task.Spawn(function() canRoll=true end,1)
             rollDice(player)
+
         end
    end
     if touche == "ability_extra_27" then
@@ -184,6 +189,9 @@ function OnDamagedPlayer(player,damage)
 end
 
 function OnResourceChanged(player, resourceId, newValue)
+    if resourceId=="dice" then
+        print(player.name.." "..resourceId.." "..newValue)
+    end
     if resourceId=="incombat" and newValue==1 then
         print(player.name.." in combat".." "..me.name)
     end

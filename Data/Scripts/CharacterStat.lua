@@ -528,8 +528,9 @@ end
 
 function rollDice(player,max)
     local rand=math.random(max)
-    print("rolled an "..rand)
+ 
     player:RemoveResource("dice",1)
+    print("rolled an "..rand.." reste "..player:GetResource("dice").." des")
     Events.BroadcastToAllPlayers("BannerMessage",player.name.." rolled an "..rand)
     
     player:SetResource("lastDiceNumber",rand)
