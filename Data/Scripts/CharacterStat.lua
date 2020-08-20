@@ -297,11 +297,12 @@ function OnPlayerJoined(player)
     
   
 end
-function startCombat()
+function startCombat(player,combatZone)
+     print("oklm "..combatZone)
     if playersInCombat == false then
        
         playersInCombat=true
-        print("starting combat")
+        print("starting combat "..combatZone)
         players=Game:GetPlayers()
         for i,p in ipairs(players) do
             p:SetResource("incombat",1)

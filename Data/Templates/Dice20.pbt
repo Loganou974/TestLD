@@ -2104,110 +2104,12 @@
       }
     }
     Assets {
-      Id: 7570919207523131888
-      Name: "Dice"
-      PlatformAssetType: 3
-      TextAsset {
-        Text: "local trigger = script.parent\r\n\r\nfunction OnBeginOverlap(whichTrigger, other)\r\n\tif other:IsA(\"Player\") then\r\n\t\tprint(whichTrigger.name .. \": Begin Trigger Overlap with \" .. other.name)\r\n\tend\r\nend\r\nfunction detruit()\r\n\r\n\tlocal inst=script.parent.parent:Destroy()\r\nend\r\nfunction OnEndOverlap(whichTrigger, other)\r\n\tif other:IsA(\"Player\") then\r\n\t\tEvents.BroadcastToServer(\"ROLL_DICE\",other,20)\r\n\t\tTask.Spawn(function ()\r\n\r\n\t\t\tlocal inst=script.parent.parent:Destroy()\r\n\t\tend, 3)\r\n\tend\r\nend\r\n\r\nfunction OnInteracted(whichTrigger, other)\r\n\tif other:IsA(\"Player\") then\r\n\t\tprint(whichTrigger.name .. \": Trigger Interacted \" .. other.name)\r\n\tend\r\nend\r\n\r\n\r\ntrigger.beginOverlapEvent:Connect(OnBeginOverlap)\r\ntrigger.endOverlapEvent:Connect(OnEndOverlap)\r\ntrigger.interactedEvent:Connect(OnInteracted)\r\n"
-      }
-    }
-    Assets {
-      Id: 7640346819503795427
-      Name: "0"
+      Id: 173471209874984412
+      Name: "Icosahedron - Polished"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "F1_Text_026"
-      }
-    }
-    Assets {
-      Id: 9685014606842802085
-      Name: "9"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "F1_Text_035"
-      }
-    }
-    Assets {
-      Id: 2850463323882888359
-      Name: "8"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "F1_Text_034"
-      }
-    }
-    Assets {
-      Id: 15645422209701652638
-      Name: "7"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "F1_Text_033"
-      }
-    }
-    Assets {
-      Id: 12095835209017042614
-      Name: "Cube"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_002"
-      }
-    }
-    Assets {
-      Id: 7862198731230191859
-      Name: "6"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "F1_Text_032"
-      }
-    }
-    Assets {
-      Id: 13109775700780179767
-      Name: "5"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "F1_Text_031"
-      }
-    }
-    Assets {
-      Id: 14006007165863943093
-      Name: "4"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "F1_Text_030"
-      }
-    }
-    Assets {
-      Id: 16472272179382100297
-      Name: "3"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "F1_Text_029"
-      }
-    }
-    Assets {
-      Id: 1082425949205480950
-      Name: "2"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "F1_Text_028"
-      }
-    }
-    Assets {
-      Id: 10536752637553321094
-      Name: "Roof Round Shingles"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_roof_round_shingles_001_uv"
+        AssetId: "sm_icosahedron_hq_001"
       }
     }
     Assets {
@@ -2220,59 +2122,102 @@
       }
     }
     Assets {
-      Id: 6100350035294001459
-      Name: "Water Elemental Bodies"
-      PlatformAssetType: 13
-      CustomMaterialAsset {
-        BaseMaterialId: 12510968351439123370
-        ParameterOverrides {
-          Overrides {
-            Name: "frost"
-            Float: 0.509427071
-          }
-          Overrides {
-            Name: "thickness"
-            Float: 1
-          }
-          Overrides {
-            Name: "roughness"
-            Float: 0
-          }
-          Overrides {
-            Name: "frost on curvature"
-            Float: 1
-          }
-          Overrides {
-            Name: "frost cutoff"
-            Float: 0
-          }
-          Overrides {
-            Name: "specular"
-            Float: 0.911653697
-          }
-          Overrides {
-            Name: "metallic"
-            Float: 0.0641047731
-          }
-        }
-      }
-    }
-    Assets {
-      Id: 12510968351439123370
-      Name: "Ice Opaque"
+      Id: 10536752637553321094
+      Name: "Roof Round Shingles"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "fxmi_ice_opaque"
+        AssetId: "mi_roof_round_shingles_001_uv"
       }
     }
     Assets {
-      Id: 173471209874984412
-      Name: "Icosahedron - Polished"
+      Id: 1082425949205480950
+      Name: "2"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_icosahedron_hq_001"
+        AssetId: "F1_Text_028"
+      }
+    }
+    Assets {
+      Id: 16472272179382100297
+      Name: "3"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "F1_Text_029"
+      }
+    }
+    Assets {
+      Id: 14006007165863943093
+      Name: "4"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "F1_Text_030"
+      }
+    }
+    Assets {
+      Id: 13109775700780179767
+      Name: "5"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "F1_Text_031"
+      }
+    }
+    Assets {
+      Id: 7862198731230191859
+      Name: "6"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "F1_Text_032"
+      }
+    }
+    Assets {
+      Id: 12095835209017042614
+      Name: "Cube"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_002"
+      }
+    }
+    Assets {
+      Id: 15645422209701652638
+      Name: "7"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "F1_Text_033"
+      }
+    }
+    Assets {
+      Id: 2850463323882888359
+      Name: "8"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "F1_Text_034"
+      }
+    }
+    Assets {
+      Id: 9685014606842802085
+      Name: "9"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "F1_Text_035"
+      }
+    }
+    Assets {
+      Id: 7640346819503795427
+      Name: "0"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "F1_Text_026"
       }
     }
     PrimaryAssetId {
@@ -2282,4 +2227,3 @@
   }
   SerializationVersion: 62
 }
-IncludesAllDependencies: true

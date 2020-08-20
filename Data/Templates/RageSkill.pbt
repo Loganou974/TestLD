@@ -82,4 +82,3 @@
   }
   SerializationVersion: 62
 }
-IncludesAllDependencies: true

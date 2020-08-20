@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 6455347434420070556
-  Name: "Ragesound2"
+  Id: 5485906999558658488
+  Name: "Dragon Muzzle Flash"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 6866929665529458376
+      RootId: 10685006978684443266
       Objects {
-        Id: 6866929665529458376
-        Name: "Ragesound2"
+        Id: 10685006978684443266
+        Name: "Pistol Muzzle Flash"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,10 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 1819785440614659102
+        ChildIds: 12578402280350496929
+        ChildIds: 6953748068337573496
+        UnregisteredParameters {
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24,24 +27,12 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        AudioInstance {
-          AudioAsset {
-            Id: 3379992816344189052
-          }
-          AutoPlay: true
-          Transient: true
-          Pitch: -1e+06
-          Volume: 1
-          Falloff: -1
-          Radius: -1
-          EnableOcclusion: true
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
+        NetworkContext {
         }
       }
       Objects {
-        Id: 1819785440614659102
-        Name: "Basic Explosion VFX"
+        Id: 12578402280350496929
+        Name: "Flamethrower Activate Firing 01 SFX"
         Transform {
           Location {
           }
@@ -53,9 +44,48 @@
             Z: 1
           }
         }
-        ParentId: 6866929665529458376
-        Lifespan: 0.5
-        WantsNetworking: true
+        ParentId: 10685006978684443266
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 16402291226897156258
+          }
+          AutoPlay: true
+          Volume: 1
+          Falloff: -1
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 6953748068337573496
+        Name: "Generic Muzzleflash VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Pitch: -90
+          }
+          Scale {
+            X: 2.01851702
+            Y: 2.01851702
+            Z: 2.01851702
+          }
+        }
+        ParentId: 10685006978684443266
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Particle Size Multiplier"
+            Float: 0.6
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -64,9 +94,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 17593637809061010819
-          }
-          TeamSettings {
+            Id: 16322635077100878811
           }
           Vfx {
             AutoPlay: true
@@ -75,21 +103,21 @@
       }
     }
     Assets {
-      Id: 3379992816344189052
-      Name: "Creature Beast Huff Short 01 SFX"
+      Id: 16402291226897156258
+      Name: "Flamethrower Activate Firing 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_creature_beast_huff_short_01_Cue_ref"
+        AssetId: "sfx_flamethrower_activate_01_Cue_ref"
       }
     }
     Assets {
-      Id: 17593637809061010819
-      Name: "Basic Explosion VFX"
+      Id: 16322635077100878811
+      Name: "Generic Muzzleflash VFX"
       PlatformAssetType: 8
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_explosion"
+        AssetId: "fxbp_generic_muzzleflash"
       }
     }
     PrimaryAssetId {

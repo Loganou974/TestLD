@@ -32,6 +32,8 @@ Objects {
   ChildIds: 2473612057773493981
   ChildIds: 13147823510287373325
   ChildIds: 13162234076713772773
+  ChildIds: 10065337408434372588
+  ChildIds: 12260037686387626650
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -41,6 +43,94 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 12260037686387626650
+  Name: "Combat Dependencies"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8014650375856875642
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Combat Dependencies"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7983.05029
+            Y: 7750.25732
+            Z: 706.999207
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14993319076305080161
+    }
+  }
+}
+Objects {
+  Id: 10065337408434372588
+  Name: "NPC - Dragon"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6437137228495040271
+      value {
+        Overrides {
+          Name: "cs:DamageToPlayers"
+          Int: 0
+        }
+        Overrides {
+          Name: "cs:DamageToNPCs"
+          Float: 0
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18005923331114773312
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NPC - Dragon"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6450.58838
+            Y: 7820.81152
+            Z: 707.00354
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 177.890488
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15728781663253921388
+    }
   }
 }
 Objects {
