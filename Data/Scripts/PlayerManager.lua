@@ -39,10 +39,11 @@ canRoll=true
 function appuye(player,touche)     
    --print("touche "..touche)
    if touche == "ability_extra_17" then
+        canRoll=false
+        Task.Spawn(function() canRoll=true end,3)
         print(player.name.." want to roll a dice, he has "..player:GetResource("dice").." local has "..me:GetResource("dice"))
         if player:GetResource("dice")==1 and canRoll then
-            canRoll=false
-            Task.Spawn(function() canRoll=true end,1)
+           
             rollDice(player)
 
         end
