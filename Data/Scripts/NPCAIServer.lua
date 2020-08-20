@@ -87,6 +87,13 @@ local temporaryVisionAngle = nil
 local temporaryVisionRadius = nil
 local temporaryHearingRadius = nil
 	
+function OnTurnOn(id)
+	print("on turn npc "..id)
+	if script.parent.id == id then
+		print("c'est le tour de dragon")
+	end
+end
+Events.Connect("BEGIN_TURN_NPC", OnTurnOn)
 
 function SetState(newState)
 	--print("NewState = " .. newState)
@@ -161,7 +168,7 @@ function SetState(newState)
 end
 
 
-function Tick(deltaTime)
+function Tack(deltaTime)
 	stateTime = stateTime + deltaTime
 	logicStepDelay = logicStepDelay - deltaTime
 	attackCooldown = attackCooldown - deltaTime
@@ -787,5 +794,7 @@ ROOT.networkedPropertyChangedEvent:Connect(OnPropertyChanged)
 
 NPC_MANAGER().Register(script)
 NPC_MANAGER().RegisterCollider(script, COLLIDER)
+
+
 
 

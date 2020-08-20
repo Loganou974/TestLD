@@ -1,6 +1,51 @@
 ﻿Name: "Fantasy Castle 01"
 RootId: 493094663894712063
 Objects {
+  Id: 16779762996461322597
+  Name: "Fox Mob"
+  Transform {
+    Location {
+      X: -1096.41602
+      Y: 1946.76563
+      Z: 917.312622
+    }
+    Rotation {
+      Yaw: -94.682518
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 493094663894712063
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6668430063977139298
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
   Id: 17362799014523874030
   Name: "Fox Mob"
   Transform {
@@ -46,61 +91,15 @@ Objects {
   }
 }
 Objects {
-  Id: 16779762996461322597
-  Name: "Fox Mob"
-  Transform {
-    Location {
-      X: -1096.4165
-      Y: 1946.7666
-      Z: 917.312622
-    }
-    Rotation {
-      Yaw: -94.6825256
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 493094663894712063
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6668430063977139298
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
-  }
-}
-Objects {
-  Id: 8795434327073085566
+  Id: 9691294331620525267
   Name: "CombatZone"
   Transform {
     Location {
-      X: -143.503418
+      X: -558.251
       Y: -98.2480469
       Z: 917.312622
     }
     Rotation {
-      Yaw: -179.999954
     }
     Scale {
       X: 1
@@ -110,7 +109,6 @@ Objects {
   }
   ParentId: 493094663894712063
   ChildIds: 6739209084703149660
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -118,12 +116,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
-  }
-  InstanceHistory {
-    SelfId: 8795434327073085566
-    SubobjectId: 16928087609515676765
-    InstanceId: 7325188509556477206
-    TemplateId: 12297083717308864026
+    Type: Server
   }
 }
 Objects {
@@ -131,10 +124,9 @@ Objects {
   Name: "Trigger"
   Transform {
     Location {
-      X: 414.747925
-      Y: -0.000296650891
     }
     Rotation {
+      Yaw: -179.999954
     }
     Scale {
       X: 21.287775
@@ -142,7 +134,7 @@ Objects {
       Z: 5.25000048
     }
   }
-  ParentId: 8795434327073085566
+  ParentId: 9691294331620525267
   ChildIds: 15367335385567384972
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -181,6 +173,21 @@ Objects {
     }
   }
   ParentId: 6739209084703149660
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NombreMonstre"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Monster1"
+      ObjectReference {
+        SelfId: 11515594512108677195
+        SubObjectId: 18005923331114773312
+        InstanceId: 10065337408434372588
+        TemplateId: 15728781663253921388
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

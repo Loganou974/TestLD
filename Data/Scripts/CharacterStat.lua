@@ -298,7 +298,18 @@ function OnPlayerJoined(player)
   
 end
 function startCombat(player,combatZone)
-     print("oklm "..combatZone)
+    print(" "..combatZone)
+    local obj=World.FindObjectById(combatZone)
+    local cZ=obj:FindDescendantByName("CombatZone");
+    local mobs={}
+    local maxMob=cZ:GetCustomProperty("NombreMonstre")
+    for i= 1,maxMob do
+        local mobTemp=cZ:GetCustomProperty("Monster"..i):WaitForObject()
+        mobs[#mobs+1]=mobTemp
+    end
+    
+    print(" Mob trouve: "..#mobs)
+     Events.Broadcast("BEGIN_TURN_NPC","9FCF9C324FACE84B:NPC - Dragon")
     if playersInCombat == false then
        
         playersInCombat=true

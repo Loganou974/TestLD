@@ -9,7 +9,7 @@
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Barbarian"
+          StringVar: "Novice"
         }
       }
       Entries {
@@ -17,7 +17,7 @@
           StringVar: "hit"
         }
         SimpleValue {
-          IntVar: 12
+          IntVar: 1
         }
       }
     }
@@ -31,10 +31,18 @@ Entries {
     Table {
       Entries {
         Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 25
+        }
+      }
+      Entries {
+        Key {
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Lightfoot"
+          StringVar: "Halfling"
         }
       }
       Entries {
@@ -88,7 +96,7 @@ Entries {
                 IntVar: 6
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -100,14 +108,6 @@ Entries {
               }
             }
           }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 25
         }
       }
     }

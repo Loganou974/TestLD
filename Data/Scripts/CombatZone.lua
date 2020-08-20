@@ -1,9 +1,10 @@
 ﻿local trigger = script.parent
+local propMonster1 = script:GetCustomProperty("Monster1"):WaitForObject()
 
 function OnBeginOverlap(whichTrigger, other)
 	if other:IsA("Player") then
 		print(whichTrigger.name .. ": Begin Trigger Overlap with " .. other.name)
-		Events.BroadcastToServer("START_COMBAT",other,test())
+		Events.Broadcast("START_COMBAT",other,script.parent.parent.id)
 	end
 end
 
