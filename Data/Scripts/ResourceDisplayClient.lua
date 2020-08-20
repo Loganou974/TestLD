@@ -23,7 +23,7 @@ SOFTWARE.
 -- Internal custom properties
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
-local PROGRESS_BAR = script:GetCustomProperty("ProgressBar"):WaitForObject()
+--local PROGRESS_BAR = script:GetCustomProperty("ProgressBar"):WaitForObject()
 local TEXT_BOX = script:GetCustomProperty("TextBox"):WaitForObject()
 
 -- User exposed properties
@@ -91,7 +91,7 @@ end
 
 -- Initialize
 if not SHOW_PROGRESS_BAR then
-    PROGRESS_BAR.visibility = Visibility.FORCE_OFF
+    --PROGRESS_BAR.visibility = Visibility.FORCE_OFF
 end
 
 if not SHOW_TEXT then
@@ -103,6 +103,6 @@ if not ALWAYS_SHOW then
 end
 
 if ALWAYS_SHOW then
-    PROGRESS_BAR.progress = 0.0
+   -- PROGRESS_BAR.progress = 0.0
     TEXT_BOX.text = "0"
 end

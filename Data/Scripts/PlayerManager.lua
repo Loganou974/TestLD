@@ -36,7 +36,7 @@ function rollDice(player)
     World.SpawnAsset("B1FC3DA40EE45031:Dice20", {position = pos})
 end
 function appuye(player,touche)     
-   print("touche "..touche)
+   --print("touche "..touche)
    if touche == "ability_extra_17" then
         if player:GetResource("dice")==1 then
             rollDice(player)
