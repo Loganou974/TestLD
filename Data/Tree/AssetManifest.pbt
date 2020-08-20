@@ -116,15 +116,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15944708149829882904
-  Name: "Icon Footprint"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_FootPrint"
-  }
-}
-Assets {
   Id: 15657870710465691415
   Name: "Cylinder - Chamfered Polished"
   PlatformAssetType: 1
@@ -275,15 +266,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_door_002"
-  }
-}
-Assets {
-  Id: 11597592556193149105
-  Name: "Hatchet - Handle"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_axe_handle_001"
   }
 }
 Assets {
@@ -701,15 +683,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4281380979366999084
-  Name: "Hatchet - Blade"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_axe_001"
-  }
-}
-Assets {
   Id: 4262625313857521013
   Name: "Rock Hexagonal"
   PlatformAssetType: 1
@@ -725,15 +698,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_marble_tiles_003_uv"
-  }
-}
-Assets {
-  Id: 4021350626834511320
-  Name: "Frame Highlighted 012"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameHighlighted_029"
   }
 }
 Assets {
@@ -761,15 +725,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_cauldron_001"
-  }
-}
-Assets {
-  Id: 3517681644486483565
-  Name: "BG Gradient 012"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundFlat_029"
   }
 }
 Assets {
@@ -917,15 +872,6 @@ Assets {
   }
 }
 Assets {
-  Id: 885896236593327937
-  Name: "Fantasy Frame 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Frame_001"
-  }
-}
-Assets {
   Id: 376255333147091916
   Name: "Generic Water"
   PlatformAssetType: 2
@@ -950,14 +896,5 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "fxsm_waterfall_straight"
-  }
-}
-Assets {
-  Id: 7671792711664647
-  Name: "Center Arrow 002 Wedge"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "CenterArrow_002Wedge"
   }
 }

@@ -175,6 +175,7 @@ function OnCast(ability)
  
 
     if me:GetResource("incombat") == 1 then
+        Task.Wait(1.5)
       if turnNumberAction>=actionMax then
         desactivateAllAbilities()
         canAct=false;
@@ -254,8 +255,13 @@ function OnTurnOff()
 
     --propTurnTxt.text="Next turn is  " ..nom .."'s turn"
 end
-function OnClassChanged(equipementName)
+function OnClassChanged(equipementName,classNom)
     local equipement=nil
+    if classNom ~= nil then
+        propClassText.text="Class: " .. classNom
+        propClassText_0.text="<" .. classNom ..">"
+       
+    end
     print(equipementName.."recu de serveur")
     for _, e in pairs(me:GetEquipment()) do
        print(e.name.." "..equipementName)

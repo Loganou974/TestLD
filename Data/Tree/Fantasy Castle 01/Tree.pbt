@@ -151,12 +151,6 @@ Objects {
       Value: "mc:etriggershape:box"
     }
   }
-  InstanceHistory {
-    SelfId: 6739209084703149660
-    SubobjectId: 14800367565342851711
-    InstanceId: 7325188509556477206
-    TemplateId: 12297083717308864026
-  }
 }
 Objects {
   Id: 15367335385567384972
@@ -198,12 +192,6 @@ Objects {
     ScriptAsset {
       Id: 17051536529361390619
     }
-  }
-  InstanceHistory {
-    SelfId: 15367335385567384972
-    SubobjectId: 5017206846673426863
-    InstanceId: 7325188509556477206
-    TemplateId: 12297083717308864026
   }
 }
 Objects {
@@ -681,7 +669,7 @@ Objects {
       Z: 0.158081055
     }
     Rotation {
-      Yaw: -89.9999924
+      Yaw: -90
     }
     Scale {
       X: 1

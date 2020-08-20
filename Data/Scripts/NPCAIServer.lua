@@ -33,7 +33,8 @@ local SEARCH_BONUS_VISION = ROOT:GetCustomProperty("SearchBonusVision") or 5000
 local SEARCH_DURATION = ROOT:GetCustomProperty("SearchDuration") or 6
 local POSSIBILITY_RADIUS = ROOT:GetCustomProperty("PossibilityRadius") or 600
 local CHASE_RADIUS = ROOT:GetCustomProperty("ChaseRadius") or 3500
-local ATTACK_RANGE = ROOT:GetCustomProperty("AttackRange") or 1500
+local ATTACK_RANGE = ROOT:GetCustomProperty("AttackRange") or 50
+local SPEED = ROOT:GetCustomProperty("Speed") or 1
 local ATTACK_CAST_TIME = ROOT:GetCustomProperty("AttackCast") or 0.5
 local ATTACK_RECOVERY_TIME = ROOT:GetCustomProperty("AttackRecovery") or 1.5
 local ATTACK_COOLDOWN = ROOT:GetCustomProperty("AttackCooldown") or 0
@@ -91,6 +92,15 @@ function OnTurnOn(id)
 	print("on turn npc "..id)
 	if script.parent.id == id then
 		print("c'est le tour de dragon")
+		EngageNearest()
+		if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
+			ExecuteAttack()
+		else
+			UpdateMovement(SPEED)
+			
+		end
+		
+		Events.Broadcast("END_TURN")
 	end
 end
 Events.Connect("BEGIN_TURN_NPC", OnTurnOn)
@@ -426,6 +436,9 @@ function UpdateMovement(deltaTime)
 		
 		if (distance <= moveAmount) then
 			pos = stepDestination
+			if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
+				ExecuteAttack()
+			end
 		else
 			pos = pos + moveV / distance * moveAmount
 		end
@@ -710,6 +723,7 @@ function OnObjectDestroyed(id)
 	if IsAlive() then
 		local myId = ROOT:GetCustomProperty("ObjectId")
 		if (myId == id) then
+			Events.Broadcast("END_COMBAT")
 			SetState(STATE_DEAD_1)
 		end
 	end

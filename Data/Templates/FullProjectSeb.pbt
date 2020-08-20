@@ -7,25 +7,21 @@
       RootId: 2759206006183996102
       Objects {
         Id: 2759206006183996102
-        Name: "Group"
+        Name: "FullProjectSeb"
         Transform {
-          Location {
-          }
-          Rotation {
-          }
           Scale {
             X: 1
             Y: 1
             Z: 1
           }
         }
+        ParentId: 4781671109827199097
         ChildIds: 15724460210077819871
         ChildIds: 7351674786546696705
         ChildIds: 11701595442101228145
         ChildIds: 15905185664163727210
         ChildIds: 1929733325699648473
         ChildIds: 549997468905028118
-        ChildIds: 16928087609515676765
         ChildIds: 12257572530578915896
         Folder {
           IsGroup: true
@@ -7465,6 +7461,7 @@
         }
         Folder {
           IsFilePartition: true
+          FilePartitionName: "BarbarianLearningBookStand"
         }
       }
       Objects {
@@ -8641,8 +8638,8 @@
           }
           Scale {
             X: 1.8
-            Y: 1.8
-            Z: 1.8
+            Y: 2.76274371
+            Z: 5.49598837
           }
         }
         ParentId: 1929733325699648473
@@ -8689,7 +8686,7 @@
             IsEnemyCollisionEnabled: true
           }
           TriggerShape_v2 {
-            Value: "mc:etriggershape:sphere"
+            Value: "mc:etriggershape:box"
           }
         }
       }
@@ -8824,6 +8821,7 @@
         ChildIds: 29320024806249888
         ChildIds: 17051295242740101782
         ChildIds: 16334528712470216646
+        ChildIds: 18387424276217682386
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8966,6 +8964,62 @@
         }
       }
       Objects {
+        Id: 18387424276217682386
+        Name: "MeleeAbilityServer"
+        Transform {
+          Location {
+            X: -150
+            Y: 600
+            Z: 49.999939
+          }
+          Rotation {
+          }
+          Scale {
+          }
+        }
+        ParentId: 6365418099350290631
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Ability"
+            ObjectReference {
+              SubObjectId: 11565376606417898045
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            ObjectReference {
+              SubObjectId: 4670336455031416361
+            }
+          }
+          Overrides {
+            Name: "cs:DamageRange"
+            Vector2 {
+              X: 49
+              Y: 51
+            }
+          }
+          Overrides {
+            Name: "cs:AttackImpulse"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:VerticalImpulse"
+            Float: 0
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 17565407268059226804
+          }
+        }
+      }
+      Objects {
         Id: 17870095927792068382
         Name: "ClientContext"
         Transform {
@@ -8983,6 +9037,7 @@
         ChildIds: 14304338293107926325
         ChildIds: 18379007554413570492
         ChildIds: 13359828118965191529
+        ChildIds: 431818351348637749
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9107,6 +9162,7 @@
         }
         Folder {
           IsFilePartition: true
+          FilePartitionName: "Modern Acoustic Guitars"
         }
       }
       Objects {
@@ -9140,6 +9196,7 @@
         }
         Folder {
           IsFilePartition: true
+          FilePartitionName: "Acoustic Guitar (Hex)"
         }
       }
       Objects {
@@ -9173,6 +9230,7 @@
         }
         Folder {
           IsFilePartition: true
+          FilePartitionName: "GuitarTop"
         }
       }
       Objects {
@@ -9674,6 +9732,7 @@
         }
         Folder {
           IsFilePartition: true
+          FilePartitionName: "GuitarBody"
         }
       }
       Objects {
@@ -10034,6 +10093,7 @@
         }
         Folder {
           IsFilePartition: true
+          FilePartitionName: "GuitarBase"
         }
       }
       Objects {
@@ -10431,6 +10491,7 @@
         }
         Folder {
           IsFilePartition: true
+          FilePartitionName: "Guitar Head"
         }
       }
       Objects {
@@ -12528,6 +12589,7 @@
         }
         Folder {
           IsFilePartition: true
+          FilePartitionName: "Guitar Neck"
         }
       }
       Objects {
@@ -14515,6 +14577,36 @@
         }
       }
       Objects {
+        Id: 431818351348637749
+        Name: "DestructibleWeaponClient"
+        Transform {
+          Location {
+            X: 6890.18066
+            Y: 310.40332
+            Z: 850.326
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17870095927792068382
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6366115419987772397
+          }
+        }
+      }
+      Objects {
         Id: 549997468905028118
         Name: "BarbarianWeapon"
         Transform {
@@ -14635,9 +14727,9 @@
           Rotation {
           }
           Scale {
-            X: 1.8
-            Y: 1.8
-            Z: 1.8
+            X: 1.88782883
+            Y: 2.53211784
+            Z: 6.2869029
           }
         }
         ParentId: 549997468905028118
@@ -14684,7 +14776,7 @@
             IsEnemyCollisionEnabled: true
           }
           TriggerShape_v2 {
-            Value: "mc:etriggershape:sphere"
+            Value: "mc:etriggershape:box"
           }
         }
       }
@@ -14817,8 +14909,8 @@
         ParentId: 549997468905028118
         ChildIds: 7870568294605852964
         ChildIds: 13909311311581084199
-        ChildIds: 2350419995823846134
         ChildIds: 9678594798412552810
+        ChildIds: 17209237451559349687
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14893,35 +14985,6 @@
         }
       }
       Objects {
-        Id: 2350419995823846134
-        Name: "EquipmentMeleeAttacksServer"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14838503869804497882
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 5082628058110625875
-          }
-        }
-      }
-      Objects {
         Id: 9678594798412552810
         Name: "EquipmentAttachObjectToPlayer"
         Transform {
@@ -14961,6 +15024,59 @@
         }
       }
       Objects {
+        Id: 17209237451559349687
+        Name: "MeleeAbilityServer"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+          }
+        }
+        ParentId: 14838503869804497882
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Ability"
+            ObjectReference {
+              SubObjectId: 14681176208787896824
+            }
+          }
+          Overrides {
+            Name: "cs:HitBox"
+            ObjectReference {
+              SubObjectId: 18261126279246107921
+            }
+          }
+          Overrides {
+            Name: "cs:DamageRange"
+            Vector2 {
+              X: 49
+              Y: 51
+            }
+          }
+          Overrides {
+            Name: "cs:AttackImpulse"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:VerticalImpulse"
+            Float: 0
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 17565407268059226804
+          }
+        }
+      }
+      Objects {
         Id: 14922489762118652287
         Name: "ClientContext"
         Transform {
@@ -14978,6 +15094,7 @@
         ChildIds: 14471266837854872990
         ChildIds: 1476304043016650816
         ChildIds: 1792337462655234748
+        ChildIds: 9581299083321879700
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15154,15 +15271,15 @@
         }
       }
       Objects {
-        Id: 16928087609515676765
-        Name: "ClientContext"
+        Id: 9581299083321879700
+        Name: "DestructibleWeaponClient"
         Transform {
           Location {
-            X: -268.75
-            Y: -12.5
+            X: 7040.18066
+            Y: -289.59668
+            Z: 800.32605
           }
           Rotation {
-            Yaw: -179.999954
           }
           Scale {
             X: 1
@@ -15170,67 +15287,7 @@
             Z: 1
           }
         }
-        ParentId: 2759206006183996102
-        ChildIds: 14800367565342851711
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 14800367565342851711
-        Name: "Trigger"
-        Transform {
-          Location {
-            X: -5.82076193e-11
-            Y: 4.16333336e-17
-          }
-          Rotation {
-          }
-          Scale {
-            X: 4.25
-            Y: 25.25
-            Z: 5.25000048
-          }
-        }
-        ParentId: 16928087609515676765
-        ChildIds: 5017206846673426863
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:box"
-          }
-        }
-      }
-      Objects {
-        Id: 5017206846673426863
-        Name: "CombatZone"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.235294119
-            Y: 0.0396039598
-            Z: 0.190476179
-          }
-        }
-        ParentId: 14800367565342851711
+        ParentId: 14922489762118652287
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -15239,7 +15296,7 @@
         }
         Script {
           ScriptAsset {
-            Id: 17051536529361390619
+            Id: 6366115419987772397
           }
         }
       }

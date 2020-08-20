@@ -25,6 +25,8 @@ function OnEquipped(equipment, player)
         if equipment.name == "BardSkills" then
             print("Etape 1.1")
             playerData.class= classes[2]
+            player.maxHitPoints = playerData.class.hit;
+             player.hitPoints= player.maxHitPoints
             print("classe = "..playerData.class.name)
            
    
@@ -32,6 +34,8 @@ function OnEquipped(equipment, player)
         if equipment.name == "BarbarianSkills" then
             print("Etape 1.2")
             playerData.class=classes[1]
+            player.maxHitPoints = playerData.class.hit;
+             player.hitPoints= player.maxHitPoints
             print("classe = "..playerData.class.name)
         end    
    
@@ -39,7 +43,7 @@ function OnEquipped(equipment, player)
     
     Storage.SetPlayerData(player, playerData)
     Task.Wait(0.5)
-    Events.BroadcastToPlayer(player,"CHANGED_CLASS",equipment.name)
+    Events.BroadcastToPlayer(player,"CHANGED_CLASS",equipment.name,playerData.class.name)
     print("Etape 2")
 end
 

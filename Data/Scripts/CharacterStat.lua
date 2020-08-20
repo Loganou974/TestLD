@@ -1,5 +1,6 @@
 ﻿local currentTurn=0;
 local playersAreInCombat=false
+local currentCombatZone=nil
 local races={
     {name ="Dwarf",bonus={0,0,0,2,0,0,0},speed=25},
     {name ="Hill Dwarf",bonus={0,0,0,2,1,0,0},speed=25},
@@ -345,6 +346,18 @@ function startRound1()
            newTurn()
      end
 end
+function endCombat()
+    for i,p in ipairs(playersInCombat) do
+        p:SetResource("incombat",0)
+       
+        
+    end
+    unfreezePlayers()
+    local trigger=currentCombatZone:FindDescendantByName("Trigger")
+    trigger.collision = Collision.FORCE_OFF
+    Events.BroadcastToAllPlayers("BannerMessage","VICTORY")
+
+end
 
 function startCombat(player,combatZone)
     
@@ -352,8 +365,8 @@ function startCombat(player,combatZone)
         initiativecombat={}
         combatOrder={}
         print(" "..combatZone)
-        local obj=World.FindObjectById(combatZone)
-        local cZ=obj:FindDescendantByName("CombatZone");
+        currentCombatZone=World.FindObjectById(combatZone)
+        local cZ=currentCombatZone:FindDescendantByName("CombatZone");
         local mobs={}
         local maxMob=cZ:GetCustomProperty("NombreMonstre")
         for i= 1,maxMob do
@@ -367,7 +380,7 @@ function startCombat(player,combatZone)
         end
         
         print(" Mob trouve: "..#mobs.." ")
-         Events.Broadcast("BEGIN_TURN_NPC","9FCF9C324FACE84B:NPC - Dragon")
+         
         playersAreInCombat=true
         print("starting combat "..combatZone)
         playersInCombat=Game:GetPlayers()
@@ -389,6 +402,16 @@ end
 function freezePlayers()
     for i,p in ipairs(playersInCombat) do
         p.movementControlMode = MovementControlMode.NONE
+     abilities=p:GetAbilities()
+     for i,a in ipairs(abilities) do
+            a.isEnabled=false
+     end
+    end
+end
+
+function unfreezePlayers()
+    for i,p in ipairs(playersInCombat) do
+        p.movementControlMode = MovementControlMode.VIEW_RELATIVE
      abilities=p:GetAbilities()
      for i,a in ipairs(abilities) do
             a.isEnabled=false
@@ -459,7 +482,8 @@ function newTurn()
     else
         currentPlayer=getCurrentPlayer()
         print("1er joueur(npc): "..currentPlayer)
-        OnEndTurn()
+        Events.Broadcast("BEGIN_TURN_NPC","9FCF9C324FACE84B:NPC - Dragon")
+        
     end
     if currentPlayer == nill then
         return
@@ -553,4 +577,5 @@ Events.Connect("ACTIVATE_ABILITIES", activateAllAbilities)
 Events.Connect("DESACTIVATE_ABILITIES", desactivateAllAbilities)
 
 Events.Connect("START_COMBAT", startCombat)
+Events.Connect("END_COMBAT", endCombat)
 Events.Connect("ROLL_DICE", rollDice)

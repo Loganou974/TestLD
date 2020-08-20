@@ -115,6 +115,10 @@
             String: "Uncommon"
           }
           Overrides {
+            Name: "cs:Speed"
+            Int: 0
+          }
+          Overrides {
             Name: "cs:CurrentState:isrep"
             Bool: true
           }
@@ -325,11 +329,11 @@
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 129
+            Int: 0
           }
           Overrides {
             Name: "cs:DamageToNPCs"
-            Float: 129
+            Float: 0
           }
           Overrides {
             Name: "cs:ProjectileBody"
@@ -748,6 +752,10 @@
             ObjectReference {
               SubObjectId: 18005923331114773312
             }
+          }
+          Overrides {
+            Name: "cs:DistanceFromGround"
+            Float: 300
           }
         }
         Collidable_v2 {
