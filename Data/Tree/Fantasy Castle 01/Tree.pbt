@@ -170,7 +170,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:NombreMonstre"
-      Int: 1
+      Int: 3
     }
     Overrides {
       Name: "cs:Monster1"
