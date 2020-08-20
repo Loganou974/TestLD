@@ -24,11 +24,11 @@ Objects {
   ChildIds: 493094663894712063
   ChildIds: 13837840373901773315
   ChildIds: 9028361151628041545
+  ChildIds: 9847263683247606392
   ChildIds: 13162234076713772773
   ChildIds: 10065337408434372588
   ChildIds: 12260037686387626650
   ChildIds: 15311088309906578993
-  ChildIds: 12045935790775384660
   ChildIds: 14291100318175227123
   UnregisteredParameters {
   }
@@ -226,12 +226,13 @@ Objects {
     Overrides {
       Name: "cs:Target"
       ObjectReference {
-        SelfId: 12045935790775384660
+        SelfId: 9847263683247606392
       }
     }
     Overrides {
       Name: "cs:DestinationOffset"
       Vector {
+        Z: 2
       }
     }
     Overrides {
@@ -1637,42 +1638,6 @@ Objects {
   }
 }
 Objects {
-  Id: 12045935790775384660
-  Name: "LD_Spawn"
-  Transform {
-    Location {
-      X: -17554.3965
-      Y: 7122.89258
-      Z: 40.2304688
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-  }
-  InstanceHistory {
-    SelfId: 12045935790775384660
-    SubobjectId: 12320307678961597726
-    InstanceId: 8958019517201597513
-    TemplateId: 16799117021481401644
-  }
-}
-Objects {
   Id: 15311088309906578993
   Name: "Intro_Spawn"
   Transform {
@@ -1692,6 +1657,7 @@ Objects {
   ParentId: 4781671109827199097
   UnregisteredParameters {
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6868,6 +6834,45 @@ Objects {
   }
 }
 Objects {
+  Id: 9847263683247606392
+  Name: "Wooden Barrel"
+  Transform {
+    Location {
+      X: -17164.0391
+      Y: 7590.36328
+      Z: -67.5497131
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11536413602983776597
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 9028361151628041545
   Name: "LavaRoom"
   Transform {
@@ -11483,7 +11488,6 @@ Objects {
   ChildIds: 3793821603650434500
   ChildIds: 693965966859079834
   ChildIds: 9787532854237484788
-  ChildIds: 1132351605590295764
   ChildIds: 3604935722128248420
   ChildIds: 545833491276801720
   Collidable_v2 {
@@ -11602,36 +11606,6 @@ Objects {
     TemplateAsset {
       Id: 3021912993263404793
     }
-  }
-}
-Objects {
-  Id: 1132351605590295764
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: 975
-      Y: 2230
-      Z: 855
-    }
-    Rotation {
-      Yaw: 179.999954
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13400303163455266015
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
   }
 }
 Objects {
@@ -14021,7 +13995,6 @@ Objects {
   ChildIds: 15994019121239891829
   ChildIds: 15207171413976059542
   ChildIds: 14838372272283277449
-  ChildIds: 9847263683247606392
   ChildIds: 5289792415842928040
   ChildIds: 4260580568320738588
   ChildIds: 6597945708485246164
@@ -26463,45 +26436,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 14937890536117064298
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 9847263683247606392
-  Name: "Wooden Barrel"
-  Transform {
-    Location {
-      X: -517.200195
-      Y: -136.111572
-      Z: -83.7748566
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.5
-      Y: 0.5
-      Z: 0.5
-    }
-  }
-  ParentId: 11934502869074610000
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11536413602983776597
     }
     Teams {
       IsTeamCollisionEnabled: true
