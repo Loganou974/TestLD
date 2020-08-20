@@ -5352,7 +5352,6 @@
           }
         }
         ParentId: 10747235764127268869
-        ChildIds: 1332928777154509514
         ChildIds: 1231680861961014253
         UnregisteredParameters {
         }
@@ -5388,63 +5387,6 @@
         }
       }
       Objects {
-        Id: 1332928777154509514
-        Name: "Background"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 6938806808515334070
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: 200
-          Height: 200
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          UseParentWidth: true
-          UseParentHeight: true
-          Image {
-            Brush {
-              Id: 6546564769032812656
-            }
-            Color {
-              A: 0.7
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-          }
-        }
-      }
-      Objects {
         Id: 1231680861961014253
         Name: "BannerText"
         Transform {
@@ -5459,6 +5401,7 @@
           }
         }
         ParentId: 6938806808515334070
+        ChildIds: 1332928777154509514
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -5468,8 +5411,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 1000
-          Height: 100
+          Width: 1048
+          Height: 149
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -5500,6 +5443,64 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1332928777154509514
+        Name: "Background"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1231680861961014253
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 277
+          Height: 292
+          UIX: -16.3377075
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 6546564769032812656
+            }
+            Color {
+              A: 0.7
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
               }
             }
           }
@@ -7899,7 +7900,7 @@
             }
           }
           CooldownPhaseSettings {
-            Duration: 1
+            Duration: 2
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -8423,7 +8424,7 @@
             }
           }
           CooldownPhaseSettings {
-            Duration: 1
+            Duration: 2
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -8633,6 +8634,7 @@
         Name: "Hitbox Trigger"
         Transform {
           Location {
+            X: 49.5048828
           }
           Rotation {
           }
@@ -8786,7 +8788,7 @@
             }
           }
           CooldownPhaseSettings {
-            Duration: 0.42
+            Duration: 2
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -14876,7 +14878,7 @@
             }
           }
           CooldownPhaseSettings {
-            Duration: 0.42
+            Duration: 2
             CanMove: true
             CanJump: true
             CanRotate: true

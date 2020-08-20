@@ -33,6 +33,7 @@ Objects {
   ChildIds: 95063269926583494
   ChildIds: 667785931137269612
   ChildIds: 6852619860089889278
+  ChildIds: 2425013157095956415
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -42,6 +43,60 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 2425013157095956415
+  Name: "NPC - Elemental Stone"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1939958283205148907
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Stone Golem"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6323.29932
+            Y: 7548.51465
+            Z: 713.664734
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 154.499237
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7575108588622764046
+      value {
+        Overrides {
+          Name: "cs:DamageToPlayers"
+          Int: 2
+        }
+        Overrides {
+          Name: "cs:DamageToNPCs"
+          Float: 2
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4169155542159782108
+    }
   }
 }
 Objects {
@@ -89,7 +144,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "NPC - Dragon"
+          String: "Dragon2"
         }
         Overrides {
           Name: "Position"
@@ -111,7 +166,7 @@ Objects {
         }
         Overrides {
           Name: "cs:AttackRange"
-          Float: 500
+          Float: 1500
         }
         Overrides {
           Name: "cs:RewardResourceAmount"
@@ -173,7 +228,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "NPC - Dragon"
+          String: "Dragon1"
         }
         Overrides {
           Name: "Position"
@@ -1950,7 +2005,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "NPC - Dragon"
+          String: "Dragon3"
         }
         Overrides {
           Name: "Position"
@@ -2024,53 +2079,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 4670336455031416361
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 49.5048828
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11565376606417898045
-      value {
-        Overrides {
-          Name: "CooldownDuration"
-          Float: 2
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11686175438066764393
-      value {
-        Overrides {
-          Name: "CooldownDuration"
-          Float: 2
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 12115784424688766176
-      value {
-        Overrides {
-          Name: "CooldownDuration"
-          Float: 2
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 14681176208787896824
-      value {
-        Overrides {
-          Name: "CooldownDuration"
-          Float: 2
         }
       }
     }
@@ -60368,6 +60376,8 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 1724131684757171169
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -60386,6 +60396,34 @@ Objects {
       Volume: 1
       Falloff: 3600
       Radius: 400
+    }
+  }
+}
+Objects {
+  Id: 1724131684757171169
+  Name: "MusicStopIfCombat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14446186405140101612
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 922085404931725910
     }
   }
 }

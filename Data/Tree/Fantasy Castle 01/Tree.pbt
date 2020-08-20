@@ -181,6 +181,33 @@ Objects {
         TemplateId: 15728781663253921388
       }
     }
+    Overrides {
+      Name: "cs:Monster2"
+      ObjectReference {
+        SelfId: 15173010542605883524
+        SubObjectId: 18005923331114773312
+        InstanceId: 667785931137269612
+        TemplateId: 15728781663253921388
+      }
+    }
+    Overrides {
+      Name: "cs:Monster3"
+      ObjectReference {
+        SelfId: 4940451130289868340
+        SubObjectId: 18005923331114773312
+        InstanceId: 6852619860089889278
+        TemplateId: 15728781663253921388
+      }
+    }
+    Overrides {
+      Name: "cs:Monster4"
+      ObjectReference {
+        SelfId: 2789490104985608309
+        SubObjectId: 1939958283205148907
+        InstanceId: 2425013157095956415
+        TemplateId: 4169155542159782108
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

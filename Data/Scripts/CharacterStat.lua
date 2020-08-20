@@ -388,12 +388,15 @@ function endCombat()
     local trigger=currentCombatZone:FindDescendantByName("Trigger")
     trigger.collision = Collision.FORCE_OFF
     Events.BroadcastToAllPlayers("BannerMessage","VICTORY")
-
+    World.SpawnAsset("FD164BFF518BE6C4:CombatMusic",{position=trigger:GetWorldPosition()})
+    
 end
 
 function startCombat(player,combatZone)
     
     if playersAreInCombat == false then
+        World.SpawnAsset("33BAD3FDD0A36E94:CombatMusic",{position=player:GetWorldPosition()})
+        Events.BroadcastToAllPlayers("BannerMessage","COMBAT IS STARTING (Ability Check for Initiative)")
         initiativecombat={}
         combatOrder={}
         print(" "..combatZone)
@@ -495,7 +498,7 @@ function newTurn()
     Task.Wait(0.5)
     currentTurn=currentTurn+1
     freezePlayers()
-    
+    Events.BroadcastToAllPlayers("BannerMessage","Round "..currentRound.." : Tour "..currentTurn)
     print("Round "..currentRound.." : Tour "..currentTurn)
     if currentPlayer ==nil then
         print("1er tour donc le joueur est nil")
@@ -505,6 +508,7 @@ function newTurn()
     if isPlayer(currentPlayer)~=nil then 
         currentPlayer=isPlayer(currentPlayer)
         print("1er joueur: "..currentPlayer.name)
+        Events.BroadcastToAllPlayers("BannerMessage",currentPlayer.name.." is playing")
         Task.Wait(1)
         Events.BroadcastToPlayer(currentPlayer,"BEGIN_TURN")
         currentPlayer.movementControlMode = MovementControlMode.VIEW_RELATIVE
@@ -514,6 +518,8 @@ function newTurn()
             end
     else
         currentPlayer=getCurrentPlayer()
+        
+        Events.BroadcastToAllPlayers("BannerMessage",currentPlayer.." is playing ")
         print("1er joueur(npc): "..currentPlayer)
         Events.Broadcast("BEGIN_TURN_NPC",currentPlayer)
         
@@ -523,6 +529,7 @@ function newTurn()
     end
    
 end
+
 function Tick(deltaTime)
 
 
@@ -600,6 +607,8 @@ function rollDice(player,max)
         end
     end
 end
+
+
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Events.Connect("END_TURN", OnEndTurn)
