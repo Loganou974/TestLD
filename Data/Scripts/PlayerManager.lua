@@ -26,10 +26,7 @@ function greetPlayersAsTheyJoin(player)
    
   
 end 
-
-function appuye(player,touche)     
-   print("touche "..touche)
-   if touche == "ability_extra_17" then
+function rollDice(player)
     local pos = player:GetWorldPosition()
     
     
@@ -37,6 +34,13 @@ function appuye(player,touche)
     pos.y=pos.y+5
     
     World.SpawnAsset("B1FC3DA40EE45031:Dice20", {position = pos})
+end
+function appuye(player,touche)     
+   print("touche "..touche)
+   if touche == "ability_extra_17" then
+        if player:GetResource("dice")==1 then
+            rollDice(player)
+        end
    end
     if touche == "ability_extra_27" then
         showCharacterPanel=not showCharacterPanel

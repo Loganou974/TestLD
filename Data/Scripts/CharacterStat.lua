@@ -1,5 +1,5 @@
 ﻿local currentTurn=0;
-local playersInCombat=false
+local playersAreInCombat=false
 local races={
     {name ="Dwarf",bonus={0,0,0,2,0,0,0},speed=25},
     {name ="Hill Dwarf",bonus={0,0,0,2,1,0,0},speed=25},
@@ -36,10 +36,16 @@ local classes={
 
 
 }
+local currentRound=0
+local initiativeCombat={}
+local combatOrder={}
 local players={}
 local currentPlayer=nil
 local currentPlayerIndex=1
-
+local phasePrecombat=false
+local numberOfRolls=0
+local playersInCombat={}
+local initiativeCombatLength=0
 --local races={dwarf={0,0,0,2,0,0,0},hill_dwarf={0,0,0,2,1,0,0},mountain_dwarf={2,0,0,2,0,0,0},elf={0,0,2,0,0,0,0},
 --high_elf={0,1,2,0,0,0,0},wood_elf={0,0,2,0,1,0,0},half_orc={2,0,0,1,0,0,0},halfling={0,0,2,0,0,0,0},
 --lightfoot={0,0,2,0,0,1,0},stout_halfing={0,0,2,1,0,0,0},human={1,1,1,1,1,1,0},dragonborn={2,0,0,0,0,1,0},
@@ -297,70 +303,168 @@ function OnPlayerJoined(player)
     
   
 end
-function startCombat(player,combatZone)
-    print(" "..combatZone)
-    local obj=World.FindObjectById(combatZone)
-    local cZ=obj:FindDescendantByName("CombatZone");
-    local mobs={}
-    local maxMob=cZ:GetCustomProperty("NombreMonstre")
-    for i= 1,maxMob do
-        local mobTemp=cZ:GetCustomProperty("Monster"..i):WaitForObject()
-        mobs[#mobs+1]=mobTemp
+function spairs(t, order)
+    -- collect the keys
+    local keys = {}
+    for k in pairs(t) do keys[#keys+1] = k end
+
+    -- if order function given, sort by it by passing the table and keys a, b,
+    -- otherwise just sort the keys 
+    if order then
+        table.sort(keys, function(a,b) return order(t, a, b) end)
+    else
+        table.sort(keys)
     end
-    
-    print(" Mob trouve: "..#mobs)
-     Events.Broadcast("BEGIN_TURN_NPC","9FCF9C324FACE84B:NPC - Dragon")
-    if playersInCombat == false then
+
+    -- return the iterator function
+    local i = 0
+    return function()
+        i = i + 1
+        if keys[i] then
+            return keys[i], t[keys[i]]
+        end
+    end
+end
+function startRound1()
+    currentRound=1
+    print("AVANT TRI")
+    for k,v in pairs(initiativeCombat) do
+        print("initiative "..k.."= "..v)
+       -- combatOrder[#combatOrder+1]=k
+    end
+   -- table.sort(initiativeCombat)
+    for k,v in spairs(initiativeCombat, function(t,a,b) return t[b] < t[a] end) do
+        combatOrder[#combatOrder+1]=k
+    end
+    print("APRES TRI")
+    for i=1,#combatOrder  do
+        print("initiative "..i.."= "..combatOrder[i])
        
-        playersInCombat=true
-        print("starting combat "..combatZone)
-        players=Game:GetPlayers()
-        for i,p in ipairs(players) do
-            p:SetResource("incombat",1)
+    end
+    if currentTurn == 0 then
+           newTurn()
+     end
+end
+
+function startCombat(player,combatZone)
+    
+    if playersAreInCombat == false then
+        initiativecombat={}
+        combatOrder={}
+        print(" "..combatZone)
+        local obj=World.FindObjectById(combatZone)
+        local cZ=obj:FindDescendantByName("CombatZone");
+        local mobs={}
+        local maxMob=cZ:GetCustomProperty("NombreMonstre")
+        for i= 1,maxMob do
+            local mobTemp=cZ:GetCustomProperty("Monster"..i):WaitForObject()
+            mobs[#mobs+1]=mobTemp
+            local nom=mobTemp.name..""..i
+            local r=math.random(20)
+            initiativeCombat[nom]=r
+            print("Tour "..currentTurn..":"..nom.." initiative="..initiativeCombat[nom].." ")
+            initiativeCombatLength=initiativeCombatLength+1
         end
         
-        if currentTurn == 0 then
-            newTurn()
+        print(" Mob trouve: "..#mobs.." ")
+         Events.Broadcast("BEGIN_TURN_NPC","9FCF9C324FACE84B:NPC - Dragon")
+        playersAreInCombat=true
+        print("starting combat "..combatZone)
+        playersInCombat=Game:GetPlayers()
+       
+        for i,p in ipairs(playersInCombat) do
+            p:SetResource("incombat",1)
+            p:SetResource("Dice",1)
+            
         end
+        freezePlayers()
+        phasePrecombat=true
+        print("starting initiative phase "..#initiativeCombat)
+       -- if currentTurn == 0 then
+         --   newTurn()
+       -- end
+    end
+end
+
+function freezePlayers()
+    for i,p in ipairs(playersInCombat) do
+        p.movementControlMode = MovementControlMode.NONE
+     abilities=p:GetAbilities()
+     for i,a in ipairs(abilities) do
+            a.isEnabled=false
+     end
     end
 end
 
 function getCurrentPlayer()
-    
-    return players[currentPlayerIndex]
+    --local temp=players[currentPlayerIndex]
+    --local temp2=initiativeCombat[temp.name]
+   -- print("Tour "..currentTurn..":"..currentPlayerIndex.." "..temp.name.." initiative="..temp2)
+    --return players[currentPlayerIndex]
+    local temp=combatOrder[currentPlayerIndex]
+
+    return temp
 end
 
 function getNextPlayer()
-    currentPlayerIndex=currentPlayerIndex+1
-    currentPlayerIndex=currentPlayerIndex%#players
-    print(currentPlayerIndex)
-    return players[currentPlayerIndex+1]
+    --currentPlayerIndex=currentPlayerIndex+1
+   -- currentPlayerIndex=currentPlayerIndex%#players
+    --local temp=players[currentPlayerIndex+1]
+   -- local temp2=initiativeCombat[temp.name]
+   -- print("Tour "..currentTurn..":"..currentPlayerIndex.." "..temp.name.." initiative="..temp2)
+   -- return players[currentPlayerIndex+1]
+
+   currentPlayerIndex=currentPlayerIndex+1
+   print("il y a "..#combatOrder.." participants , c'est le "..currentPlayerIndex.."eme")
+   if currentPlayerIndex > #combatOrder then
+    print("pas bon")
+    return nil
+   else 
+
+    local temp=combatOrder[currentPlayerIndex]
+    print("bon "..temp)
+    return temp
+   end
 end
 
+function isPlayer(p)
+    for i,p1 in ipairs(playersInCombat) do
+       if p == p1.name then
+        return p1
+       end
+    end
+    return nil
+end
 
 function newTurn()
     currentTurn=currentTurn+1
-    for i,p in ipairs(players) do
-        p.movementControlMode = MovementControlMode.NONE
-        abilities=p:GetAbilities()
-        for i,a in ipairs(abilities) do
-            a.isEnabled=false
-        end
-    end
+    freezePlayers()
+    
+    print("Round "..currentRound.." : Tour "..currentTurn)
     if currentPlayer ==nil then
+        print("1er tour donc le joueur est nil")
         currentPlayer=getCurrentPlayer()
-        print("1er joueur: "..currentPlayer.name)
-        if currentPlayer == nill then
-            return
-        end
+       
     end 
-    Task.Wait(1)
-    Events.BroadcastToPlayer(currentPlayer,"BEGIN_TURN")
-    currentPlayer.movementControlMode = MovementControlMode.VIEW_RELATIVE
-    abilities=currentPlayer:GetAbilities()
-        for i,a in ipairs(abilities) do
-            a.isEnabled=true
-        end
+    if isPlayer(currentPlayer)~=nil then 
+        currentPlayer=isPlayer(currentPlayer)
+        print("1er joueur: "..currentPlayer.name)
+        Task.Wait(1)
+        Events.BroadcastToPlayer(currentPlayer,"BEGIN_TURN")
+        currentPlayer.movementControlMode = MovementControlMode.VIEW_RELATIVE
+        abilities=currentPlayer:GetAbilities()
+            for i,a in ipairs(abilities) do
+                a.isEnabled=true
+            end
+    else
+        currentPlayer=getCurrentPlayer()
+        print("1er joueur(npc): "..currentPlayer)
+        OnEndTurn()
+    end
+    if currentPlayer == nill then
+        return
+    end
+   
 end
 function Tick(deltaTime)
 
@@ -371,9 +475,28 @@ function OnPlayerLeft(player)
     players= Game.GetPlayers({ignorePlayers = {player}})
 end
 
+function UpdateBuffEtDebuff()
+    print("mise à jour buff et debuff")
+end
+function newRound()
+    
+    currentRound=currentRound+1
+    currentPlayerIndex=1
+    print("Round "..currentRound)
+    currentTurn=0
+    currentPlayer=nil
+    UpdateBuffEtDebuff()
+    Task.Wait(0.5)
+    newTurn()
+
+end
 function OnEndTurn(player)
     currentPlayer=getNextPlayer()
-    newTurn()
+    if currentPlayer~=nil then
+        newTurn()
+    else
+        newRound()
+    end
 end
 
 function OnMoveEnd(player)
@@ -406,9 +529,18 @@ end
 function rollDice(player,max)
     local rand=math.random(max)
     print("rolled an "..rand)
+    player:RemoveResource("dice",1)
     Events.BroadcastToAllPlayers("BannerMessage",player.name.." rolled an "..rand)
     
     player:SetResource("lastDiceNumber",rand)
+    if phasePrecombat == true then
+        numberOfRolls=numberOfRolls+1
+        initiativeCombat[player.name]=rand
+        initiativeCombatLength=initiativeCombatLength+1
+        if numberOfRolls >= #playersInCombat then
+            startRound1()
+        end
+    end
 end
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
