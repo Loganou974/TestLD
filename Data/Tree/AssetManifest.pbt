@@ -134,6 +134,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15652885493461987378
+  Name: "Basic Outline"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_outline_basic"
+  }
+}
+Assets {
   Id: 15428440762118074425
   Name: "Tree Redwood Big"
   PlatformAssetType: 1
@@ -395,6 +404,24 @@ Assets {
   }
 }
 Assets {
+  Id: 10044739311796676125
+  Name: "Cube - Arcade 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arcade_cube_004"
+  }
+}
+Assets {
+  Id: 10038645387392242274
+  Name: "Gem - Baguette Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gem_baguette_polished_001"
+  }
+}
+Assets {
   Id: 9878522258424650908
   Name: "Prism - 8-Sided Half"
   PlatformAssetType: 1
@@ -437,6 +464,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_006"
+  }
+}
+Assets {
+  Id: 8869908880399307840
+  Name: "Plastic Shiny"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_shiny_001"
   }
 }
 Assets {
@@ -509,6 +545,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_ambience_lava_flow_bubbling_loop_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 7029896343613434651
+  Name: "Cube - Arcade 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arcade_cube_001"
   }
 }
 Assets {
@@ -647,6 +692,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4582432212358051342
+  Name: "Cube - Arcade 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arcade_cube_002"
+  }
+}
+Assets {
   Id: 4281380979366999084
   Name: "Hatchet - Blade"
   PlatformAssetType: 1
@@ -692,6 +746,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3702191406046426907
+  Name: "Emissive Glow Transparent"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_emissive_001"
+  }
+}
+Assets {
   Id: 3695433368401703039
   Name: "Cauldron"
   PlatformAssetType: 1
@@ -707,6 +770,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_029"
+  }
+}
+Assets {
+  Id: 3113229458066238046
+  Name: "Fantasy Castle Stairs 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_001"
   }
 }
 Assets {
@@ -815,6 +887,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_terrain_concrete-moss_001_wa"
+  }
+}
+Assets {
+  Id: 1349656547455038157
+  Name: "Cube - Arcade 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arcade_cube_003"
   }
 }
 Assets {
