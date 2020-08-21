@@ -458,6 +458,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9351166523143381915
+  Name: "Line Half 004a"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "LineHalf_004a"
+  }
+}
+Assets {
   Id: 9299671629886979862
   Name: "Rock Block 01"
   PlatformAssetType: 1
@@ -698,6 +707,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_arcade_cube_002"
+  }
+}
+Assets {
+  Id: 4357578890393849644
+  Name: "Frame Beveled 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px_020"
   }
 }
 Assets {

@@ -177,7 +177,10 @@ function SetState(newState)
 	end
 end
 
-
+function print(message)
+    
+    Events.Broadcast("addSystemCombatTexte",message,true)
+end
 function Tack(deltaTime)
 	stateTime = stateTime + deltaTime
 	logicStepDelay = logicStepDelay - deltaTime

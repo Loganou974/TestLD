@@ -15,7 +15,7 @@ function OnEndOverlap(whichTrigger, other)
 		Task.Spawn(function ()
 
 			local inst=script.parent.parent:Destroy()
-		end, 3)
+		end, 4)
 	end
 end
 

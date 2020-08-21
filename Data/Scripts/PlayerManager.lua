@@ -13,6 +13,7 @@ local propClassText = script:GetCustomProperty("ClassText"):WaitForObject()
 local propClassText_0 = script:GetCustomProperty("ClassText_0"):WaitForObject()
 
 
+
 local showCharacterPanel=false
 local statpoint=0;
 local me=nil
@@ -37,12 +38,20 @@ function rollDice(player)
     World.SpawnAsset("B1FC3DA40EE45031:Dice20", {position = pos})
 end
 canRoll=true
+function print(message)
+    
+    Events.Broadcast("addSystemCombatTexte",message,true)
+end
 function appuye(player,touche)     
    --print("touche "..touche)
+   
+   if touche =="ability_extra_14" then
+      UI.SetCursorVisible(not UI.IsCursorVisible())
+   end
    if touche == "ability_extra_17" then
         
         print(player.name.." want to roll a dice, he has "..player:GetResource("dice").." local has "..me:GetResource("dice"))
-        if player:GetResource("dice")==1 and canRoll then
+        if player:GetResource("dice")>0 and canRoll then
             canRoll=false
             Task.Spawn(function() canRoll=true end,3)
             rollDice(player)
@@ -146,6 +155,7 @@ function OnPlayerJoined(player)
     for _, ability in pairs(abilities) do
         print("abilite recu "..ability.name .." pour " .. me.name)
         ability.castEvent:Connect(OnCast)
+        ability.executeEvent:Connect(OnExecuteAbility)
     end
    
     player.bindingPressedEvent:Connect(appuye)

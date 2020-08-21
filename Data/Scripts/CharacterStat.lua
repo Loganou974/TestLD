@@ -1,4 +1,5 @@
 ﻿local propLastSpawn = script:GetCustomProperty("LastSpawn")
+local debug=true
 local currentTurn=0;
 local playersAreInCombat=false
 local currentCombatZone=nil
@@ -61,10 +62,10 @@ end
 
 function savePlayerData(player,playerData)
     Storage.SetPlayerData(player, playerData)
-    print("player "..player.name.." "..player:GetResource("STR"))
+    addDebugCombatTexte("player "..player.name.." "..player:GetResource("STR"),debug)
     Events.BroadcastToPlayer(player,"STAT_REFRESH",playerData.race.name,playerData.class.name)
     --Events.BroadcastToPlayer(player,"STATPOINT_REFRESH",playerData.statPoint,)
-    
+   
     
 end
 
@@ -76,7 +77,7 @@ function OnStrUp(player)
     if player:GetResource("statpoint") <= 0 then
         return
     end
-    print("str up")
+    addDebugCombatTexte("str up",debug)
     player:AddResource("STR",1)
     player:RemoveResource("statpoint",1)
     savePlayerData(player,playerData)
@@ -84,7 +85,7 @@ function OnStrUp(player)
 end
 
 function OnStrDown(player)
-    print("str down")
+    addDebugCombatTexte("str down",debug)
      
     playerData=loadPlayerData(player)
 
@@ -97,7 +98,7 @@ function OnStrDown(player)
 end
 
 function OnDexUp(player)
-    print("dex up")
+    addDebugCombatTexte("dex up",debug)
     playerData=loadPlayerData(player)
 
     if player:GetResource("statpoint") <= 0 then
@@ -110,7 +111,7 @@ function OnDexUp(player)
 end
 
 function OnDexDown(player)
-    print("dex down")
+    addDebugCombatTexte("dex down",debug)
     playerData=loadPlayerData(player)
 
    
@@ -123,7 +124,7 @@ end
 
 
 function OnConUp(player)
-    print("con up")
+    addDebugCombatTexte("con up")
     playerData=loadPlayerData(player)
 
     if player:GetResource("statpoint") <= 0 then
@@ -136,7 +137,7 @@ function OnConUp(player)
 end
 
 function OnConDown(player)
-    print("con down")
+    addDebugCombatTexte("con down",debug)
     playerData=loadPlayerData(player)
 
    
@@ -148,7 +149,7 @@ function OnConDown(player)
 end
 
 function OnIntUp(player)
-    print("int up")
+    addDebugCombatTexte("int up",debug)
     playerData=loadPlayerData(player)
 
     if player:GetResource("statpoint") <= 0 then
@@ -161,7 +162,7 @@ function OnIntUp(player)
 end
 
 function OnIntDown(player)
-    print("int down")
+    addDebugCombatTexte("int down",debug)
     playerData=loadPlayerData(player)
 
    
@@ -173,7 +174,7 @@ function OnIntDown(player)
 end
 
 function OnWisUp(player)
-    print("wis up")
+    addDebugCombatTexte("wis up",debug)
     playerData=loadPlayerData(player)
 
     if player:GetResource("statpoint") <= 0 then
@@ -185,7 +186,7 @@ function OnWisUp(player)
 end
 
 function OnWisDown(player)
-    print("wis down")
+    addDebugCombatTexte("wis down",debug)
     playerData=loadPlayerData(player)
 
     
@@ -197,7 +198,7 @@ function OnWisDown(player)
 end
 
 function OnCharUp(player)
-    print("char up")
+    addDebugCombatTexte("char up",debug)
     playerData=loadPlayerData(player)
 
     if player:GetResource("statpoint") <= 0 then
@@ -210,7 +211,7 @@ function OnCharUp(player)
 end
 
 function OnCharDown(player)
-    print("char down")
+    addDebugCombatTexte("char down",debug)
     playerData=loadPlayerData(player)
 
   
@@ -228,11 +229,11 @@ function OnStatpointGained(player,stat)
 end
 
 function GetStat(player)
-    print("get stat for "..player.name)
+    addDebugCombatTexte("get stat for "..player.name,debug)
     playerData=loadPlayerData(player)
     player:ClearResources()
     if player:GetResource("STR") == nil or player:GetResource("STR") == 0  then
-        print("first time char")
+        addDebugCombatTexte("first time char",debug)
 		playerData.race=races[math.random(#races)]
         playerData.class=  {name="Novice",hit=1}
         player.maxHitPoints = playerData.class.hit;
@@ -250,7 +251,7 @@ function GetStat(player)
         player:GetResource("actionMax",1)
        
     else
-        print("charac " .. player:GetResource("STR"))
+        addDebugCombatTexte("charac " .. player:GetResource("STR"))
     end
  
     
@@ -261,7 +262,7 @@ function GetStat(player)
    end
 
 function OnDamagedPlayer(player,damage)
-    -- print("Player " .. player.name .. " just took " .. damage.amount .. " damage!")
+    -- addDebugCombatTexte("Player " .. player.name .. " just took " .. damage.amount .. " damage!")
 end
 
 function OnResourceChanged(player, resourceId, newValue)
@@ -297,25 +298,45 @@ Events.Connect("GETSTAT", GetStat)
 Events.Connect("GAINSTATPOINT", OnStatpointGained)
 local playerDiedInCombat={}
 function OnPlayerDied(player)
-    print("player "..player.name.." died")
+    addDebugCombatTexte("player "..player.name.." died")
     if playersAreInCombat then
-        print("and was in combat")
+        addDebugCombatTexte("and was in combat")
         playerDiedInCombat[#playerDiedInCombat+1]=player
 
         if #playerDiedInCombat >= #playersInCombat then
-            print("and was the last one should be gameover")
+            addDebugCombatTexte("and was the last one should be gameover")
             endCombat(false)
         end
     end
 end
 function OnPlayerJoined(player)
     player:SetResource("incombat",0)
-    Events.BroadcastToAllPlayers("SubBannerMessage",player.name.." is ready to play some adventures")
+    player:SetResource("dice",10)
+    --Events.BroadcastToAllPlayers("SubBannerMessage",player.name.." is ready to play some adventures")
+    addSystemCombatTexte(player.name.." is ready to play some adventures")
     players= Game.GetPlayers()
     player.diedEvent:Connect(OnPlayerDied)
-    
+
     
   
+end
+function addSystemCombatTexte(message)
+    
+    Events.BroadcastToAllPlayers("addSystemCombatTexte",message)
+end
+function addDebugCombatTexte(message)
+    
+    Events.Broadcast("addSystemCombatTexte",message,debug)
+end
+function addFriendCombatTexte(source,message)
+    Events.BroadcastToAllPlayers("addSystemCombatTexte",source,message)
+end
+function addEnnemyCombatTexte(message)
+    Events.BroadcastToAllPlayers("addSystemCombatTexte",source,message)
+end
+
+function addTexte(message)
+    Events.BroadcastToAllPlayers("addTexte",message,Color.YELLOW)
 end
 function spairs(t, order)
     -- collect the keys
@@ -341,9 +362,9 @@ function spairs(t, order)
 end
 function startRound1()
     currentRound=1
-    print("AVANT TRI")
+    addDebugCombatTexte("AVANT TRI",debug)
     for k,v in pairs(initiativeCombat) do
-        print("initiative "..k.."= "..v)
+        addDebugCombatTexte("initiative "..k.."= "..v,debug)
        -- combatOrder[#combatOrder+1]=k
     end
    -- table.sort(initiativeCombat)
@@ -351,9 +372,9 @@ function startRound1()
         Events.BroadcastToAllPlayers("SubBannerMessage",#combatOrder.." to play is "..k,5,Color.FromStandardHex("#FF0000"))
         combatOrder[#combatOrder+1]=k
     end
-    print("APRES TRI")
+    addDebugCombatTexte("APRES TRI")
     for i=1,#combatOrder  do
-        print("initiative "..i.."= "..combatOrder[i])
+        addDebugCombatTexte("initiative "..i.."= "..combatOrder[i],debug)
        
     end
     if currentTurn == 0 then
@@ -362,7 +383,7 @@ function startRound1()
 end
 function npcDied(idCible)
 
-    print(idCible.." est mort cela mets il fin au combat? "..initiativeCombatLength)
+    addSystemCombatTexte(idCible.." est mort cela mets il fin au combat? "..initiativeCombatLength)
     local tempInit={}
     tempLength=0
     for id,i in pairs(initiativeCombat)  do
@@ -372,7 +393,7 @@ function npcDied(idCible)
         end
        
     end
-    print("il rest"..tempLength.." et "..#playersInCombat.." joueurs")
+    addDebugCombatTexte("il rest"..tempLength.." et "..#playersInCombat.." joueurs",debug)
     
     initiativeCombat=tempInit
     initiativeCombatLength=tempLength
@@ -383,9 +404,9 @@ function npcDied(idCible)
         for k,v in spairs(initiativeCombat, function(t,a,b) return t[b] < t[a] end) do
             combatOrder[#combatOrder+1]=k
         end
-        print("APRES TRI")
+        addDebugCombatTexte("APRES TRI",debug)
         for i=1,#combatOrder  do
-            print("initiative "..i.."= "..combatOrder[i])
+            addDebugCombatTexte("initiative "..i.."= "..combatOrder[i],debug)
         
         end
     end
@@ -429,7 +450,7 @@ function startCombat(player,combatZone)
         Events.BroadcastToAllPlayers("BigBannerMessage","COMBAT IS STARTING \n(Ability Check for Initiative)",3,Color.FromStandardHex("#FFFFFF"))
         initiativecombat={}
         combatOrder={}
-        print(" "..combatZone)
+        addDebugCombatTexte(" "..combatZone,debug)
         currentCombatZone=World.FindObjectById(combatZone)
         local cZ=currentCombatZone:FindDescendantByName("CombatZone");
         local mobs={}
@@ -440,15 +461,16 @@ function startCombat(player,combatZone)
             local id=mobTemp.id
             local r=math.random(20)
             initiativeCombat[id]=r
-            print("Tour "..currentTurn..":"..id.." initiative="..initiativeCombat[id].." ")
-            Events.BroadcastToAllPlayers("BigBannerMessage",id.." rolled an "..r,3,Color.FromStandardHex("#FFFFFF"))
+            addDebugCombatTexte("Tour "..currentTurn..":"..id.." initiative="..initiativeCombat[id].." ",debug)
+            --Events.BroadcastToAllPlayers("BigBannerMessage",id.." rolled an "..r,3,Color.FromStandardHex("#FFFFFF"))
+            Events.BroadcastToAllPlayers("addSystemCombatTexte",id.." rolled an "..r)
             initiativeCombatLength=initiativeCombatLength+1
         end
         
-        print(" Mob trouve: "..#mobs.." ")
+        addDebugCombatTexte(" Mob trouve: "..#mobs.." ",debug)
          
         playersAreInCombat=true
-        print("starting combat "..combatZone)
+        addDebugCombatTexte("starting combat "..combatZone,debug)
         playersInCombat=Game:GetPlayers()
        
         for i,p in ipairs(playersInCombat) do
@@ -458,7 +480,7 @@ function startCombat(player,combatZone)
         end
         freezePlayers()
         phasePrecombat=true
-        print("starting initiative phase "..#initiativeCombat)
+        addDebugCombatTexte("starting initiative phase "..#initiativeCombat,debug)
        -- if currentTurn == 0 then
          --   newTurn()
        -- end
@@ -488,7 +510,7 @@ end
 function getCurrentPlayer()
     --local temp=players[currentPlayerIndex]
     --local temp2=initiativeCombat[temp.name]
-   -- print("Tour "..currentTurn..":"..currentPlayerIndex.." "..temp.name.." initiative="..temp2)
+   -- addDebugCombatTexte("Tour "..currentTurn..":"..currentPlayerIndex.." "..temp.name.." initiative="..temp2)
     --return players[currentPlayerIndex]
     local temp=combatOrder[currentPlayerIndex]
 
@@ -500,18 +522,18 @@ function getNextPlayer()
    -- currentPlayerIndex=currentPlayerIndex%#players
     --local temp=players[currentPlayerIndex+1]
    -- local temp2=initiativeCombat[temp.name]
-   -- print("Tour "..currentTurn..":"..currentPlayerIndex.." "..temp.name.." initiative="..temp2)
+   -- addDebugCombatTexte("Tour "..currentTurn..":"..currentPlayerIndex.." "..temp.name.." initiative="..temp2)
    -- return players[currentPlayerIndex+1]
 
    currentPlayerIndex=currentPlayerIndex+1
-   print("il y a "..#combatOrder.." participants , c'est le "..currentPlayerIndex.."eme")
+   addDebugCombatTexte("il y a "..#combatOrder.." participants , c'est le "..currentPlayerIndex.."eme",debug)
    if currentPlayerIndex > #combatOrder then
-    print("pas bon")
+    addDebugCombatTexte("pas bon",debug)
     return nil
    else 
 
     local temp=combatOrder[currentPlayerIndex]
-    print("bon "..temp)
+    addDebugCombatTexte("bon "..temp,debug)
     return temp
    end
 end
@@ -529,17 +551,18 @@ function newTurn()
     Task.Wait(0.5)
     currentTurn=currentTurn+1
     freezePlayers()
-    Events.BroadcastToAllPlayers("BannerMessage","Round "..currentRound.." : Tour "..currentTurn)
-    print("Round "..currentRound.." : Tour "..currentTurn)
+    --Events.BroadcastToAllPlayers("BannerMessage","Round "..currentRound.." : Tour "..currentTurn)
+    addDebugCombatTexte("Round "..currentRound.." : Tour "..currentTurn,debug)
     if currentPlayer ==nil then
-        print("1er tour donc le joueur est nil")
+        addDebugCombatTexte("1er tour donc le joueur est nil",debug)
         currentPlayer=getCurrentPlayer()
        
     end 
     if isPlayer(currentPlayer)~=nil then 
         currentPlayer=isPlayer(currentPlayer)
-        print("1er joueur: "..currentPlayer.name)
-        Events.BroadcastToAllPlayers("BannerMessage",currentPlayer.name.." is playing")
+        addDebugCombatTexte("1er joueur: "..currentPlayer.name,debug)
+        --Events.BroadcastToAllPlayers("BannerMessage",currentPlayer.name.." is playing")
+        
         
         Events.BroadcastToPlayer(currentPlayer,"BEGIN_TURN")
         currentPlayer.movementControlMode = MovementControlMode.VIEW_RELATIVE
@@ -551,7 +574,7 @@ function newTurn()
         currentPlayer=getCurrentPlayer()
         
         Events.BroadcastToAllPlayers("BannerMessage",currentPlayer.." is playing ")
-        print("1er joueur(npc): "..currentPlayer)
+        addDebugCombatTexte("1er joueur(npc): "..currentPlayer,debug)
         Events.Broadcast("BEGIN_TURN_NPC",currentPlayer)
         
     end
@@ -571,13 +594,13 @@ function OnPlayerLeft(player)
 end
 
 function UpdateBuffEtDebuff()
-    print("mise à jour buff et debuff")
+    addDebugCombatTexte("mise à jour buff et debuff",debug)
 end
 function newRound()
     
     currentRound=currentRound+1
     currentPlayerIndex=1
-    print("Round "..currentRound)
+    addDebugCombatTexte("Round "..currentRound,debug)
     currentTurn=0
     currentPlayer=nil
     UpdateBuffEtDebuff()
@@ -625,9 +648,9 @@ function rollDice(player,max)
     local rand=math.random(max)
  
     player:RemoveResource("dice",1)
-    print("rolled an "..rand.." reste "..player:GetResource("dice").." des")
-    Events.BroadcastToAllPlayers("BigBannerMessage",player.name.." rolled an "..rand,3,Color.FromStandardHex("#FFFFFF"))
-    
+    addDebugCombatTexte("rolled an "..rand.." reste "..player:GetResource("dice").." des",debug)
+    --Events.BroadcastToAllPlayers("BigBannerMessage",player.name.." rolled an "..rand,3,Color.FromStandardHex("#FFFFFF"))
+    addTexte(player.name.." rolled an "..rand)
     player:SetResource("lastDiceNumber",rand)
     if phasePrecombat == true then
         numberOfRolls=numberOfRolls+1
