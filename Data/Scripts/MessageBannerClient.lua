@@ -65,7 +65,7 @@ function OnBannerMessageEvent(message, duration)
 end
 
 function OnSubBannerMessage(message, duration, color)
-    print("subbanner")
+ 
     table.insert(localMessageBanners, {
         message = message,
         duration = duration,
@@ -74,7 +74,7 @@ function OnSubBannerMessage(message, duration, color)
 end
 
 function OnBigBannerMessage(message, duration, color)
-    print("bigbanner")
+  
     if duration == -1 then
         localMessageBanners={}
         table.insert(localMessageBanners, {

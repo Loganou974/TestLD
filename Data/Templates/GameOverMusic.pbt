@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 7094331616752268960
-  Name: "CombatMusicVictory"
+  Id: 11503711537377718787
+  Name: "GameOverMusic"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 11439033012042233813
+      RootId: 9191132095655341072
       Objects {
-        Id: 11439033012042233813
-        Name: "CombatMusicVictory"
+        Id: 9191132095655341072
+        Name: "GameOverMusic"
         Transform {
           Scale {
             X: 1
@@ -16,31 +16,6 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 12478768703864470078
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 12478768703864470078
-        Name: "CombatMusicVictory"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 11439033012042233813
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -49,7 +24,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12908755158799827496
+            Id: 3947460492128287431
           }
           TeamSettings {
           }
@@ -66,12 +41,12 @@
       }
     }
     Assets {
-      Id: 12908755158799827496
-      Name: "Orchestral Adventurous Victory Fanfare Music Stinger Set 01"
+      Id: 3947460492128287431
+      Name: "Evil Failure Low Brass Music Loop/Stinger Kit 01 "
       PlatformAssetType: 10
       PrimaryAsset {
         AssetType: "AudioBlueprintAssetRef"
-        AssetId: "abp_stinger_orchestral_adventourus_victory_fanfare_01_ref"
+        AssetId: "abp_Evil_Failure_Low_Horn_stinger_kit_01_ref"
       }
     }
     PrimaryAssetId {

@@ -230,8 +230,10 @@ end
 
 function GetStat(player)
     addDebugCombatTexte("get stat for "..player.name,debug)
+
     playerData=loadPlayerData(player)
-    player:ClearResources()
+    player:SetResource("SPEED",playerData.race.speed)
+   
     if player:GetResource("STR") == nil or player:GetResource("STR") == 0  then
         addDebugCombatTexte("first time char",debug)
 		playerData.race=races[math.random(#races)]
@@ -248,7 +250,7 @@ function GetStat(player)
         player:SetResource("GOLD",0)
         player:SetResource("GOLD",0)
         player:SetResource("SPEED",playerData.race.speed)
-        player:GetResource("actionMax",1)
+        player:SetResource("actionMax",1)
        
     else
         addDebugCombatTexte("charac " .. player:GetResource("STR"))
@@ -309,19 +311,31 @@ function OnPlayerDied(player)
         end
     end
 end
+local waitTime=5
 function OnPlayerJoined(player)
-    player:SetResource("incombat",0)
-    player:SetResource("dice",10)
+    
     --Events.BroadcastToAllPlayers("SubBannerMessage",player.name.." is ready to play some adventures")
-    addSystemCombatTexte(player.name.." is ready to play some adventures")
+    player:ClearResources()
+    player:SetResource("incombat",0)
+    GetStat(player)
     players= Game.GetPlayers()
+    print(#players.." "..player.name)
     player.diedEvent:Connect(OnPlayerDied)
+    addSystemCombatTexte(player.name.." is ready to play some adventures")
+    Events.BroadcastToPlayer(player,"BannerMessage","GameMaster: Hello "..player.name.."!")
+    Task.Wait(waitTime)
+    Events.BroadcastToPlayer(player,"BannerMessage","GameMaster: Glad to see you could make it to this dnd session")
+    Task.Wait(waitTime)
+    Events.BroadcastToPlayer(player,"BannerMessage","GameMaster: Here's 5 dices, roll them i will keep the best rolls")
+    Task.Wait(waitTime/2)
+    
+    player:AddResource("dice",5)
 
     
   
 end
 function addSystemCombatTexte(message)
-    
+    print("asct:"..message)
     Events.BroadcastToAllPlayers("addSystemCombatTexte",message)
 end
 function addDebugCombatTexte(message)
@@ -369,7 +383,7 @@ function startRound1()
     end
    -- table.sort(initiativeCombat)
     for k,v in spairs(initiativeCombat, function(t,a,b) return t[b] < t[a] end) do
-        Events.BroadcastToAllPlayers("SubBannerMessage",#combatOrder.." to play is "..k,5,Color.FromStandardHex("#FF0000"))
+        --Events.BroadcastToAllPlayers("SubBannerMessage",#combatOrder.." to play is "..k,5,Color.FromStandardHex("#FF0000"))
         combatOrder[#combatOrder+1]=k
     end
     addDebugCombatTexte("APRES TRI")
@@ -414,18 +428,19 @@ end
 
 function endCombat(victory)
     
-
+    Events.BroadcastToAllPlayers("END_COMBAT",victory)
     if victory then
+        
         for i,p in ipairs(playersInCombat) do
             p:SetResource("incombat",0)
-        
+            
             
         end
         unfreezePlayers()
         local trigger=currentCombatZone:FindDescendantByName("Trigger")
         trigger.collision = Collision.FORCE_OFF
         Events.BroadcastToAllPlayers("BannerMessage","VICTORY")
-        World.SpawnAsset("F3DAA777BED363EF:CombatMusicVictory",{position=trigger:GetWorldPosition()})
+       
     else 
         Events.BroadcastToAllPlayers("BigBannerMessage","GAME OVER",-1,Color.New(1,0,0))
         Task.Wait(2)
@@ -446,7 +461,7 @@ end
 function startCombat(player,combatZone)
     
     if playersAreInCombat == false then
-        World.SpawnAsset("33BAD3FDD0A36E94:CombatMusic",{position=player:GetWorldPosition()})
+       
         Events.BroadcastToAllPlayers("BigBannerMessage","COMBAT IS STARTING \n(Ability Check for Initiative)",3,Color.FromStandardHex("#FFFFFF"))
         initiativecombat={}
         combatOrder={}
@@ -474,6 +489,7 @@ function startCombat(player,combatZone)
         playersInCombat=Game:GetPlayers()
        
         for i,p in ipairs(playersInCombat) do
+            p:SetWorldPosition(player:GetWorldPosition())
             p:SetResource("incombat",1)
             p:SetResource("Dice",1)
             
@@ -500,10 +516,10 @@ end
 function unfreezePlayers()
     for i,p in ipairs(playersInCombat) do
         p.movementControlMode = MovementControlMode.VIEW_RELATIVE
-     abilities=p:GetAbilities()
-     for i,a in ipairs(abilities) do
-            a.isEnabled=false
-     end
+        abilities=p:GetAbilities()
+        for i,a in ipairs(abilities) do
+            a.isEnabled=true
+         end
     end
 end
 

@@ -75,6 +75,7 @@ function MeleeAttack(other)
 		end
 		
 		BroadcastDamageFeedback(dmg.amount, pos)
+		ResetMelee(ABILITY)
 	end
 end
 

@@ -14,7 +14,7 @@ function OnEndOverlap(whichTrigger, other)
 		Events.BroadcastToServer("ROLL_DICE",other,20)
 		Task.Spawn(function ()
 
-			local inst=script.parent.parent:Destroy()
+		script.parent.parent:Destroy()
 		end, 4)
 	end
 end

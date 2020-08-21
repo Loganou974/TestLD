@@ -1,4 +1,4 @@
-﻿
+﻿local debug=true
 
 local propUIContainer = script:GetCustomProperty("UIContainer"):WaitForObject()
 local propSTRValueText = script:GetCustomProperty("STRValueText"):WaitForObject()
@@ -40,7 +40,7 @@ end
 canRoll=true
 function print(message)
     
-    Events.Broadcast("addSystemCombatTexte",message,true)
+    Events.Broadcast("addSystemCombatTexte",message,debug)
 end
 function appuye(player,touche)     
    --print("touche "..touche)
@@ -53,6 +53,7 @@ function appuye(player,touche)
         print(player.name.." want to roll a dice, he has "..player:GetResource("dice").." local has "..me:GetResource("dice"))
         if player:GetResource("dice")>0 and canRoll then
             canRoll=false
+            World.SpawnAsset("6D60A6D0D937FC17:DiceSound", {position = player:GetWorldPosition()})
             Task.Spawn(function() canRoll=true end,3)
             rollDice(player)
 
@@ -74,7 +75,7 @@ function appuye(player,touche)
     if touche == "ability_extra_51" and isPlaying then
         endTurn()
     end
-    if touche == "ability_extra_52" then
+    if touche == "ability_extra_52" and isPlaying then
        
         isMoving=true
        
@@ -147,7 +148,7 @@ function OnPlayerJoined(player)
    if me ==player then
    
     me=player
-    Events.BroadcastToServer("GETSTAT",me)
+    --Events.BroadcastToServer("GETSTAT",me)
     print("Hello, " .. me.name .. "!") 
     propClassText_0:AttachToPlayer(me, "nameplate")
     local abilities = me:GetAbilities()
@@ -181,7 +182,7 @@ end
 function OnExecuteAbility(ability)
     actionMax=me:GetResource("actionMax")
     if me:GetResource("incombat") == 1 then
-        Task.Wait(1.5)
+        turnNumberAction=turnNumberAction+1
       if turnNumberAction>=actionMax then
         desactivateAllAbilities()
         canAct=false;
@@ -205,14 +206,30 @@ end
 function OnDamagedPlayer(player,damage)
     -- print("Player " .. player.name .. " just took " .. damage.amount .. " damage!")
 end
-
+local firstTimeHorsCombat=true
+local combatMusic=nil
 function OnResourceChanged(player, resourceId, newValue)
+    print(player.name.." "..resourceId.." "..newValue)
     if resourceId=="dice" then
-        print(player.name.." "..resourceId.." "..newValue)
+        --print(player.name.." "..resourceId.." "..newValue)
     end
     if resourceId=="incombat" and newValue==1 then
-        print(player.name.." in combat".." "..me.name)
+        combatMusic=World.SpawnAsset("219EDA3AFC8BA777:CombatMusic",{position=player:GetWorldPosition()})
     end
+    if resourceId=="incombat" and newValue==0 then
+        if firstTimeHorsCombat then
+            firstTimeHorsCombat=false
+        else    
+           
+           
+            isPlaying=true
+            isMoving=true
+            canAct=true
+            stepBar.progress=0
+            turnNumberAction=0
+        end
+
+     end
     --if resourceId=="incombat" and newValue==0 then
      --   print(me.name.." in combat"..)
    -- end
@@ -243,22 +260,42 @@ function Tick(deltaTime)
         
             newPos=me:GetWorldPosition()
             maxDistance=me:GetResource("SPEED")
+            if originTurnPosition==nil then
+                originTurnPosition=me:GetWorldPosition()
+              
+            end
             distance=newPos-originTurnPosition
             distance=math.floor(distance.size/30)
             --UI.PrintToScreen("distance "..distance.."/"..maxDistance)
             stepBar.progress=distance/maxDistance
             if distance>=maxDistance then
+                print(" maxDistance "..maxDistance.." distance "..distance)
                 isMoving=false
                 stepBar.progress=1
                 Events.BroadcastToServer("END_MOVE",me)
-                
+                if canAct==false then
+                    endTurn()
+                end
             end
         else
-        if isMoving==false and canAct == false then
-           -- endTurn()
-        end
+       
         end
     end
+
+end
+function OnCombatEnded(victory)
+    combatMusic:Destroy()
+    if victory then
+        World.SpawnAsset("627421049F5776A0:CombatMusicVictory",{position=me:GetWorldPosition()})
+    else
+        World.SpawnAsset("9FA564B1A7F63203:GameOverMusic",{position=me:GetWorldPosition()})
+    end
+    isPlaying=false
+   
+    isMoving=false
+    canAct=false
+    stepBar.progress=1
+    turnNumberAction=0
 
 end
 function OnTurnOff()
@@ -323,3 +360,4 @@ Events.Connect("DEAD", dead)
 Events.Connect("CHANGED_CLASS", OnClassChanged)
 Events.Connect("CHANGED_WEAPON", OnWeaponChanged)
 Events.Connect("BEGIN_TURN", OnTurnOn)
+Events.Connect("END_COMBAT", OnCombatEnded)

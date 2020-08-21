@@ -116,6 +116,33 @@ Assets {
   }
 }
 Assets {
+  Id: 16327934883181731081
+  Name: "Icon Food"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Food"
+  }
+}
+Assets {
+  Id: 16241833908851998054
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 16165163692195227668
+  Name: "Glow Shape Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_glow"
+  }
+}
+Assets {
   Id: 15944708149829882904
   Name: "Icon Footprint"
   PlatformAssetType: 9
@@ -176,6 +203,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_007"
+  }
+}
+Assets {
+  Id: 14807460421707931889
+  Name: "Icon Random"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Random"
   }
 }
 Assets {
@@ -701,6 +737,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4878364448582661331
+  Name: "Frame Beveled 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px__019"
+  }
+}
+Assets {
   Id: 4582432212358051342
   Name: "Cube - Arcade 02"
   PlatformAssetType: 1
@@ -779,6 +824,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_cauldron_001"
+  }
+}
+Assets {
+  Id: 3598659565995649873
+  Name: "Advanced Sketch Line Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_ppm_sketchline"
   }
 }
 Assets {

@@ -211,7 +211,7 @@ function ApplyDamage(dmg, source, position, rotation)
 
 		if (newHealth <= 0) then
 			Events.Broadcast("ObjectDestroyed", id)
-			Events.BroadcastToAllPlayers("ObjectDestroyed", id)
+			--Events.BroadcastToAllPlayers("ObjectDestroyed", id)
 			
 			DropRewards(source)
 		end

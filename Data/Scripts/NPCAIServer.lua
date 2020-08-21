@@ -91,7 +91,7 @@ local temporaryHearingRadius = nil
 function OnTurnOn(id)
 	print("on turn npc "..id)
 	if script.parent.id == id then
-		print("c'est le tour de dragon")
+		print("c'est le tour de "..id)
 		EngageNearest()
 		if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
 			ExecuteAttack()

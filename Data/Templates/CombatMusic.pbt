@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 3727524728683064980
+  Id: 2422613596451874679
   Name: "CombatMusic"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 11733824702919635965
+      RootId: 17263984750638348643
       Objects {
-        Id: 11733824702919635965
-        Name: "\"Epic Tides Battle\" Music Construction Kit (Sections) 01"
+        Id: 17263984750638348643
+        Name: "CombatMusic"
         Transform {
           Scale {
             X: 1
@@ -16,6 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
