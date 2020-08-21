@@ -1,8 +1,8 @@
-﻿Name: "BarbarianLearningBookStand"
-RootId: 17448415494070895558
+﻿Name: "BardLearningStand"
+RootId: 3911155518442132406
 Objects {
-  Id: 17583774979242863175
-  Name: "BarbarianSkills"
+  Id: 6686454216444789001
+  Name: "BardSkills"
   Transform {
     Location {
       X: 150
@@ -20,10 +20,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17448415494070895558
-  ChildIds: 5179244322370867488
-  ChildIds: 3895330636597431214
-  ChildIds: 3907343307124442253
+  ParentId: 3911155518442132406
+  ChildIds: 3957682328407785463
+  ChildIds: 4323655254051884327
+  ChildIds: 8861656632391550484
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34,18 +34,18 @@ Objects {
   Equipment {
     SocketName: "head"
     PickupTrigger {
-      SelfId: 5179244322370867488
+      SelfId: 3957682328407785463
     }
   }
 }
 Objects {
-  Id: 3907343307124442253
+  Id: 8861656632391550484
   Name: "ChangeClasse"
   Transform {
     Location {
-      X: 200.000244
-      Y: 3649.99829
-      Z: -149.997894
+      X: -299.999512
+      Y: 3649.99854
+      Z: -149.997787
     }
     Rotation {
       Pitch: 3.4150944e-05
@@ -58,7 +58,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17583774979242863175
+  ParentId: 6686454216444789001
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -73,8 +73,8 @@ Objects {
   }
 }
 Objects {
-  Id: 3895330636597431214
-  Name: "Rage"
+  Id: 4323655254051884327
+  Name: "Bardic Inspiration"
   Transform {
     Location {
     }
@@ -86,7 +86,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17583774979242863175
+  ParentId: 6686454216444789001
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -139,14 +139,14 @@ Objects {
         Value: "mc:eabilitysetfacing:none"
       }
     }
-    Animation: "unarmed_thumb_down"
+    Animation: "unarmed_wave"
     KeyBinding_v2 {
       Value: "mc:egameaction:extraaction_40"
     }
   }
 }
 Objects {
-  Id: 5179244322370867488
+  Id: 3957682328407785463
   Name: "Trigger"
   Transform {
     Location {
@@ -160,7 +160,7 @@ Objects {
       Z: 2.5
     }
   }
-  ParentId: 17583774979242863175
+  ParentId: 6686454216444789001
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -170,7 +170,7 @@ Objects {
   }
   Trigger {
     Interactable: true
-    InteractionLabel: "Learn how to become a barbarian"
+    InteractionLabel: "Learn how to become a bard"
     TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
@@ -181,7 +181,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3604568107897807044
+  Id: 12586704593758379039
   Name: "Bannister Single Post"
   Transform {
     Location {
@@ -200,7 +200,7 @@ Objects {
       Z: 1.75
     }
   }
-  ParentId: 17448415494070895558
+  ParentId: 3911155518442132406
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -224,7 +224,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4297980209815279233
+  Id: 9415987095258186013
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
@@ -239,7 +239,7 @@ Objects {
       Z: 0.676036119
     }
   }
-  ParentId: 17448415494070895558
+  ParentId: 3911155518442132406
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -283,7 +283,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4958891738132420498
+  Id: 713988041539282392
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
@@ -299,7 +299,7 @@ Objects {
       Z: 0.676036119
     }
   }
-  ParentId: 17448415494070895558
+  ParentId: 3911155518442132406
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -351,7 +351,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2009425830782524883
+  Id: 13313836944271596371
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
@@ -366,7 +366,7 @@ Objects {
       Z: 0.676036119
     }
   }
-  ParentId: 17448415494070895558
+  ParentId: 3911155518442132406
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -418,7 +418,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5172002516130478539
+  Id: 11668409434074856845
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
@@ -437,7 +437,7 @@ Objects {
       Z: -0.169221327
     }
   }
-  ParentId: 17448415494070895558
+  ParentId: 3911155518442132406
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"

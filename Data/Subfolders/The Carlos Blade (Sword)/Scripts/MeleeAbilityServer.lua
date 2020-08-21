@@ -36,8 +36,9 @@ function Tick(deltaTime)
 		
         -- Damage the enemies
 		if Object.IsValid(HIT_BOX) then
-			print("valid object hit")
-            for _, other in ipairs(HIT_BOX:GetOverlappingObjects()) do
+			
+			for _, other in ipairs(HIT_BOX:GetOverlappingObjects()) do
+				
                 MeleeAttack(other)
             end
         end

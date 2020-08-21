@@ -1,7 +1,7 @@
-﻿Name: "Modern Acoustic Guitars"
-RootId: 11367411032370686269
+﻿Name: "Modern Acoustic Guitars_1"
+RootId: 7693209728052314562
 Objects {
-  Id: 17900775071954705991
+  Id: 2609305344702980691
   Name: "Acoustic Guitar (Hex)"
   Transform {
     Location {
@@ -17,7 +17,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11367411032370686269
+  ParentId: 7693209728052314562
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -26,6 +26,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Acoustic Guitar (Hex)"
+    FilePartitionName: "Acoustic Guitar (Hex)_1"
   }
 }

@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15390839970204672406
+  Name: "Fantasy Frame 009"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Frame_009"
+  }
+}
+Assets {
   Id: 14389042040364033147
   Name: "Sword"
   PlatformAssetType: 9
@@ -68,15 +77,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_015"
-  }
-}
-Assets {
-  Id: 6546564769032812656
-  Name: "Fantasy Frame 006"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Frame_006"
   }
 }
 Assets {

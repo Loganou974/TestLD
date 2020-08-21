@@ -11,7 +11,8 @@ local propSTAT_POINTText = script:GetCustomProperty("STAT_POINTText"):WaitForObj
 local propRaceText = script:GetCustomProperty("RaceText"):WaitForObject()
 local propClassText = script:GetCustomProperty("ClassText"):WaitForObject()
 local propClassText_0 = script:GetCustomProperty("ClassText_0"):WaitForObject()
-local propTurnTxt = script:GetCustomProperty("TurnTxt"):WaitForObject()
+
+
 local showCharacterPanel=false
 local statpoint=0;
 local me=nil
@@ -61,7 +62,7 @@ function appuye(player,touche)
         Events.BroadcastToServer("GAINSTATPOINT",player,1) 
     end
 
-    if touche == "ability_extra_51" then
+    if touche == "ability_extra_51" and isPlaying then
         endTurn()
     end
     if touche == "ability_extra_52" then
@@ -87,6 +88,7 @@ function stat_refresh(race,classe)
     for _, ability in pairs(abilities) do
         print("abilite recu "..ability.name .." pour " .. me.name)
         ability.castEvent:Connect(OnCast)
+        ability.executeEvent:Connect(OnExecuteAbility)
     end
    
     propSTRValueText.text="".. me:GetResource("STR")
@@ -166,14 +168,8 @@ function desactivateAllAbilities()
     Events.BroadcastToServer("DESACTIVATE_ABILITIES",me)
 end
 
-function OnCast(ability)
-  print("casting "..ability.name)
-  actionMax=me:GetResource("actionMax")
-  if ability.name=="Rage" then
-    World.SpawnAsset("5996004A2A56689C:Ragesound2", {position = ability.owner:GetWorldPosition()})
-  end
- 
-
+function OnExecuteAbility(ability)
+    actionMax=me:GetResource("actionMax")
     if me:GetResource("incombat") == 1 then
         Task.Wait(1.5)
       if turnNumberAction>=actionMax then
@@ -184,6 +180,16 @@ function OnCast(ability)
         end
      end
     end
+end
+function OnCast(ability)
+  print("casting "..ability.name)
+ 
+  if ability.name=="Rage" then
+    World.SpawnAsset("5996004A2A56689C:Ragesound2", {position = ability.owner:GetWorldPosition()})
+  end
+ 
+
+  
 end
 
 function OnDamagedPlayer(player,damage)
@@ -210,10 +216,10 @@ function OnTurnOn()
     print("on essaye de turn on pour joueur "..me.name.." "..me:GetResource("incombat"))
     if me:GetResource("incombat") == 1 then
         print("turnon for"..me.name)
-        propTurnTxt.visibility=Visibility.FORCE_ON
+        
         
         originTurnPosition=me:GetWorldPosition()
-        propTurnTxt.text="It's your turn "..me.name
+       
         isPlaying=true
         isMoving=true
         canAct=true
@@ -249,7 +255,7 @@ function OnTurnOff()
     
     if me:GetResource("incombat") == 1 then
         print("turnoff for"..me.name)
-      propTurnTxt.visibility=Visibility.FORCE_OFF
+     
      isPlaying=false
     end
 
@@ -275,6 +281,7 @@ function OnClassChanged(equipementName,classNom)
             for _, ability in pairs(abilities) do
                 print("abilite recu "..ability.name .." pour " .. me.name)
                 ability.castEvent:Connect(OnCast)
+                ability.executeEvent:Connect(OnExecuteAbility)
             end
     
 end
@@ -294,6 +301,7 @@ function OnWeaponChanged(equipementName)
             for _, ability in pairs(abilities) do
                 print("abilite recu "..ability.name .." pour " .. me.name)
                 ability.castEvent:Connect(OnCast)
+                ability.executeEvent:Connect(OnExecuteAbility)
             end
     end
 end

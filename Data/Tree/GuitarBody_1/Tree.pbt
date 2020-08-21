@@ -1,25 +1,24 @@
-﻿Name: "GuitarBase"
-RootId: 17854720317452441684
+﻿Name: "GuitarBody_1"
+RootId: 17962012707709196375
 Objects {
-  Id: 18274262742662038689
-  Name: "Pipe - 8-Sided Thick"
+  Id: 165178285687847800
+  Name: "Cone - Truncated Concave"
   Transform {
     Location {
-      X: -13.581111
-      Y: 35.701
+      X: 34.8033447
+      Y: -0.118010744
+      Z: -1.6309613
     }
     Rotation {
-      Pitch: 2.04905664e-05
-      Yaw: 81.7559
-      Roll: 0.000109605062
+      Yaw: -90.000061
     }
     Scale {
-      X: 0.41545105
-      Y: 0.402824551
-      Z: 0.021
+      X: 0.103323475
+      Y: 0.210512221
+      Z: 0.116902642
     }
   }
-  ParentId: 17854720317452441684
+  ParentId: 17962012707709196375
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -32,21 +31,82 @@ Objects {
       Bool: false
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.669850647
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.31764707
+        G: 0.0627451
+        A: 1
+      }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.33358192
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4677051276810414984
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17509692003384736981
+  Name: "Pipe - 8-Sided Thick"
+  Transform {
+    Location {
+      X: -13.581111
+      Y: 35.7009697
+      Z: 6.67246246
+    }
+    Rotation {
+      Pitch: 2.04905664e-05
+      Yaw: 81.7558746
+      Roll: 0.000109605047
+    }
+    Scale {
+      X: 0.41545105
+      Y: 0.402824551
+      Z: 0.2
+    }
+  }
+  ParentId: 17962012707709196375
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6309063461829695674
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.025
-        G: 0.025
-        B: 0.025
+        R: 0.840000033
+        G: 0.400529802
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.33358192
     }
   }
   Collidable_v2 {
@@ -71,12 +131,13 @@ Objects {
   }
 }
 Objects {
-  Id: 6270219077646697411
+  Id: 8471932513034170186
   Name: "Pipe - 8-Sided Thick"
   Transform {
     Location {
       X: -13.581111
-      Y: -35.7013779
+      Y: -35.7013474
+      Z: 6.67246246
     }
     Rotation {
       Pitch: -3.05175781e-05
@@ -86,10 +147,10 @@ Objects {
     Scale {
       X: 0.41545105
       Y: 0.402824551
-      Z: 0.021
+      Z: 0.2
     }
   }
-  ParentId: 17854720317452441684
+  ParentId: 17962012707709196375
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -102,21 +163,16 @@ Objects {
       Bool: false
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.669850647
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-    Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.025
-        G: 0.025
-        B: 0.025
+        R: 0.840000033
+        G: 0.400529802
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.33358192
     }
   }
   Collidable_v2 {
@@ -141,73 +197,13 @@ Objects {
   }
 }
 Objects {
-  Id: 15171807959370307233
-  Name: "Cube"
-  Transform {
-    Location {
-      X: -25.4353943
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.95928514
-      Y: 0.647814393
-      Z: 0.0198
-    }
-  }
-  ParentId: 17854720317452441684
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6309063461829695674
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.4766351
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.025
-        G: 0.025
-        B: 0.025
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 14487561207483991211
+  Id: 9572930559742539702
   Name: "Pipe - 8-Sided Thick"
   Transform {
     Location {
-      X: 10.3505249
+      X: 10.3505259
+      Y: 2.27373675e-13
+      Z: 6.67246246
     }
     Rotation {
       Pitch: -3.05175781e-05
@@ -217,10 +213,10 @@ Objects {
     Scale {
       X: 0.5
       Y: 0.8
-      Z: 0.0199
+      Z: 0.2
     }
   }
-  ParentId: 17854720317452441684
+  ParentId: 17962012707709196375
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -233,17 +229,16 @@ Objects {
       Bool: false
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.758896351
-    }
-    Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.025
-        G: 0.025
-        B: 0.025
+        R: 0.840000033
+        G: 0.400529802
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.33358192
     }
   }
   Collidable_v2 {
@@ -268,24 +263,26 @@ Objects {
   }
 }
 Objects {
-  Id: 7965838185428143764
+  Id: 9195398193183128900
   Name: "Pipe - 8-Sided Thick"
   Transform {
     Location {
       X: -49.0321808
+      Y: 2.27373675e-13
+      Z: 6.67246246
     }
     Rotation {
       Pitch: 4.09811328e-05
-      Yaw: 1.28439606e-05
+      Yaw: 1.28439588e-05
       Roll: 0.00010065332
     }
     Scale {
       X: 0.72587049
       Y: 1
-      Z: 0.0199
+      Z: 0.2
     }
   }
-  ParentId: 17854720317452441684
+  ParentId: 17962012707709196375
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -298,17 +295,16 @@ Objects {
       Bool: false
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.698306561
-    }
-    Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.025
-        G: 0.025
-        B: 0.025
+        R: 0.840000033
+        G: 0.400529802
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.33358192
     }
   }
   Collidable_v2 {

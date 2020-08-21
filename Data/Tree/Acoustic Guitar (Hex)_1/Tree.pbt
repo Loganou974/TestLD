@@ -1,7 +1,7 @@
-﻿Name: "Acoustic Guitar (Hex)"
-RootId: 17900775071954705991
+﻿Name: "Acoustic Guitar (Hex)_1"
+RootId: 2609305344702980691
 Objects {
-  Id: 12842269851917298746
+  Id: 5228121384229628581
   Name: "Guitar Neck"
   Transform {
     Location {
@@ -17,7 +17,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17900775071954705991
+  ParentId: 2609305344702980691
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -26,11 +26,11 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Guitar Neck"
+    FilePartitionName: "Guitar Neck_1"
   }
 }
 Objects {
-  Id: 13826353672920029029
+  Id: 3891648820455982173
   Name: "Guitar Head"
   Transform {
     Location {
@@ -49,7 +49,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17900775071954705991
+  ParentId: 2609305344702980691
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -58,11 +58,11 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Guitar Head"
+    FilePartitionName: "Guitar Head_1"
   }
 }
 Objects {
-  Id: 17854720317452441684
+  Id: 17821911191484282102
   Name: "GuitarBase"
   Transform {
     Location {
@@ -77,7 +77,7 @@ Objects {
       Z: 0.999
     }
   }
-  ParentId: 17900775071954705991
+  ParentId: 2609305344702980691
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -86,11 +86,11 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "GuitarBase"
+    FilePartitionName: "GuitarBase_1"
   }
 }
 Objects {
-  Id: 17269365313371524880
+  Id: 17962012707709196375
   Name: "GuitarBody"
   Transform {
     Location {
@@ -104,7 +104,7 @@ Objects {
       Z: 0.997
     }
   }
-  ParentId: 17900775071954705991
+  ParentId: 2609305344702980691
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -113,11 +113,11 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "GuitarBody"
+    FilePartitionName: "GuitarBody_1"
   }
 }
 Objects {
-  Id: 3707157298855842879
+  Id: 5013581301666649559
   Name: "GuitarTop"
   Transform {
     Location {
@@ -130,7 +130,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17900775071954705991
+  ParentId: 2609305344702980691
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -139,6 +139,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "GuitarTop"
+    FilePartitionName: "GuitarTop_1"
   }
 }

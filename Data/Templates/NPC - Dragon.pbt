@@ -7,7 +7,7 @@
       RootId: 18005923331114773312
       Objects {
         Id: 18005923331114773312
-        Name: "NPC - Dragon"
+        Name: "Dragon1"
         Transform {
           Scale {
             X: 1
@@ -36,7 +36,7 @@
           }
           Overrides {
             Name: "cs:CurrentHealth"
-            Float: 656
+            Float: 10
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -84,7 +84,7 @@
           }
           Overrides {
             Name: "cs:AttackRange"
-            Float: 1500
+            Float: 500
           }
           Overrides {
             Name: "cs:AttackCast"
@@ -108,7 +108,7 @@
           }
           Overrides {
             Name: "cs:RewardResourceAmount"
-            Int: 507
+            Int: 1
           }
           Overrides {
             Name: "cs:LootId"
@@ -116,7 +116,7 @@
           }
           Overrides {
             Name: "cs:Speed"
-            Int: 0
+            Int: 2
           }
           Overrides {
             Name: "cs:CurrentState:isrep"
@@ -329,11 +329,11 @@
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 0
+            Int: 1
           }
           Overrides {
             Name: "cs:DamageToNPCs"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:ProjectileBody"

@@ -1,4 +1,5 @@
-﻿local currentTurn=0;
+﻿local propLastSpawn = script:GetCustomProperty("LastSpawn")
+local currentTurn=0;
 local playersAreInCombat=false
 local currentCombatZone=nil
 local races={
@@ -294,12 +295,24 @@ Events.Connect("CHARDOWN_EVENT", OnCharDown)
 Events.Connect("GETSTAT", GetStat)
 
 Events.Connect("GAINSTATPOINT", OnStatpointGained)
+local playerDiedInCombat={}
+function OnPlayerDied(player)
+    print("player "..player.name.." died")
+    if playersAreInCombat then
+        print("and was in combat")
+        playerDiedInCombat[#playerDiedInCombat+1]=player
 
-
+        if #playerDiedInCombat >= #playersInCombat then
+            print("and was the last one should be gameover")
+            endCombat(false)
+        end
+    end
+end
 function OnPlayerJoined(player)
     player:SetResource("incombat",0)
-
+    Events.BroadcastToAllPlayers("SubBannerMessage",player.name.." is ready to play some adventures")
     players= Game.GetPlayers()
+    player.diedEvent:Connect(OnPlayerDied)
     
     
   
@@ -335,6 +348,7 @@ function startRound1()
     end
    -- table.sort(initiativeCombat)
     for k,v in spairs(initiativeCombat, function(t,a,b) return t[b] < t[a] end) do
+        Events.BroadcastToAllPlayers("SubBannerMessage",#combatOrder.." to play is "..k,5,Color.FromStandardHex("#FF0000"))
         combatOrder[#combatOrder+1]=k
     end
     print("APRES TRI")
@@ -364,7 +378,7 @@ function npcDied(idCible)
     initiativeCombatLength=tempLength
 
     if initiativeCombatLength == #playersInCombat then
-        endCombat()
+        endCombat(true)
     else    
         for k,v in spairs(initiativeCombat, function(t,a,b) return t[b] < t[a] end) do
             combatOrder[#combatOrder+1]=k
@@ -376,19 +390,35 @@ function npcDied(idCible)
         end
     end
 end
-function endCombat()
 
+function endCombat(victory)
     
-    for i,p in ipairs(playersInCombat) do
-        p:SetResource("incombat",0)
-       
+
+    if victory then
+        for i,p in ipairs(playersInCombat) do
+            p:SetResource("incombat",0)
         
+            
+        end
+        unfreezePlayers()
+        local trigger=currentCombatZone:FindDescendantByName("Trigger")
+        trigger.collision = Collision.FORCE_OFF
+        Events.BroadcastToAllPlayers("BannerMessage","VICTORY")
+        World.SpawnAsset("F3DAA777BED363EF:CombatMusicVictory",{position=trigger:GetWorldPosition()})
+    else 
+        Events.BroadcastToAllPlayers("BigBannerMessage","GAME OVER",-1,Color.New(1,0,0))
+        Task.Wait(2)
+        for i,p in ipairs(playersInCombat) do
+            p:SetResource("incombat",0)
+            p:Respawn(propLastSpawn, Rotation.New(0, 0, 45))
+            
+        end
+        unfreezePlayers()
     end
-    unfreezePlayers()
-    local trigger=currentCombatZone:FindDescendantByName("Trigger")
-    trigger.collision = Collision.FORCE_OFF
-    Events.BroadcastToAllPlayers("BannerMessage","VICTORY")
-    World.SpawnAsset("FD164BFF518BE6C4:CombatMusic",{position=trigger:GetWorldPosition()})
+    playersAreInCombat=false;
+    playersInCombat={}
+    initiativeCombat={}
+    initiativeCombatLength=0
     
 end
 
@@ -396,7 +426,7 @@ function startCombat(player,combatZone)
     
     if playersAreInCombat == false then
         World.SpawnAsset("33BAD3FDD0A36E94:CombatMusic",{position=player:GetWorldPosition()})
-        Events.BroadcastToAllPlayers("BannerMessage","COMBAT IS STARTING (Ability Check for Initiative)")
+        Events.BroadcastToAllPlayers("BigBannerMessage","COMBAT IS STARTING \n(Ability Check for Initiative)",3,Color.FromStandardHex("#FFFFFF"))
         initiativecombat={}
         combatOrder={}
         print(" "..combatZone)
@@ -411,6 +441,7 @@ function startCombat(player,combatZone)
             local r=math.random(20)
             initiativeCombat[id]=r
             print("Tour "..currentTurn..":"..id.." initiative="..initiativeCombat[id].." ")
+            Events.BroadcastToAllPlayers("BigBannerMessage",id.." rolled an "..r,3,Color.FromStandardHex("#FFFFFF"))
             initiativeCombatLength=initiativeCombatLength+1
         end
         
@@ -509,7 +540,7 @@ function newTurn()
         currentPlayer=isPlayer(currentPlayer)
         print("1er joueur: "..currentPlayer.name)
         Events.BroadcastToAllPlayers("BannerMessage",currentPlayer.name.." is playing")
-        Task.Wait(1)
+        
         Events.BroadcastToPlayer(currentPlayer,"BEGIN_TURN")
         currentPlayer.movementControlMode = MovementControlMode.VIEW_RELATIVE
         abilities=currentPlayer:GetAbilities()
@@ -595,7 +626,7 @@ function rollDice(player,max)
  
     player:RemoveResource("dice",1)
     print("rolled an "..rand.." reste "..player:GetResource("dice").." des")
-    Events.BroadcastToAllPlayers("BannerMessage",player.name.." rolled an "..rand)
+    Events.BroadcastToAllPlayers("BigBannerMessage",player.name.." rolled an "..rand,3,Color.FromStandardHex("#FFFFFF"))
     
     player:SetResource("lastDiceNumber",rand)
     if phasePrecombat == true then

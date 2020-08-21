@@ -1,7 +1,7 @@
 ﻿Name: "Book_1"
-RootId: 3911155518442132406
+RootId: 16120526170046498740
 Objects {
-  Id: 6686454216444789001
+  Id: 11314786193275010615
   Name: "BardSkills"
   Transform {
     Location {
@@ -20,10 +20,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3911155518442132406
-  ChildIds: 3957682328407785463
-  ChildIds: 4323655254051884327
-  ChildIds: 8861656632391550484
+  ParentId: 16120526170046498740
+  ChildIds: 2881762382676334589
+  ChildIds: 4931847679447868837
+  ChildIds: 6637240207106189789
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34,18 +34,12 @@ Objects {
   Equipment {
     SocketName: "head"
     PickupTrigger {
-      SelfId: 3957682328407785463
+      SelfId: 2881762382676334589
     }
-  }
-  InstanceHistory {
-    SelfId: 6686454216444789001
-    SubobjectId: 14476911818189144270
-    InstanceId: 5029185734328933430
-    TemplateId: 12297083717308864026
   }
 }
 Objects {
-  Id: 8861656632391550484
+  Id: 6637240207106189789
   Name: "ChangeClasse"
   Transform {
     Location {
@@ -64,7 +58,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6686454216444789001
+  ParentId: 11314786193275010615
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -77,15 +71,9 @@ Objects {
       Id: 11462264770745263123
     }
   }
-  InstanceHistory {
-    SelfId: 8861656632391550484
-    SubobjectId: 17210983128792139731
-    InstanceId: 5029185734328933430
-    TemplateId: 12297083717308864026
-  }
 }
 Objects {
-  Id: 4323655254051884327
+  Id: 4931847679447868837
   Name: "Bardic Inspiration"
   Transform {
     Location {
@@ -98,7 +86,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6686454216444789001
+  ParentId: 11314786193275010615
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -156,15 +144,9 @@ Objects {
       Value: "mc:egameaction:extraaction_40"
     }
   }
-  InstanceHistory {
-    SelfId: 4323655254051884327
-    SubobjectId: 12115784424688766176
-    InstanceId: 5029185734328933430
-    TemplateId: 12297083717308864026
-  }
 }
 Objects {
-  Id: 3957682328407785463
+  Id: 2881762382676334589
   Name: "Trigger"
   Transform {
     Location {
@@ -178,7 +160,7 @@ Objects {
       Z: 2.5
     }
   }
-  ParentId: 6686454216444789001
+  ParentId: 11314786193275010615
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -197,15 +179,9 @@ Objects {
       Value: "mc:etriggershape:box"
     }
   }
-  InstanceHistory {
-    SelfId: 3957682328407785463
-    SubobjectId: 11731840941430767152
-    InstanceId: 5029185734328933430
-    TemplateId: 12297083717308864026
-  }
 }
 Objects {
-  Id: 12586704593758379039
+  Id: 10751900109947321291
   Name: "Bannister Single Post"
   Transform {
     Location {
@@ -224,7 +200,7 @@ Objects {
       Z: 1.75
     }
   }
-  ParentId: 3911155518442132406
+  ParentId: 16120526170046498740
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -246,15 +222,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 12586704593758379039
-    SubobjectId: 4219777271960280536
-    InstanceId: 5029185734328933430
-    TemplateId: 12297083717308864026
-  }
 }
 Objects {
-  Id: 9415987095258186013
+  Id: 1909668629380822732
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
@@ -269,7 +239,7 @@ Objects {
       Z: 0.676036119
     }
   }
-  ParentId: 3911155518442132406
+  ParentId: 16120526170046498740
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -311,15 +281,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9415987095258186013
-    SubobjectId: 1625538152209678554
-    InstanceId: 5029185734328933430
-    TemplateId: 12297083717308864026
-  }
 }
 Objects {
-  Id: 713988041539282392
+  Id: 15357729912486160312
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
@@ -335,7 +299,7 @@ Objects {
       Z: 0.676036119
     }
   }
-  ParentId: 3911155518442132406
+  ParentId: 16120526170046498740
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -385,15 +349,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 713988041539282392
-    SubobjectId: 11370397605119403039
-    InstanceId: 5029185734328933430
-    TemplateId: 12297083717308864026
-  }
 }
 Objects {
-  Id: 13313836944271596371
+  Id: 8918635241971699435
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
@@ -408,7 +366,7 @@ Objects {
       Z: 0.676036119
     }
   }
-  ParentId: 3911155518442132406
+  ParentId: 16120526170046498740
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -458,15 +416,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 13313836944271596371
-    SubobjectId: 3235585778789423764
-    InstanceId: 5029185734328933430
-    TemplateId: 12297083717308864026
-  }
 }
 Objects {
-  Id: 11668409434074856845
+  Id: 14685171629720633773
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
@@ -485,7 +437,7 @@ Objects {
       Z: -0.169221327
     }
   }
-  ParentId: 3911155518442132406
+  ParentId: 16120526170046498740
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -531,11 +483,5 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11668409434074856845
-    SubobjectId: 3876993142076111946
-    InstanceId: 5029185734328933430
-    TemplateId: 12297083717308864026
   }
 }

@@ -47,7 +47,9 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 -- Variables
 local messageEndTime = 0.0
 local localMessageTime = 0
+local localBigMessageTime = 0
 local localMessageBanners = {}
+local localBigMessageBanners = {}
 
 -- nil OnBannerMessageEvent(string, <float>)
 -- Handles a client side banner message event
@@ -63,10 +65,33 @@ function OnBannerMessageEvent(message, duration)
 end
 
 function OnSubBannerMessage(message, duration, color)
+    print("subbanner")
     table.insert(localMessageBanners, {
         message = message,
         duration = duration,
+        etat="small",
         color = color})
+end
+
+function OnBigBannerMessage(message, duration, color)
+    print("bigbanner")
+    if duration == -1 then
+        localMessageBanners={}
+        table.insert(localMessageBanners, {
+            message = message,
+            duration = 5,
+            etat="big",
+            color = color})
+           
+    else
+            table.insert(localMessageBanners, {
+                message = message,
+                duration = duration,
+                etat="big",
+                color = color})
+                Task.Wait(duration)
+    end
+   
 end
 
 -- Handles a client side spawning of banner message on local player
@@ -92,6 +117,27 @@ function SpawnLocalMessage(message, duration, color)
     end
 end
 
+function SpawnLocalBigMessage(message, duration, color)
+    -- Spawns message instance
+    local messageInstance = World.SpawnAsset("87154CE96A5DF608:BigBannerText", {parent = CANVAS})
+    --messageInstance.y = LOCAL_MESSAGE_OFFSET
+
+    -- Sets message text
+    --local bannerText = messageInstance:GetCustomProperty("BannerText"):WaitForObject()
+    messageInstance.text = message
+
+    -- Sets message color
+    if color then
+        messageInstance:SetColor(color)
+    end
+
+    -- Sets message duration
+    if duration then
+        messageInstance.lifeSpan = duration
+    else
+        messageInstance.lifeSpan = DEFAULT_DURATION
+    end
+end
 -- nil Tick(float)
 -- Hides the banner when the message has expired
 function Tick(deltaTime)
@@ -99,10 +145,17 @@ function Tick(deltaTime)
         PANEL.visibility = Visibility.FORCE_OFF
     end
 
+   
     if time() > localMessageTime then
         for i, value in ipairs(localMessageBanners) do
-            if LOCAL_PLAYER and HELPER then
+            if LOCAL_PLAYER  then
+                if value.etat=="small" then
                 SpawnLocalMessage(value.message, value.duration, value.color)
+                end
+                if value.etat =="big" then
+                    SpawnLocalBigMessage(value.message, value.duration, value.color)
+                end
+                
                 localMessageTime = time() + 1
                 table.remove(localMessageBanners, i)
                 break
@@ -115,3 +168,4 @@ end
 PANEL.visibility = Visibility.FORCE_OFF
 Events.Connect("BannerMessage", OnBannerMessageEvent)
 Events.Connect("SubBannerMessage", OnSubBannerMessage)
+Events.Connect("BigBannerMessage", OnBigBannerMessage)
