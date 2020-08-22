@@ -44,7 +44,7 @@
     OwnerAccountId: "d1073dbcc404405cbef8ce728e53d380"
     OwnerName: "Morticai"
     Version: "1.8.0"
-    Description: "RPG Quest Giver 1.0\r\n\r\n--Updated the best I could to help those who\'ve been requesting a  quest system for their games.\r\n\r\nWill be making a video on going through how to set it up soon."
+    Description: "A fully working quest system that works simply by dragging and dropping into your project.\r\n\r\nCheck the read me for a video tutorial on how to use it step by step."
   }
   SerializationVersion: 62
 }

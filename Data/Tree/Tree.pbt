@@ -36,6 +36,11 @@ Objects {
   ChildIds: 10767341745434227796
   ChildIds: 16128743927510830651
   ChildIds: 10211656061423372761
+  ChildIds: 4320717126669498729
+  ChildIds: 16598415561236277836
+  ChildIds: 12591351093375158801
+  ChildIds: 9387161992443950220
+  ChildIds: 2681712595966947046
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -45,6 +50,185 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 2681712595966947046
+  Name: "Sky Whimsical Sunny Saturation"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17528074849339172532
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sky Whimsical Sunny Saturation"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 228559929691988184
+    }
+  }
+}
+Objects {
+  Id: 9387161992443950220
+  Name: "Sky SciFi 01"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12743596547252287504
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sky SciFi 01"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17828116922251750920
+    }
+  }
+}
+Objects {
+  Id: 12591351093375158801
+  Name: "Portal VFX"
+  Transform {
+    Location {
+      X: -11222.9209
+      Y: -7504.87891
+      Z: 10071.1357
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6677237403455816226
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 16598415561236277836
+  Name: "Fairy Dot Volume VFX"
+  Transform {
+    Location {
+      X: -12548.3164
+      Y: -9190.22559
+      Z: 9086.27246
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.71351886
+      Y: 2.71351886
+      Z: 2.71351886
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3423691385571436380
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 4320717126669498729
+  Name: "CinematicShot"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 10467714333780274479
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1164.10938
+            Y: 867.015137
+            Z: 347.870117
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 32.2876816
+            Yaw: -8.75012207
+            Roll: 5.04966329e-06
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16121779860319454006
+      value {
+        Overrides {
+          Name: "Name"
+          String: "CinematicShot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -15203.7832
+            Y: -7796.92725
+            Z: 8127.75
+          }
+        }
+        Overrides {
+          Name: "cs:PlayOnKey"
+          String: "M"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1934096111737184586
+    }
   }
 }
 Objects {
@@ -1681,6 +1865,8 @@ Objects {
   ChildIds: 6598287346150899446
   ChildIds: 5607044447117563469
   ChildIds: 8296323736545414523
+  ChildIds: 3172590042631202787
+  ChildIds: 8601001729164869783
   ChildIds: 14954001709955032265
   ChildIds: 1364683390083601388
   ChildIds: 15261164294089458518
@@ -1702,8 +1888,9 @@ Objects {
   Name: "Combat_Spawn"
   Transform {
     Location {
-      X: -5247.00391
-      Z: 107.493164
+      X: -4847.89453
+      Y: -225.946777
+      Z: 550.644043
     }
     Rotation {
     }
@@ -1742,10 +1929,14 @@ Objects {
   Name: "BarbarianWeapon"
   Transform {
     Location {
-      X: 2298.27539
-      Y: -296.097168
+      X: 3920.14746
+      Y: -1951.87744
+      Z: 327.915039
     }
     Rotation {
+      Pitch: -15.5527954
+      Yaw: 147.052414
+      Roll: 12.2726583
     }
     Scale {
       X: 1
@@ -2435,11 +2626,14 @@ Objects {
   Name: "BardWeapon"
   Transform {
     Location {
-      X: 2298.2749
-      Y: 568.516602
-      Z: 67.0336914
+      X: 4289.7168
+      Y: 2051.03955
+      Z: 380.636719
     }
     Rotation {
+      Pitch: -14.0965881
+      Yaw: -167.669662
+      Roll: -3.0473938
     }
     Scale {
       X: 1
@@ -3115,14 +3309,14 @@ Objects {
   Name: "BardLearningStand"
   Transform {
     Location {
-      X: 1972.96
-      Y: 495.384277
-      Z: 174.900879
+      X: 4556.43457
+      Y: 1531.58789
+      Z: 491.97168
     }
     Rotation {
-      Pitch: 1.36603776e-05
-      Yaw: 90.9068832
-      Roll: 109.99926
+      Pitch: 3.17620182
+      Yaw: -77.532196
+      Roll: 95.9299774
     }
     Scale {
       X: 1
@@ -3148,14 +3342,14 @@ Objects {
   Name: "BarbarianLearningBookStand"
   Transform {
     Location {
-      X: 1972.96
-      Y: -278.337891
-      Z: 170.134277
+      X: 4157.33496
+      Y: -1547.15771
+      Z: 475.330078
     }
     Rotation {
-      Pitch: -3.05175781e-05
-      Yaw: 90.5340729
-      Roll: 109.998634
+      Pitch: -0.985473633
+      Yaw: -118.278412
+      Roll: 100.058075
     }
     Scale {
       X: 1
@@ -3241,11 +3435,12 @@ Objects {
   Name: "Gem - Diamond 8-Sided Polished"
   Transform {
     Location {
-      X: 1218.06836
+      X: 1344.46973
       Y: 1702.89551
-      Z: 359.64209
+      Z: 1368.79932
     }
     Rotation {
+      Yaw: 12.4741611
     }
     Scale {
       X: 11.4697409
@@ -3259,7 +3454,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8869908880399307840
+        Id: 8031288978388379972
       }
     }
   }
@@ -3693,7 +3888,7 @@ Objects {
     Location {
       X: 526.204102
       Y: 1529.80078
-      Z: 999.730957
+      Z: 1470.76221
     }
     Rotation {
       Yaw: -73.7153625
@@ -3709,7 +3904,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8869908880399307840
+        Id: 2603671087022211863
       }
     }
   }
@@ -3756,7 +3951,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8869908880399307840
+        Id: 2603671087022211863
       }
     }
   }
@@ -3821,6 +4016,66 @@ Objects {
     }
     TeamSettings {
     }
+  }
+}
+Objects {
+  Id: 8601001729164869783
+  Name: "BarbarianText"
+  Transform {
+    Location {
+      X: -202.649414
+      Y: -2030.97461
+      Z: 1127.79932
+    }
+    Rotation {
+      Yaw: 11.1753979
+    }
+    Scale {
+      X: 2.62734675
+      Y: 2.62734675
+      Z: 2.62734675
+    }
+  }
+  ParentId: 14291100318175227123
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "BarbarianText"
+  }
+}
+Objects {
+  Id: 3172590042631202787
+  Name: "BardText"
+  Transform {
+    Location {
+      X: -112.806641
+      Y: 1821.43701
+      Z: 1124.84521
+    }
+    Rotation {
+      Yaw: 64.9625397
+    }
+    Scale {
+      X: 2.62734675
+      Y: 2.62734675
+      Z: 2.62734675
+    }
+  }
+  ParentId: 14291100318175227123
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "BardText"
   }
 }
 Objects {

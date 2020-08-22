@@ -575,6 +575,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8031288978388379972
+  Name: "Metal Gold 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_001"
+  }
+}
+Assets {
   Id: 7887238662729938253
   Name: "Sky Dome"
   PlatformAssetType: 6
@@ -872,6 +881,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3423691385571436380
+  Name: "Fairy Dot Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Swirling_Magic_Column"
+  }
+}
+Assets {
   Id: 3113229458066238046
   Name: "Fantasy Castle Stairs 01"
   PlatformAssetType: 1
@@ -914,6 +932,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_diamond_8_sided_polished_001"
+  }
+}
+Assets {
+  Id: 2603671087022211863
+  Name: "Rubber Pattern 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_scf_rubber_panels_003_uv"
   }
 }
 Assets {
