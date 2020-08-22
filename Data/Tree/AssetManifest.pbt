@@ -134,15 +134,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16165163692195227668
-  Name: "Glow Shape Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_glow"
-  }
-}
-Assets {
   Id: 15944708149829882904
   Name: "Icon Footprint"
   PlatformAssetType: 9
@@ -365,6 +356,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "abp_asliceoflife_LayersKit_ref"
+  }
+}
+Assets {
+  Id: 11268261462932467747
+  Name: "2D Basic Shapes Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "dcl_basicShapes"
   }
 }
 Assets {

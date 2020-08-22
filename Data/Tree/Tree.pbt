@@ -16,7 +16,6 @@ Objects {
   }
   ChildIds: 15113971017304156731
   ChildIds: 14446186405140101612
-  ChildIds: 4501364970410106192
   ChildIds: 10005074784157121906
   ChildIds: 59773418182322829
   ChildIds: 11934502869074610000
@@ -31,9 +30,12 @@ Objects {
   ChildIds: 95063269926583494
   ChildIds: 1413591978020585781
   ChildIds: 259287209507503813
-  ChildIds: 2189520238509781707
   ChildIds: 9488392361568882874
   ChildIds: 7339940219764490341
+  ChildIds: 9155386340374979083
+  ChildIds: 10767341745434227796
+  ChildIds: 16128743927510830651
+  ChildIds: 10211656061423372761
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -43,6 +45,365 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 10211656061423372761
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: -15596.8203
+      Y: -7298.15918
+      Z: 8127.72705
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 12897184369241715136
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 2.19784355
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 32
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 0.669999957
+        G: 3.19480876e-07
+        A: 1
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11268261462932467747
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 12897184369241715136
+  Name: "FollowPlayer"
+  Transform {
+    Location {
+      X: 15596.8203
+      Y: 7298.15918
+      Z: -8235.30371
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10211656061423372761
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:anchor"
+      String: "pelvis"
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7176726157606569124
+    }
+  }
+}
+Objects {
+  Id: 16128743927510830651
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: -15476.2178
+      Y: -7074.33691
+      Z: 8127.71582
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 9649090467735529708
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Sides"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.89
+        G: 4.77433218e-07
+        A: 0.765000045
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.015788734
+    }
+    Overrides {
+      Name: "bp:Corner Rounding"
+      Float: 0.0493044443
+    }
+    Overrides {
+      Name: "bp:Blur"
+      Float: 0.015788734
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11268261462932467747
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 9649090467735529708
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      Y: 104.958008
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.2297852
+      Y: 0.454531193
+      Z: 1
+    }
+  }
+  ParentId: 16128743927510830651
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Sides"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.89
+        G: 4.77433218e-07
+        A: 0.765000045
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.015788734
+    }
+    Overrides {
+      Name: "bp:Corner Rounding"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Blur"
+      Float: 0.015788734
+    }
+    Overrides {
+      Name: "bp:Indent"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11268261462932467747
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 10767341745434227796
+  Name: "Third Person Camera Settings"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6230487291917958532
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Third Person Camera Settings"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -15024.1172
+            Y: -6043.11426
+            Z: 7473.31348
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8678046142828605358
+    }
+  }
+}
+Objects {
+  Id: 9155386340374979083
+  Name: "Top Down Camera Settings"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6346605252096791538
+      value {
+        Overrides {
+          Name: "CameraIsDistanceAdjustable"
+          Bool: true
+        }
+        Overrides {
+          Name: "CameraMaximumDistance"
+          Float: 5000
+        }
+        Overrides {
+          Name: "CameraInitialDistance"
+          Float: 2000
+        }
+        Overrides {
+          Name: "CameraRotationOffset"
+          Rotator {
+            Pitch: -90
+          }
+        }
+        Overrides {
+          Name: "CameraIsDefault"
+          Bool: false
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11729803102646375547
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Top Down Camera Settings"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -16923.9609
+            Y: -7117.60254
+            Z: 8127.72266
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13027308566333370791
+      value {
+        Overrides {
+          Name: "PlayerLookControlMode"
+          Enum {
+            Value: "mc:elookcontrolmode:relative"
+          }
+        }
+        Overrides {
+          Name: "PlayerFacingMode"
+          Enum {
+            Value: "mc:efacingmode:facemovement"
+          }
+        }
+        Overrides {
+          Name: "IsDefaultSettings"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14821692450478860114
+    }
   }
 }
 Objects {
@@ -119,7 +480,7 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 150
+      X: 9
       Y: 152
       Z: 150
     }
@@ -134,6 +495,47 @@ Objects {
       Name: "bp:Unbounded"
       Bool: false
     }
+    Overrides {
+      Name: "bp:Background Color"
+      Color {
+        R: 1
+        G: 0.919531941
+        B: 0.734426
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Ambient Occlusion Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Crease Line Color"
+      Color {
+        R: 1
+        G: 0.199999988
+        B: 0.660926819
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Contour Line Color"
+      Color {
+        R: 0.70106
+        G: 0.39
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Highlight Line Color"
+      Color {
+        R: 0.87
+        B: 0.77781409
+        A: 0.449000031
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -146,97 +548,6 @@ Objects {
       Id: 3598659565995649873
     }
     TeamSettings {
-    }
-  }
-}
-Objects {
-  Id: 2189520238509781707
-  Name: "Glow Shape Decal"
-  Transform {
-    Location {
-      Z: -108.576538
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 12897184369241715136
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 13.5873823
-    }
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 2
-    }
-    Overrides {
-      Name: "bp:Shape Fill"
-      Float: 0.803571522
-    }
-    Overrides {
-      Name: "bp:color"
-      Color {
-        R: 0.0386091657
-        G: 0.53
-        A: 1
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 16165163692195227668
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 12897184369241715136
-  Name: "FollowPlayer"
-  Transform {
-    Location {
-      Z: 1
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2189520238509781707
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:anchor"
-      String: "pelvis"
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 7176726157606569124
     }
   }
 }
@@ -11399,6 +11710,12 @@ Objects {
         SelfId: 14192280934942748996
       }
     }
+    Overrides {
+      Name: "cs:UIButton"
+      ObjectReference {
+        SelfId: 9731802080626188016
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11456,9 +11773,8 @@ Objects {
         A: 1
       }
       PressedColor {
-        R: 1
-        G: 1
-        B: 1
+        G: 0.75
+        B: 0.0347682238
         A: 1
       }
       DisabledColor {
@@ -11692,6 +12008,24 @@ Objects {
       Name: "cs:stepBar"
       ObjectReference {
         SelfId: 16575420314665027677
+      }
+    }
+    Overrides {
+      Name: "cs:TopDownCamera"
+      ObjectReference {
+        SelfId: 16109386667400750252
+        SubObjectId: 6346605252096791538
+        InstanceId: 9155386340374979083
+        TemplateId: 14821692450478860114
+      }
+    }
+    Overrides {
+      Name: "cs:ThirdPersonCamera"
+      ObjectReference {
+        SelfId: 12399519995032895145
+        SubObjectId: 12377164915522451180
+        InstanceId: 10767341745434227796
+        TemplateId: 8678046142828605358
       }
     }
   }
@@ -72529,62 +72863,6 @@ Objects {
   Blueprint {
     BlueprintAsset {
       Id: 7887238662729938253
-    }
-  }
-}
-Objects {
-  Id: 4501364970410106192
-  Name: "Third Person Camera Settings"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6230487291917958532
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Third Person Camera Settings"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11592647923584693331
-      value {
-        Overrides {
-          Name: "IsJumpEnabled"
-          Bool: true
-        }
-        Overrides {
-          Name: "PlayerJumpMaxCount"
-          Int: 1
-        }
-        Overrides {
-          Name: "PlayerJumpVelocity"
-          Float: 900
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 12377164915522451180
-      value {
-        Overrides {
-          Name: "CameraIsOrthographic"
-          Bool: false
-        }
-        Overrides {
-          Name: "CameraInitialDistance"
-          Float: 800
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8678046142828605358
     }
   }
 }

@@ -3,6 +3,7 @@ local propMonster1 = script:GetCustomProperty("Monster1"):WaitForObject()
 
 function OnBeginOverlap(whichTrigger, other)
 	if other:IsA("Player") then
+		whichTrigger.collision= Collision.FORCE_OFF
 		print(whichTrigger.name .. ": Begin Trigger Overlap with " .. other.name)
 		Events.Broadcast("START_COMBAT",other,script.parent.parent.id)
 	end

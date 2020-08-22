@@ -4,7 +4,7 @@ local totalPlayerCooldown =3
 local playerCooldownRemaining=3
 local LEFT_SHADOW = script:GetCustomProperty("LEFT_SHADOW"):WaitForObject()
 local RIGHT_SHADOW = script:GetCustomProperty("RIGHT_SHADOW"):WaitForObject()
-
+local propUIButton = script:GetCustomProperty("UIButton"):WaitForObject()
 function OnPlayerJoined(player)
 
    if me.name==player.name then
@@ -47,4 +47,24 @@ function OnResourceChanged(player,resourceId,newvalue)
 
     end
 end
+local canRoll=true
+function OnPressed()
+    if me:GetResource("dice")>0 and canRoll then
+        canRoll=false
+        World.SpawnAsset("6D60A6D0D937FC17:DiceSound", {position = me:GetWorldPosition()})
+        Task.Spawn(function() canRoll=true end,3)
+        rollDice(me)
+
+    end
+end
+function rollDice(player)
+    local pos = player:GetWorldPosition()
+    
+    
+    
+    pos.y=pos.y+5
+    
+    World.SpawnAsset("B1FC3DA40EE45031:Dice20", {position = pos})
+end
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
+propUIButton.pressedEvent:Connect(OnPressed)

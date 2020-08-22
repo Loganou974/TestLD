@@ -11,7 +11,8 @@ local propSTAT_POINTText = script:GetCustomProperty("STAT_POINTText"):WaitForObj
 local propRaceText = script:GetCustomProperty("RaceText"):WaitForObject()
 local propClassText = script:GetCustomProperty("ClassText"):WaitForObject()
 local propClassText_0 = script:GetCustomProperty("ClassText_0"):WaitForObject()
-
+local camera2 = script:GetCustomProperty("TopDownCamera"):WaitForObject()
+local camera1 = script:GetCustomProperty("ThirdPersonCamera"):WaitForObject()
 
 
 local showCharacterPanel=false
@@ -47,6 +48,11 @@ function appuye(player,touche)
    
    if touche =="ability_extra_14" then
       UI.SetCursorVisible(not UI.IsCursorVisible())
+      if(UI.IsCursorVisible()) then 
+            player:SetDefaultCamera(camera2) 
+    else 
+        player:SetDefaultCamera(camera1) 
+    end
    end
    if touche == "ability_extra_17" then
         
