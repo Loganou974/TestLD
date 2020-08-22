@@ -93,9 +93,12 @@ function OnTurnOn(id)
 	if script.parent.id == id then
 		print("c'est le tour de "..id)
 		EngageNearest()
+		--Tack(SPEED)
 		if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
+			SetState(STATE_ATTACK_CAST)
 			ExecuteAttack()
 		else
+			SetState(STATE_ENGAGING)
 			UpdateMovement(SPEED)
 			
 		end
@@ -200,8 +203,8 @@ function Tack(deltaTime)
 		
 	elseif currentState == STATE_ATTACK_CAST and stateTime >= ATTACK_CAST_TIME then
 		ExecuteAttack()
-		attackCooldown = ATTACK_COOLDOWN
-		SetState(STATE_ATTACK_RECOVERY)
+		--attackCooldown = ATTACK_COOLDOWN
+		--SetState(STATE_ATTACK_RECOVERY)
 	
 	elseif currentState == STATE_ATTACK_RECOVERY and stateTime >= ATTACK_RECOVERY_TIME then
 		SetState(STATE_ENGAGING)
@@ -472,12 +475,12 @@ function FindNearestEnemy()
 	-- Players
 	for _,enemy in ipairs(Game.GetPlayers()) do
 		if (enemy.team ~= myTeam and not enemy.isDead) then
-			local canSee,distSquared = CanSeeEnemy(enemy, myPos, forwardVector, nearestDistSquared)
-			if canSee then
+			--local canSee,distSquared = CanSeeEnemy(enemy, myPos, forwardVector, nearestDistSquared)
+			--if canSee then
 				nearestDistSquared = distSquared
 				nearestEnemy = enemy
 				--print("Distance to enemy = " .. tostring(math.sqrt(nearestDistSquared)))
-			end
+			--end
 		end
 	end
 	
