@@ -26,24 +26,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16110597789730517288
-  Name: "BG Highlighted 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundHighlighted_020"
-  }
-}
-Assets {
-  Id: 15390839970204672406
-  Name: "Fantasy Frame 009"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Frame_009"
-  }
-}
-Assets {
   Id: 14389042040364033147
   Name: "Sword"
   PlatformAssetType: 9
@@ -71,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9351166523143381915
+  Name: "Line Half 004a"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "LineHalf_004a"
+  }
+}
+Assets {
   Id: 6724534832103276994
   Name: "BG Flat 006"
   PlatformAssetType: 9
@@ -89,12 +80,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4593055330877944043
-  Name: "Fantasy Shape 003"
+  Id: 4357578890393849644
+  Name: "Frame Beveled 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Shape_003"
+    AssetId: "FrameSolid8px_020"
   }
 }
 Assets {
@@ -113,23 +104,5 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_bullet_impact_body_flesh_02_Cue_ref"
-  }
-}
-Assets {
-  Id: 1535835570629998324
-  Name: "BG Gradient 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundFlat_020"
-  }
-}
-Assets {
-  Id: 459681693286281986
-  Name: "Coin"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_icon_Coin"
   }
 }

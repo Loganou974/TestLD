@@ -44,8 +44,12 @@ function print(message)
     Events.Broadcast("addSystemCombatTexte",message,debug)
 end
 function appuye(player,touche)     
-   --print("touche "..touche)
-   
+  -- print("touche "..touche)
+   if touche=="ability_primary" then
+    --local v=UI.GetCursorHitResult():GetImpactPosition()
+   -- print(" x="..v.x.." y="..v.y.." z="..v.z)
+    --player:MoveTo(v,10)
+   end
    if touche =="ability_extra_14" then
       UI.SetCursorVisible(not UI.IsCursorVisible())
       if(UI.IsCursorVisible()) then 

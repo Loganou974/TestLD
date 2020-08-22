@@ -31,7 +31,7 @@ Objects {
   ChildIds: 1413591978020585781
   ChildIds: 259287209507503813
   ChildIds: 9488392361568882874
-  ChildIds: 7339940219764490341
+  ChildIds: 17311886388072741989
   ChildIds: 9155386340374979083
   ChildIds: 10767341745434227796
   ChildIds: 16128743927510830651
@@ -407,9 +407,14 @@ Objects {
   }
 }
 Objects {
-  Id: 7339940219764490341
+  Id: 17311886388072741989
   Name: "Ambience Nature Summer Forest Kit 01 SFX"
   Transform {
+    Location {
+      X: -16231.25
+      Y: 7353.66309
+      Z: -186.661865
+    }
     Scale {
       X: 1
       Y: 1
@@ -417,55 +422,183 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 5395904055618444892
+  ChildIds: 13028519300822963585
+  ChildIds: 16480229228821031825
+  UnregisteredParameters {
+  }
   WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 821019779908444476
-      value {
-        Overrides {
-          Name: "Radius"
-          Float: 4000
-        }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 17311886388072741989
+    SubobjectId: 5758534473589344472
+    InstanceId: 7339940219764490341
+    TemplateId: 13038682726889661314
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 16480229228821031825
+  Name: "Ambience Nature Forest Birds Set 01 SFX"
+  Transform {
+    Location {
+      X: -130.396545
+      Y: 225.858871
+      Z: 111.25219
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17311886388072741989
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:esfx_nature_forest_birds:16"
       }
     }
-    ParameterOverrideMap {
-      key: 5758534473589344472
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Ambience Nature Summer Forest Kit 01 SFX"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -16231.25
-            Y: 7353.66309
-            Z: -186.661865
-          }
-        }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 15172180549504871240
+    }
+    AudioBP {
+      AutoPlay: true
+      Volume: 0.499214083
+      Falloff: 3600
+      Radius: 4000
+      EnableOcclusion: true
+      IsSpatializationEnabled: true
+      IsAttenuationEnabled: true
+    }
+  }
+  InstanceHistory {
+    SelfId: 16480229228821031825
+    SubobjectId: 6566188125238828844
+    InstanceId: 7339940219764490341
+    TemplateId: 13038682726889661314
+  }
+}
+Objects {
+  Id: 13028519300822963585
+  Name: "Ambience Nature Wind and Trees Set 01 SFX"
+  Transform {
+    Location {
+      X: -130.396545
+      Y: 8.22819519
+      Z: 66.734993
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17311886388072741989
+  UnregisteredParameters {
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7724989921381923917
+    }
+    AudioBP {
+      AutoPlay: true
+      Volume: 0.300845742
+      Falloff: 3600
+      Radius: 4000
+      EnableOcclusion: true
+      IsSpatializationEnabled: true
+      IsAttenuationEnabled: true
+    }
+  }
+  InstanceHistory {
+    SelfId: 13028519300822963585
+    SubobjectId: 821019779908444476
+    InstanceId: 7339940219764490341
+    TemplateId: 13038682726889661314
+  }
+}
+Objects {
+  Id: 5395904055618444892
+  Name: "Ambience Nature Cicadas Set 01 SFX"
+  Transform {
+    Location {
+      X: -130.396545
+      Y: 8.22819519
+      Z: 66.734993
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17311886388072741989
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:esfx_nature_cicadas:18"
       }
     }
-    ParameterOverrideMap {
-      key: 6566188125238828844
-      value {
-        Overrides {
-          Name: "Radius"
-          Float: 4000
-        }
-      }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 15234553642973347520
     }
-    ParameterOverrideMap {
-      key: 17674475982379461345
-      value {
-        Overrides {
-          Name: "Radius"
-          Float: 4000
-        }
-      }
+    AudioBP {
+      AutoPlay: true
+      Volume: 0.683413267
+      Falloff: 3600
+      Radius: 4000
+      EnableOcclusion: true
+      IsSpatializationEnabled: true
+      IsAttenuationEnabled: true
     }
-    TemplateAsset {
-      Id: 13038682726889661314
-    }
+  }
+  InstanceHistory {
+    SelfId: 5395904055618444892
+    SubobjectId: 17674475982379461345
+    InstanceId: 7339940219764490341
+    TemplateId: 13038682726889661314
   }
 }
 Objects {
@@ -480,7 +613,7 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 9
+      X: 1
       Y: 152
       Z: 150
     }
@@ -4749,10 +4882,10 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 258
+    Width: 295
     Height: 198
-    UIX: -469.53833
-    UIY: -263.155762
+    UIX: -187.449707
+    UIY: -183.566467
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4815,8 +4948,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 723
-    Height: 343
+    Width: 448
+    Height: 239
     UIX: -2.25256348
     UIY: 111.719971
     RenderTransformPivot {
@@ -4918,8 +5051,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 710
-    Height: 336
+    Width: 435
+    Height: 221
     UIX: 0.000244140625
     UIY: 120
     RenderTransformPivot {
@@ -4992,7 +5125,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5059,7 +5192,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5127,7 +5260,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5195,7 +5328,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5263,7 +5396,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5331,7 +5464,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5399,7 +5532,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5467,7 +5600,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5535,7 +5668,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5603,7 +5736,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5670,7 +5803,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5738,7 +5871,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5806,7 +5939,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5874,7 +6007,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -5942,7 +6075,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6010,7 +6143,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6078,7 +6211,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6146,7 +6279,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6214,7 +6347,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6281,7 +6414,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6349,7 +6482,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6417,7 +6550,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6485,7 +6618,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6553,7 +6686,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6621,7 +6754,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6689,7 +6822,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6757,7 +6890,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6862,7 +6995,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6930,7 +7063,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6998,7 +7131,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -7066,7 +7199,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -7134,7 +7267,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -7202,7 +7335,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -7270,7 +7403,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -7338,7 +7471,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -7405,7 +7538,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 15
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -7523,8 +7656,8 @@ Objects {
   Control {
     Width: 200
     Height: 60
-    UIX: 20.2745361
-    UIY: 76.5600586
+    UIX: 36.3062744
+    UIY: 72.8601685
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -7583,12 +7716,14 @@ Objects {
     }
   }
   ParentId: 6001810550184667852
+  ChildIds: 15379762976147464864
   ChildIds: 7688922564182236775
   ChildIds: 15815738102026415114
   ChildIds: 2164936207950651399
   ChildIds: 8486637322341353431
   ChildIds: 18371189943942582770
   ChildIds: 4749774125291733332
+  ChildIds: 578246204572969941
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7598,8 +7733,8 @@ Objects {
   Control {
     Width: 850
     Height: 150
-    UIX: -360.94812
-    UIY: -179.558655
+    UIX: -526.199524
+    UIY: -183.566467
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -7607,12 +7742,9 @@ Objects {
     }
     Image {
       Brush {
-        Id: 885896236593327937
+        Id: 4357578890393849644
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
         A: 1
       }
       TeamSettings {
@@ -7630,6 +7762,142 @@ Objects {
         }
       }
     }
+  }
+}
+Objects {
+  Id: 578246204572969941
+  Name: "Onglet"
+  Transform {
+    Location {
+      X: -15053.8086
+      Y: -4750.00195
+      Z: 9679.69922
+    }
+    Rotation {
+      Yaw: 46.3433609
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3478029781713236007
+  ChildIds: 12867543453415529242
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 188
+    Height: 193
+    UIX: -661.005798
+    UIY: -73.9986572
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 9351166523143381915
+      }
+      Color {
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12201087890024786790
+    SubobjectId: 7822851079078269332
+    InstanceId: 4972742490433167697
+    TemplateId: 6297665059397647461
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 12867543453415529242
+  Name: "Titre"
+  Transform {
+    Location {
+      X: -15053.8105
+      Y: -4750
+      Z: 9679.69824
+    }
+    Rotation {
+      Yaw: 46.3433456
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 578246204572969941
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 67
+    Height: 60
+    UIX: 22.197998
+    UIY: 82.6317749
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Skill"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11032072831952020373
+    SubobjectId: 6691058885504948583
+    InstanceId: 4972742490433167697
+    TemplateId: 6297665059397647461
   }
 }
 Objects {
@@ -7670,6 +7938,9 @@ Objects {
         Id: 4878364448582661331
       }
       Color {
+        R: 1
+        G: 1
+        B: 1
         A: 0.457000017
       }
       TeamSettings {
@@ -7707,6 +7978,7 @@ Objects {
   ParentId: 4749774125291733332
   ChildIds: 14675011631189303366
   ChildIds: 16575420314665027677
+  ChildIds: 9625851671186081717
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7740,6 +8012,67 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 9625851671186081717
+  Name: "AbilityBinding"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -1.7075472e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2853824407774907592
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 100
+    Height: 35
+    UIY: 20
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "speed"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      ClipTextToSize: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
         }
       }
     }
@@ -7896,6 +8229,9 @@ Objects {
         Id: 4878364448582661331
       }
       Color {
+        R: 1
+        G: 1
+        B: 1
         A: 0.457000017
       }
       TeamSettings {
@@ -8567,7 +8903,7 @@ Objects {
   Control {
     Width: 100
     Height: 35
-    UIY: 65
+    UIY: 54.845
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -8728,6 +9064,9 @@ Objects {
         Id: 4878364448582661331
       }
       Color {
+        R: 1
+        G: 1
+        B: 1
         A: 0.457000017
       }
       TeamSettings {
@@ -9399,7 +9738,7 @@ Objects {
   Control {
     Width: 100
     Height: 35
-    UIY: 65
+    UIY: 54.845
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -9560,6 +9899,9 @@ Objects {
         Id: 4878364448582661331
       }
       Color {
+        R: 1
+        G: 1
+        B: 1
         A: 0.457000017
       }
       TeamSettings {
@@ -10231,7 +10573,7 @@ Objects {
   Control {
     Width: 100
     Height: 35
-    UIY: 65
+    UIY: 54.845
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -10392,6 +10734,9 @@ Objects {
         Id: 4878364448582661331
       }
       Color {
+        R: 1
+        G: 1
+        B: 1
         A: 0.457000017
       }
       TeamSettings {
@@ -11063,7 +11408,7 @@ Objects {
   Control {
     Width: 100
     Height: 35
-    UIY: 65
+    UIY: 54.845
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -11224,6 +11569,9 @@ Objects {
         Id: 4878364448582661331
       }
       Color {
+        R: 1
+        G: 1
+        B: 1
         A: 0.457000017
       }
       TeamSettings {
@@ -11324,8 +11672,8 @@ Objects {
   Control {
     Width: 100
     Height: 35
-    UIX: 0.789367676
-    UIY: 69.6447754
+    UIX: 2.02261353
+    UIY: 54.845
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -11800,6 +12148,70 @@ Objects {
         }
       }
     }
+  }
+}
+Objects {
+  Id: 15379762976147464864
+  Name: "UI Image"
+  Transform {
+    Location {
+      X: 29259.8418
+      Y: 3650.32031
+      Z: 28328.1035
+    }
+    Rotation {
+      Yaw: -110.366966
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3478029781713236007
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 829
+    Height: 130
+    UIX: 10.8600464
+    UIY: 10.0322266
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+      }
+      Color {
+        A: 0.614
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14700896135224191485
+    SubobjectId: 704446603937829647
+    InstanceId: 4972742490433167697
+    TemplateId: 6297665059397647461
   }
 }
 Objects {
