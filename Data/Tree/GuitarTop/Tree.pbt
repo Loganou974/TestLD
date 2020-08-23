@@ -1,7 +1,7 @@
-﻿Name: "GuitarTop_1"
-RootId: 16098396874001516452
+﻿Name: "GuitarTop"
+RootId: 5013581301666649559
 Objects {
-  Id: 12866491256162979647
+  Id: 12071232862094826934
   Name: "Text 05: ,"
   Transform {
     Location {
@@ -20,7 +20,7 @@ Objects {
       Z: 1.02003396
     }
   }
-  ParentId: 16098396874001516452
+  ParentId: 5013581301666649559
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -90,7 +90,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11935494126309376263
+  Id: 11668958838222314969
   Name: "Pipe - 8-Sided Thick"
   Transform {
     Location {
@@ -108,7 +108,7 @@ Objects {
       Z: 0.0198
     }
   }
-  ParentId: 16098396874001516452
+  ParentId: 5013581301666649559
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -143,7 +143,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13510867526040043854
+  Id: 11231126292470853430
   Name: "Pipe - 8-Sided Thick"
   Transform {
     Location {
@@ -161,7 +161,7 @@ Objects {
       Z: 0.0198
     }
   }
-  ParentId: 16098396874001516452
+  ParentId: 5013581301666649559
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -196,7 +196,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17680664193845350276
+  Id: 13102489619304946875
   Name: "Cube"
   Transform {
     Location {
@@ -214,7 +214,7 @@ Objects {
       Z: 0.0189999826
     }
   }
-  ParentId: 16098396874001516452
+  ParentId: 5013581301666649559
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -253,7 +253,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13597430014263217913
+  Id: 9285623652151949630
   Name: "Pipe"
   Transform {
     Location {
@@ -271,7 +271,7 @@ Objects {
       Z: 0.02
     }
   }
-  ParentId: 16098396874001516452
+  ParentId: 5013581301666649559
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -310,7 +310,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15382718666271153615
+  Id: 2533128532163179023
   Name: "Pipe"
   Transform {
     Location {
@@ -328,7 +328,7 @@ Objects {
       Z: 0.02
     }
   }
-  ParentId: 16098396874001516452
+  ParentId: 5013581301666649559
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -367,7 +367,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9042534536689879296
+  Id: 17972863929559777499
   Name: "Pipe - 8-Sided Thick"
   Transform {
     Location {
@@ -384,7 +384,7 @@ Objects {
       Z: 0.0196
     }
   }
-  ParentId: 16098396874001516452
+  ParentId: 5013581301666649559
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -419,7 +419,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12887168677843003861
+  Id: 3862723377877674007
   Name: "Pipe - 8-Sided Thick"
   Transform {
     Location {
@@ -436,7 +436,7 @@ Objects {
       Z: 0.0197
     }
   }
-  ParentId: 16098396874001516452
+  ParentId: 5013581301666649559
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"

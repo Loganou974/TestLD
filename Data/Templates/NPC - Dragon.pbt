@@ -7,7 +7,7 @@
       RootId: 18005923331114773312
       Objects {
         Id: 18005923331114773312
-        Name: "Dragon1"
+        Name: "Dragon2"
         Transform {
           Scale {
             X: 1
@@ -15,10 +15,11 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 1413591978020585781
         ChildIds: 2246318296637878086
         ChildIds: 6437137228495040271
         ChildIds: 16407974604998684743
+        ChildIds: 9179056383073564289
         ChildIds: 6175614094449634417
         ChildIds: 583502561307430728
         UnregisteredParameters {
@@ -60,7 +61,7 @@
           }
           Overrides {
             Name: "cs:VisionRadius"
-            Float: 2500
+            Float: 25000
           }
           Overrides {
             Name: "cs:HearingRadius"
@@ -394,14 +395,14 @@
         Name: "Collider"
         Transform {
           Location {
-            Z: 205.686249
+            Z: 90.956665
           }
           Rotation {
           }
           Scale {
-            X: 1.3499999
-            Y: 1.35
-            Z: 1.3499999
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 18005923331114773312
@@ -444,6 +445,43 @@
         }
       }
       Objects {
+        Id: 9179056383073564289
+        Name: "HeadSocket"
+        Transform {
+          Location {
+            X: 0.844641924
+            Y: 0.0311124604
+            Z: 170.385803
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.541312039
+            Y: 0.541312039
+            Z: 0.541312039
+          }
+        }
+        ParentId: 18005923331114773312
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9476605368855983895
+          }
+          Teams {
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 6175614094449634417
         Name: "Trigger"
         Transform {
@@ -453,9 +491,9 @@
           Rotation {
           }
           Scale {
-            X: 1.99963439
-            Y: 1.99963439
-            Z: 1.99963439
+            X: 3
+            Y: 3
+            Z: 3
           }
         }
         ParentId: 18005923331114773312
@@ -755,7 +793,7 @@
           }
           Overrides {
             Name: "cs:DistanceFromGround"
-            Float: 300
+            Float: 10
           }
         }
         Collidable_v2 {
@@ -775,7 +813,6 @@
         Name: "Group"
         Transform {
           Location {
-            Z: -75
           }
           Rotation {
           }
@@ -802,7 +839,6 @@
         Name: "Dragon Mob"
         Transform {
           Location {
-            Z: 200
           }
           Rotation {
             Yaw: 8.19621855e-05
@@ -814,6 +850,24 @@
           }
         }
         ParentId: 1739908416346502842
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.0823529437
+              G: 0.239215702
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.00749903172
+              G: 0.0466650948
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -857,6 +911,15 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_basic_pbr_material_001"
+      }
+    }
+    Assets {
+      Id: 9476605368855983895
+      Name: "Cube - Chamfered Large"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_chamfer"
       }
     }
     Assets {

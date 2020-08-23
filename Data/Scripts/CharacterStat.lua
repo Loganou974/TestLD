@@ -232,7 +232,7 @@ function GetStat(player)
     addDebugCombatTexte("get stat for "..player.name,debug)
 
     playerData=loadPlayerData(player)
-    player:SetResource("SPEED",playerData.race.speed)
+    
    
     if player:GetResource("STR") == nil or player:GetResource("STR") == 0  then
         addDebugCombatTexte("first time char",debug)
@@ -254,6 +254,7 @@ function GetStat(player)
        
     else
         addDebugCombatTexte("charac " .. player:GetResource("STR"))
+        player:SetResource("SPEED",playerData.race.speed)
     end
  
     
@@ -396,7 +397,8 @@ function startRound1()
      end
 end
 function npcDied(idCible)
-
+    local inst=World.FindObjectById(idCible)
+    Task.Spawn(function() inst:Destroy() end,5)
     addSystemCombatTexte(idCible.." est mort cela mets il fin au combat? "..initiativeCombatLength)
     local tempInit={}
     tempLength=0
@@ -411,7 +413,7 @@ function npcDied(idCible)
     
     initiativeCombat=tempInit
     initiativeCombatLength=tempLength
-
+    combatOrder={}
     if initiativeCombatLength == #playersInCombat then
         endCombat(true)
     else    
@@ -577,10 +579,12 @@ function newTurn()
     if isPlayer(currentPlayer)~=nil then 
         currentPlayer=isPlayer(currentPlayer)
         addDebugCombatTexte("1er joueur: "..currentPlayer.name,debug)
-        --Events.BroadcastToAllPlayers("BannerMessage",currentPlayer.name.." is playing")
+        Events.BroadcastToAllPlayers("BannerMessage",currentPlayer.name.." is playing")
         
         
         Events.BroadcastToPlayer(currentPlayer,"BEGIN_TURN")
+
+        Events.Broadcast("BEGIN_TURN",currentPlayer)
         currentPlayer.movementControlMode = MovementControlMode.VIEW_RELATIVE
         abilities=currentPlayer:GetAbilities()
             for i,a in ipairs(abilities) do
@@ -590,7 +594,7 @@ function newTurn()
         currentPlayer=getCurrentPlayer()
         
         Events.BroadcastToAllPlayers("BannerMessage",currentPlayer.." is playing ")
-        addDebugCombatTexte("1er joueur(npc): "..currentPlayer,debug)
+       
         Events.Broadcast("BEGIN_TURN_NPC",currentPlayer)
         
     end
@@ -620,7 +624,7 @@ function newRound()
     currentTurn=0
     currentPlayer=nil
     UpdateBuffEtDebuff()
-    Task.Wait(0.5)
+    
     newTurn()
 
 end

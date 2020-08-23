@@ -16,7 +16,6 @@ Objects {
   }
   ChildIds: 15113971017304156731
   ChildIds: 14446186405140101612
-  ChildIds: 10005074784157121906
   ChildIds: 59773418182322829
   ChildIds: 11934502869074610000
   ChildIds: 14604704220691966294
@@ -39,8 +38,9 @@ Objects {
   ChildIds: 4320717126669498729
   ChildIds: 16598415561236277836
   ChildIds: 12591351093375158801
-  ChildIds: 9387161992443950220
   ChildIds: 2681712595966947046
+  ChildIds: 9697962692457945160
+  ChildIds: 14226529458030440362
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -50,6 +50,92 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 14226529458030440362
+  Name: "Target"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4438679500385817809
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Target"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8084.26904
+            Y: 6914.83154
+            Z: 784.666077
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17412470924619804981
+    }
+  }
+}
+Objects {
+  Id: 9697962692457945160
+  Name: "Arrow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5985259795857122150
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7942.45459
+            Y: 6914.83154
+            Z: 784.666077
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10270305345042164411
+    }
   }
 }
 Objects {
@@ -75,32 +161,6 @@ Objects {
     }
     TemplateAsset {
       Id: 228559929691988184
-    }
-  }
-}
-Objects {
-  Id: 9387161992443950220
-  Name: "Sky SciFi 01"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12743596547252287504
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Sky SciFi 01"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 17828116922251750920
     }
   }
 }
@@ -1319,6 +1379,8 @@ Objects {
   ChildIds: 9691294331620525267
   ChildIds: 10065337408434372588
   ChildIds: 667785931137269612
+  ChildIds: 14723530565189028806
+  ChildIds: 9383251075443094008
   ChildIds: 6852619860089889278
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1332,16 +1394,8 @@ Objects {
 }
 Objects {
   Id: 6852619860089889278
-  Name: "NPC - Dragon"
+  Name: "Dragon2"
   Transform {
-    Location {
-      X: -5893.99365
-      Y: 7562.79248
-      Z: 707.00354
-    }
-    Rotation {
-      Yaw: 177.890457
-    }
     Scale {
       X: 1
       Y: 1
@@ -1358,54 +1412,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 6175614094449634417
-      value {
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 3
-            Y: 3
-            Z: 3
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 6437137228495040271
-      value {
-        Overrides {
-          Name: "cs:DamageToPlayers"
-          Int: 1
-        }
-        Overrides {
-          Name: "cs:DamageToNPCs"
-          Float: 1
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 13178921122859960492
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:color"
-          Color {
-            R: 0.0715894625
-            B: 0.470000029
-            A: 1
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_Detail1:color"
-          Color {
-            R: 1
-            G: 0.0500000119
-            B: 0.0500000119
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 18005923331114773312
       value {
         Overrides {
@@ -1417,7 +1423,7 @@ Objects {
           Vector {
             X: -2924.06934
             Y: 4285.43408
-            Z: 707.00354
+            Z: 879.775574
           }
         }
         Overrides {
@@ -1426,35 +1432,727 @@ Objects {
             Yaw: 177.890457
           }
         }
-        Overrides {
-          Name: "cs:Speed"
-          Int: 2
-        }
-        Overrides {
-          Name: "cs:AttackRange"
-          Float: 1500
-        }
-        Overrides {
-          Name: "cs:RewardResourceAmount"
-          Int: 1
-        }
-        Overrides {
-          Name: "cs:CurrentHealth"
-          Float: 10
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
       Id: 15728781663253921388
     }
+  }
+}
+Objects {
+  Id: 9383251075443094008
+  Name: "BardWeapon"
+  Transform {
+    Location {
+      X: -5332.53955
+      Y: 4472.89893
+      Z: 929.530212
+    }
+    Rotation {
+      Pitch: -14.0965881
+      Yaw: -167.66951
+      Roll: -3.0473938
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1413591978020585781
+  ChildIds: 7183382914241227765
+  ChildIds: 12482642229939338312
+  ChildIds: 12025470801328586049
+  ChildIds: 15454197064974887587
+  ChildIds: 16092880923447145867
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:EquipmentStance"
+      String: "1hand_melee_stance"
+    }
+    Overrides {
+      Name: "cs:PickupSound"
+      AssetReference {
+        Id: 4020958367257585299
+      }
+    }
+    Overrides {
+      Name: "cs:PlayerImpact"
+      AssetReference {
+        Id: 307406115803496087
+      }
+    }
+    Overrides {
+      Name: "cs:SwingSound"
+      AssetReference {
+        Id: 9645138649129865251
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentStance:tooltip"
+      String: "The stance animation when a player picks up the equipment."
+    }
+    Overrides {
+      Name: "cs:PlayerImpact:tooltip"
+      String: "Template that is spawned at the location where the hitbox hit the player."
+    }
+    Overrides {
+      Name: "cs:PickupSound:tooltip"
+      String: "Template that is spawned at the equipment owner location when being picked up."
+    }
+    Overrides {
+      Name: "cs:SwingSound:tooltip"
+      String: "Template that is spawned at the equipment owner location when a melee ability is executed."
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Equipment {
+    SocketName: "right_prop"
+    PickupTrigger {
+      SelfId: 7183382914241227765
+    }
+  }
+}
+Objects {
+  Id: 16092880923447145867
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9383251075443094008
+  ChildIds: 3887674889936884938
+  ChildIds: 6277319086539436030
+  ChildIds: 8625125383942034004
+  ChildIds: 7388796139032114922
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 7388796139032114922
+  Name: "DestructibleWeaponClient"
+  Transform {
+    Location {
+      X: 6890.18066
+      Y: 310.40332
+      Z: 850.326
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16092880923447145867
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6366115419987772397
+    }
+  }
+}
+Objects {
+  Id: 8625125383942034004
+  Name: "Geo"
+  Transform {
+    Location {
+      Z: -20.0000305
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16092880923447145867
+  ChildIds: 9410693458089601239
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9410693458089601239
+  Name: "Modern Acoustic Guitars"
+  Transform {
+    Location {
+      X: 50
+      Z: 120.000031
+    }
+    Rotation {
+      Pitch: -24.5947266
+      Yaw: 11.0102139
+      Roll: 175.370651
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8625125383942034004
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Modern Acoustic Guitars_1"
+  }
+}
+Objects {
+  Id: 6277319086539436030
+  Name: "EquipmentMeleeAttacksClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16092880923447145867
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12971704803185333098
+    }
+  }
+}
+Objects {
+  Id: 3887674889936884938
+  Name: "EquipmentPickupClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16092880923447145867
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 440168262593430639
+    }
+  }
+}
+Objects {
+  Id: 15454197064974887587
+  Name: "ServerContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9383251075443094008
+  ChildIds: 16459350478852199017
+  ChildIds: 5238439499298499442
+  ChildIds: 15836437915482340514
+  ChildIds: 11449339194707264426
+  ChildIds: 18015590880110954825
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 18015590880110954825
+  Name: "MeleeAbilityServer"
+  Transform {
+    Location {
+      X: -150
+      Y: 600
+      Z: 49.999939
+    }
+    Rotation {
+    }
+    Scale {
+    }
+  }
+  ParentId: 15454197064974887587
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Ability"
+      ObjectReference {
+        SelfId: 12025470801328586049
+      }
+    }
+    Overrides {
+      Name: "cs:HitBox"
+      ObjectReference {
+        SelfId: 12482642229939338312
+      }
+    }
+    Overrides {
+      Name: "cs:DamageRange"
+      Vector2 {
+        X: 49
+        Y: 51
+      }
+    }
+    Overrides {
+      Name: "cs:AttackImpulse"
+      Float: 0
+    }
+    Overrides {
+      Name: "cs:VerticalImpulse"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17565407268059226804
+    }
+  }
+}
+Objects {
+  Id: 11449339194707264426
+  Name: "EquipmentAttachObjectToPlayer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15454197064974887587
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Object"
+      ObjectReference {
+        SelfId: 12482642229939338312
+      }
+    }
+    Overrides {
+      Name: "cs:Object:tooltip"
+      String: "Set object to attach to player on equip event."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12439034694186114331
+    }
+  }
+}
+Objects {
+  Id: 15836437915482340514
+  Name: "EquipmentMeleeAttacksServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15454197064974887587
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5082628058110625875
+    }
+  }
+}
+Objects {
+  Id: 5238439499298499442
+  Name: "EquipmentStanceServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15454197064974887587
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1427829216143793458
+    }
+  }
+}
+Objects {
+  Id: 16459350478852199017
+  Name: "EquipmentPickupServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15454197064974887587
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Trigger"
+      ObjectReference {
+        SelfId: 7183382914241227765
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8459825612529451237
+    }
+  }
+}
+Objects {
+  Id: 12025470801328586049
+  Name: "Attack"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9383251075443094008
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Damage"
+      Float: 30
+    }
+    Overrides {
+      Name: "cs:Hitbox"
+      ObjectReference {
+        SelfId: 12482642229939338312
+      }
+    }
+    Overrides {
+      Name: "cs:SwingEffect"
+      AssetReference {
+        Id: 171090409284182791
+      }
+    }
+    Overrides {
+      Name: "cs:SwingSpawnDelay"
+      Float: 0.04
+    }
+    Overrides {
+      Name: "cs:SwingRotationX"
+      Float: 85
+    }
+    Overrides {
+      Name: "cs:SwingRotationY"
+      Float: 0
+    }
+    Overrides {
+      Name: "cs:Damage:tooltip"
+      String: "Damage value applied to a player hit by hitbox trigger."
+    }
+    Overrides {
+      Name: "cs:Hitbox:tooltip"
+      String: "Reference to the hitbox trigger that this ability will use for damaging enemies."
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Ability {
+    IsEnabled: true
+    CastPhaseSettings {
+      Duration: 0.16
+      CanMove: true
+      CanJump: true
+      CanRotate: true
+      PreventOtherAbilities: true
+      IsTargetDataUpdated: true
+      Facing_V2 {
+        Value: "mc:eabilitysetfacing:aim"
+      }
+    }
+    ExecutePhaseSettings {
+      Duration: 0.1
+      CanMove: true
+      CanJump: true
+      CanRotate: true
+      PreventOtherAbilities: true
+      IsTargetDataUpdated: true
+      Facing_V2 {
+        Value: "mc:eabilitysetfacing:aim"
+      }
+    }
+    RecoveryPhaseSettings {
+      Duration: 0.1
+      CanMove: true
+      CanJump: true
+      CanRotate: true
+      PreventOtherAbilities: true
+      IsTargetDataUpdated: true
+      Facing_V2 {
+        Value: "mc:eabilitysetfacing:none"
+      }
+    }
+    CooldownPhaseSettings {
+      Duration: 2
+      CanMove: true
+      CanJump: true
+      CanRotate: true
+      PreventOtherAbilities: true
+      IsTargetDataUpdated: true
+      Facing_V2 {
+        Value: "mc:eabilitysetfacing:none"
+      }
+    }
+    Animation: "1hand_melee_slash_vertical"
+    KeyBinding_v2 {
+      Value: "mc:egameaction:primaryaction"
+    }
+  }
+}
+Objects {
+  Id: 12482642229939338312
+  Name: "Hitbox Trigger"
+  Transform {
+    Location {
+      X: 49.5048828
+      Z: 131.169922
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.8
+      Y: 2.76274371
+      Z: 5.49598837
+    }
+  }
+  ParentId: 9383251075443094008
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:PlayerSocket"
+      String: "root"
+    }
+    Overrides {
+      Name: "cs:LocalPosition"
+      Vector {
+        X: 100
+        Z: 150
+      }
+    }
+    Overrides {
+      Name: "cs:LocalRotation"
+      Rotator {
+      }
+    }
+    Overrides {
+      Name: "cs:LocalPosition:tooltip"
+      String: "Specify the local position of the object when attached to the player socket."
+    }
+    Overrides {
+      Name: "cs:LocalRotation:tooltip"
+      String: "Specify the local rotation of the object when attached to the player socket."
+    }
+    Overrides {
+      Name: "cs:PlayerSocket:tooltip"
+      String: "Specify the player socket to attach the object."
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 7183382914241227765
+  Name: "Pickup Trigger"
+  Transform {
+    Location {
+      Z: 14.9999695
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.7
+      Y: 0.7
+      Z: 0.900000036
+    }
+  }
+  ParentId: 9383251075443094008
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Equip Magic Guitar"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 14723530565189028806
+  Name: "BardLearningStand"
+  Transform {
+    Location {
+      X: -5332.53955
+      Y: 4472.89893
+      Z: 929.530212
+    }
+    Rotation {
+      Pitch: 3.17620182
+      Yaw: -77.5320435
+      Roll: 95.93
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1413591978020585781
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "BardLearningStand"
   }
 }
 Objects {
@@ -1477,40 +2175,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 6175614094449634417
-      value {
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 3
-            Y: 3
-            Z: 3
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 13178921122859960492
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:color"
-          Color {
-            R: 0.0823529437
-            G: 0.239215702
-            A: 1
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_Detail1:color"
-          Color {
-            R: 0.00749903172
-            G: 0.0466650948
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 18005923331114773312
       value {
         Overrides {
@@ -1522,21 +2186,13 @@ Objects {
           Vector {
             X: -2924.06934
             Y: 3737.90625
-            Z: 707.00354
+            Z: 879.775574
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Yaw: 177.890457
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -1548,7 +2204,7 @@ Objects {
 }
 Objects {
   Id: 10065337408434372588
-  Name: "NPC - Dragon"
+  Name: "Dragon3"
   Transform {
     Scale {
       X: 1
@@ -1566,45 +2222,11 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 6175614094449634417
+      key: 16145130479258922062
       value {
         Overrides {
-          Name: "Scale"
-          Vector {
-            X: 3
-            Y: 3
-            Z: 3
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 6437137228495040271
-      value {
-        Overrides {
-          Name: "cs:DamageToPlayers"
-          Int: 1
-        }
-        Overrides {
-          Name: "cs:DamageToNPCs"
-          Float: 1
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 16407974604998684743
-      value {
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceoff"
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 90.956665
-          }
+          Name: "cs:DistanceFromGround"
+          Float: 10
         }
       }
     }
@@ -1620,41 +2242,13 @@ Objects {
           Vector {
             X: -2672.18262
             Y: 3966.14648
-            Z: 707.00354
+            Z: 879.775574
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Yaw: 177.890457
-          }
-        }
-        Overrides {
-          Name: "cs:Speed"
-          Int: 2
-        }
-        Overrides {
-          Name: "cs:AttackRange"
-          Float: 500
-        }
-        Overrides {
-          Name: "cs:RewardResourceAmount"
-          Int: 1
-        }
-        Overrides {
-          Name: "cs:CurrentHealth"
-          Float: 10
-        }
-        Overrides {
-          Name: "cs:VisionRadius"
-          Float: 25000
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.84736335
-            Y: 1.84736335
-            Z: 1.84736335
           }
         }
       }
@@ -2817,7 +3411,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Modern Acoustic Guitars_1"
+    FilePartitionName: "Modern Acoustic Guitars"
   }
 }
 Objects {
@@ -3334,7 +3928,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "BardLearningStand"
+    FilePartitionName: "BardLearningStand_1"
   }
 }
 Objects {
@@ -73191,345 +73785,6 @@ Objects {
         Min: -102400
         Max: 102400
       }
-    }
-  }
-}
-Objects {
-  Id: 10005074784157121906
-  Name: "Default Sky"
-  Transform {
-    Location {
-      Z: 700
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 13551641546322277000
-  ChildIds: 7155168770677928712
-  ChildIds: 10505154200474359396
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 10505154200474359396
-  Name: "Sun Light"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Pitch: -45.8452454
-      Yaw: 33.9371338
-      Roll: 8.92731857
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10005074784157121906
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Use Temperature"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Light Color"
-      Color {
-        R: 1
-        G: 0.955973327
-        B: 0.73791039
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Shape"
-      Int: 1
-    }
-    Overrides {
-      Name: "bp:Size"
-      Float: 5
-    }
-    Overrides {
-      Name: "bp:Light Shaft Bloom"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Cast Volumetric Shadows"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Light Shaft Mask Darkness"
-      Float: 0.5
-    }
-    Overrides {
-      Name: "bp:Intensity"
-      Float: 3.5
-    }
-    Overrides {
-      Name: "bp:Sun Disc Color"
-      Color {
-        R: 3
-        G: 3
-        B: 3
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Light Shaft Bloom Scale"
-      Float: 0.2
-    }
-    Overrides {
-      Name: "bp:Light Shaft Bloom Threshold"
-      Float: 0.05
-    }
-    Overrides {
-      Name: "bp:Light Shaft Occlusion"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Light Shaft Bloom Tint"
-      Color {
-        R: 1
-        G: 0.998476863
-        B: 0.77
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 16910278292812118833
-    }
-  }
-}
-Objects {
-  Id: 7155168770677928712
-  Name: "Skylight"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10005074784157121906
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Index"
-      Int: 3
-    }
-    Overrides {
-      Name: "bp:Occlusion Contrast"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Intensity"
-      Float: 3
-    }
-    Overrides {
-      Name: "bp:Lower Hemisphere Color"
-      Color {
-        R: 0.0666259378
-        G: 0.0307134502
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Occlusion Tint"
-      Color {
-        R: 0.0274509825
-        G: 0.0274509825
-        B: 0.0392156877
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Occlusion Exponent"
-      Float: 0.4
-    }
-    Overrides {
-      Name: "bp:Cast Shadows"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Cast Volumetric Shadows"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Tint Color"
-      Color {
-        R: 0.502886474
-        G: 0.48514995
-        B: 0.752942204
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 11515840070784317904
-    }
-  }
-}
-Objects {
-  Id: 13551641546322277000
-  Name: "Sky Dome"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10005074784157121906
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Zenith Color"
-      Color {
-        R: 0.31
-        G: 0.479072809
-        B: 1
-        A: 0.886000037
-      }
-    }
-    Overrides {
-      Name: "bp:Horizon Color"
-      Color {
-        R: 0.489468127
-        G: 0.480969489
-        B: 0.623960376
-        A: 0.895000041
-      }
-    }
-    Overrides {
-      Name: "bp:Haze Color"
-      Color {
-        R: 0.590618849
-        G: 0.590618849
-        B: 0.701101899
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Use Sun Color for Cloud Color"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Cloud Ambient Brightness"
-      Float: 3
-    }
-    Overrides {
-      Name: "bp:Cloud Rim Brightness"
-      Float: 50
-    }
-    Overrides {
-      Name: "bp:Cloud Opacity"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Cloud Ambient Color"
-      Color {
-        R: 2
-        G: 2
-        B: 2
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Cloud Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Cloud Shape"
-      Int: 4
-    }
-    Overrides {
-      Name: "bp:Cloud Lighting Brightness"
-      Float: 1.4920249
-    }
-    Overrides {
-      Name: "bp:Cloud Wisp Opacity"
-      Float: 0.4
-    }
-    Overrides {
-      Name: "bp:Cloud Speed"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Brightness"
-      Float: 2
-    }
-    Overrides {
-      Name: "bp:Background Clouds"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:High Cloud Index"
-      Int: 2
-    }
-    Overrides {
-      Name: "bp:High Cloud Opacity"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:High Cloud Noise Amount"
-      Float: 0.1
-    }
-    Overrides {
-      Name: "bp:High Cloud Noise Scale"
-      Float: 0.2
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 7887238662729938253
     }
   }
 }

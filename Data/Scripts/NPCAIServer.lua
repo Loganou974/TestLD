@@ -89,9 +89,10 @@ local temporaryVisionRadius = nil
 local temporaryHearingRadius = nil
 	
 function OnTurnOn(id)
-	print("on turn npc "..id)
-	if script.parent.id == id then
+	--print("on turn npc "..id)
+	if Object.IsValid(script.parent) and script.parent.id == id then
 		print("c'est le tour de "..id)
+		Task.Wait(2)
 		EngageNearest()
 		--Tack(SPEED)
 		if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
@@ -180,7 +181,7 @@ function SetState(newState)
 	end
 end
 
-function print(message)
+function print2(message)
     
     Events.Broadcast("addSystemCombatTexte",message,true)
 end

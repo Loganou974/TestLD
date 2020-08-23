@@ -39,7 +39,7 @@ function Tick(deltaTime)
 			
 			for _, other in ipairs(HIT_BOX:GetOverlappingObjects()) do
 				
-                MeleeAttack(other)
+               -- MeleeAttack(other)
             end
         end
     end
@@ -88,7 +88,7 @@ end
 
 -- Event when the hitbox hits another object
 function OnBeginOverlap(trigger, other)
-
+	--print(" touché "..other)
     if canAttack then
         MeleeAttack(other)
     end

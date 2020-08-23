@@ -232,9 +232,9 @@ function OnResourceChanged(player, resourceId, newValue)
         else    
            
            
-            isPlaying=true
-            isMoving=true
-            canAct=true
+            isPlaying=false
+            isMoving=false
+            canAct=false
             stepBar.progress=0
             turnNumberAction=0
         end

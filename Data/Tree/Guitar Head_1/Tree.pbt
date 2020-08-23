@@ -1,7 +1,7 @@
 ﻿Name: "Guitar Head_1"
-RootId: 3891648820455982173
+RootId: 13469233539772840652
 Objects {
-  Id: 16497428674039281477
+  Id: 13860003296082121128
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -18,7 +18,7 @@ Objects {
       Z: 0.0434455872
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -58,7 +58,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16235913612775476943
+  Id: 5683951687924126825
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -77,7 +77,7 @@ Objects {
       Z: 0.04
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -117,7 +117,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1872533663412284665
+  Id: 11338405680542318229
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -136,7 +136,7 @@ Objects {
       Z: 0.04
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -176,7 +176,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6696942210448795908
+  Id: 18358929468416068714
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -195,7 +195,7 @@ Objects {
       Z: 0.04
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -235,7 +235,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17558511954722629751
+  Id: 13237238906234915941
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -252,7 +252,7 @@ Objects {
       Z: 0.04
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -292,7 +292,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7805523074233913874
+  Id: 15559875386302885416
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -309,7 +309,7 @@ Objects {
       Z: 0.04
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -349,7 +349,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9797646663579215387
+  Id: 17160036783325191221
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -368,7 +368,7 @@ Objects {
       Z: 0.04
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -408,7 +408,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14026998876649253862
+  Id: 13214367862012803245
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -427,7 +427,7 @@ Objects {
       Z: 0.08
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -467,7 +467,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17385718159747695978
+  Id: 6476030581684732387
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -486,7 +486,7 @@ Objects {
       Z: 0.05
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -526,7 +526,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11278144316541303376
+  Id: 6923925389264754176
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -545,7 +545,7 @@ Objects {
       Z: 0.05
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -585,7 +585,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3048779371000850079
+  Id: 17977275615795458509
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -604,7 +604,7 @@ Objects {
       Z: 0.08
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -644,7 +644,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18300580461383488463
+  Id: 5910545347274376621
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -663,7 +663,7 @@ Objects {
       Z: 0.1
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -703,7 +703,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15387182031479922661
+  Id: 12211801741111199841
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -722,7 +722,7 @@ Objects {
       Z: 0.1
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -762,7 +762,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2264553867760639702
+  Id: 17969416012361292798
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -781,7 +781,7 @@ Objects {
       Z: 0.0265717972
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -821,7 +821,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9635137556762058718
+  Id: 394050142409403234
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -840,7 +840,7 @@ Objects {
       Z: 0.0265717972
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -880,7 +880,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10723414771334257123
+  Id: 6877499230215783427
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -899,7 +899,7 @@ Objects {
       Z: 0.0265717972
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -939,7 +939,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3841674196220172744
+  Id: 5707618461328004203
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -958,7 +958,7 @@ Objects {
       Z: 0.0265717972
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -998,7 +998,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11215011675421376064
+  Id: 83210834555575192
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -1017,7 +1017,7 @@ Objects {
       Z: 0.0265717972
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1057,7 +1057,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14462477763837161983
+  Id: 13279065813421695720
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -1076,7 +1076,7 @@ Objects {
       Z: 0.0265717972
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1116,7 +1116,7 @@ Objects {
   }
 }
 Objects {
-  Id: 538250286067661616
+  Id: 10799243124520023581
   Name: "Prism - 6-Sided Half"
   Transform {
     Location {
@@ -1135,7 +1135,7 @@ Objects {
       Z: 0.0471519753
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1183,7 +1183,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7620485141263668913
+  Id: 5402760195784179660
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -1202,7 +1202,7 @@ Objects {
       Z: 0.124562249
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1246,7 +1246,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5211807418532557770
+  Id: 7469341862538552135
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -1265,7 +1265,7 @@ Objects {
       Z: 0.211671233
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1309,7 +1309,7 @@ Objects {
   }
 }
 Objects {
-  Id: 796501694196383810
+  Id: 2336748897067950633
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -1328,7 +1328,7 @@ Objects {
       Z: 0.297570258
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1372,7 +1372,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5470978719886304207
+  Id: 109297902958604935
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -1391,7 +1391,7 @@ Objects {
       Z: 0.297570258
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1435,7 +1435,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17660317075734105043
+  Id: 2383097959055609936
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -1454,7 +1454,7 @@ Objects {
       Z: 0.211671233
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1498,7 +1498,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3688889546042544929
+  Id: 7292421326769778489
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -1517,7 +1517,7 @@ Objects {
       Z: 0.124562249
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1561,7 +1561,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11323703741482985900
+  Id: 8809856364468334771
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -1580,7 +1580,7 @@ Objects {
       Z: 0.0490511768
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1620,7 +1620,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16390742808980270677
+  Id: 10521494760278261896
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -1639,7 +1639,7 @@ Objects {
       Z: 0.0490511768
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1679,7 +1679,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7050316486273082902
+  Id: 13081072751522135425
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -1698,7 +1698,7 @@ Objects {
       Z: 0.0490511768
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1738,7 +1738,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16330643603150972201
+  Id: 16541088824863897657
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -1757,7 +1757,7 @@ Objects {
       Z: 0.0490511768
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1797,7 +1797,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6074642416941415313
+  Id: 8618357432733761754
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -1816,7 +1816,7 @@ Objects {
       Z: 0.0490511768
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1856,7 +1856,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4516930298803316063
+  Id: 13442631540769738820
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -1875,7 +1875,7 @@ Objects {
       Z: 0.0490511768
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1915,7 +1915,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12263562916797663694
+  Id: 3111351343762367589
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -1934,7 +1934,7 @@ Objects {
       Z: 0.0434456132
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1971,7 +1971,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6314312163973640683
+  Id: 1203473221650333048
   Name: "Prism - 6-Sided Half"
   Transform {
     Location {
@@ -1990,7 +1990,7 @@ Objects {
       Z: 0.0329601169
     }
   }
-  ParentId: 3891648820455982173
+  ParentId: 13469233539772840652
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
