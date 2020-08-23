@@ -108,7 +108,7 @@ end
 function OnEquipped(equipment, player)
     Task.Wait(0.1)
     EQUIPMENT.collision = Collision.INHERIT
-	print("pickup")
+	--print("pickup weapon")
 	local pickupTrigger = EQUIPMENT:FindChildByName("Pickup Trigger")
 	if (pickupTrigger) then
 		pickupTrigger.collision = Collision.FORCE_OFF
@@ -117,7 +117,8 @@ end
 
 function OnExecute(ability)
     ignoreList = {}
-    canAttack = true
+	canAttack = true
+	if(automaticTarget==nil) then return  end
     local distance=ABILITY.owner:GetWorldPosition()-automaticTarget:GetWorldPosition()
 	distance=math.floor(distance.size/30)
 	print("distance pour range weapon ="..distance)

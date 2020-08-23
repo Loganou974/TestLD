@@ -1,19 +1,9 @@
 ﻿Name: "BardLearningStand_1"
 RootId: 3911155518442132406
 Objects {
-  Id: 6686454216444789001
+  Id: 15007757599122012816
   Name: "BardSkills"
   Transform {
-    Location {
-      X: 150
-      Y: 64.0854645
-      Z: -29.8840637
-    }
-    Rotation {
-      Pitch: 70.000267
-      Yaw: -89.9998703
-      Roll: -179.999832
-    }
     Scale {
       X: 1
       Y: 1
@@ -21,162 +11,48 @@ Objects {
     }
   }
   ParentId: 3911155518442132406
-  ChildIds: 3957682328407785463
-  ChildIds: 4323655254051884327
-  ChildIds: 8861656632391550484
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Equipment {
-    SocketName: "head"
-    PickupTrigger {
-      SelfId: 3957682328407785463
-    }
-  }
-}
-Objects {
-  Id: 8861656632391550484
-  Name: "ChangeClasse"
-  Transform {
-    Location {
-      X: -299.999512
-      Y: 3649.99854
-      Z: -149.997787
-    }
-    Rotation {
-      Pitch: 3.4150944e-05
-      Yaw: 89.9999924
-      Roll: -9.65933668e-06
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6686454216444789001
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 11462264770745263123
-    }
-  }
-}
-Objects {
-  Id: 4323655254051884327
-  Name: "Bardic Inspiration"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6686454216444789001
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Ability {
-    IsEnabled: true
-    CastPhaseSettings {
-      Duration: 0.15
-      CanMove: true
-      CanJump: true
-      CanRotate: true
-      PreventOtherAbilities: true
-      IsTargetDataUpdated: true
-      Facing_V2 {
-        Value: "mc:eabilitysetfacing:aim"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6972370799800572422
+      value {
+        Overrides {
+          Name: "RecoveryDuration"
+          Float: 5
+        }
+        Overrides {
+          Name: "CooldownDuration"
+          Float: 10
+        }
       }
     }
-    ExecutePhaseSettings {
-      CanMove: true
-      CanJump: true
-      CanRotate: true
-      PreventOtherAbilities: true
-      IsTargetDataUpdated: true
-      Facing_V2 {
-        Value: "mc:eabilitysetfacing:aim"
+    ParameterOverrideMap {
+      key: 16058774555376254967
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BardSkills"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 150.000015
+            Y: 64.085556
+            Z: -29.8843307
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 87.5152435
+            Yaw: -116.571899
+            Roll: 136.464386
+          }
+        }
       }
     }
-    RecoveryPhaseSettings {
-      Duration: 0.1
-      CanMove: true
-      CanJump: true
-      CanRotate: true
-      PreventOtherAbilities: true
-      IsTargetDataUpdated: true
-      Facing_V2 {
-        Value: "mc:eabilitysetfacing:none"
-      }
-    }
-    CooldownPhaseSettings {
-      Duration: 2
-      CanMove: true
-      CanJump: true
-      CanRotate: true
-      PreventOtherAbilities: true
-      IsTargetDataUpdated: true
-      Facing_V2 {
-        Value: "mc:eabilitysetfacing:none"
-      }
-    }
-    Animation: "unarmed_wave"
-    KeyBinding_v2 {
-      Value: "mc:egameaction:extraaction_40"
-    }
-  }
-}
-Objects {
-  Id: 3957682328407785463
-  Name: "Trigger"
-  Transform {
-    Location {
-      Y: 100
-    }
-    Rotation {
-    }
-    Scale {
-      X: 3.25
-      Y: -2.5
-      Z: 2.5
-    }
-  }
-  ParentId: 6686454216444789001
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Trigger {
-    Interactable: true
-    InteractionLabel: "Learn how to become a bard"
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
+    TemplateAsset {
+      Id: 13735436298103330789
     }
   }
 }

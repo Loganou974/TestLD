@@ -365,7 +365,7 @@ function FindNearestTarget(me)
     end
     
     -- Other NPCs
-    print("Cherche ennemis de "..myTeam)
+    --print("Cherche ennemis de "..myTeam)
     local enemyNPCs = NPC_MANAGER().GetEnemies(myTeam)
     
     for _,enemy in ipairs(enemyNPCs) do
@@ -381,7 +381,7 @@ function FindNearestTarget(me)
            -- end
         end
     end
-    print("trouve "..nearestEnemy.name.." le plus proche")
+    --print("trouve "..nearestEnemy.name.." le plus proche")
     return nearestEnemy
 
 end
@@ -632,6 +632,11 @@ function newTurn()
     end 
     if isPlayer(currentPlayer)~=nil then 
         currentPlayer=isPlayer(currentPlayer)
+        if currentPlayer:GetResource("Inspired")>0 then
+            currentPlayer:SetResource("actionMax",2)
+        else
+            currentPlayer:SetResource("actionMax",1)
+        end
         addDebugCombatTexte("1er joueur: "..currentPlayer.name,debug)
         Events.BroadcastToAllPlayers("BannerMessage",currentPlayer.name.." is playing")
         

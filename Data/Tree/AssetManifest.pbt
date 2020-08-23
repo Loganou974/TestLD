@@ -314,15 +314,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11597592556193149105
-  Name: "Hatchet - Handle"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_axe_handle_001"
-  }
-}
-Assets {
   Id: 11536413602983776597
   Name: "Wooden Barrel"
   PlatformAssetType: 1
@@ -770,15 +761,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid8px_020"
-  }
-}
-Assets {
-  Id: 4281380979366999084
-  Name: "Hatchet - Blade"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_axe_001"
   }
 }
 Assets {

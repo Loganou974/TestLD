@@ -199,6 +199,7 @@ function desactivateAllAbilities()
 end
 
 function OnExecuteAbility(ability)
+    print("execute "..ability.name.."de "..ability.owner.name)
     actionMax=me:GetResource("actionMax")
     if me:GetResource("incombat") == 1 then
         turnNumberAction=turnNumberAction+1
@@ -379,6 +380,7 @@ end
 
 function OnWeaponChanged(equipementName)
     local equipement=nil
+    Task.Wait(0.2)
     print(equipementName.."recu de serveur")
     for _, e in pairs(me:GetEquipment()) do
        print(e.name.." "..equipementName)

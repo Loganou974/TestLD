@@ -3,7 +3,7 @@ local propEvent1 = script:GetCustomProperty("Event1")
 local propEventNPC = script:GetCustomProperty("EventNPC")
 local listener=nil
 function OnTurnOn(player)
-    print("gizmo on "..player.name)
+    --print("gizmo on "..player.name)
     local inst=script.parent
     for n, v in ipairs(player:GetAttachedObjects()) do
         if(n=="head") then v:Detach() end
@@ -14,7 +14,8 @@ function OnTurnOn(player)
     inst:SetPosition(pos)
 end
 function OnTurnNpc(name)
-    print("gizmo on "..name)
+    --print("gizmo on "..name)
+    
     local player=World.FindObjectById(name)
     
     local inst=script.parent
