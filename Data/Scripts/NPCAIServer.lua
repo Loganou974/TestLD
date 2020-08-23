@@ -90,10 +90,12 @@ local temporaryHearingRadius = nil
 	
 function OnTurnOn(id)
 	--print("on turn npc "..id)
-	if Object.IsValid(script.parent) and script.parent.id == id then
+	if Object.IsValid(script) and  Object.IsValid(script.parent) and script.parent.id == id then
 		print("c'est le tour de "..id)
-		Task.Wait(2)
+		
 		EngageNearest()
+		Events.Broadcast("BEGIN_TARGET",target)
+		Task.Wait(2)
 		--Tack(SPEED)
 		if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
 			SetState(STATE_ATTACK_CAST)
@@ -487,6 +489,7 @@ function FindNearestEnemy()
 	
 	-- Other NPCs
 	local enemyNPCs = NPC_MANAGER().GetEnemies(myTeam)
+	
 	for _,enemy in ipairs(enemyNPCs) do
 		if enemy.context.IsAlive() then
 			local canSee,distSquared = CanSeeEnemy(enemy, myPos, forwardVector, nearestDistSquared)

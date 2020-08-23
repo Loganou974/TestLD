@@ -64,7 +64,26 @@ Objects {
   }
   ParentId: 4781671109827199097
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 4162475291451399634
+      value {
+        Overrides {
+          Name: "cs:Event1"
+          String: "BEGIN_TARGET"
+        }
+        Overrides {
+          Name: "cs:EventNPC"
+          String: "BEGIN_TARGET_NPC"
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 4438679500385817809
       value {
@@ -1768,6 +1787,10 @@ Objects {
       Name: "cs:VerticalImpulse"
       Float: 0
     }
+    Overrides {
+      Name: "cs:Range"
+      Int: 10
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2892,6 +2915,10 @@ Objects {
       Name: "cs:VerticalImpulse"
       Float: 0
     }
+    Overrides {
+      Name: "cs:Range"
+      Int: 10
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3544,6 +3571,10 @@ Objects {
       Name: "cs:VerticalImpulse"
       Float: 0
     }
+    Overrides {
+      Name: "cs:Range"
+      Int: 10
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4044,6 +4075,7 @@ Objects {
   }
   ParentId: 14291100318175227123
   ChildIds: 3650242262373799754
+  ChildIds: 513750229204672978
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4071,6 +4103,408 @@ Objects {
       Physics {
       }
     }
+  }
+}
+Objects {
+  Id: 513750229204672978
+  Name: "Teleporter"
+  Transform {
+    Location {
+      X: -107.484741
+      Y: -129.34816
+      Z: 7.93247175
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.0871859342
+      Y: 0.0871859342
+      Z: 0.0871859342
+    }
+  }
+  ParentId: 2523724863634603650
+  ChildIds: 12489322789243696254
+  ChildIds: 8927409120385796398
+  ChildIds: 16884784695524161209
+  ChildIds: 16345136628119983549
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Target"
+      ObjectReference {
+        SelfId: 9847263683247606392
+      }
+    }
+    Overrides {
+      Name: "cs:DestinationOffset"
+      Vector {
+        Z: 2
+      }
+    }
+    Overrides {
+      Name: "cs:StartPointEffects"
+      AssetReference {
+        Id: 851976022591200177
+      }
+    }
+    Overrides {
+      Name: "cs:EndPointEffects"
+      AssetReference {
+        Id: 851976022591200177
+      }
+    }
+    Overrides {
+      Name: "cs:TeleporterCooldown"
+      Float: 0
+    }
+    Overrides {
+      Name: "cs:PerPlayerCooldown"
+      Float: 0
+    }
+    Overrides {
+      Name: "cs:Target:tooltip"
+      String: "Target object to teleport to. Leave blank to just use DestinationOffset as a world position."
+    }
+    Overrides {
+      Name: "cs:DestinationOffset:tooltip"
+      String: "Offset from the target to teleport to. If no target, instead this is a world position."
+    }
+    Overrides {
+      Name: "cs:TeleporterCooldown:tooltip"
+      String: "Cooldown period before another player can teleport from this teleporter"
+    }
+    Overrides {
+      Name: "cs:PerPlayerCooldown:tooltip"
+      String: "Cooldown period on the player before they can teleport again at any teleporter"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 10948749185342342348
+    SubobjectId: 11106018696261059462
+    InstanceId: 8958019517201597513
+    TemplateId: 16799117021481401644
+  }
+}
+Objects {
+  Id: 16345136628119983549
+  Name: "Trigger"
+  Transform {
+    Location {
+      Z: 75
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 513750229204672978
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:sphere"
+    }
+  }
+  InstanceHistory {
+    SelfId: 10920458528709567716
+    SubobjectId: 11122773311150302126
+    InstanceId: 8958019517201597513
+    TemplateId: 16799117021481401644
+  }
+}
+Objects {
+  Id: 16884784695524161209
+  Name: "Geo"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 513750229204672978
+  ChildIds: 6442771445285241997
+  ChildIds: 16441440248843756041
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 8149727643304006717
+    SubobjectId: 8991685513815544695
+    InstanceId: 8958019517201597513
+    TemplateId: 16799117021481401644
+  }
+}
+Objects {
+  Id: 16441440248843756041
+  Name: "Pipe (thin)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.8
+      Y: 1.8
+      Z: 0.1
+    }
+  }
+  ParentId: 16884784695524161209
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.955973685
+        G: 0.356400251
+        B: 0.010329823
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5836430349218932838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10734235340030660923
+    SubobjectId: 11035770042224055921
+    InstanceId: 8958019517201597513
+    TemplateId: 16799117021481401644
+  }
+}
+Objects {
+  Id: 6442771445285241997
+  Name: "Cylinder - Rounded Bottom-Aligned"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 0.05
+    }
+  }
+  ParentId: 16884784695524161209
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.205078766
+        G: 0.205078766
+        B: 0.205078766
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13629958479359906438
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15006546162724716210
+    SubobjectId: 15965456887812749816
+    InstanceId: 8958019517201597513
+    TemplateId: 16799117021481401644
+  }
+}
+Objects {
+  Id: 8927409120385796398
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 513750229204672978
+  ChildIds: 8415501469006402781
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 1553184391026647460
+    SubobjectId: 1756193504448636654
+    InstanceId: 8958019517201597513
+    TemplateId: 16799117021481401644
+  }
+}
+Objects {
+  Id: 8415501469006402781
+  Name: "TeleporterClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8927409120385796398
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ComponentRoot"
+      ObjectReference {
+        SelfId: 513750229204672978
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 32149845205756334
+    }
+  }
+  InstanceHistory {
+    SelfId: 14989797250213971609
+    SubobjectId: 15985299722947576275
+    InstanceId: 8958019517201597513
+    TemplateId: 16799117021481401644
+  }
+}
+Objects {
+  Id: 12489322789243696254
+  Name: "TeleporterServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 513750229204672978
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ComponentRoot"
+      ObjectReference {
+        SelfId: 513750229204672978
+      }
+    }
+    Overrides {
+      Name: "cs:Trigger"
+      ObjectReference {
+        SelfId: 16345136628119983549
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7679653554725145050
+    }
+  }
+  InstanceHistory {
+    SelfId: 11886486817052818523
+    SubobjectId: 12187880240191290129
+    InstanceId: 8958019517201597513
+    TemplateId: 16799117021481401644
   }
 }
 Objects {
@@ -13141,6 +13575,12 @@ Objects {
         SubObjectId: 6594683724496257638
         InstanceId: 4972742490433167697
         TemplateId: 6297665059397647461
+      }
+    }
+    Overrides {
+      Name: "cs:ModuleManager"
+      AssetReference {
+        Id: 9770511928359673738
       }
     }
   }

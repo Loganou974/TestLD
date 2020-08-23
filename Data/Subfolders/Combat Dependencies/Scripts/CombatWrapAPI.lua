@@ -48,6 +48,7 @@ end
 
 -- ApplyDamage()
 function API.ApplyDamage(object, dmg, source, pos, rot)
+	
 	Events.Broadcast("GoingToTakeDamage", object, dmg, source)
 	
 	CROSS_CONTEXT_CALLER().Call(function()
@@ -79,6 +80,7 @@ end
 
 
 function GetWrapperFor(object)
+	
 	if object:IsA("Player") then
 		return PLAYER_WRAPPER
 	end

@@ -1,4 +1,8 @@
 ﻿local propLastSpawn = script:GetCustomProperty("LastSpawn")
+local MODULE = require( script:GetCustomProperty("ModuleManager") )
+
+function NPC_MANAGER() return MODULE.Get("standardcombo.NPCKit.NPCManager") end
+function NAV_MESH() return _G.NavMesh end
 local debug=true
 local currentTurn=0;
 local playersAreInCombat=false
@@ -22,6 +26,7 @@ local races={
     {name ="Aarakocra",bonus={0,0,2,0,1,0,0},speed=50}
 }
 local classes={
+    {name="Novice",hit=1},
     {name="Barbarian",hit=12},
     {name="Bard",hit=8},
     {name="Cleric",hit=8},
@@ -34,9 +39,6 @@ local classes={
     {name="Rogue",hit=8},
     {name="Warlock",hit=8},
     {name="Wizard",hit=6}
-
-
-
 
 }
 local currentRound=0
@@ -62,8 +64,8 @@ end
 
 function savePlayerData(player,playerData)
     Storage.SetPlayerData(player, playerData)
-    addDebugCombatTexte("player "..player.name.." "..player:GetResource("STR"),debug)
-    Events.BroadcastToPlayer(player,"STAT_REFRESH",playerData.race.name,playerData.class.name)
+    --addDebugCombatTexte("player "..player.name.." "..player:GetResource("STR"),debug)
+    --Events.BroadcastToPlayer(player,"STAT_REFRESH",playerData.race.name,playerData.class.name)
     --Events.BroadcastToPlayer(player,"STATPOINT_REFRESH",playerData.statPoint,)
    
     
@@ -232,7 +234,8 @@ function GetStat(player)
     addDebugCombatTexte("get stat for "..player.name,debug)
 
     playerData=loadPlayerData(player)
-    
+    player:ClearResources()
+    player:SetResource("incombat",0)
    
     if player:GetResource("STR") == nil or player:GetResource("STR") == 0  then
         addDebugCombatTexte("first time char",debug)
@@ -240,6 +243,7 @@ function GetStat(player)
         playerData.class=  {name="Novice",hit=1}
         player.maxHitPoints = playerData.class.hit;
         player.hitPoints= player.maxHitPoints
+        player:SetResource("classe",1)
         player:SetResource("statPoint",2)
         player:SetResource("STR",10)
         player:SetResource("INT",10)
@@ -268,9 +272,7 @@ function OnDamagedPlayer(player,damage)
     -- addDebugCombatTexte("Player " .. player.name .. " just took " .. damage.amount .. " damage!")
 end
 
-function OnResourceChanged(player, resourceId, newValue)
 
-end
 
 
 
@@ -301,7 +303,7 @@ Events.Connect("GETSTAT", GetStat)
 Events.Connect("GAINSTATPOINT", OnStatpointGained)
 local playerDiedInCombat={}
 function OnPlayerDied(player)
-    addDebugCombatTexte("player "..player.name.." died")
+    print("player "..player.name.." died ")
     if playersAreInCombat then
         addDebugCombatTexte("and was in combat")
         playerDiedInCombat[#playerDiedInCombat+1]=player
@@ -310,21 +312,25 @@ function OnPlayerDied(player)
             addDebugCombatTexte("and was the last one should be gameover")
             endCombat(false)
         end
+
+    else
+        print("respawn "..player.name)
+        player:Respawn(propLastSpawn, Rotation.New(0, 0, 45))
     end
 end
 local waitTime=5
 function OnPlayerJoined(player)
     
-    --Events.BroadcastToAllPlayers("SubBannerMessage",player.name.." is ready to play some adventures")
-    player:ClearResources()
-    player:SetResource("incombat",0)
-    GetStat(player)
+    
+   
+   
     players= Game.GetPlayers()
-    print(#players.." "..player.name)
+    print("N°"..#players..") "..player.name)
     player.diedEvent:Connect(OnPlayerDied)
     addSystemCombatTexte(player.name.." is ready to play some adventures")
     Events.BroadcastToPlayer(player,"BannerMessage","GameMaster: Hello "..player.name.."!")
     Task.Wait(waitTime)
+    GetStat(player)
     Events.BroadcastToPlayer(player,"BannerMessage","GameMaster: Glad to see you could make it to this dnd session")
     Task.Wait(waitTime)
     Events.BroadcastToPlayer(player,"BannerMessage","GameMaster: Here's 5 dices, roll them i will keep the best rolls")
@@ -335,23 +341,71 @@ function OnPlayerJoined(player)
     
   
 end
+function FindNearestTarget(me)
+    local myPos = me:GetWorldPosition()
+   
+    local myTeam = me.team;
+    
+    local nearestEnemy = nil
+    local nearestDistSquared = 9999999999
+    
+    -- Players
+    for _,enemy in ipairs(Game.GetPlayers()) do
+        if (enemy.team ~= myTeam and not enemy.isDead) then
+            --local canSee,distSquared = CanSeeEnemy(enemy, myPos, forwardVector, nearestDistSquared)
+            --if canSee then
+            local distSquared=(myPos-ennemy:GetWorldPosition()).size
+            if(distSquared<nearestDistSquared) then
+                nearestDistSquared = distSquared
+                nearestEnemy = enemy
+            end
+                --print("Distance to enemy = " .. tostring(math.sqrt(nearestDistSquared)))
+            --end
+        end
+    end
+    
+    -- Other NPCs
+    print("Cherche ennemis de "..myTeam)
+    local enemyNPCs = NPC_MANAGER().GetEnemies(myTeam)
+    
+    for _,enemy in ipairs(enemyNPCs) do
+        if enemy.context.IsAlive() then
+           -- local canSee,distSquared = CanSeeEnemy(enemy, myPos, forwardVector, nearestDistSquared)
+           -- if canSee then
+           local distSquared=(myPos-enemy:GetWorldPosition()).sizeSquared
+           if(distSquared<nearestDistSquared) then
+               nearestDistSquared = distSquared
+               nearestEnemy = enemy
+           end
+                --print("Distance to enemy = " .. tostring(math.sqrt(nearestDistSquared)))
+           -- end
+        end
+    end
+    print("trouve "..nearestEnemy.name.." le plus proche")
+    return nearestEnemy
+
+end
 function addSystemCombatTexte(message)
     print("asct:"..message)
-    Events.BroadcastToAllPlayers("addSystemCombatTexte",message)
+   -- Events.BroadcastToAllPlayers("addSystemCombatTexte",message)
 end
 function addDebugCombatTexte(message)
     
-    Events.Broadcast("addSystemCombatTexte",message,debug)
+    --Events.Broadcast("addSystemCombatTexte",message,debug)
+    print(message)
 end
 function addFriendCombatTexte(source,message)
-    Events.BroadcastToAllPlayers("addSystemCombatTexte",source,message)
+    --Events.BroadcastToAllPlayers("addSystemCombatTexte",source,message)
+    print(message)
 end
 function addEnnemyCombatTexte(message)
-    Events.BroadcastToAllPlayers("addSystemCombatTexte",source,message)
+  --  Events.BroadcastToAllPlayers("addSystemCombatTexte",source,message)
+  print(message)
 end
 
 function addTexte(message)
     Events.BroadcastToAllPlayers("addTexte",message,Color.YELLOW)
+    print(message)
 end
 function spairs(t, order)
     -- collect the keys
@@ -585,6 +639,9 @@ function newTurn()
         Events.BroadcastToPlayer(currentPlayer,"BEGIN_TURN")
 
         Events.Broadcast("BEGIN_TURN",currentPlayer)
+        other=FindNearestTarget(currentPlayer)
+        other=other.parent
+        Events.Broadcast("BEGIN_TARGET_NPC",other.id)
         currentPlayer.movementControlMode = MovementControlMode.VIEW_RELATIVE
         abilities=currentPlayer:GetAbilities()
             for i,a in ipairs(abilities) do
@@ -640,7 +697,12 @@ end
 function OnMoveEnd(player)
     player.movementControlMode = MovementControlMode.NONE
 end
+function OnMove(player)
+    other=FindNearestTarget(player)
+    other=other.parent
+    Events.Broadcast("BEGIN_TARGET_NPC",other.id)
 
+end
 function OnMoveStart(player,pos)
     player:SetWorldPosition(pos)
     player.movementControlMode = MovementControlMode.VIEW_RELATIVE
@@ -688,6 +750,7 @@ Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Events.Connect("END_TURN", OnEndTurn)
 Events.Connect("END_MOVE", OnMoveEnd)
 Events.Connect("START_MOVE", OnMoveStart)
+Events.Connect("MOVE", OnMove)
 
 Events.Connect("ACTIVATE_ABILITIES", activateAllAbilities)
 Events.Connect("DESACTIVATE_ABILITIES", desactivateAllAbilities)

@@ -1,4 +1,20 @@
 ﻿local debug=true
+local classes={
+    {name="Novice",hit=1},
+    {name="Barbarian",hit=12},
+    {name="Bard",hit=8},
+    {name="Cleric",hit=8},
+    {name="Druid",hit=8},
+    {name="Fighter",hit=10},
+    {name="Monk",hit=8},
+    {name="Paladin",hit=10},
+    {name="Ranger",hit=10},
+    {name="Sorcerer",hit=6},
+    {name="Rogue",hit=8},
+    {name="Warlock",hit=8},
+    {name="Wizard",hit=6}
+
+}
 
 local propUIContainer = script:GetCustomProperty("UIContainer"):WaitForObject()
 local propSTRValueText = script:GetCustomProperty("STRValueText"):WaitForObject()
@@ -39,10 +55,7 @@ function rollDice(player)
     World.SpawnAsset("B1FC3DA40EE45031:Dice20", {position = pos})
 end
 canRoll=true
-function print(message)
-    
-    Events.Broadcast("addSystemCombatTexte",message,debug)
-end
+
 function appuye(player,touche)     
   -- print("touche "..touche)
    if touche=="ability_primary" then
@@ -156,25 +169,21 @@ end
 function OnPlayerJoined(player)
     me=Game.GetLocalPlayer()
    if me ==player then
-   
-    me=player
-    --Events.BroadcastToServer("GETSTAT",me)
-    print("Hello, " .. me.name .. "!") 
-    propClassText_0:AttachToPlayer(me, "nameplate")
-    local abilities = me:GetAbilities()
+        print("Hello, " .. me.name .. "!") 
+        propClassText_0:AttachToPlayer(me, "nameplate")
+        local abilities = me:GetAbilities()
+        
+        for _, ability in pairs(abilities) do
+            print("abilite recu "..ability.name .." pour " .. me.name)
+            ability.castEvent:Connect(OnCast)
+            ability.executeEvent:Connect(OnExecuteAbility)
+        end
+        me.resourceChangedEvent:Connect(OnResourceChanged)
+        me.bindingPressedEvent:Connect(appuye)
     
-    for _, ability in pairs(abilities) do
-        print("abilite recu "..ability.name .." pour " .. me.name)
-        ability.castEvent:Connect(OnCast)
-        ability.executeEvent:Connect(OnExecuteAbility)
+        
+        me.damagedEvent:Connect(OnDamagedPlayer)
     end
-   
-    player.bindingPressedEvent:Connect(appuye)
- 
-    player.resourceChangedEvent:Connect(OnResourceChanged)
-    player.damagedEvent:Connect(OnDamagedPlayer)
-   end
-  
    
    
     
@@ -216,10 +225,23 @@ end
 function OnDamagedPlayer(player,damage)
     -- print("Player " .. player.name .. " just took " .. damage.amount .. " damage!")
 end
+
 local firstTimeHorsCombat=true
 local combatMusic=nil
 function OnResourceChanged(player, resourceId, newValue)
-    print(player.name.." "..resourceId.." "..newValue)
+    print("ressource changed for "..player.name.." id="..resourceId.." value="..newValue)
+    if resourceId=="classe" then
+           for i,v in ipairs(classes) do
+                if i==newValue then
+                    classe=classes[i]
+                    break
+                end
+           end
+            propClassText.text="Class: " .. classe.name
+            propClassText_0.text="<" .. classe.name ..">"
+           
+        
+    end
     if resourceId=="dice" then
         --print(player.name.." "..resourceId.." "..newValue)
     end
@@ -230,8 +252,6 @@ function OnResourceChanged(player, resourceId, newValue)
         if firstTimeHorsCombat then
             firstTimeHorsCombat=false
         else    
-           
-           
             isPlaying=false
             isMoving=false
             canAct=false
@@ -239,10 +259,8 @@ function OnResourceChanged(player, resourceId, newValue)
             turnNumberAction=0
         end
 
-     end
-    --if resourceId=="incombat" and newValue==0 then
-     --   print(me.name.." in combat"..)
-   -- end
+    end
+
 
 end
 
@@ -264,18 +282,33 @@ function OnTurnOn()
         turnNumberAction=0
     end
 end
+
+--print(" tapper tapper tapper "..other.id)
+--
+
+local lastLocationSinceDeltaTime=0
+local distance=0
 function Tick(deltaTime)
+    
     if me:GetResource("incombat")==1 then
         if isPlaying and isMoving then
-        
+            
             newPos=me:GetWorldPosition()
             maxDistance=me:GetResource("SPEED")
+            lastLocationSinceDeltaTime=distance
+           distance=newPos-originTurnPosition
+           distance=math.floor(distance.size/30)
+           --local stepped=math.abs(distance- lastLocationSinceDeltaTime)
+           --print(" step "..stepped)
+           Task.Wait(0.2)
+            Events.BroadcastToServer("MOVE",me)
+          
             if originTurnPosition==nil then
                 originTurnPosition=me:GetWorldPosition()
               
             end
-            distance=newPos-originTurnPosition
-            distance=math.floor(distance.size/30)
+            
+           
             --UI.PrintToScreen("distance "..distance.."/"..maxDistance)
             stepBar.progress=distance/maxDistance
             if distance>=maxDistance then
@@ -290,6 +323,7 @@ function Tick(deltaTime)
         else
        
         end
+    
     end
 
 end

@@ -19,12 +19,12 @@ local HIT_BOX = script:GetCustomProperty("HitBox"):WaitForObject()
 local DAMAGE_RANGE = script:GetCustomProperty("DamageRange")
 local ATTACK_IMPULSE = script:GetCustomProperty("AttackImpulse") or 50000
 local VERTICAL_IMPULSE = script:GetCustomProperty("VerticalImpulse") or 20000
-
+local Range = script:GetCustomProperty("Range")
 
 local ignoreList = {}
 local currentSwipe = nil
 local canAttack = false
-
+local automaticTarget=nil
 
 function Tick(deltaTime)
 	
@@ -37,10 +37,11 @@ function Tick(deltaTime)
         -- Damage the enemies
 		if Object.IsValid(HIT_BOX) then
 			
-			for _, other in ipairs(HIT_BOX:GetOverlappingObjects()) do
+			--for _, other in ipairs(HIT_BOX:GetOverlappingObjects()) do
 				
-               -- MeleeAttack(other)
-            end
+				--MeleeAttack(other)
+				--MeleeAttack(automaticTarget)
+            --end
         end
     end
 end
@@ -48,13 +49,21 @@ end
 function MeleeAttack(other)
 	if not Object.IsValid(ABILITY) then return end
 	if other == ABILITY.owner then return end
-	
+	if other ==nil then return end
 	if COMBAT().IsDead(other) then return end
 	
-	local otherTeam = COMBAT().GetTeam(other)
-	if otherTeam and Teams.AreTeamsFriendly(otherTeam, ABILITY.owner.team) then return end
+	local distance=ABILITY.owner:GetWorldPosition()-other:GetWorldPosition()
+	distance=math.floor(distance.size/30)
+	print("distance pour range weapon ="..distance)
+	if Range < distance then 
+		
+		 ResetMelee(ABILITY) return 
+		end
+	--local otherTeam = COMBAT().GetTeam(other)
+	--if otherTeam and Teams.AreTeamsFriendly(otherTeam, ABILITY.owner.team) then return end
 	
-	if ignoreList[other] ~= 1 then
+	--if ignoreList[other] ~= 1 then
+		
 		ignoreList[other] = 1
 		
 		local dmg = Damage.New()
@@ -76,7 +85,8 @@ function MeleeAttack(other)
 		
 		BroadcastDamageFeedback(dmg.amount, pos)
 		ResetMelee(ABILITY)
-	end
+		automaticTarget=nil
+	--end
 end
 
 function BroadcastDamageFeedback(amount, position)
@@ -90,7 +100,8 @@ end
 function OnBeginOverlap(trigger, other)
 	--print(" touché "..other)
     if canAttack then
-        MeleeAttack(other)
+		--MeleeAttack(other)
+		MeleeAttack(automaticTarget)
     end
 end
 
@@ -107,7 +118,10 @@ end
 function OnExecute(ability)
     ignoreList = {}
     canAttack = true
-    
+    local distance=ABILITY.owner:GetWorldPosition()-automaticTarget:GetWorldPosition()
+	distance=math.floor(distance.size/30)
+	print("distance pour range weapon ="..distance)
+	MeleeAttack(automaticTarget)
 	-- Impulse
 	local v = ability:GetTargetData():GetAimDirection() 
 	ability.owner:AddImpulse(Vector3.New(v.x * ATTACK_IMPULSE, v.y * ATTACK_IMPULSE, VERTICAL_IMPULSE))
@@ -119,6 +133,10 @@ function ResetMelee(ability)
     canAttack = false
 end
 
+function OnNewTarget(name)
+	automaticTarget=World.FindObjectById(name)
+end
+
 -- Registering equipment events
 EQUIPMENT.equippedEvent:Connect(OnEquipped)
 EQUIPMENT.unequippedEvent:Connect(ResetMelee)
@@ -126,4 +144,4 @@ HIT_BOX.beginOverlapEvent:Connect(OnBeginOverlap)
 
 ABILITY.executeEvent:Connect(OnExecute)
 ABILITY.recoveryEvent:Connect(ResetMelee)
-
+Events.Connect("BEGIN_TARGET_NPC", OnNewTarget)

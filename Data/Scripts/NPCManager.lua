@@ -16,11 +16,13 @@ local npcColliders = {}
 
 
 function API.Register(npc)
+	
 	if (not allNPCs[npc]) then
 		allNPCs[npc] = true
 		
 		npc.destroyEvent:Connect(OnDestroyed)
 	end
+	
 end
 
 
@@ -36,9 +38,13 @@ end
 
 function API.GetEnemies(team)
 	local enemies = {}
+	--print("looking for ennemies of "..team)
 	for npc,_ in pairs(allNPCs) do
 		local npcTeam = npc.context.GetTeam()
+	--	print(" npc "..npc.name.."existe dans la table team= "..npcTeam)
+		
 		if (npcTeam ~= team) then
+			--print(" ennemy "..npc.name.."for team "..team)
 			table.insert(enemies, npc)
 		end
 	end

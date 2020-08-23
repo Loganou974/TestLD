@@ -47,6 +47,16 @@
           }
         }
         ParentId: 5985259795857122150
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Event1"
+            String: "BEGIN_TURN"
+          }
+          Overrides {
+            Name: "cs:EventNPC"
+            String: "BEGIN_TURN_NPC"
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
