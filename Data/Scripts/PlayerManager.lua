@@ -29,7 +29,7 @@ local propSTAT_POINTText = script:GetCustomProperty("STAT_POINTText"):WaitForObj
 local propRaceText = script:GetCustomProperty("RaceText"):WaitForObject()
 local propClassText = script:GetCustomProperty("ClassText"):WaitForObject()
 local propClassText_0 = script:GetCustomProperty("ClassText_0"):WaitForObject()
-local camera2 = script:GetCustomProperty("TopDownCamera"):WaitForObject()
+
 local camera1 = script:GetCustomProperty("ThirdPersonCamera"):WaitForObject()
 local  ProgressTurn = script:GetCustomProperty("ProgressTurn"):WaitForObject()
 local chronoMax=10
@@ -58,31 +58,31 @@ function rollDice(player)
     World.SpawnAsset("B1FC3DA40EE45031:Dice20", {position = pos})
 end
 canRoll=true
-
+local EndTurnButton=script:GetCustomProperty("EndTurnButton"):WaitForObject()
 local Closebutton = script:GetCustomProperty("Closebutton"):WaitForObject()
-function OnClicked(whichButton)
+function OnClickedClose(whichButton)
 	showCharacterScreen()
 end
+function OnClickedEndTurn(whichButton)
+	endTurn()
+end
 
+EndTurnButton.clickedEvent:Connect(OnClickedEndTurn)
+Closebutton.clickedEvent:Connect(OnClickedClose)
 
-
-Closebutton.clickedEvent:Connect(OnClicked)
-
-
+function relache(player,touche)
+    if touche =="ability_extra_14" then
+        UI.SetCursorVisible(not UI.IsCursorVisible())
+      
+     end
+end
 function appuye(player,touche)     
   -- print("touche "..touche)
-   if touche=="ability_primary" then
-    --local v=UI.GetCursorHitResult():GetImpactPosition()
-   -- print(" x="..v.x.." y="..v.y.." z="..v.z)
-    --player:MoveTo(v,10)
-   end
+   
    if touche =="ability_extra_14" then
+        UI.SetCanCursorInteractWithUI(true)
       UI.SetCursorVisible(not UI.IsCursorVisible())
-      if(UI.IsCursorVisible()) then 
-           -- player:SetDefaultCamera(camera2) 
-    else 
-        --player:SetDefaultCamera(camera1) 
-    end
+     
    end
    if touche == "ability_extra_17" then
         
@@ -127,9 +127,12 @@ function showCharacterScreen()
     end
 end
 function endTurn()
-    print("end turn")
-    OnTurnOff()
-    Events.BroadcastToServer("END_TURN",me)
+
+    if me:GetResource("incombat") == 1 then
+      print("end turn")
+        OnTurnOff()
+     Events.BroadcastToServer("END_TURN",me)
+    end
         
        
 end
@@ -165,9 +168,9 @@ function stat_refresh2()
    
     me=Game.GetLocalPlayer()
     local abilities=me:GetAbilities()
-    print("abilities = "..#abilities)
+   -- print("abilities = "..#abilities)
     for _, ability in pairs(abilities) do
-        print("abilite recu "..ability.name .." pour " .. me.name)
+       -- print("abilite recu "..ability.name .." pour " .. me.name)
         ability.castEvent:Connect(OnCast)
         ability.executeEvent:Connect(OnExecuteAbility)
     end
@@ -222,7 +225,7 @@ function OnPlayerJoined(player)
         end
         me.resourceChangedEvent:Connect(OnResourceChanged)
         me.bindingPressedEvent:Connect(appuye)
-    
+        me.bindingReleasedEvent:Connect(relache)
         
         me.damagedEvent:Connect(OnDamagedPlayer)
     end

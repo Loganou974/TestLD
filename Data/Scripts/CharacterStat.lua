@@ -693,11 +693,8 @@ function newTurn()
     end 
     if isPlayer(currentPlayer)~=nil then 
         currentPlayer=isPlayer(currentPlayer)
-        if currentPlayer:GetResource("Inspired")>0 then
-            currentPlayer:SetResource("actionMax",2)
-        else
-            currentPlayer:SetResource("actionMax",1)
-        end
+        UpdateBuffEtDebuff(currentPlayer)
+       
         addDebugCombatTexte("1er joueur: "..currentPlayer.name,debug)
         Events.BroadcastToAllPlayers("BannerMessage",currentPlayer.name.." is playing")
         
@@ -736,8 +733,14 @@ function OnPlayerLeft(player)
     players= Game.GetPlayers({ignorePlayers = {player}})
 end
 
-function UpdateBuffEtDebuff()
+function UpdateBuffEtDebuff(player)
     addDebugCombatTexte("mise à jour buff et debuff",debug)
+    if player:GetResource("Inspired")>0 then
+        player:SetResource("actionMax",2)
+        player:RemoveResource("Inspired",1)
+    else
+        player:SetResource("actionMax",1)
+    end
 end
 function newRound()
     
@@ -746,7 +749,7 @@ function newRound()
     addDebugCombatTexte("Round "..currentRound,debug)
     currentTurn=0
     currentPlayer=nil
-    UpdateBuffEtDebuff()
+    --UpdateBuffEtDebuff()
     
     newTurn()
 

@@ -395,6 +395,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12692460957832317740
+  Name: "BG Gradient 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_019"
+  }
+}
+Assets {
   Id: 12332326778664978182
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -800,6 +809,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6724534832103276994
+  Name: "BG Flat 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_015"
+  }
+}
+Assets {
   Id: 6715683042647541526
   Name: "Fern 03"
   PlatformAssetType: 1
@@ -1085,6 +1103,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_floor_001_8m"
+  }
+}
+Assets {
+  Id: 2825426222838177148
+  Name: "Line Half 003a"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "LineHalf_003a"
   }
 }
 Assets {

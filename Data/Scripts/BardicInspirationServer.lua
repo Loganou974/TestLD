@@ -8,7 +8,7 @@ function OnExecute(ability)
         if (enemy.team == ABILITY.owner.team and not enemy.isDead) then
             
             if(enemy:IsA("Player")) then
-                enemy:AddResource("Inspired",1)
+                enemy:AddResource("Inspired",2)
                 --enemy:AddResource("actionMax",1)
                 --Task.Spawn(function() enemy:SetResource("Inspired",0),ABILITY.recoveryPhaseSettings.duration)
             end
