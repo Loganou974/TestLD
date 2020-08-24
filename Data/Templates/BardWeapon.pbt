@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 15895668048108029803
+        ParentId: 4781671109827199097
         ChildIds: 16731051360617795441
         ChildIds: 937826533456595707
         ChildIds: 5190349005861014096
@@ -24,7 +24,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:EquipmentStance"
-            String: "1hand_melee_stance"
+            String: "2hand_melee_stance"
           }
           Overrides {
             Name: "cs:PickupSound"
@@ -248,7 +248,7 @@
             }
           }
           ExecutePhaseSettings {
-            Duration: 0.1
+            Duration: 0.5
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -280,7 +280,7 @@
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "1hand_melee_slash_vertical"
+          Animation: "2hand_sword_slash_spin"
           KeyBinding_v2 {
             Value: "mc:egameaction:primaryaction"
           }
@@ -306,6 +306,7 @@
         ChildIds: 1880874870774508121
         ChildIds: 14963653854135066659
         ChildIds: 11420543562164593359
+        ChildIds: 15868259140078136512
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -478,8 +479,8 @@
           Overrides {
             Name: "cs:DamageRange"
             Vector2 {
-              X: 49
-              Y: 51
+              X: 1
+              Y: 2
             }
           }
           Overrides {
@@ -494,6 +495,12 @@
             Name: "cs:Range"
             Int: 10
           }
+          Overrides {
+            Name: "cs:fx"
+            ObjectReference {
+              SubObjectId: 15868259140078136512
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -504,6 +511,84 @@
         Script {
           ScriptAsset {
             Id: 17565407268059226804
+          }
+        }
+      }
+      Objects {
+        Id: 15868259140078136512
+        Name: "Cast Burst Ring VFX"
+        Transform {
+          Location {
+            X: 56.9121094
+            Y: -13.7348633
+            Z: 174.831055
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14893841839371306326
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Appearance"
+            Enum {
+              Value: "mc:ecastringappearance:newenumerator2"
+            }
+          }
+          Overrides {
+            Name: "bp:Life Max"
+            Float: 5
+          }
+          Overrides {
+            Name: "bp:Life Min"
+            Float: 2.07751155
+          }
+          Overrides {
+            Name: "bp:Count"
+            Int: 6
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 31.1630478
+          }
+          Overrides {
+            Name: "bp:Sort Priority Adjustment"
+            Int: -1
+          }
+          Overrides {
+            Name: "bp:V Tiles"
+            Int: 2
+          }
+          Overrides {
+            Name: "bp:U Tiles"
+            Int: 4
+          }
+          Overrides {
+            Name: "bp:Size"
+            Vector {
+              X: 0.5
+              Y: 0.5
+              Z: 0.5
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 6947139289592184310
+          }
+          TeamSettings {
+          }
+          Vfx {
           }
         }
       }
@@ -6093,6 +6178,15 @@
             Id: 6366115419987772397
           }
         }
+      }
+    }
+    Assets {
+      Id: 6947139289592184310
+      Name: "Cast Burst Ring VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_cast_circle_generic"
       }
     }
     Assets {

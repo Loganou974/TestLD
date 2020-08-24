@@ -1,68 +1,69 @@
-﻿Name: "BardLearningStand"
-RootId: 14723530565189028806
+﻿Name: "Geo"
+RootId: 16780132551258113914
 Objects {
-  Id: 16493339457883054739
-  Name: "BardSkills"
+  Id: 15288615283291292274
+  Name: "ClientContext"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
     }
   }
-  ParentId: 14723530565189028806
+  ParentId: 16780132551258113914
+  ChildIds: 1319813947488353647
   WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16058774555376254967
-      value {
-        Overrides {
-          Name: "Name"
-          String: "BardSkills"
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -1.70754743e-06
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 13735436298103330789
-    }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
   }
 }
 Objects {
-  Id: 11982488003581989166
-  Name: "Bannister Single Post"
+  Id: 1319813947488353647
+  Name: "Pyramid - 5-Sided Truncated Polished"
   Transform {
     Location {
-      X: 0.000114440918
-      Y: 187.938843
-      Z: 68.4031372
+      X: 21.5309105
+      Y: -20.6374435
     }
     Rotation {
-      Pitch: 70.000267
-      Yaw: -89.9998703
-      Roll: -179.999832
+      Yaw: 46.213829
     }
     Scale {
-      X: 2
-      Y: 2.25
-      Z: 1.75
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
     }
   }
-  ParentId: 14723530565189028806
-  WantsNetworking: true
+  ParentId: 15288615283291292274
+  ChildIds: 14903784186205730565
+  ChildIds: 200873447835034754
+  ChildIds: 17013798018724084792
+  ChildIds: 13885400709472806086
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14027783486601827876
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.100000024
+        G: 0.0337748416
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -71,7 +72,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 7356107339198211253
+      Id: 12970276351891849033
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -85,43 +86,43 @@ Objects {
   }
 }
 Objects {
-  Id: 6655961321114598239
-  Name: "Cube - Chamfered Small Polished"
+  Id: 13885400709472806086
+  Name: "Pipe - X-Intersection Thick"
   Transform {
     Location {
-      X: 5.14872742
-      Y: 8.16792583
+      X: 3.23901248
+      Y: 82.0593567
+      Z: -44.8210526
     }
     Rotation {
     }
     Scale {
-      X: 0.413819522
-      Y: 0.0191260893
-      Z: 0.676036119
+      X: 1
+      Y: 1
+      Z: 1.09433591
     }
   }
-  ParentId: 14723530565189028806
+  ParentId: 1319813947488353647
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17234901675252430152
+        Id: 14027783486601827876
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.0987417325
-        G: 0.210000038
+        R: 0.100000024
+        G: 0.0337748416
         A: 1
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -130,7 +131,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12538411275129688839
+      Id: 11348708063912775172
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -144,52 +145,38 @@ Objects {
   }
 }
 Objects {
-  Id: 16906635831255042356
-  Name: "Cube - Chamfered Small Polished"
+  Id: 17013798018724084792
+  Name: "Pyramid - 5-Sided Truncated Polished"
   Transform {
     Location {
-      X: -14.8166504
-      Y: 0.0531845093
+      Y: 168.727661
+      Z: 8.07387829
     }
     Rotation {
-      Yaw: 89.9999771
     }
     Scale {
-      X: 0.179639161
-      Y: 0.0191260893
-      Z: 0.676036119
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 14723530565189028806
+  ParentId: 1319813947488353647
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17234901675252430152
+        Id: 14027783486601827876
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.0987417325
-        G: 0.210000038
+        R: 0.100000024
+        G: 0.0337748416
         A: 1
       }
     }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -198,7 +185,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12538411275129688839
+      Id: 12970276351891849033
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -212,51 +199,42 @@ Objects {
   }
 }
 Objects {
-  Id: 15945096628962141604
-  Name: "Cube - Chamfered Small Polished"
+  Id: 200873447835034754
+  Name: "Pipe - X-Intersection"
   Transform {
     Location {
-      X: 5.05643845
-      Y: -7.80497503
+      X: 44.9605064
+      Y: 88.2595596
+      Z: -83.813385
     }
     Rotation {
+      Pitch: 6.83018879e-06
+      Yaw: 89.9999847
+      Roll: 89.999939
     }
     Scale {
-      X: 0.413819522
-      Y: 0.0191260893
-      Z: 0.676036119
+      X: 1.4013412
+      Y: 1.15672934
+      Z: 0.819984257
     }
   }
-  ParentId: 14723530565189028806
+  ParentId: 1319813947488353647
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17234901675252430152
+        Id: 14027783486601827876
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.0987417325
-        G: 0.210000038
+        R: 0.100000024
+        G: 0.0337748416
         A: 1
       }
     }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -265,7 +243,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12538411275129688839
+      Id: 2150672267817994367
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -279,52 +257,42 @@ Objects {
   }
 }
 Objects {
-  Id: 16054293830406936765
-  Name: "Cube - Chamfered Small Polished"
+  Id: 14903784186205730565
+  Name: "Pipe - X-Intersection"
   Transform {
     Location {
-      X: 4.93887329
-      Y: 0.0160369873
-      Z: -0.167617798
+      Y: 83.4467773
+      Z: -140.68222
     }
     Rotation {
-      Pitch: 90
-      Yaw: 36.8698845
-      Roll: -53.127655
     }
     Scale {
-      X: 0.646709383
-      Y: -0.38301006
-      Z: -0.169221327
+      X: 1.0616256
+      Y: 1.58122683
+      Z: 1.94715178
     }
   }
-  ParentId: 14723530565189028806
+  ParentId: 1319813947488353647
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6416678235699851564
+        Id: 14027783486601827876
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.100000024
+        G: 0.0337748416
+        A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
       Bool: false
     }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 27.7948151
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -333,7 +301,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12538411275129688839
+      Id: 2150672267817994367
     }
     Teams {
       IsTeamCollisionEnabled: true

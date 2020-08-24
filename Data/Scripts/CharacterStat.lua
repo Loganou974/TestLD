@@ -65,7 +65,7 @@ end
 function savePlayerData(player,playerData)
     Storage.SetPlayerData(player, playerData)
     --addDebugCombatTexte("player "..player.name.." "..player:GetResource("STR"),debug)
-    --Events.BroadcastToPlayer(player,"STAT_REFRESH",playerData.race.name,playerData.class.name)
+    Events.BroadcastToPlayer(player,"STAT_REFRESH",playerData.race.name,playerData.class.name)
     --Events.BroadcastToPlayer(player,"STATPOINT_REFRESH",playerData.statPoint,)
    
     
@@ -252,7 +252,7 @@ function GetStat(player)
         player:SetResource("WIS",10)
         player:SetResource("CHA",10)
         player:SetResource("GOLD",0)
-        player:SetResource("GOLD",0)
+        player:SetResource("AC",11+modifier(10))
         player:SetResource("SPEED",playerData.race.speed)
         player:SetResource("actionMax",1)
        
@@ -315,6 +315,7 @@ function OnPlayerDied(player)
 
     else
         print("respawn "..player.name)
+        Task.Wait(2)
         player:Respawn(propLastSpawn, Rotation.New(0, 0, 45))
     end
 end
@@ -337,9 +338,56 @@ function OnPlayerJoined(player)
     Task.Wait(waitTime/2)
     
     player:AddResource("dice",5)
-
+    player.resourceChangedEvent:Connect(OnResourceChanged)
     
   
+end
+function modifier(value)
+
+    return math.floor((value-10)/2)
+end
+function OnResourceChanged(player,resourceid,newvalue)
+    playerData=loadPlayerData(player)
+    Task.Wait(0.1)
+    --if(playerData.classe.name=="Barbarian") then
+        if(resourceid=="STR") then
+
+        end
+
+        if(resourceid=="DEX") then
+            if(playerData.class.name=="Barbarian") then
+             local newDex=modifier(newvalue)
+             local newCon=modifier(player:GetResource("CON"))
+             player:SetResource("AC",(10+newDex+newCon))
+
+            else
+
+                player:SetResource("AC",(10+newDex))
+            end
+            
+        end
+
+        if(resourceid=="CON") then
+            local newCon=modifier(newvalue)
+            if(playerData.class.name=="Barbarian") then
+             
+             local newDex=modifier(player:GetResource("DEX"))
+             player:SetResource("AC",(10+newDex+newCon))
+            end
+            if player.level > 1 then 
+                player.maxHitPoints = playerData.class.hit+newCon+(math.floor(playerData.class.hit/2)+1)*player.level;
+            else
+                player.maxHitPoints = playerData.class.hit+newCon
+            end
+            player.hitPoints= player.maxHitPoints
+        end
+        
+    --end
+    --if(playerData.classe.name=="Bard") then
+
+   -- end
+
+
 end
 function FindNearestTarget(me)
     local myPos = me:GetWorldPosition()
@@ -436,6 +484,7 @@ function startRound1()
         addDebugCombatTexte("initiative "..k.."= "..v,debug)
        -- combatOrder[#combatOrder+1]=k
     end
+    combatOrder={}
    -- table.sort(initiativeCombat)
     for k,v in spairs(initiativeCombat, function(t,a,b) return t[b] < t[a] end) do
         --Events.BroadcastToAllPlayers("SubBannerMessage",#combatOrder.." to play is "..k,5,Color.FromStandardHex("#FF0000"))
@@ -531,14 +580,15 @@ function startCombat(player,combatZone)
             mobs[#mobs+1]=mobTemp
             local id=mobTemp.id
             local r=math.random(20)
-            initiativeCombat[id]=r
-            addDebugCombatTexte("Tour "..currentTurn..":"..id.." initiative="..initiativeCombat[id].." ",debug)
+            local DEX=math.floor((mobTemp:GetCustomProperty("DEX")-10)/2)
+            initiativeCombat[id]=r+DEX
+            addDebugCombatTexte("Tour "..currentTurn..":"..mobTemp.name.." initiative="..initiativeCombat[id].." ",debug)
             --Events.BroadcastToAllPlayers("BigBannerMessage",id.." rolled an "..r,3,Color.FromStandardHex("#FFFFFF"))
-            Events.BroadcastToAllPlayers("addSystemCombatTexte",id.." rolled an "..r)
+            Events.BroadcastToAllPlayers("addSystemCombatTexte",mobTemp.name.." rolled an "..(r+DEX).." ("..r.."+"..DEX..")")
             initiativeCombatLength=initiativeCombatLength+1
         end
         
-        addDebugCombatTexte(" Mob trouve: "..#mobs.." ",debug)
+        --addDebugCombatTexte(" Mob trouve: "..#mobs.." ",debug)
          
         playersAreInCombat=true
         addDebugCombatTexte("starting combat "..combatZone,debug)
@@ -654,8 +704,8 @@ function newTurn()
             end
     else
         currentPlayer=getCurrentPlayer()
-        
-        Events.BroadcastToAllPlayers("BannerMessage",currentPlayer.." is playing ")
+        local mob=World.FindObjectById(currentPlayer)
+        Events.BroadcastToAllPlayers("BannerMessage",mob.name.." is playing ")
        
         Events.Broadcast("BEGIN_TURN_NPC",currentPlayer)
         
@@ -737,15 +787,20 @@ function rollDice(player,max)
     player:RemoveResource("dice",1)
     addDebugCombatTexte("rolled an "..rand.." reste "..player:GetResource("dice").." des",debug)
     --Events.BroadcastToAllPlayers("BigBannerMessage",player.name.." rolled an "..rand,3,Color.FromStandardHex("#FFFFFF"))
-    addTexte(player.name.." rolled an "..rand)
+    
     player:SetResource("lastDiceNumber",rand)
     if phasePrecombat == true then
         numberOfRolls=numberOfRolls+1
-        initiativeCombat[player.name]=rand
+        local DEX=math.floor((player:GetResource("DEX")-10)/2)
+        rand=rand+DEX
+        addTexte(player.name.." rolled an ability check of "..(rand+DEX).." ("..rand.."+"..DEX..")")
+        initiativeCombat[player.name]=rand+DEX
         initiativeCombatLength=initiativeCombatLength+1
         if numberOfRolls >= #playersInCombat then
             startRound1()
         end
+    else
+        addTexte(player.name.." rolled an "..rand)
     end
 end
 

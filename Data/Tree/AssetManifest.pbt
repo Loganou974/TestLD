@@ -134,6 +134,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15713190159654396830
+  Name: "Bone Human Hand 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_hand_01_ref"
+  }
+}
+Assets {
   Id: 15657870710465691415
   Name: "Cylinder - Chamfered Polished"
   PlatformAssetType: 1
@@ -257,6 +266,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_04"
+  }
+}
+Assets {
+  Id: 13703744877030710122
+  Name: "Horn"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_horn_001"
   }
 }
 Assets {
@@ -404,6 +422,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10413764043288137018
+  Name: "Snow 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_snow_001_uv"
+  }
+}
+Assets {
   Id: 10392002955905592433
   Name: "Large Wood Beam 8m"
   PlatformAssetType: 1
@@ -536,6 +563,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 8249667164158572359
+  Name: "Gear - generic large solid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_gear_001"
   }
 }
 Assets {
@@ -773,6 +809,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4109347029660812799
+  Name: "Ball"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_001"
+  }
+}
+Assets {
   Id: 4064250317991482885
   Name: "Marble Tiles Rectangle 01"
   PlatformAssetType: 2
@@ -818,15 +863,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3598659565995649873
-  Name: "Advanced Sketch Line Post Process"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_ppm_sketchline"
-  }
-}
-Assets {
   Id: 3517681644486483565
   Name: "BG Gradient 012"
   PlatformAssetType: 9
@@ -836,12 +872,12 @@ Assets {
   }
 }
 Assets {
-  Id: 3423691385571436380
-  Name: "Fairy Dot Volume VFX"
-  PlatformAssetType: 8
+  Id: 3409802564880653438
+  Name: "Rock Pile 001"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_Swirling_Magic_Column"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_001"
   }
 }
 Assets {
@@ -851,6 +887,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_stairs_001"
+  }
+}
+Assets {
+  Id: 3036185675291793459
+  Name: "Ring - Quarter"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_torus_002"
   }
 }
 Assets {
@@ -881,6 +926,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2723232960546970913
+  Name: "Wood Floor Dark"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_floor_dark_001_uv"
+  }
+}
+Assets {
   Id: 2719732194574913068
   Name: "Gem - Diamond 8-Sided Polished"
   PlatformAssetType: 1
@@ -905,6 +959,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "stone_001"
+  }
+}
+Assets {
+  Id: 2472339142414494715
+  Name: "Rock Pile 002"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_002"
   }
 }
 Assets {
@@ -980,6 +1043,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1137112816547272582
+  Name: "Cylinder"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
   Id: 1104198953447072835
   Name: "Object Domestic Doors & Creaks Set 01 SFX"
   PlatformAssetType: 10
@@ -1013,6 +1085,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_parameter_driven_water_manual"
+  }
+}
+Assets {
+  Id: 237310253117135204
+  Name: "Food Fruit 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_food_generic_apple_001_uv"
   }
 }
 Assets {

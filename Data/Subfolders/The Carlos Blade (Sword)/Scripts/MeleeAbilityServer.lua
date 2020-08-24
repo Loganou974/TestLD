@@ -20,7 +20,7 @@ local DAMAGE_RANGE = script:GetCustomProperty("DamageRange")
 local ATTACK_IMPULSE = script:GetCustomProperty("AttackImpulse") or 50000
 local VERTICAL_IMPULSE = script:GetCustomProperty("VerticalImpulse") or 20000
 local Range = script:GetCustomProperty("Range")
-
+local propFx = script:GetCustomProperty("fx"):WaitForObject()
 local ignoreList = {}
 local currentSwipe = nil
 local canAttack = false
@@ -56,8 +56,9 @@ function MeleeAttack(other)
 	distance=math.floor(distance.size/30)
 	print("distance pour range weapon ="..distance)
 	if Range < distance then 
-		
-		 ResetMelee(ABILITY) return 
+		BroadcastMissFeedback()
+		 ResetMelee(ABILITY) 
+		 return 
 		end
 	--local otherTeam = COMBAT().GetTeam(other)
 	--if otherTeam and Teams.AreTeamsFriendly(otherTeam, ABILITY.owner.team) then return end
@@ -84,7 +85,7 @@ function MeleeAttack(other)
 		end
 		
 		BroadcastDamageFeedback(dmg.amount, pos)
-		ResetMelee(ABILITY)
+		--ResetMelee(ABILITY)
 		automaticTarget=nil
 	--end
 end
@@ -93,6 +94,13 @@ function BroadcastDamageFeedback(amount, position)
 	local player = EQUIPMENT.owner
 	if Object.IsValid(player) then
 		Events.BroadcastToPlayer(player, "ShowDamageFeedback", amount, position)
+	end
+end
+
+function BroadcastMissFeedback()
+	local player = EQUIPMENT.owner
+	if Object.IsValid(player) then
+		Events.BroadcastToPlayer(player, "ShowMissFeedback")
 	end
 end
 
@@ -133,7 +141,9 @@ function ResetMelee(ability)
     ignoreList = {}
     canAttack = false
 end
-
+function OnCast(ability)
+	propFx:Play()
+end
 function OnNewTarget(name)
 	automaticTarget=World.FindObjectById(name)
 end
@@ -142,7 +152,7 @@ end
 EQUIPMENT.equippedEvent:Connect(OnEquipped)
 EQUIPMENT.unequippedEvent:Connect(ResetMelee)
 HIT_BOX.beginOverlapEvent:Connect(OnBeginOverlap)
-
+ABILITY.castEvent:Connect(OnCast)
 ABILITY.executeEvent:Connect(OnExecute)
 ABILITY.recoveryEvent:Connect(ResetMelee)
 Events.Connect("BEGIN_TARGET_NPC", OnNewTarget)

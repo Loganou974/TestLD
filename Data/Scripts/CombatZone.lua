@@ -1,5 +1,8 @@
 ﻿local trigger = script.parent
+
+local propNombreMonstre = script:GetCustomProperty("NombreMonstre")
 local propMonster1 = script:GetCustomProperty("Monster1"):WaitForObject()
+
 
 function OnBeginOverlap(whichTrigger, other)
 	if other:IsA("Player") then

@@ -83,13 +83,7 @@ function appuye(player,touche)
         end
    end
     if touche == "ability_extra_27" then
-        showCharacterPanel=not showCharacterPanel
-        UI.SetCursorVisible(showCharacterPanel)
-        if showCharacterPanel== true then
-            propUIContainer.visibility=Visibility.FORCE_ON
-        else
-            propUIContainer.visibility=Visibility.FORCE_OFF
-        end
+       showCharacterScreen()
     end
     if touche == "ability_extra_50" then
         Events.BroadcastToServer("GAINSTATPOINT",player,1) 
@@ -107,7 +101,15 @@ function appuye(player,touche)
     end
     
 end 
-
+function showCharacterScreen()
+    showCharacterPanel=not showCharacterPanel
+    UI.SetCursorVisible(showCharacterPanel)
+    if showCharacterPanel== true then
+        propUIContainer.visibility=Visibility.FORCE_ON
+    else
+        propUIContainer.visibility=Visibility.FORCE_OFF
+    end
+end
 function endTurn()
     print("end turn")
     Events.BroadcastToServer("END_TURN",me)
@@ -167,6 +169,7 @@ function dead()
 end
 
 function OnPlayerJoined(player)
+    UI.SetCursorVisible(false)
     me=Game.GetLocalPlayer()
    if me ==player then
         print("Hello, " .. me.name .. "!") 
@@ -375,7 +378,7 @@ function OnClassChanged(equipementName,classNom)
                 ability.castEvent:Connect(OnCast)
                 ability.executeEvent:Connect(OnExecuteAbility)
             end
-    
+            showCharacterScreen()
 end
 
 function OnWeaponChanged(equipementName)

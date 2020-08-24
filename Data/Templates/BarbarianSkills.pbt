@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 13735436298103330789
-  Name: "BardSkills"
+  Id: 6351115959028152939
+  Name: "BarbarianSkills"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 16058774555376254967
+      RootId: 6084476036261857102
       Objects {
-        Id: 16058774555376254967
-        Name: "BardSkills"
+        Id: 6084476036261857102
+        Name: "BarbarianSkills"
         Transform {
           Scale {
             X: 1
@@ -15,10 +15,10 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
-        ChildIds: 2268008399601242739
-        ChildIds: 6972370799800572422
-        ChildIds: 14087653025978765454
+        ParentId: 17448415494070895558
+        ChildIds: 13773022167755044710
+        ChildIds: 13116723762409747169
+        ChildIds: 7346566531886883351
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29,12 +29,12 @@
         Equipment {
           SocketName: "head"
           PickupTrigger {
-            SubObjectId: 2268008399601242739
+            SubObjectId: 13773022167755044710
           }
         }
       }
       Objects {
-        Id: 2268008399601242739
+        Id: 13773022167755044710
         Name: "Trigger"
         Transform {
           Location {
@@ -48,7 +48,7 @@
             Z: 2.5
           }
         }
-        ParentId: 16058774555376254967
+        ParentId: 6084476036261857102
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58,7 +58,7 @@
         }
         Trigger {
           Interactable: true
-          InteractionLabel: "Learn how to become a bard"
+          InteractionLabel: "Learn how to become a barbarian"
           TeamSettings {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
@@ -69,8 +69,8 @@
         }
       }
       Objects {
-        Id: 6972370799800572422
-        Name: "Bardic Inspiration"
+        Id: 13116723762409747169
+        Name: "Rage"
         Transform {
           Location {
           }
@@ -82,9 +82,7 @@
             Z: 1
           }
         }
-        ParentId: 16058774555376254967
-        ChildIds: 14712400408860905440
-        ChildIds: 7632856318220555477
+        ParentId: 6084476036261857102
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -95,7 +93,9 @@
         Ability {
           IsEnabled: true
           CastPhaseSettings {
-            Duration: 2
+            Duration: 0.15
+            CanMove: true
+            CanJump: true
             CanRotate: true
             PreventOtherAbilities: true
             IsTargetDataUpdated: true
@@ -135,112 +135,20 @@
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "2hand_staff_magic_up"
+          Animation: "unarmed_thumb_down"
           KeyBinding_v2 {
             Value: "mc:egameaction:extraaction_40"
           }
         }
       }
       Objects {
-        Id: 14712400408860905440
-        Name: "BardicInspirationServer"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Pitch: 2.73207552e-05
-            Yaw: 3.6712263e-05
-            Roll: -4.05541505e-06
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 6972370799800572422
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 5767716531679099996
-          }
-        }
-      }
-      Objects {
-        Id: 7632856318220555477
-        Name: "ClientContext"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 6972370799800572422
-        ChildIds: 14345679990447544764
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 14345679990447544764
-        Name: "BardicInspirationCliet"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7632856318220555477
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:BardicInspiration"
-            ObjectReference {
-              SubObjectId: 6972370799800572422
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 13526198356170550626
-          }
-        }
-      }
-      Objects {
-        Id: 14087653025978765454
+        Id: 7346566531886883351
         Name: "ChangeClasse"
         Transform {
           Location {
-            X: -299.999512
-            Y: 3649.99854
-            Z: -149.997787
+            X: 200.000244
+            Y: 3649.99829
+            Z: -149.997894
           }
           Rotation {
             Pitch: 3.4150944e-05
@@ -253,7 +161,7 @@
             Z: 1
           }
         }
-        ParentId: 16058774555376254967
+        ParentId: 6084476036261857102
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

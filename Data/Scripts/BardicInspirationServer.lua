@@ -23,3 +23,4 @@ function OnExecute(ability)
 end
 
 ABILITY.executeEvent:Connect(OnExecute)
+ABILITY.castEvent:Connect(OnCast)

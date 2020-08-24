@@ -14,8 +14,18 @@ function OnShowDamageFeedback(amount, position)
 	local distance = (viewPos - position).sizeSquared
 	local isBig = (distance < 1000000) -- 10 meters squared
 	
-	UI.ShowFlyUpText(tostring(amount), position, {color = Color.RED, isBig = isBig})
+	UI.ShowFlyUpText(tostring(amount), position, {duration=1,color = Color.RED, isBig = isBig})
+end
+
+function OnShowMissFeedback()
+	local viewPos = Game.GetLocalPlayer():GetWorldPosition()
+	--local distance = (viewPos - position).sizeSquared
+	--local isBig = (distance < 1000000) -- 10 meters squared
+	
+	UI.ShowFlyUpText("MISS", viewPos, {duration=0.5,color = Color.RED, isBig=true})
 end
 
 Events.Connect("ShowDamageFeedback", OnShowDamageFeedback)
+
+Events.Connect("ShowMissFeedback", OnShowMissFeedback)
 

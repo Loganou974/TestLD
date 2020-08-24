@@ -40,7 +40,9 @@ local ATTACK_RECOVERY_TIME = ROOT:GetCustomProperty("AttackRecovery") or 1.5
 local ATTACK_COOLDOWN = ROOT:GetCustomProperty("AttackCooldown") or 0
 local OBJECTIVE_THRESHOLD_DISTANCE_SQUARED = 900
 
-MAX_HEALTH = ROOT:GetCustomProperty("CurrentHealth")
+if MobType=="FlyingSnake" then MAX_HEALTH =math.random(4)+math.random(4) end
+if MobType=="Lizard" then MAX_HEALTH =math.random(4) end
+
 
 local PATHING_STEP = MOVE_SPEED * LOGICAL_PERIOD + 10
 local PATHING_STEP_SQUARED = PATHING_STEP * PATHING_STEP
@@ -95,13 +97,13 @@ function OnTurnOn(id)
 		
 		EngageNearest()
 		Events.Broadcast("BEGIN_TARGET",target)
-		Task.Wait(2)
+		Task.Wait(1)
 		--Tack(SPEED)
 		if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
 			SetState(STATE_ATTACK_CAST)
 			ExecuteAttack()
 		else
-			SetState(STATE_ENGAGING)
+			--SetState(STATE_ENGAGING)
 			UpdateMovement(SPEED)
 			
 		end

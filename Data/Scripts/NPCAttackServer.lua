@@ -18,6 +18,14 @@ function LOOT_DROP_FACTORY() return MODULE.Get_Optional("standardcombo.NPCKit.Lo
 
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
+local MobType = script.parent:GetCustomProperty("MobType") 
+local DEX=script.parent:GetCustomProperty("DEX") 
+local STR=script.parent:GetCustomProperty("STR") 
+local INT=script.parent:GetCustomProperty("INT") 
+local CON=script.parent:GetCustomProperty("CON") 
+local WIS=script.parent:GetCustomProperty("WIS") 
+local CHA=script.parent:GetCustomProperty("CHA") 
+local BonusToHit=script.parent:GetCustomProperty("BonusToHit") 
 
 local DAMAGE_TO_PLAYERS = script:GetCustomProperty("DamageToPlayers") or 1
 local DAMAGE_TO_NPCS = script:GetCustomProperty("DamageToNPCs") or 1
@@ -44,6 +52,7 @@ local cooldownRemaining = 0
 local projectileImpactListener = nil
 
 
+			
 function GetTeam()
 	return ROOT:GetCustomProperty("Team")
 end
@@ -58,10 +67,31 @@ function GetObjectTeam(object)
 	end
 	return nil
 end
+function modifier(value)
 
+    return math.floor((value-10)/2)
+end
+local d20=0
+local AC=0
 function Attack(target)	
+	d20=math.random(20)
+	print("Attack roll from "..script.parent.name.." d20="..d20.."total="..(d20+modifier(DEX)+BonusToHit))
+	if d20 > 1 and d20~=20 then 
+		d20=d20+modifier(STR)+BonusToHit
+	end
+	if d20==20 then
+		d20=99999
+	end		
+	 AC=0
+	if target:IsA("Player") then
+		AC=target:GetResource("AC")
+		print("AC of "..target.name.."is "..AC)
+	end
 	if target:IsA("Player") and PLAYER_HOMING_TARGETS() then
+		
+		if d20 >= AC or d20 ==1 then
 		target = PLAYER_HOMING_TARGETS().GetTargetForPlayer(target)
+		end
 	end
 	
 	local startPos = script:GetWorldPosition()
@@ -107,8 +137,28 @@ function OnProjectileImpact(projectile, other, hitResult)
 	local damageAmount = 0
 	
 	if other:IsA("Player") then
-		damageAmount = DAMAGE_TO_PLAYERS
-		SpawnAsset(IMPACT_CHARACTER_VFX, pos, rot)
+		local cc=""
+		if(MobType=="FlyingSnake" or MobType=="Lizard") then
+			if d20 >= AC then
+				
+				if MobType=="FlyingSnake" then damageAmount = 1 +math.random(4) +math.random(4) +math.random(4) end
+				if MobType=="Lizard" then damageAmount = 1 end
+				
+				
+				if(d20>999) then cc=" with a Critical hit " end
+				print(script.parent.name.." hit "..other.name..cc.."for "..damageAmount)
+				SpawnAsset(IMPACT_CHARACTER_VFX, pos, rot)
+			else
+				if(d20==1) then cc="Critical fail! " end
+				damageAmount =0
+				print(cc..script.parent.name.." miss "..other.name)
+			end	
+				
+		else
+			damageAmount = DAMAGE_TO_PLAYERS
+			SpawnAsset(IMPACT_CHARACTER_VFX, pos, rot)
+		end
+		
 	else
 		damageAmount = DAMAGE_TO_NPCS
 		SpawnAsset(IMPACT_SURFACE_VFX, pos, hitResult:GetTransform():GetRotation())
