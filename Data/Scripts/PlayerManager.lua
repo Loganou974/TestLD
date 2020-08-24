@@ -15,7 +15,9 @@ local classes={
     {name="Wizard",hit=6}
 
 }
-
+local turnColorGreen=Color.FromStandardHex("14C600FF")
+local turnColorOrange=Color.FromStandardHex("EA7F00FF")
+local turnColorRed=Color.FromStandardHex("E60000FF")
 local propUIContainer = script:GetCustomProperty("UIContainer"):WaitForObject()
 local propSTRValueText = script:GetCustomProperty("STRValueText"):WaitForObject()
 local propDEXValueText = script:GetCustomProperty("DEXValueText"):WaitForObject()
@@ -29,8 +31,9 @@ local propClassText = script:GetCustomProperty("ClassText"):WaitForObject()
 local propClassText_0 = script:GetCustomProperty("ClassText_0"):WaitForObject()
 local camera2 = script:GetCustomProperty("TopDownCamera"):WaitForObject()
 local camera1 = script:GetCustomProperty("ThirdPersonCamera"):WaitForObject()
-
-
+local  ProgressTurn = script:GetCustomProperty("ProgressTurn"):WaitForObject()
+local chronoMax=10
+local chrono=0
 local showCharacterPanel=false
 local statpoint=0;
 local me=nil
@@ -56,6 +59,16 @@ function rollDice(player)
 end
 canRoll=true
 
+local Closebutton = script:GetCustomProperty("Closebutton"):WaitForObject()
+function OnClicked(whichButton)
+	showCharacterScreen()
+end
+
+
+
+Closebutton.clickedEvent:Connect(OnClicked)
+
+
 function appuye(player,touche)     
   -- print("touche "..touche)
    if touche=="ability_primary" then
@@ -66,9 +79,9 @@ function appuye(player,touche)
    if touche =="ability_extra_14" then
       UI.SetCursorVisible(not UI.IsCursorVisible())
       if(UI.IsCursorVisible()) then 
-            player:SetDefaultCamera(camera2) 
+           -- player:SetDefaultCamera(camera2) 
     else 
-        player:SetDefaultCamera(camera1) 
+        --player:SetDefaultCamera(camera1) 
     end
    end
    if touche == "ability_extra_17" then
@@ -104,17 +117,21 @@ end
 function showCharacterScreen()
     showCharacterPanel=not showCharacterPanel
     UI.SetCursorVisible(showCharacterPanel)
+    UI.SetCanCursorInteractWithUI(showCharacterPanel)
     if showCharacterPanel== true then
         propUIContainer.visibility=Visibility.FORCE_ON
+        me:GetDefaultCamera().rotationMode = RotationMode.NONE
     else
         propUIContainer.visibility=Visibility.FORCE_OFF
+        me:GetDefaultCamera().rotationMode = RotationMode.LOOK_ANGLE
     end
 end
 function endTurn()
     print("end turn")
+    OnTurnOff()
     Events.BroadcastToServer("END_TURN",me)
         
-        OnTurnOff()
+       
 end
 function stat_refresh(race,classe)
     print(me.name.." refresh demande")
@@ -273,9 +290,11 @@ function OnResourceChanged(player, resourceId, newValue)
         --print(player.name.." "..resourceId.." "..newValue)
     end
     if resourceId=="incombat" and newValue==1 then
+        ProgressTurn.parent.parent.visibility=Visibility.FORCE_ON
         combatMusic=World.SpawnAsset("219EDA3AFC8BA777:CombatMusic",{position=player:GetWorldPosition()})
     end
     if resourceId=="incombat" and newValue==0 then
+        ProgressTurn.parent.parent.visibility=Visibility.FORCE_OFF
         if firstTimeHorsCombat then
             firstTimeHorsCombat=false
         else    
@@ -291,9 +310,11 @@ function OnResourceChanged(player, resourceId, newValue)
 
 end
 
-
+local startTurnTime=0
 
 function OnTurnOn()
+    chrono=0
+    startTurnTime=time()
     me=Game.GetLocalPlayer()
     print("on essaye de turn on pour joueur "..me.name.." "..me:GetResource("incombat"))
     if me:GetResource("incombat") == 1 then
@@ -318,6 +339,15 @@ local distance=0
 function Tick(deltaTime)
     
     if me:GetResource("incombat")==1 then
+        if isPlaying then chrono=time()-startTurnTime 
+            print("chrono "..chrono.." sur "..chronoMax)
+            ProgressTurn.progress=1-chrono/chronoMax
+            if chrono/chronoMax <=0.4 then ProgressTurn:SetFillColor(turnColorGreen) end
+            if chrono/chronoMax >0.4 and chrono/chronoMax < 0.7 then ProgressTurn:SetFillColor(turnColorOrange) end
+            if chrono/chronoMax >= 0.7 then ProgressTurn:SetFillColor(turnColorRed) end
+            
+            if(chrono>=chronoMax) then endTurn() return end
+        end
         if isPlaying and isMoving then
             
             newPos=me:GetWorldPosition()
