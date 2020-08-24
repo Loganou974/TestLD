@@ -45,6 +45,7 @@ Objects {
   ChildIds: 13995642253462504043
   ChildIds: 18317109540380412739
   ChildIds: 13848710670565437922
+  ChildIds: 8643716598100766466
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -54,6 +55,143 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 8643716598100766466
+  Name: "Vampire"
+  Transform {
+    Location {
+      X: -8097.17969
+      Y: 17837.6426
+      Z: 5157.23389
+    }
+    Rotation {
+      Yaw: 172.210861
+    }
+    Scale {
+      X: 1.52020097
+      Y: 1.52020097
+      Z: 1.52020097
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 7783695910173359136
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail3:id"
+      AssetReference {
+        Id: 17927785296012505733
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 0.549999952
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.0953641161
+        B: 0.9
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.929999948
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5930170301003509857
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        Animation: "unarmed_laugh"
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 7783695910173359136
+  Name: "Bush 02"
+  Transform {
+    Location {
+      X: 1.796875
+      Y: -0.392578125
+      Z: 75.4829102
+    }
+    Rotation {
+      Pitch: -74.7990952
+    }
+    Scale {
+      X: 0.018953247
+      Y: 0.018953247
+      Z: 0.018953247
+    }
+  }
+  ParentId: 8643716598100766466
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 4293672240336829666
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7728756996254098191
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
