@@ -2763,7 +2763,7 @@ Objects {
   }
   Control {
     Width: 250
-    Height: 25
+    Height: 50
     UIX: 84.1023712
     UIY: 80.8643494
     RenderTransformPivot {
@@ -3000,7 +3000,7 @@ Objects {
   }
   Control {
     Width: 350
-    Height: 30
+    Height: 50
     UIX: 84.1023712
     UIY: 50.8643494
     RenderTransformPivot {

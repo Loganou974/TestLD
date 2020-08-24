@@ -255,6 +255,7 @@ function GetStat(player)
         player:SetResource("AC",11+modifier(10))
         player:SetResource("SPEED",playerData.race.speed)
         player:SetResource("actionMax",1)
+        player:SetResource("level",1)
        
     else
         addDebugCombatTexte("charac " .. player:GetResource("STR"))
@@ -346,10 +347,20 @@ function modifier(value)
 
     return math.floor((value-10)/2)
 end
+
+function levelup(player)
+    print("level up!!!")
+    player:SetResource("level",2)
+end
 function OnResourceChanged(player,resourceid,newvalue)
     playerData=loadPlayerData(player)
     Task.Wait(0.1)
     --if(playerData.classe.name=="Barbarian") then
+             if(resourceid=="XP") then
+                if(newvalue>=300 and player:GetResource("level") == 1) then
+                    levelup(player)
+                end
+             end
         if(resourceid=="STR") then
 
         end

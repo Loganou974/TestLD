@@ -15,10 +15,11 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 259287209507503813
         ChildIds: 18222038356094928428
         ChildIds: 14105557661083274393
         ChildIds: 10525290180354974051
+        ChildIds: 9695017235144288662
         ChildIds: 9740822870712001158
         ChildIds: 5839977592034440561
         UnregisteredParameters {
@@ -40,7 +41,7 @@
           }
           Overrides {
             Name: "cs:MoveSpeed"
-            Float: 400
+            Float: 1000
           }
           Overrides {
             Name: "cs:TurnSpeed"
@@ -108,11 +109,51 @@
           }
           Overrides {
             Name: "cs:RewardResourceAmount"
-            Int: 58
+            Int: 10
           }
           Overrides {
             Name: "cs:LootId"
             String: "Common"
+          }
+          Overrides {
+            Name: "cs:Speed"
+            Int: 3
+          }
+          Overrides {
+            Name: "cs:STR"
+            Int: 10
+          }
+          Overrides {
+            Name: "cs:DEX"
+            Int: 10
+          }
+          Overrides {
+            Name: "cs:CON"
+            Int: 10
+          }
+          Overrides {
+            Name: "cs:INT"
+            Int: 10
+          }
+          Overrides {
+            Name: "cs:WIS"
+            Int: 10
+          }
+          Overrides {
+            Name: "cs:CHA"
+            Int: 10
+          }
+          Overrides {
+            Name: "cs:AC"
+            Int: 10
+          }
+          Overrides {
+            Name: "cs:MobType"
+            String: "Commoner"
+          }
+          Overrides {
+            Name: "cs:BonusToHit"
+            Int: 2
           }
           Overrides {
             Name: "cs:CurrentState:isrep"
@@ -431,6 +472,43 @@
           }
           Teams {
             IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9695017235144288662
+        Name: "HeadSocket"
+        Transform {
+          Location {
+            X: -3.18457031
+            Z: 234.377441
+          }
+          Rotation {
+            Yaw: 79.5180588
+          }
+          Scale {
+            X: 0.541312039
+            Y: 0.541312039
+            Z: 0.541312039
+          }
+        }
+        ParentId: 7893311972705795633
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9476605368855983895
+          }
+          Teams {
           }
           StaticMesh {
             Physics {
@@ -1768,6 +1846,15 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_basic_pbr_material_001"
+      }
+    }
+    Assets {
+      Id: 9476605368855983895
+      Name: "Cube - Chamfered Large"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_chamfer"
       }
     }
     Assets {

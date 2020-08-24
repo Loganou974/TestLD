@@ -1,51 +1,6 @@
 ﻿Name: "Fantasy Castle 01"
 RootId: 493094663894712063
 Objects {
-  Id: 16779762996461322597
-  Name: "Fox Mob"
-  Transform {
-    Location {
-      X: -1096.41602
-      Y: 1946.76563
-      Z: 917.312622
-    }
-    Rotation {
-      Yaw: -94.682518
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 493094663894712063
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6668430063977139298
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
-  }
-}
-Objects {
   Id: 3783357018459072624
   Name: "Fantasy Chest Common 01 (Prop)"
   Transform {

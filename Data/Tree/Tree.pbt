@@ -2863,9 +2863,9 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 3868776452298022909
-  ChildIds: 12212360361237333944
-  ChildIds: 15042112154437094119
-  ChildIds: 2222998443422722517
+  ChildIds: 15558294256519260212
+  ChildIds: 10017760102515901299
+  ChildIds: 15643508128490795449
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2877,8 +2877,134 @@ Objects {
   }
 }
 Objects {
-  Id: 2222998443422722517
-  Name: "Dragon1"
+  Id: 15643508128490795449
+  Name: "NPC - Human Peasant"
+  Transform {
+    Location {
+      X: -7432.33545
+      Y: 9873.22656
+      Z: 712.661072
+    }
+    Rotation {
+      Yaw: -54.6590538
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 259287209507503813
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7893311972705795633
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Jean"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4026.83496
+            Y: 6048.34033
+            Z: 712.661072
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.6590576
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7936693949144627473
+    }
+  }
+}
+Objects {
+  Id: 10017760102515901299
+  Name: "NPC - Human Peasant"
+  Transform {
+    Location {
+      X: -7651.13916
+      Y: 9873.22656
+      Z: 712.661072
+    }
+    Rotation {
+      Yaw: -54.6590538
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 259287209507503813
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7893311972705795633
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Paul"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4210.52441
+            Y: 6048.34033
+            Z: 712.661072
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.6590576
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7936693949144627473
+    }
+  }
+}
+Objects {
+  Id: 15558294256519260212
+  Name: "NPC - Human Peasant"
   Transform {
     Scale {
       X: 1
@@ -2896,260 +3022,30 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 6175614094449634417
-      value {
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 3
-            Y: 3
-            Z: 3
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 6437137228495040271
-      value {
-        Overrides {
-          Name: "cs:DamageToPlayers"
-          Int: 0
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 13178921122859960492
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:color"
-          Color {
-            R: 0.0823529437
-            G: 0.239215702
-            A: 1
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_Detail1:color"
-          Color {
-            R: 0.00749903172
-            G: 0.0466650948
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 18005923331114773312
+      key: 7893311972705795633
       value {
         Overrides {
           Name: "Name"
-          String: "Dragon1"
+          String: "Georges"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -4043.66797
-            Y: 5925.49268
-            Z: 707.00354
+            X: -4429.32813
+            Y: 6048.34033
+            Z: 712.661072
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -98.4134521
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
+            Yaw: -54.6590576
           }
         }
       }
     }
     TemplateAsset {
-      Id: 15728781663253921388
-    }
-  }
-}
-Objects {
-  Id: 15042112154437094119
-  Name: "NPC - Skeleton Full Armed"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 259287209507503813
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1684811105972245971
-      value {
-        Overrides {
-          Name: "cs:DamageToPlayers"
-          Int: 0
-        }
-        Overrides {
-          Name: "cs:DamageToNPCs"
-          Float: 0
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 13697771327686902457
-      value {
-        Overrides {
-          Name: "Name"
-          String: "NPC - Skeleton Full Armed"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -4562.6
-            Y: 6116.34717
-            Z: 700
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11576878702388314300
-    }
-  }
-}
-Objects {
-  Id: 12212360361237333944
-  Name: "NPC - Dragon"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 259287209507503813
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6175614094449634417
-      value {
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 3
-            Y: 3
-            Z: 3
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 6437137228495040271
-      value {
-        Overrides {
-          Name: "cs:DamageToPlayers"
-          Int: 0
-        }
-        Overrides {
-          Name: "cs:DamageToNPCs"
-          Float: 1
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 16407974604998684743
-      value {
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceoff"
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 90.956665
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 18005923331114773312
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Dragon3"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -4242.86768
-            Y: 6200.9165
-            Z: 707.00354
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -98.4134521
-          }
-        }
-        Overrides {
-          Name: "cs:Speed"
-          Int: 2
-        }
-        Overrides {
-          Name: "cs:AttackRange"
-          Float: 500
-        }
-        Overrides {
-          Name: "cs:RewardResourceAmount"
-          Int: 1
-        }
-        Overrides {
-          Name: "cs:CurrentHealth"
-          Float: 10
-        }
-        Overrides {
-          Name: "cs:VisionRadius"
-          Float: 25000
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.84736335
-            Y: 1.84736335
-            Z: 1.84736335
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15728781663253921388
+      Id: 7936693949144627473
     }
   }
 }
@@ -3239,28 +3135,28 @@ Objects {
     Overrides {
       Name: "cs:Monster1"
       ObjectReference {
-        SelfId: 9907114777626848843
-        SubObjectId: 18005923331114773312
-        InstanceId: 12212360361237333944
-        TemplateId: 15728781663253921388
+        SelfId: 10042470128917763072
+        SubObjectId: 7893311972705795633
+        InstanceId: 15558294256519260212
+        TemplateId: 7936693949144627473
       }
     }
     Overrides {
       Name: "cs:Monster2"
       ObjectReference {
-        SelfId: 10778461960469612046
-        SubObjectId: 18005923331114773312
-        InstanceId: 2222998443422722517
-        TemplateId: 15728781663253921388
+        SelfId: 14843915055135802765
+        SubObjectId: 7893311972705795633
+        InstanceId: 10017760102515901299
+        TemplateId: 7936693949144627473
       }
     }
     Overrides {
       Name: "cs:Monster3"
       ObjectReference {
-        SelfId: 7698701892960867319
-        SubObjectId: 13697771327686902457
-        InstanceId: 15042112154437094119
-        TemplateId: 11576878702388314300
+        SelfId: 16297292106411514355
+        SubObjectId: 7893311972705795633
+        InstanceId: 15643508128490795449
+        TemplateId: 7936693949144627473
       }
     }
   }
@@ -3369,6 +3265,22 @@ Objects {
           Name: "cs:Speed"
           Int: 2
         }
+        Overrides {
+          Name: "cs:RewardResourceAmount"
+          Int: 60
+        }
+        Overrides {
+          Name: "cs:AttackRange"
+          Float: 400
+        }
+        Overrides {
+          Name: "cs:MoveSpeed"
+          Float: 400
+        }
+        Overrides {
+          Name: "cs:AttackCast"
+          Float: 0.4
+        }
       }
     }
     TemplateAsset {
@@ -3436,6 +3348,22 @@ Objects {
           Name: "cs:Speed"
           Int: 2
         }
+        Overrides {
+          Name: "cs:RewardResourceAmount"
+          Int: 60
+        }
+        Overrides {
+          Name: "cs:AttackRange"
+          Float: 400
+        }
+        Overrides {
+          Name: "cs:MoveSpeed"
+          Float: 400
+        }
+        Overrides {
+          Name: "cs:AttackCast"
+          Float: 0.4
+        }
       }
     }
     TemplateAsset {
@@ -3492,8 +3420,12 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:Speed"
-          Int: 2
+          Name: "cs:AttackRange"
+          Float: 400
+        }
+        Overrides {
+          Name: "cs:AttackCast"
+          Float: 0.4
         }
       }
     }
@@ -3562,6 +3494,22 @@ Objects {
           Name: "cs:Speed"
           Int: 2
         }
+        Overrides {
+          Name: "cs:RewardResourceAmount"
+          Int: 60
+        }
+        Overrides {
+          Name: "cs:AttackRange"
+          Float: 400
+        }
+        Overrides {
+          Name: "cs:MoveSpeed"
+          Float: 400
+        }
+        Overrides {
+          Name: "cs:AttackCast"
+          Float: 0.4
+        }
       }
     }
     TemplateAsset {
@@ -3610,8 +3558,20 @@ Objects {
           }
         }
         Overrides {
+          Name: "cs:MoveSpeed"
+          Float: 400
+        }
+        Overrides {
+          Name: "cs:Speed"
+          Int: 2
+        }
+        Overrides {
           Name: "cs:AttackRange"
-          Float: 500
+          Float: 400
+        }
+        Overrides {
+          Name: "cs:AttackCast"
+          Float: 0.4
         }
       }
     }

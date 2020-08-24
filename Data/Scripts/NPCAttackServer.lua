@@ -27,6 +27,10 @@ local WIS=script.parent:GetCustomProperty("WIS")
 local CHA=script.parent:GetCustomProperty("CHA") 
 local BonusToHit=script.parent:GetCustomProperty("BonusToHit") 
 
+
+
+
+
 local DAMAGE_TO_PLAYERS = script:GetCustomProperty("DamageToPlayers") or 1
 local DAMAGE_TO_NPCS = script:GetCustomProperty("DamageToNPCs") or 1
 
@@ -138,12 +142,12 @@ function OnProjectileImpact(projectile, other, hitResult)
 	
 	if other:IsA("Player") then
 		local cc=""
-		if(MobType=="FlyingSnake" or MobType=="Lizard") then
+		if(MobType=="FlyingSnake" or MobType=="Lizard" or MobType=="Commoner") then
 			if d20 >= AC then
 				
 				if MobType=="FlyingSnake" then damageAmount = 1 +math.random(4) +math.random(4) +math.random(4) end
 				if MobType=="Lizard" then damageAmount = 1 end
-				
+				if MobType=="Commoner" then damageAmount = math.random(4) end
 				
 				if(d20>999) then cc=" with a Critical hit " end
 				print(script.parent.name.." hit "..other.name..cc.."for "..damageAmount)
@@ -277,7 +281,9 @@ end
 function SetHealth(value)
 	ROOT:SetNetworkedCustomProperty("CurrentHealth", value)
 end
-
+if MobType=="FlyingSnake" then SetHealth(math.random(4)+math.random(4)) end
+if MobType=="Commoner" then SetHealth(math.random(8)) end
+if MobType=="Lizard" then SetHealth(math.random(4)) end
 
 function DropRewards(killer)
 	-- Give resources

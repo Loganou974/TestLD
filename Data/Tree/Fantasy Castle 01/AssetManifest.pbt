@@ -440,15 +440,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6668430063977139298
-  Name: "Fox Mob"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_fox_default_basic_001_ref"
-  }
-}
-Assets {
   Id: 6651434759116104397
   Name: "Fantasy Castle Bannister 01 - Spiral"
   PlatformAssetType: 1

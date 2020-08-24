@@ -7,7 +7,7 @@
       RootId: 4212840905289249936
       Objects {
         Id: 4212840905289249936
-        Name: "Raptor 1"
+        Name: "Raptor 3"
         Transform {
           Scale {
             X: 0.5
@@ -41,7 +41,7 @@
           }
           Overrides {
             Name: "cs:MoveSpeed"
-            Float: 2000
+            Float: 400
           }
           Overrides {
             Name: "cs:TurnSpeed"
@@ -85,7 +85,7 @@
           }
           Overrides {
             Name: "cs:AttackRange"
-            Float: 600
+            Float: 350
           }
           Overrides {
             Name: "cs:AttackCast"
@@ -109,7 +109,7 @@
           }
           Overrides {
             Name: "cs:RewardResourceAmount"
-            Int: 101
+            Int: 60
           }
           Overrides {
             Name: "cs:LootId"
@@ -117,7 +117,7 @@
           }
           Overrides {
             Name: "cs:Speed"
-            Int: 100
+            Int: 2
           }
           Overrides {
             Name: "cs:STR"
@@ -473,9 +473,9 @@
           Rotation {
           }
           Scale {
-            X: 0.9
+            X: 1.52470839
             Y: 0.9
-            Z: 1.1
+            Z: 0.474877447
           }
         }
         ParentId: 4212840905289249936
@@ -870,11 +870,12 @@
             IsEnemyCollisionEnabled: true
           }
           AnimatedMesh {
-            AnimationStance: "unarmed_bind_pose"
+            AnimationStance: "unarmed_idle_ready"
             AnimationStancePlaybackRate: 1
             AnimationStanceShouldLoop: true
             AnimationPlaybackRateMultiplier: 1
             PlayOnStartAnimation {
+              Animation: "unarmed_spit"
               PlaybackRate: 1
             }
           }

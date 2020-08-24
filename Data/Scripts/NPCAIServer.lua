@@ -40,9 +40,15 @@ local ATTACK_RECOVERY_TIME = ROOT:GetCustomProperty("AttackRecovery") or 1.5
 local ATTACK_COOLDOWN = ROOT:GetCustomProperty("AttackCooldown") or 0
 local OBJECTIVE_THRESHOLD_DISTANCE_SQUARED = 900
 
-if MobType=="FlyingSnake" then MAX_HEALTH =math.random(4)+math.random(4) end
-if MobType=="Lizard" then MAX_HEALTH =math.random(4) end
+if MobType=="FlyingSnake" then 
 
+	MAX_HEALTH =math.random(4)+math.random(4)
+
+ end
+if MobType=="Commoner" then MAX_HEALTH =math.random(8) end
+if MobType=="Lizard" then MAX_HEALTH =math.random(4) end
+if MAX_HEALTH==nill then MAX_HEALTH=ROOT:GetCustomProperty("CurrentHealth") end
+ROOT:SetNetworkedCustomProperty("CurrentHealth",MAX_HEALTH)
 
 local PATHING_STEP = MOVE_SPEED * LOGICAL_PERIOD + 10
 local PATHING_STEP_SQUARED = PATHING_STEP * PATHING_STEP
@@ -98,13 +104,14 @@ function OnTurnOn(id)
 		EngageNearest()
 		Events.Broadcast("BEGIN_TARGET",target)
 		Task.Wait(1)
-		--Tack(SPEED)
+		--SetState(STATE_ENGAGING)
+		Tack(10)
 		if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
-			SetState(STATE_ATTACK_CAST)
+			--SetState(STATE_ATTACK_CAST)
 			ExecuteAttack()
 		else
 			--SetState(STATE_ENGAGING)
-			UpdateMovement(SPEED)
+			--UpdateMovement(250)
 			
 		end
 		
@@ -237,19 +244,19 @@ function Tack(deltaTime)
 		SetState(STATE_DISABLED)
 	end
 
-	if logicStepDelay <= 0 then
-		logicStepDelay = LOGICAL_PERIOD
+	--if logicStepDelay <= 0 then
+	--	logicStepDelay = LOGICAL_PERIOD
 
 		if currentState == STATE_SLEEPING then
 			EngageNearest()
 
 		elseif currentState == STATE_ENGAGING then
 			local chaseRadiusSquared = CHASE_RADIUS_SQUARED
-			if (searchTimeElapsed >= 0 and searchTimeElapsed < SEARCH_DURATION * 4) then
-				chaseRadiusSquared = SEARCH_RADIUS_SQUARED
-			else
-				searchTimeElapsed = -1
-			end
+			--if (searchTimeElapsed >= 0 and searchTimeElapsed < SEARCH_DURATION * 4) then
+			--	chaseRadiusSquared = SEARCH_RADIUS_SQUARED
+			--else
+			--	searchTimeElapsed = -1
+			--end
 			
 			--print("chaseRadiusSquared = " .. chaseRadiusSquared .. ", searchTimeElapsed = " .. searchTimeElapsed)
 			
@@ -260,7 +267,7 @@ function Tack(deltaTime)
 
 				if (not target) then
 					--print("ResumePatrol 1")
-					ResumePatrol()
+					--ResumePatrol()
 				end
 			end
 			
@@ -285,7 +292,7 @@ function Tack(deltaTime)
 				EngageNearest()
 
 				if (not target) then
-					SetState(STATE_PATROLLING)
+					--SetState(STATE_PATROLLING)
 				end
 			end
 			
@@ -300,7 +307,7 @@ function Tack(deltaTime)
 				end
 			end
 		end
-	end
+	--end
 	
 	UpdateTemporaryProperties(deltaTime)
 end
@@ -341,9 +348,16 @@ function ExecuteAttack()
 end
 
 
-function StepTowards(targetPosition)
+function StepTowards(t)
+
+	local targetPosition=t
 	local pos = ROOT:GetWorldPosition()
-	
+	local distance=pos-targetPosition
+	distance=math.floor(distance.size/300)
+	print("step toward with distance to target="..distance.." speed ="..SPEED.." ratio "..SPEED/distance)
+	if(distance > SPEED) then
+		targetPosition=Vector3.Lerp(pos,targetPosition,math.max(SPEED/distance-0.2,0.2))
+	end
 	if NAV_MESH() then
 		navMeshPath = NAV_MESH().FindPath(pos, targetPosition)
 		if navMeshPath and #navMeshPath > 1 then
@@ -353,6 +367,7 @@ function StepTowards(targetPosition)
 		end
 	end
 	navMeshPath = nil
+
 	-- No NavMesh available, fallback
 	
 	-- Calculate step destination
@@ -390,12 +405,14 @@ function StepTowards(targetPosition)
 	else
 		stepDestination = targetPosition
 	end
+
 end
 
 
 local overlappingObjects = {}
 
 function UpdateMovement(deltaTime)
+	
 	local pos = ROOT:GetWorldPosition()
 	
 	-- Test overlap against other objects and adjust
@@ -419,19 +436,28 @@ function UpdateMovement(deltaTime)
 	
 	-- Move forward
 	if navMeshPath then
-		local moveAmount = MOVE_SPEED * deltaTime
+		local moveAmount = SPEED * deltaTime
+		print("initiate movement "..moveAmount.." "..SPEED.." "..deltaTime)
 		while moveAmount > 0 do
+			print("moveAmount "..moveAmount)
 			stepDestination = navMeshPath[1]
 			local moveV = stepDestination - pos
 			local distance = moveV.size
-			
+			print("distance for next step "..distance)
 			if (distance <= moveAmount) then
 				pos = stepDestination
-
+				print("next step reached is it over?")
 				table.remove(navMeshPath, 1)
 				if #navMeshPath > 0 then
+					print("no loop")
 					moveAmount = moveAmount - distance
 				else
+					print("yes attack? ")
+					if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
+						print("yes attack")
+						ExecuteAttack()
+						return
+					end
 					navMeshPath = nil
 					moveAmount = 0
 				end
@@ -443,18 +469,24 @@ function UpdateMovement(deltaTime)
 	else
 		local moveV = stepDestination - pos
 		local distance = moveV.size
-		local moveAmount = MOVE_SPEED * deltaTime
+		local moveAmount = SPEED * deltaTime
 		
 		if (distance <= moveAmount) then
 			pos = stepDestination
 			if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
 				ExecuteAttack()
+				return
 			end
+		
 		else
 			pos = pos + moveV / distance * moveAmount
 		end
 	end
-	ROOT:SetWorldPosition(pos)
+	ROOT:SetWorldPosition(stepDestination)
+	if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
+		ExecuteAttack()
+		return
+	end
 end
 
 
@@ -585,10 +617,13 @@ end
 
 
 function IsWithinRangeSquared(enemy, rangeSquared)
+
 	if Object.IsValid(enemy) then
 		local pos = ROOT:GetWorldPosition()
 		local enemyPos = enemy:GetWorldPosition()
 		local delta = pos - enemyPos
+		print("is "..enemy.name.." in range "..rangeSquared.." distance squared="..delta.sizeSquared)
+		if (delta.sizeSquared < rangeSquared) then print("yes") else print("no") end
 		return (delta.sizeSquared < rangeSquared)
 	end
 	return false
