@@ -773,6 +773,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6846695554095725190
+  Name: "Voice Character Evil Pirate Laughing 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_vo_evil_pirate_laughter_01_Cue_ref"
+  }
+}
+Assets {
   Id: 6796769041854594011
   Name: "Weapon Pickup Reload 01 SFX"
   PlatformAssetType: 7

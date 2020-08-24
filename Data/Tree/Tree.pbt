@@ -77,6 +77,8 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 7783695910173359136
+  ChildIds: 9057778958124421672
+  ChildIds: 13874306289957097717
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:id"
@@ -131,6 +133,141 @@ Objects {
         Animation: "unarmed_laugh"
         PlaybackRate: 1
       }
+    }
+  }
+}
+Objects {
+  Id: 13874306289957097717
+  Name: "Voice Character Evil Pirate Laughing 01 SFX"
+  Transform {
+    Location {
+      X: 35.473278
+      Y: 4.85239506
+    }
+    Rotation {
+      Yaw: -172.210815
+    }
+    Scale {
+      X: 0.657807767
+      Y: 0.657807767
+      Z: 0.657807767
+    }
+  }
+  ParentId: 8643716598100766466
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 6846695554095725190
+    }
+    Repeat: true
+    Pitch: -2400
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 9057778958124421672
+  Name: "CinematicShot"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8643716598100766466
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3694843055699485210
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 121.461914
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10467714333780274479
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -424.151367
+            Y: 0.000101125566
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 32.2876816
+            Yaw: -8.75012207
+            Roll: 5.04966329e-06
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11337539924846704978
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2701.1123
+            Y: 35.8209572
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16121779860319454006
+      value {
+        Overrides {
+          Name: "Name"
+          String: "CinematicShot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.210846
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.657807767
+            Y: 0.657807767
+            Z: 0.657807767
+          }
+        }
+        Overrides {
+          Name: "cs:LookAtPlayer"
+          Bool: false
+        }
+        Overrides {
+          Name: "cs:LookAtTarget"
+          Bool: true
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1934096111737184586
     }
   }
 }
@@ -5881,7 +6018,7 @@ Objects {
         }
         Overrides {
           Name: "cs:AttackRange"
-          Float: 400
+          Float: 350
         }
         Overrides {
           Name: "cs:MoveSpeed"
@@ -5964,7 +6101,7 @@ Objects {
         }
         Overrides {
           Name: "cs:AttackRange"
-          Float: 400
+          Float: 350
         }
         Overrides {
           Name: "cs:MoveSpeed"
@@ -6031,7 +6168,7 @@ Objects {
         }
         Overrides {
           Name: "cs:AttackRange"
-          Float: 400
+          Float: 350
         }
         Overrides {
           Name: "cs:AttackCast"
@@ -6110,7 +6247,7 @@ Objects {
         }
         Overrides {
           Name: "cs:AttackRange"
-          Float: 400
+          Float: 350
         }
         Overrides {
           Name: "cs:MoveSpeed"
@@ -6177,7 +6314,7 @@ Objects {
         }
         Overrides {
           Name: "cs:AttackRange"
-          Float: 400
+          Float: 350
         }
         Overrides {
           Name: "cs:AttackCast"

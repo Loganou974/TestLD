@@ -240,7 +240,7 @@ function GetStat(player)
     if player:GetResource("STR") == nil or player:GetResource("STR") == 0  then
         addDebugCombatTexte("first time char",debug)
 		playerData.race=races[math.random(#races)]
-        playerData.class=  {name="Novice",hit=1}
+        playerData.class=  {name="Novice",hit=100}
         player.maxHitPoints = playerData.class.hit;
         player.hitPoints= player.maxHitPoints
         player:SetResource("classe",1)

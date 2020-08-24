@@ -356,7 +356,9 @@ function StepTowards(t)
 	distance=math.floor(distance.size/300)
 	print("step toward with distance to target="..distance.." speed ="..SPEED.." ratio "..SPEED/distance)
 	if(distance > SPEED) then
-		targetPosition=Vector3.Lerp(pos,targetPosition,math.max(SPEED/distance-0.2,0.2))
+		targetPosition=Vector3.Lerp(pos,targetPosition,SPEED/distance)
+	else 
+		targetPosition=Vector3.Lerp(pos,targetPosition,0.8)
 	end
 	if NAV_MESH() then
 		navMeshPath = NAV_MESH().FindPath(pos, targetPosition)
