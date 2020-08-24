@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 18024040266898552292
+  Name: "Ring - Quarter Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_torus_003"
+  }
+}
+Assets {
   Id: 17927785296012505733
   Name: "Additive Soft Edge"
   PlatformAssetType: 2
@@ -368,6 +377,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13588168874842906464
+  Name: "Cone - Truncated Wide"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_003"
+  }
+}
+Assets {
   Id: 13547513599097969212
   Name: "Pipe"
   PlatformAssetType: 1
@@ -383,6 +401,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_stairs_spiral_001_sm_150cm"
+  }
+}
+Assets {
+  Id: 13372972268553014344
+  Name: "Ring - Beveled"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_001"
   }
 }
 Assets {
@@ -629,6 +656,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8936463881719161671
+  Name: "Ring - Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_005"
+  }
+}
+Assets {
   Id: 8869908880399307840
   Name: "Plastic Shiny"
   PlatformAssetType: 2
@@ -734,6 +770,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_broken_03"
+  }
+}
+Assets {
+  Id: 7452506898564974989
+  Name: "Metal Gold 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_001"
   }
 }
 Assets {
@@ -1043,6 +1088,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3593597783924766211
+  Name: "Cone - Bullet"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bullet_001"
+  }
+}
+Assets {
   Id: 3577357595658140295
   Name: "Fantasy Castle Wall 01 - Curved"
   PlatformAssetType: 1
@@ -1184,6 +1238,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_chamfer"
+  }
+}
+Assets {
+  Id: 2224571462023946700
+  Name: "Environment Fog Default VFX"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_env_fog_default"
   }
 }
 Assets {
