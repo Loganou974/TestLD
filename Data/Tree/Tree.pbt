@@ -1444,7 +1444,7 @@ Objects {
   Transform {
     Location {
       X: -16281.1152
-      Y: -7144.37891
+      Y: -8157.56543
       Z: 8235.03906
     }
     Rotation {
@@ -2273,6 +2273,23 @@ Objects {
             X: -15024.1172
             Y: -6043.11426
             Z: 7473.31348
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11592647923584693331
+      value {
+        Overrides {
+          Name: "PlayerMovementControlMode"
+          Enum {
+            Value: "mc:emovementcontrolmode:lookrelative"
+          }
+        }
+        Overrides {
+          Name: "PlayerLookControlMode"
+          Enum {
+            Value: "mc:elookcontrolmode:relative"
           }
         }
       }

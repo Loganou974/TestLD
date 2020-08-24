@@ -117,6 +117,7 @@ function endTurn()
         OnTurnOff()
 end
 function stat_refresh(race,classe)
+    print(me.name.." refresh demande")
     me=Game.GetLocalPlayer()
     local abilities=me:GetAbilities()
     print("abilities = "..#abilities)
@@ -141,6 +142,27 @@ function stat_refresh(race,classe)
         propClassText_0.text="<" .. classe ..">"
        
     end
+   
+end
+function stat_refresh2()
+   
+    me=Game.GetLocalPlayer()
+    local abilities=me:GetAbilities()
+    print("abilities = "..#abilities)
+    for _, ability in pairs(abilities) do
+        print("abilite recu "..ability.name .." pour " .. me.name)
+        ability.castEvent:Connect(OnCast)
+        ability.executeEvent:Connect(OnExecuteAbility)
+    end
+   
+    propSTRValueText.text="".. me:GetResource("STR")
+    propDEXValueText.text="".. me:GetResource("DEX")
+    propCONValueText.text="".. me:GetResource("CON")
+    propINTValueText.text="".. me:GetResource("INT")
+    propWISValueText.text="".. me:GetResource("WIS")
+    propCHARValueText.text="".. me:GetResource("CHA")
+    propSTAT_POINTText.text="Point available:"..me:GetResource("statpoint")
+   
    
 end
 
@@ -234,6 +256,7 @@ local firstTimeHorsCombat=true
 local combatMusic=nil
 function OnResourceChanged(player, resourceId, newValue)
     print("ressource changed for "..player.name.." id="..resourceId.." value="..newValue)
+    stat_refresh2()
     if resourceId=="classe" then
            for i,v in ipairs(classes) do
                 if i==newValue then
