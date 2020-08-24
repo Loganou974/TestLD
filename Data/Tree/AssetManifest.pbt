@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17583281951396407341
+  Name: "Cliff 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_cliff_001_uv"
+  }
+}
+Assets {
   Id: 17534473992731403334
   Name: "Cone"
   PlatformAssetType: 1
@@ -89,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16433616250941258546
+  Name: "Text 01: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_017"
+  }
+}
+Assets {
   Id: 16370875990012174012
   Name: "Terrain - Grass"
   PlatformAssetType: 2
@@ -104,6 +122,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_003"
+  }
+}
+Assets {
+  Id: 16333013849226954389
+  Name: "Glitchy Hologram"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_hologram"
   }
 }
 Assets {
@@ -188,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15212185774203157141
+  Name: "Fantasy Castle Floor 01 - Curved 4m "
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_curve_001"
+  }
+}
+Assets {
   Id: 15172180549504871240
   Name: "Ambience Nature Forest Birds Set 01 SFX"
   PlatformAssetType: 10
@@ -239,6 +275,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_bark_pine_001_uv"
+  }
+}
+Assets {
+  Id: 14476679536478096151
+  Name: "Fantasy Castle Pillar 02 - Base"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_002_base"
+  }
+}
+Assets {
+  Id: 14466644363981184839
+  Name: "Text 01: H"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_007"
   }
 }
 Assets {
@@ -311,6 +365,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_stairs_spiral_001_sm_150cm"
+  }
+}
+Assets {
+  Id: 12882115061943751500
+  Name: "Text 01: A"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_000"
   }
 }
 Assets {
@@ -401,6 +464,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_cobblestone_floor_arch_001"
+  }
+}
+Assets {
+  Id: 10914354925542967262
+  Name: "Fantasy Castle Pillar 02 - Mid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_002_mid"
   }
 }
 Assets {
@@ -593,6 +665,24 @@ Assets {
   }
 }
 Assets {
+  Id: 7782807286916071675
+  Name: "Fantasy Castle Accessory Tower 01 - 12m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_acc_tower_001_12m"
+  }
+}
+Assets {
+  Id: 7777419408811525287
+  Name: "Text 01: D"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_003"
+  }
+}
+Assets {
   Id: 7724989921381923917
   Name: "Ambience Nature Wind and Trees Set 01 SFX"
   PlatformAssetType: 10
@@ -608,6 +698,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_broken_03"
+  }
+}
+Assets {
+  Id: 7379539457708468975
+  Name: "Text 01: S"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_018"
   }
 }
 Assets {
@@ -707,6 +806,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_fire_volume_vfx"
+  }
+}
+Assets {
+  Id: 6418174159815543842
+  Name: "Text 01: T"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_019"
   }
 }
 Assets {
@@ -860,6 +968,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_cauldron_001"
+  }
+}
+Assets {
+  Id: 3577357595658140295
+  Name: "Fantasy Castle Wall 01 - Curved"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_curve_001"
   }
 }
 Assets {
