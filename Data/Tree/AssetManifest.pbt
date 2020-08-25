@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17847068962151006321
+  Name: "Curling Dust VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_base_curl"
+  }
+}
+Assets {
   Id: 17718112535551741152
   Name: "Fantasy Castle Wall Foundation 01 - Pillar 01"
   PlatformAssetType: 1
@@ -194,6 +203,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_outline_basic"
+  }
+}
+Assets {
+  Id: 15646196788024357096
+  Name: "Point To Point Electrical Beam VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_ptp_electrical_beam"
   }
 }
 Assets {
@@ -761,6 +779,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_broken_03"
+  }
+}
+Assets {
+  Id: 7622923852987071105
+  Name: "Wispy Fog Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_fog_volume_vfx"
   }
 }
 Assets {

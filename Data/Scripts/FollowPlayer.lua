@@ -1,10 +1,11 @@
 ﻿local p=nil
+local propOffsetZ = script:GetCustomProperty("offsetZ")
 
 
 function Tick()
     if(p~=nil and Object.IsValid(p)) then
    pos= p:GetWorldPosition()
-   pos.z=pos.z-70
+   pos.z=pos.z-propOffsetZ
    script.parent:SetWorldPosition(pos)
     end
 end
