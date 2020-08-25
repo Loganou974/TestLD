@@ -341,6 +341,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14299811882235610539
+  Name: "Creature Bat Squeaks 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_creature_bat_squeaks_01a_Cue_ref"
+  }
+}
+Assets {
   Id: 14206563083884513420
   Name: "Plane 1m - Two Sided"
   PlatformAssetType: 1
@@ -734,6 +743,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_gold_001"
+  }
+}
+Assets {
+  Id: 7792331592793191613
+  Name: "Creatire Bat Wings Flapping 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_creature_bat_wings_flapping_01a_Cue_ref"
   }
 }
 Assets {
