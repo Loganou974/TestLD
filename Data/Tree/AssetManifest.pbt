@@ -503,6 +503,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12101242902458724486
+  Name: "Creature Wolf Howls & Calls Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_creature_wolf_ref"
+  }
+}
+Assets {
   Id: 11761871474221141479
   Name: "Fantasy Castle Door 02"
   PlatformAssetType: 1
