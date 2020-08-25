@@ -578,12 +578,17 @@ function startCombat(player,combatZone)
     
     if playersAreInCombat == false then
        
-        Events.BroadcastToAllPlayers("BigBannerMessage","COMBAT IS STARTING \n(Ability Check for Initiative)",3,Color.FromStandardHex("#FFFFFF"))
+        
         initiativecombat={}
         combatOrder={}
         addDebugCombatTexte(" "..combatZone,debug)
         currentCombatZone=World.FindObjectById(combatZone)
         local cZ=currentCombatZone:FindDescendantByName("CombatZone");
+        local introSpeech=cZ:GetCustomProperty("introSpeech")
+        Events.BroadcastToAllPlayers("BannerMessage",introSpeech)
+        Task.Wait(2)
+        Events.BroadcastToAllPlayers("BannerMessage","Roll a D20 to determine your combat initiative")
+        Task.Wait(0.1)
         local mobs={}
         local maxMob=cZ:GetCustomProperty("NombreMonstre")
         for i= 1,maxMob do
@@ -595,7 +600,9 @@ function startCombat(player,combatZone)
             initiativeCombat[id]=r+DEX
             addDebugCombatTexte("Tour "..currentTurn..":"..mobTemp.name.." initiative="..initiativeCombat[id].." ",debug)
             --Events.BroadcastToAllPlayers("BigBannerMessage",id.." rolled an "..r,3,Color.FromStandardHex("#FFFFFF"))
+            
             Events.BroadcastToAllPlayers("addSystemCombatTexte",mobTemp.name.." rolled an "..(r+DEX).." ("..r.."+"..DEX..")")
+            Task.Wait(0.1)
             initiativeCombatLength=initiativeCombatLength+1
         end
         

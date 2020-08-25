@@ -121,14 +121,14 @@ function SpawnLocalBigMessage(message, duration, color)
     -- Spawns message instance
     local messageInstance = World.SpawnAsset("87154CE96A5DF608:BigBannerText", {parent = CANVAS})
     --messageInstance.y = LOCAL_MESSAGE_OFFSET
-
+    
     -- Sets message text
     --local bannerText = messageInstance:GetCustomProperty("BannerText"):WaitForObject()
-    messageInstance.text = message
+    messageInstance:FindChildByName("Text").text = message
 
     -- Sets message color
     if color then
-        messageInstance:SetColor(color)
+        messageInstance:FindChildByName("Text"):SetColor(color)
     end
 
     -- Sets message duration

@@ -43,6 +43,8 @@ Objects {
   ChildIds: 10481696173488006528
   ChildIds: 6148609810288160603
   ChildIds: 2589485516939686480
+  ChildIds: 15582320788220353806
+  ChildIds: 6713631906775927805
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -52,6 +54,208 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 6713631906775927805
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 16700598664438244440
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16700598664438244440
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6713631906775927805
+  ChildIds: 1855031935333527240
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 1855031935333527240
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16700598664438244440
+  ChildIds: 12698020274507823734
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 800
+    Height: 800
+    UIX: -470.720581
+    UIY: 450.83728
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 14807460421707931889
+      }
+      Color {
+        R: 0.0626488402
+        G: 0.86
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 12698020274507823734
+  Name: "GainResouceAnim"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1855031935333527240
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12700385285510845222
+    }
+  }
+}
+Objects {
+  Id: 15582320788220353806
+  Name: "Creature Wolf Howls & Calls Set 01 SFX"
+  Transform {
+    Location {
+      X: 210934.766
+      Y: -996765.188
+      Z: 8657.58398
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:esfx_wolves:22"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12101242902458724486
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      Volume: 1
+      Falloff: 3600
+      Radius: 400
+      EnableOcclusion: true
+      IsSpatializationEnabled: true
+      IsAttenuationEnabled: true
+    }
   }
 }
 Objects {
@@ -1065,6 +1269,7 @@ Objects {
     }
   }
   ParentId: 12772657151751931445
+  ChildIds: 1856470649640043927
   ChildIds: 9057778958124421672
   ChildIds: 13874306289957097717
   UnregisteredParameters {
@@ -1268,148 +1473,26 @@ Objects {
   }
 }
 Objects {
-  Id: 8332974085996857273
-  Name: "costume"
-  Transform {
-    Location {
-      Y: -286.775391
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.52
-      Y: 1.52
-      Z: 1.52
-    }
-  }
-  ParentId: 12772657151751931445
-  ChildIds: 9264078397494182584
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
-  Id: 9264078397494182584
-  Name: "AngelicSoldier_01_Costume"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8332974085996857273
-  ChildIds: 9060693116303289381
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 9264078397494182584
-    SubobjectId: 13160457577300206710
-    InstanceId: 12002487517777741896
-    TemplateId: 12127382893198135780
-  }
-}
-Objects {
-  Id: 9060693116303289381
-  Name: "attach_costume_script"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9264078397494182584
-  ChildIds: 16947801316840802674
-  ChildIds: 9080145905334855019
-  ChildIds: 1593047613540922871
-  ChildIds: 9460652665536210527
-  ChildIds: 7936982987360758572
-  ChildIds: 4279754716771898682
-  ChildIds: 681369774336304902
-  ChildIds: 2502906135997837130
-  ChildIds: 10740426267540558143
-  ChildIds: 10148002175905256489
-  ChildIds: 4598897866185793415
-  ChildIds: 15039729014562971372
-  ChildIds: 8113501787279671007
-  ChildIds: 10468140872383630319
-  ChildIds: 7474852689527135473
-  ChildIds: 12047050778433199241
-  ChildIds: 2337157421453813547
-  ChildIds: 14746565326170490006
-  ChildIds: 10891189969443996081
-  ChildIds: 7088677170007589661
-  ChildIds: 1856470649640043927
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:FantasyHumanGuy"
-      ObjectReference {
-        SelfId: 8643716598100766466
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 16693495197608475462
-    }
-  }
-  InstanceHistory {
-    SelfId: 9060693116303289381
-    SubobjectId: 5444223211887971051
-    InstanceId: 12002487517777741896
-    TemplateId: 12127382893198135780
-  }
-}
-Objects {
   Id: 1856470649640043927
   Name: "Toga Upper"
   Transform {
     Location {
-      X: -3.58340621
-      Y: -6.56095791
-      Z: 152.522354
+      X: -22.9056263
+      Y: 193.887695
+      Z: 152.502197
     }
     Rotation {
       Pitch: 7.51320767e-05
-      Yaw: 7.1716946e-05
-      Roll: 146.71759
+      Yaw: -172.21077
+      Roll: 146.71756
     }
     Scale {
-      X: 1.13660729
-      Y: 1.13660729
-      Z: 1.13660729
+      X: 1.13645697
+      Y: 1.13645697
+      Z: 1.13645697
     }
   }
-  ParentId: 9060693116303289381
+  ParentId: 8643716598100766466
   ChildIds: 601050789879538604
   ChildIds: 15355727469495036632
   ChildIds: 8270919521203240812
@@ -1718,6 +1801,127 @@ Objects {
   InstanceHistory {
     SelfId: 601050789879538604
     SubobjectId: 4495881927087981922
+    InstanceId: 12002487517777741896
+    TemplateId: 12127382893198135780
+  }
+}
+Objects {
+  Id: 8332974085996857273
+  Name: "costume"
+  Transform {
+    Location {
+      Y: -286.775391
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.52
+      Y: 1.52
+      Z: 1.52
+    }
+  }
+  ParentId: 12772657151751931445
+  ChildIds: 9264078397494182584
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 9264078397494182584
+  Name: "AngelicSoldier_01_Costume"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8332974085996857273
+  ChildIds: 9060693116303289381
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 9264078397494182584
+    SubobjectId: 13160457577300206710
+    InstanceId: 12002487517777741896
+    TemplateId: 12127382893198135780
+  }
+}
+Objects {
+  Id: 9060693116303289381
+  Name: "attach_costume_script"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9264078397494182584
+  ChildIds: 16947801316840802674
+  ChildIds: 9080145905334855019
+  ChildIds: 1593047613540922871
+  ChildIds: 9460652665536210527
+  ChildIds: 7936982987360758572
+  ChildIds: 4279754716771898682
+  ChildIds: 681369774336304902
+  ChildIds: 2502906135997837130
+  ChildIds: 10740426267540558143
+  ChildIds: 10148002175905256489
+  ChildIds: 4598897866185793415
+  ChildIds: 15039729014562971372
+  ChildIds: 8113501787279671007
+  ChildIds: 10468140872383630319
+  ChildIds: 7474852689527135473
+  ChildIds: 12047050778433199241
+  ChildIds: 2337157421453813547
+  ChildIds: 14746565326170490006
+  ChildIds: 10891189969443996081
+  ChildIds: 7088677170007589661
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:FantasyHumanGuy"
+      ObjectReference {
+        SelfId: 8643716598100766466
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16693495197608475462
+    }
+  }
+  InstanceHistory {
+    SelfId: 9060693116303289381
+    SubobjectId: 5444223211887971051
     InstanceId: 12002487517777741896
     TemplateId: 12127382893198135780
   }
@@ -7039,6 +7243,10 @@ Objects {
         TemplateId: 7936693949144627473
       }
     }
+    Overrides {
+      Name: "cs:introSpeech"
+      String: "test"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11172,7 +11380,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Light {
-    Intensity: 10000
+    Intensity: 100
     Color {
       R: 1
       G: 1
@@ -11767,7 +11975,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 431
@@ -20185,7 +20393,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Titre"
-      String: "Roll a dice"
+      String: "Roll a dice (Shortcut = SPACE)"
     }
     Overrides {
       Name: "cs:Display"
