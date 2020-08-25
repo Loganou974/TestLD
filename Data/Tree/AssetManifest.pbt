@@ -8,12 +8,30 @@
   }
 }
 Assets {
+  Id: 18060226610933033475
+  Name: "Fantasy Castle Pillar 01 Cap"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_001_cap"
+  }
+}
+Assets {
   Id: 18024040266898552292
   Name: "Ring - Quarter Thick"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_quarter_torus_003"
+  }
+}
+Assets {
+  Id: 17972658099741554406
+  Name: "Human Gal 3"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_basic_003_ref"
   }
 }
 Assets {
@@ -134,12 +152,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16370875990012174012
-  Name: "Terrain - Grass"
-  PlatformAssetType: 2
+  Id: 16359994082917203306
+  Name: "Tree Birch 02"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_terrain_rock-grass-001_wa"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_003"
   }
 }
 Assets {
@@ -323,6 +341,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14452616722762075696
+  Name: "Fantasy Castle Pillar 01 Base"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_001_base"
+  }
+}
+Assets {
   Id: 14387050918107314771
   Name: "Cube - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -446,6 +473,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_000"
+  }
+}
+Assets {
+  Id: 12760477557866178555
+  Name: "Lense"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_lense_001"
   }
 }
 Assets {
@@ -620,6 +656,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9928537974828225292
+  Name: "Fantasy Human Gal 1"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_fantasy_003_ref"
+  }
+}
+Assets {
   Id: 9878522258424650908
   Name: "Prism - 8-Sided Half"
   PlatformAssetType: 1
@@ -644,6 +689,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_clover_patch_002"
+  }
+}
+Assets {
+  Id: 9660534982211346698
+  Name: "Human Gal 1"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_basic_001_ref"
   }
 }
 Assets {
@@ -743,6 +797,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_gold_001"
+  }
+}
+Assets {
+  Id: 7822473577673662489
+  Name: "Fantasy Castle Pillar 01 Mid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_001_mid"
   }
 }
 Assets {
@@ -971,15 +1034,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6347212166091328131
-  Name: "Tree Oak 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_oak_001"
-  }
-}
-Assets {
   Id: 5930170301003509857
   Name: "Fantasy Human Gal 2"
   PlatformAssetType: 17
@@ -1031,6 +1085,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
+  }
+}
+Assets {
+  Id: 5001748803505888629
+  Name: "Fantasy Castle Pillar Wall 01 Arch"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_wall_001_arch_01"
   }
 }
 Assets {
@@ -1130,6 +1193,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_cauldron_001"
+  }
+}
+Assets {
+  Id: 3610635954353760895
+  Name: "Human Gal 2"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_basic_002_ref"
   }
 }
 Assets {
