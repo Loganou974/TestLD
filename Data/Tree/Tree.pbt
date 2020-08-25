@@ -45,6 +45,7 @@ Objects {
   ChildIds: 3827189507883521416
   ChildIds: 16843242792075187094
   ChildIds: 11772044320750185658
+  ChildIds: 5210968595606679045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -54,6 +55,82 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 5210968595606679045
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 11692284899538836049
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11692284899538836049
+  Name: "GainResourceTemplateDice"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5210968595606679045
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11714937723985566847
+      value {
+        Overrides {
+          Name: "Name"
+          String: "GainResourceTemplateDice"
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13742869121957811234
+    }
   }
 }
 Objects {
@@ -2051,7 +2128,7 @@ Objects {
     }
     Overrides {
       Name: "cs:active"
-      Bool: true
+      Bool: false
     }
   }
   WantsNetworking: true
@@ -4756,7 +4833,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 850
