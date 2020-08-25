@@ -42,6 +42,7 @@ Objects {
   ChildIds: 12876002701086746300
   ChildIds: 10481696173488006528
   ChildIds: 6148609810288160603
+  ChildIds: 2589485516939686480
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -51,6 +52,105 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 2589485516939686480
+  Name: "FogRapide"
+  Transform {
+    Location {
+      X: 212656.688
+      Y: -997109.375
+      Z: 8689.4
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 5863845281121558345
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Burst"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 1
+        G: 0.0100004673
+        B: 0.00999999
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 4.88888788
+    }
+    Overrides {
+      Name: "bp:Gravity"
+      Float: 1
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6665120206912032206
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 5863845281121558345
+  Name: "FollowPlayer"
+  Transform {
+    Location {
+      Y: 684.5
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2589485516939686480
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:offsetZ"
+      Int: 100
+    }
+    Overrides {
+      Name: "cs:active"
+      Bool: false
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7176726157606569124
+    }
   }
 }
 Objects {
@@ -141,7 +241,7 @@ Objects {
 }
 Objects {
   Id: 10481696173488006528
-  Name: "Wispy Fog Volume VFX"
+  Name: "FogLent"
   Transform {
     Location {
       X: 211971.344
@@ -240,7 +340,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:offsetZ"
-      Int: 0
+      Int: 150
+    }
+    Overrides {
+      Name: "cs:active"
+      Bool: true
     }
   }
   WantsNetworking: true
@@ -261,9 +365,9 @@ Objects {
   Name: "Point To Point Electrical Beam VFX"
   Transform {
     Location {
-      X: 211971.344
-      Y: -997021.375
-      Z: 8623.89844
+      X: 211971.547
+      Y: -997297.438
+      Z: 8710.31543
     }
     Rotation {
     }
@@ -288,7 +392,7 @@ Objects {
     Overrides {
       Name: "bp:Beam Appearance"
       Enum {
-        Value: "mc:ebeamtexturetype:0"
+        Value: "mc:ebeamtexturetype:4"
       }
     }
     Overrides {

@@ -899,6 +899,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6665120206912032206
+  Name: "Smoke Puff Radial VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_smoke_puff_radial"
+  }
+}
+Assets {
   Id: 6641936587538601494
   Name: "Bottle 06"
   PlatformAssetType: 1
