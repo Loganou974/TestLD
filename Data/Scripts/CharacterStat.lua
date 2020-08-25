@@ -1,6 +1,8 @@
 ﻿local propLastSpawn = script:GetCustomProperty("LastSpawn")
 local MODULE = require( script:GetCustomProperty("ModuleManager") )
-
+local waitingPlayerDice={}
+local waitingBestPlayerDice={}
+local callbackPlayerDice={}
 function NPC_MANAGER() return MODULE.Get("standardcombo.NPCKit.NPCManager") end
 function NAV_MESH() return _G.NavMesh end
 local debug=true
@@ -8,22 +10,22 @@ local currentTurn=0;
 local playersAreInCombat=false
 local currentCombatZone=nil
 local races={
-    {name ="Dwarf",bonus={0,0,0,2,0,0,0},speed=25},
-    {name ="Hill Dwarf",bonus={0,0,0,2,1,0,0},speed=25},
-    {name ="Moutain Dwarf",bonus={2,0,0,2,0,0,0},speed=25},
-    {name ="Elf",bonus={0,0,2,0,0,0,0},speed=30},
-    {name ="High Elf",bonus={0,1,2,0,0,0,0},speed=30},
-    {name ="Wood Elf",bonus={0,0,2,0,1,0,0},speed=35},
-    {name ="Half Orc",bonus={2,0,0,1,0,0,0},speed=30},
-    {name ="Halfling",bonus={0,0,2,0,0,0,0},speed=25},
-    {name ="Lightfoot",bonus={0,0,2,0,0,1,0},speed=25},
-    {name ="Stout Halfling",bonus={0,0,2,1,0,0,0},speed=25},
-    {name ="Human",bonus={1,1,1,1,1,1,0},speed=30},
-    {name ="Dragonborn",bonus={2,0,0,0,0,1,0},speed=30},
-    {name ="Gnome",bonus={0,2,0,0,0,0,0},speed=25},
-    {name ="Rock Gnome",bonus={0,2,0,1,0,0,0},speed=25},
-    {name ="Tiefling",bonus={0,1,0,0,0,2,0},speed=30},
-    {name ="Aarakocra",bonus={0,0,2,0,1,0,0},speed=50}
+    {name ="Dwarf",bonus={0,0,0,2,0,0,0},speed=25,description="Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor"},
+    {name ="Hill Dwarf",bonus={0,0,0,2,1,0,0},speed=25,description="As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience.(WIS+1)"},
+    {name ="Moutain Dwarf",bonus={2,0,0,2,0,0,0},speed=25,description="As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain.(STR+1)"},
+    {name ="Elf",bonus={0,0,2,0,0,0,0},speed=30,description="Your size is Medium. Speed. Your base walking speed is 30 feet."},
+    {name ="High Elf",bonus={0,1,2,0,0,0,0},speed=30,description="The sun elves of Faerûn are highly intelligent. (INT+1)"},
+    {name ="Wood Elf",bonus={0,0,2,0,1,0,0},speed=35,description="As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests.(SPEED+5)"},
+    {name ="Half Orc",bonus={2,0,0,1,0,0,0},speed=30,description="Your base walking speed is 30 feet."},
+    {name ="Halfling",bonus={0,0,2,0,0,0,0},speed=25,description="Your base walking speed is 25 feet."},
+    {name ="Lightfoot",bonus={0,0,2,0,0,1,0},speed=25,description="As a lightfoot halfling, you can easily hide from notice, even using other people as cover.(CHA+1)"},
+    {name ="Stout Halfling",bonus={0,0,2,1,0,0,0},speed=25,description="As a stout halfling, you’re hardier than average and have some resistance to poison. Some say that stouts have dwarven blood.(CON+1)"},
+    {name ="Human",bonus={1,1,1,1,1,1,0},speed=30,description=" Your base walking speed is 30 feet."},
+    {name ="Dragonborn",bonus={2,0,0,0,0,1,0},speed=30,description=" Your base walking speed is 30 feet."},
+    {name ="Gnome",bonus={0,2,0,0,0,0,0},speed=25,description=" Your base walking speed is 25 feet."},
+    {name ="Rock Gnome",bonus={0,2,0,1,0,0,0},speed=25,description="As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes.(CON+1)"},
+    {name ="Tiefling",bonus={0,1,0,0,0,2,0},speed=30,description="Your base walking speed is 30 feet."},
+    {name ="Aarakocra",bonus={0,0,2,0,1,0,0},speed=50,description="Sequestered in high mountains atop tall trees, the aarakocra, sometimes called birdfolk, evoke fear and wonder.(SPEED+20)"}
 }
 local classes={
     {name="Novice",hit=1},
@@ -335,10 +337,11 @@ function OnPlayerJoined(player)
     GetStat(player)
     Events.BroadcastToPlayer(player,"BannerMessage","GameMaster: Glad to see you could make it to this dnd session")
     Task.Wait(waitTime)
-    Events.BroadcastToPlayer(player,"BannerMessage","GameMaster: Here's 5 dices, roll them i will keep the best rolls")
+    Events.BroadcastToPlayer(player,"BannerMessage","GameMaster: Here's 3 dices, roll them i will keep the best rolls to determine your starting race")
     Task.Wait(waitTime/2)
-    
-    player:AddResource("dice",5)
+    waitingPlayerDice[player.name]=3
+    callbackPlayerDice[player.name]=choixRace
+    player:AddResource("dice",3)
     player.resourceChangedEvent:Connect(OnResourceChanged)
     
   
@@ -352,9 +355,33 @@ function levelup(player)
     print("level up!!!")
     player:SetResource("level",2)
 end
+
+
+function choixRace(player)
+    --print("choix race")
+    
+    local race=races[waitingBestPlayerDice[player.name]%#races]
+    playerData.race=race
+    Events.BroadcastToPlayer(player,"BannerMessage","Oh! You rolled a "..waitingBestPlayerDice[player.name]..", So you will be "..playerData.race.name)
+    savePlayerData(player,playerData)
+    Task.Wait(2)
+    Events.BroadcastToPlayer(player,"BannerMessage",playerData.race.description)
+end
 function OnResourceChanged(player,resourceid,newvalue)
     playerData=loadPlayerData(player)
     Task.Wait(0.1)
+    if resourceid =="dice" and waitingPlayerDice[player.name]>0 then
+        waitingPlayerDice[player.name]=waitingPlayerDice[player.name]-1
+        if waitingBestPlayerDice[player.name] == nil then waitingBestPlayerDice[player.name]=newvalue 
+        else if newvalue>waitingBestPlayerDice[player.name] then waitingBestPlayerDice[player.name]=newvalue end
+        end
+        
+    end   
+    if resourceid =="dice" and waitingPlayerDice[player.name]==0 then
+        waitingPlayerDice[player.name]=waitingPlayerDice[player.name]-1
+        --print("launching callback"..callbackPlayerDice[player.name])
+        callbackPlayerDice[player.name](player)
+    end 
     --if(playerData.classe.name=="Barbarian") then
              if(resourceid=="XP") then
                 if(newvalue>=300 and player:GetResource("level") == 1) then

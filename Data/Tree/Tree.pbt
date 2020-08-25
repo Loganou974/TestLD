@@ -6916,6 +6916,10 @@ Objects {
         TemplateId: 15728781663253921388
       }
     }
+    Overrides {
+      Name: "cs:introSpeech"
+      String: "As you walk into the room, a bunch of aggressive dragon  attacks you."
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
