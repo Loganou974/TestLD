@@ -50,10 +50,26 @@ local localMessageTime = 0
 local localBigMessageTime = 0
 local localMessageBanners = {}
 local localBigMessageBanners = {}
+local speeches=World.FindObjectById("12C0A430C309174F:NarratorSpeech")
+function GetSpeech(messageId,params)
+    --local speeches=World.FindObjectById("8A4AB8499744FEA5:NarratorSpeech")
+   
+    local speech=speeches:FindDescendantByName(messageId)
+    if speech ==nil then return messageId end
+    --if not obj then return nom end
+    local message=speech:GetCustomProperty("Texte")
+    if params then
+     for i=1,#params do
+        message=string.gsub(message,"$"..i,params[i])
+     end
+    end
+    return message
+end
 
 -- nil OnBannerMessageEvent(string, <float>)
 -- Handles a client side banner message event
-function OnBannerMessageEvent(message, duration)
+function OnBannerMessageEvent(message,params,duration)
+    local message=GetSpeech(message,params)
     if duration then
         messageEndTime = time() + duration
     else
@@ -65,7 +81,7 @@ function OnBannerMessageEvent(message, duration)
 end
 
 function OnSubBannerMessage(message, duration, color)
- 
+    local message=GetSpeech(message,params)
     table.insert(localMessageBanners, {
         message = message,
         duration = duration,
@@ -74,7 +90,7 @@ function OnSubBannerMessage(message, duration, color)
 end
 
 function OnBigBannerMessage(message, duration, color)
-  
+    local message=GetSpeech(message,params)
     if duration == -1 then
         localMessageBanners={}
         table.insert(localMessageBanners, {

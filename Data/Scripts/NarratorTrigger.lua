@@ -27,7 +27,7 @@ function speak(message,other)
 end
 function sanitise(message,player)
 	if string.match(message,"$name") then
-		return string.gsub(message,"$name",player.name)
+		return string.gsub(message,"$name","$1")
 	else 
 		return message	
 	end	
@@ -35,11 +35,11 @@ end
 function speakToPlayer(message,player)
 	--print(whichTrigger.name .. ": Trigger Interacted " .. other.name)
 
-	Events.BroadcastToPlayer(player,"BannerMessage","GameMaster: "..message)
+	Events.BroadcastToPlayer(player,"BannerMessage",message,{player.name})
 end
 
 function speakToPlayers(message)
-	Events.BroadcastToAllPlayers("BannerMessage","GameMaster: "..message)
+	Events.BroadcastToAllPlayers("BannerMessage",message,{player.name})
 end
 function OnEndOverlap(whichTrigger, other)
 	if other:IsA("Player") then

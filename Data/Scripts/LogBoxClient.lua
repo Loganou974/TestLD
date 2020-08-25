@@ -1,6 +1,7 @@
 ﻿
 
 local texts=script.parent:GetChildren()
+local speeches=World.FindObjectById("12C0A430C309174F:NarratorSpeech")
 local ligneTexte={}
 local x=10
 local y=0
@@ -15,23 +16,47 @@ for i=1,#texts do
     end
 
 end
-
-function addFriendCombatTexte(source,message)
-    addTexte(source..": "..message,Color.BLUE)
+function GetSpeech(messageId,params)
+    --local speeches=World.FindObjectById("8A4AB8499744FEA5:NarratorSpeech")
+    print("message "..messageId)
+    local speech=speeches:FindDescendantByName(messageId)
+    
+    --if not obj then return nom end
+    local message=speech:GetCustomProperty("Texte")
+    if params then
+     for i=1,#params do
+        message=string.gsub(message,"$"..i,params[i])
+     end
+    end
+    return message
 end
 
-function addEnnemyCombatTexte(source,message)
-    addTexte(source..": "..message,Color.RED)
+function addFriendCombatTexte(source,message,params)
+    local message=GetSpeech(message,params)
+    addSimpleTexte(source..": "..message,Color.GREEN)
 end
 
-function addSystemCombatTexte(message,log)
+function addEnnemyCombatTexte(source,message,params)
+    local message=GetSpeech(message,params)
+    addSimpleTexte(source..": "..message,Color.RED)
+end
+
+function addSystemCombatTexte(message,params)
+    local message=GetSpeech(message,params)
+   
+
+    addSimpleTexte("Game Master: "..message,Color.WHITE)
+   
+end
+
+function addDebugCombatTexte(message,log,params)
+    local message=GetSpeech(message,params)
+   
     if log == nil or log then
-     addTexte("Game Master: "..message,Color.WHITE)
+        addSimpleTexte("Debug: "..message,Color.WHITE)
     end
 end
-function addTexte(message,col)
-    
-    
+function addSimpleTexte(message,col,params)
     for i=#ligneTexte,2,-1 do
         local texte=ligneTexte[i]
         if ligneTexte[i-1]~="" then 
@@ -45,9 +70,15 @@ function addTexte(message,col)
     ligneTexte[1].text=message
     ligneTexte[1]:SetColor(col)
 end
+function addTexte(messageId,col,params)
+    local message=GetSpeech(messageId,params)
+    
+    addSimpleTexte(message,col,params)
+end
 
 Events.Connect("addFriendCombatTexte", addFriendCombatTexte)
 Events.Connect("addSystemCombatTexte", addSystemCombatTexte)
+Events.Connect("addDebugCombatTexte", addDebugCombatTexte)
 Events.Connect("addEnnemyCombatTexte", addEnnemyCombatTexte)
 Events.Connect("addTexte", addTexte)
 

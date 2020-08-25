@@ -5,28 +5,29 @@ local waitingBestPlayerDice={}
 local callbackPlayerDice={}
 function NPC_MANAGER() return MODULE.Get("standardcombo.NPCKit.NPCManager") end
 function NAV_MESH() return _G.NavMesh end
-local debug=true
+local debug=false
 local currentTurn=0;
 local playersAreInCombat=false
 local currentCombatZone=nil
 local races={
     {name ="Dwarf",bonus={0,0,0,2,0,0,0},speed=25,description="Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor"},
-    {name ="Hill Dwarf",bonus={0,0,0,2,1,0,0},speed=25,description="As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience.(WIS+1)"},
-    {name ="Moutain Dwarf",bonus={2,0,0,2,0,0,0},speed=25,description="As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain.(STR+1)"},
+    {name ="Hill Dwarf",bonus={0,0,0,2,1,0,0},speed=25,description="As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience."},
+    {name ="Moutain Dwarf",bonus={2,0,0,2,0,0,0},speed=25,description="As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain."},
     {name ="Elf",bonus={0,0,2,0,0,0,0},speed=30,description="Your size is Medium. Speed. Your base walking speed is 30 feet."},
-    {name ="High Elf",bonus={0,1,2,0,0,0,0},speed=30,description="The sun elves of Faerûn are highly intelligent. (INT+1)"},
-    {name ="Wood Elf",bonus={0,0,2,0,1,0,0},speed=35,description="As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests.(SPEED+5)"},
+    {name ="High Elf",bonus={0,1,2,0,0,0,0},speed=30,description="The sun elves of Faerûn are highly intelligent. "},
+    {name ="Wood Elf",bonus={0,0,2,0,1,0,5},speed=35,description="As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests."},
     {name ="Half Orc",bonus={2,0,0,1,0,0,0},speed=30,description="Your base walking speed is 30 feet."},
     {name ="Halfling",bonus={0,0,2,0,0,0,0},speed=25,description="Your base walking speed is 25 feet."},
-    {name ="Lightfoot",bonus={0,0,2,0,0,1,0},speed=25,description="As a lightfoot halfling, you can easily hide from notice, even using other people as cover.(CHA+1)"},
-    {name ="Stout Halfling",bonus={0,0,2,1,0,0,0},speed=25,description="As a stout halfling, you’re hardier than average and have some resistance to poison. Some say that stouts have dwarven blood.(CON+1)"},
+    {name ="Lightfoot",bonus={0,0,2,0,0,1,0},speed=25,description="As a lightfoot halfling, you can easily hide from notice, even using other people as cover."},
+    {name ="Stout Halfling",bonus={0,0,2,1,0,0,0},speed=25,description="As a stout halfling, you’re hardier than average and have some resistance to poison. Some say that stouts have dwarven blood."},
     {name ="Human",bonus={1,1,1,1,1,1,0},speed=30,description=" Your base walking speed is 30 feet."},
     {name ="Dragonborn",bonus={2,0,0,0,0,1,0},speed=30,description=" Your base walking speed is 30 feet."},
     {name ="Gnome",bonus={0,2,0,0,0,0,0},speed=25,description=" Your base walking speed is 25 feet."},
-    {name ="Rock Gnome",bonus={0,2,0,1,0,0,0},speed=25,description="As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes.(CON+1)"},
+    {name ="Rock Gnome",bonus={0,2,0,1,0,0,0},speed=25,description="As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes."},
     {name ="Tiefling",bonus={0,1,0,0,0,2,0},speed=30,description="Your base walking speed is 30 feet."},
-    {name ="Aarakocra",bonus={0,0,2,0,1,0,0},speed=50,description="Sequestered in high mountains atop tall trees, the aarakocra, sometimes called birdfolk, evoke fear and wonder.(SPEED+20)"}
+    {name ="Aarakocra",bonus={0,0,2,0,1,0,0},speed=50,description="Sequestered in high mountains atop tall trees, the aarakocra, sometimes called birdfolk, evoke fear and wonder."}
 }
+local nombreDeRace=16
 local classes={
     {name="Novice",hit=1},
     {name="Barbarian",hit=12},
@@ -243,6 +244,7 @@ function GetStat(player)
         addDebugCombatTexte("first time char",debug)
 		playerData.race=races[math.random(#races)]
         playerData.class=  {name="Novice",hit=100}
+        
         player.maxHitPoints = playerData.class.hit;
         player.hitPoints= player.maxHitPoints
         player:SetResource("classe",1)
@@ -322,7 +324,7 @@ function OnPlayerDied(player)
         player:Respawn(propLastSpawn, Rotation.New(0, 0, 45))
     end
 end
-local waitTime=5
+local waitTime=3
 function OnPlayerJoined(player)
     
     
@@ -331,17 +333,23 @@ function OnPlayerJoined(player)
     players= Game.GetPlayers()
     print("N°"..#players..") "..player.name)
     player.diedEvent:Connect(OnPlayerDied)
-    addSystemCombatTexte(player.name.." is ready to play some adventures")
-    Events.BroadcastToPlayer(player,"BannerMessage","GameMaster: Hello "..player.name.."!")
+    addFriendCombatTexte("World","Greeting0",{player.name})
+    --" is ready to play some adventures"
+    Events.BroadcastToPlayer(player,"BannerMessage","Greeting1",{player.name,player.name})
+    Task.Wait(0.1)
+    addSystemCombatTexte("Greeting1",{player.name})
     Task.Wait(waitTime)
     GetStat(player)
-    Events.BroadcastToPlayer(player,"BannerMessage","GameMaster: Glad to see you could make it to this dnd session")
+    Events.BroadcastToPlayer(player,"BannerMessage","Greeting2")
+    
+    addSystemCombatTexte("Greeting2")
     Task.Wait(waitTime)
-    Events.BroadcastToPlayer(player,"BannerMessage","GameMaster: Here's 3 dices, roll them i will keep the best rolls to determine your starting race")
+    Events.BroadcastToPlayer(player,"BannerMessage","Greeting3")
     Task.Wait(waitTime/2)
-    waitingPlayerDice[player.name]=3
+    waitingPlayerDice[player.name]=2
+    waitingBestPlayerDice[player.name]=0
     callbackPlayerDice[player.name]=choixRace
-    player:AddResource("dice",3)
+    player:AddResource("dice",2)
     player.resourceChangedEvent:Connect(OnResourceChanged)
     
   
@@ -360,26 +368,78 @@ end
 function choixRace(player)
     --print("choix race")
     
-    local race=races[waitingBestPlayerDice[player.name]%#races]
+    local race=races[waitingBestPlayerDice[player.name]%nombreDeRace]
+
+    
+    
+
+    player:AddResource("STR",race.bonus[1])
+    player:AddResource("INT",race.bonus[2])
+    player:AddResource("DEX",race.bonus[3])
+    player:AddResource("CON",race.bonus[4])
+    player:AddResource("WIS",race.bonus[5])
+    player:AddResource("CHA",race.bonus[6])
+    local desc=""
+    desc=" ("
+    if race.bonus[1] >0 then
+        desc=desc.." / STR +"..race.bonus[1]
+    end
+    if race.bonus[2] >0 then
+        desc=desc.." / INT +"..race.bonus[2]
+    end
+    if race.bonus[3] >0 then
+        desc=desc.." / DEX +"..race.bonus[3]
+    end
+    if race.bonus[4] >0 then
+        desc=desc.." / CON +"..race.bonus[4]
+    end
+    if race.bonus[5] >0 then
+        desc=desc.." / WIS +"..race.bonus[5]
+    end
+    if race.bonus[6] >0 then
+        desc=desc.." / CHA +"..race.bonus[6]
+    end
+    desc=desc..")"
+    race.description=desc
     playerData.race=race
-    Events.BroadcastToPlayer(player,"BannerMessage","Oh! You rolled a "..waitingBestPlayerDice[player.name]..", So you will be "..playerData.race.name)
     savePlayerData(player,playerData)
+    addSystemCombatTexte("GreetingRoll",{waitingBestPlayerDice[player.name],playerData.race.name})
+    Events.BroadcastToPlayer(player,"BannerMessage","GreetingRoll",{waitingBestPlayerDice[player.name],playerData.race.name})
+    
     Task.Wait(2)
-    Events.BroadcastToPlayer(player,"BannerMessage",playerData.race.description)
+    local raceName=string.gsub(race.name," ","")
+    Events.BroadcastToPlayer(player,"BannerMessage","GreetingRace"..raceName,{desc})
+    Task.Wait(2)
+    addSystemCombatTexte("GreetingRace"..raceName,{desc})
+   
+   
+
+    
+ 
 end
 function OnResourceChanged(player,resourceid,newvalue)
     playerData=loadPlayerData(player)
     Task.Wait(0.1)
     if resourceid =="dice" and waitingPlayerDice[player.name]>0 then
         waitingPlayerDice[player.name]=waitingPlayerDice[player.name]-1
-        if waitingBestPlayerDice[player.name] == nil then waitingBestPlayerDice[player.name]=newvalue 
-        else if newvalue>waitingBestPlayerDice[player.name] then waitingBestPlayerDice[player.name]=newvalue end
+        if waitingBestPlayerDice[player.name] == 0 then
+           
+             waitingBestPlayerDice[player.name]=player:GetResource("lastDiceNumber") 
+            -- print("best dice "..waitingBestPlayerDice[player.name])
+        else 
+            if player:GetResource("lastDiceNumber") >waitingBestPlayerDice[player.name] then
+                 waitingBestPlayerDice[player.name]=player:GetResource("lastDiceNumber") 
+                -- print("best dice "..waitingBestPlayerDice[player.name])
+                 end
         end
         
     end   
     if resourceid =="dice" and waitingPlayerDice[player.name]==0 then
         waitingPlayerDice[player.name]=waitingPlayerDice[player.name]-1
-        --print("launching callback"..callbackPlayerDice[player.name])
+        if player:GetResource("lastDiceNumber") >waitingBestPlayerDice[player.name] then
+            waitingBestPlayerDice[player.name]=player:GetResource("lastDiceNumber") 
+            --print("best dice "..waitingBestPlayerDice[player.name])
+            end
         callbackPlayerDice[player.name](player)
     end 
     --if(playerData.classe.name=="Barbarian") then
@@ -393,9 +453,11 @@ function OnResourceChanged(player,resourceid,newvalue)
         end
 
         if(resourceid=="DEX") then
+            local newDex=modifier(newvalue)
+            local newCon=modifier(player:GetResource("CON"))
             if(playerData.class.name=="Barbarian") then
-             local newDex=modifier(newvalue)
-             local newCon=modifier(player:GetResource("CON"))
+             
+             
              player:SetResource("AC",(10+newDex+newCon))
 
             else
@@ -412,7 +474,7 @@ function OnResourceChanged(player,resourceid,newvalue)
              local newDex=modifier(player:GetResource("DEX"))
              player:SetResource("AC",(10+newDex+newCon))
             end
-            if player.level > 1 then 
+            if player:GetResource("level") > 1 then 
                 player.maxHitPoints = playerData.class.hit+newCon+(math.floor(playerData.class.hit/2)+1)*player.level;
             else
                 player.maxHitPoints = playerData.class.hit+newCon
@@ -471,27 +533,33 @@ function FindNearestTarget(me)
     return nearestEnemy
 
 end
-function addSystemCombatTexte(message)
-    print("asct:"..message)
-   -- Events.BroadcastToAllPlayers("addSystemCombatTexte",message)
+function addSystemCombatTexte(message,params)
+    --print("asct:"..message)
+    Task.Wait(0.5)
+    Events.BroadcastToAllPlayers("addSystemCombatTexte",message,params)
+    Task.Wait(0.5)
 end
-function addDebugCombatTexte(message)
+function addDebugCombatTexte(message,params)
     
-    --Events.Broadcast("addSystemCombatTexte",message,debug)
-    print(message)
+    Events.Broadcast("addDebugCombatTexte",message,debug,params)
+    Task.Wait(0.5)
+    --print(message)
 end
-function addFriendCombatTexte(source,message)
-    --Events.BroadcastToAllPlayers("addSystemCombatTexte",source,message)
-    print(message)
+function addFriendCombatTexte(source,message,params)
+    Events.BroadcastToAllPlayers("addFriendCombatTexte",source,message,params)
+    Task.Wait(0.5)
+    --print(message)
 end
 function addEnnemyCombatTexte(message)
-  --  Events.BroadcastToAllPlayers("addSystemCombatTexte",source,message)
-  print(message)
+   Events.BroadcastToAllPlayers("addEnnemyCombatTexte",source,message,params)
+   Task.Wait(0.5)
+  --print(message)
 end
 
-function addTexte(message)
-    Events.BroadcastToAllPlayers("addTexte",message,Color.YELLOW)
-    print(message)
+function addTexte(message,params)
+    Events.BroadcastToAllPlayers("addTexte",message,Color.YELLOW,params)
+    Task.Wait(0.2)
+   -- print(message)
 end
 function spairs(t, order)
     -- collect the keys
@@ -540,7 +608,7 @@ end
 function npcDied(idCible)
     local inst=World.FindObjectById(idCible)
     Task.Spawn(function() inst:Destroy() end,5)
-    addSystemCombatTexte(idCible.." est mort cela mets il fin au combat? "..initiativeCombatLength)
+    addSystemCombatTexte("CharDied",{ inst.name})
     local tempInit={}
     tempLength=0
     for id,i in pairs(initiativeCombat)  do
@@ -582,10 +650,12 @@ function endCombat(victory)
         unfreezePlayers()
         local trigger=currentCombatZone:FindDescendantByName("Trigger")
         trigger.collision = Collision.FORCE_OFF
-        Events.BroadcastToAllPlayers("BannerMessage","VICTORY")
+        Events.BroadcastToAllPlayers("BannerMessage","Victory")
+        addSystemCombatTexte("Victory")
        
     else 
         Events.BroadcastToAllPlayers("BigBannerMessage","GAME OVER",-1,Color.New(1,0,0))
+        addSystemCombatTexte("GameOver")
         Task.Wait(2)
         for i,p in ipairs(playersInCombat) do
             p:SetResource("incombat",0)
@@ -611,10 +681,11 @@ function startCombat(player,combatZone)
         addDebugCombatTexte(" "..combatZone,debug)
         currentCombatZone=World.FindObjectById(combatZone)
         local cZ=currentCombatZone:FindDescendantByName("CombatZone");
-        local introSpeech=cZ:GetCustomProperty("introSpeech")
-        Events.BroadcastToAllPlayers("BannerMessage",introSpeech)
+        
+        Events.BroadcastToAllPlayers("BannerMessage","IntroSpeech")
         Task.Wait(2)
-        Events.BroadcastToAllPlayers("BannerMessage","Roll a D20 to determine your combat initiative")
+        Events.BroadcastToAllPlayers("BannerMessage","RollInitiativeInvite")
+        
         Task.Wait(0.1)
         local mobs={}
         local maxMob=cZ:GetCustomProperty("NombreMonstre")
@@ -627,9 +698,9 @@ function startCombat(player,combatZone)
             initiativeCombat[id]=r+DEX
             addDebugCombatTexte("Tour "..currentTurn..":"..mobTemp.name.." initiative="..initiativeCombat[id].." ",debug)
             --Events.BroadcastToAllPlayers("BigBannerMessage",id.." rolled an "..r,3,Color.FromStandardHex("#FFFFFF"))
-            
-            Events.BroadcastToAllPlayers("addSystemCombatTexte",mobTemp.name.." rolled an "..(r+DEX).." ("..r.."+"..DEX..")")
-            Task.Wait(0.1)
+            addSystemCombatTexte("RollAbilityCheck01",{mobTemp.name,(r+DEX),r,DEX})
+           --Events.BroadcastToAllPlayers("addSystemCombatTexte",)
+            --Task.Wait(0.1)
             initiativeCombatLength=initiativeCombatLength+1
         end
         
@@ -719,6 +790,7 @@ function newTurn()
     currentTurn=currentTurn+1
     freezePlayers()
     --Events.BroadcastToAllPlayers("BannerMessage","Round "..currentRound.." : Tour "..currentTurn)
+    --addFriendCombatTexte("Round "..currentRound.." : Tour "..currentTurn)
     addDebugCombatTexte("Round "..currentRound.." : Tour "..currentTurn,debug)
     if currentPlayer ==nil then
         addDebugCombatTexte("1er tour donc le joueur est nil",debug)
@@ -730,7 +802,7 @@ function newTurn()
         UpdateBuffEtDebuff(currentPlayer)
        
         addDebugCombatTexte("1er joueur: "..currentPlayer.name,debug)
-        Events.BroadcastToAllPlayers("BannerMessage",currentPlayer.name.." is playing")
+        Events.BroadcastToAllPlayers("BannerMessage","CurrentPlayerIsPlaying",{currentPlayer.name})
         
         
         Events.BroadcastToPlayer(currentPlayer,"BEGIN_TURN")
@@ -747,7 +819,7 @@ function newTurn()
     else
         currentPlayer=getCurrentPlayer()
         local mob=World.FindObjectById(currentPlayer)
-        Events.BroadcastToAllPlayers("BannerMessage",mob.name.." is playing ")
+        Events.BroadcastToAllPlayers("BannerMessage","CurrentPlayerIsPlaying",{mob.name})
        
         Events.Broadcast("BEGIN_TURN_NPC",currentPlayer)
         
@@ -833,7 +905,7 @@ function rollDice(player,max)
     local rand=math.random(max)
  
     player:RemoveResource("dice",1)
-    addDebugCombatTexte("rolled an "..rand.." reste "..player:GetResource("dice").." des",debug)
+    --addDebugCombatTexte("rolled an "..rand.." reste "..player:GetResource("dice").." des",debug)
     --Events.BroadcastToAllPlayers("BigBannerMessage",player.name.." rolled an "..rand,3,Color.FromStandardHex("#FFFFFF"))
     
     player:SetResource("lastDiceNumber",rand)
@@ -841,14 +913,14 @@ function rollDice(player,max)
         numberOfRolls=numberOfRolls+1
         local DEX=math.floor((player:GetResource("DEX")-10)/2)
         rand=rand+DEX
-        addTexte(player.name.." rolled an ability check of "..(rand+DEX).." ("..rand.."+"..DEX..")")
+        addTexte("RollAbilityCheck01",{player.name,(rand+DEX),rand,DEX})
         initiativeCombat[player.name]=rand+DEX
         initiativeCombatLength=initiativeCombatLength+1
         if numberOfRolls >= #playersInCombat then
             startRound1()
         end
     else
-        addTexte(player.name.." rolled an "..rand)
+        addTexte("RollAction01",{player.name,rand})
     end
 end
 

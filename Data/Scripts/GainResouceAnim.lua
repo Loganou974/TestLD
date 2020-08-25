@@ -13,7 +13,7 @@ function Tick(deltatime)
         local tailleOri=Vector2.New(w,h)
         local timeCalc=(time() - startTime)
         local tailleFinale=Vector2.New(80,80)
-        local newDim=Vector2.Lerp(tailleOri,tailleFinale,timeCalc*2)
+        local newDim=Vector2.Lerp(tailleOri,tailleFinale,timeCalc*1.5)
         local alpha=CoreMath.Lerp(1,0, timeCalc)
         color.a=alpha
       

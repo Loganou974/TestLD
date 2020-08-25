@@ -39,13 +39,13 @@ Objects {
   ChildIds: 7869189387838247313
   ChildIds: 433167138669214361
   ChildIds: 12876002701086746300
-  ChildIds: 10481696173488006528
   ChildIds: 6148609810288160603
   ChildIds: 2589485516939686480
   ChildIds: 3827189507883521416
   ChildIds: 16843242792075187094
   ChildIds: 11772044320750185658
   ChildIds: 5210968595606679045
+  ChildIds: 17259176004487702281
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -55,6 +55,32 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 17259176004487702281
+  Name: "NarratorSpeech"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2139142998352330349
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NarratorSpeech"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5706090365701877525
+    }
   }
 }
 Objects {
@@ -72,7 +98,6 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 11692284899538836049
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -98,38 +123,6 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
-    }
-  }
-}
-Objects {
-  Id: 11692284899538836049
-  Name: "GainResourceTemplateDice"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5210968595606679045
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 11714937723985566847
-      value {
-        Overrides {
-          Name: "Name"
-          String: "GainResourceTemplateDice"
-        }
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceoff"
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 13742869121957811234
     }
   }
 }
@@ -264,7 +257,7 @@ Objects {
     }
     Overrides {
       Name: "cs:active"
-      Bool: true
+      Bool: false
     }
   }
   WantsNetworking: true
@@ -2020,127 +2013,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 13769416771175691027
-    }
-  }
-}
-Objects {
-  Id: 10481696173488006528
-  Name: "FogLent"
-  Transform {
-    Location {
-      X: 211971.344
-      Y: -997021.375
-      Z: 8623.89844
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 4385222844648016203
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Volume Type"
-      Enum {
-        Value: "mc:evfxvolumetype:2"
-      }
-    }
-    Overrides {
-      Name: "bp:Life"
-      Float: 10
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 0.621371627
-    }
-    Overrides {
-      Name: "bp:Density"
-      Float: 9.98086548
-    }
-    Overrides {
-      Name: "bp:Wind Speed"
-      Vector {
-        Z: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Life Max"
-      Float: 10
-    }
-    Overrides {
-      Name: "bp:Fog Displacement Scale"
-      Float: 1.35253549
-    }
-    Overrides {
-      Name: "bp:Sort Priority Adjustment"
-      Int: -4
-    }
-    Overrides {
-      Name: "bp:color"
-      Color {
-        R: 0.37
-        G: 1.76429751e-07
-        A: 1
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 7622923852987071105
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-}
-Objects {
-  Id: 4385222844648016203
-  Name: "FollowPlayer"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10481696173488006528
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:offsetZ"
-      Int: 150
-    }
-    Overrides {
-      Name: "cs:active"
-      Bool: false
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 7176726157606569124
     }
   }
 }
@@ -16869,8 +16741,8 @@ Objects {
   Control {
     Width: 295
     Height: 198
-    UIX: -187.449707
-    UIY: -183.566467
+    UIX: -373.974243
+    UIY: -187.375732
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -16933,9 +16805,9 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 448
+    Width: 602
     Height: 239
-    UIX: -2.25256348
+    UIX: -0.349487305
     UIY: 111.719971
     RenderTransformPivot {
       Anchor {
@@ -17036,9 +16908,9 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 435
+    Width: 585
     Height: 221
-    UIX: 0.000244140625
+    UIX: 5.70996094
     UIY: 120
     RenderTransformPivot {
       Anchor {
@@ -19527,6 +19399,7 @@ Objects {
       Justification {
         Value: "mc:etextjustify:left"
       }
+      AutoWrapText: true
     }
     AnchorLayout {
       SelfAnchor {
@@ -19641,7 +19514,7 @@ Objects {
   Control {
     Width: 200
     Height: 60
-    UIX: 36.3062744
+    UIX: 34.4025879
     UIY: 72.8601685
     RenderTransformPivot {
       Anchor {
@@ -24692,6 +24565,7 @@ Objects {
   }
   ParentId: 18036819443656968926
   ChildIds: 8225673803560992755
+  ChildIds: 11692284899538836049
   UnregisteredParameters {
     Overrides {
       Name: "cs:Titre"
@@ -24757,6 +24631,77 @@ Objects {
           Value: "mc:euianchor:middlecenter"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 11692284899538836049
+  Name: "GainResourceTemplateDice"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9731802080626188016
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3240269650559942817
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -2.80004883
+        }
+        Overrides {
+          Name: "UIY"
+          Float: -0.559936523
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11714937723985566847
+      value {
+        Overrides {
+          Name: "Name"
+          String: "GainResourceTemplateDice"
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.00096172624
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 100.000107
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13742869121957811234
     }
   }
 }
