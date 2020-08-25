@@ -485,15 +485,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11268261462932467747
-  Name: "2D Basic Shapes Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "dcl_basicShapes"
-  }
-}
-Assets {
   Id: 11255571313366074220
   Name: "Rock 03"
   PlatformAssetType: 1
@@ -1238,15 +1229,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_chamfer"
-  }
-}
-Assets {
-  Id: 2224571462023946700
-  Name: "Environment Fog Default VFX"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_env_fog_default"
   }
 }
 Assets {
