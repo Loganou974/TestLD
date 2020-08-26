@@ -1,7 +1,9 @@
 ﻿local ABILITY = script.parent
 
 
+function OnCast(ability)
 
+end
 function OnExecute(ability)
     print("bardic effect")
     for _,enemy in ipairs(Game.GetPlayers()) do

@@ -217,6 +217,10 @@
             Float: 0
           }
           Overrides {
+            Name: "cs:LevelRequirement"
+            Int: 1
+          }
+          Overrides {
             Name: "cs:Damage:tooltip"
             String: "Damage value applied to a player hit by hitbox trigger."
           }

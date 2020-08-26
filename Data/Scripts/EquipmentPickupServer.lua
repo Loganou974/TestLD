@@ -68,7 +68,7 @@ function OnEquipped(equipment, player)
             end
             return
         else
-            DropToGround(equipment)
+           -- DropToGround(equipment)
            
         end
        

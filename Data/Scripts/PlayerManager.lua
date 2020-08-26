@@ -132,7 +132,7 @@ function endTurn()
     if me:GetResource("incombat") == 1 then
       print("end turn")
         OnTurnOff()
-     Events.BroadcastToServer("END_TURN",me)
+    
     end
         
        
@@ -238,20 +238,24 @@ end
 
 function activateAllAbilities()
     Events.BroadcastToServer("ACTIVATE_ABILITIES",me)
+    --Task.Wait(0.1)
 end
 
 function desactivateAllAbilities()
     Events.BroadcastToServer("DESACTIVATE_ABILITIES",me)
+   -- Task.Wait(0.1)
 end
 
 function OnExecuteAbility(ability)
-    print("execute "..ability.name.."de "..ability.owner.name)
+   -- print("execute "..ability.name.."de "..ability.owner.name)
     actionMax=me:GetResource("actionMax")
-    if me:GetResource("incombat") == 1 then
+    if me:GetResource("incombat") == 1 and isPlaying and canAct then
         turnNumberAction=turnNumberAction+1
       if turnNumberAction>=actionMax then
-        desactivateAllAbilities()
         canAct=false;
+        Task.Wait(0.2)
+        desactivateAllAbilities()
+      
         if  isMoving==false then
             endTurn()
         end
@@ -261,9 +265,7 @@ end
 function OnCast(ability)
   print("casting "..ability.name)
  
-  if ability.name=="Rage" then
-    World.SpawnAsset("5996004A2A56689C:Ragesound2", {position = ability.owner:GetWorldPosition()})
-  end
+ 
  
 
   
@@ -319,7 +321,7 @@ local startTurnTime=0
 function OnTurnOn()
     chrono=0
     startTurnTime=time()
-    me=Game.GetLocalPlayer()
+    --me=Game.GetLocalPlayer()
     print("on essaye de turn on pour joueur "..me.name.." "..me:GetResource("incombat"))
     if me:GetResource("incombat") == 1 then
         print("turnon for"..me.name)
@@ -344,7 +346,7 @@ function Tick(deltaTime)
     
     if me:GetResource("incombat")==1 then
         if isPlaying then chrono=time()-startTurnTime 
-            print("chrono "..chrono.." sur "..chronoMax)
+           --    print("chrono "..chrono.." sur "..chronoMax)
             ProgressTurn.progress=1-chrono/chronoMax
             if chrono/chronoMax <=0.4 then ProgressTurn:SetFillColor(turnColorGreen) end
             if chrono/chronoMax >0.4 and chrono/chronoMax < 0.7 then ProgressTurn:SetFillColor(turnColorOrange) end
@@ -359,10 +361,10 @@ function Tick(deltaTime)
             lastLocationSinceDeltaTime=distance
            distance=newPos-originTurnPosition
            distance=math.floor(distance.size/30)
-           --local stepped=math.abs(distance- lastLocationSinceDeltaTime)
+           local stepped=math.abs(distance- lastLocationSinceDeltaTime)
            --print(" step "..stepped)
            Task.Wait(0.2)
-            Events.BroadcastToServer("MOVE",me)
+            if(stepped ~= 0) then Events.BroadcastToServer("MOVE",me) end
           
             if originTurnPosition==nil then
                 originTurnPosition=me:GetWorldPosition()
@@ -405,10 +407,10 @@ function OnCombatEnded(victory)
 end
 function OnTurnOff()
     
-    if me:GetResource("incombat") == 1 then
+    if me:GetResource("incombat") == 1 and  isPlaying then
         print("turnoff for"..me.name)
-     
-     isPlaying=false
+        Events.BroadcastToServer("END_TURN",me)
+         isPlaying=false
     end
 
     --propTurnTxt.text="Next turn is  " ..nom .."'s turn"

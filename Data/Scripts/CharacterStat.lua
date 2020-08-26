@@ -572,30 +572,30 @@ function FindNearestTarget(me)
 end
 function addSystemCombatTexte(message,params)
     --print("asct:"..message)
-    Task.Wait(0.5)
+    --Task.Wait(0.5)
     Events.BroadcastToAllPlayers("addSystemCombatTexte",message,params)
-    Task.Wait(0.5)
+   -- Task.Wait(0.5)
 end
 function addDebugCombatTexte(message,params)
     
     Events.Broadcast("addDebugCombatTexte",message,debug,params)
-    Task.Wait(0.5)
+    --Task.Wait(0.5)
     --print(message)
 end
 function addFriendCombatTexte(source,message,params)
     Events.BroadcastToAllPlayers("addFriendCombatTexte",source,message,params)
-    Task.Wait(0.5)
+   -- Task.Wait(0.5)
     --print(message)
 end
 function addEnnemyCombatTexte(message)
    Events.BroadcastToAllPlayers("addEnnemyCombatTexte",source,message,params)
-   Task.Wait(0.5)
+   --Task.Wait(0.5)
   --print(message)
 end
 
 function addTexte(message,params)
     Events.BroadcastToAllPlayers("addTexte",message,Color.YELLOW,params)
-    Task.Wait(0.2)
+   -- Task.Wait(0.2)
    -- print(message)
 end
 function spairs(t, order)
@@ -621,19 +621,15 @@ function spairs(t, order)
     end
 end
 function startRound1()
+    phasePrecombat=false;
     currentRound=1
-    addDebugCombatTexte("AVANT TRI",debug)
-    for k,v in pairs(initiativeCombat) do
-        addDebugCombatTexte("initiative "..k.."= "..v,debug)
-       -- combatOrder[#combatOrder+1]=k
-    end
+   
     combatOrder={}
-   -- table.sort(initiativeCombat)
+   
     for k,v in spairs(initiativeCombat, function(t,a,b) return t[b] < t[a] end) do
-        --Events.BroadcastToAllPlayers("SubBannerMessage",#combatOrder.." to play is "..k,5,Color.FromStandardHex("#FF0000"))
-        combatOrder[#combatOrder+1]=k
+          combatOrder[#combatOrder+1]=k
     end
-    addDebugCombatTexte("APRES TRI")
+  
     for i=1,#combatOrder  do
         addDebugCombatTexte("initiative "..i.."= "..combatOrder[i],debug)
        
@@ -696,7 +692,8 @@ function endCombat(victory)
         Task.Wait(2)
         for i,p in ipairs(playersInCombat) do
             p:SetResource("incombat",0)
-            p:Respawn(propLastSpawn, Rotation.New(0, 0, 45))
+            local spawn=World.FindObjectById("DC98C1DEF301876B:Combat_Spawn")
+            p:Respawn(spawn:GetWorldPosition(), Rotation.New(0, 0, 45))
             
         end
         unfreezePlayers()
@@ -720,6 +717,20 @@ function startCombat(player,combatZone)
         local cZ=currentCombatZone:FindDescendantByName("CombatZone");
         
         Events.BroadcastToAllPlayers("BannerMessage","IntroSpeech")
+        playersAreInCombat=true
+        addDebugCombatTexte("starting combat "..combatZone,debug)
+        playersInCombat=Game:GetPlayers()
+       
+        for i,p in ipairs(playersInCombat) do
+            p:SetWorldPosition(player:GetWorldPosition())
+            p:SetResource("incombat",1)
+            p:SetResource("Dice",1)
+            
+        end
+      
+       
+        addDebugCombatTexte("starting initiative phase "..#initiativeCombat,debug)
+        freezePlayers()
         Task.Wait(2)
         Events.BroadcastToAllPlayers("BannerMessage","RollInitiativeInvite")
         
@@ -740,22 +751,10 @@ function startCombat(player,combatZone)
             --Task.Wait(0.1)
             initiativeCombatLength=initiativeCombatLength+1
         end
-        
+        phasePrecombat=true
         --addDebugCombatTexte(" Mob trouve: "..#mobs.." ",debug)
          
-        playersAreInCombat=true
-        addDebugCombatTexte("starting combat "..combatZone,debug)
-        playersInCombat=Game:GetPlayers()
        
-        for i,p in ipairs(playersInCombat) do
-            p:SetWorldPosition(player:GetWorldPosition())
-            p:SetResource("incombat",1)
-            p:SetResource("Dice",1)
-            
-        end
-        freezePlayers()
-        phasePrecombat=true
-        addDebugCombatTexte("starting initiative phase "..#initiativeCombat,debug)
        -- if currentTurn == 0 then
          --   newTurn()
        -- end
@@ -842,17 +841,19 @@ function newTurn()
         Events.BroadcastToAllPlayers("BannerMessage","CurrentPlayerIsPlaying",{currentPlayer.name})
         
         
-        Events.BroadcastToPlayer(currentPlayer,"BEGIN_TURN")
-
-        Events.Broadcast("BEGIN_TURN",currentPlayer)
+       
         other=FindNearestTarget(currentPlayer)
         other=other.parent
+        print("target is "..other.name)
         Events.Broadcast("BEGIN_TARGET_NPC",other.id)
         currentPlayer.movementControlMode = MovementControlMode.VIEW_RELATIVE
         abilities=currentPlayer:GetAbilities()
             for i,a in ipairs(abilities) do
-                a.isEnabled=true
+               if(a:GetCustomProperty("LevelRequirement")<=currentPlayer:GetResource("level")) then  a.isEnabled=true end
             end
+            Events.BroadcastToPlayer(currentPlayer,"BEGIN_TURN")
+
+            Events.Broadcast("BEGIN_TURN",currentPlayer)
     else
         currentPlayer=getCurrentPlayer()
         local mob=World.FindObjectById(currentPlayer)

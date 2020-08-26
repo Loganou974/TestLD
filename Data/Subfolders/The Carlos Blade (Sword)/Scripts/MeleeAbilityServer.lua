@@ -57,7 +57,7 @@ function MeleeAttack(other)
 	print("distance pour range weapon ="..distance)
 	if Range < distance then 
 		BroadcastMissFeedback()
-		 ResetMelee(ABILITY) 
+		-- ResetMelee(ABILITY) 
 		 return 
 		end
 	--local otherTeam = COMBAT().GetTeam(other)
@@ -109,7 +109,7 @@ function OnBeginOverlap(trigger, other)
 	--print(" touché "..other)
     if canAttack then
 		--MeleeAttack(other)
-		MeleeAttack(automaticTarget)
+		--	MeleeAttack(automaticTarget)
     end
 end
 
@@ -124,16 +124,17 @@ function OnEquipped(equipment, player)
 end
 
 function OnExecute(ability)
+	print("on execute depuis melee ability server ")
     ignoreList = {}
 	canAttack = true
-	if(automaticTarget==nil) then return  end
+	if(automaticTarget==nil) then print("no target") return  end
     local distance=ABILITY.owner:GetWorldPosition()-automaticTarget:GetWorldPosition()
 	distance=math.floor(distance.size/30)
 	print("distance pour range weapon ="..distance)
 	MeleeAttack(automaticTarget)
 	-- Impulse
-	local v = ability:GetTargetData():GetAimDirection() 
-	ability.owner:AddImpulse(Vector3.New(v.x * ATTACK_IMPULSE, v.y * ATTACK_IMPULSE, VERTICAL_IMPULSE))
+	--local v = ability:GetTargetData():GetAimDirection() 
+	--ability.owner:AddImpulse(Vector3.New(v.x * ATTACK_IMPULSE, v.y * ATTACK_IMPULSE, VERTICAL_IMPULSE))
 end
 
 function ResetMelee(ability)
@@ -142,7 +143,7 @@ function ResetMelee(ability)
     canAttack = false
 end
 function OnCast(ability)
-	propFx:Play()
+	--propFx:Play()
 end
 function OnNewTarget(name)
 	automaticTarget=World.FindObjectById(name)

@@ -51,7 +51,7 @@ function GetLocalPlayerAbilityWithBinding()
    
     
     for _, ability in pairs(abilities) do
-        if ability.actionBinding == BINDING and ability.isEnabled then 
+        if ability.actionBinding == BINDING  then 
             return ability
         end
     end
@@ -113,7 +113,8 @@ function Tick(deltaTime)
                 PANEL.visibility = Visibility.FORCE_OFF
             end
         else
-            if currentAbility.isEnabled then
+            --print("currentAbility "..currentAbility.name)
+            if currentAbility.isEnabled and currentAbility:GetCustomProperty("LevelRequirement")<=currentAbility.owner:GetResource("level") then
                 local iconColor = AOI.GetObjectColor(currentAbility)
                 if iconColor then
                     ICON:SetColor(iconColor)

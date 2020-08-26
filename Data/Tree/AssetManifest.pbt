@@ -728,15 +728,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8936463881719161671
-  Name: "Ring - Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_005"
-  }
-}
-Assets {
   Id: 8869908880399307840
   Name: "Plastic Shiny"
   PlatformAssetType: 2
@@ -1058,6 +1049,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_half_003_door_01"
+  }
+}
+Assets {
+  Id: 5581469317625791581
+  Name: "Simple Sketch Line Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_ppm_sketchline_simple"
   }
 }
 Assets {

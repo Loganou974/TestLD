@@ -2,7 +2,9 @@
 local propEvent1 = script:GetCustomProperty("Event1")
 local propEventNPC = script:GetCustomProperty("EventNPC")
 local listener=nil
+local originalParent=script.parent.id
 function OnTurnOn(player)
+    originalParent=script.parent.id
     --print("gizmo on "..player.name)
     local inst=script.parent
     for n, v in ipairs(player:GetAttachedObjects()) do
@@ -31,8 +33,15 @@ function OnTurnNpc(name)
     
 end
 function OnParentDestroyed()
-    inst.parent=nil
+    script.parent.parent=nil
     listener:Disconnect()
+end
+
+function OnDestroyListener()
+    local obj=World.SpawnAsset(originalParent)
+
+    script.parent=obj
+
 end
 function OnPlayerJoined(player)
    
@@ -41,6 +50,7 @@ function OnPlayerJoined(player)
 
     
 end
+script.parent.destroyEvent:Connect(OnDestroyListener)
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Events.Connect(propEvent1, OnTurnOn)
 Events.Connect(propEventNPC, OnTurnNpc)
