@@ -15,10 +15,11 @@
             Z: 1
           }
         }
-        ParentId: 17448415494070895558
+        ParentId: 4781671109827199097
         ChildIds: 13773022167755044710
         ChildIds: 13116723762409747169
         ChildIds: 7346566531886883351
+        ChildIds: 16618928701581467268
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -83,6 +84,12 @@
           }
         }
         ParentId: 6084476036261857102
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:LevelRequirement"
+            Int: 1
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -172,6 +179,85 @@
         Script {
           ScriptAsset {
             Id: 11462264770745263123
+          }
+        }
+      }
+      Objects {
+        Id: 16618928701581467268
+        Name: "RecklessAttack"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6084476036261857102
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:LevelRequirement"
+            Int: 2
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Ability {
+          IsEnabled: true
+          CastPhaseSettings {
+            Duration: 0.15
+            CanMove: true
+            CanJump: true
+            CanRotate: true
+            PreventOtherAbilities: true
+            IsTargetDataUpdated: true
+            Facing_V2 {
+              Value: "mc:eabilitysetfacing:aim"
+            }
+          }
+          ExecutePhaseSettings {
+            CanMove: true
+            CanJump: true
+            CanRotate: true
+            PreventOtherAbilities: true
+            IsTargetDataUpdated: true
+            Facing_V2 {
+              Value: "mc:eabilitysetfacing:aim"
+            }
+          }
+          RecoveryPhaseSettings {
+            Duration: 0.1
+            CanMove: true
+            CanJump: true
+            CanRotate: true
+            PreventOtherAbilities: true
+            IsTargetDataUpdated: true
+            Facing_V2 {
+              Value: "mc:eabilitysetfacing:none"
+            }
+          }
+          CooldownPhaseSettings {
+            Duration: 2
+            CanMove: true
+            CanJump: true
+            CanRotate: true
+            PreventOtherAbilities: true
+            IsTargetDataUpdated: true
+            Facing_V2 {
+              Value: "mc:eabilitysetfacing:none"
+            }
+          }
+          Animation: "unarmed_kick_ball"
+          KeyBinding_v2 {
+            Value: "mc:egameaction:extraaction_33"
           }
         }
       }

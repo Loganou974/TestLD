@@ -27,11 +27,12 @@ local races={
     {name ="Tiefling",bonus={0,1,0,0,0,2,0},speed=30,description="Your base walking speed is 30 feet."},
     {name ="Aarakocra",bonus={0,0,2,0,1,0,0},speed=50,description="Sequestered in high mountains atop tall trees, the aarakocra, sometimes called birdfolk, evoke fear and wonder."}
 }
+
 local nombreDeRace=16
 local classes={
-    {name="Novice",hit=1},
-    {name="Barbarian",hit=12},
-    {name="Bard",hit=8},
+    {name="Novice",hit=1,skills={}},
+    {name="Barbarian",hit=12,skills={"7789655299B2B38F:RageSkill","04722113CF9D0207:RecklessAttack"}},
+    {name="Bard",hit=8,skills={"BE9E128A277497E5:BardSkills","B30228C9BD475CB1:SongOfRest"}},
     {name="Cleric",hit=8},
     {name="Druid",hit=8},
     {name="Fighter",hit=10},
@@ -359,9 +360,45 @@ function modifier(value)
     return math.floor((value-10)/2)
 end
 
-function levelup(player)
-    print("level up!!!")
-    player:SetResource("level",2)
+function levelup(player,level)
+    local playerData=loadPlayerData(player)
+    player:SetResource("level",level)
+    addSystemCombatTexte("LevelUp",{player.name,player:GetResource("level")})
+    player:AddResource("statpoint",1)
+    print(playerData.class.name)
+    print(playerData.class.skills[level])
+   if level <= #playerData.class.skills then
+    local skill=nil
+     for _, obj in ipairs(player:GetEquipment()) do
+       
+        if(obj.name=="BardSkills" or obj.name=="BarbarianSkills") then
+            for _, ability in pairs(obj:GetAbilities()) do
+                local levelRequirement=ability:GetCustomProperty("LevelRequirement")
+                if(player:GetResource("level")>=levelRequirement) then
+                    ability.isEnabled=true
+                else
+                    ability.isEnabled=false
+                end
+        
+            end
+             Events.BroadcastToPlayer(player,"LEVEL_UP",obj.name)
+           
+           
+            
+        end
+    end
+   end
+    if(playerData.class.name=="Bard") then
+        player.maxHitPoints=player.maxHitPoints+math.random(8)+modifier(player:GetResource("CON"))
+       
+    end
+    if(playerData.class.name=="Barbarian") then
+        player.maxHitPoints=player.maxHitPoints+math.random(12)+modifier(player:GetResource("CON"))
+
+    end
+   
+    
+    savePlayerData(player,playerData)
 end
 
 
@@ -445,7 +482,7 @@ function OnResourceChanged(player,resourceid,newvalue)
     --if(playerData.classe.name=="Barbarian") then
              if(resourceid=="XP") then
                 if(newvalue>=300 and player:GetResource("level") == 1) then
-                    levelup(player)
+                    levelup(player,2)
                 end
              end
         if(resourceid=="STR") then
@@ -939,3 +976,4 @@ Events.Connect("START_COMBAT", startCombat)
 Events.Connect("END_COMBAT", endCombat)
 Events.Connect("NPC_DIED", npcDied)
 Events.Connect("ROLL_DICE", rollDice)
+Events.Connect("LEVEL_UP", levelup)

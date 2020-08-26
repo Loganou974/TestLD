@@ -49,8 +49,9 @@ local cooldownDuration = 0.0
 function GetLocalPlayerAbilityWithBinding()
     local abilities = LOCAL_PLAYER:GetAbilities()
    
+    
     for _, ability in pairs(abilities) do
-        if ability.actionBinding == BINDING then 
+        if ability.actionBinding == BINDING and ability.isEnabled then 
             return ability
         end
     end

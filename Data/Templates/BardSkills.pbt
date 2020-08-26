@@ -19,6 +19,7 @@
         ChildIds: 2268008399601242739
         ChildIds: 6972370799800572422
         ChildIds: 14087653025978765454
+        ChildIds: 3242648422590620471
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -85,6 +86,12 @@
         ParentId: 16058774555376254967
         ChildIds: 14712400408860905440
         ChildIds: 7632856318220555477
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:LevelRequirement"
+            Int: 1
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -264,6 +271,88 @@
         Script {
           ScriptAsset {
             Id: 11462264770745263123
+          }
+        }
+      }
+      Objects {
+        Id: 3242648422590620471
+        Name: "SongOfRest"
+        Transform {
+          Location {
+            X: -215480.875
+            Y: 995851.313
+            Z: -9492.74316
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16058774555376254967
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:LevelRequirement"
+            Int: 2
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Ability {
+          IsEnabled: true
+          CastPhaseSettings {
+            Duration: 0.15
+            CanMove: true
+            CanJump: true
+            CanRotate: true
+            PreventOtherAbilities: true
+            IsTargetDataUpdated: true
+            Facing_V2 {
+              Value: "mc:eabilitysetfacing:aim"
+            }
+          }
+          ExecutePhaseSettings {
+            CanMove: true
+            CanJump: true
+            CanRotate: true
+            PreventOtherAbilities: true
+            IsTargetDataUpdated: true
+            Facing_V2 {
+              Value: "mc:eabilitysetfacing:aim"
+            }
+          }
+          RecoveryPhaseSettings {
+            Duration: 0.1
+            CanMove: true
+            CanJump: true
+            CanRotate: true
+            PreventOtherAbilities: true
+            IsTargetDataUpdated: true
+            Facing_V2 {
+              Value: "mc:eabilitysetfacing:none"
+            }
+          }
+          CooldownPhaseSettings {
+            Duration: 3
+            CanMove: true
+            CanJump: true
+            CanRotate: true
+            PreventOtherAbilities: true
+            IsTargetDataUpdated: true
+            Facing_V2 {
+              Value: "mc:eabilitysetfacing:none"
+            }
+          }
+          Animation: "1hand_melee_slash_left"
+          KeyBinding_v2 {
+            Value: "mc:egameaction:extraaction_33"
           }
         }
       }

@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 15895668048108029803
+        ParentId: 4781671109827199097
         ChildIds: 9572632440786476104
         ChildIds: 15423644389650461907
         ChildIds: 4516292792756104505
@@ -302,6 +302,7 @@
         ChildIds: 3830204455863273718
         ChildIds: 1466719718099550976
         ChildIds: 4187629876928316871
+        ChildIds: 14441251347609749254
         ChildIds: 6609179347153818691
         WantsNetworking: true
         Collidable_v2 {
@@ -416,6 +417,116 @@
         }
       }
       Objects {
+        Id: 14441251347609749254
+        Name: "VFXMiniRayRed"
+        Transform {
+          Location {
+            X: -215062.172
+            Y: 998432.125
+            Z: -9402.25195
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.5
+            Y: 1.5
+            Z: 1.5
+          }
+        }
+        ParentId: 4999321100341044062
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 0.440000057
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Volume Type"
+            Enum {
+              Value: "mc:evfxvolumetype:0"
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 21.9462299
+          }
+          Overrides {
+            Name: "bp:Treasure Base Emissive Boost"
+            Float: 38.2851372
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 0.825753
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 2.6204226
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 6.43618584
+          }
+          Overrides {
+            Name: "bp:Sparkle Density"
+            Float: 1.52299523
+          }
+          Overrides {
+            Name: "bp:Ray Length"
+            Float: 1.08519638
+          }
+          Overrides {
+            Name: "bp:Local Space"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Soft Edge Distance"
+            Float: 1.74587476
+          }
+          Overrides {
+            Name: "bp:Base Glow Alpha"
+            Float: 0.35094583
+          }
+          Overrides {
+            Name: "bp:Max Outward Ray Angle"
+            Float: 29.0136032
+          }
+          Overrides {
+            Name: "bp:Enable Ray"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Enable Base"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Sparkles"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Enable Burst Sparkles"
+            Bool: true
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4129111330185020956
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
+      Objects {
         Id: 6609179347153818691
         Name: "MeleeAbilityServer"
         Transform {
@@ -458,6 +569,12 @@
           Overrides {
             Name: "cs:Range"
             Int: 10
+          }
+          Overrides {
+            Name: "cs:fx"
+            ObjectReference {
+              SubObjectId: 14441251347609749254
+            }
           }
         }
         Collidable_v2 {
@@ -695,6 +812,15 @@
             Id: 6366115419987772397
           }
         }
+      }
+    }
+    Assets {
+      Id: 4129111330185020956
+      Name: "Treasure Ray Burst"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_Treasure_Rays"
       }
     }
     Assets {

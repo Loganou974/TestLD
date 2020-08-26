@@ -233,15 +233,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15613957626400622227
-  Name: "Flower Bellflower 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_foliage_gen_flower_bell_001_ref"
-  }
-}
-Assets {
   Id: 15428440762118074425
   Name: "Tree Redwood Big"
   PlatformAssetType: 1
@@ -608,15 +599,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_bottle_001"
-  }
-}
-Assets {
-  Id: 10563845832891944805
-  Name: "Edge Line Wavy"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_add_edgeline"
   }
 }
 Assets {

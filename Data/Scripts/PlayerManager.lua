@@ -97,6 +97,7 @@ function appuye(player,touche)
    end
     if touche == "ability_extra_27" then
        showCharacterScreen()
+       Events.BroadcastToServer("LEVEL_UP",player,2) 
     end
     if touche == "ability_extra_50" then
         Events.BroadcastToServer("GAINSTATPOINT",player,1) 
@@ -436,7 +437,9 @@ function OnClassChanged(equipementName,classNom)
             end
             showCharacterScreen()
 end
-
+function levelup(abilityName)
+    
+end
 function OnWeaponChanged(equipementName)
     local equipement=nil
     Task.Wait(0.2)
@@ -466,3 +469,4 @@ Events.Connect("CHANGED_CLASS", OnClassChanged)
 Events.Connect("CHANGED_WEAPON", OnWeaponChanged)
 Events.Connect("BEGIN_TURN", OnTurnOn)
 Events.Connect("END_COMBAT", OnCombatEnded)
+Events.Connect("LEVEL_UP", levelup)

@@ -45,7 +45,7 @@ Objects {
   ChildIds: 16843242792075187094
   ChildIds: 11772044320750185658
   ChildIds: 5210968595606679045
-  ChildIds: 17259176004487702281
+  ChildIds: 1351260417548687183
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -58,7 +58,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17259176004487702281
+  Id: 1351260417548687183
   Name: "NarratorSpeech"
   Transform {
     Scale {
@@ -68,19 +68,22 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2139142998352330349
-      value {
-        Overrides {
-          Name: "Name"
-          String: "NarratorSpeech"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 5706090365701877525
-    }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "NarratorSpeech"
+  }
+  InstanceHistory {
+    SelfId: 1351260417548687183
+    SubobjectId: 2139142998352330349
+    InstanceId: 17259176004487702281
+    TemplateId: 5706090365701877525
+    WasRoot: true
   }
 }
 Objects {
@@ -305,8 +308,6 @@ Objects {
   ChildIds: 15805011472197396410
   ChildIds: 16972366475498232940
   ChildIds: 5153711758940846540
-  ChildIds: 13583819871245331
-  ChildIds: 12384391458727824207
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -315,164 +316,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 12384391458727824207
-  Name: "Flower Bellflower 01"
-  Transform {
-    Location {
-      X: 2423.03906
-      Y: 2503.85156
-      Z: 1449.78552
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16843242792075187094
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15613957626400622227
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 13583819871245331
-  Name: "Spotlight"
-  Transform {
-    Location {
-      X: 2546.34766
-      Y: 1728.04102
-      Z: 2619.62646
-    }
-    Rotation {
-      Pitch: -57.9592667
-      Yaw: 100.716125
-      Roll: 69.6208878
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16843242792075187094
-  ChildIds: 6255601546671712846
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Light {
-    Intensity: 34.3007431
-    Color {
-      R: 1
-      G: 1
-      B: 1
-      A: 1
-    }
-    CastShadows: true
-    VolumetricIntensity: 5
-    TeamSettings {
-    }
-    Light {
-      Temperature: 6500
-      LocalLight {
-        AttenuationRadius: 6000
-        SpotLight {
-          SourceRadius: 20
-          SoftSourceRadius: 20
-          FallOffExponent: 8
-          UseFallOffExponent: true
-          InnerConeAngle: 30
-          OuterConeAngle: 7.01227856
-          Profile {
-            Value: "mc:espotlightprofile:pinspot"
-          }
-        }
-      }
-      MaxDrawDistance: 5000
-      MaxDistanceFadeRange: 1000
-    }
-  }
-}
-Objects {
-  Id: 6255601546671712846
-  Name: "Pipe"
-  Transform {
-    Location {
-      X: -0.000449471816
-      Y: -0.000263698021
-      Z: 9.7958924e-05
-    }
-    Rotation {
-      Pitch: -50.7157288
-      Yaw: -91.7059
-      Roll: 91.6318
-    }
-    Scale {
-      X: 4.4667182
-      Y: 4.46671772
-      Z: 38.2060623
-    }
-  }
-  ParentId: 13583819871245331
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 10563845832891944805
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.330000043
-        G: 0.27536428
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13547513599097969212
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
   }
 }
 Objects {
