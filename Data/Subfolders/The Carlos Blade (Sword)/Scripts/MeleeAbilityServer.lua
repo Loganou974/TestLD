@@ -45,7 +45,10 @@ function Tick(deltaTime)
         end
     end
 end
+function modifier(value)
 
+    return math.floor((value-10)/2)
+end
 function MeleeAttack(other)
 	if not Object.IsValid(ABILITY) then return end
 	if other == ABILITY.owner then return end
@@ -84,10 +87,10 @@ function MeleeAttack(other)
 		AC=0
 		--if target:IsA("Player") then
 			AC=automaticTarget:GetCustomProperty("AC")
-			print("AC of "..target.name.."is "..AC)
+			print("AC of "..automaticTarget.name.."is "..AC)
 		--end
 		if d20 >= AC then
-			local maxRange=ABILITY:GetCustomProperty("dice")
+			local maxRange=ABILITY:GetCustomProperty("Dice")
 			dmg.amount=math.random(maxRange)+modifier(STR)
 			if(d20>999) then 
 				dmg.amount=math.random(maxRange)*2+modifier(STR)

@@ -857,9 +857,9 @@ function newTurn()
         currentPlayer.movementControlMode = MovementControlMode.VIEW_RELATIVE
         abilities=currentPlayer:GetAbilities()
             for i,a in ipairs(abilities) do
-                print(" "..a.name)
+                --print(" "..a.name)
                 local lr=a:GetCustomProperty("LevelRequirement")
-                print(" lr"..lr)
+                --print(" lr"..lr)
                if(lr<=currentPlayer:GetResource("level")) then
                   a.isEnabled=true end
             end

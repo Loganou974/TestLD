@@ -45,6 +45,7 @@ Objects {
   ChildIds: 149232492653520509
   ChildIds: 11338460660553211326
   ChildIds: 164494774495127716
+  ChildIds: 13125326340704029069
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -54,6 +55,41 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 13125326340704029069
+  Name: "BardSkills"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16058774555376254967
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BardSkills"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 32587.0273
+            Y: 3272.46094
+            Z: -2344.67603
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13735436298103330789
+    }
   }
 }
 Objects {
