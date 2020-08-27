@@ -485,7 +485,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 3.22684383
+      Float: 1.93106985
     }
   }
   Collidable_v2 {

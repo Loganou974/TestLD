@@ -35,7 +35,6 @@ Objects {
   ChildIds: 6564407029238446454
   ChildIds: 12772657151751931445
   ChildIds: 433167138669214361
-  ChildIds: 12876002701086746300
   ChildIds: 6148609810288160603
   ChildIds: 2589485516939686480
   ChildIds: 3827189507883521416
@@ -45,6 +44,7 @@ Objects {
   ChildIds: 1351260417548687183
   ChildIds: 149232492653520509
   ChildIds: 11338460660553211326
+  ChildIds: 164494774495127716
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -54,6 +54,88 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 164494774495127716
+  Name: "Flare Ray VFX"
+  Transform {
+    Location {
+      X: -28702.6523
+      Y: -6945.69922
+      Z: -356.444946
+    }
+    Rotation {
+    }
+    Scale {
+      X: 10
+      Y: 10
+      Z: 10
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Align with Sun"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 0.919999957
+        G: 0.566622496
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Ray Width"
+      Float: 10.3398
+    }
+    Overrides {
+      Name: "bp:Ray Density"
+      Float: 1.8595798
+    }
+    Overrides {
+      Name: "bp:Ray Height"
+      Float: 33.3704147
+    }
+    Overrides {
+      Name: "bp:Emissive Brightness"
+      Float: 0.223004133
+    }
+    Overrides {
+      Name: "bp:Ray Speed"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Depth Fade"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 2071690768456057628
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
   }
 }
 Objects {
@@ -2093,98 +2175,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 13769416771175691027
-    }
-  }
-}
-Objects {
-  Id: 12876002701086746300
-  Name: "Point To Point Electrical Beam VFX"
-  Transform {
-    Location {
-      X: 211971.547
-      Y: -997297.438
-      Z: 8710.31543
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 4556366820085443347
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Target Scene Object Reference"
-      ObjectReference {
-        SelfId: 6573141293165221183
-        SubObjectId: 15498274475380398218
-        InstanceId: 13627274227117495211
-        TemplateId: 15866063439836549112
-      }
-    }
-    Overrides {
-      Name: "bp:Beam Appearance"
-      Enum {
-        Value: "mc:ebeamtexturetype:4"
-      }
-    }
-    Overrides {
-      Name: "bp:Color Offset A"
-      Float: 0.118439123
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 15646196788024357096
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-}
-Objects {
-  Id: 4556366820085443347
-  Name: "FollowPlayer"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12876002701086746300
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:offsetZ"
-      Int: 0
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 7176726157606569124
     }
   }
 }

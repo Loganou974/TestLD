@@ -215,15 +215,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15646196788024357096
-  Name: "Point To Point Electrical Beam VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_ptp_electrical_beam"
-  }
-}
-Assets {
   Id: 15428440762118074425
   Name: "Tree Redwood Big"
   PlatformAssetType: 1
@@ -1346,6 +1337,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_chunky_001"
+  }
+}
+Assets {
+  Id: 2071690768456057628
+  Name: "Flare Ray VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_ray_system"
   }
 }
 Assets {

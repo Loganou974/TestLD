@@ -84,6 +84,7 @@
           }
         }
         ParentId: 6084476036261857102
+        ChildIds: 6450942640541229781
         ChildIds: 41649049887969941
         UnregisteredParameters {
           Overrides {
@@ -146,6 +147,45 @@
           Animation: "unarmed_thumb_down"
           KeyBinding_v2 {
             Value: "mc:egameaction:extraaction_40"
+          }
+        }
+      }
+      Objects {
+        Id: 6450942640541229781
+        Name: "AbilityDisplayImpact"
+        Transform {
+          Location {
+            X: -211499.906
+            Y: 996551.188
+            Z: -8657.57227
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13116723762409747169
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ImpactVFX"
+            AssetReference {
+              Id: 6455347434420070556
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 8111067854380061909
           }
         }
       }
@@ -275,6 +315,7 @@
         }
         ParentId: 6084476036261857102
         ChildIds: 2965055902799531971
+        ChildIds: 9879351479622088521
         UnregisteredParameters {
           Overrides {
             Name: "cs:LevelRequirement"
@@ -412,6 +453,45 @@
         Script {
           ScriptAsset {
             Id: 9835685409538525721
+          }
+        }
+      }
+      Objects {
+        Id: 9879351479622088521
+        Name: "AbilityDisplayImpact"
+        Transform {
+          Location {
+            X: -211499.906
+            Y: 996551.188
+            Z: -8657.57227
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16618928701581467268
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ImpactVFX"
+            AssetReference {
+              Id: 9576447977567232689
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 8111067854380061909
           }
         }
       }
