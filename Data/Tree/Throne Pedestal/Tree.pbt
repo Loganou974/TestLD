@@ -25,7 +25,6 @@ Objects {
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -79,7 +78,6 @@ Objects {
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -133,7 +131,6 @@ Objects {
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -180,7 +177,6 @@ Objects {
     }
   }
   ParentId: 15495081537682760363
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -230,7 +226,6 @@ Objects {
   ChildIds: 16328633453388298189
   ChildIds: 13851546129217173590
   ChildIds: 17201791142173899402
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -268,7 +263,6 @@ Objects {
     }
   }
   ParentId: 14866941744650300256
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -324,7 +318,6 @@ Objects {
       Bool: false
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -367,7 +360,6 @@ Objects {
     }
   }
   ParentId: 14866941744650300256
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -415,7 +407,6 @@ Objects {
   ChildIds: 179482131079822573
   ChildIds: 12077340795889305773
   ChildIds: 4585318517578052545
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -453,7 +444,6 @@ Objects {
     }
   }
   ParentId: 14271919035300916578
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -512,7 +502,6 @@ Objects {
       Bool: false
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -559,7 +548,6 @@ Objects {
     }
   }
   ParentId: 14271919035300916578
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

@@ -6,6 +6,22 @@
     Table {
       Entries {
         Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Hill Dwarf"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: " ( / CON +2 / WIS +1)"
+        }
+      }
+      Entries {
+        Key {
           StringVar: "bonus"
         }
         SimpleValue {
@@ -71,22 +87,6 @@
       }
       Entries {
         Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Hill Dwarf"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience."
-        }
-      }
-      Entries {
-        Key {
           StringVar: "speed"
         }
         SimpleValue {
@@ -104,18 +104,18 @@ Entries {
     Table {
       Entries {
         Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
-        }
-      }
-      Entries {
-        Key {
           StringVar: "name"
         }
         SimpleValue {
           StringVar: "Novice"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
         }
       }
     }

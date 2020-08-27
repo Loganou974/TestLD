@@ -16,7 +16,6 @@ Objects {
     }
   }
   ParentId: 6559422926425143131
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -60,7 +59,6 @@ Objects {
     }
   }
   ParentId: 6559422926425143131
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -104,7 +102,6 @@ Objects {
     }
   }
   ParentId: 6559422926425143131
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -148,7 +145,6 @@ Objects {
     }
   }
   ParentId: 6559422926425143131
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -192,7 +188,6 @@ Objects {
     }
   }
   ParentId: 6559422926425143131
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -236,7 +231,6 @@ Objects {
     }
   }
   ParentId: 6559422926425143131
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -280,7 +274,6 @@ Objects {
     }
   }
   ParentId: 6559422926425143131
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -324,7 +317,6 @@ Objects {
     }
   }
   ParentId: 6559422926425143131
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

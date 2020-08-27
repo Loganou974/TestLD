@@ -6,6 +6,22 @@
     Table {
       Entries {
         Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Half Orc"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: " ( / STR +2 / CON +1)"
+        }
+      }
+      Entries {
+        Key {
           StringVar: "bonus"
         }
         SimpleValue {
@@ -15,7 +31,7 @@
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -39,7 +55,7 @@
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 1
               }
             }
             Entries {
@@ -47,7 +63,7 @@
                 IntVar: 5
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -71,26 +87,10 @@
       }
       Entries {
         Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Hill Dwarf"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience."
-        }
-      }
-      Entries {
-        Key {
           StringVar: "speed"
         }
         SimpleValue {
-          IntVar: 25
+          IntVar: 30
         }
       }
     }
@@ -104,18 +104,18 @@ Entries {
     Table {
       Entries {
         Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
-        }
-      }
-      Entries {
-        Key {
           StringVar: "name"
         }
         SimpleValue {
           StringVar: "Novice"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
         }
       }
     }

@@ -350,15 +350,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16356939970453713060
-  Name: "Magic Healing Pickup 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_magic_healing_pickup_01_Cue_ref"
-  }
-}
-Assets {
   Id: 16353917461806733124
   Name: "Ring - Thin"
   PlatformAssetType: 1
@@ -401,15 +392,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_flower_wild_lily_001_ref"
-  }
-}
-Assets {
-  Id: 16094269848868926382
-  Name: "Heart - Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_heart_polished_001"
   }
 }
 Assets {
@@ -1400,15 +1382,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "fxsm_candleflame"
-  }
-}
-Assets {
-  Id: 9171202607605005016
-  Name: "Impact Snow Heavy 03 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_impact_snow_heavy_03_Cue_ref"
   }
 }
 Assets {
@@ -2831,15 +2804,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "fxsm_waterfall_straight"
-  }
-}
-Assets {
-  Id: 73476933006660606
-  Name: "Plasma Impact VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_plasma_impact"
   }
 }
 Assets {
