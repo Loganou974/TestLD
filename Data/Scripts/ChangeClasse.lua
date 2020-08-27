@@ -1,8 +1,8 @@
 ﻿local instance = script.parent
 local classes={
-    {name="Novice",hit=1,skills={}},
-    {name="Barbarian",hit=12,skills={"7789655299B2B38F:RageSkill","04722113CF9D0207:RecklessAttack"}},
-    {name="Bard",hit=8,skills={"BE9E128A277497E5:BardSkills","B30228C9BD475CB1:SongOfRest"}},
+    {name="Novice",hit=1,skills={},proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
+    {name="Barbarian",hit=12,skills={}},
+    {name="Bard",hit=8,skills={},proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
     {name="Cleric",hit=8},
     {name="Druid",hit=8},
     {name="Fighter",hit=10},
@@ -33,6 +33,7 @@ function OnEquipped(equipment, player)
             print("Etape 1.1")
            
             playerData.class= classes[3]
+            player:SetResource("Profiency",playerData.class.proficiency[player:GetResource("level")])
             player.maxHitPoints = playerData.class.hit;
              player.hitPoints= player.maxHitPoints
              
@@ -43,6 +44,7 @@ function OnEquipped(equipment, player)
         if equipment.name == "BarbarianSkills" then
             print("Etape 1.2")
             playerData.class=classes[2]
+            player:SetResource("Profiency",playerData.class.proficiency[player:GetResource("level")])
             player.maxHitPoints = playerData.class.hit;
              player.hitPoints= player.maxHitPoints
             print("classe = "..playerData.class.name)

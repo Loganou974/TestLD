@@ -91,6 +91,10 @@
             Name: "cs:LevelRequirement"
             Int: 1
           }
+          Overrides {
+            Name: "cs:Dice"
+            Int: 0
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -320,6 +324,10 @@
           Overrides {
             Name: "cs:LevelRequirement"
             Int: 2
+          }
+          Overrides {
+            Name: "cs:Dice"
+            Int: 0
           }
         }
         WantsNetworking: true

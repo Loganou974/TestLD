@@ -51,7 +51,7 @@ function GetLocalPlayerAbilityWithBinding()
    
     
     for _, ability in pairs(abilities) do
-        if ability.actionBinding == BINDING  then 
+        if ability.actionBinding == BINDING and ability.isEnabled  then 
             return ability
         end
     end

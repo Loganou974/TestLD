@@ -66,9 +66,40 @@ function MeleeAttack(other)
 	--if ignoreList[other] ~= 1 then
 		
 		ignoreList[other] = 1
-		
+
 		local dmg = Damage.New()
-		dmg.amount = math.random(DAMAGE_RANGE.x, DAMAGE_RANGE.y)
+
+		local player=ABILITY.owner
+		local DEX=player:GetResource("DEX")
+		local STR=player:GetResource("STR")
+		local BonusToHit=player:GetResource("Proficiency")
+		d20=math.random(20)
+		print("Attack roll from "..player.name.." d20="..d20.."total="..(d20+modifier(STR)+BonusToHit))
+		if d20 > 1 and d20~=20 then 
+			d20=d20+modifier(STR)+BonusToHit
+		end
+		if d20==20 then
+			d20=99999
+		end		
+		AC=0
+		--if target:IsA("Player") then
+			AC=automaticTarget:GetCustomProperty("AC")
+			print("AC of "..target.name.."is "..AC)
+		--end
+		if d20 >= AC then
+			local maxRange=ABILITY:GetCustomProperty("dice")
+			dmg.amount=math.random(maxRange)+modifier(STR)
+			if(d20>999) then 
+				dmg.amount=math.random(maxRange)*2+modifier(STR)
+			end
+			BroadcastDamageFeedback(dmg.amount, pos)
+		else
+			dmg.amount=0
+			BroadcastMissFeedback()
+		end
+		
+		
+		--dmg.amount = math.random(DAMAGE_RANGE.x, DAMAGE_RANGE.y)
 		dmg.reason = DamageReason.COMBAT
 		dmg.sourcePlayer = ABILITY.owner
 		dmg.sourceAbility = ABILITY
@@ -84,7 +115,7 @@ function MeleeAttack(other)
 			Events.BroadcastToAllPlayers("MeleeImpact", ABILITY.id, pos, rot)
 		end
 		
-		BroadcastDamageFeedback(dmg.amount, pos)
+	
 		--ResetMelee(ABILITY)
 		automaticTarget=nil
 	--end
@@ -100,7 +131,7 @@ end
 function BroadcastMissFeedback()
 	local player = EQUIPMENT.owner
 	if Object.IsValid(player) then
-		Events.BroadcastToPlayer(player, "ShowMissFeedback")
+		Events.BroadcastToPlayer(player, "ShowMissFeedback",player:GetWorldPosition())
 	end
 end
 

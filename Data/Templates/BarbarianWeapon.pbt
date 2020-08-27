@@ -221,6 +221,10 @@
             Int: 1
           }
           Overrides {
+            Name: "cs:Dice"
+            Int: 6
+          }
+          Overrides {
             Name: "cs:Damage:tooltip"
             String: "Damage value applied to a player hit by hitbox trigger."
           }

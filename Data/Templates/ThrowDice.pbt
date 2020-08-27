@@ -16,6 +16,20 @@
           }
         }
         ParentId: 4781671109827199097
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:LevelRequirement"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:Range"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:Dice"
+            Int: 0
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

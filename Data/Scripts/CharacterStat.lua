@@ -30,9 +30,9 @@ local races={
 
 local nombreDeRace=16
 local classes={
-    {name="Novice",hit=1,skills={}},
-    {name="Barbarian",hit=12,skills={"7789655299B2B38F:RageSkill","04722113CF9D0207:RecklessAttack"}},
-    {name="Bard",hit=8,skills={"BE9E128A277497E5:BardSkills","B30228C9BD475CB1:SongOfRest"}},
+    {name="Novice",hit=1,skills={},proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
+    {name="Barbarian",hit=12,skills={}},
+    {name="Bard",hit=8,skills={},proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
     {name="Cleric",hit=8},
     {name="Druid",hit=8},
     {name="Fighter",hit=10},
@@ -261,6 +261,7 @@ function GetStat(player)
         player:SetResource("SPEED",playerData.race.speed)
         player:SetResource("actionMax",1)
         player:SetResource("level",1)
+        player:SetResource("Profiency",1)
        
     else
         addDebugCombatTexte("charac " .. player:GetResource("STR"))
@@ -365,6 +366,7 @@ function levelup(player,level)
     player:SetResource("level",level)
     addSystemCombatTexte("LevelUp",{player.name,player:GetResource("level")})
     player:AddResource("statpoint",1)
+    player:SetResource("Profiency",playerData.class.proficiency[player:GetResource("level")])
     print(playerData.class.name)
     print(playerData.class.skills[level])
     Events.BroadcastToPlayer(player,"LEVEL_UP")
@@ -855,7 +857,11 @@ function newTurn()
         currentPlayer.movementControlMode = MovementControlMode.VIEW_RELATIVE
         abilities=currentPlayer:GetAbilities()
             for i,a in ipairs(abilities) do
-               if(a:GetCustomProperty("LevelRequirement")<=currentPlayer:GetResource("level")) then  a.isEnabled=true end
+                print(" "..a.name)
+                local lr=a:GetCustomProperty("LevelRequirement")
+                print(" lr"..lr)
+               if(lr<=currentPlayer:GetResource("level")) then
+                  a.isEnabled=true end
             end
             Events.BroadcastToPlayer(currentPlayer,"BEGIN_TURN")
 

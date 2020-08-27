@@ -79,7 +79,7 @@ local d20=0
 local AC=0
 function Attack(target)	
 	d20=math.random(20)
-	print("Attack roll from "..script.parent.name.." d20="..d20.."total="..(d20+modifier(DEX)+BonusToHit))
+	print("Attack roll from "..script.parent.name.." d20="..d20.."total="..(d20+modifier(STR)+BonusToHit))
 	if d20 > 1 and d20~=20 then 
 		d20=d20+modifier(STR)+BonusToHit
 	end
@@ -125,7 +125,11 @@ function Attack(target)
 	
 	SpawnAsset(MUZZLE_FLASH_VFX, startPos, rotation)
 end
-
+function addEnnemyCombatTexte(message)
+	Events.BroadcastToAllPlayers("addEnnemyCombatTexte",source,message,params)
+	--Task.Wait(0.5)
+   --print(message)
+ end
 
 function OnProjectileImpact(projectile, other, hitResult)
 	
@@ -145,17 +149,22 @@ function OnProjectileImpact(projectile, other, hitResult)
 		if(MobType=="FlyingSnake" or MobType=="Lizard" or MobType=="Commoner") then
 			if d20 >= AC then
 				
-				if MobType=="FlyingSnake" then damageAmount = 1 +math.random(4) +math.random(4) +math.random(4) end
-				if MobType=="Lizard" then damageAmount = 1 end
-				if MobType=="Commoner" then damageAmount = math.random(4) end
+				if MobType=="FlyingSnake" then damageAmount = 1 +math.random(4) +math.random(4) +math.random(4)+modifier(STR) end
+				if MobType=="Lizard" then damageAmount = 1+modifier(STR) end
+				if MobType=="Commoner" then damageAmount = math.random(4)+modifier(STR) end
 				
-				if(d20>999) then cc=" with a Critical hit " end
-				print(script.parent.name.." hit "..other.name..cc.."for "..damageAmount)
+				if(d20>999) then 
+					cc=" with a Critical hit " 
+					if MobType=="FlyingSnake" then damageAmount = 1 +2* (math.random(4) +math.random(4) +math.random(4))+modifier(STR) end
+					if MobType=="Lizard" then damageAmount = 1*2+modifier(STR) end
+					if MobType=="Commoner" then damageAmount = 2*math.random(4)+modifier(STR) end
+				end
+				addEnnemyCombatTexte(script.parent.name.." hit "..other.name..cc.."for "..damageAmount)
 				SpawnAsset(IMPACT_CHARACTER_VFX, pos, rot)
 			else
 				if(d20==1) then cc="Critical fail! " end
 				damageAmount =0
-				print(cc..script.parent.name.." miss "..other.name)
+				addEnnemyCombatTexte(cc..script.parent.name.." miss "..other.name)
 			end	
 				
 		else
