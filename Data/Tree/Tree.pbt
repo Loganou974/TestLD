@@ -20636,6 +20636,15 @@ Objects {
           Name: "UIY"
           Float: -0.559936523
         }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
       }
     }
     ParameterOverrideMap {
