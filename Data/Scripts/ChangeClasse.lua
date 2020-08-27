@@ -1,18 +1,18 @@
 ﻿local instance = script.parent
 local classes={
     {name="Novice",hit=1,skills={},proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
-    {name="Barbarian",hit=12,skills={}},
+    {name="Barbarian",hit=12,skills={},proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
     {name="Bard",hit=8,skills={},proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
-    {name="Cleric",hit=8},
-    {name="Druid",hit=8},
-    {name="Fighter",hit=10},
-    {name="Monk",hit=8},
-    {name="Paladin",hit=10},
-    {name="Ranger",hit=10},
-    {name="Sorcerer",hit=6},
-    {name="Rogue",hit=8},
-    {name="Warlock",hit=8},
-    {name="Wizard",hit=6}
+    {name="Cleric",hit=8,proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
+    {name="Druid",hit=8,proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
+    {name="Fighter",hit=10,proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
+    {name="Monk",hit=8,proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
+    {name="Paladin",hit=10,proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
+    {name="Ranger",hit=10,proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
+    {name="Sorcerer",hit=6,proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
+    {name="Rogue",hit=8,proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
+    {name="Warlock",hit=8,proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}},
+    {name="Wizard",hit=6,proficiency={2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6}}
 
 }
 function OnEquipped(equipment, player)

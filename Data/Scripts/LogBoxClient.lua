@@ -20,7 +20,7 @@ function GetSpeech(messageId,params)
     --local speeches=World.FindObjectById("8A4AB8499744FEA5:NarratorSpeech")
     print("message "..messageId)
     local speech=speeches:FindDescendantByName(messageId)
-    
+    if speech==nil then return messageId
     --if not obj then return nom end
     local message=speech:GetCustomProperty("Texte")
     if params then
