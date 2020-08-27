@@ -13,6 +13,10 @@ function OnTurnOn(player)
     for n, v in ipairs(player:GetAttachedObjects()) do
         if(n=="head") then v:Detach() end
     end
+    if(instance ==nil) then
+        instance=World.SpawnAsset(propMUID)
+    end
+    
     instance:AttachToPlayer(player,"head")
     local pos=instance:GetPosition()
     if(pos.z==0) then pos.z=pos.z+60 end
@@ -22,7 +26,9 @@ function OnTurnNpc(name)
     --print("gizmo on "..name)
     
     local player=World.FindObjectById(name)
-    
+    if(instance ==nil) then
+        instance=World.SpawnAsset(propMUID)
+    end
    
     instance:Detach()
     local socket=player:FindDescendantByName("HeadSocket")

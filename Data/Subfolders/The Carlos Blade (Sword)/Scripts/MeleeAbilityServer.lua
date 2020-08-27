@@ -25,6 +25,8 @@ local ignoreList = {}
 local currentSwipe = nil
 local canAttack = false
 local automaticTarget=nil
+local d20=0
+local d20Total=0
 
 function Tick(deltaTime)
 	
@@ -49,6 +51,12 @@ function modifier(value)
 
     return math.floor((value-10)/2)
 end
+
+function addEnnemyCombatTexte(source,message)
+	Events.BroadcastToAllPlayers("addEnnemyCombatTexte",source,message,params)
+	--Task.Wait(0.5)
+   --print(message)
+ end
 function MeleeAttack(other)
 	if not Object.IsValid(ABILITY) then return end
 	if other == ABILITY.owner then return end
@@ -78,26 +86,28 @@ function MeleeAttack(other)
 		local BonusToHit=player:GetResource("Proficiency")
 		d20=math.random(20)
 		print("Attack roll from "..player.name.." d20="..d20.."total="..(d20+modifier(STR)+BonusToHit))
-		if d20 > 1 and d20~=20 then 
-			d20=d20+modifier(STR)+BonusToHit
-		end
-		if d20==20 then
-			d20=99999
-		end		
+		addEnnemyCombatTexte(player.name, " Attack roll to hit"..other.name.." :"..d20.."total="..(d20+math.max(modifier(STR),modifier(DEX))+BonusToHit))
+		d20Total=d20+modifier(STR)+BonusToHit
+		local cc=""
 		AC=0
 		--if target:IsA("Player") then
 			AC=automaticTarget:GetCustomProperty("AC")
 			print("AC of "..automaticTarget.name.."is "..AC)
 		--end
-		if d20 >= AC then
+		if d20Total >= AC and d20~=1 or d20 ==20 then
 			local maxRange=ABILITY:GetCustomProperty("Dice")
 			dmg.amount=math.random(maxRange)+modifier(STR)
-			if(d20>999) then 
+			if(d20==20) then 
 				dmg.amount=math.random(maxRange)*2+modifier(STR)
+				cc=" with a Critical hit " 
 			end
+			addEnnemyCombatTexte(player.name," hit "..automaticTarget.name..cc.."for "..dmg.amount)
+			
 			BroadcastDamageFeedback(dmg.amount, pos)
 		else
 			dmg.amount=0
+			if d20==1 then cc=" (Critical fail) " end
+			addEnnemyCombatTexte(player.name," miss "..cc)
 			BroadcastMissFeedback()
 		end
 		

@@ -76,16 +76,14 @@ function modifier(value)
     return math.floor((value-10)/2)
 end
 local d20=0
+local d20Total=0
 local AC=0
 function Attack(target)	
 	d20=math.random(20)
-	print("Attack roll from "..script.parent.name.." d20="..d20.."total="..(d20+modifier(STR)+BonusToHit))
-	if d20 > 1 and d20~=20 then 
-		d20=d20+modifier(STR)+BonusToHit
-	end
-	if d20==20 then
-		d20=99999
-	end		
+	d20Total=(d20+math.max(modifier(STR),modifier(DEX))+BonusToHit)
+	print("Attack roll from "..script.parent.name.." d20="..d20.."total="..d20Total)
+	addEnnemyCombatTexte(script.parent.name, " Attack roll to hit"..target.name.." :"..d20.."total="..d20Total)
+		
 	 AC=0
 	if target:IsA("Player") then
 		AC=target:GetResource("AC")
@@ -93,7 +91,7 @@ function Attack(target)
 	end
 	if target:IsA("Player") and PLAYER_HOMING_TARGETS() then
 		
-		if d20 >= AC or d20 ==1 then
+		if d20Total >= AC or d20 ==20 then
 		target = PLAYER_HOMING_TARGETS().GetTargetForPlayer(target)
 		end
 	end
@@ -125,7 +123,7 @@ function Attack(target)
 	
 	SpawnAsset(MUZZLE_FLASH_VFX, startPos, rotation)
 end
-function addEnnemyCombatTexte(message)
+function addEnnemyCombatTexte(source,message)
 	Events.BroadcastToAllPlayers("addEnnemyCombatTexte",source,message,params)
 	--Task.Wait(0.5)
    --print(message)
@@ -147,24 +145,25 @@ function OnProjectileImpact(projectile, other, hitResult)
 	if other:IsA("Player") then
 		local cc=""
 		if(MobType=="FlyingSnake" or MobType=="Lizard" or MobType=="Commoner") then
-			if d20 >= AC then
+			if d20Total >= AC or d20==20then
 				
-				if MobType=="FlyingSnake" then damageAmount = 1 +math.random(4) +math.random(4) +math.random(4)+modifier(STR) end
-				if MobType=="Lizard" then damageAmount = 1+modifier(STR) end
-				if MobType=="Commoner" then damageAmount = math.random(4)+modifier(STR) end
+				if MobType=="FlyingSnake" then damageAmount = 1 +math.random(4) +math.random(4) +math.random(4)+math.max(modifier(STR),modifier(DEX)) end
+				if MobType=="Lizard" then damageAmount = 1+math.max(modifier(STR),modifier(DEX)) end
+				if MobType=="Commoner" then damageAmount = math.random(4)+math.max(modifier(STR),modifier(DEX)) end
 				
-				if(d20>999) then 
+				if(d20==20) then 
 					cc=" with a Critical hit " 
-					if MobType=="FlyingSnake" then damageAmount = 1 +2* (math.random(4) +math.random(4) +math.random(4))+modifier(STR) end
-					if MobType=="Lizard" then damageAmount = 1*2+modifier(STR) end
-					if MobType=="Commoner" then damageAmount = 2*math.random(4)+modifier(STR) end
+					if MobType=="FlyingSnake" then damageAmount = 1 +2* (math.random(4) +math.random(4) +math.random(4))+math.max(modifier(STR),modifier(DEX)) end
+					if MobType=="Lizard" then damageAmount = 1*2math.max(modifier(STR),modifier(DEX)) end
+					if MobType=="Commoner" then damageAmount = 2*math.random(4)+math.max(modifier(STR),modifier(DEX)) end
 				end
-				addEnnemyCombatTexte(script.parent.name.." hit "..other.name..cc.."for "..damageAmount)
+				damageAmount=math.min(0,damageAmount)
+				addEnnemyCombatTexte(script.parent.name," hit "..other.name..cc.."for "..damageAmount)
 				SpawnAsset(IMPACT_CHARACTER_VFX, pos, rot)
 			else
 				if(d20==1) then cc="Critical fail! " end
 				damageAmount =0
-				addEnnemyCombatTexte(cc..script.parent.name.." miss "..other.name)
+				addEnnemyCombatTexte(script.parent.name,cc.." miss "..other.name)
 			end	
 				
 		else

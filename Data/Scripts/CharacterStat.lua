@@ -323,7 +323,7 @@ function OnPlayerDied(player)
     else
         print("respawn "..player.name)
         Task.Wait(2)
-        player:Respawn(propLastSpawn, Rotation.New(0, 0, 45))
+        respawnPlayer(player)
     end
 end
 local waitTime=3
@@ -393,11 +393,12 @@ function levelup(player,level)
    end
     if(playerData.class.name=="Bard") then
         player.maxHitPoints=player.maxHitPoints+math.random(8)+modifier(player:GetResource("CON"))
+        player.hitPoints=player.maxHitPoints
        
     end
     if(playerData.class.name=="Barbarian") then
         player.maxHitPoints=player.maxHitPoints+math.random(12)+modifier(player:GetResource("CON"))
-
+        player.hitPoints=player.maxHitPoints
     end
    
     
@@ -444,6 +445,7 @@ function choixRace(player)
     playerData.race=race
     savePlayerData(player,playerData)
     addSystemCombatTexte("GreetingRoll",{waitingBestPlayerDice[player.name],playerData.race.name})
+    Task.Wait(0.2)
     Events.BroadcastToPlayer(player,"BannerMessage","GreetingRoll",{waitingBestPlayerDice[player.name],playerData.race.name})
     
     Task.Wait(2)
@@ -687,16 +689,17 @@ function endCombat(victory)
         local trigger=currentCombatZone:FindDescendantByName("Trigger")
         trigger.collision = Collision.FORCE_OFF
         Events.BroadcastToAllPlayers("BannerMessage","Victory")
+        Task.Wait(0.1)
         addSystemCombatTexte("Victory")
        
     else 
-        Events.BroadcastToAllPlayers("BigBannerMessage","GAME OVER",-1,Color.New(1,0,0))
+        Events.BroadcastToAllPlayers("BannerMessage","GAME OVER")
+        Task.Wait(0.1)
         addSystemCombatTexte("GameOver")
         Task.Wait(2)
         for i,p in ipairs(playersInCombat) do
             p:SetResource("incombat",0)
-            local spawn=World.FindObjectById("DC98C1DEF301876B:Combat_Spawn")
-            p:Respawn(spawn:GetWorldPosition(), Rotation.New(0, 0, 45))
+           respawnPlayer(p)
             
         end
         unfreezePlayers()
@@ -707,7 +710,11 @@ function endCombat(victory)
     initiativeCombatLength=0
     
 end
+function respawnPlayer(p)
+    local spawn=World.FindObjectById("DC98C1DEF301876B:Combat_Spawn")
+    p:Respawn(spawn:GetWorldPosition(), Rotation.New(0, 0, 45))
 
+end
 function startCombat(player,combatZone)
     
     if playersAreInCombat == false then

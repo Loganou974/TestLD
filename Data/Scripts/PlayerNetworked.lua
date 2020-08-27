@@ -5,7 +5,7 @@ function relache(player,touche)
    
 end
 function appuye(player,touche)     
-    print(" "..player.name.." appuye sur touche "..touche)
+   -- print(" "..player.name.." appuye sur touche "..touche)
    if touche == "ability_extra_22" then
         
         print(player.name.." want to roll a dice, he has "..player:GetResource("dice").." local has "..player:GetResource("dice"))
