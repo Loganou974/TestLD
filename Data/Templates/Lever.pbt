@@ -16,6 +16,7 @@
           }
         }
         ParentId: 14604704220691966294
+        ChildIds: 17593534314538445031
         ChildIds: 12396670034655922902
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25,6 +26,48 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 17593534314538445031
+        Name: "Column Segment 1m"
+        Transform {
+          Location {
+            X: -10.0000353
+            Y: -6.89665194e-06
+            Z: 0.000353108568
+          }
+          Rotation {
+            Yaw: -3.4150944e-06
+            Roll: 4.05133449e-07
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15064100755261421525
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16740235137211270422
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
         }
       }
       Objects {
@@ -209,6 +252,15 @@
             Value: "mc:etriggershape:box"
           }
         }
+      }
+    }
+    Assets {
+      Id: 16740235137211270422
+      Name: "Column Segment 1m"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_column_segment_001"
       }
     }
     Assets {
