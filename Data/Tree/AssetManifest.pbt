@@ -125,15 +125,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16767332477659565053
-  Name: "Advanced Bloom Post Process"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_post_process_bloom_advanced"
-  }
-}
-Assets {
   Id: 16740235137211270422
   Name: "Column Segment 1m"
   PlatformAssetType: 1
@@ -944,15 +935,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6724534832103276994
-  Name: "BG Flat 006"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_015"
-  }
-}
-Assets {
   Id: 6715683042647541526
   Name: "Fern 03"
   PlatformAssetType: 1
@@ -1274,15 +1256,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_floor_001_8m"
-  }
-}
-Assets {
-  Id: 2825426222838177148
-  Name: "Line Half 003a"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "LineHalf_003a"
   }
 }
 Assets {

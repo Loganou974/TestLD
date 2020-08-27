@@ -28,6 +28,7 @@
             Id: 11689345744273729414
           }
           AutoPlay: true
+          Transient: true
           Volume: 1
           Falloff: -1
           Radius: -1

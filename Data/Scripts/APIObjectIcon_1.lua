@@ -1,5 +1,5 @@
 ﻿--[[
-Copyright 2019 Manticore Games, Inc.
+Copyright 2019 Manticore Games, Inc. 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
@@ -14,33 +14,29 @@ WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEM
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --]]
-local ori=nil
--- nil OnPlayerDied(Player, Damage)
--- Fires an event for the client to display fly up text when hit the enemy player
-function OnPlayerDamaged(player, damage)
-	local position = Vector3.ZERO
-	if Object.IsValid(damage.sourcePlayer) then
-		position = damage.sourcePlayer:GetWorldPosition()
-	end
 
-	
-	if(damage.amount>0) then
-		player.animationStance = "unarmed_stun_dizzy"
-		Task.Wait(0.1)
-		player.animationStance = ori
-	else
-		player.animationStance = "unarmed_pickup"
-		Task.Wait(0.1)
-		player.animationStance = ori
-		
-	end
-    Events.BroadcastToAllPlayers ("PlayerDamage", damage.amount, position, player, damage.sourcePlayer)
+--[[
+This allows objects to have UI icons associated with them. This could be used for abilities, weapons, and possibly
+anything that can be held in an inventory. Object Icons are a purely client-side concept.
+--]]
+
+local API = {}
+
+-- nil SetObjectIcon(CoreObject, string) [Client]
+-- Called once on creation by each object that wishes to have an icon associated with it. Icon it stored as the MUID
+-- string of the icon asset (not a template).
+function API.SetObjectIcon(object, icon)
+	object.clientUserData.APIObjectIcons_Icon = icon
 end
 
-function OnPlayerJoined(player)
-	player.damagedEvent:Connect(OnPlayerDamaged)
-	ori=player.animationStance
+-- <string> GetObjectIcon(CoreObject) [Client]
+-- Returns the MUID of the icon or nil
+function API.GetObjectIcon(object)
+	if not object or not Object.IsValid(object) then
+		return nil
+	end
+
+	return object.clientUserData.APIObjectIcons_Icon
 end
 
--- Registering the event on player joined
-Game.playerJoinedEvent:Connect(OnPlayerJoined)
+return API

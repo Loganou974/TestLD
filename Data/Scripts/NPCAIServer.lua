@@ -354,7 +354,7 @@ function StepTowards(t)
 	local pos = ROOT:GetWorldPosition()
 	local distance=pos-targetPosition
 	distance=math.floor(distance.size/300)
-	print("step toward with distance to target="..distance.." speed ="..SPEED.." ratio "..SPEED/distance)
+	--print("step toward with distance to target="..distance.." speed ="..SPEED.." ratio "..SPEED/distance)
 	if(distance > SPEED) then
 		targetPosition=Vector3.Lerp(pos,targetPosition,SPEED/distance)
 	else 
@@ -624,7 +624,7 @@ function IsWithinRangeSquared(enemy, rangeSquared)
 		local pos = ROOT:GetWorldPosition()
 		local enemyPos = enemy:GetWorldPosition()
 		local delta = pos - enemyPos
-		print("is "..enemy.name.." in range "..rangeSquared.." distance squared="..delta.sizeSquared)
+		--print("is "..enemy.name.." in range "..rangeSquared.." distance squared="..delta.sizeSquared)
 		if (delta.sizeSquared < rangeSquared) then print("yes") else print("no") end
 		return (delta.sizeSquared < rangeSquared)
 	end

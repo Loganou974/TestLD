@@ -16,7 +16,6 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 12043759315761930390
         ChildIds: 17998387058591777119
         WantsNetworking: true
         Collidable_v2 {
@@ -27,47 +26,6 @@
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 12043759315761930390
-        Name: "CurrentGizmo"
-        Transform {
-          Location {
-            X: 7942.45459
-            Y: -6914.83154
-            Z: -784.666077
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5985259795857122150
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Event1"
-            String: "BEGIN_TURN"
-          }
-          Overrides {
-            Name: "cs:EventNPC"
-            String: "BEGIN_TURN_NPC"
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 18246902948662000702
-          }
         }
       }
       Objects {

@@ -1,6 +1,88 @@
 ﻿Name: "DayCyle"
 RootId: 11338460660553211326
 Objects {
+  Id: 16410151435810961167
+  Name: "CurrentGizmo"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11338460660553211326
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:EventPlayer"
+      String: "BEGIN_TURN"
+    }
+    Overrides {
+      Name: "cs:EventNPC"
+      String: "BEGIN_TURN_NPC"
+    }
+    Overrides {
+      Name: "cs:MUID"
+      String: "8E87744C0208AABB:Arrow"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 18246902948662000702
+    }
+  }
+}
+Objects {
+  Id: 7803994191094103002
+  Name: "CurrentGizmo"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11338460660553211326
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:EventPlayer"
+      String: "BEGIN_TARGET"
+    }
+    Overrides {
+      Name: "cs:EventNPC"
+      String: "BEGIN_TARGET_NPC"
+    }
+    Overrides {
+      Name: "cs:MUID"
+      String: "F1A5860CFBC7F135:Target"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 18246902948662000702
+    }
+  }
+}
+Objects {
   Id: 6812005437393135473
   Name: "ClientContext"
   Transform {

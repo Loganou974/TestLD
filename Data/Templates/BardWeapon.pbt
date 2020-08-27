@@ -607,6 +607,7 @@
         ChildIds: 3083507240789075185
         ChildIds: 6745609826433751400
         ChildIds: 2339103012442755487
+        ChildIds: 11751670243460946883
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6172,6 +6173,56 @@
         Script {
           ScriptAsset {
             Id: 6366115419987772397
+          }
+        }
+      }
+      Objects {
+        Id: 11751670243460946883
+        Name: "SetAbilityIconClientOptimized"
+        Transform {
+          Location {
+            X: -224612.266
+            Y: 1001386.25
+            Z: -9613.36
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16233834485808098591
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Ability"
+            ObjectReference {
+              SubObjectId: 5190349005861014096
+            }
+          }
+          Overrides {
+            Name: "cs:API"
+            AssetReference {
+              Id: 4483607067911827848
+            }
+          }
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 16219731231010482737
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 9835685409538525721
           }
         }
       }

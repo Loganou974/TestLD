@@ -15,6 +15,7 @@ local classes={
     {name="Wizard",hit=6}
 
 }
+local throwDice=nil
 local turnColorGreen=Color.FromStandardHex("14C600FF")
 local turnColorOrange=Color.FromStandardHex("EA7F00FF")
 local turnColorRed=Color.FromStandardHex("E60000FF")
@@ -84,16 +85,25 @@ function appuye(player,touche)
       UI.SetCursorVisible(not UI.IsCursorVisible())
      
    end
-   if touche == "ability_extra_17" then
-        
-        print(player.name.." want to roll a dice, he has "..player:GetResource("dice").." local has "..me:GetResource("dice"))
-        if player:GetResource("dice")>0 and canRoll then
-            canRoll=false
-            World.SpawnAsset("6D60A6D0D937FC17:DiceSound", {position = player:GetWorldPosition()})
-            Task.Spawn(function() canRoll=true end,3)
-            rollDice(player)
+   if touche == "ability_extra_22" then
+        canRoll=false
+       -- print(player.name.." want to roll a dice, he has "..player:GetResource("dice").." local has "..me:GetResource("dice"))
+        --if player:GetResource("dice")>0 and canRoll then
+        --    canRoll=false
+        --    World.SpawnAsset("6D60A6D0D937FC17:DiceSound", {position = player:GetWorldPosition()})
+         --   Task.Spawn(function() canRoll=true end,3)
+        --    rollDice(player)
 
-        end
+       -- end
+       --local ab=World.SpawnAsset("95EF61C0E461B809:ThrowDice")
+        --ab.owner=player
+       -- local inst=World.SpawnAsset("292F3698D56CC5DB:D20Geo", {position = pos})
+       -- inst.collision=Collision.FORCE_OFF
+        --inst:AttachToPlayer(player,"right_wrist")
+       -- ab:Activate()
+        --Task.Wait(0.1)
+        --inst:Destroy()
+        --ab:Destroy()
    end
     if touche == "ability_extra_27" then
        showCharacterScreen()
@@ -214,6 +224,7 @@ end
 function OnPlayerJoined(player)
     UI.SetCursorVisible(false)
     me=Game.GetLocalPlayer()
+    Task.Wait(0.1)
    if me ==player then
         print("Hello, " .. me.name .. "!") 
         propClassText_0:AttachToPlayer(me, "nameplate")

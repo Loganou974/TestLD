@@ -31,6 +31,7 @@ function OnEquipped(equipment, player)
     end
         if equipment.name == "BardSkills" then
             print("Etape 1.1")
+           
             playerData.class= classes[3]
             player.maxHitPoints = playerData.class.hit;
              player.hitPoints= player.maxHitPoints

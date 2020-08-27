@@ -43,7 +43,7 @@ local currentAbility = nil
 local executeDuration = 0.0
 local recoveryDuration = 0.0
 local cooldownDuration = 0.0
-
+local inst=nil
 -- <Ability> GetLocalPlayerAbilityWithBinding()
 -- Finds the first ability that matches the given binding
 function GetLocalPlayerAbilityWithBinding()
@@ -75,17 +75,24 @@ function UpdateCurrentAbility()
 
         local icon = AOI.GetObjectIcon(currentAbility)
         local iconColor = AOI.GetObjectColor(currentAbility)
-
+        
         if icon then
-            ICON:SetImage(icon)
+            inst=World.SpawnAsset(icon)
+            inst.parent=ICON
+            --ICON:SetImage(icon)
         else
             ICON:SetImage(DEFAULT_IMAGE)
         end
 
-        if iconColor then
-            ICON:SetColor(iconColor)
+        if iconColor and inst then
+          --  ICON:SetColor(iconColor)
+            local images=inst:FindDescendantsByType("UIImage")
+            for i=1,#images do
+                local image=images[i]
+                image:SetColor(iconColor)
+            end
         else
-            ICON:SetColor(ICON_COLOR)
+           -- ICON:SetColor(ICON_COLOR)
         end
 
         NAME_TEXT.text = currentAbility.name
@@ -116,11 +123,16 @@ function Tick(deltaTime)
             --print("currentAbility "..currentAbility.name)
             if currentAbility.isEnabled and currentAbility:GetCustomProperty("LevelRequirement")<=currentAbility.owner:GetResource("level") then
                 local iconColor = AOI.GetObjectColor(currentAbility)
-                if iconColor then
-                    ICON:SetColor(iconColor)
-                else
-                    ICON:SetColor(ICON_COLOR)
-                end
+                if iconColor and inst then
+                    --  ICON:SetColor(iconColor)
+                      local images=inst:FindDescendantsByType("UIImage")
+                      for i=1,#images do
+                          local image=images[i]
+                          image:SetColor(iconColor)
+                      end
+                  else
+                     -- ICON:SetColor(ICON_COLOR)
+                  end
             else
                 local newIconColor = Color.New(ICON_COLOR)
                 newIconColor.a = newIconColor.a / 5.0

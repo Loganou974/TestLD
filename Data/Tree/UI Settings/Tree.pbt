@@ -1,6 +1,32 @@
 ﻿Name: "UI Settings"
 RootId: 5628335192599470616
 Objects {
+  Id: 9499344343740933361
+  Name: "Gameplay"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5628335192599470616
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Gameplay_1"
+  }
+}
+Objects {
   Id: 7935632644703611674
   Name: "Kill Feed"
   Transform {
@@ -1280,7 +1306,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Effect Strength"
-      Float: 0
+      Float: 0.00337165524
     }
     Overrides {
       Name: "bp:Blend Weight"
@@ -1293,6 +1319,32 @@ Objects {
     Overrides {
       Name: "bp:Ragged Mask"
       Bool: true
+    }
+    Overrides {
+      Name: "bp:Unbounded"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Tint A"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Edge Speed"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Brightness Shift"
+      Float: -0.620060802
+    }
+    Overrides {
+      Name: "bp:Clear Radius"
+      Float: 0.566282034
+    }
+    Overrides {
+      Name: "bp:Center Area Contrast"
+      Float: 2.69675446
     }
   }
   Collidable_v2 {

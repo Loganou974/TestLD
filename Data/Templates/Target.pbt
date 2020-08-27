@@ -17,7 +17,6 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 4552367321158854685
-        ChildIds: 4162475291451399634
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -319,47 +318,6 @@
           StaticMesh {
             Physics {
             }
-          }
-        }
-      }
-      Objects {
-        Id: 4162475291451399634
-        Name: "CurrentGizmo"
-        Transform {
-          Location {
-            X: 8084.26904
-            Y: -6914.83154
-            Z: -784.666077
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4438679500385817809
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Event1"
-            String: "BEGIN_TURN"
-          }
-          Overrides {
-            Name: "cs:EventNPC"
-            String: "BEGIN_TURN_NPC"
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 18246902948662000702
           }
         }
       }

@@ -121,6 +121,8 @@ function DisplayDamage(damage, position, targetPlayer, sourcePlayer)
         end
     elseif targetPlayer == LOCAL_PLAYER then
         if damage > 0 then
+           
+          
             if Object.IsValid(sourcePlayer) then
                 UI.ShowDamageDirection(sourcePlayer)
                 ShowFlyUpText(damage, position, SELF_DAMAGE_TEXT_COLOR)
@@ -132,12 +134,14 @@ function DisplayDamage(damage, position, targetPlayer, sourcePlayer)
             if SHOW_HEALTH_CHANGE_EFFECT then
                 TriggerHitPostProcess(Color.RED)
             end
+           
         elseif damage == 0 then
-            UI.ShowFlyUpText("BLOCKED", LOCAL_PLAYER:GetWorldPosition(),
+            UI.ShowFlyUpText("DODGED", LOCAL_PLAYER:GetWorldPosition(),
                 {duration = DAMAGE_TEXT_DURATION,
                 color = Color.CYAN,
                 isBig = IS_BIG_TEXT})
         else
+           
             if SHOW_HEALTH_CHANGE_EFFECT then
                 TriggerHitPostProcess(Color.GREEN)
                 ShowFlyUpText(math.abs(damage), LOCAL_PLAYER:GetWorldPosition(), Color.GREEN)

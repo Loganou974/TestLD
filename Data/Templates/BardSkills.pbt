@@ -194,6 +194,7 @@
           }
         }
         ParentId: 6972370799800572422
+        ChildIds: 11707094935715199492
         ChildIds: 14345679990447544764
         WantsNetworking: true
         Collidable_v2 {
@@ -203,6 +204,56 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 11707094935715199492
+        Name: "SetAbilityIconClientOptimized"
+        Transform {
+          Location {
+            X: -34.28125
+            Y: -74.9375
+            Z: -20.4941406
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7632856318220555477
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Ability"
+            ObjectReference {
+              SubObjectId: 6972370799800572422
+            }
+          }
+          Overrides {
+            Name: "cs:API"
+            AssetReference {
+              Id: 4483607067911827848
+            }
+          }
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 5794851202175331359
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 9835685409538525721
+          }
         }
       }
       Objects {
@@ -292,6 +343,8 @@
           }
         }
         ParentId: 16058774555376254967
+        ChildIds: 6326779751599585930
+        ChildIds: 12639767024272816652
         UnregisteredParameters {
           Overrides {
             Name: "cs:LevelRequirement"
@@ -353,6 +406,119 @@
           Animation: "1hand_melee_slash_left"
           KeyBinding_v2 {
             Value: "mc:egameaction:extraaction_33"
+          }
+        }
+      }
+      Objects {
+        Id: 6326779751599585930
+        Name: "ServerContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3242648422590620471
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+          Type: Server
+        }
+      }
+      Objects {
+        Id: 12639767024272816652
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3242648422590620471
+        ChildIds: 2607030631701699393
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 2607030631701699393
+        Name: "SetAbilityIconClientOptimized"
+        Transform {
+          Location {
+            X: 215446.594
+            Y: -995926.25
+            Z: 9472.24902
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: 6.83018834e-06
+            Roll: -5.4610717e-12
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12639767024272816652
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Ability"
+            ObjectReference {
+              SubObjectId: 3242648422590620471
+            }
+          }
+          Overrides {
+            Name: "cs:API"
+            AssetReference {
+              Id: 4483607067911827848
+            }
+          }
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 5794851202175331359
+            }
+          }
+          Overrides {
+            Name: "cs:Color"
+            Color {
+              G: 0.784105659
+              B: 0.799999952
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 9835685409538525721
           }
         }
       }

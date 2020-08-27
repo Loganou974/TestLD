@@ -13,11 +13,11 @@ end
 function OnEndOverlap(whichTrigger, other)
 	if other:IsA("Player") then
 		whichTrigger.collision= Collision.FORCE_OFF
-		Events.BroadcastToServer("ROLL_DICE",other,20)
+		Events.Broadcast("ROLL_DICE",other,20)
 		Task.Spawn(function ()
 
 		script.parent.parent:Destroy()
-		end, 4)
+		end, 10)
 	end
 end
 

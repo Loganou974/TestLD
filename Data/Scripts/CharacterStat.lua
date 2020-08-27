@@ -12,7 +12,7 @@ local currentCombatZone=nil
 local races={
     {name ="Dwarf",bonus={0,0,0,2,0,0,0},speed=25,description="Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor"},
     {name ="Hill Dwarf",bonus={0,0,0,2,1,0,0},speed=25,description="As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience."},
-    {name ="Moutain Dwarf",bonus={2,0,0,2,0,0,0},speed=25,description="As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain."},
+    {name ="Mountain Dwarf",bonus={2,0,0,2,0,0,0},speed=25,description="As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain."},
     {name ="Elf",bonus={0,0,2,0,0,0,0},speed=30,description="Your size is Medium. Speed. Your base walking speed is 30 feet."},
     {name ="High Elf",bonus={0,1,2,0,0,0,0},speed=30,description="The sun elves of Faerûn are highly intelligent. "},
     {name ="Wood Elf",bonus={0,0,2,0,1,0,5},speed=35,description="As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests."},
@@ -367,6 +367,7 @@ function levelup(player,level)
     player:AddResource("statpoint",1)
     print(playerData.class.name)
     print(playerData.class.skills[level])
+    Events.BroadcastToPlayer(player,"LEVEL_UP")
    if level <= #playerData.class.skills then
     local skill=nil
      for _, obj in ipairs(player:GetEquipment()) do
@@ -381,7 +382,7 @@ function levelup(player,level)
                 end
         
             end
-             Events.BroadcastToPlayer(player,"LEVEL_UP",obj.name)
+             
            
            
             
@@ -724,7 +725,7 @@ function startCombat(player,combatZone)
         for i,p in ipairs(playersInCombat) do
             p:SetWorldPosition(player:GetWorldPosition())
             p:SetResource("incombat",1)
-            p:SetResource("Dice",1)
+           
             
         end
       
@@ -752,6 +753,11 @@ function startCombat(player,combatZone)
             initiativeCombatLength=initiativeCombatLength+1
         end
         phasePrecombat=true
+        for i,p in ipairs(playersInCombat) do
+           
+            p:SetResource("Dice",1)
+            
+        end
         --addDebugCombatTexte(" Mob trouve: "..#mobs.." ",debug)
          
        
@@ -941,7 +947,7 @@ end
 
 function rollDice(player,max)
     local rand=math.random(max)
- 
+   
     player:RemoveResource("dice",1)
     --addDebugCombatTexte("rolled an "..rand.." reste "..player:GetResource("dice").." des",debug)
     --Events.BroadcastToAllPlayers("BigBannerMessage",player.name.." rolled an "..rand,3,Color.FromStandardHex("#FFFFFF"))

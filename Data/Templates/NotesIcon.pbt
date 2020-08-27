@@ -25,7 +25,7 @@
         }
         Control {
           Width: 100
-          Height: 100
+          Height: 94
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -75,13 +75,16 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 100
-          Height: 30
+          Width: 45
+          Height: -5
+          UIX: -10
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
+          UseParentHeight: true
           Button {
             FontColor {
               A: 1
