@@ -1,5 +1,30 @@
 ﻿Entries {
   Key {
+    StringVar: "class"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Novice"
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
     StringVar: "race"
   }
   SimpleValue {
@@ -9,7 +34,7 @@
           StringVar: "speed"
         }
         SimpleValue {
-          IntVar: 25
+          IntVar: 30
         }
       }
       Entries {
@@ -17,15 +42,7 @@
           StringVar: "description"
         }
         SimpleValue {
-          StringVar: " Your base walking speed is 25 feet."
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Gnome"
+          StringVar: "Your base walking speed is 30 feet."
         }
       }
       Entries {
@@ -39,7 +56,7 @@
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -47,7 +64,7 @@
                 IntVar: 2
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -63,7 +80,7 @@
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -93,29 +110,12 @@
           }
         }
       }
-    }
-  }
-}
-Entries {
-  Key {
-    StringVar: "class"
-  }
-  SimpleValue {
-    Table {
       Entries {
         Key {
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Novice"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
+          StringVar: "Half Orc"
         }
       }
     }

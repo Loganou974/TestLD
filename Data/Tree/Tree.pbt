@@ -11395,8 +11395,9 @@ Objects {
   Name: "Combat_Spawn"
   Transform {
     Location {
-      X: 830.546875
+      X: 1517.67188
       Y: 3175.75
+      Z: 472.993164
     }
     Rotation {
     }
@@ -11457,17 +11458,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 4556.43457
-            Y: 1531.58789
-            Z: 491.97168
+            X: 3652.375
+            Y: 1531.5625
+            Z: -24.2939453
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: 3.17620182
-            Yaw: -77.532135
-            Roll: 95.9299927
+            Yaw: -77.5321045
+            Roll: 95.9300156
           }
         }
       }
@@ -11500,17 +11501,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 4157.33496
-            Y: -1547.15771
-            Z: 475.330078
+            X: 3253.26563
+            Y: -1547.1875
+            Z: -40.9355469
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -0.985473275
-            Yaw: -118.278404
-            Roll: 100.058075
+            Pitch: -0.985473633
+            Yaw: -118.278366
+            Roll: 100.058098
           }
         }
       }
