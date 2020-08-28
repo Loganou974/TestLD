@@ -808,7 +808,9 @@ function startCombat(player,combatZone)
         end
         phasePrecombat=true
         for i,p in ipairs(playersInCombat) do
-           
+            waitingPlayerDice[p.name]=1
+            waitingBestPlayerDice[p.name]=0
+            callbackPlayerDice[p.name]=abilityCheck
             p:SetResource("Dice",1)
             
         end
@@ -1012,7 +1014,7 @@ end
 
 function rollDice(player,max)
     local rand=math.random(max)
-   
+    
     player:RemoveResource("dice",1)
     --addDebugCombatTexte("rolled an "..rand.." reste "..player:GetResource("dice").." des",debug)
     --Events.BroadcastToAllPlayers("BigBannerMessage",player.name.." rolled an "..rand,3,Color.FromStandardHex("#FFFFFF"))

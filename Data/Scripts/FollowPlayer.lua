@@ -6,7 +6,7 @@ function Tick()
     script.parent.isEnabled=propActive
     if(p~=nil and Object.IsValid(p)) then
    pos= p:GetWorldPosition()
-   pos.z=pos.z-propOffsetZ
+   if propOffsetZ then pos.z=pos.z-propOffsetZ end
    script.parent:SetWorldPosition(pos)
     end
 end

@@ -1,15 +1,27 @@
 ﻿local trigger = script.parent
-local propOnEnterSpeech = trigger:GetCustomProperty("OnEnterSpeech")
-local propOnLeaveSpeech = trigger:GetCustomProperty("OnLeaveSpeech")
-local propAllPlayers = trigger:GetCustomProperty("AllPlayers")
-local propOnInteractSpeech = trigger:GetCustomProperty("OnInteractSpeech")
 
+local propAllPlayers = trigger:GetCustomProperty("AllPlayers")
+
+local propTransient = script:GetCustomProperty("Transient")
+local enterSpeech = trigger:GetCustomProperty("OnEnter"):WaitForObject()
+local leaveSpeech = trigger:GetCustomProperty("OnLeave"):WaitForObject()
+local interactSpeech = trigger:GetCustomProperty("OnInteract"):WaitForObject()
 if propAllPlayers==nil then propAllPlayers=false end
+
+
+
+
+local enterSpeeches=enterSpeech:GetChildren()
+local leaveSpeeches=leaveSpeech:GetChildren()
+local interactSpeeches=interactSpeech:GetChildren()
 function OnBeginOverlap(whichTrigger, other)
 	
 	
 	if other:IsA("Player") then
+		for i=1,#enterSpeeches do
+			local propOnEnterSpeech=enterSpeeches[i]:GetCustomProperty("Texte")
 		speak(propOnEnterSpeech,other)
+		end
 	end
 end
 
@@ -43,15 +55,22 @@ function speakToPlayers(message)
 end
 function OnEndOverlap(whichTrigger, other)
 	if other:IsA("Player") then
-		speak(propOnLeaveSpeech,other)
+		for i=1,#leaveSpeeches do
+			local propOnEnterSpeech=leaveSpeeches[i]:GetCustomProperty("Texte")
+		speak(propOnEnterSpeech,other)
+		end
 	end
 end
 
 function OnInteracted(whichTrigger, other)
 	if other:IsA("Player") then
-		speak(propOnInteractSpeech,other)
+		for i=1,#interactSpeeches do
+			local propOnEnterSpeech=interactSpeeches[i]:GetCustomProperty("Texte")
+		speak(propOnEnterSpeech,other)
+		end
 	end
 end
+
 
 trigger.beginOverlapEvent:Connect(OnBeginOverlap)
 trigger.endOverlapEvent:Connect(OnEndOverlap)

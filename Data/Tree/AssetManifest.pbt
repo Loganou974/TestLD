@@ -359,6 +359,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16243497719238738844
+  Name: "Pyramid - 6-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_sixsided_hq_001"
+  }
+}
+Assets {
   Id: 16203235027444674076
   Name: "Flower Wild Lily 01"
   PlatformAssetType: 1
@@ -899,6 +908,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12366754416923914931
+  Name: "Pyramid - 7-Sided Hollow"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_7_sided_hollow_001"
+  }
+}
+Assets {
   Id: 12332326778664978182
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -1061,6 +1079,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11389630301817212699
+  Name: "Wedge - Convex Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_curved_convex_hq_001"
+  }
+}
+Assets {
   Id: 11311872554868312005
   Name: "\"A Slice of Life\" Music Construction Kit (Layers) 01"
   PlatformAssetType: 10
@@ -1166,6 +1193,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_bottle_001"
+  }
+}
+Assets {
+  Id: 10515482815474555518
+  Name: "Branches Cluster Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_big_001"
   }
 }
 Assets {
