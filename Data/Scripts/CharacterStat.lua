@@ -3,6 +3,7 @@ local MODULE = require( script:GetCustomProperty("ModuleManager") )
 local waitingPlayerDice={}
 local waitingBestPlayerDice={}
 local callbackPlayerDice={}
+local speeches=World.FindObjectById("12C0A430C309174F:NarratorSpeech")
 function NPC_MANAGER() return MODULE.Get("standardcombo.NPCKit.NPCManager") end
 function NAV_MESH() return _G.NavMesh end
 local debug=false
@@ -67,11 +68,14 @@ function loadPlayerData(player)
 end
 
 function savePlayerData(player,playerData)
-    Storage.SetPlayerData(player, playerData)
+    
+    print("sending refresh to "..player.name)
     --addDebugCombatTexte("player "..player.name.." "..player:GetResource("STR"),debug)
     Events.BroadcastToPlayer(player,"STAT_REFRESH",playerData.race.name,playerData.class.name)
+    print("senT WITH "..player.name.." race="..playerData.race.name.." class="..playerData.class.name)
     --Events.BroadcastToPlayer(player,"STATPOINT_REFRESH",playerData.statPoint,)
-   
+    local resultCode,errorMessage =Storage.SetPlayerData(player, playerData)
+   print("Storage "..resultCode.." :"..errorMessage.." for player "..player.name)
     
 end
 
@@ -235,14 +239,15 @@ function OnStatpointGained(player,stat)
 end
 
 function GetStat(player)
-    addDebugCombatTexte("get stat for "..player.name,debug)
-
+    --addDebugCombatTexte("get stat for "..player.name,debug)
+    Task.Wait(0.1)
     playerData=loadPlayerData(player)
+    
     player:ClearResources()
     player:SetResource("incombat",0)
    
     if player:GetResource("STR") == nil or player:GetResource("STR") == 0  then
-        addDebugCombatTexte("first time char",debug)
+      --  addDebugCombatTexte("first time char",debug)
 		playerData.race=races[math.random(#races)]
         playerData.class=  {name="Novice",hit=100}
         
@@ -264,7 +269,7 @@ function GetStat(player)
         player:SetResource("Profiency",1)
        
     else
-        addDebugCombatTexte("charac " .. player:GetResource("STR"))
+        --addDebugCombatTexte("charac " .. player:GetResource("STR"))
         player:SetResource("SPEED",playerData.race.speed)
     end
  
@@ -326,34 +331,56 @@ function OnPlayerDied(player)
         respawnPlayer(player)
     end
 end
-local waitTime=3
+
+function GetSpeech(messageId,params)
+   
+    --local speeches=World.FindObjectById("8A4AB8499744FEA5:NarratorSpeech")
+    --print("message "..messageId)
+    local speech=speeches:FindDescendantByName(messageId)
+    if speech==nil then return messageId end
+    --if not obj then return nom end
+    local message=speech:GetCustomProperty("Texte")
+    if params then
+     for i=1,#params do
+        message=string.gsub(message,"$"..i,params[i])
+     end
+    end
+    return message
+end
+
+local waitTime=1
+local gameplay=World.FindObjectById("83D47359D7CB64F1:Gameplay")
 function OnPlayerJoined(player)
     
     
-   
-   
-    players= Game.GetPlayers()
-    print("N°"..#players..") "..player.name)
-    player.diedEvent:Connect(OnPlayerDied)
+    --print("allo? "..gameplay.name)
+    --Task.Spawn(function() GetStat(player) end,math.random(1))
+    GetStat(player)
+    --Task.Wait(0.5)
+    --players= Game.GetPlayers()
+    --print("N°"..#players..") "..player.name)
+    
+    
+
     addFriendCombatTexte("World","Greeting0",{player.name})
     --" is ready to play some adventures"
-    Events.BroadcastToPlayer(player,"BannerMessage","Greeting1",{player.name,player.name})
-    Task.Wait(0.1)
-    addSystemCombatTexte("Greeting1",{player.name})
-    Task.Wait(waitTime)
-    GetStat(player)
+    Events.BroadcastToPlayer(player,"BannerMessage","Greeting1",{player.name})
+    --Task.Wait(0.1)
+    addSystemCombatTexte("Greeting1",{player.name},player)
+    --Task.Wait(waitTime)
+   
     Events.BroadcastToPlayer(player,"BannerMessage","Greeting2")
     
-    addSystemCombatTexte("Greeting2")
-    Task.Wait(waitTime)
+    addSystemCombatTexte("Greeting2",{},player)
+    Task.Wait(0.3)
     Events.BroadcastToPlayer(player,"BannerMessage","Greeting3")
-    Task.Wait(waitTime/2)
+    --Task.Wait(waitTime/2)
     waitingPlayerDice[player.name]=2
     waitingBestPlayerDice[player.name]=0
     callbackPlayerDice[player.name]=choixRace
     player:AddResource("dice",2)
     player.resourceChangedEvent:Connect(OnResourceChanged)
-    
+    player.diedEvent:Connect(OnPlayerDied)
   
 end
 function modifier(value)
@@ -366,7 +393,7 @@ function levelup(player,level)
     player:SetResource("level",level)
     addSystemCombatTexte("LevelUp",{player.name,player:GetResource("level")})
     player:AddResource("statpoint",1)
-    player:SetResource("Profiency",playerData.class.proficiency[player:GetResource("level")])
+    if( playerData.class.proficiency[player:GetResource("level")] ==nil) then  player:SetResource("Profiency",playerData.class.proficiency[player:GetResource("level")]) end
     print(playerData.class.name)
     print(playerData.class.skills[level])
     Events.BroadcastToPlayer(player,"LEVEL_UP")
@@ -423,36 +450,36 @@ function choixRace(player)
     local desc=""
     desc=" ("
     if race.bonus[1] >0 then
-        desc=desc.." / STR +"..race.bonus[1]
+        desc=desc.."/STR+"..race.bonus[1]
     end
     if race.bonus[2] >0 then
-        desc=desc.." / INT +"..race.bonus[2]
+        desc=desc.."/INT+"..race.bonus[2]
     end
     if race.bonus[3] >0 then
-        desc=desc.." / DEX +"..race.bonus[3]
+        desc=desc.."/DEX+"..race.bonus[3]
     end
     if race.bonus[4] >0 then
-        desc=desc.." / CON +"..race.bonus[4]
+        desc=desc.."/CON+"..race.bonus[4]
     end
     if race.bonus[5] >0 then
-        desc=desc.." / WIS +"..race.bonus[5]
+        desc=desc.."/WIS+"..race.bonus[5]
     end
     if race.bonus[6] >0 then
-        desc=desc.." / CHA +"..race.bonus[6]
+        desc=desc.."/CHA+"..race.bonus[6]
     end
     desc=desc..")"
     race.description=desc
     playerData.race=race
     savePlayerData(player,playerData)
-    addSystemCombatTexte("GreetingRoll",{waitingBestPlayerDice[player.name],playerData.race.name})
-    Task.Wait(0.2)
+    addSystemCombatTexte("GreetingRoll",{waitingBestPlayerDice[player.name],playerData.race.name},player)
+    --Task.Wait(0.2)
     Events.BroadcastToPlayer(player,"BannerMessage","GreetingRoll",{waitingBestPlayerDice[player.name],playerData.race.name})
     
-    Task.Wait(2)
+   -- Task.Wait(2)
     local raceName=string.gsub(race.name," ","")
     Events.BroadcastToPlayer(player,"BannerMessage","GreetingRace"..raceName,{desc})
-    Task.Wait(2)
-    addSystemCombatTexte("GreetingRace"..raceName,{desc})
+   -- Task.Wait(2)
+    addSystemCombatTexte("GreetingRace"..raceName,{desc},player)
    
    
 
@@ -461,7 +488,7 @@ function choixRace(player)
 end
 function OnResourceChanged(player,resourceid,newvalue)
     playerData=loadPlayerData(player)
-    Task.Wait(0.1)
+    --Task.Wait(0.1)
     if resourceid =="dice" and waitingPlayerDice[player.name]>0 then
         waitingPlayerDice[player.name]=waitingPlayerDice[player.name]-1
         if waitingBestPlayerDice[player.name] == 0 then
@@ -575,25 +602,34 @@ function FindNearestTarget(me)
     return nearestEnemy
 
 end
-function addSystemCombatTexte(message,params)
-    --print("asct:"..message)
-    --Task.Wait(0.5)
-    Events.BroadcastToAllPlayers("addSystemCombatTexte",message,params)
+function addSystemCombatTexte(message,params,dest)
+    print("asct:"..message)
+    --Task.Wait(0.2)
+  -- if dest==nil then  Events.BroadcastToAllPlayers("addSystemCombatTexte",message,params)
+  -- else Events.BroadcastToPlayer(dest,"addSystemCombatTexte",message,params)
+    local message =GetSpeech(message,params)
+     gameplay:SetNetworkedCustomProperty("systemCombatTexte", message)
+  -- end
    -- Task.Wait(0.5)
 end
 function addDebugCombatTexte(message,params)
-    
-    Events.Broadcast("addDebugCombatTexte",message,debug,params)
+    local message =GetSpeech(message,params)
+    --Events.Broadcast("addDebugCombatTexte",message,debug,params)
+    gameplay:SetNetworkedCustomProperty("debugCombatTexte", message)
     --Task.Wait(0.5)
     --print(message)
 end
 function addFriendCombatTexte(source,message,params)
-    Events.BroadcastToAllPlayers("addFriendCombatTexte",source,message,params)
+    local message =GetSpeech(message,params)
+    --Events.BroadcastToAllPlayers("addFriendCombatTexte",source,message,params)
+    gameplay:SetNetworkedCustomProperty("friendCombatTexte", source..":"..message)
    -- Task.Wait(0.5)
     --print(message)
 end
 function addEnnemyCombatTexte(message)
-   Events.BroadcastToAllPlayers("addEnnemyCombatTexte",source,message,params)
+    local message =GetSpeech(message,params)
+  -- Events.BroadcastToAllPlayers("addEnnemyCombatTexte",source,message,params)
+  gameplay:SetNetworkedCustomProperty("ennemyCombatTexte", message)
    --Task.Wait(0.5)
   --print(message)
 end

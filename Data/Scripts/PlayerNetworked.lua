@@ -24,7 +24,7 @@ end
 function rollDice(player)
     local pos = player:GetWorldPosition()
     
-    
+    --print("roll dice")
     --if(player==Game:GetLocalPlayer()) then
        -- local ab=World.SpawnAsset("95EF61C0E461B809:ThrowDice")
        -- ab.owner=player

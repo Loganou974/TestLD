@@ -359,30 +359,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16327934883181731081
-  Name: "Icon Food"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Food"
-  }
-}
-Assets {
   Id: 16244414786145463704
   Name: "Underwater Post Process"
   PlatformAssetType: 20
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_post_process_water"
-  }
-}
-Assets {
-  Id: 16241833908851998054
-  Name: "BG Flat 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_020"
   }
 }
 Assets {
@@ -410,15 +392,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_gold_001"
-  }
-}
-Assets {
-  Id: 15944708149829882904
-  Name: "Icon Footprint"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_FootPrint"
   }
 }
 Assets {
@@ -590,15 +563,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_007"
-  }
-}
-Assets {
-  Id: 14807460421707931889
-  Name: "Icon Random"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Random"
   }
 }
 Assets {
@@ -1358,15 +1322,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9351166523143381915
-  Name: "Line Half 004a"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "LineHalf_004a"
-  }
-}
-Assets {
   Id: 9299671629886979862
   Name: "Rock Block 01"
   PlatformAssetType: 1
@@ -2105,30 +2060,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4878364448582661331
-  Name: "Frame Beveled 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameSolid8px__019"
-  }
-}
-Assets {
   Id: 4854270377050611262
   Name: "Pipe"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_001"
-  }
-}
-Assets {
-  Id: 4593055330877944043
-  Name: "Fantasy Shape 003"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Shape_003"
   }
 }
 Assets {
@@ -2240,15 +2177,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4021350626834511320
-  Name: "Frame Highlighted 012"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameHighlighted_029"
-  }
-}
-Assets {
   Id: 3953273939278097480
   Name: "Teardrop - Truncated"
   PlatformAssetType: 1
@@ -2309,15 +2237,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_curve_001"
-  }
-}
-Assets {
-  Id: 3517681644486483565
-  Name: "BG Gradient 012"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundFlat_029"
   }
 }
 Assets {
@@ -2690,15 +2609,6 @@ Assets {
   }
 }
 Assets {
-  Id: 885896236593327937
-  Name: "Fantasy Frame 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Frame_001"
-  }
-}
-Assets {
   Id: 831638702062843835
   Name: "Whitebox Wall 01 Doorway"
   PlatformAssetType: 1
@@ -2804,14 +2714,5 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "fxsm_waterfall_straight"
-  }
-}
-Assets {
-  Id: 7671792711664647
-  Name: "Center Arrow 002 Wedge"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "CenterArrow_002Wedge"
   }
 }

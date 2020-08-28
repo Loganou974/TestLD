@@ -2,6 +2,7 @@
 
 local texts=script.parent:GetChildren()
 local speeches=World.FindObjectById("12C0A430C309174F:NarratorSpeech")
+local gameplay=World.FindObjectById("83D47359D7CB64F1:Gameplay")
 local ligneTexte={}
 local x=10
 local y=0
@@ -16,7 +17,9 @@ for i=1,#texts do
     end
 
 end
+local listener=nil
 function GetSpeech(messageId,params)
+   
     --local speeches=World.FindObjectById("8A4AB8499744FEA5:NarratorSpeech")
     print("message "..messageId)
     local speech=speeches:FindDescendantByName(messageId)
@@ -43,7 +46,7 @@ end
 
 function addSystemCombatTexte(message,params)
     local message=GetSpeech(message,params)
-   
+    print("recu dans sct")
 
     addSimpleTexte("Game Master: "..message,Color.WHITE)
    
@@ -75,12 +78,46 @@ function addTexte(messageId,col,params)
     
     addSimpleTexte(message,col,params)
 end
+function OnNewText(coreObject, propertyName)
+    print("recu par custom networked "..propertyName)
+    
+   -- print("newValue "..newValue)
+    --addSystemCombatTexte(newValue)
+    if propertyName =="ennemyCombatTexte" then
+        local newValue = gameplay:GetCustomProperty("ennemyCombatTexte")
+        addEnnemyCombatTexte(newValue)
+    end
+
+    if propertyName =="systemCombatTexte" then
+        local newValue = gameplay:GetCustomProperty("systemCombatTexte")
+        addSystemCombatTexte(newValue)
+    end
+
+    if propertyName =="friendCombatTexte" then
+        local newValue = gameplay:GetCustomProperty("friendCombatTexte")
+        addFriendCombatTexte(newValue)
+    end
+
+    if propertyName =="debugCombatTexte" then
+        local newValue = gameplay:GetCustomProperty("debugCombatTexte")
+        addDebugCombatTexte(newValue)
+    end
+    
+end
+function OnPlayerJoined(player)
+    
+    if listener==nil then
+        listener=gameplay.networkedPropertyChangedEvent:Connect(OnNewText)
+    end
+end
+Game.playerJoinedEvent:Connect(OnPlayerJoined)
 
 Events.Connect("addFriendCombatTexte", addFriendCombatTexte)
 Events.Connect("addSystemCombatTexte", addSystemCombatTexte)
 Events.Connect("addDebugCombatTexte", addDebugCombatTexte)
 Events.Connect("addEnnemyCombatTexte", addEnnemyCombatTexte)
 Events.Connect("addTexte", addTexte)
+
 
 --    Log.context.addSystemCombatTexte(player.name.." is ready to play some adventures")
 --local Log = script:GetCustomProperty("Log"):WaitForObject()

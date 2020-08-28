@@ -289,7 +289,7 @@ end
 local firstTimeHorsCombat=true
 local combatMusic=nil
 function OnResourceChanged(player, resourceId, newValue)
-    print("ressource changed for "..player.name.." id="..resourceId.." value="..newValue)
+    --print("ressource changed for "..player.name.." id="..resourceId.." value="..newValue)
     stat_refresh2()
     if resourceId=="classe" then
            for i,v in ipairs(classes) do
@@ -354,7 +354,7 @@ end
 local lastLocationSinceDeltaTime=0
 local distance=0
 function Tick(deltaTime)
-    
+    if(me==nil) then me=Game.GetLocalPlayer() end
     if me:GetResource("incombat")==1 then
         if isPlaying then chrono=time()-startTurnTime 
            --    print("chrono "..chrono.." sur "..chronoMax)

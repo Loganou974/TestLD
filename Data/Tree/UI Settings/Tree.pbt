@@ -15,6 +15,41 @@ Objects {
     }
   }
   ParentId: 5628335192599470616
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:systemCombatTexte"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:friendCombatTexte"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:ennemyCombatTexte"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:debugCombatTexte"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:systemCombatTexte:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:friendCombatTexte:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ennemyCombatTexte:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:debugCombatTexte:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
