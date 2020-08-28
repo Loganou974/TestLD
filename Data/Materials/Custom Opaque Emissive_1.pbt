@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 313092475843033176
-  Name: "Custom Opaque Emissive"
+  Name: "Custom Opaque Dark"
   PlatformAssetType: 13
   SerializationVersion: 62
   CustomMaterialAsset {
@@ -13,8 +13,6 @@
       Overrides {
         Name: "color"
         Color {
-          R: 0.799999952
-          G: 0.190728456
           A: 1
         }
       }
