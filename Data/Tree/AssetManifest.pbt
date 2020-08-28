@@ -116,15 +116,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17847068962151006321
-  Name: "Curling Dust VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_base_curl"
-  }
-}
-Assets {
   Id: 17718112535551741152
   Name: "Fantasy Castle Wall Foundation 01 - Pillar 01"
   PlatformAssetType: 1
@@ -644,15 +635,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_gen_whitebox_roof_001_peak"
-  }
-}
-Assets {
-  Id: 14299811882235610539
-  Name: "Creature Bat Squeaks 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_creature_bat_squeaks_01a_Cue_ref"
   }
 }
 Assets {
@@ -1511,15 +1493,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7792331592793191613
-  Name: "Creatire Bat Wings Flapping 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_creature_bat_wings_flapping_01a_Cue_ref"
-  }
-}
-Assets {
   Id: 7782807286916071675
   Name: "Fantasy Castle Accessory Tower 01 - 12m"
   PlatformAssetType: 1
@@ -1787,15 +1760,6 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_portal"
-  }
-}
-Assets {
-  Id: 6665120206912032206
-  Name: "Smoke Puff Radial VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_smoke_puff_radial"
   }
 }
 Assets {

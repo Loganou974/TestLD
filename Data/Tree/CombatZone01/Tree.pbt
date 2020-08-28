@@ -21,7 +21,6 @@ Objects {
       String: "As you walk into the room, a bunch of aggressive lizard attacks you."
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

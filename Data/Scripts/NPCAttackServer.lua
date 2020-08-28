@@ -82,7 +82,7 @@ function Attack(target)
 	d20=math.random(20)
 	d20Total=(d20+math.max(modifier(STR),modifier(DEX))+BonusToHit)
 	print("Attack roll from "..script.parent.name.." d20="..d20.."total="..d20Total)
-	addEnnemyCombatTexte(script.parent.name, " Attack roll to hit"..target.name.." :"..d20.."total="..d20Total)
+	addEnnemyCombatTexte(script.parent.name, " Attack roll to hit "..target.name.." :"..d20.." total="..d20Total)
 		
 	 AC=0
 	if target:IsA("Player") then
@@ -158,12 +158,12 @@ function OnProjectileImpact(projectile, other, hitResult)
 					if MobType=="Commoner" then damageAmount = 2*math.random(4)+math.max(modifier(STR),modifier(DEX)) end
 				end
 				damageAmount=math.min(0,damageAmount)
-				addEnnemyCombatTexte(script.parent.name," hit "..other.name..cc.."for "..damageAmount)
+				addEnnemyCombatTexte(script.parent.name," hit "..other.name..cc.."for "..damageAmount.." damage")
 				SpawnAsset(IMPACT_CHARACTER_VFX, pos, rot)
 			else
 				if(d20==1) then cc="Critical fail! " end
 				damageAmount =0
-				addEnnemyCombatTexte(script.parent.name,cc.." miss "..other.name)
+				addEnnemyCombatTexte(script.parent.name,cc.." miss "..other.name.."("..d20Total.."<"..AC..")")
 			end	
 				
 		else

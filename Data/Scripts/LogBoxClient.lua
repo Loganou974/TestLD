@@ -36,12 +36,16 @@ end
 
 function addFriendCombatTexte(source,message,params)
     local message=GetSpeech(message,params)
-    addSimpleTexte(source..": "..message,Color.GREEN)
+    if(source ~=nil) then addSimpleTexte(source..": "..message,Color.GREEN)
+    else addSimpleTexte(message,Color.GREEN)
+    end
 end
 
 function addEnnemyCombatTexte(source,message,params)
     local message=GetSpeech(message,params)
-    addSimpleTexte(source..": "..message,Color.RED)
+    if(source ~=nil) then addSimpleTexte(source..": "..message,Color.RED)
+    else addSimpleTexte(message,Color.RED)
+    end
 end
 
 function addSystemCombatTexte(message,params)
@@ -95,7 +99,8 @@ function OnNewText(coreObject, propertyName)
 
     if propertyName =="friendCombatTexte" then
         local newValue = gameplay:GetCustomProperty("friendCombatTexte")
-        addFriendCombatTexte(newValue)
+        print("valeu frien "..newValue)
+        addFriendCombatTexte(nil,newValue)
     end
 
     if propertyName =="debugCombatTexte" then

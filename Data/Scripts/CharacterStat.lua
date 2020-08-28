@@ -343,6 +343,7 @@ function GetSpeech(messageId,params)
     if params then
      for i=1,#params do
         message=string.gsub(message,"$"..i,params[i])
+        
      end
     end
     return message
@@ -352,10 +353,10 @@ local waitTime=1
 local gameplay=World.FindObjectById("83D47359D7CB64F1:Gameplay")
 function OnPlayerJoined(player)
     
-    
+    Task.Wait(0.5)
     --print("allo? "..gameplay.name)
     --Task.Spawn(function() GetStat(player) end,math.random(1))
-    GetStat(player)
+   
     --Task.Wait(0.5)
     --players= Game.GetPlayers()
     --print("N°"..#players..") "..player.name)
@@ -378,6 +379,7 @@ function OnPlayerJoined(player)
     waitingPlayerDice[player.name]=2
     waitingBestPlayerDice[player.name]=0
     callbackPlayerDice[player.name]=choixRace
+    GetStat(player)
     player:AddResource("dice",2)
     player.resourceChangedEvent:Connect(OnResourceChanged)
     player.diedEvent:Connect(OnPlayerDied)
@@ -434,7 +436,7 @@ end
 
 
 function choixRace(player)
-    --print("choix race")
+    print("choix race")
     
     local race=races[waitingBestPlayerDice[player.name]%nombreDeRace]
 
@@ -608,7 +610,10 @@ function addSystemCombatTexte(message,params,dest)
   -- if dest==nil then  Events.BroadcastToAllPlayers("addSystemCombatTexte",message,params)
   -- else Events.BroadcastToPlayer(dest,"addSystemCombatTexte",message,params)
     local message =GetSpeech(message,params)
-     gameplay:SetNetworkedCustomProperty("systemCombatTexte", message)
+   if(dest ~=nil) then  gameplay:SetNetworkedCustomProperty("systemCombatTexte", dest.name.." "..message) 
+   else gameplay:SetNetworkedCustomProperty("systemCombatTexte", message) 
+
+   end
   -- end
    -- Task.Wait(0.5)
 end
@@ -724,9 +729,11 @@ function endCombat(victory)
         unfreezePlayers()
         local trigger=currentCombatZone:FindDescendantByName("Trigger")
         trigger.collision = Collision.FORCE_OFF
-        Events.BroadcastToAllPlayers("BannerMessage","Victory")
-        Task.Wait(0.1)
         addSystemCombatTexte("Victory")
+        Task.Wait(1)
+        Events.BroadcastToAllPlayers("BannerMessage","Victory")
+        
+        
        
     else 
         Events.BroadcastToAllPlayers("BannerMessage","GAME OVER")

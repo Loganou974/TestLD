@@ -143,24 +143,12 @@ function SpawnLocalMessage(message, duration, color)
 end
 
 function SpawnLocalBigMessage(message, duration, color)
-    -- Spawns message instance
-    local messageInstance = World.SpawnAsset("87154CE96A5DF608:BigBannerText", {parent = CANVAS})
-    --messageInstance.y = LOCAL_MESSAGE_OFFSET
-    
-    -- Sets message text
-    --local bannerText = messageInstance:GetCustomProperty("BannerText"):WaitForObject()
-    messageInstance:FindChildByName("Text").text = message
-
-    -- Sets message color
-    if color then
-        messageInstance:FindChildByName("Text"):SetColor(color)
-    end
-
-    -- Sets message duration
+    PANEL.visibility = Visibility.FORCE_ON
+    TEXT_BOX.text = message
     if duration then
-        messageInstance.lifeSpan = duration
+        messageEndTime = time() + duration
     else
-        messageInstance.lifeSpan = DEFAULT_DURATION
+        messageEndTime = time() + DEFAULT_DURATION
     end
 end
 -- nil Tick(float)
@@ -178,7 +166,7 @@ function Tick(deltaTime)
                 SpawnLocalMessage(value.message, value.duration, value.color)
                 end
                 if value.etat =="big" then
-                    SpawnLocalBigMessage(value.message, value.duration, value.color)
+                    SpawnLocalBigMessage(value.message, 3, value.color)
                 end
                 
                 localMessageTime = time() + 1
@@ -191,6 +179,6 @@ end
 
 -- Initialize
 PANEL.visibility = Visibility.FORCE_OFF
-Events.Connect("BannerMessage", OnBannerMessageEvent)
+Events.Connect("BannerMessage", OnBigBannerMessage)
 Events.Connect("SubBannerMessage", OnSubBannerMessage)
 Events.Connect("BigBannerMessage", OnBigBannerMessage)

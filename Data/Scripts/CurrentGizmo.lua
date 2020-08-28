@@ -13,7 +13,7 @@ function OnTurnOn(player)
     for n, v in ipairs(player:GetAttachedObjects()) do
         if(n=="head") then v:Detach() end
     end
-    if(instance ==nil) then
+    if(instance ==nil or not Object.IsValid(instance)) then
         instance=World.SpawnAsset(propMUID)
     end
     
@@ -26,10 +26,9 @@ function OnTurnNpc(name)
     --print("gizmo on "..name)
     
     local player=World.FindObjectById(name)
-    if(instance ==nil) then
+    if(instance ==nil or not Object.IsValid(instance)) then
         instance=World.SpawnAsset(propMUID)
     end
-   
     instance:Detach()
     local socket=player:FindDescendantByName("HeadSocket")
     if(socket==nill) then  

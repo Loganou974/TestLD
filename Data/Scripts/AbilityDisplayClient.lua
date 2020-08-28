@@ -121,7 +121,8 @@ function Tick(deltaTime)
             end
         else
             --print("currentAbility "..currentAbility.name)
-            if currentAbility.isEnabled and currentAbility:GetCustomProperty("LevelRequirement")<=currentAbility.owner:GetResource("level") then
+
+            if currentAbility.owner:GetResource("level")~=nil and currentAbility:GetCustomProperty("LevelRequirement")~=nil and currentAbility.isEnabled and currentAbility:GetCustomProperty("LevelRequirement")<=currentAbility.owner:GetResource("level") then
                 local iconColor = AOI.GetObjectColor(currentAbility)
                 if iconColor and inst then
                     --  ICON:SetColor(iconColor)
