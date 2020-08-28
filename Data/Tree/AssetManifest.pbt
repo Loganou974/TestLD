@@ -350,15 +350,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16359994082917203306
-  Name: "Tree Birch 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_birch_003"
-  }
-}
-Assets {
   Id: 16244414786145463704
   Name: "Underwater Post Process"
   PlatformAssetType: 20
@@ -1322,6 +1313,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9887027296153117331
+  Name: "Tree Redwood Bare Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_redwood_006"
+  }
+}
+Assets {
   Id: 9878522258424650908
   Name: "Prism - 8-Sided Half"
   PlatformAssetType: 1
@@ -1751,6 +1751,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_gold_coins_001"
+  }
+}
+Assets {
+  Id: 7177328632787277750
+  Name: "Tree Oak Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_002"
   }
 }
 Assets {
@@ -2543,6 +2552,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_ray_system"
+  }
+}
+Assets {
+  Id: 1887519723440648957
+  Name: "Tree Oak 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_001"
   }
 }
 Assets {
