@@ -116,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17847068962151006321
+  Name: "Curling Dust VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_base_curl"
+  }
+}
+Assets {
   Id: 17718112535551741152
   Name: "Fantasy Castle Wall Foundation 01 - Pillar 01"
   PlatformAssetType: 1
@@ -338,15 +347,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_birch_003"
-  }
-}
-Assets {
-  Id: 16353917461806733124
-  Name: "Ring - Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_003"
   }
 }
 Assets {
@@ -638,6 +638,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14299811882235610539
+  Name: "Creature Bat Squeaks 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_creature_bat_squeaks_01a_Cue_ref"
+  }
+}
+Assets {
   Id: 14290119473973892065
   Name: "Chain Ceiling Anchor"
   PlatformAssetType: 1
@@ -662,6 +671,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_carpet_stairs_001"
+  }
+}
+Assets {
+  Id: 14027783486601827876
+  Name: "Leather Tufted 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fabric_tufted_001_uv_ref"
   }
 }
 Assets {
@@ -1178,6 +1196,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10202581226678424507
+  Name: "Gem - Trillion Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gem_trillion_polished_001"
+  }
+}
+Assets {
   Id: 10184847056121543272
   Name: "Basic Material"
   PlatformAssetType: 2
@@ -1319,6 +1346,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "fxsm_candleflame"
+  }
+}
+Assets {
+  Id: 8946705668394899138
+  Name: "Candle 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_candle_004"
   }
 }
 Assets {
@@ -1493,6 +1529,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7792331592793191613
+  Name: "Creatire Bat Wings Flapping 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_creature_bat_wings_flapping_01a_Cue_ref"
+  }
+}
+Assets {
   Id: 7782807286916071675
   Name: "Fantasy Castle Accessory Tower 01 - 12m"
   PlatformAssetType: 1
@@ -1517,15 +1562,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_floor_001_8x8"
-  }
-}
-Assets {
-  Id: 7728756996254098191
-  Name: "Bush 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bush_generic_002"
   }
 }
 Assets {
@@ -1562,6 +1598,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_fog_volume_vfx"
+  }
+}
+Assets {
+  Id: 7615878362670647554
+  Name: "Pipe - Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half-pipe_001"
   }
 }
 Assets {
@@ -1760,6 +1805,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_portal"
+  }
+}
+Assets {
+  Id: 6665120206912032206
+  Name: "Smoke Puff Radial VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_smoke_puff_radial"
   }
 }
 Assets {
@@ -2372,6 +2426,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_floor_002_4m"
+  }
+}
+Assets {
+  Id: 2354717027850780617
+  Name: "Grass and Soil"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_grass_003_uv"
   }
 }
 Assets {

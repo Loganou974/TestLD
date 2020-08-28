@@ -21,6 +21,7 @@ Objects {
       String: "Sequestered in high mountains atop tall trees, the aarakocra, sometimes called birdfolk, evoke fear and wonder. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -59,6 +60,7 @@ Objects {
       String: "Your base walking speed is 30 feet. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -97,6 +99,7 @@ Objects {
       String: "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -135,6 +138,7 @@ Objects {
       String: " Your base walking speed is 25 feet. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -173,6 +177,7 @@ Objects {
       String: "Your base walking speed is 30 feet. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -211,6 +216,7 @@ Objects {
       String: "Your base walking speed is 30 feet. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -249,6 +255,7 @@ Objects {
       String: "As a stout halfling, you\342\200\231re hardier than average and have some resistance to poison. Some say that stouts have dwarven blood. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -287,6 +294,7 @@ Objects {
       String: "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -325,6 +333,7 @@ Objects {
       String: "Your base walking speed is 25 feet. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -363,6 +372,7 @@ Objects {
       String: "Your base walking speed is 30 feet. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -401,6 +411,7 @@ Objects {
       String: "As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -439,6 +450,7 @@ Objects {
       String: "The sun elves of Faer\303\273n are highly intelligent.  $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -477,6 +489,7 @@ Objects {
       String: "Your size is Medium. Speed. Your base walking speed is 30 feet. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -515,6 +528,7 @@ Objects {
       String: "As a mountain dwarf, you\342\200\231re strong and hardy, accustomed to a difficult life in rugged terrain. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -553,6 +567,7 @@ Objects {
       String: "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience. $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -588,9 +603,10 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "$name Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor $1"
+      String: "Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -629,6 +645,7 @@ Objects {
       String: "GameMaster: Oh! You rolled a $1, So you will be $2"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -667,6 +684,7 @@ Objects {
       String: "GameMaster: Here\'s 2 dices, roll them i will keep the best rolls to determine your starting race"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -705,6 +723,7 @@ Objects {
       String: "Glad to see you could make it to this dnd session"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -743,6 +762,7 @@ Objects {
       String: "Hello $1"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -781,6 +801,7 @@ Objects {
       String: "$1 is ready to play some adventures"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
