@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 12127382893198135780
-  Name: "AngelicCostumeTemplate"
+  Id: 8788816939984520218
+  Name: "Crow"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
