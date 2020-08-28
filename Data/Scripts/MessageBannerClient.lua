@@ -89,6 +89,31 @@ function OnBannerMessageEvent(message,params,duration)
     TEXT_BOX.text = message
 end
 
+
+function OnLongBannerMessageEvent(message,params,duration)
+    
+    local speech=World.FindObjectById(message)
+    local message=speech:GetCustomProperty("Texte")
+   
+     message=GetSpeech(message,params)
+    if duration == -1 then
+        localMessageBanners={}
+        table.insert(localMessageBanners, {
+            message = message,
+            duration = 5,
+            etat="big",
+            color = color})
+           
+    else
+            table.insert(localMessageBanners, {
+                message = message,
+                duration = duration,
+                etat="big",
+                color = color})
+                Task.Wait(duration)
+    end
+end
+
 function OnSubBannerMessage(message, duration, color)
     local message=GetSpeech(message,params)
     table.insert(localMessageBanners, {
@@ -182,3 +207,4 @@ PANEL.visibility = Visibility.FORCE_OFF
 Events.Connect("BannerMessage", OnBigBannerMessage)
 Events.Connect("SubBannerMessage", OnSubBannerMessage)
 Events.Connect("BigBannerMessage", OnBigBannerMessage)
+Events.Connect("LongBannerMessage", OnLongBannerMessageEvent)

@@ -8,11 +8,14 @@
     ParameterOverrides {
       Overrides {
         Name: "emissiveboost"
-        Float: 27.7903862
+        Float: 1.1
       }
       Overrides {
         Name: "color"
         Color {
+          R: 0.0100000007
+          G: 0.0100000007
+          B: 0.0100000007
           A: 1
         }
       }

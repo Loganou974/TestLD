@@ -42,7 +42,15 @@ Entries {
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Human"
+          StringVar: "Half Orc"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: "Your base walking speed is 30 feet."
         }
       }
       Entries {
@@ -56,7 +64,7 @@ Entries {
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 2
               }
             }
             Entries {
@@ -64,7 +72,7 @@ Entries {
                 IntVar: 2
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -72,7 +80,7 @@ Entries {
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -88,7 +96,7 @@ Entries {
                 IntVar: 5
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -96,7 +104,7 @@ Entries {
                 IntVar: 6
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -108,14 +116,6 @@ Entries {
               }
             }
           }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: " Your base walking speed is 30 feet."
         }
       }
     }

@@ -16,6 +16,24 @@
           Id: 15527386427574321378
         }
       }
+      Overrides {
+        Name: "cmpc:Material1"
+        Color {
+          R: 0.63
+          G: 0.705960155
+          B: 1
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material1_Sides"
+        Color {
+          R: 0.733377576
+          G: 0.669999957
+          B: 1
+          A: 1
+        }
+      }
     }
     Assets {
       Id: 13426149777105854410

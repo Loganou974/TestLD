@@ -3,8 +3,10 @@ local propOnEnterCinematic = trigger:GetCustomProperty("OnEnterCinematic")
 local propOnLeaveCinematic = trigger:GetCustomProperty("OnLeaveCinematic")
 local propOnInteractCinematic = trigger:GetCustomProperty("OnInteractCinematic")
 local propAllPlayers = trigger:GetCustomProperty("AllPlayers")
+local propSound = script:GetCustomProperty("SoundMUID")
 function OnBeginOverlap(whichTrigger, other)
-	if other:IsA("Player") then
+    if other:IsA("Player") then
+     if propSound~=nil then  World.SpawnAsset(propSound,{position=script.parent:GetWorldPosition()}) end
         if propAllPlayers then
             
             cinematicForAll(propOnEnterCinematic)

@@ -20,19 +20,22 @@ function OnBeginOverlap(whichTrigger, other)
 	if other:IsA("Player") then
 		for i=1,#enterSpeeches do
 			local propOnEnterSpeech=enterSpeeches[i]:GetCustomProperty("Texte")
-		speak(propOnEnterSpeech,other)
+			local newMessage=sanitise(propOnEnterSpeech,other)
+			
+			
+		speak(enterSpeeches[i].id,other)
 		end
 	end
 end
 
 function speak(message,other)
-	local newMessage=sanitise(message,other)
-	if propAllPlayers and newMessage~=nil and newMessage~="" then
+	--local newMessage=sanitise(message,other)
+	if propAllPlayers and message~=nil  then
 		
-		speakToPlayers(newMessage)
+		speakToPlayers(message)
 	else 
-		if  newMessage~=nil and newMessage~="" then
-			speakToPlayer(newMessage,other)
+		if  message~=nil  then
+			speakToPlayer(message,other)
 		end
 	end
 
@@ -45,19 +48,22 @@ function sanitise(message,player)
 	end	
 end
 function speakToPlayer(message,player)
-	--print(whichTrigger.name .. ": Trigger Interacted " .. other.name)
+	
 
-	Events.BroadcastToPlayer(player,"BannerMessage",message,{player.name})
+	Events.BroadcastToPlayer(player,"LongBannerMessage",message)
 end
 
 function speakToPlayers(message)
-	Events.BroadcastToAllPlayers("BannerMessage",message,{player.name})
+	Events.BroadcastToAllPlayers("LongBannerMessage",message)
 end
 function OnEndOverlap(whichTrigger, other)
 	if other:IsA("Player") then
 		for i=1,#leaveSpeeches do
 			local propOnEnterSpeech=leaveSpeeches[i]:GetCustomProperty("Texte")
-		speak(propOnEnterSpeech,other)
+			local newMessage=sanitise(propOnEnterSpeech,other)
+			
+			
+		speak(leaveSpeeches[i].id,other)
 		end
 	end
 end
@@ -66,7 +72,10 @@ function OnInteracted(whichTrigger, other)
 	if other:IsA("Player") then
 		for i=1,#interactSpeeches do
 			local propOnEnterSpeech=interactSpeeches[i]:GetCustomProperty("Texte")
-		speak(propOnEnterSpeech,other)
+			local newMessage=sanitise(propOnEnterSpeech,other)
+			
+			
+		speak(interactSpeeches[i].id,other)
 		end
 	end
 end

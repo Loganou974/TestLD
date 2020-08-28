@@ -35,6 +35,10 @@
             Name: "cs:AllPlayers"
             Bool: false
           }
+          Overrides {
+            Name: "cs:SoundMUID"
+            String: "2DA234ECDF317806:CriLoup"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

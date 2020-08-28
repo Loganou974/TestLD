@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18306350287789331672
+  Name: "Text 01: V"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_021"
+  }
+}
+Assets {
   Id: 18243333251623460988
   Name: "Candle 01"
   PlatformAssetType: 1
@@ -242,6 +251,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17263336017690968041
+  Name: "Volumetric Fog Injector Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_volumetric_fog_injector"
+  }
+}
+Assets {
   Id: 17204133586249156534
   Name: "Horn"
   PlatformAssetType: 1
@@ -266,6 +284,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_two-by-four_3m"
+  }
+}
+Assets {
+  Id: 17108871192860831370
+  Name: "Text 02: Z"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_025"
   }
 }
 Assets {
@@ -338,15 +365,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_017"
-  }
-}
-Assets {
-  Id: 16359994082917203306
-  Name: "Tree Birch 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_birch_003"
   }
 }
 Assets {
@@ -482,6 +500,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_002"
+  }
+}
+Assets {
+  Id: 15255283547287177097
+  Name: "Grass Clumps"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_grass_002_uv"
   }
 }
 Assets {
@@ -1313,6 +1340,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9887027296153117331
+  Name: "Tree Redwood Bare Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_redwood_006"
+  }
+}
+Assets {
   Id: 9878522258424650908
   Name: "Prism - 8-Sided Half"
   PlatformAssetType: 1
@@ -1337,6 +1373,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_clover_patch_002"
+  }
+}
+Assets {
+  Id: 9502818228829406290
+  Name: "Metal Chrome"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "chrome_001"
   }
 }
 Assets {
@@ -1376,12 +1421,30 @@ Assets {
   }
 }
 Assets {
+  Id: 9019619946449915588
+  Name: "Text 02: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_017"
+  }
+}
+Assets {
   Id: 8946705668394899138
   Name: "Candle 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_candle_004"
+  }
+}
+Assets {
+  Id: 8910824019403988685
+  Name: "Text 01: I"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_008"
   }
 }
 Assets {
@@ -1736,6 +1799,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7177328632787277750
+  Name: "Tree Oak Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_002"
+  }
+}
+Assets {
   Id: 7090024055905767906
   Name: "Ambience Lava Flow Bubbling Loop 01 SFX"
   PlatformAssetType: 7
@@ -2024,6 +2096,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5435122378782562292
+  Name: "Text 02: K"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_010"
+  }
+}
+Assets {
   Id: 5407490024884046439
   Name: "Cone - Truncated Concave"
   PlatformAssetType: 1
@@ -2114,12 +2195,30 @@ Assets {
   }
 }
 Assets {
+  Id: 4861863141257811858
+  Name: "Text 01: B"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_001"
+  }
+}
+Assets {
   Id: 4854270377050611262
   Name: "Pipe"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_001"
+  }
+}
+Assets {
+  Id: 4590293859695807375
+  Name: "Text 01: O"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_014"
   }
 }
 Assets {
@@ -2303,6 +2402,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3450838428359704315
+  Name: "Diamond - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_diamond_hq_001"
+  }
+}
+Assets {
   Id: 3409802564880653438
   Name: "Rock Pile 001"
   PlatformAssetType: 1
@@ -2336,6 +2444,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_stairs_001"
+  }
+}
+Assets {
+  Id: 3044336185686496966
+  Name: "Pipe - Spiral"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_spiral_001"
   }
 }
 Assets {
@@ -2507,6 +2624,24 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_ray_system"
+  }
+}
+Assets {
+  Id: 2056383128150427122
+  Name: "Text 02: E"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_004"
+  }
+}
+Assets {
+  Id: 1887519723440648957
+  Name: "Tree Oak 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_001"
   }
 }
 Assets {
