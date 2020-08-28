@@ -1457,6 +1457,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8232445715546955040
+  Name: "Cube - Chamfered Large Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_002"
+  }
+}
+Assets {
   Id: 8094954615064261549
   Name: "Whitebox Wall 01 Triangle"
   PlatformAssetType: 1

@@ -15,7 +15,7 @@ function COMBAT() return MODULE.Get("standardcombo.Combat.Wrap") end
 function PLAYER_HOMING_TARGETS() return MODULE.Get("standardcombo.Combat.PlayerHomingTargets") end
 function CROSS_CONTEXT_CALLER() return MODULE.Get("standardcombo.Utils.CrossContextCaller") end
 function LOOT_DROP_FACTORY() return MODULE.Get_Optional("standardcombo.NPCKit.LootDropFactory") end
-local gameplay=World.FindObjectById("83D47359D7CB64F1:Gameplay")
+
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local MobType = script.parent:GetCustomProperty("MobType") 
@@ -124,7 +124,7 @@ function Attack(target)
 	SpawnAsset(MUZZLE_FLASH_VFX, startPos, rotation)
 end
 function addEnnemyCombatTexte(source,message)
-	gameplay:SetNetworkedCustomProperty("ennemyCombatTexte", source..":"..message)
+	Events.BroadcastToAllPlayers("addEnnemyCombatTexte",source,message,params)
 	--Task.Wait(0.5)
    --print(message)
  end
