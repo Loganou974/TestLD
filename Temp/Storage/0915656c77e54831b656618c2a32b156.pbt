@@ -6,6 +6,22 @@
     Table {
       Entries {
         Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 25
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Halfling"
+        }
+      }
+      Entries {
+        Key {
           StringVar: "bonus"
         }
         SimpleValue {
@@ -31,7 +47,7 @@
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -39,7 +55,7 @@
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -47,7 +63,7 @@
                 IntVar: 5
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -71,26 +87,10 @@
       }
       Entries {
         Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Hill Dwarf"
-        }
-      }
-      Entries {
-        Key {
           StringVar: "description"
         }
         SimpleValue {
-          StringVar: "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience."
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 25
+          StringVar: "Your base walking speed is 25 feet."
         }
       }
     }
