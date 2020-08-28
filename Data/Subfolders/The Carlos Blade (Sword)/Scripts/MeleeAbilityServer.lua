@@ -11,7 +11,7 @@
 local MODULE = require( script:GetCustomProperty("ModuleManager") )
 function COMBAT() return MODULE:Get("standardcombo.Combat.Wrap") end
 
-local gameplay=World.FindObjectById("83D47359D7CB64F1:Gameplay")
+
 local EQUIPMENT = script:FindAncestorByType("Equipment")
 
 local ABILITY = script:GetCustomProperty("Ability"):WaitForObject()
@@ -53,7 +53,7 @@ function modifier(value)
 end
 
 function addEnnemyCombatTexte(source,message)
-	gameplay:SetNetworkedCustomProperty("ennemyCombatTexte", source..":"..message)
+	Events.BroadcastToAllPlayers("addEnnemyCombatTexte",source,message,params)
 	--Task.Wait(0.5)
    --print(message)
  end
@@ -107,7 +107,7 @@ function MeleeAttack(other)
 		else
 			dmg.amount=0
 			if d20==1 then cc=" (Critical fail) " end
-			addEnnemyCombatTexte(player.name," miss "..cc.."("..d20Total.."<"..AC..")")
+			addEnnemyCombatTexte(player.name," miss "..cc)
 			BroadcastMissFeedback()
 		end
 		
