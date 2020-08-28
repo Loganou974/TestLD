@@ -251,6 +251,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17263336017690968041
+  Name: "Volumetric Fog Injector Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_volumetric_fog_injector"
+  }
+}
+Assets {
   Id: 17204133586249156534
   Name: "Horn"
   PlatformAssetType: 1
@@ -275,6 +284,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_two-by-four_3m"
+  }
+}
+Assets {
+  Id: 17108871192860831370
+  Name: "Text 02: Z"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_025"
   }
 }
 Assets {
@@ -482,6 +500,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_002"
+  }
+}
+Assets {
+  Id: 15255283547287177097
+  Name: "Grass Clumps"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_grass_002_uv"
   }
 }
 Assets {
@@ -1349,6 +1376,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9502818228829406290
+  Name: "Metal Chrome"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "chrome_001"
+  }
+}
+Assets {
   Id: 9441818251457962244
   Name: "Sphere"
   PlatformAssetType: 1
@@ -1382,6 +1418,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "fxsm_candleflame"
+  }
+}
+Assets {
+  Id: 9019619946449915588
+  Name: "Text 02: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_017"
   }
 }
 Assets {
@@ -2051,6 +2096,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5435122378782562292
+  Name: "Text 02: K"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_010"
+  }
+}
+Assets {
   Id: 5407490024884046439
   Name: "Cone - Truncated Concave"
   PlatformAssetType: 1
@@ -2348,6 +2402,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3450838428359704315
+  Name: "Diamond - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_diamond_hq_001"
+  }
+}
+Assets {
   Id: 3409802564880653438
   Name: "Rock Pile 001"
   PlatformAssetType: 1
@@ -2381,6 +2444,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_stairs_001"
+  }
+}
+Assets {
+  Id: 3044336185686496966
+  Name: "Pipe - Spiral"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_spiral_001"
   }
 }
 Assets {
@@ -2552,6 +2624,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_ray_system"
+  }
+}
+Assets {
+  Id: 2056383128150427122
+  Name: "Text 02: E"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_004"
   }
 }
 Assets {
