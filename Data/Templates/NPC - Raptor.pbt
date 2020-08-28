@@ -7,7 +7,7 @@
       RootId: 4212840905289249936
       Objects {
         Id: 4212840905289249936
-        Name: "Raptor 3"
+        Name: "Raptor 1"
         Transform {
           Scale {
             X: 0.5
@@ -89,7 +89,7 @@
           }
           Overrides {
             Name: "cs:AttackCast"
-            Float: 0.2
+            Float: 0.4
           }
           Overrides {
             Name: "cs:AttackRecovery"

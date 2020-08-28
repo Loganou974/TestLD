@@ -333,13 +333,15 @@ function OnPlayerDied(player)
 end
 
 function GetSpeech(messageId,params)
-   
+    local message=""
     --local speeches=World.FindObjectById("8A4AB8499744FEA5:NarratorSpeech")
     --print("message "..messageId)
     local speech=speeches:FindDescendantByName(messageId)
-    if speech==nil then return messageId end
-    --if not obj then return nom end
-    local message=speech:GetCustomProperty("Texte")
+    if speech==nil then
+         message= messageId 
+  
+    else  message=speech:GetCustomProperty("Texte")
+    end
     if params then
      for i=1,#params do
         message=string.gsub(message,"$"..i,params[i])
@@ -620,7 +622,7 @@ end
 function addDebugCombatTexte(message,params)
     local message =GetSpeech(message,params)
     --Events.Broadcast("addDebugCombatTexte",message,debug,params)
-    gameplay:SetNetworkedCustomProperty("debugCombatTexte", message)
+   if debug then gameplay:SetNetworkedCustomProperty("debugCombatTexte", message) end
     --Task.Wait(0.5)
     --print(message)
 end

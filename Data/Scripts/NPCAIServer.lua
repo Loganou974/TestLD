@@ -39,7 +39,8 @@ local ATTACK_CAST_TIME = ROOT:GetCustomProperty("AttackCast") or 0.5
 local ATTACK_RECOVERY_TIME = ROOT:GetCustomProperty("AttackRecovery") or 1.5
 local ATTACK_COOLDOWN = ROOT:GetCustomProperty("AttackCooldown") or 0
 local OBJECTIVE_THRESHOLD_DISTANCE_SQUARED = 900
-
+local AggroList={}
+local AggroListCount=0
 if MobType=="FlyingSnake" then 
 
 	MAX_HEALTH =math.random(4)+math.random(4)
@@ -491,11 +492,32 @@ function UpdateMovement(deltaTime)
 	end
 end
 
+function FindAggroEnemy()
+	local hPlayer=nil
+	local hAggro=0
+
+	for p,a in pairs(AggroList) do
+		if hPlayer==nil then
+			hPlayer=p
+			hAggro=a
+			end
+		if hAggro<a then
+			hPlayer=p
+			hAggro=a
+		end
+	end
+	return hPlayer
+end
 
 function EngageNearest()
 	target = nil
 	
-	local enemy = FindNearestEnemy()
+	
+	local enemy = nil
+	if AggroListCount ==0 then enemy=FindNearestEnemy()
+	else
+		enemy=FindAggroEnemy()
+	end
 	if enemy then
 		target = enemy
 
@@ -707,6 +729,20 @@ end
 
 
 function OnObjectDamaged(id, prevHealth, dmgAmount, impactPosition, impactRotation, sourceObject)
+	if id==ROOT:GetCustomProperty("ObjectId") then
+		local aggro=AggroList[sourceObject]
+		if aggro==nill then 
+			print("first time aggro for "..sourceObject.name.."= "..dmgAmount)
+			AggroList[sourceObject]=dmgAmount
+			AggroListCount=AggroListCount+1
+		else
+			print("not first time aggro for "..sourceObject.name.."= "..dmgAmount)
+			AggroList[sourceObject]=AggroList[sourceObject]+dmgAmount
+			
+		end
+		target=FindAggroEnemy()
+		print("new target from aggro "..target.name)
+	end
 	if (currentState == STATE_SLEEPING or currentState == STATE_PATROLLING or currentState == STATE_LOOKING_AROUND) then
 		if Object.IsValid(sourceObject) and GetObjectTeam(sourceObject) ~= GetTeam() and 
 			IsObjectAlive(sourceObject) and CanHear(impactPosition) then
