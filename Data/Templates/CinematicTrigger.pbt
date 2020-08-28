@@ -35,7 +35,12 @@
             Name: "cs:AllPlayers"
             Bool: false
           }
+          Overrides {
+            Name: "cs:Transient"
+            Bool: true
+          }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -87,6 +92,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -123,6 +129,7 @@
           }
         }
         ParentId: 6899925248741963428
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
