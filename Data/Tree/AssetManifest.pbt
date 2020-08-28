@@ -1304,15 +1304,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9660534982211346698
-  Name: "Human Gal 1"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_basic_001_ref"
-  }
-}
-Assets {
   Id: 9441818251457962244
   Name: "Sphere"
   PlatformAssetType: 1
@@ -2228,15 +2219,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_emissive_001"
-  }
-}
-Assets {
-  Id: 3610635954353760895
-  Name: "Human Gal 2"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_basic_002_ref"
   }
 }
 Assets {

@@ -6,6 +6,22 @@
     Table {
       Entries {
         Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 25
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Halfling"
+        }
+      }
+      Entries {
+        Key {
           StringVar: "bonus"
         }
         SimpleValue {
@@ -71,26 +87,10 @@
       }
       Entries {
         Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 25
-        }
-      }
-      Entries {
-        Key {
           StringVar: "description"
         }
         SimpleValue {
           StringVar: "Your base walking speed is 25 feet."
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Halfling"
         }
       }
     }

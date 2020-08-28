@@ -1,7 +1,7 @@
 ﻿Name: "TentConstruction"
-RootId: 650662512005798106
+RootId: 12107443949445970545
 Objects {
-  Id: 4974359412600990469
+  Id: 7694728208202779447
   Name: "Bottom"
   Transform {
     Location {
@@ -17,8 +17,8 @@ Objects {
       Z: 0.03
     }
   }
-  ParentId: 650662512005798106
-  ChildIds: 11450067627273318633
+  ParentId: 12107443949445970545
+  ChildIds: 7598267869127941791
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -64,7 +64,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11450067627273318633
+  Id: 7598267869127941791
   Name: "NewFolder"
   Transform {
     Location {
@@ -77,7 +77,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4974359412600990469
+  ParentId: 7694728208202779447
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -98,7 +98,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7674257507641689447
+  Id: 6906800718196371063
   Name: "Back Fabric"
   Transform {
     Location {
@@ -114,7 +114,7 @@ Objects {
       Z: 0.98
     }
   }
-  ParentId: 650662512005798106
+  ParentId: 12107443949445970545
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -175,7 +175,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2434266912051816777
+  Id: 9974373932399682214
   Name: "TentPoles"
   Transform {
     Location {
@@ -191,14 +191,14 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 650662512005798106
-  ChildIds: 4564636850197751969
-  ChildIds: 16854505064982640494
-  ChildIds: 15058268603461581484
-  ChildIds: 8401667518612467293
-  ChildIds: 12121244086709537463
-  ChildIds: 22846228181542862
-  ChildIds: 15870782499923608910
+  ParentId: 12107443949445970545
+  ChildIds: 15529894416827054979
+  ChildIds: 1273058766846935469
+  ChildIds: 9486453645366223177
+  ChildIds: 1687365729823655482
+  ChildIds: 8875865296345963838
+  ChildIds: 17213366601889299650
+  ChildIds: 11263625019222927449
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -218,7 +218,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15870782499923608910
+  Id: 11263625019222927449
   Name: "Cylinder"
   Transform {
     Location {
@@ -234,7 +234,7 @@ Objects {
       Z: 3.4
     }
   }
-  ParentId: 2434266912051816777
+  ParentId: 9974373932399682214
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -271,7 +271,7 @@ Objects {
   }
 }
 Objects {
-  Id: 22846228181542862
+  Id: 17213366601889299650
   Name: "Cylinder"
   Transform {
     Location {
@@ -287,7 +287,7 @@ Objects {
       Z: 3.4
     }
   }
-  ParentId: 2434266912051816777
+  ParentId: 9974373932399682214
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -324,7 +324,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12121244086709537463
+  Id: 8875865296345963838
   Name: "Cylinder"
   Transform {
     Location {
@@ -340,7 +340,7 @@ Objects {
       Z: 3.4
     }
   }
-  ParentId: 2434266912051816777
+  ParentId: 9974373932399682214
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -377,7 +377,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8401667518612467293
+  Id: 1687365729823655482
   Name: "Cylinder"
   Transform {
     Location {
@@ -393,7 +393,7 @@ Objects {
       Z: 3.4
     }
   }
-  ParentId: 2434266912051816777
+  ParentId: 9974373932399682214
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -430,7 +430,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15058268603461581484
+  Id: 9486453645366223177
   Name: "Cylinder"
   Transform {
     Location {
@@ -444,7 +444,7 @@ Objects {
       Z: 2.9
     }
   }
-  ParentId: 2434266912051816777
+  ParentId: 9974373932399682214
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -481,7 +481,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16854505064982640494
+  Id: 1273058766846935469
   Name: "Cylinder"
   Transform {
     Location {
@@ -495,7 +495,7 @@ Objects {
       Z: 2.9
     }
   }
-  ParentId: 2434266912051816777
+  ParentId: 9974373932399682214
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -532,7 +532,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4564636850197751969
+  Id: 15529894416827054979
   Name: "TopPole"
   Transform {
     Location {
@@ -548,7 +548,7 @@ Objects {
       Z: 3.9
     }
   }
-  ParentId: 2434266912051816777
+  ParentId: 9974373932399682214
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -585,7 +585,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11457149859789110507
+  Id: 3137796240229846842
   Name: "SideFabric"
   Transform {
     Location {
@@ -603,7 +603,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 650662512005798106
+  ParentId: 12107443949445970545
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Sides:id"
@@ -669,7 +669,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9096144806007566317
+  Id: 10015911417502189761
   Name: "SideFabric"
   Transform {
     Location {
@@ -687,7 +687,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 650662512005798106
+  ParentId: 12107443949445970545
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Sides:id"
@@ -745,7 +745,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9977383791149152794
+  Id: 11034778356302149948
   Name: "Front"
   Transform {
     Location {
@@ -761,13 +761,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 650662512005798106
-  ChildIds: 12665500399544572501
-  ChildIds: 1687000507253179465
-  ChildIds: 2941167120288522239
-  ChildIds: 15634245347224228352
-  ChildIds: 9427523080783554432
-  ChildIds: 7289626153971732027
+  ParentId: 12107443949445970545
+  ChildIds: 17020421508213510286
+  ChildIds: 3632826470896891751
+  ChildIds: 15639221009593153982
+  ChildIds: 1811643584321608139
+  ChildIds: 2893504803010762335
+  ChildIds: 13929003557876046094
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -787,7 +787,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7289626153971732027
+  Id: 13929003557876046094
   Name: "Front Fabric"
   Transform {
     Location {
@@ -804,7 +804,7 @@ Objects {
       Z: 0.23
     }
   }
-  ParentId: 9977383791149152794
+  ParentId: 11034778356302149948
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -865,7 +865,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9427523080783554432
+  Id: 2893504803010762335
   Name: "Front Fabric"
   Transform {
     Location {
@@ -882,7 +882,7 @@ Objects {
       Z: 0.23
     }
   }
-  ParentId: 9977383791149152794
+  ParentId: 11034778356302149948
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -943,7 +943,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15634245347224228352
+  Id: 1811643584321608139
   Name: "Point Light"
   Transform {
     Location {
@@ -960,7 +960,7 @@ Objects {
       Z: 0.751135111
     }
   }
-  ParentId: 9977383791149152794
+  ParentId: 11034778356302149948
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1001,7 +1001,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2941167120288522239
+  Id: 15639221009593153982
   Name: "Front Flap (Tied)"
   Transform {
     Location {
@@ -1018,7 +1018,7 @@ Objects {
       Z: 0.6
     }
   }
-  ParentId: 9977383791149152794
+  ParentId: 11034778356302149948
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1078,7 +1078,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1687000507253179465
+  Id: 3632826470896891751
   Name: "Front Flap (Tied)"
   Transform {
     Location {
@@ -1095,7 +1095,7 @@ Objects {
       Z: 0.6
     }
   }
-  ParentId: 9977383791149152794
+  ParentId: 11034778356302149948
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1155,7 +1155,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12665500399544572501
+  Id: 17020421508213510286
   Name: "Front Screen"
   Transform {
     Location {
@@ -1172,7 +1172,7 @@ Objects {
       Z: 0.98
     }
   }
-  ParentId: 9977383791149152794
+  ParentId: 11034778356302149948
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
