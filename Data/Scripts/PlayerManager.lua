@@ -107,12 +107,12 @@ function appuye(player,touche)
    end
     if touche == "ability_extra_27" then
        showCharacterScreen()
-       Events.BroadcastToServer("LEVEL_UP",player,2) 
+      -- Events.BroadcastToServer("LEVEL_UP",player,2) 
     end
     if touche == "ability_extra_50" then
-        Events.BroadcastToServer("GAINSTATPOINT",player,1) 
+       -- Events.BroadcastToServer("GAINSTATPOINT",player,1) 
     end
-
+   
     if touche == "ability_extra_51" and isPlaying then
         endTurn()
     end

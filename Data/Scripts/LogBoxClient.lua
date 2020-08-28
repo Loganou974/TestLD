@@ -13,7 +13,7 @@ for i=1,#texts do
         ligneTexte[#ligneTexte+1]=texte
         texte.x=x
         texte.y=y
-        y=y+60
+        y=y+30
     end
 
 end
@@ -67,8 +67,11 @@ function addSimpleTexte(message,col,params)
     for i=#ligneTexte,2,-1 do
         local texte=ligneTexte[i]
         if ligneTexte[i-1]~="" then 
+            
             texte.text=ligneTexte[i-1].text
             texte:SetColor(ligneTexte[i-1]:GetColor())
+            local l=string.len(texte.text)
+            texte.height=math.floor(30*(math.floor(l/62)+1))
         end
         
     end
@@ -76,6 +79,14 @@ function addSimpleTexte(message,col,params)
     
     ligneTexte[1].text=message
     ligneTexte[1]:SetColor(col)
+    ligneTexte[1].height=math.floor(30*(math.floor(l/62)+1))
+    for i=1,#ligneTexte do
+        local texte=ligneTexte[i]
+        if i>1 then
+            texte.y=ligneTexte[i-1].y+ligneTexte[i-1].height
+        end
+        
+    end
 end
 function addTexte(messageId,col,params)
     local message=GetSpeech(messageId,params)
@@ -89,7 +100,7 @@ function OnNewText(coreObject, propertyName)
     --addSystemCombatTexte(newValue)
     if propertyName =="ennemyCombatTexte" then
         local newValue = gameplay:GetCustomProperty("ennemyCombatTexte")
-        addEnnemyCombatTexte(newValue)
+        addEnnemyCombatTexte(nil,newValue)
     end
 
     if propertyName =="systemCombatTexte" then
