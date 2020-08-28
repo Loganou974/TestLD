@@ -430,7 +430,7 @@ function levelup(player,level)
         player.hitPoints=player.maxHitPoints
     end
    
-    
+    activateAllAbilities(player)
     savePlayerData(player,playerData)
 end
 
@@ -931,12 +931,16 @@ function newTurn()
 end
 
 function Tick(deltaTime)
-
-
+    for i,p in ipairs(players) do
+        activateAllAbilities(p)
+        
+    end
+   
+    Task.Wait(1)
 end
 
 function OnPlayerLeft(player)
-    players= Game.GetPlayers({ignorePlayers = {player}})
+    playersInCombat= Game.GetPlayers({ignorePlayers = {player}})
 end
 
 function UpdateBuffEtDebuff(player)
@@ -987,8 +991,11 @@ function activateAllAbilities(player)
     local abilities = player:GetAbilities()
     
     for _, ability in pairs(abilities) do
-        
-        ability.isEnabled=true
+        if ability:GetCustomProperty("LevelRequirement")<=player:GetResource("level") then
+              ability.isEnabled=true
+        else
+            ability.isEnabled=false
+        end
     end
 end
 

@@ -51,7 +51,7 @@ function GetLocalPlayerAbilityWithBinding()
    
     
     for _, ability in pairs(abilities) do
-        if ability.actionBinding == BINDING and ability.isEnabled  then 
+        if ability.actionBinding == BINDING   then 
             return ability
         end
     end
@@ -84,7 +84,7 @@ function UpdateCurrentAbility()
             ICON:SetImage(DEFAULT_IMAGE)
         end
 
-        if iconColor and inst then
+        if iconColor and inst  then
           --  ICON:SetColor(iconColor)
             local images=inst:FindDescendantsByType("UIImage")
             for i=1,#images do
@@ -113,16 +113,15 @@ function Tick(deltaTime)
         local currentPhase = currentAbility:GetCurrentPhase()
         local phaseTime = currentAbility:GetPhaseTimeRemaining()
      
-        if HIDE_WHEN_DISABLED then
+        if HIDE_WHEN_DISABLED==false then
             if currentAbility.isEnabled then
                 PANEL.visibility = Visibility.INHERIT
             else
                 PANEL.visibility = Visibility.FORCE_OFF
             end
         else
-            --print("currentAbility "..currentAbility.name)
-
-            if currentAbility.owner:GetResource("level")~=nil and currentAbility:GetCustomProperty("LevelRequirement")~=nil and currentAbility.isEnabled and currentAbility:GetCustomProperty("LevelRequirement")<=currentAbility.owner:GetResource("level") then
+          
+             if currentAbility.isEnabled  then
                 local iconColor = AOI.GetObjectColor(currentAbility)
                 if iconColor and inst then
                     --  ICON:SetColor(iconColor)
@@ -132,13 +131,14 @@ function Tick(deltaTime)
                           image:SetColor(iconColor)
                       end
                   else
-                     -- ICON:SetColor(ICON_COLOR)
+                   
                   end
             else
                 local newIconColor = Color.New(ICON_COLOR)
                 newIconColor.a = newIconColor.a / 5.0
                 ICON:SetColor(newIconColor)
             end
+        
         end
 
         if currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST then

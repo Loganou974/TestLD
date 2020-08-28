@@ -7,7 +7,7 @@
       RootId: 2909272120134241702
       Objects {
         Id: 2909272120134241702
-        Name: "Health Spiral VFX"
+        Name: "RecklessVFX"
         Transform {
           Scale {
             X: 5
@@ -50,6 +50,7 @@
             Float: 43.0174713
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
