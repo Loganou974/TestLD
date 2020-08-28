@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18306350287789331672
+  Name: "Text 01: V"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_021"
+  }
+}
+Assets {
   Id: 18243333251623460988
   Name: "Candle 01"
   PlatformAssetType: 1
@@ -356,6 +365,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_post_process_water"
+  }
+}
+Assets {
+  Id: 16243497719238738844
+  Name: "Pyramid - 6-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_sixsided_hq_001"
   }
 }
 Assets {
@@ -899,6 +917,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12366754416923914931
+  Name: "Pyramid - 7-Sided Hollow"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_7_sided_hollow_001"
+  }
+}
+Assets {
   Id: 12332326778664978182
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -1061,6 +1088,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11389630301817212699
+  Name: "Wedge - Convex Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_curved_convex_hq_001"
+  }
+}
+Assets {
   Id: 11311872554868312005
   Name: "\"A Slice of Life\" Music Construction Kit (Layers) 01"
   PlatformAssetType: 10
@@ -1166,6 +1202,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_bottle_001"
+  }
+}
+Assets {
+  Id: 10515482815474555518
+  Name: "Branches Cluster Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_big_001"
   }
 }
 Assets {
@@ -1346,6 +1391,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_candle_004"
+  }
+}
+Assets {
+  Id: 8910824019403988685
+  Name: "Text 01: I"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_008"
   }
 }
 Assets {
@@ -2078,12 +2132,30 @@ Assets {
   }
 }
 Assets {
+  Id: 4861863141257811858
+  Name: "Text 01: B"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_001"
+  }
+}
+Assets {
   Id: 4854270377050611262
   Name: "Pipe"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_001"
+  }
+}
+Assets {
+  Id: 4590293859695807375
+  Name: "Text 01: O"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_014"
   }
 }
 Assets {
