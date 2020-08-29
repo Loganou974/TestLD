@@ -50,16 +50,16 @@ function Tick(deltaTime)
 	speed = v.size / deltaTime
 	
 	lastPos = pos
-	
+	MESH.animationStance = WALK_STANCE
 	if speed < WALKING_SPEED then
 		MESH.animationStance = IDLE_STANCE
 		
 	elseif speed < RUNNING_SPEED then
 		MESH.animationStance = WALK_STANCE
-		MESH.animationStancePlaybackRate = 2 * (speed - WALKING_SPEED) / (RUNNING_SPEED - WALKING_SPEED)
+		MESH.animationStancePlaybackRate = 1
 	else
 		MESH.animationStance = RUN_STANCE
-		MESH.animationStancePlaybackRate = 0.5 + (speed - RUNNING_SPEED) * 0.002
+		MESH.animationStancePlaybackRate = 1
 	end
 end
 

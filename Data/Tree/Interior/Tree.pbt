@@ -21,6 +21,7 @@ Objects {
   ChildIds: 1413591978020585781
   ChildIds: 259287209507503813
   ChildIds: 1184779590893413199
+  ChildIds: 3757148221842553656
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -29,6 +30,238 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 3757148221842553656
+  Name: "SalleCombatBoss"
+  Transform {
+    Location {
+      X: -4546.85156
+      Y: 34601.9141
+      Z: 2561.78613
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 16546432617048368361
+  ChildIds: 3352268474517080754
+  ChildIds: 15351009731763020096
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15351009731763020096
+  Name: "VampireAi"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3757148221842553656
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12185706750530733991
+      value {
+        Overrides {
+          Name: "Name"
+          String: "VampireAi"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: -21.5546875
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "cs:ObjectId"
+          Int: 100
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13647223515220248951
+      value {
+        Overrides {
+          Name: "cs:WalkStance"
+          String: "1hand_melee_run_forward"
+        }
+        Overrides {
+          Name: "cs:RunStance"
+          String: "1hand_melee_run_forward"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4914821853428407667
+    }
+  }
+}
+Objects {
+  Id: 3352268474517080754
+  Name: "CombatZoneBoss"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3757148221842553656
+  ChildIds: 15676300473390880167
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 15676300473390880167
+  Name: "Trigger"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 41.971981
+      Y: 13.2075634
+      Z: 5.25000048
+    }
+  }
+  ParentId: 3352268474517080754
+  ChildIds: 8482454205562584429
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 8482454205562584429
+  Name: "CombatZone"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.235294119
+      Y: 0.0396039598
+      Z: 0.190476179
+    }
+  }
+  ParentId: 15676300473390880167
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NombreMonstre"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Monster1"
+      ObjectReference {
+        SelfId: 4346240799449512355
+        SubObjectId: 12185706750530733991
+        InstanceId: 15351009731763020096
+        TemplateId: 4914821853428407667
+      }
+    }
+    Overrides {
+      Name: "cs:Monster2"
+      ObjectReference {
+        SelfId: 3418097854654199833
+        SubObjectId: 13412604398932690461
+        InstanceId: 15351009731763020096
+        TemplateId: 4914821853428407667
+      }
+    }
+    Overrides {
+      Name: "cs:Monster3"
+      ObjectReference {
+        SelfId: 11311838417804294825
+        SubObjectId: 700055048027030701
+        InstanceId: 15351009731763020096
+        TemplateId: 4914821853428407667
+      }
+    }
+    Overrides {
+      Name: "cs:Monster4"
+      ObjectReference {
+        SelfId: 2764108899565305835
+        SubObjectId: 12903014310046613999
+        InstanceId: 15351009731763020096
+        TemplateId: 4914821853428407667
+      }
+    }
+    Overrides {
+      Name: "cs:Monster5"
+      ObjectReference {
+        SelfId: 451560717793871590
+        SubObjectId: 10594970273530149090
+        InstanceId: 15351009731763020096
+        TemplateId: 4914821853428407667
+      }
+    }
+    Overrides {
+      Name: "cs:introSpeech"
+      String: "You shivers as your eyes come upon the creature, you\'re in danger"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17051536529361390619
+    }
   }
 }
 Objects {

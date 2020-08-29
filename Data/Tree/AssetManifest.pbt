@@ -53,15 +53,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17927785296012505733
-  Name: "Additive Soft Edge"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_additive_edgefade"
-  }
-}
-Assets {
   Id: 17847068962151006321
   Name: "Curling Dust VFX"
   PlatformAssetType: 8
@@ -368,15 +359,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14027783486601827876
-  Name: "Leather Tufted 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fabric_tufted_001_uv_ref"
-  }
-}
-Assets {
   Id: 13868889675930197036
   Name: "Fantasy Castle Floor 02 - Corner 01"
   PlatformAssetType: 1
@@ -413,15 +395,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13588168874842906464
-  Name: "Cone - Truncated Wide"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_003"
-  }
-}
-Assets {
   Id: 13547513599097969212
   Name: "Pipe"
   PlatformAssetType: 1
@@ -446,15 +419,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_stairs_spiral_001_sm_150cm"
-  }
-}
-Assets {
-  Id: 13372972268553014344
-  Name: "Ring - Beveled"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ring_faceted_001"
   }
 }
 Assets {
@@ -971,15 +935,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7452506898564974989
-  Name: "Metal Gold 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_gold_001"
-  }
-}
-Assets {
   Id: 7379539457708468975
   Name: "Text 01: S"
   PlatformAssetType: 1
@@ -1328,15 +1283,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_emissive_001"
-  }
-}
-Assets {
-  Id: 3593597783924766211
-  Name: "Cone - Bullet"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bullet_001"
   }
 }
 Assets {

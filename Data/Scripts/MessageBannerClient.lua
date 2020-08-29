@@ -100,7 +100,7 @@ function OnLongBannerMessageEvent(message,params,duration)
         localMessageBanners={}
         table.insert(localMessageBanners, {
             message = message,
-            duration = 5,
+            duration = 6,
             etat="big",
             color = color})
            

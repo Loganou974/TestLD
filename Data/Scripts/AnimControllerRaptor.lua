@@ -21,6 +21,7 @@ local speed = 0
 local attackIndex = 1
 
 function PlayAttack()
+	attackIndex = math.random(1,2)
 	if attackIndex == 1 then
 		MESH:PlayAnimation("unarmed_bite", {playbackRate = 1.5})
 		attackIndex = 2
