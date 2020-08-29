@@ -76,12 +76,19 @@ function UpdateCurrentAbility()
         local icon = AOI.GetObjectIcon(currentAbility)
         local iconColor = AOI.GetObjectColor(currentAbility)
         
-        if icon then
-            inst=World.SpawnAsset(icon)
-            inst.parent=ICON
+        if icon~=nil then
+            
+            inst=World.SpawnAsset(icon,{parent=ICON})
+            print(" icone? "..inst.name)
+            --inst.parent=ICON
             --ICON:SetImage(icon)
+            ICON:SetColor(Color.New(0,0,0,0))
+            
         else
-            ICON:SetImage(DEFAULT_IMAGE)
+            
+            print(" default?? "..currentAbility.name)
+            
+            ICON:SetColor(Color.WHITE)
         end
 
         if iconColor and inst  then

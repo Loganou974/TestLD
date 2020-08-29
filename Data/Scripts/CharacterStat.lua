@@ -401,7 +401,7 @@ function levelup(player,level)
     print(playerData.class.name)
     print(playerData.class.skills[level])
     Events.BroadcastToPlayer(player,"LEVEL_UP")
-   if level <= #playerData.class.skills then
+   
     local skill=nil
      for _, obj in ipairs(player:GetEquipment()) do
        
@@ -420,7 +420,7 @@ function levelup(player,level)
            
             
         end
-    end
+    
    end
     if(playerData.class.name=="Bard") then
         player.maxHitPoints=player.maxHitPoints+math.random(8)+modifier(player:GetResource("CON"))
@@ -1012,14 +1012,12 @@ function desactivateAllAbilities(player)
     end
 end
 
-function rollDice(player,max)
-    local rand=math.random(max)
+function abilityCheck(player)
+    -- local rand=math.random(20)
     
-    player:RemoveResource("dice",1)
-    --addDebugCombatTexte("rolled an "..rand.." reste "..player:GetResource("dice").." des",debug)
-    --Events.BroadcastToAllPlayers("BigBannerMessage",player.name.." rolled an "..rand,3,Color.FromStandardHex("#FFFFFF"))
+    --player:RemoveResource("dice",1)
     
-    player:SetResource("lastDiceNumber",rand)
+    local rand=player:GetResource("lastDiceNumber")
     if phasePrecombat == true then
         numberOfRolls=numberOfRolls+1
         local DEX=math.floor((player:GetResource("DEX")-10)/2)
@@ -1033,6 +1031,17 @@ function rollDice(player,max)
     else
         addTexte("RollAction01",{player.name,rand})
     end
+
+end
+function rollDice(player,max)
+    local rand=math.random(max)
+    
+    player:RemoveResource("dice",1)
+    --addDebugCombatTexte("rolled an "..rand.." reste "..player:GetResource("dice").." des",debug)
+    --Events.BroadcastToAllPlayers("BigBannerMessage",player.name.." rolled an "..rand,3,Color.FromStandardHex("#FFFFFF"))
+    
+    player:SetResource("lastDiceNumber",rand)
+   
 end
 
 

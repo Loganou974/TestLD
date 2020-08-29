@@ -36,10 +36,12 @@ end
 -- <string> GetObjectIcon(CoreObject) [Client]
 -- Returns the MUID of the icon or nil
 function API.GetObjectIcon(object)
+	
 	if not object or not Object.IsValid(object) then
+		print("nul")
 		return nil
 	end
-
+	
 	return object.clientUserData.APIObjectIcons_Icon
 end
 
