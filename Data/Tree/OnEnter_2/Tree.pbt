@@ -1,7 +1,7 @@
 ﻿Name: "OnEnter_2"
-RootId: 1274563350786173703
+RootId: 10631914342970985434
 Objects {
-  Id: 13995081820612915641
+  Id: 9877105561863816836
   Name: "Speech2"
   Transform {
     Location {
@@ -15,11 +15,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1274563350786173703
+  ParentId: 10631914342970985434
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "One by one, the team coughts then faints. You can hear your mates falling while your eyes close."
+      String: "You feel trapped, like animals in a cage and powerless : as you feel being watched by an evil force."
     }
   }
   Collidable_v2 {
@@ -30,17 +30,17 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech2_1"
+    FilePartitionName: "Speech2"
   }
   InstanceHistory {
-    SelfId: 17801326085869275985
-    SubobjectId: 13938323854769855493
-    InstanceId: 17927448392135728240
-    TemplateId: 11179243038331306195
+    SelfId: 9877105561863816836
+    SubobjectId: 4866938328807886530
+    InstanceId: 16122403184916844978
+    TemplateId: 12287563631168970081
   }
 }
 Objects {
-  Id: 17801326085869275985
+  Id: 4577931487445664844
   Name: "Speech1"
   Transform {
     Location {
@@ -53,11 +53,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1274563350786173703
+  ParentId: 10631914342970985434
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Suddently, an eerie myst invades all the space around you. You\'re totally lost and hopeless."
+      String: "As you wake up, you notice everything around is different, darker."
     }
   }
   Collidable_v2 {
@@ -71,9 +71,9 @@ Objects {
     FilePartitionName: "Speech1_2"
   }
   InstanceHistory {
-    SelfId: 17801326085869275985
-    SubobjectId: 13938323854769855493
-    InstanceId: 17927448392135728240
-    TemplateId: 11179243038331306195
+    SelfId: 4577931487445664844
+    SubobjectId: 17658690950332419082
+    InstanceId: 16122403184916844978
+    TemplateId: 12287563631168970081
   }
 }

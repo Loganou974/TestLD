@@ -1,7 +1,7 @@
 ﻿Name: "OnInteract_3"
-RootId: 2199058489958816148
+RootId: 4793992243700908573
 Objects {
-  Id: 8385331780210606219
+  Id: 11179102661113390886
   Name: "Speech1"
   Transform {
     Location {
@@ -14,11 +14,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2199058489958816148
+  ParentId: 4793992243700908573
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Krezk Village."
+      String: "Castle Ravenloft"
     }
   }
   Collidable_v2 {

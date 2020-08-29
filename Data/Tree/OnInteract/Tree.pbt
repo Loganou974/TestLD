@@ -1,7 +1,7 @@
 ﻿Name: "OnInteract"
-RootId: 12170580713898295596
+RootId: 15144365341908396007
 Objects {
-  Id: 14958657755192632429
+  Id: 13326598602334535416
   Name: "Speech1"
   Transform {
     Location {
@@ -14,11 +14,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12170580713898295596
+  ParentId: 15144365341908396007
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Welcome to Boravia. The place you never leave alive."
+      String: "Krezk Village."
     }
   }
   Collidable_v2 {
@@ -32,9 +32,9 @@ Objects {
     FilePartitionName: "Speech1"
   }
   InstanceHistory {
-    SelfId: 11781594973956681393
-    SubobjectId: 11221643540333968958
-    InstanceId: 6313642672418188141
-    TemplateId: 11179243038331306195
+    SelfId: 13326598602334535416
+    SubobjectId: 8244339810490365630
+    InstanceId: 16122403184916844978
+    TemplateId: 12287563631168970081
   }
 }
