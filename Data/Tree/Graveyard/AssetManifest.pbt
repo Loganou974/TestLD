@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9928537974828225292
+  Name: "Fantasy Human Gal 1"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_fantasy_003_ref"
+  }
+}
+Assets {
   Id: 8698530872141969228
   Name: "Fern 01"
   PlatformAssetType: 1
@@ -80,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6621507716997256310
+  Name: "Flower Bellflower 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_bell_001_ref"
+  }
+}
+Assets {
   Id: 5253811867366632597
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -113,5 +131,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_column_square_top_002"
+  }
+}
+Assets {
+  Id: 2071690768456057628
+  Name: "Flare Ray VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_ray_system"
   }
 }

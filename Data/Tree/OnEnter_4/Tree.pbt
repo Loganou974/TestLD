@@ -1,7 +1,7 @@
 ﻿Name: "OnEnter_4"
-RootId: 8606138238183268017
+RootId: 12033293556372238755
 Objects {
-  Id: 10508039767015603943
+  Id: 4631375948672209397
   Name: "Speech1"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8606138238183268017
+  ParentId: 12033293556372238755
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
@@ -32,9 +32,9 @@ Objects {
     FilePartitionName: "Speech1_4"
   }
   InstanceHistory {
-    SelfId: 10508039767015603943
+    SelfId: 4631375948672209397
     SubobjectId: 13938323854769855493
-    InstanceId: 17387732829248082380
+    InstanceId: 12541414388930391121
     TemplateId: 11179243038331306195
   }
 }

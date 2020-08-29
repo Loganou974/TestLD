@@ -422,15 +422,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15713190159654396830
-  Name: "Bone Human Hand 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_hand_01_ref"
-  }
-}
-Assets {
   Id: 15666551070717467446
   Name: "Pyramid - 6-Sided Truncated Hollow Thick"
   PlatformAssetType: 1
@@ -761,15 +752,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_basic_001"
-  }
-}
-Assets {
-  Id: 13703744877030710122
-  Name: "Horn"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_horn_001"
   }
 }
 Assets {
@@ -1232,15 +1214,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10413764043288137018
-  Name: "Snow 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_snow_001_uv"
-  }
-}
-Assets {
   Id: 10392002955905592433
   Name: "Large Wood Beam 8m"
   PlatformAssetType: 1
@@ -1310,15 +1283,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_raw_001_uv"
-  }
-}
-Assets {
-  Id: 10038645387392242274
-  Name: "Gem - Baguette Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_gem_baguette_polished_001"
   }
 }
 Assets {
@@ -1547,15 +1511,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8249667164158572359
-  Name: "Gear - generic large solid"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_gen_gear_001"
-  }
-}
-Assets {
   Id: 8232445715546955040
   Name: "Cube - Chamfered Large Polished"
   PlatformAssetType: 1
@@ -1589,15 +1544,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prism_hexagon_hq_001"
-  }
-}
-Assets {
-  Id: 8031288978388379972
-  Name: "Metal Gold 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_gold_001"
   }
 }
 Assets {
@@ -2222,15 +2168,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4582432212358051342
-  Name: "Cube - Arcade 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_arcade_cube_002"
-  }
-}
-Assets {
   Id: 4473594194193115933
   Name: "Marble Basic 01"
   PlatformAssetType: 2
@@ -2300,15 +2237,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_gold_002"
-  }
-}
-Assets {
-  Id: 4109347029660812799
-  Name: "Ball"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_sphere_001"
   }
 }
 Assets {
@@ -2411,15 +2339,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3409802564880653438
-  Name: "Rock Pile 001"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_001"
-  }
-}
-Assets {
   Id: 3372713419290350997
   Name: "Pyramid - 6-Sided Truncated Polished"
   PlatformAssetType: 1
@@ -2453,15 +2372,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_spiral_001"
-  }
-}
-Assets {
-  Id: 3036185675291793459
-  Name: "Ring - Quarter"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarter_torus_002"
   }
 }
 Assets {
@@ -2519,15 +2429,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2723232960546970913
-  Name: "Wood Floor Dark"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_floor_dark_001_uv"
-  }
-}
-Assets {
   Id: 2719732194574913068
   Name: "Gem - Diamond 8-Sided Polished"
   PlatformAssetType: 1
@@ -2537,30 +2438,12 @@ Assets {
   }
 }
 Assets {
-  Id: 2603671087022211863
-  Name: "Rubber Pattern 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_scf_rubber_panels_003_uv"
-  }
-}
-Assets {
   Id: 2516735292463042958
   Name: "Stone Basic"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "stone_001"
-  }
-}
-Assets {
-  Id: 2472339142414494715
-  Name: "Rock Pile 002"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_002"
   }
 }
 Assets {
@@ -2615,15 +2498,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_chunky_001"
-  }
-}
-Assets {
-  Id: 2071690768456057628
-  Name: "Flare Ray VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_ray_system"
   }
 }
 Assets {
@@ -2735,24 +2609,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1349656547455038157
-  Name: "Cube - Arcade 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_arcade_cube_003"
-  }
-}
-Assets {
-  Id: 1137112816547272582
-  Name: "Cylinder"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
-  }
-}
-Assets {
   Id: 1104198953447072835
   Name: "Object Domestic Doors & Creaks Set 01 SFX"
   PlatformAssetType: 10
@@ -2795,6 +2651,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_floor_dark_001_uv"
+  }
+}
+Assets {
+  Id: 858539354850808339
+  Name: "Ice Ground Transparent"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_ice_transparent_ground"
   }
 }
 Assets {
@@ -2867,15 +2732,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_01"
-  }
-}
-Assets {
-  Id: 237310253117135204
-  Name: "Food Fruit 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_food_generic_apple_001_uv"
   }
 }
 Assets {

@@ -31,30 +31,6 @@ Entries {
     Table {
       Entries {
         Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 30
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Half Orc"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: "Your base walking speed is 30 feet."
-        }
-      }
-      Entries {
-        Key {
           StringVar: "bonus"
         }
         SimpleValue {
@@ -64,7 +40,7 @@ Entries {
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -80,7 +56,7 @@ Entries {
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -116,6 +92,30 @@ Entries {
               }
             }
           }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 25
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: "As a stout halfling, you\342\200\231re hardier than average and have some resistance to poison. Some say that stouts have dwarven blood."
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Stout Halfling"
         }
       }
     }

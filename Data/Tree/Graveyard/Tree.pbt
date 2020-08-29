@@ -424,6 +424,178 @@ Objects {
   }
 }
 Objects {
+  Id: 18079012679621741713
+  Name: "Flare Ray VFX"
+  Transform {
+    Location {
+      X: 1078.5625
+      Y: 621.499
+      Z: 907.281494
+    }
+    Rotation {
+    }
+    Scale {
+      X: 10
+      Y: 10
+      Z: 10
+    }
+  }
+  ParentId: 7938712911815558114
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Align with Sun"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 0.919999957
+        G: 0.566622496
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Ray Width"
+      Float: 10.3398
+    }
+    Overrides {
+      Name: "bp:Ray Density"
+      Float: 1.8595798
+    }
+    Overrides {
+      Name: "bp:Ray Height"
+      Float: 33.3704147
+    }
+    Overrides {
+      Name: "bp:Emissive Brightness"
+      Float: 0.223004133
+    }
+    Overrides {
+      Name: "bp:Ray Speed"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Depth Fade"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 2071690768456057628
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  InstanceHistory {
+    SelfId: 18079012679621741713
+    SubobjectId: 2115577885834029555
+    InstanceId: 678958750550820062
+    TemplateId: 9323984862848679036
+  }
+}
+Objects {
+  Id: 59335419086181392
+  Name: "Flower Bellflower 01"
+  Transform {
+    Location {
+      X: 172.041016
+      Y: 1320.39551
+      Z: 55.8796387
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7938712911815558114
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6621507716997256310
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9243828363521472506
+  Name: "Fantasy Human Gal 1"
+  Transform {
+    Location {
+      X: 153.761719
+      Y: 1089.0498
+      Z: 105.961792
+    }
+    Rotation {
+      Yaw: 81.6487885
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7938712911815558114
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9928537974828225292
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
   Id: 16248453117467631643
   Name: "Decal Leaves 01"
   Transform {

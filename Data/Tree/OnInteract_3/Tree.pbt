@@ -1,7 +1,7 @@
 ﻿Name: "OnInteract_3"
-RootId: 16568119806421962357
+RootId: 2199058489958816148
 Objects {
-  Id: 11781594973956681393
+  Id: 8385331780210606219
   Name: "Speech1"
   Transform {
     Location {
@@ -14,11 +14,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16568119806421962357
+  ParentId: 2199058489958816148
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Madame Eva tells you to hunt some animals for tonight."
+      String: "Krezk Village."
     }
   }
   Collidable_v2 {
