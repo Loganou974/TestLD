@@ -80,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8553683111840345216
+  Name: "Bush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_001"
+  }
+}
+Assets {
   Id: 7648717670233836541
   Name: "Craftsman Roof 01 Eaves"
   PlatformAssetType: 1

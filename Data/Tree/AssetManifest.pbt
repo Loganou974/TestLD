@@ -107,15 +107,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17972658099741554406
-  Name: "Human Gal 3"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_basic_003_ref"
-  }
-}
-Assets {
   Id: 17927785296012505733
   Name: "Additive Soft Edge"
   PlatformAssetType: 2

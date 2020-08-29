@@ -1,6 +1,52 @@
 ﻿Name: "Hoodoo Mill"
 RootId: 9575322066516580362
 Objects {
+  Id: 11021482529390131721
+  Name: "Bush 01"
+  Transform {
+    Location {
+      X: 240.870239
+      Y: 1196.70276
+      Z: 431.969
+    }
+    Rotation {
+      Yaw: 99.1845169
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9575322066516580362
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8553683111840345216
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11021482529390131721
+    SubobjectId: 9173180608247291755
+    InstanceId: 678958750550820062
+    TemplateId: 9323984862848679036
+  }
+}
+Objects {
   Id: 16370981783506276808
   Name: "Torch"
   Transform {
