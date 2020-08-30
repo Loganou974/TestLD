@@ -170,6 +170,14 @@
           }
         }
         ParentId: 6972370799800572422
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ModuleManager"
+            AssetReference {
+              Id: 9770511928359673738
+            }
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -432,6 +440,7 @@
           }
         }
         ParentId: 3242648422590620471
+        ChildIds: 4435422491630413128
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -441,6 +450,41 @@
         }
         NetworkContext {
           Type: Server
+        }
+      }
+      Objects {
+        Id: 4435422491630413128
+        Name: "SongOfRestServer"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6326779751599585930
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ModuleManager"
+            AssetReference {
+              Id: 9770511928359673738
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 4203040100382824335
+          }
         }
       }
       Objects {
@@ -459,6 +503,7 @@
         }
         ParentId: 3242648422590620471
         ChildIds: 2607030631701699393
+        ChildIds: 17532954030236254151
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -506,7 +551,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 5794851202175331359
+              Id: 16913617774493095251
             }
           }
           Overrides {
@@ -527,6 +572,33 @@
         Script {
           ScriptAsset {
             Id: 9835685409538525721
+          }
+        }
+      }
+      Objects {
+        Id: 17532954030236254151
+        Name: "SongOfRestClient"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12639767024272816652
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 18362607508779244756
           }
         }
       }

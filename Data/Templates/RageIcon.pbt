@@ -17,7 +17,6 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 9129665733898624417
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -68,7 +67,17 @@
         }
         ParentId: 1775484841811639996
         ChildIds: 1609411408687265943
-        WantsNetworking: true
+        ChildIds: 1764834663348209647
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Titre"
+            String: "Rage"
+          }
+          Overrides {
+            Name: "cs:Display"
+            String: "Description of Rage"
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -153,7 +162,6 @@
           }
         }
         ParentId: 9129665733898624417
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -192,6 +200,58 @@
                 Value: "mc:euianchor:topleft"
               }
             }
+          }
+        }
+      }
+      Objects {
+        Id: 1764834663348209647
+        Name: "TooltipedTemplate"
+        Transform {
+          Rotation {
+            Yaw: 3.07358459e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9129665733898624417
+        ChildIds: 10660612436667867218
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 10660612436667867218
+        Name: "Tooltipped"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: 3.75660384e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1764834663348209647
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 5638418007021236215
           }
         }
       }

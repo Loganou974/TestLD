@@ -67,6 +67,17 @@
         }
         ParentId: 4669871320624450274
         ChildIds: 17867267394314434165
+        ChildIds: 6290369052982579469
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Titre"
+            String: "Attack"
+          }
+          Overrides {
+            Name: "cs:Display"
+            String: "Attack your target"
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -188,6 +199,58 @@
                 Value: "mc:euianchor:topleft"
               }
             }
+          }
+        }
+      }
+      Objects {
+        Id: 6290369052982579469
+        Name: "TooltipedTemplate"
+        Transform {
+          Rotation {
+            Yaw: 3.07358459e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 562552906462477142
+        ChildIds: 15907848660113340080
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 15907848660113340080
+        Name: "Tooltipped"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: 3.75660384e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6290369052982579469
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 5638418007021236215
           }
         }
       }

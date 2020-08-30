@@ -8,6 +8,7 @@ local displayText=tooltip:FindChildByName("Display")
 
 
 function OnHovered(whichButton)
+	print("button hovered: " .. whichButton.name)
 	titreText.text=whichButton:GetCustomProperty("Titre")
 	displayText.text=whichButton:GetCustomProperty("Display")
 	
@@ -19,7 +20,7 @@ function OnHovered(whichButton)
 end
 
 function OnUnhovered(whichButton)
-	--print("button hovered: " .. whichButton.name)
+	print("button hovered: " .. whichButton.name)
 	tooltip.visibility=Visibility.FORCE_OFF
 end
 

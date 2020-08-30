@@ -161,6 +161,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17148810838103658535
+  Name: "Dragon"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_icon_Dragon"
+  }
+}
+Assets {
   Id: 16791286775758690487
   Name: "Stone Block Standard"
   PlatformAssetType: 1

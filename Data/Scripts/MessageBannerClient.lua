@@ -132,7 +132,7 @@ function OnBigBannerMessage(message, duration, color,params)
         localMessageBanners={}
         table.insert(localMessageBanners, {
             message = message,
-            duration = 5,
+            duration = 3,
             etat="big",
             color = color})
            
@@ -203,15 +203,16 @@ function Tick(deltaTime)
    
     if time() > localMessageTime then
         for i, value in ipairs(localMessageBanners) do
+            if value.duration==nil then value.duration=3 end
             if LOCAL_PLAYER  then
                 if value.etat=="small" then
                 SpawnLocalMessage(value.message, value.duration, value.color)
                 end
                 if value.etat =="big" then
                     
-                    Task.Spawn(function () SpawnLocalBigMessage(value.message, 3, value.color) end,nextMessageTime)
+                    Task.Spawn(function () SpawnLocalBigMessage(value.message, value.duration, value.color) end,nextMessageTime)
                     
-                    nextMessageTime=nextMessageTime+3
+                    nextMessageTime=nextMessageTime+value.duration
                 end
                 
                 localMessageTime = time() + 1

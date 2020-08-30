@@ -393,6 +393,7 @@ function modifier(value)
 end
 
 function levelup(player,level)
+    print("level up")
     local playerData=loadPlayerData(player)
     player:SetResource("level",level)
     addSystemCombatTexte("LevelUp",{player.name,player:GetResource("level")})
@@ -432,7 +433,7 @@ function levelup(player,level)
         player.hitPoints=player.maxHitPoints
     end
    
-    --activateAllAbilities(player)
+    activateAllAbilities(player)
     savePlayerData(player,playerData)
 end
 
@@ -944,7 +945,7 @@ function newTurn()
         UpdateBuffEtDebuff(currentPlayer)
        
         addDebugCombatTexte("1er joueur: "..currentPlayer.name,debug)
-        Events.BroadcastToAllPlayers("BannerMessage","CurrentPlayerIsPlaying",3,Color.WHITE,{currentPlayer.name})
+        Events.BroadcastToAllPlayers("BannerMessage","CurrentPlayerIsPlaying",1,Color.WHITE,{currentPlayer.name})
         
         
        
@@ -967,7 +968,7 @@ function newTurn()
     else
         currentPlayer=getCurrentPlayer()
         local mob=World.FindObjectById(currentPlayer)
-        Events.BroadcastToAllPlayers("BannerMessage","CurrentPlayerIsPlaying",3,Color.WHITE,{mob.name})
+        Events.BroadcastToAllPlayers("BannerMessage","CurrentPlayerIsPlaying",1,Color.RED,{mob.name})
        
         Events.Broadcast("BEGIN_TURN_NPC",currentPlayer)
         
@@ -995,6 +996,18 @@ end
 
 function UpdateBuffEtDebuff(player)
     addDebugCombatTexte("mise à jour buff et debuff",debug)
+    
+    if player:GetResource("Enraged") >0 then
+            if player:GetResource("EnragedHitOrGotHit") == 1 then
+                player:SetResource("Enraged", player:GetResource("EnragedBonus"))
+                
+            else
+                player:SetResource("Enraged",0)
+                
+            end
+        
+    end
+    player:SetResource("EnragedHitOrGotHit",0)
     if player:GetResource("Inspired")>0 then
         print(player.name.." is inspired ")
         player:SetResource("actionMax",2)
@@ -1043,7 +1056,8 @@ function activateAllAbilities(equip)
     local abilities = equip:GetAbilities()
     
     for _, ability in pairs(abilities) do
-        if ability:GetCustomProperty("LevelRequirement")<=player:GetResource("level") then
+        if ability:GetCustomProperty("LevelRequirement")<=ability.owner:GetResource("level") then
+            
               ability.isEnabled=true
         else
             ability.isEnabled=false

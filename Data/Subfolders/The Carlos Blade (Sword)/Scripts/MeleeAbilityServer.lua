@@ -88,6 +88,16 @@ function MeleeAttack(other)
 		print("Attack roll from "..player.name.." d20="..d20.."total="..(d20+modifier(STR)+BonusToHit))
 		addEnnemyCombatTexte(player.name, " Attack roll to hit"..other.name.." :"..d20.."total="..(d20+math.max(modifier(STR),modifier(DEX))+BonusToHit))
 		d20Total=d20+modifier(STR)+BonusToHit
+
+		if player:GetResource("Enraged")>0 then
+			local d20_2=math.random(20)
+			local d20Total_2=d20_2+modifier(STR)+BonusToHit
+			addEnnemyCombatTexte(player.name," has avantage from rage additionnal roll "..d20.." vs "..d20_2)
+			d20Total=math.max(d20Total,d20Total_2)
+			d20=math.max(d20,d20_2)
+			
+		end
+
 		local cc=""
 		AC=0
 		--if target:IsA("Player") then
@@ -101,7 +111,12 @@ function MeleeAttack(other)
 				dmg.amount=math.random(maxRange)*2+modifier(STR)
 				cc=" with a Critical hit " 
 			end
-			addEnnemyCombatTexte(player.name," hit "..automaticTarget.name..cc.."for "..dmg.amount)
+			--if(player:GetResource("Enraged")>0) then 
+			dmg.amount=dmg.amount+player:GetResource("Enraged")
+			local bonus=""
+			if player:GetResource("Enraged") >0 then bonus="(+"..player:GetResource("Enraged").."Rage bonus)" end
+
+			addEnnemyCombatTexte(player.name," hit "..automaticTarget.name..cc.."for "..dmg.amount..bonus)
 			
 			BroadcastDamageFeedback(dmg.amount, pos)
 		else
@@ -121,7 +136,7 @@ function MeleeAttack(other)
 		local meleePos = HIT_BOX:GetWorldPosition()
 		local pos = (otherPos + meleePos) / 2
 		local rot = Rotation.New(otherPos - meleePos, Vector3.UP)
-		
+		ABILITY.owner:SetResource("EnragedHitOrGotHit",1)
 		COMBAT().ApplyDamage(other, dmg, ABILITY.owner, pos, rot)
 		
 		if other:IsA("Player") then

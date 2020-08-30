@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 5794851202175331359
-  Name: "NotesIcon"
+  Id: 16913617774493095251
+  Name: "NotesIconSongOfRest"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 1194883587469439443
+      RootId: 5194137062269189802
       Objects {
-        Id: 1194883587469439443
-        Name: "NotesIcon"
+        Id: 5194137062269189802
+        Name: "NotesIconSongOfRest"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 7597512254756207176
+        ChildIds: 6858087684479500761
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -48,7 +48,7 @@
         }
       }
       Objects {
-        Id: 7597512254756207176
+        Id: 6858087684479500761
         Name: "UI Button"
         Transform {
           Location {
@@ -65,18 +65,18 @@
             Z: 1
           }
         }
-        ParentId: 1194883587469439443
-        ChildIds: 4763630235721781395
-        ChildIds: 7424252729081220893
-        ChildIds: 17990856908696726308
+        ParentId: 5194137062269189802
+        ChildIds: 5989117863503605357
+        ChildIds: 3897846926554189885
+        ChildIds: 1044654913629691097
         UnregisteredParameters {
           Overrides {
             Name: "cs:Titre"
-            String: "Bardic Inspiration"
+            String: "Song of Rest"
           }
           Overrides {
             Name: "cs:Display"
-            String: "Inspire your allies giving them 1 extra action per turn"
+            String: "Heals your allies for 1d6"
           }
         }
         Collidable_v2 {
@@ -145,7 +145,7 @@
         }
       }
       Objects {
-        Id: 4763630235721781395
+        Id: 5989117863503605357
         Name: "UI Image"
         Transform {
           Location {
@@ -162,8 +162,8 @@
             Z: 1
           }
         }
-        ParentId: 7597512254756207176
-        ChildIds: 4698729457028997898
+        ParentId: 6858087684479500761
+        ChildIds: 14383384432025017478
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -184,9 +184,9 @@
               Id: 2825426222838177148
             }
             Color {
-              R: 1
+              R: 0.0799999833
               G: 1
-              B: 1
+              B: 0.963443756
               A: 1
             }
             TeamSettings {
@@ -207,7 +207,7 @@
         }
       }
       Objects {
-        Id: 4698729457028997898
+        Id: 14383384432025017478
         Name: "UI Image"
         Transform {
           Location {
@@ -223,7 +223,7 @@
             Z: 1
           }
         }
-        ParentId: 4763630235721781395
+        ParentId: 5989117863503605357
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -268,7 +268,7 @@
         }
       }
       Objects {
-        Id: 7424252729081220893
+        Id: 3897846926554189885
         Name: "UI Image"
         Transform {
           Location {
@@ -285,8 +285,8 @@
             Z: 1
           }
         }
-        ParentId: 7597512254756207176
-        ChildIds: 11016430316381914664
+        ParentId: 6858087684479500761
+        ChildIds: 9755057511428828092
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -309,9 +309,9 @@
               Id: 2825426222838177148
             }
             Color {
-              R: 1
+              R: 0.0799999833
               G: 1
-              B: 1
+              B: 0.963443756
               A: 1
             }
             TeamSettings {
@@ -332,7 +332,7 @@
         }
       }
       Objects {
-        Id: 11016430316381914664
+        Id: 9755057511428828092
         Name: "UI Image"
         Transform {
           Location {
@@ -348,7 +348,7 @@
             Z: 1
           }
         }
-        ParentId: 7424252729081220893
+        ParentId: 3897846926554189885
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -393,7 +393,7 @@
         }
       }
       Objects {
-        Id: 17990856908696726308
+        Id: 1044654913629691097
         Name: "TooltipedTemplate"
         Transform {
           Location {
@@ -407,8 +407,8 @@
             Z: 1
           }
         }
-        ParentId: 7597512254756207176
-        ChildIds: 8224615566583368857
+        ParentId: 6858087684479500761
+        ChildIds: 6051389464753437982
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -419,7 +419,7 @@
         }
       }
       Objects {
-        Id: 8224615566583368857
+        Id: 6051389464753437982
         Name: "Tooltipped"
         Transform {
           Location {
@@ -433,7 +433,7 @@
             Z: 1
           }
         }
-        ParentId: 17990856908696726308
+        ParentId: 1044654913629691097
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

@@ -85,6 +85,7 @@
         }
         ParentId: 6084476036261857102
         ChildIds: 6450942640541229781
+        ChildIds: 8333787156938212593
         ChildIds: 41649049887969941
         UnregisteredParameters {
           Overrides {
@@ -194,6 +195,34 @@
         }
       }
       Objects {
+        Id: 8333787156938212593
+        Name: "RageServer"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13116723762409747169
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 3070725323852862105
+          }
+        }
+      }
+      Objects {
         Id: 41649049887969941
         Name: "ClientContext"
         Transform {
@@ -212,6 +241,7 @@
         }
         ParentId: 13116723762409747169
         ChildIds: 8669907033987601221
+        ChildIds: 414811203194640491
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -266,6 +296,33 @@
         Script {
           ScriptAsset {
             Id: 9835685409538525721
+          }
+        }
+      }
+      Objects {
+        Id: 414811203194640491
+        Name: "RageClient"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 41649049887969941
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6962564896661215016
           }
         }
       }

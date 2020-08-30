@@ -160,7 +160,13 @@ function OnProjectileImpact(projectile, other, hitResult)
 					if MobType=="Commoner" then damageAmount = 2*math.random(4)+math.max(modifier(STR),modifier(DEX)) end
 				end
 				damageAmount=math.max(0,damageAmount)
-				addEnnemyCombatTexte(script.parent.name," hit "..other.name..cc.."for "..damageAmount.." damage " )
+				local resistance=""
+				if other:GetResource("Enraged")>0 then
+					damageAmount=damageAmount/2
+					resistance="reduced by rage ("..(damageAmount/2)..")"
+				end
+				other:SetResource("EnragedHitOrGotHit",1)
+				addEnnemyCombatTexte(script.parent.name," hit "..other.name..cc.."for "..damageAmount.." damage "..resistance )
 				SpawnAsset(IMPACT_CHARACTER_VFX, pos, rot)
 			else
 				if(d20==1) then cc="Critical fail! " end

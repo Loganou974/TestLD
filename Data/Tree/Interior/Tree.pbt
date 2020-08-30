@@ -158,7 +158,7 @@ Objects {
         }
         Overrides {
           Name: "cs:MobType"
-          String: "Vampire"
+          String: "Strahd"
         }
       }
     }

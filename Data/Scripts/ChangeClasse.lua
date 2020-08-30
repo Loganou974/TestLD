@@ -48,6 +48,7 @@ function OnEquipped(equipment, player)
             player.maxHitPoints = playerData.class.hit;
              player.hitPoints= player.maxHitPoints
              player:SetResource("statpoint",2)
+             player:SetResource("EnragedBonus",2)
             print("classe = "..playerData.class.name)
         end    
    

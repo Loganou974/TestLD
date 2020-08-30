@@ -16,6 +16,7 @@ function appuye(player,touche)
      if touche == "ability_extra_57"  then
         player:SetResource("STR",9999)
         player:SetResource("actionMax",9999)
+        Events.Broadcast("LEVEL_UP",player,2) 
      end
         if touche == "ability_extra_22" then
         
