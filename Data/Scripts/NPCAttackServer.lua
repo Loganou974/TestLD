@@ -154,11 +154,11 @@ function OnProjectileImpact(projectile, other, hitResult)
 				if(d20==20) then 
 					cc=" with a Critical hit " 
 					if MobType=="FlyingSnake" then damageAmount = 1 +2* (math.random(4) +math.random(4) +math.random(4))+math.max(modifier(STR),modifier(DEX)) end
-					if MobType=="Lizard" then damageAmount = 1*2math.max(modifier(STR),modifier(DEX)) end
+					if MobType=="Lizard" then damageAmount = 1*2+math.max(modifier(STR),modifier(DEX)) end
 					if MobType=="Commoner" then damageAmount = 2*math.random(4)+math.max(modifier(STR),modifier(DEX)) end
 				end
-				damageAmount=math.min(0,damageAmount)
-				addEnnemyCombatTexte(script.parent.name," hit "..other.name..cc.."for "..damageAmount.." damage")
+				damageAmount=math.max(0,damageAmount)
+				addEnnemyCombatTexte(script.parent.name," hit "..other.name..cc.."for "..damageAmount.." damage "..math.max(modifier(STR),modifier(DEX)) )
 				SpawnAsset(IMPACT_CHARACTER_VFX, pos, rot)
 			else
 				if(d20==1) then cc="Critical fail! " end
@@ -307,5 +307,10 @@ function DropRewards(killer)
 		LOOT_DROP_FACTORY().Drop(LOOT_ID, pos)
 	end
 end
+function OnCombatEnded(victory)
+
+
+end
+Events.Connect("END_COMBAT", OnCombatEnded)
 
 

@@ -90,7 +90,7 @@ function OnBannerMessageEvent(message,params,duration)
 end
 
 
-function OnLongBannerMessageEvent(message,params,duration)
+function OnLongBannerMessageEvent(message,duration,color,params)
     
     local speech=World.FindObjectById(message)
     local message=speech:GetCustomProperty("Texte")
@@ -123,7 +123,8 @@ function OnSubBannerMessage(message, duration, color)
         color = color})
 end
 
-function OnBigBannerMessage(message, duration, color)
+function OnBigBannerMessage(message, duration, color,params)
+    
     local message=GetSpeech(message,params)
     if duration == -1 then
         localMessageBanners={}
@@ -139,7 +140,7 @@ function OnBigBannerMessage(message, duration, color)
                 duration = duration,
                 etat="big",
                 color = color})
-                Task.Wait(duration)
+                --Task.Wait(duration)
     end
    
 end
@@ -166,21 +167,25 @@ function SpawnLocalMessage(message, duration, color)
         messageInstance.lifeSpan = DEFAULT_DURATION
     end
 end
-
+local nextMessageTime=0
 function SpawnLocalBigMessage(message, duration, color)
     PANEL.visibility = Visibility.FORCE_ON
     TEXT_BOX.text = message
     if duration then
         messageEndTime = time() + duration
     else
-        messageEndTime = time() + DEFAULT_DURATION
+        messageEndTime = time() + 3
     end
 end
 -- nil Tick(float)
 -- Hides the banner when the message has expired
+
 function Tick(deltaTime)
-    if time() > messageEndTime then
+    if time() > messageEndTime  then
         PANEL.visibility = Visibility.FORCE_OFF
+        
+        nextMessageTime=nextMessageTime-3
+        nextMessageTime=math.max(0,nextMessageTime)
     end
 
    
@@ -191,7 +196,10 @@ function Tick(deltaTime)
                 SpawnLocalMessage(value.message, value.duration, value.color)
                 end
                 if value.etat =="big" then
-                    SpawnLocalBigMessage(value.message, 3, value.color)
+                    
+                    Task.Spawn(function () SpawnLocalBigMessage(value.message, 3, value.color) end,nextMessageTime)
+                    
+                    nextMessageTime=nextMessageTime+3
                 end
                 
                 localMessageTime = time() + 1

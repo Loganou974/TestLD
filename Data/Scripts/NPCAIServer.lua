@@ -875,6 +875,26 @@ function GetObjectTeam(object)
 	end
 	return nil
 end
+function OnCombatEnded(victory)
+
+	if not victory then
+		AggroList={}
+		AggroListCount=0
+		if MobType=="FlyingSnake" then 
+
+			MAX_HEALTH =math.random(4)+math.random(4)
+
+		end
+		if MobType=="Commoner" then MAX_HEALTH =math.random(8) end
+		if MobType=="Lizard" then MAX_HEALTH =math.random(4)*10 end
+		if MAX_HEALTH==nill then MAX_HEALTH=ROOT:GetCustomProperty("CurrentHealth") end
+		ROOT:SetNetworkedCustomProperty("CurrentHealth",MAX_HEALTH)
+		ROOT:SetNetworkedCustomProperty("CurrentState",0)
+		
+end
+
+end
+Events.Connect("END_COMBAT", OnCombatEnded)
 
 
 function OnPropertyChanged(object, propertyName)

@@ -356,7 +356,7 @@ local gameplay=World.FindObjectById("83D47359D7CB64F1:Gameplay")
 function OnPlayerJoined(player)
     
     Task.Wait(0.5)
-    --print("allo? "..gameplay.name)
+   -- print("allo? "..player.animationStance)
     --Task.Spawn(function() GetStat(player) end,math.random(1))
    
     --Task.Wait(0.5)
@@ -367,7 +367,7 @@ function OnPlayerJoined(player)
 
     addFriendCombatTexte("World","Greeting0",{player.name})
     --" is ready to play some adventures"
-    Events.BroadcastToPlayer(player,"BannerMessage","Greeting1",{player.name})
+    Events.BroadcastToPlayer(player,"BannerMessage","Greeting1",3,Color.WHITE,{player.name})
     --Task.Wait(0.1)
     addSystemCombatTexte("Greeting1",{player.name},player)
     --Task.Wait(waitTime)
@@ -438,10 +438,10 @@ end
 
 
 function choixRace(player)
-    print("choix race")
     
-    local race=races[waitingBestPlayerDice[player.name]%nombreDeRace]
-
+    
+    local race=races[1+waitingBestPlayerDice[player.name]%nombreDeRace]
+    print("choix race "..waitingBestPlayerDice[player.name])
     
     
 
@@ -477,11 +477,12 @@ function choixRace(player)
     savePlayerData(player,playerData)
     addSystemCombatTexte("GreetingRoll",{waitingBestPlayerDice[player.name],playerData.race.name},player)
     --Task.Wait(0.2)
-    Events.BroadcastToPlayer(player,"BannerMessage","GreetingRoll",{waitingBestPlayerDice[player.name],playerData.race.name})
+    Events.BroadcastToPlayer(player,"BannerMessage","GreetingRoll",3,Color.WHITE,{waitingBestPlayerDice[player.name],playerData.race.name})
     
    -- Task.Wait(2)
     local raceName=string.gsub(race.name," ","")
-    Events.BroadcastToPlayer(player,"BannerMessage","GreetingRace"..raceName,{desc})
+    --Events.BroadcastToPlayer(player,"BannerMessage","GreetingRace"..raceName,{desc})
+    Events.BroadcastToPlayer(player,"BannerMessage","GreetingRace"..raceName,3,Color.WHITE,{player.name})
    -- Task.Wait(2)
     addSystemCombatTexte("GreetingRace"..raceName,{desc},player)
    
@@ -492,8 +493,9 @@ function choixRace(player)
 end
 function OnResourceChanged(player,resourceid,newvalue)
     playerData=loadPlayerData(player)
+    --print("resource new value "..newvalue)
     --Task.Wait(0.1)
-    if resourceid =="dice" and waitingPlayerDice[player.name]>0 then
+    if waitingPlayerDice[player.name]~=nil and resourceid =="dice" and waitingPlayerDice[player.name]>0 then
         waitingPlayerDice[player.name]=waitingPlayerDice[player.name]-1
         if waitingBestPlayerDice[player.name] == 0 then
            
@@ -507,7 +509,7 @@ function OnResourceChanged(player,resourceid,newvalue)
         end
         
     end   
-    if resourceid =="dice" and waitingPlayerDice[player.name]==0 then
+    if  waitingPlayerDice[player.name]~=nil and resourceid =="dice" and waitingPlayerDice[player.name]==0 then
         waitingPlayerDice[player.name]=waitingPlayerDice[player.name]-1
         if player:GetResource("lastDiceNumber") >waitingBestPlayerDice[player.name] then
             waitingBestPlayerDice[player.name]=player:GetResource("lastDiceNumber") 
@@ -725,7 +727,7 @@ function endCombat(victory)
         
         for i,p in ipairs(playersInCombat) do
             p:SetResource("incombat",0)
-            
+            changeAnimationForPlayer(p,false)
             
         end
         unfreezePlayers()
@@ -744,7 +746,8 @@ function endCombat(victory)
         Task.Wait(2)
         for i,p in ipairs(playersInCombat) do
             p:SetResource("incombat",0)
-           respawnPlayer(p)
+            changeAnimationForPlayer(p,false)
+            respawnPlayer(p)
             
         end
         unfreezePlayers()
@@ -759,6 +762,35 @@ function respawnPlayer(p)
     local spawn=World.FindObjectById("DC98C1DEF301876B:Combat_Spawn")
     p:Respawn(spawn:GetWorldPosition(), Rotation.New(0, 0, 45))
 
+end
+function changeAnimationForPlayer(p,inCombat)
+    if(string.match(p.animationStance,"unarmed")) then
+
+        if inCombat then
+            p.animationStance="unarmed_ready"
+        else
+            p.animationStance="unarmed_stance"
+        end
+    end
+
+    if(string.match(p.animationStance,"2hand_melee")) then
+
+        if inCombat then
+            p.animationStance="2hand_melee_ready"
+        else
+            p.animationStance="2hand_melee_stance"
+        end
+    end
+
+    if(string.match(p.animationStance,"1hand_melee")) then
+
+        if inCombat then
+            p.animationStance="1hand_melee_ready"
+        else
+            p.animationStance="1hand_melee_stance"
+        end
+    end
+    
 end
 function startCombat(player,combatZone)
     
@@ -779,8 +811,8 @@ function startCombat(player,combatZone)
         for i,p in ipairs(playersInCombat) do
             p:SetWorldPosition(player:GetWorldPosition())
             p:SetResource("incombat",1)
+            changeAnimationForPlayer(p,true)
            
-            
         end
       
        
@@ -807,11 +839,15 @@ function startCombat(player,combatZone)
             initiativeCombatLength=initiativeCombatLength+1
         end
         phasePrecombat=true
+        waitingPlayerDice={}
+        waitingBestPlayerDice={}
+        callbackPlayerDice={}
         for i,p in ipairs(playersInCombat) do
+            p:SetResource("Dice",1)
             waitingPlayerDice[p.name]=1
             waitingBestPlayerDice[p.name]=0
             callbackPlayerDice[p.name]=abilityCheck
-            p:SetResource("Dice",1)
+           -- p:SetResource("Dice",1)
             
         end
         --addDebugCombatTexte(" Mob trouve: "..#mobs.." ",debug)
@@ -900,7 +936,7 @@ function newTurn()
         UpdateBuffEtDebuff(currentPlayer)
        
         addDebugCombatTexte("1er joueur: "..currentPlayer.name,debug)
-        Events.BroadcastToAllPlayers("BannerMessage","CurrentPlayerIsPlaying",{currentPlayer.name})
+        Events.BroadcastToAllPlayers("BannerMessage","CurrentPlayerIsPlaying",3,Color.WHITE,{currentPlayer.name})
         
         
        
@@ -923,7 +959,7 @@ function newTurn()
     else
         currentPlayer=getCurrentPlayer()
         local mob=World.FindObjectById(currentPlayer)
-        Events.BroadcastToAllPlayers("BannerMessage","CurrentPlayerIsPlaying",{mob.name})
+        Events.BroadcastToAllPlayers("BannerMessage","CurrentPlayerIsPlaying",3,Color.WHITE,{mob.name})
        
         Events.Broadcast("BEGIN_TURN_NPC",currentPlayer)
         
@@ -950,6 +986,7 @@ end
 function UpdateBuffEtDebuff(player)
     addDebugCombatTexte("mise à jour buff et debuff",debug)
     if player:GetResource("Inspired")>0 then
+        print(player.name.." is inspired ")
         player:SetResource("actionMax",2)
         player:RemoveResource("Inspired",1)
     else

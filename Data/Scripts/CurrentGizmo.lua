@@ -53,12 +53,20 @@ function OnDestroyListener()
 end
 function OnPlayerJoined(player)
    
-        p=player
-       
+    p=player
+   
 
-    
+
+end
+function OnCombatEnded(player)
+   
+   instance:Destroy()
+   
+
+
 end
 instance.destroyEvent:Connect(OnDestroyListener)
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Events.Connect(propEventPlayer, OnTurnOn)
 Events.Connect(propEventNPC, OnTurnNpc)
+Events.Connect("END_COMBAT", OnCombatEnded)

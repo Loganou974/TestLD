@@ -82,6 +82,15 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 5972149454929132874
+      value {
+        Overrides {
+          Name: "AnimatedMeshStance"
+          String: "unarmed_idle_relaxed"
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 12185706750530733991
       value {
         Overrides {
@@ -100,21 +109,12 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:ObjectId"
-          Int: 100
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 13647223515220248951
-      value {
-        Overrides {
-          Name: "cs:WalkStance"
-          String: "1hand_melee_run_forward"
+          Name: "cs:TurnSpeed"
+          Float: 5
         }
         Overrides {
-          Name: "cs:RunStance"
-          String: "1hand_melee_run_forward"
+          Name: "cs:MoveSpeed"
+          Float: 600
         }
       }
     }

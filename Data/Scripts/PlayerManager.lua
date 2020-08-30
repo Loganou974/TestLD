@@ -107,7 +107,7 @@ function appuye(player,touche)
    end
     if touche == "ability_extra_27" then
        showCharacterScreen()
-       Events.BroadcastToServer("LEVEL_UP",player,2) 
+       --Events.BroadcastToServer("LEVEL_UP",player,2) 
     end
     if touche == "ability_extra_50" then
         Events.BroadcastToServer("GAINSTATPOINT",player,1) 
@@ -256,12 +256,15 @@ function desactivateAllAbilities()
     Events.BroadcastToServer("DESACTIVATE_ABILITIES",me)
    -- Task.Wait(0.1)
 end
-
+local executeOnce=false
 function OnExecuteAbility(ability)
    -- print("execute "..ability.name.."de "..ability.owner.name)
     actionMax=me:GetResource("actionMax")
-    if me:GetResource("incombat") == 1 and isPlaying and canAct then
+    if me:GetResource("incombat") == 1 and isPlaying and canAct and not executeOnce then
+        print(" action effectuee dans le tour "..turnNumberAction.." sur "..actionMax)
         turnNumberAction=turnNumberAction+1
+        executeOnce=true
+        Task.Spawn(function() executeOnce=false end,ability.executePhaseSettings.duration)
       if turnNumberAction>=actionMax then
         canAct=false;
         Task.Wait(0.2)

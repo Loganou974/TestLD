@@ -25,7 +25,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:ObjectId"
-            Int: 10
+            Int: 100
           }
           Overrides {
             Name: "cs:Team"
@@ -607,31 +607,31 @@
           Overrides {
             Name: "cs:Sleeping"
             ObjectReference {
-              SelfId: 8262214119199750715
+              SubObjectId: 5972149454929132874
             }
           }
           Overrides {
             Name: "cs:Engaging"
             ObjectReference {
-              SelfId: 8262214119199750715
+              SubObjectId: 5972149454929132874
             }
           }
           Overrides {
             Name: "cs:Attacking"
             ObjectReference {
-              SelfId: 8262214119199750715
+              SubObjectId: 5972149454929132874
             }
           }
           Overrides {
             Name: "cs:Patrolling"
             ObjectReference {
-              SelfId: 8262214119199750715
+              SubObjectId: 5972149454929132874
             }
           }
           Overrides {
             Name: "cs:Dead"
             ObjectReference {
-              SelfId: 8262214119199750715
+              SubObjectId: 5972149454929132874
             }
           }
           Overrides {
@@ -782,6 +782,14 @@
             ObjectReference {
               SubObjectId: 12185706750530733991
             }
+          }
+          Overrides {
+            Name: "cs:WalkStance"
+            String: "1hand_melee_run_forward"
+          }
+          Overrides {
+            Name: "cs:RunStance"
+            String: "1hand_melee_run_forward"
           }
         }
         Collidable_v2 {

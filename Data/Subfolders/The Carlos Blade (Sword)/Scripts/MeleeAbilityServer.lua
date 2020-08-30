@@ -192,6 +192,9 @@ end
 function OnNewTarget(name)
 	automaticTarget=World.FindObjectById(name)
 end
+function OnCombatEnded(name)
+	automaticTarget=nil
+end
 
 -- Registering equipment events
 EQUIPMENT.equippedEvent:Connect(OnEquipped)
@@ -201,3 +204,4 @@ ABILITY.castEvent:Connect(OnCast)
 ABILITY.executeEvent:Connect(OnExecute)
 ABILITY.recoveryEvent:Connect(ResetMelee)
 Events.Connect("BEGIN_TARGET_NPC", OnNewTarget)
+Events.Connect("END_COMBAT", OnCombatEnded)
