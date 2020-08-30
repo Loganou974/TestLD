@@ -73,7 +73,7 @@ Closebutton.clickedEvent:Connect(OnClickedClose)
 
 function relache(player,touche)
     if touche =="ability_secondary" then
-        UI.SetCursorVisible(not UI.IsCursorVisible())
+        UI.SetCursorVisible(true)
         UI.SetCanCursorInteractWithUI(true)
       
      end
@@ -83,7 +83,7 @@ function appuye(player,touche)
    
    if touche =="ability_secondary" then
         UI.SetCanCursorInteractWithUI(false)
-      UI.SetCursorVisible(not UI.IsCursorVisible())
+      UI.SetCursorVisible(false)
      
    end
    if touche == "ability_extra_22" then

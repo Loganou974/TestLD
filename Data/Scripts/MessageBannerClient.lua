@@ -51,6 +51,8 @@ local localBigMessageTime = 0
 local localMessageBanners = {}
 local localBigMessageBanners = {}
 local speeches=World.FindObjectById("12C0A430C309174F:NarratorSpeech")
+
+
 function GetSpeech(messageId,params)
     --local speeches=World.FindObjectById("8A4AB8499744FEA5:NarratorSpeech")
    
@@ -171,6 +173,16 @@ local nextMessageTime=0
 function SpawnLocalBigMessage(message, duration, color)
     PANEL.visibility = Visibility.FORCE_ON
     TEXT_BOX.text = message
+    local mot=message:len()/7
+    
+    
+    --for i=1,mot do
+        --local chiffre=math.random(1,3)
+     --   local instruments={instrument1,instrument2,instrument3}
+       --Task.Spawn(function() 
+        --    instruments[chiffre]:Play() end,i/math.random(3))
+    --end
+   
     if duration then
         messageEndTime = time() + duration
     else

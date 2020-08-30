@@ -62,12 +62,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17757758034467358373
+  Name: "Text 03: A"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_000"
+  }
+}
+Assets {
   Id: 17718112535551741152
   Name: "Fantasy Castle Wall Foundation 01 - Pillar 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_found_001_pillar_01"
+  }
+}
+Assets {
+  Id: 17708092207071118432
+  Name: "Metal Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_basic_001"
   }
 }
 Assets {
@@ -104,6 +122,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_001"
+  }
+}
+Assets {
+  Id: 17525387316498095498
+  Name: "Bass Guitar Short Sampled Instrument 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_sampled_bassguitar_short_ref"
   }
 }
 Assets {
@@ -158,6 +185,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_017"
+  }
+}
+Assets {
+  Id: 16361915178408140089
+  Name: "Text 03: G"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_006"
   }
 }
 Assets {
@@ -239,6 +275,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_bark_dead_001_uv"
+  }
+}
+Assets {
+  Id: 15272449388967041284
+  Name: "Basic Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_pbr_material_001"
   }
 }
 Assets {
@@ -422,6 +467,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13080073069178962316
+  Name: "Prism - 8-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_octagon_hq_001"
+  }
+}
+Assets {
   Id: 12882115061943751500
   Name: "Text 01: A"
   PlatformAssetType: 1
@@ -431,12 +485,30 @@ Assets {
   }
 }
 Assets {
+  Id: 12617939985168483360
+  Name: "Pyramid - 8-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_eighsided_hq_001"
+  }
+}
+Assets {
   Id: 12366754416923914931
   Name: "Pyramid - 7-Sided Hollow"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_7_sided_hollow_001"
+  }
+}
+Assets {
+  Id: 12345922736146002760
+  Name: "Text 03: I"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_008"
   }
 }
 Assets {
@@ -854,6 +926,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7890377554252778826
+  Name: "Ring - Beveled"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_001"
+  }
+}
+Assets {
   Id: 7822473577673662489
   Name: "Fantasy Castle Pillar 01 Mid"
   PlatformAssetType: 1
@@ -1079,6 +1160,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6089790138019219477
+  Name: "Text 03: P"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_015"
+  }
+}
+Assets {
   Id: 5930170301003509857
   Name: "Fantasy Human Gal 2"
   PlatformAssetType: 17
@@ -1214,6 +1304,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4543315673208588897
+  Name: "Street Sign - Triangle"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_street-sign_triangle_001"
+  }
+}
+Assets {
   Id: 4473594194193115933
   Name: "Marble Basic 01"
   PlatformAssetType: 2
@@ -1250,6 +1349,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4050437425243511619
+  Name: "Wood Raw"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_raw_001_uv"
+  }
+}
+Assets {
   Id: 3730360050292557886
   Name: "Table Assembled"
   PlatformAssetType: 1
@@ -1283,6 +1391,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_diamond_hq_001"
+  }
+}
+Assets {
+  Id: 3259288283879402813
+  Name: "Metal Gold 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_001"
   }
 }
 Assets {
@@ -1340,6 +1457,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2794636122271782815
+  Name: "Text 03: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_017"
+  }
+}
+Assets {
   Id: 2755433388312519553
   Name: "Ember Volume VFX"
   PlatformAssetType: 8
@@ -1382,6 +1508,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_grass_003_uv"
+  }
+}
+Assets {
+  Id: 2305428502430700492
+  Name: "Cone - Truncated Narrow"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_002"
   }
 }
 Assets {
@@ -1457,6 +1592,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1137112816547272582
+  Name: "Cylinder"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
   Id: 1104198953447072835
   Name: "Object Domestic Doors & Creaks Set 01 SFX"
   PlatformAssetType: 10
@@ -1481,6 +1625,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxmi_ice_transparent_ground"
+  }
+}
+Assets {
+  Id: 790683243481663532
+  Name: "Cylinder - Rounded Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_001"
+  }
+}
+Assets {
+  Id: 659547049175455346
+  Name: "Text 03: N"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_013"
   }
 }
 Assets {
