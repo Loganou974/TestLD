@@ -1,4 +1,4 @@
-﻿local ABILITY = script.parent.parent
+﻿local ABILITY = script.parent
 local MODULE = require( script:GetCustomProperty("ModuleManager") )
 
 function COMBAT() return MODULE.Get("standardcombo.Combat.Wrap") end
@@ -8,8 +8,8 @@ function OnCast(ability)
 end
 function OnExecute(ability)
     print("rage effect")
-    local bonus= player:GetResource("EnragedBonus")
-    player:SetResource("Enraged",bonus)
+    local bonus= ability.owner:GetResource("EnragedBonus")
+    ability.owner:SetResource("Enraged",bonus)
     
 end
 

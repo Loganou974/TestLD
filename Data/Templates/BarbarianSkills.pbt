@@ -209,6 +209,14 @@
           }
         }
         ParentId: 13116723762409747169
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ModuleManager"
+            AssetReference {
+              Id: 9770511928359673738
+            }
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

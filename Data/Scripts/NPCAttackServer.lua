@@ -82,13 +82,14 @@ function Attack(target)
 	d20=math.random(20)
 	d20Total=(d20+math.max(modifier(STR),modifier(DEX))+BonusToHit)
 	print("Attack roll from "..script.parent.name.." d20="..d20.."total="..d20Total)
-	addEnnemyCombatTexte(script.parent.name, " Attack roll to hit "..target.name.." :"..d20.." total="..d20Total)
 		
 	 AC=0
 	if target:IsA("Player") then
 		AC=target:GetResource("AC")
 		print("AC of "..target.name.."is "..AC)
 	end
+	addEnnemyCombatTexte(script.parent.name, " Attack roll to hit "..target.name.." :"..d20.." total="..d20Total.."vs "..AC)
+	
 	if target:IsA("Player") and PLAYER_HOMING_TARGETS() then
 		
 		if d20Total >= AC or d20 ==20 then
@@ -161,15 +162,24 @@ function OnProjectileImpact(projectile, other, hitResult)
 				end
 				damageAmount=math.max(0,damageAmount)
 				local resistance=""
+				
 				if other:GetResource("Enraged")>0 then
 					damageAmount=damageAmount/2
-					resistance="reduced by rage ("..(damageAmount/2)..")"
-				end
-				other:SetResource("EnragedHitOrGotHit",1)
+					resistance="reduced by rage ("..(damageAmount)..")"
+					if(damageAmount<1)		then
+						damageAmount=0
+						resistance="reduced by rage (-1dmg)"
+					
+					else
+						other:SetResource("EnragedHitOrGotHit",1)
+					end
+						end
+				
 				addEnnemyCombatTexte(script.parent.name," hit "..other.name..cc.."for "..damageAmount.." damage "..resistance )
 				SpawnAsset(IMPACT_CHARACTER_VFX, pos, rot)
 			else
 				if(d20==1) then cc="Critical fail! " end
+				
 				damageAmount =0
 				addEnnemyCombatTexte(script.parent.name,cc.." miss "..other.name.."("..d20Total.."<"..AC..")")
 			end	
