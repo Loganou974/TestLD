@@ -160,7 +160,7 @@ function OnProjectileImpact(projectile, other, hitResult)
 					if MobType=="Commoner" then damageAmount = 2*math.random(4)+math.max(modifier(STR),modifier(DEX)) end
 				end
 				damageAmount=math.max(0,damageAmount)
-				addEnnemyCombatTexte(script.parent.name," hit "..other.name..cc.."for "..damageAmount.." damage "..math.max(modifier(STR),modifier(DEX)) )
+				addEnnemyCombatTexte(script.parent.name," hit "..other.name..cc.."for "..damageAmount.." damage " )
 				SpawnAsset(IMPACT_CHARACTER_VFX, pos, rot)
 			else
 				if(d20==1) then cc="Critical fail! " end
