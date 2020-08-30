@@ -48,6 +48,7 @@ if MobType=="FlyingSnake" then
  end
 if MobType=="Commoner" then MAX_HEALTH =math.random(8) end
 if MobType=="Lizard" then MAX_HEALTH =math.random(4)*10 end
+if MobType=="Strahd" then MAX_HEALTH =17*math.random(8)+68 end
 if MAX_HEALTH==nill then MAX_HEALTH=ROOT:GetCustomProperty("CurrentHealth") end
 ROOT:SetNetworkedCustomProperty("CurrentHealth",MAX_HEALTH)
 
@@ -886,6 +887,7 @@ function OnCombatEnded(victory)
 
 		end
 		if MobType=="Commoner" then MAX_HEALTH =math.random(8) end
+		if MobType=="Strahd" then MAX_HEALTH =17*math.random(8)+68 end
 		if MobType=="Lizard" then MAX_HEALTH =math.random(4)*10 end
 		if MAX_HEALTH==nill then MAX_HEALTH=ROOT:GetCustomProperty("CurrentHealth") end
 		ROOT:SetNetworkedCustomProperty("CurrentHealth",MAX_HEALTH)

@@ -144,17 +144,19 @@ function OnProjectileImpact(projectile, other, hitResult)
 	
 	if other:IsA("Player") then
 		local cc=""
-		if(MobType=="FlyingSnake" or MobType=="Lizard" or MobType=="Commoner") then
+		if(MobType=="FlyingSnake" or MobType=="Lizard" or MobType=="Commoner" or MobType=="Strahd") then
 			if d20Total >= AC or d20==20then
 				
 				if MobType=="FlyingSnake" then damageAmount = 1 +math.random(4) +math.random(4) +math.random(4)+math.max(modifier(STR),modifier(DEX)) end
 				if MobType=="Lizard" then damageAmount = 1+math.max(modifier(STR),modifier(DEX)) end
+				if MobType=="Strahd" then damageAmount =4+math.random(8)+4*math.random(6)+math.max(modifier(STR),modifier(DEX)) end
 				if MobType=="Commoner" then damageAmount = math.random(4)+math.max(modifier(STR),modifier(DEX)) end
 				
 				if(d20==20) then 
 					cc=" with a Critical hit " 
 					if MobType=="FlyingSnake" then damageAmount = 1 +2* (math.random(4) +math.random(4) +math.random(4))+math.max(modifier(STR),modifier(DEX)) end
 					if MobType=="Lizard" then damageAmount = 1*2+math.max(modifier(STR),modifier(DEX)) end
+					if MobType=="Strahd" then damageAmount =4+math.random(8)*2+4*math.random(6)*2+math.max(modifier(STR),modifier(DEX)) end
 					if MobType=="Commoner" then damageAmount = 2*math.random(4)+math.max(modifier(STR),modifier(DEX)) end
 				end
 				damageAmount=math.max(0,damageAmount)
@@ -292,6 +294,7 @@ end
 if MobType=="FlyingSnake" then SetHealth(math.random(4)+math.random(4)) end
 if MobType=="Commoner" then SetHealth(math.random(8)) end
 if MobType=="Lizard" then SetHealth(math.random(4)) end
+if MobType=="Strahd" then SetHealth(17*math.random(8)+68) end
 
 function DropRewards(killer)
 	-- Give resources

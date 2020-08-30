@@ -35,6 +35,24 @@ Assets {
   }
 }
 Assets {
+  Id: 13329435188681810639
+  Name: "Frame Ring 015"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing_015"
+  }
+}
+Assets {
+  Id: 12692460957832317740
+  Name: "BG Gradient 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_019"
+  }
+}
+Assets {
   Id: 9351166523143381915
   Name: "Line Half 004a"
   PlatformAssetType: 9
@@ -59,6 +77,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid8px__019"
+  }
+}
+Assets {
+  Id: 4671589297553773507
+  Name: "Icon Add"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Add"
   }
 }
 Assets {
@@ -95,6 +122,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_029"
+  }
+}
+Assets {
+  Id: 3402899792385906025
+  Name: "BG Flat Outlined 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_015"
   }
 }
 Assets {

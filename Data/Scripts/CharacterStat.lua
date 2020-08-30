@@ -254,7 +254,7 @@ function GetStat(player)
         player.maxHitPoints = playerData.class.hit;
         player.hitPoints= player.maxHitPoints
         player:SetResource("classe",1)
-        player:SetResource("statPoint",2)
+       
         player:SetResource("STR",10)
         player:SetResource("INT",10)
         player:SetResource("DEX",10)

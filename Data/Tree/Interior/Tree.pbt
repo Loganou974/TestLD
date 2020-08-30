@@ -116,6 +116,50 @@ Objects {
           Name: "cs:MoveSpeed"
           Float: 600
         }
+        Overrides {
+          Name: "cs:CurrentHealth"
+          Float: 144
+        }
+        Overrides {
+          Name: "cs:Speed"
+          Int: 3
+        }
+        Overrides {
+          Name: "cs:STR"
+          Int: 14
+        }
+        Overrides {
+          Name: "cs:DEX"
+          Int: 18
+        }
+        Overrides {
+          Name: "cs:INT"
+          Int: 20
+        }
+        Overrides {
+          Name: "cs:WIS"
+          Int: 15
+        }
+        Overrides {
+          Name: "cs:CHA"
+          Int: 18
+        }
+        Overrides {
+          Name: "cs:CON"
+          Int: 18
+        }
+        Overrides {
+          Name: "cs:AC"
+          Int: 16
+        }
+        Overrides {
+          Name: "cs:BonusToHit"
+          Int: 9
+        }
+        Overrides {
+          Name: "cs:MobType"
+          String: "Vampire"
+        }
       }
     }
     TemplateAsset {

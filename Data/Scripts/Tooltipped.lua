@@ -9,17 +9,17 @@ local displayText=tooltip:FindChildByName("Display")
 
 function OnHovered(whichButton)
 	titreText.text=whichButton:GetCustomProperty("Titre")
-displayText.text=whichButton:GetCustomProperty("Display")
-	print("button hovered: " .. whichButton.name)
+	displayText.text=whichButton:GetCustomProperty("Display")
+	
 	tooltip.visibility=Visibility.FORCE_ON
 	local mousePos=UI.GetCursorPosition()
 	
 	tooltip.x=mousePos.x
-	tooltip.y=mousePos.y
+	tooltip.y=mousePos.y-50
 end
 
 function OnUnhovered(whichButton)
-	print("button hovered: " .. whichButton.name)
+	--print("button hovered: " .. whichButton.name)
 	tooltip.visibility=Visibility.FORCE_OFF
 end
 

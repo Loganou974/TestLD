@@ -72,16 +72,17 @@ EndTurnButton.clickedEvent:Connect(OnClickedEndTurn)
 Closebutton.clickedEvent:Connect(OnClickedClose)
 
 function relache(player,touche)
-    if touche =="ability_extra_14" then
+    if touche =="ability_secondary" then
         UI.SetCursorVisible(not UI.IsCursorVisible())
+        UI.SetCanCursorInteractWithUI(true)
       
      end
 end
 function appuye(player,touche)     
   -- print("touche "..touche)
    
-   if touche =="ability_extra_14" then
-        UI.SetCanCursorInteractWithUI(true)
+   if touche =="ability_secondary" then
+        UI.SetCanCursorInteractWithUI(false)
       UI.SetCursorVisible(not UI.IsCursorVisible())
      
    end
@@ -222,7 +223,8 @@ function dead()
 end
 
 function OnPlayerJoined(player)
-    UI.SetCursorVisible(false)
+    UI.SetCursorVisible(true)
+    UI.SetCanCursorInteractWithUI(true)
     me=Game.GetLocalPlayer()
     Task.Wait(0.1)
    if me ==player then
@@ -292,8 +294,16 @@ end
 local firstTimeHorsCombat=true
 local combatMusic=nil
 function OnResourceChanged(player, resourceId, newValue)
-    --print("ressource changed for "..player.name.." id="..resourceId.." value="..newValue)
+    print("ressource changed for "..player.name.." id="..resourceId.." value="..newValue)
     stat_refresh2()
+    if resourceId =="statpoint" then
+        local statButton=World.FindObjectById("A3336C1BA90BE744:Statpointbutton")
+        if player:GetResource("statpoint")>0 then
+            statButton.visibility=Visibility.FORCE_ON
+        else    
+            statButton.visibility=Visibility.FORCE_OFF
+        end
+    end
     if resourceId=="classe" then
            for i,v in ipairs(classes) do
                 if i==newValue then
@@ -451,7 +461,8 @@ function OnClassChanged(equipementName,classNom)
                 ability.castEvent:Connect(OnCast)
                 ability.executeEvent:Connect(OnExecuteAbility)
             end
-            showCharacterScreen()
+            --showCharacterScreen()
+
 end
 function levelup(abilityName)
     

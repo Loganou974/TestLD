@@ -431,15 +431,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12692460957832317740
-  Name: "BG Gradient 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundFlat_019"
-  }
-}
-Assets {
   Id: 12366754416923914931
   Name: "Pyramid - 7-Sided Hollow"
   PlatformAssetType: 1
@@ -1229,15 +1220,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_marble_tiles_001_uv"
-  }
-}
-Assets {
-  Id: 4357578890393849644
-  Name: "Frame Beveled 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameSolid8px_020"
   }
 }
 Assets {

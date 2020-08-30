@@ -36,7 +36,7 @@ function OnEquipped(equipment, player)
             player:SetResource("Profiency",playerData.class.proficiency[player:GetResource("level")])
             player.maxHitPoints = playerData.class.hit;
              player.hitPoints= player.maxHitPoints
-             
+             player:SetResource("statpoint",2)
             print("classe = "..playerData.class.name)
            
    
@@ -47,6 +47,7 @@ function OnEquipped(equipment, player)
             player:SetResource("Profiency",playerData.class.proficiency[player:GetResource("level")])
             player.maxHitPoints = playerData.class.hit;
              player.hitPoints= player.maxHitPoints
+             player:SetResource("statpoint",2)
             print("classe = "..playerData.class.name)
         end    
    
