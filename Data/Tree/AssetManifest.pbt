@@ -125,15 +125,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17525387316498095498
-  Name: "Bass Guitar Short Sampled Instrument 01 SFX"
-  PlatformAssetType: 10
-  PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "sfxabp_sampled_bassguitar_short_ref"
-  }
-}
-Assets {
   Id: 17387787898398217301
   Name: "Icon Gold"
   PlatformAssetType: 9

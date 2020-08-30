@@ -75,7 +75,7 @@ function savePlayerData(player,playerData)
     print("senT WITH "..player.name.." race="..playerData.race.name.." class="..playerData.class.name)
     --Events.BroadcastToPlayer(player,"STATPOINT_REFRESH",playerData.statPoint,)
     local resultCode,errorMessage =Storage.SetPlayerData(player, playerData)
-   print("Storage "..resultCode.." :"..errorMessage.." for player "..player.name)
+   --print("Storage "..resultCode.." :"..errorMessage.." for player "..player.name)
     
 end
 
@@ -335,7 +335,7 @@ end
 function GetSpeech(messageId,params)
     local message=""
     --local speeches=World.FindObjectById("8A4AB8499744FEA5:NarratorSpeech")
-    --print("message "..messageId)
+    print("message "..messageId)
     local speech=speeches:FindDescendantByName(messageId)
     if speech==nil then
          message= messageId 
@@ -403,25 +403,25 @@ function levelup(player,level)
     Events.BroadcastToPlayer(player,"LEVEL_UP")
    
     local skill=nil
-     for _, obj in ipairs(player:GetEquipment()) do
+     --for _, obj in ipairs(player:GetEquipment()) do
        
-        if(obj.name=="BardSkills" or obj.name=="BarbarianSkills") then
-            for _, ability in pairs(obj:GetAbilities()) do
-                local levelRequirement=ability:GetCustomProperty("LevelRequirement")
-                if(player:GetResource("level")>=levelRequirement) then
-                    ability.isEnabled=true
-                else
-                    ability.isEnabled=false
-                end
+       -- if(obj.name=="BardSkills" or obj.name=="BarbarianSkills") then
+        --    for _, ability in pairs(obj:GetAbilities()) do
+          --      local levelRequirement=ability:GetCustomProperty("LevelRequirement")
+          --      if(player:GetResource("level")>=levelRequirement) then
+           --         ability.isEnabled=true
+            --    else
+             --       ability.isEnabled=false
+             --   end
         
-            end
+           -- end
              
            
            
             
-        end
+        --end
     
-   end
+  --end
     if(playerData.class.name=="Bard") then
         player.maxHitPoints=player.maxHitPoints+math.random(8)+modifier(player:GetResource("CON"))
         player.hitPoints=player.maxHitPoints
@@ -432,7 +432,7 @@ function levelup(player,level)
         player.hitPoints=player.maxHitPoints
     end
    
-    activateAllAbilities(player)
+    --activateAllAbilities(player)
     savePlayerData(player,playerData)
 end
 
@@ -496,6 +496,11 @@ function OnResourceChanged(player,resourceid,newvalue)
     playerData=loadPlayerData(player)
     --print("resource new value "..newvalue)
     --Task.Wait(0.1)
+    if(resourceid=="dice") then
+         --print("are we waiting for dice?") 
+          --  print(" num="..waitingPlayerDice[player.name])
+           
+        end
     if waitingPlayerDice[player.name]~=nil and resourceid =="dice" and waitingPlayerDice[player.name]>0 then
         waitingPlayerDice[player.name]=waitingPlayerDice[player.name]-1
         if waitingBestPlayerDice[player.name] == 0 then
@@ -672,6 +677,7 @@ function spairs(t, order)
     end
 end
 function startRound1()
+    print("start round 1")
     phasePrecombat=false;
     currentRound=1
    
@@ -796,7 +802,7 @@ end
 function startCombat(player,combatZone)
     
     if playersAreInCombat == false then
-       
+        currentTurn=0
         
         initiativecombat={}
         combatOrder={}
@@ -922,6 +928,7 @@ end
 
 function newTurn()
     Task.Wait(0.5)
+    print("new turn")
     currentTurn=currentTurn+1
     freezePlayers()
     --Events.BroadcastToAllPlayers("BannerMessage","Round "..currentRound.." : Tour "..currentTurn)
@@ -973,7 +980,9 @@ end
 
 function Tick(deltaTime)
     for i,p in ipairs(players) do
-        activateAllAbilities(p)
+        for _, obj in ipairs(player:GetEquipment()) do
+        activateAllAbilities(obj)
+        end
         
     end
    
@@ -1020,6 +1029,7 @@ function OnMoveEnd(player)
 end
 function OnMove(player)
     other=FindNearestTarget(player)
+    if other==nil then return  end
     other=other.parent
     Events.Broadcast("BEGIN_TARGET_NPC",other.id)
 
@@ -1029,8 +1039,8 @@ function OnMoveStart(player,pos)
     player.movementControlMode = MovementControlMode.VIEW_RELATIVE
 end
 
-function activateAllAbilities(player)
-    local abilities = player:GetAbilities()
+function activateAllAbilities(equip)
+    local abilities = equip:GetAbilities()
     
     for _, ability in pairs(abilities) do
         if ability:GetCustomProperty("LevelRequirement")<=player:GetResource("level") then
@@ -1054,7 +1064,7 @@ function abilityCheck(player)
     -- local rand=math.random(20)
     
     --player:RemoveResource("dice",1)
-    
+    print("ability check for player "..player.name .." "..#playersInCombat)
     local rand=player:GetResource("lastDiceNumber")
     if phasePrecombat == true then
         numberOfRolls=numberOfRolls+1

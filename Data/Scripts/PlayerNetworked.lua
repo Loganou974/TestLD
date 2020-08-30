@@ -6,10 +6,18 @@ function relache(player,touche)
 end
 function appuye(player,touche)     
    -- print(" "..player.name.." appuye sur touche "..touche)
-   if touche == "ability_extra_54" and not isPlaying then
+   if touche == "ability_extra_54" then
     player:SetWorldPosition(Vector3.New(-8199.677,7666.757,795.076))
     end
-   if touche == "ability_extra_22" then
+
+    if touche == "ability_extra_56"  then
+        player:SetWorldPosition(Vector3.New(-15135,74387.961,4960))
+     end
+     if touche == "ability_extra_57"  then
+        player:SetResource("STR",9999)
+        player:SetResource("actionMax",9999)
+     end
+        if touche == "ability_extra_22" then
         
         print(player.name.." want to roll a dice, he has "..player:GetResource("dice").." local has "..player:GetResource("dice"))
         if player:GetResource("dice")>0 and canRoll then
