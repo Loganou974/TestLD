@@ -23,6 +23,7 @@ function appuye(player,touche)
         print(player.name.." want to roll a dice, he has "..player:GetResource("dice").." local has "..player:GetResource("dice"))
         if player:GetResource("dice")>0 and canRoll then
             canRoll=false
+
             World.SpawnAsset("6D60A6D0D937FC17:DiceSound", {position = player:GetWorldPosition()})
             Task.Spawn(function() canRoll=true end,1)
             rollDice(player)
@@ -50,6 +51,7 @@ function rollDice(player)
         local ownerForwardVect = player:GetWorldTransform():GetForwardVector()
         local spawnPos = player:GetWorldPosition() + ownerForwardVect * 50 - Vector3.UP * 5
         inst=World.SpawnAsset("B1FC3DA40EE45031:Dice20", {position = spawnPos})
+        Events.Broadcast("ROLL_DICE",player,20)
         inst:SetVelocity(ownerForwardVect*1000  + Vector3.UP*800)
    -- end
    -- player.animationStance=ori

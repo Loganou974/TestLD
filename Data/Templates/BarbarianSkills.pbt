@@ -385,6 +385,7 @@
         ParentId: 6084476036261857102
         ChildIds: 2965055902799531971
         ChildIds: 9879351479622088521
+        ChildIds: 10500643640877198873
         UnregisteredParameters {
           Overrides {
             Name: "cs:LevelRequirement"
@@ -472,6 +473,7 @@
         }
         ParentId: 16618928701581467268
         ChildIds: 5358336097482021150
+        ChildIds: 10438531198541972653
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -530,6 +532,33 @@
         }
       }
       Objects {
+        Id: 10438531198541972653
+        Name: "RecklessClient"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2965055902799531971
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 18101450676440997619
+          }
+        }
+      }
+      Objects {
         Id: 9879351479622088521
         Name: "AbilityDisplayImpact"
         Transform {
@@ -565,6 +594,42 @@
         Script {
           ScriptAsset {
             Id: 8111067854380061909
+          }
+        }
+      }
+      Objects {
+        Id: 10500643640877198873
+        Name: "RecklessServer"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16618928701581467268
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ModuleManager"
+            AssetReference {
+              Id: 9770511928359673738
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 16884992677213194829
           }
         }
       }
