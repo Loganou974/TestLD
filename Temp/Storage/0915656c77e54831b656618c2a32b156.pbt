@@ -6,6 +6,14 @@
     Table {
       Entries {
         Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Rock Gnome"
+        }
+      }
+      Entries {
+        Key {
           StringVar: "speed"
         }
         SimpleValue {
@@ -17,7 +25,7 @@
           StringVar: "description"
         }
         SimpleValue {
-          StringVar: "Your base walking speed is 25 feet."
+          StringVar: "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes."
         }
       }
       Entries {
@@ -39,7 +47,7 @@
                 IntVar: 2
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -47,7 +55,7 @@
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -55,7 +63,7 @@
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -85,14 +93,6 @@
           }
         }
       }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Halfling"
-        }
-      }
     }
   }
 }
@@ -104,18 +104,18 @@ Entries {
     Table {
       Entries {
         Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
-        }
-      }
-      Entries {
-        Key {
           StringVar: "name"
         }
         SimpleValue {
           StringVar: "Novice"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
         }
       }
     }
