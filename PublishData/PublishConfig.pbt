@@ -5,4 +5,4 @@ Description: "test"
 MaxPlayers: 3
 IsPrivate: true
 Tags: "Simulation"
-ScreenshotPaths: "C:/Users/Logan/Documents/My Games/CORE/Saved/Maps/TestLD/Screenshots/Screenshot0001.png"
+ScreenshotPaths: "C:/Users/Logan/Documents/My Games/CORE/Saved/Maps/Screenshots/Screenshot0008.png"
