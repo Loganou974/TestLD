@@ -444,7 +444,7 @@ function choixRace(player)
     local race=races[1+waitingBestPlayerDice[player.name]%nombreDeRace]
     print("choix race "..waitingBestPlayerDice[player.name])
     local block=World.FindObjectById("75D41B378E0201FA:Lead Pencil")
-    block:Destroy()
+    if block then  block:Destroy() end
     
 
     player:AddResource("STR",race.bonus[1])
@@ -681,6 +681,7 @@ function startRound1()
     print("start round 1")
     phasePrecombat=false;
     currentRound=1
+    currentPlayerIndex=1
    
     combatOrder={}
    
@@ -850,6 +851,7 @@ function startCombat(player,combatZone)
         waitingPlayerDice={}
         waitingBestPlayerDice={}
         callbackPlayerDice={}
+        numberOfRolls=0
         for i,p in ipairs(playersInCombat) do
             p:SetResource("Dice",1)
             waitingPlayerDice[p.name]=1
@@ -888,22 +890,16 @@ function unfreezePlayers()
 end
 
 function getCurrentPlayer()
-    --local temp=players[currentPlayerIndex]
-    --local temp2=initiativeCombat[temp.name]
-   -- addDebugCombatTexte("Tour "..currentTurn..":"..currentPlayerIndex.." "..temp.name.." initiative="..temp2)
-    --return players[currentPlayerIndex]
+    print("currentPlayerIndex "..currentPlayerIndex.."combat order "..#combatOrder)
+
+    
     local temp=combatOrder[currentPlayerIndex]
 
     return temp
 end
 
 function getNextPlayer()
-    --currentPlayerIndex=currentPlayerIndex+1
-   -- currentPlayerIndex=currentPlayerIndex%#players
-    --local temp=players[currentPlayerIndex+1]
-   -- local temp2=initiativeCombat[temp.name]
-   -- addDebugCombatTexte("Tour "..currentTurn..":"..currentPlayerIndex.." "..temp.name.." initiative="..temp2)
-   -- return players[currentPlayerIndex+1]
+   
 
    currentPlayerIndex=currentPlayerIndex+1
    addDebugCombatTexte("il y a "..#combatOrder.." participants , c'est le "..currentPlayerIndex.."eme",debug)
@@ -1057,7 +1053,7 @@ function activateAllAbilities(equip)
     
     for _, ability in pairs(abilities) do
         if ability:GetCustomProperty("LevelRequirement")<=ability.owner:GetResource("level") then
-            
+
               ability.isEnabled=true
         else
             ability.isEnabled=false
