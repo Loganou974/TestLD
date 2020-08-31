@@ -1,12 +1,13 @@
 ﻿Name: "OnEnter_8"
-RootId: 13528845306878451906
+RootId: 14047570559580135601
 Objects {
-  Id: 4620486833017305937
-  Name: "Speech2"
+  Id: 1309108944899558058
+  Name: "Speech1"
   Transform {
     Location {
     }
     Rotation {
+      Yaw: 3.41509417e-06
     }
     Scale {
       X: 1
@@ -14,11 +15,15 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13528845306878451906
+  ParentId: 14047570559580135601
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: " The stranger delivers a letter from his master,inviting them to the village of Barovia with an urgent request for your assistance."
+      String: "Your fire sputters as a low mist gathers around the edgesof your camp, growing closer as the night wears on. "
+    }
+    Overrides {
+      Name: "cs:Texte:isrep"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -29,17 +34,17 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech2_2"
+    FilePartitionName: "Speech1_14"
   }
   InstanceHistory {
-    SelfId: 4620486833017305937
-    SubobjectId: 9981971260644782871
+    SelfId: 1309108944899558058
+    SubobjectId: 15614738659678880492
     InstanceId: 16122403184916844978
     TemplateId: 12287563631168970081
   }
 }
 Objects {
-  Id: 6736037589197127828
+  Id: 2614855941995561191
   Name: "Speech1"
   Transform {
     Location {
@@ -52,11 +57,15 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13528845306878451906
+  ParentId: 14047570559580135601
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: " a colorfully dressed stranger approaches you while you are resting at a campfire near your home town."
+      String: "The woods are quiet this night, and the air grows chill. "
+    }
+    Overrides {
+      Name: "cs:Texte:isrep"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -67,11 +76,11 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_11"
+    FilePartitionName: "Speech1_15"
   }
   InstanceHistory {
-    SelfId: 6736037589197127828
-    SubobjectId: 10944705650922899666
+    SelfId: 2614855941995561191
+    SubobjectId: 17208680867607169185
     InstanceId: 16122403184916844978
     TemplateId: 12287563631168970081
   }

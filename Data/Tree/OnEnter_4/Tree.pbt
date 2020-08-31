@@ -1,7 +1,7 @@
 ﻿Name: "OnEnter_4"
-RootId: 15933472271951582580
+RootId: 10631914342970985434
 Objects {
-  Id: 1051516595115544522
+  Id: 9877105561863816836
   Name: "Speech2"
   Transform {
     Location {
@@ -15,11 +15,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15933472271951582580
+  ParentId: 10631914342970985434
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "One by one, the team coughts then faints. You can hear your mates falling while your eyes close."
+      String: "You feel trapped, like animals in a cage and powerless : as you feel being watched by an evil force."
     }
   }
   Collidable_v2 {
@@ -30,17 +30,17 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech2_1"
+    FilePartitionName: "Speech2"
   }
   InstanceHistory {
-    SelfId: 1051516595115544522
-    SubobjectId: 14127771653470685068
+    SelfId: 9877105561863816836
+    SubobjectId: 4866938328807886530
     InstanceId: 16122403184916844978
     TemplateId: 12287563631168970081
   }
 }
 Objects {
-  Id: 4297625655677334818
+  Id: 4577931487445664844
   Name: "Speech1"
   Transform {
     Location {
@@ -53,11 +53,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15933472271951582580
+  ParentId: 10631914342970985434
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Suddently, an eerie myst invades all the space around you. You\'re totally lost and hopeless."
+      String: "As you wake up, you notice everything around is different, darker."
     }
   }
   Collidable_v2 {
@@ -68,11 +68,11 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_4"
+    FilePartitionName: "Speech1_11"
   }
   InstanceHistory {
-    SelfId: 4297625655677334818
-    SubobjectId: 17382885696515013988
+    SelfId: 4577931487445664844
+    SubobjectId: 17658690950332419082
     InstanceId: 16122403184916844978
     TemplateId: 12287563631168970081
   }

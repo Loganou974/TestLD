@@ -1,7 +1,7 @@
 ﻿Name: "OnInteract_7"
-RootId: 2973203889367003142
+RootId: 1520006473055631264
 Objects {
-  Id: 18030036464210208814
+  Id: 12042098920444977095
   Name: "Speech1"
   Transform {
     Location {
@@ -14,11 +14,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2973203889367003142
+  ParentId: 1520006473055631264
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "She let you goes as she prays for your return."
+      String: "Go away !"
     }
   }
   Collidable_v2 {
@@ -39,7 +39,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16260886817252354877
+  Id: 8477873930909464969
   Name: "Speech1"
   Transform {
     Location {
@@ -52,11 +52,49 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2973203889367003142
+  ParentId: 1520006473055631264
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "She warns you to stay away from  Count Strahd von Zarovich\'s cursed land : Barovia"
+      String: "I don\'t want any trouble."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Speech1"
+  }
+  InstanceHistory {
+    SelfId: 18030036464210208814
+    SubobjectId: 3508267902327890024
+    InstanceId: 16122403184916844978
+    TemplateId: 12287563631168970081
+  }
+}
+Objects {
+  Id: 13548223335360069803
+  Name: "Speech1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1520006473055631264
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Texte"
+      String: "Get out of my sight, you are Strahd\'s meat."
     }
   }
   Collidable_v2 {
@@ -77,7 +115,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8011791814024859842
+  Id: 14882707692383947156
   Name: "Speech1"
   Transform {
     Location {
@@ -90,11 +128,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2973203889367003142
+  ParentId: 1520006473055631264
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Madame Eva tells you to go through this road to poursuie your adventure."
+      String: "Why are you here, stranger ?"
     }
   }
   Collidable_v2 {

@@ -291,7 +291,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 1.73964858
+      Float: 2.9203546
     }
   }
   Collidable_v2 {
@@ -477,15 +477,15 @@ Objects {
     Overrides {
       Name: "bp:Tint Color"
       Color {
-        R: 0.79
-        G: 0.891523123
+        R: 0.826026678
+        G: 0.63
         B: 1
         A: 1
       }
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 1.93106985
+      Float: 1.87009716
     }
   }
   Collidable_v2 {

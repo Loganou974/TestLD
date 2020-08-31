@@ -9,15 +9,15 @@
           StringVar: "speed"
         }
         SimpleValue {
-          IntVar: 30
+          IntVar: 25
         }
       }
       Entries {
         Key {
-          StringVar: "name"
+          StringVar: "description"
         }
         SimpleValue {
-          StringVar: "Tiefling"
+          StringVar: "Your base walking speed is 25 feet."
         }
       }
       Entries {
@@ -39,7 +39,7 @@
                 IntVar: 2
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -47,7 +47,7 @@
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -71,7 +71,7 @@
                 IntVar: 6
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -87,10 +87,10 @@
       }
       Entries {
         Key {
-          StringVar: "description"
+          StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Your base walking speed is 30 feet."
+          StringVar: "Halfling"
         }
       }
     }
