@@ -978,14 +978,15 @@ function newTurn()
 end
 
 function Tick(deltaTime)
-    players=Game.GetPlayers()
-    for i,p in ipairs(players) do
-        for _, obj in ipairs(p:GetEquipment()) do
-        activateAllAbilities(obj)
+    if not playersAreInCombat then
+        players=Game.GetPlayers()
+        for i,p in ipairs(players) do
+            for _, obj in ipairs(p:GetEquipment()) do
+            activateAllAbilities(obj)
+            end
+            
         end
-        
     end
-   
     Task.Wait(1)
 end
 
