@@ -6,22 +6,6 @@
     Table {
       Entries {
         Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Half Orc"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: " ( / STR +2 / CON +1)"
-        }
-      }
-      Entries {
-        Key {
           StringVar: "bonus"
         }
         SimpleValue {
@@ -31,7 +15,7 @@
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -47,7 +31,7 @@
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -55,7 +39,7 @@
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -63,7 +47,7 @@
                 IntVar: 5
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -90,7 +74,23 @@
           StringVar: "speed"
         }
         SimpleValue {
-          IntVar: 30
+          IntVar: 50
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Aarakocra"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: " (/DEX+2/WIS+1)"
         }
       }
     }

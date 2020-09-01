@@ -6,22 +6,6 @@
     Table {
       Entries {
         Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Hill Dwarf"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: " ( / CON +2 / WIS +1)"
-        }
-      }
-      Entries {
-        Key {
           StringVar: "bonus"
         }
         SimpleValue {
@@ -47,7 +31,7 @@
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -55,7 +39,7 @@
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 1
               }
             }
             Entries {
@@ -63,7 +47,7 @@
                 IntVar: 5
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -91,6 +75,22 @@
         }
         SimpleValue {
           IntVar: 25
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Stout Halfling"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: " (/DEX+2/CON+1)"
         }
       }
     }
