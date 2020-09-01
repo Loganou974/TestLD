@@ -7,10 +7,7 @@ local RIGHT_SHADOW = script:GetCustomProperty("RIGHT_SHADOW"):WaitForObject()
 local propUIButton = script:GetCustomProperty("UIButton"):WaitForObject()
 function OnPlayerJoined(player)
 
-   if me.name==player.name then
-     player.resourceChangedEvent:Connect(OnResourceChanged)
-     player.bindingPressedEvent:Connect(appuye)
-   end
+  
 end
 function appuye(player,touche)     
     
@@ -66,5 +63,7 @@ function rollDice(player)
     
     World.SpawnAsset("B1FC3DA40EE45031:Dice20", {position = pos})
 end
-Game.playerJoinedEvent:Connect(OnPlayerJoined)
+--Game.playerJoinedEvent:Connect(OnPlayerJoined)
+me.resourceChangedEvent:Connect(OnResourceChanged)
+me.bindingPressedEvent:Connect(appuye)
 propUIButton.pressedEvent:Connect(OnPressed)

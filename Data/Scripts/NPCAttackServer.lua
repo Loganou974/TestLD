@@ -326,10 +326,15 @@ if MobType=="Strahd" then SetHealth(17*math.random(8)+68) end
 
 function DropRewards(killer)
 	-- Give resources
+	--TODO give xp in range
 	if REWARD_RESOURCE_TYPE 
-	and Object.IsValid(killer) 
-	and killer:IsA("Player") then
-		killer:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT)
+	and Object.IsValid(killer) 	then
+		local otherplayers= Game.GetPlayers()
+       
+        for k,p in pairs(otherplayers) do
+            p:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT)
+        end
+		
 	end
 	
 	-- Drop loot

@@ -355,7 +355,7 @@ local waitTime=1
 local gameplay=World.FindObjectById("83D47359D7CB64F1:Gameplay")
 function OnPlayerJoined(player)
     
-    Task.Wait(1)
+    Task.Wait(0.5)
    -- print("allo? "..player.animationStance)
     --Task.Spawn(function() GetStat(player) end,math.random(1))
    
@@ -528,7 +528,8 @@ function OnResourceChanged(player,resourceid,newvalue)
     end 
    
     if(resourceid=="XP") then
-        print("xp "..newvalue.. "level= "..player:GetResource("level"))
+      
+
         if(newvalue>=300 and player:GetResource("level") == 1) then
             levelup(player,2)
         end
@@ -629,7 +630,7 @@ function addSystemCombatTexte(message,params,dest)
 
    end
   -- end
-   -- Task.Wait(0.5)
+    Task.Wait(0.1)
 end
 function addDebugCombatTexte(message,params)
     local message =GetSpeech(message,params)
@@ -756,13 +757,17 @@ function endCombat(victory)
         Task.Wait(0.1)
         addSystemCombatTexte("GameOver")
         Task.Wait(2)
+        playersAreInCombat=false;
         for i,p in ipairs(playersInCombat) do
             p:SetResource("incombat",0)
             changeAnimationForPlayer(p,false)
-            respawnPlayer(p)
+           
+            p.movementControlMode = MovementControlMode.VIEW_RELATIVE
+            
+             respawnPlayer(p)
             
         end
-        unfreezePlayers()
+        --unfreezePlayers()
     end
     playersAreInCombat=false;
     playersInCombat={}

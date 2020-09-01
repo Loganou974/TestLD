@@ -225,30 +225,8 @@ function dead()
 end
 
 function OnPlayerJoined(player)
-    Task.Wait(2)
-    UI.SetCursorVisible(true)
-    UI.SetCanCursorInteractWithUI(true)
-    me=Game.GetLocalPlayer()
     
-    me.clientUserData.turnNumberAction=0
-   if me ==player then
-        print("Hello, " .. me.name .. "!") 
-        propClassText_0:AttachToPlayer(me, "nameplate")
-        local abilities = me:GetAbilities()
-        
-        for _, ability in pairs(abilities) do
-           -- print("abilite recu "..ability.name .." pour " .. me.name)
-            ability.castEvent:Connect(OnCast)
-            ability.executeEvent:Connect(OnExecuteAbility)
-        end
-        me.resourceChangedEvent:Connect(OnResourceChanged)
-        me.bindingPressedEvent:Connect(appuye)
-        me.bindingReleasedEvent:Connect(relache)
-        
-        me.damagedEvent:Connect(OnDamagedPlayer)
-    end
-   
-   
+    print(me.name..": "..player.name.." connected")
     
   
 end
@@ -494,8 +472,28 @@ function OnWeaponChanged(equipementName)
             end
     end
 end
-Game.playerJoinedEvent:Connect(OnPlayerJoined)
+me=Game.GetLocalPlayer()
+Task.Wait(0.5)
+UI.SetCursorVisible(true)
+UI.SetCanCursorInteractWithUI(true)
+me.clientUserData.turnNumberAction=0
+print("Hello, " .. me.name .. "!") 
+propClassText_0:AttachToPlayer(me, "nameplate")
+local abilities = me:GetAbilities()
 
+me.bindingPressedEvent:Connect(appuye)
+me.bindingReleasedEvent:Connect(relache)
+
+me.damagedEvent:Connect(OnDamagedPlayer)
+for _, ability in pairs(abilities) do
+    -- print("abilite recu "..ability.name .." pour " .. me.name)
+    ability.castEvent:Connect(OnCast)
+    ability.executeEvent:Connect(OnExecuteAbility)
+end
+
+   
+Game.playerJoinedEvent:Connect(OnPlayerJoined)
+me.resourceChangedEvent:Connect(OnResourceChanged)
 Events.Connect("STAT_REFRESH", stat_refresh)
 Events.Connect("STATPOINT_REFRESH", statpoint_refresh)
 Events.Connect("DEAD", dead)
