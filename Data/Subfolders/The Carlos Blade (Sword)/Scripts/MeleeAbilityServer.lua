@@ -145,7 +145,7 @@ function MeleeAttack(other)
 		
 	
 		--ResetMelee(ABILITY)
-		automaticTarget=nil
+		--automaticTarget=nil
 	--end
 end
 

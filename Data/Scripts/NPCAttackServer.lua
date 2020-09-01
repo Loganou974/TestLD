@@ -154,11 +154,12 @@ function OnProjectileImpact(projectile, other, hitResult)
 	local rot = projectile:GetWorldTransform():GetRotation()
 	
 	local damageAmount = 0
-	
+	print("projectiled 1")
 	if other:IsA("Player") then
+		print("projectiled 2")
 		local cc=""
 		if(MobType=="FlyingSnake" or MobType=="Lizard" or MobType=="Commoner" or MobType=="Strahd") then
-			if d20Total >= AC or d20==20then
+			if d20Total >= AC or d20==20 then
 				
 				if MobType=="FlyingSnake" then damageAmount = 1 +math.random(4) +math.random(4) +math.random(4)+math.max(modifier(STR),modifier(DEX)) end
 				if MobType=="Lizard" then damageAmount = 1+math.max(modifier(STR),modifier(DEX)) end
@@ -185,7 +186,7 @@ function OnProjectileImpact(projectile, other, hitResult)
 					else
 						other:SetResource("EnragedHitOrGotHit",1)
 					end
-						end
+				end
 				
 				addEnnemyCombatTexte(script.parent.name," hit "..other.name..cc.."for "..damageAmount.." damage "..resistance )
 				SpawnAsset(IMPACT_CHARACTER_VFX, pos, rot)
@@ -205,7 +206,7 @@ function OnProjectileImpact(projectile, other, hitResult)
 		damageAmount = DAMAGE_TO_NPCS
 		SpawnAsset(IMPACT_SURFACE_VFX, pos, hitResult:GetTransform():GetRotation())
 	end
-	
+	print("projectiled 3")
 	local dmg = Damage.New(damageAmount)
 	dmg:SetHitResult(hitResult)
 	dmg.reason = DamageReason.COMBAT

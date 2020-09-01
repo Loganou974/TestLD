@@ -10,6 +10,7 @@ local debug=false
 local currentTurn=0;
 local playersAreInCombat=false
 local currentCombatZone=nil
+local levelXP={0,300,900,2700,6500,14000,23000,34000,48000,64000,85000,100000,120000,140000,165000,195000,225000,265000,305000,355000}
 local races={
     {name ="Dwarf",bonus={0,0,0,2,0,0,0},speed=25,description="Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor"},
     {name ="Hill Dwarf",bonus={0,0,0,2,1,0,0},speed=25,description="As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience."},
@@ -529,10 +530,12 @@ function OnResourceChanged(player,resourceid,newvalue)
    
     if(resourceid=="XP") then
       
-
-        if(newvalue>=300 and player:GetResource("level") == 1) then
-            levelup(player,2)
+        for i=1,#levelXP do
+            if(newvalue>=levelXP[i] and player:GetResource("level") < i) then
+                levelup(player,i)
+            end
         end
+       
     end
         if(resourceid=="STR") then
 
@@ -561,7 +564,7 @@ function OnResourceChanged(player,resourceid,newvalue)
              player:SetResource("AC",(10+newDex+newCon))
             end
             if player:GetResource("level") > 1 then 
-                player.maxHitPoints = playerData.class.hit+newCon+(math.floor(playerData.class.hit/2)+1)*player.level;
+                player.maxHitPoints = playerData.class.hit+newCon+(math.floor(playerData.class.hit/2)+1)*player:GetResource("level");
             else
                 player.maxHitPoints = playerData.class.hit+newCon
             end
@@ -731,6 +734,10 @@ function npcDied(idCible)
         
         end
     end
+    other=FindNearestTarget(currentPlayer)
+    other=other.parent
+    print("new target is "..other.name)
+    Events.Broadcast("BEGIN_TARGET_NPC",other.id)
 end
 
 function endCombat(victory)
