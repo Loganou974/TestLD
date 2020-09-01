@@ -323,15 +323,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17020224576326832494
-  Name: "Sphere - Half"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hemisphere_001"
-  }
-}
-Assets {
   Id: 16992826265768738306
   Name: "Cylinder"
   PlatformAssetType: 1
@@ -2372,15 +2363,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_table_dining_001"
-  }
-}
-Assets {
-  Id: 5663100067234833879
-  Name: "Cylinder - Chamfered Small Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_hq_003"
   }
 }
 Assets {
