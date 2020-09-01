@@ -225,10 +225,11 @@ function dead()
 end
 
 function OnPlayerJoined(player)
+    Task.Wait(2)
     UI.SetCursorVisible(true)
     UI.SetCanCursorInteractWithUI(true)
     me=Game.GetLocalPlayer()
-    Task.Wait(0.1)
+    
     me.clientUserData.turnNumberAction=0
    if me ==player then
         print("Hello, " .. me.name .. "!") 
