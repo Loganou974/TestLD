@@ -95,7 +95,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "VampireAi"
+          String: "Strahd"
         }
         Overrides {
           Name: "Position"

@@ -142,6 +142,7 @@ end
 function endTurn()
 
     if me:GetResource("incombat") == 1 then
+        
       print("end turn")
         OnTurnOff()
     
@@ -436,6 +437,7 @@ function OnTurnOff()
     
     if me:GetResource("incombat") == 1 and  isPlaying then
         print("turnoff for"..me.name)
+        stepBar.progress=0
         Events.BroadcastToServer("END_TURN",me)
          isPlaying=false
     end

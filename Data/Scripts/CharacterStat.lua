@@ -813,8 +813,8 @@ function startCombat(player,combatZone)
         addDebugCombatTexte(" "..combatZone,debug)
         currentCombatZone=World.FindObjectById(combatZone)
         local cZ=currentCombatZone:FindDescendantByName("CombatZone");
-        
-        Events.BroadcastToAllPlayers("BannerMessage","IntroSpeech")
+        local introSpeech=cZ:GetCustomProperty("introSpeech")
+        Events.BroadcastToAllPlayers("BannerMessage",introSpeech)
         playersAreInCombat=true
         addDebugCombatTexte("starting combat "..combatZone,debug)
         playersInCombat=Game:GetPlayers()
@@ -978,8 +978,9 @@ function newTurn()
 end
 
 function Tick(deltaTime)
+    players=Game.GetPlayers()
     for i,p in ipairs(players) do
-        for _, obj in ipairs(player:GetEquipment()) do
+        for _, obj in ipairs(p:GetEquipment()) do
         activateAllAbilities(obj)
         end
         
@@ -1063,7 +1064,7 @@ function activateAllAbilities(equip)
     
     for _, ability in pairs(abilities) do
         if ability:GetCustomProperty("LevelRequirement")<=ability.owner:GetResource("level") then
-
+            ---print(" "..ability.name.." enabled")
               ability.isEnabled=true
         else
             ability.isEnabled=false
