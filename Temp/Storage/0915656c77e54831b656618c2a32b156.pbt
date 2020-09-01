@@ -6,22 +6,6 @@
     Table {
       Entries {
         Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: "The sun elves of Faer\303\273n are highly intelligent. "
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "High Elf"
-        }
-      }
-      Entries {
-        Key {
           StringVar: "bonus"
         }
         SimpleValue {
@@ -47,7 +31,7 @@
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -71,7 +55,7 @@
                 IntVar: 6
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -87,10 +71,26 @@
       }
       Entries {
         Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: "Your base walking speed is 30 feet."
+        }
+      }
+      Entries {
+        Key {
           StringVar: "speed"
         }
         SimpleValue {
           IntVar: 30
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Tiefling"
         }
       }
     }

@@ -1,7 +1,7 @@
 ﻿Name: "Geo"
-RootId: 11580570083754965326
+RootId: 9319901394538358537
 Objects {
-  Id: 11346970895527490877
+  Id: 3090787517326385733
   Name: "ClientContext"
   Transform {
     Location {
@@ -14,8 +14,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11580570083754965326
-  ChildIds: 11866091861152367189
+  ParentId: 9319901394538358537
+  ChildIds: 14145674577181530737
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33,142 +33,10 @@ Objects {
   }
 }
 Objects {
-  Id: 11866091861152367189
-  Name: "Pyramid - 5-Sided Truncated Polished"
+  Id: 14145674577181530737
+  Name: "Epaulette"
   Transform {
     Location {
-      X: 21.5309105
-      Y: -20.6374435
-    }
-    Rotation {
-      Yaw: 46.213829
-    }
-    Scale {
-      X: 0.5
-      Y: 0.5
-      Z: 0.5
-    }
-  }
-  ParentId: 11346970895527490877
-  ChildIds: 4452914656380893072
-  ChildIds: 12394221380682414577
-  ChildIds: 2298716476555981610
-  ChildIds: 8585323361494055060
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14027783486601827876
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.100000024
-        G: 0.0337748416
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12970276351891849033
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 11866091861152367189
-    SubobjectId: 14732685590612164412
-    InstanceId: 9209928760912629969
-    TemplateId: 4980364898667106966
-  }
-}
-Objects {
-  Id: 8585323361494055060
-  Name: "Pipe - X-Intersection Thick"
-  Transform {
-    Location {
-      X: 3.23901248
-      Y: 82.0593567
-      Z: -44.8210526
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.09433591
-    }
-  }
-  ParentId: 11866091861152367189
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14027783486601827876
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.100000024
-        G: 0.0337748416
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11348708063912775172
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 8585323361494055060
-    SubobjectId: 2304966480550626813
-    InstanceId: 9209928760912629969
-    TemplateId: 4980364898667106966
-  }
-}
-Objects {
-  Id: 2298716476555981610
-  Name: "Pyramid - 5-Sided Truncated Polished"
-  Transform {
-    Location {
-      Y: 168.727661
-      Z: 8.07387829
     }
     Rotation {
     }
@@ -178,175 +46,441 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11866091861152367189
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14027783486601827876
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.100000024
-        G: 0.0337748416
-        A: 1
-      }
-    }
-  }
+  ParentId: 3090787517326385733
+  ChildIds: 6490142719988596208
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 12970276351891849033
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 2298716476555981610
-    SubobjectId: 8592725864127712835
-    InstanceId: 9209928760912629969
-    TemplateId: 4980364898667106966
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
-  Id: 12394221380682414577
-  Name: "Pipe - X-Intersection"
+  Id: 6490142719988596208
+  Name: "Epauliere"
   Transform {
-    Location {
-      X: 44.9605064
-      Y: 88.2595596
-      Z: -83.813385
-    }
-    Rotation {
-      Pitch: 6.83018879e-06
-      Yaw: 89.9999847
-      Roll: 89.999939
-    }
     Scale {
-      X: 1.4013412
-      Y: 1.15672934
-      Z: 0.819984257
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 11866091861152367189
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14027783486601827876
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.100000024
-        G: 0.0337748416
-        A: 1
-      }
-    }
-  }
+  ParentId: 14145674577181530737
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 2150672267817994367
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1596695832662803649
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.934011817
+            Y: -12.8251247
+            Z: 5.65494347
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -10.0133972
+            Yaw: -164.348907
+            Roll: 37.5689507
+          }
+        }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 12394221380682414577
-    SubobjectId: 14184314062014268568
-    InstanceId: 9209928760912629969
-    TemplateId: 4980364898667106966
-  }
-}
-Objects {
-  Id: 4452914656380893072
-  Name: "Pipe - X-Intersection"
-  Transform {
-    Location {
-      Y: 83.4467773
-      Z: -140.68222
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.0616256
-      Y: 1.58122683
-      Z: 1.94715178
-    }
-  }
-  ParentId: 11866091861152367189
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14027783486601827876
+    ParameterOverrideMap {
+      key: 2700925779340611969
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Epauliere"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5.45062113
+            Y: -6.69301558
+            Z: -0.425502211
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -141.292465
+            Roll: -24.884552
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 2.3148241
+            Y: 2.3148241
+            Z: 2.3148241
+          }
+        }
       }
     }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.100000024
-        G: 0.0337748416
-        A: 1
+    ParameterOverrideMap {
+      key: 2977930831087077091
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5.83046913
+            Y: -8.04709148
+            Z: 10.3630362
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.593639
+            Yaw: 81.3006363
+            Roll: -61.2996216
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.039261654
+            Y: 0.039261654
+            Z: 0.039261654
+          }
+        }
       }
     }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2150672267817994367
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
+    ParameterOverrideMap {
+      key: 4368051758024411064
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.020995006
+            Y: -3.47179174
+            Z: 9.11679745
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 8.83114467e-07
+            Roll: 62.2870064
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0775089338
+            Y: 0.0775089338
+            Z: 0.0775089338
+          }
+        }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4452914656380893072
-    SubobjectId: 6130030869309983481
-    InstanceId: 9209928760912629969
-    TemplateId: 4980364898667106966
+    ParameterOverrideMap {
+      key: 4795087264516932409
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6.37271404
+            Y: -12.7998476
+            Z: 6.84304857
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 105.765488
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5806313434987866041
+      value {
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -27.5415649
+            Yaw: -136.45575
+            Roll: 28.320734
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6650806162611947936
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6.87623692
+            Y: -8.60114574
+            Z: 5.90273762
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.73207552e-05
+            Yaw: -65.973877
+            Roll: 62.2878914
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0775089338
+            Y: 0.0775089338
+            Z: 0.0775089338
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8218444058616932210
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.034485586
+            Y: -7.99492264
+            Z: 12.9441671
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.039261654
+            Y: 0.039261654
+            Z: 0.039261654
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11537673749958364047
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2.87684345
+            Y: -2.77568126
+            Z: 9.77007389
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12390051635246048086
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.034485586
+            Y: -7.99492264
+            Z: 6.74567461
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Roll: -33.4603271
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.160057068
+            Y: 0.160057068
+            Z: 0.160057068
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12570852524797546597
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3.57984972
+            Y: -3.86300039
+            Z: 8.18302727
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 6.83018879e-06
+            Yaw: -35.3067322
+            Roll: 62.2874832
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0775089338
+            Y: 0.0775089338
+            Z: 0.0775089338
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12901878587148874998
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5.13689327
+            Y: -8.05547619
+            Z: 10.3630362
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.59354341
+            Yaw: -82.5858459
+            Roll: -61.2996521
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.039261654
+            Y: 0.039261654
+            Z: 0.039261654
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15109129676969849720
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6.24755192
+            Y: -5.42414474
+            Z: 6.84304857
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 84.7813263
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17539992628742460642
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.034485586
+            Y: -7.99492264
+            Z: 6.74567461
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Roll: -24.1755981
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.169072226
+            Y: 0.169788122
+            Z: 0.0206274875
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17696584874198026195
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3.09723639
+            Y: -13.693964
+            Z: 5.33520889
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.04905664e-05
+            Yaw: 133.506073
+            Roll: 30.9769459
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17923857628547057276
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.00445369026
+            Y: -12.2747278
+            Z: 11.192893
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 9.1958816e-07
+            Roll: -65.1691284
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.039261654
+            Y: 0.039261654
+            Z: 0.039261654
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2591465773867244574
+    }
   }
 }
