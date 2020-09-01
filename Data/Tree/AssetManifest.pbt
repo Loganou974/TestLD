@@ -107,39 +107,12 @@ Assets {
   }
 }
 Assets {
-  Id: 17847068962151006321
-  Name: "Curling Dust VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_base_curl"
-  }
-}
-Assets {
-  Id: 17757758034467358373
-  Name: "Text 03: A"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_000"
-  }
-}
-Assets {
   Id: 17718112535551741152
   Name: "Fantasy Castle Wall Foundation 01 - Pillar 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_found_001_pillar_01"
-  }
-}
-Assets {
-  Id: 17708092207071118432
-  Name: "Metal Basic 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_basic_001"
   }
 }
 Assets {
@@ -368,15 +341,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16361915178408140089
-  Name: "Text 03: G"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_006"
-  }
-}
-Assets {
   Id: 16244414786145463704
   Name: "Underwater Post Process"
   PlatformAssetType: 20
@@ -467,15 +431,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15652885493461987378
-  Name: "Basic Outline"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_outline_basic"
-  }
-}
-Assets {
   Id: 15516959124241477092
   Name: "Bricks Chunky Stone 01"
   PlatformAssetType: 2
@@ -518,15 +473,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_002"
-  }
-}
-Assets {
-  Id: 15272449388967041284
-  Name: "Basic Material"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_basic_pbr_material_001"
   }
 }
 Assets {
@@ -701,15 +647,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14299811882235610539
-  Name: "Creature Bat Squeaks 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_creature_bat_squeaks_01a_Cue_ref"
-  }
-}
-Assets {
   Id: 14290119473973892065
   Name: "Chain Ceiling Anchor"
   PlatformAssetType: 1
@@ -863,15 +800,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13080073069178962316
-  Name: "Prism - 8-Sided Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prism_octagon_hq_001"
-  }
-}
-Assets {
   Id: 13043173807926579107
   Name: "Chain Tile 01"
   PlatformAssetType: 1
@@ -917,15 +845,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12617939985168483360
-  Name: "Pyramid - 8-Sided Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pyramid_eighsided_hq_001"
-  }
-}
-Assets {
   Id: 12570018260124267559
   Name: "Floor Candle Holder 03"
   PlatformAssetType: 1
@@ -941,15 +860,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_7_sided_hollow_001"
-  }
-}
-Assets {
-  Id: 12345922736146002760
-  Name: "Text 03: I"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_008"
   }
 }
 Assets {
@@ -1295,15 +1205,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10044739311796676125
-  Name: "Cube - Arcade 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_arcade_cube_004"
-  }
-}
-Assets {
   Id: 10044556425249133227
   Name: "Wood Raw"
   PlatformAssetType: 2
@@ -1466,15 +1367,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8869908880399307840
-  Name: "Plastic Shiny"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "plastic_shiny_001"
-  }
-}
-Assets {
   Id: 8809684186416995998
   Name: "Skeleton Mob"
   PlatformAssetType: 17
@@ -1619,30 +1511,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7890377554252778826
-  Name: "Ring - Beveled"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ring_faceted_001"
-  }
-}
-Assets {
   Id: 7822473577673662489
   Name: "Fantasy Castle Pillar 01 Mid"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_pillar_001_mid"
-  }
-}
-Assets {
-  Id: 7792331592793191613
-  Name: "Creatire Bat Wings Flapping 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_creature_bat_wings_flapping_01a_Cue_ref"
   }
 }
 Assets {
@@ -1907,24 +1781,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6677237403455816226
-  Name: "Portal VFX"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_portal"
-  }
-}
-Assets {
-  Id: 6665120206912032206
-  Name: "Smoke Puff Radial VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_smoke_puff_radial"
-  }
-}
-Assets {
   Id: 6641936587538601494
   Name: "Bottle 06"
   PlatformAssetType: 1
@@ -2033,15 +1889,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6089790138019219477
-  Name: "Text 03: P"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_015"
-  }
-}
-Assets {
   Id: 6041744618551880639
   Name: "-"
   PlatformAssetType: 1
@@ -2093,15 +1940,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_011"
-  }
-}
-Assets {
-  Id: 5581469317625791581
-  Name: "Simple Sketch Line Post Process"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_ppm_sketchline_simple"
   }
 }
 Assets {
@@ -2258,15 +2096,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4543315673208588897
-  Name: "Street Sign - Triangle"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_street-sign_triangle_001"
-  }
-}
-Assets {
   Id: 4473594194193115933
   Name: "Marble Basic 01"
   PlatformAssetType: 2
@@ -2345,15 +2174,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_marble_tiles_003_uv"
-  }
-}
-Assets {
-  Id: 4050437425243511619
-  Name: "Wood Raw"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_raw_001_uv"
   }
 }
 Assets {
@@ -2438,15 +2258,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3259288283879402813
-  Name: "Metal Gold 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_gold_001"
-  }
-}
-Assets {
   Id: 3174580504980404384
   Name: "Flower Daisy Patch 01"
   PlatformAssetType: 1
@@ -2462,15 +2273,6 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "weapon_guide_pistol_BP_ref"
-  }
-}
-Assets {
-  Id: 3113229458066238046
-  Name: "Fantasy Castle Stairs 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_stairs_001"
   }
 }
 Assets {
@@ -2528,15 +2330,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2794636122271782815
-  Name: "Text 03: R"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_017"
-  }
-}
-Assets {
   Id: 2755433388312519553
   Name: "Ember Volume VFX"
   PlatformAssetType: 8
@@ -2579,15 +2372,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_grass_003_uv"
-  }
-}
-Assets {
-  Id: 2305428502430700492
-  Name: "Cone - Truncated Narrow"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_002"
   }
 }
 Assets {
@@ -2735,15 +2519,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1137112816547272582
-  Name: "Cylinder"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
-  }
-}
-Assets {
   Id: 1104198953447072835
   Name: "Object Domestic Doors & Creaks Set 01 SFX"
   PlatformAssetType: 10
@@ -2807,30 +2582,12 @@ Assets {
   }
 }
 Assets {
-  Id: 790683243481663532
-  Name: "Cylinder - Rounded Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_rounded_001"
-  }
-}
-Assets {
   Id: 696571549460163275
   Name: "Cube - Chamfered Small Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_hq_003"
-  }
-}
-Assets {
-  Id: 659547049175455346
-  Name: "Text 03: N"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_013"
   }
 }
 Assets {
