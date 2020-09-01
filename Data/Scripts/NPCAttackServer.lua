@@ -105,6 +105,7 @@ function Attack(target)
 	if target:IsA("Player") and PLAYER_HOMING_TARGETS() then
 		
 		if d20Total >= AC or d20 ==20 then
+			print("homing proj")
 		target = PLAYER_HOMING_TARGETS().GetTargetForPlayer(target)
 		end
 	end
@@ -113,11 +114,13 @@ function Attack(target)
 	local rotation = script:GetWorldRotation()
 	local direction = rotation * Vector3.FORWARD
 	if not IS_PROJECTILE_HOMING then
+		print("not homing proj")
 		local v = target:GetWorldPosition() - startPos
 		direction = v:GetNormalized() + 200 * Vector3.UP * v.size * PROJECTILE_GRAVITY / PROJECTILE_SPEED / PROJECTILE_SPEED
 	end
 	
 	CROSS_CONTEXT_CALLER().Call(function()
+		print("context called spawning missile "..target.name)
 		local projectile = Projectile.Spawn(PROJECTILE_BODY, startPos, direction)
 		projectile.lifeSpan = PROJECTILE_LIFESPAN
 		projectile.speed = PROJECTILE_SPEED

@@ -21,14 +21,14 @@ function OnEquipped(equipment, player)
     if playerData.class.name =="Novice" then
        print("Etape 1")
        for _, ability in pairs(equipment:GetAbilities()) do
-        local levelRequirement=ability:GetCustomProperty("LevelRequirement")
-        if(player:GetResource("level")>=levelRequirement) then
-            ability.isEnabled=true
-        else
-            ability.isEnabled=false
-        end
+            local levelRequirement=ability:GetCustomProperty("LevelRequirement")
+            if(player:GetResource("level")>=levelRequirement) then
+                ability.isEnabled=true
+            else
+                ability.isEnabled=false
+            end
 
-    end
+          end
         if equipment.name == "BardSkills" then
             print("Etape 1.1")
            

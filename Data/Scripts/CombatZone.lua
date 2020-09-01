@@ -14,6 +14,7 @@ end
 
 function OnEndOverlap(whichTrigger, other)
 	if other:IsA("Player") then
+		--whichTrigger.collision= Collision.FORCE_ON
 		print(whichTrigger.parent.name .. ": End Trigger Overlap with " .. other.name)
 	end
 end

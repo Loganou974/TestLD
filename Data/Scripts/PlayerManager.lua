@@ -262,7 +262,7 @@ function OnExecuteAbility(ability)
     end
 end
 function OnCast(ability)
-  print("casting "..ability.name)
+  --print("casting "..ability.name)
  
  
  

@@ -761,6 +761,7 @@ function endCombat(victory)
        
     else 
         Events.BroadcastToAllPlayers("BannerMessage","GAME OVER")
+        
         Task.Wait(0.1)
         addSystemCombatTexte("GameOver")
         Task.Wait(2)
@@ -780,10 +781,13 @@ function endCombat(victory)
     playersInCombat={}
     initiativeCombat={}
     initiativeCombatLength=0
+    local trigger=currentCombatZone:FindDescendantByName("Trigger")
+    trigger.collision = Collision.FORCE_ON
     
 end
 function respawnPlayer(p)
-    local spawn=World.FindObjectById("DC98C1DEF301876B:Combat_Spawn")
+    local spawn=World.FindObjectById("23E9C6AD56BEBE5B:Combat_Spawn")
+    
     p:Respawn(spawn:GetWorldPosition(), Rotation.New(0, 0, 45))
 
 end
