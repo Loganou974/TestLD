@@ -573,6 +573,7 @@ Objects {
     }
   }
   ParentId: 4483607704190141439
+  ChildIds: 12710005383777490832
   ChildIds: 18151001644453629735
   ChildIds: 2962722842835354623
   ChildIds: 6042629709444944058
@@ -935,6 +936,91 @@ Objects {
     SubobjectId: 3501964708248453018
     InstanceId: 2375690410895550948
     TemplateId: 12626747426156047231
+  }
+}
+Objects {
+  Id: 12710005383777490832
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11759861918050543428
+  ChildIds: 8560693839325312841
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 120
+    Height: 120
+    UIX: -9.15527344e-05
+    RotationAngle: 369.233856
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 2108130225503202878
+      }
+      Color {
+        R: 0.74
+        G: 0.529271603
+        A: 0.437
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 8560693839325312841
+  Name: "UiRotator"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12710005383777490832
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1120083333562246846
+    }
   }
 }
 Objects {
@@ -9131,8 +9217,9 @@ Objects {
         Id: 14807460421707931889
       }
       Color {
-        R: 0.0175496377
-        G: 0.53
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       TeamSettings {

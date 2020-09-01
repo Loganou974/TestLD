@@ -43,7 +43,8 @@ local originTurnPosition=nil
 local isPlaying=false
 local isMoving=false
 local canAct=false
-local turnNumberAction=0
+--local turnNumberAction=0
+
 local stepBar = script:GetCustomProperty("stepBar"):WaitForObject()
 function greetPlayersAsTheyJoin(player)  
    
@@ -154,7 +155,7 @@ function stat_refresh(race,classe)
     local abilities=me:GetAbilities()
     print("abilities = "..#abilities)
     for _, ability in pairs(abilities) do
-        print("abilite recu "..ability.name .." pour " .. me.name)
+       -- print("abilite recu "..ability.name .." pour " .. me.name)
         ability.castEvent:Connect(OnCast)
         ability.executeEvent:Connect(OnExecuteAbility)
     end
@@ -227,13 +228,14 @@ function OnPlayerJoined(player)
     UI.SetCanCursorInteractWithUI(true)
     me=Game.GetLocalPlayer()
     Task.Wait(0.1)
+    me.clientUserData.turnNumberAction=0
    if me ==player then
         print("Hello, " .. me.name .. "!") 
         propClassText_0:AttachToPlayer(me, "nameplate")
         local abilities = me:GetAbilities()
         
         for _, ability in pairs(abilities) do
-            print("abilite recu "..ability.name .." pour " .. me.name)
+           -- print("abilite recu "..ability.name .." pour " .. me.name)
             ability.castEvent:Connect(OnCast)
             ability.executeEvent:Connect(OnExecuteAbility)
         end
@@ -263,11 +265,12 @@ function OnExecuteAbility(ability)
    -- print("execute "..ability.name.."de "..ability.owner.name)
     actionMax=me:GetResource("actionMax")
     if me:GetResource("incombat") == 1 and isPlaying and canAct and not executeOnce then
-        print(" action effectuee dans le tour "..turnNumberAction.." sur "..actionMax)
-        turnNumberAction=turnNumberAction+1
+        print(" action effectuee dans le tour "..me.clientUserData.turnNumberAction.." sur "..actionMax)
+        me.clientUserData.turnNumberAction=me.clientUserData.turnNumberAction+1
+        
         executeOnce=true
         Task.Spawn(function() executeOnce=false end,ability.executePhaseSettings.duration)
-      if turnNumberAction>=actionMax then
+      if me.clientUserData.turnNumberAction>=actionMax then
         canAct=false;
         Task.Wait(0.2)
         desactivateAllAbilities()
@@ -294,7 +297,7 @@ end
 local firstTimeHorsCombat=true
 local combatMusic=nil
 function OnResourceChanged(player, resourceId, newValue)
-    print("ressource changed for "..player.name.." id="..resourceId.." value="..newValue)
+   -- print("ressource changed for "..player.name.." id="..resourceId.." value="..newValue)
     stat_refresh2()
     if resourceId =="statpoint" then
         local statButton=World.FindObjectById("A3336C1BA90BE744:Statpointbutton")
@@ -332,7 +335,7 @@ function OnResourceChanged(player, resourceId, newValue)
             isMoving=false
             canAct=false
             stepBar.progress=0
-            turnNumberAction=0
+            player.clientUserData.turnNumberAction=0
         end
 
     end
@@ -357,7 +360,7 @@ function OnTurnOn()
         isMoving=true
         canAct=true
         stepBar.progress=0
-        turnNumberAction=0
+        me.clientUserData.turnNumberAction=0
     end
 end
 
@@ -426,7 +429,7 @@ function OnCombatEnded(victory)
     isMoving=false
     canAct=false
     stepBar.progress=1
-    turnNumberAction=0
+    me.clientUserData.turnNumberAction=0
 
 end
 function OnTurnOff()
@@ -457,7 +460,7 @@ function OnClassChanged(equipementName,classNom)
             local abilities = equipement:GetAbilities()
             
             for _, ability in pairs(abilities) do
-                print("abilite recu "..ability.name .." pour " .. me.name)
+                --print("abilite recu "..ability.name .." pour " .. me.name)
                 ability.castEvent:Connect(OnCast)
                 ability.executeEvent:Connect(OnExecuteAbility)
             end
@@ -481,7 +484,7 @@ function OnWeaponChanged(equipementName)
             local abilities = equipement:GetAbilities()
             
             for _, ability in pairs(abilities) do
-                print("abilite recu "..ability.name .." pour " .. me.name)
+                --print("abilite recu "..ability.name .." pour " .. me.name)
                 ability.castEvent:Connect(OnCast)
                 ability.executeEvent:Connect(OnExecuteAbility)
             end

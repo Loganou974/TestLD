@@ -2445,6 +2445,7 @@ Objects {
   ChildIds: 11209744420844276205
   ChildIds: 544977359080512929
   ChildIds: 17030640514303943163
+  ChildIds: 11909542776632942797
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -2470,6 +2471,241 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11909542776632942797
+  Name: "ActionPanel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2744031690562326433
+  ChildIds: 17970030558780238144
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ShowNumber"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ShowMaximum"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ShowNumber:tooltip"
+      String: "Show an exact number of hitpoints"
+    }
+    Overrides {
+      Name: "cs:ShowMaximum:tooltip"
+      String: "If showing the health value, this toggles showing the maximum as well"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 487
+    Height: 66
+    UIX: 84.1023712
+    UIY: 118.309921
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17970030558780238144
+  Name: "ProgressBar"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 5.03726405e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11909542776632942797
+  ChildIds: 5282771424610303995
+  ChildIds: 1337799780262493466
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 241
+    Height: 19
+    UIY: -21.2986069
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    StatBar {
+      Color {
+        G: 0.292715
+        B: 0.85
+        A: 1
+      }
+      BackgroundColor {
+        A: 0.7
+      }
+      Percent: 0.5
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 1337799780262493466
+  Name: "ActionPerTurnUi"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -5.03726369e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17970030558780238144
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ProgressBar"
+      ObjectReference {
+        SelfId: 17970030558780238144
+      }
+    }
+    Overrides {
+      Name: "cs:TextBox"
+      ObjectReference {
+        SelfId: 5282771424610303995
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10394608930523103304
+    }
+  }
+}
+Objects {
+  Id: 5282771424610303995
+  Name: "TextBox"
+  Transform {
+    Location {
+      X: -214.259048
+      Y: -409.173462
+      Z: -1242.27026
+    }
+    Rotation {
+      Yaw: 13.4324207
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17970030558780238144
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: -10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "Action per Turn/Action Max"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 30
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      ClipTextToSize: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -2848,7 +3084,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 250
@@ -3088,8 +3324,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 350
-    Height: 50
+    Width: 487
+    Height: 66
     UIX: 84.1023712
     UIY: 50.8643494
     RenderTransformPivot {
@@ -3193,8 +3429,9 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 200
-    Height: 40
+    Width: 241
+    Height: 19
+    UIY: -21.2986069
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3272,7 +3509,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 13
+      Size: 30
       Justification {
         Value: "mc:etextjustify:left"
       }

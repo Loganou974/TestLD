@@ -9,7 +9,7 @@ end
 function OnExecute(ability)
     print("reckless effect")
     --local bonus= ability.owner:GetResource("EnragedBonus")
-    --ability.owner:SetResource("Enraged",bonus)
+    ability.owner:SetResource("Reckless",2)
     
 end
 

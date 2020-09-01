@@ -932,6 +932,10 @@ Objects {
         TemplateId: 7936693949144627473
       }
     }
+    Overrides {
+      Name: "cs:introSpeech"
+      String: "As you walk into the room, a bunch of Commoners attacks you"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

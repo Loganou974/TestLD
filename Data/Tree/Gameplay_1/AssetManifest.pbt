@@ -134,6 +134,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2108130225503202878
+  Name: "Burst"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_SciFI_Icon_041"
+  }
+}
+Assets {
   Id: 885896236593327937
   Name: "Fantasy Frame 001"
   PlatformAssetType: 9

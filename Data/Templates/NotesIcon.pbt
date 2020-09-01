@@ -76,7 +76,7 @@
           }
           Overrides {
             Name: "cs:Display"
-            String: "Inspire your allies giving them 1 extra action per turn"
+            String: "Inspire your allies giving  1 extra action per turn for the next 2 turns"
           }
         }
         Collidable_v2 {

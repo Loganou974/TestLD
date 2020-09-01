@@ -87,8 +87,20 @@ function Attack(target)
 	if target:IsA("Player") then
 		AC=target:GetResource("AC")
 		print("AC of "..target.name.."is "..AC)
+		if target:GetResource("Reckless")>0 then
+			local d20_2=math.random(20)
+			d20Total_2=(d20_2+math.max(modifier(STR),modifier(DEX))+BonusToHit)
+			addEnnemyCombatTexte(script.parent.name," has avantage because "..target.name.." is reckless: additionnal roll "..d20.." vs "..d20_2)
+			d20Total=math.max(d20Total,d20Total_2)
+			d20=math.max(d20,d20_2)
+			
+		end
 	end
+
+
+
 	addEnnemyCombatTexte(script.parent.name, " Attack roll to hit "..target.name.." :"..d20.." total="..d20Total.."vs "..AC)
+	
 	
 	if target:IsA("Player") and PLAYER_HOMING_TARGETS() then
 		

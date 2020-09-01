@@ -64,7 +64,7 @@ end
 canRoll=true
 local throwDice=nil
 function OnPlayerJoined(player)
-   
+   Task.Wait(1)
     throwDice=World.SpawnAsset("95EF61C0E461B809:ThrowDice")
     throwDice.owner=player
         --me.resourceChangedEvent:Connect(OnResourceChanged)
@@ -72,7 +72,7 @@ function OnPlayerJoined(player)
         player.bindingReleasedEvent:Connect(relache)
         
         player.damagedEvent:Connect(OnDamagedPlayer)
-  
+      print("player"..player.name.." got binded")
    
    
     

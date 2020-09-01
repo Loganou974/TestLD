@@ -86,13 +86,13 @@ function MeleeAttack(other)
 		local BonusToHit=player:GetResource("Proficiency")
 		d20=math.random(20)
 		print("Attack roll from "..player.name.." d20="..d20.."total="..(d20+modifier(STR)+BonusToHit))
-		addEnnemyCombatTexte(player.name, " Attack roll to hit"..other.name.." :"..d20.."total="..(d20+math.max(modifier(STR),modifier(DEX))+BonusToHit))
+		addEnnemyCombatTexte(player.name, " Attack roll to hit "..other.name.." :"..d20..", total with bonus="..(d20+math.max(modifier(STR),modifier(DEX))+BonusToHit))
 		d20Total=d20+modifier(STR)+BonusToHit
 
-		if player:GetResource("Enraged")>0 then
+		if player:GetResource("Reckless")>0 then
 			local d20_2=math.random(20)
 			local d20Total_2=d20_2+modifier(STR)+BonusToHit
-			addEnnemyCombatTexte(player.name," has avantage from rage additionnal roll "..d20.." vs "..d20_2)
+			addEnnemyCombatTexte(player.name," has avantage from reckless additionnal roll "..d20.." vs "..d20_2)
 			d20Total=math.max(d20Total,d20Total_2)
 			d20=math.max(d20,d20_2)
 			
@@ -116,7 +116,7 @@ function MeleeAttack(other)
 			local bonus=""
 			if player:GetResource("Enraged") >0 then bonus="(+"..player:GetResource("Enraged").."Rage bonus)" end
 
-			addEnnemyCombatTexte(player.name," hit "..automaticTarget.name..cc.."for "..dmg.amount..bonus)
+			addEnnemyCombatTexte(player.name," hit "..automaticTarget.name..cc.." for "..dmg.amount..bonus)
 			
 			BroadcastDamageFeedback(dmg.amount, pos)
 		else

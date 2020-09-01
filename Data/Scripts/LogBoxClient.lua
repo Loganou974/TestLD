@@ -21,7 +21,8 @@ local listener=nil
 function GetSpeech(messageId,params)
    
     --local speeches=World.FindObjectById("8A4AB8499744FEA5:NarratorSpeech")
-    print("message "..messageId)
+    --print("message "..messageId)
+    if speeches ==nil then speeches=World.FindObjectById("12C0A430C309174F:NarratorSpeech") end
     local speech=speeches:FindDescendantByName(messageId)
     if speech==nil then return messageId end
     --if not obj then return nom end
@@ -83,7 +84,7 @@ function addTexte(messageId,col,params)
     addSimpleTexte(message,col,params)
 end
 function OnNewText(coreObject, propertyName)
-    print("recu par custom networked "..propertyName)
+   -- print("recu par custom networked "..propertyName)
     
    -- print("newValue "..newValue)
     --addSystemCombatTexte(newValue)
@@ -99,7 +100,7 @@ function OnNewText(coreObject, propertyName)
 
     if propertyName =="friendCombatTexte" then
         local newValue = gameplay:GetCustomProperty("friendCombatTexte")
-        print("valeu frien "..newValue)
+       -- print("valeu frien "..newValue)
         addFriendCombatTexte(nil,newValue)
     end
 

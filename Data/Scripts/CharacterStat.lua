@@ -355,7 +355,7 @@ local waitTime=1
 local gameplay=World.FindObjectById("83D47359D7CB64F1:Gameplay")
 function OnPlayerJoined(player)
     
-    Task.Wait(0.5)
+    Task.Wait(1)
    -- print("allo? "..player.animationStance)
     --Task.Spawn(function() GetStat(player) end,math.random(1))
    
@@ -401,8 +401,7 @@ function levelup(player,level)
     if( playerData.class.proficiency[player:GetResource("level")] ==nil) then  player:SetResource("Profiency",playerData.class.proficiency[player:GetResource("level")]) end
     print(playerData.class.name)
     print(playerData.class.skills[level])
-    Events.BroadcastToPlayer(player,"LEVEL_UP")
-   
+    
     local skill=nil
      --for _, obj in ipairs(player:GetEquipment()) do
        
@@ -435,6 +434,9 @@ function levelup(player,level)
    
     activateAllAbilities(player)
     savePlayerData(player,playerData)
+    Task.Wait(0.2)
+    Events.BroadcastToPlayer(player,"LEVEL_UP")
+    Task.Wait(0.2)
 end
 
 
@@ -1010,6 +1012,14 @@ function UpdateBuffEtDebuff(player)
         player:RemoveResource("Inspired",1)
     else
         player:SetResource("actionMax",1)
+    end
+
+    if player:GetResource("Reckless")>0 then
+        print(player.name.." is reckless ")
+        --player:SetResource("actionMax",2)
+        player:RemoveResource("Reckless",1)
+    else
+       -- player:SetResource("actionMax",1)
     end
 end
 function newRound()
