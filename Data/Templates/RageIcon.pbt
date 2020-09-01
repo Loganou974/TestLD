@@ -17,6 +17,7 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 9129665733898624417
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -78,6 +79,7 @@
             String: "Description of Rage"
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -162,6 +164,7 @@
           }
         }
         ParentId: 9129665733898624417
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -218,6 +221,7 @@
         }
         ParentId: 9129665733898624417
         ChildIds: 10660612436667867218
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

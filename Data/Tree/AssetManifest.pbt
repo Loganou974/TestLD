@@ -881,15 +881,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13001724484009763460
-  Name: "Ambient Dark Cave Dungeon Loop 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_ambience_dark_dungeon_cave_loop_01_Cue_ref"
-  }
-}
-Assets {
   Id: 12977370080767077394
   Name: "Cylinder - Chamfered"
   PlatformAssetType: 1
@@ -1013,15 +1004,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crate_simple_150cm_001"
-  }
-}
-Assets {
-  Id: 12022534255156984785
-  Name: "Ambient Dark Breathy Cave Dungeon Loop 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_ambience_dark_breathy_cave_dungeon_loop_01_Cue_ref"
   }
 }
 Assets {
@@ -1454,15 +1436,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "Text_017"
-  }
-}
-Assets {
-  Id: 9007712901499390390
-  Name: "\"Celestial Journey\" Music Construction Kit (Sections) 01"
-  PlatformAssetType: 10
-  PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "abp_celestial_journey_sections_kit_ref"
   }
 }
 Assets {
@@ -2345,15 +2318,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_008"
-  }
-}
-Assets {
-  Id: 4201138208251769029
-  Name: "Urban City Market Crowd Ambience Loop 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_downtown_city_market_crowd_ambience_loop_01_Cue_ref"
   }
 }
 Assets {

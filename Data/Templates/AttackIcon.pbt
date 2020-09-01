@@ -78,6 +78,7 @@
             String: "Attack your target"
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -160,6 +161,7 @@
           }
         }
         ParentId: 562552906462477142
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -217,6 +219,7 @@
         }
         ParentId: 562552906462477142
         ChildIds: 15907848660113340080
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

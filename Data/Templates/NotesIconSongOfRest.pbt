@@ -79,6 +79,7 @@
             String: "Heals your allies for 1d6"
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -164,6 +165,7 @@
         }
         ParentId: 6858087684479500761
         ChildIds: 14383384432025017478
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -224,6 +226,7 @@
           }
         }
         ParentId: 5989117863503605357
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -287,6 +290,7 @@
         }
         ParentId: 6858087684479500761
         ChildIds: 9755057511428828092
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -349,6 +353,7 @@
           }
         }
         ParentId: 3897846926554189885
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -409,6 +414,7 @@
         }
         ParentId: 6858087684479500761
         ChildIds: 6051389464753437982
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

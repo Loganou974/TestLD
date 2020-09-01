@@ -79,6 +79,7 @@
             String: "Inspire your allies giving  1 extra action per turn for the next 2 turns"
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -164,6 +165,7 @@
         }
         ParentId: 7597512254756207176
         ChildIds: 4698729457028997898
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -224,6 +226,7 @@
           }
         }
         ParentId: 4763630235721781395
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -287,6 +290,7 @@
         }
         ParentId: 7597512254756207176
         ChildIds: 11016430316381914664
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -349,6 +353,7 @@
           }
         }
         ParentId: 7424252729081220893
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -409,6 +414,7 @@
         }
         ParentId: 7597512254756207176
         ChildIds: 8224615566583368857
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

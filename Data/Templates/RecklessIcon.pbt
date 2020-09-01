@@ -17,6 +17,7 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 2302479808153882109
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -78,6 +79,7 @@
             String: "Description of reckless"
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -162,6 +164,7 @@
           }
         }
         ParentId: 2302479808153882109
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -218,6 +221,7 @@
         }
         ParentId: 2302479808153882109
         ChildIds: 15592672082046191151
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

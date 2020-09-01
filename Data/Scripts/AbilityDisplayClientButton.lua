@@ -85,10 +85,16 @@ function UpdateCurrentAbility()
             ICON:SetButtonColor(Color.New(0,0,0,0))
             
         else
-            
+            Task.Wait(0.5)
+             icon = AOI.GetObjectIcon(currentAbility)
+         iconColor = AOI.GetObjectColor(currentAbility)
             print(" default?? "..currentAbility.name)
             
-            ICON:SetButtonColor(Color.WHITE)
+           -- ICON:SetButtonColor(Color.WHITE)
+           inst=World.SpawnAsset(icon,{parent=ICON})
+           print(" icone? "..inst.name)
+         
+           ICON:SetButtonColor(Color.New(0,0,0,0))
         end
 
         if iconColor and inst  then

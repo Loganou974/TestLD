@@ -5268,11 +5268,11 @@ Objects {
     }
   }
   ParentId: 8561272841551435337
-  ChildIds: 13244631707724036764
+  ChildIds: 13551594570619011059
   ChildIds: 12004124027837476002
   ChildIds: 8658517640446977820
   ChildIds: 15801197100776111856
-  ChildIds: 9316595363496626837
+  ChildIds: 15843563021007645742
   ChildIds: 8152436141554454091
   ChildIds: 14310704082267308992
   UnregisteredParameters {
@@ -5657,12 +5657,16 @@ Objects {
   }
 }
 Objects {
-  Id: 9316595363496626837
+  Id: 15843563021007645742
   Name: "Icon"
   Transform {
     Location {
+      X: 4953.60352
+      Y: 9608.03516
+      Z: -13.3389893
     }
     Rotation {
+      Yaw: 100.000145
     }
     Scale {
       X: 1
@@ -5672,6 +5676,14 @@ Objects {
   }
   ParentId: 6323737748529849764
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:Titre"
+      String: "Skill3"
+    }
+    Overrides {
+      Name: "cs:Display"
+      String: "Description of skill3"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5682,30 +5694,56 @@ Objects {
   Control {
     Width: 80
     Height: 80
+    UIX: 10.6538086
+    UIY: 14.1990967
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    Image {
-      Brush {
-        Id: 16327934883181731081
+    Button {
+      FontColor {
+        A: 1
       }
-      Color {
+      FontSize: 20
+      ButtonColor {
         R: 1
         G: 1
         B: 1
+        A: 0.0230000019
       }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:middlecenter"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:middlecenter"
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -5884,12 +5922,13 @@ Objects {
   }
 }
 Objects {
-  Id: 13244631707724036764
-  Name: "AbilityDisplayClient"
+  Id: 13551594570619011059
+  Name: "AbilityDisplayClientButton"
   Transform {
     Location {
     }
     Rotation {
+      Yaw: -1.7075472e-05
     }
     Scale {
       X: 1
@@ -5920,7 +5959,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       ObjectReference {
-        SelfId: 9316595363496626837
+        SelfId: 15843563021007645742
       }
     }
     Overrides {
@@ -5968,7 +6007,7 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 5947649812799017109
+      Id: 4291329358985077557
     }
   }
 }
@@ -6102,11 +6141,11 @@ Objects {
     }
   }
   ParentId: 13905154409828699304
-  ChildIds: 6387176220369246410
+  ChildIds: 992737253828073076
   ChildIds: 16633593472441121071
   ChildIds: 16224072741886109241
   ChildIds: 7767511528688061681
-  ChildIds: 11843349404694977842
+  ChildIds: 13274008502026769321
   ChildIds: 11134385609583113113
   ChildIds: 7226779152740830560
   UnregisteredParameters {
@@ -6491,12 +6530,16 @@ Objects {
   }
 }
 Objects {
-  Id: 11843349404694977842
+  Id: 13274008502026769321
   Name: "Icon"
   Transform {
     Location {
+      X: 4953.60352
+      Y: 9608.03516
+      Z: -13.3389893
     }
     Rotation {
+      Yaw: 100.000122
     }
     Scale {
       X: 1
@@ -6506,6 +6549,14 @@ Objects {
   }
   ParentId: 848807809954406668
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:Titre"
+      String: "Skill3"
+    }
+    Overrides {
+      Name: "cs:Display"
+      String: "Description of skill3"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6516,32 +6567,56 @@ Objects {
   Control {
     Width: 80
     Height: 80
-    UIX: 5.35327148
-    UIY: 14.2694092
+    UIX: 10.6539307
+    UIY: 14.1992188
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    Image {
-      Brush {
-        Id: 16327934883181731081
+    Button {
+      FontColor {
+        A: 1
       }
-      Color {
+      FontSize: 20
+      ButtonColor {
         R: 1
         G: 1
         B: 1
+        A: 0.0230000019
       }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:middlecenter"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:middlecenter"
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -6720,12 +6795,13 @@ Objects {
   }
 }
 Objects {
-  Id: 6387176220369246410
-  Name: "AbilityDisplayClient"
+  Id: 992737253828073076
+  Name: "AbilityDisplayClientButton"
   Transform {
     Location {
     }
     Rotation {
+      Yaw: -1.7075472e-05
     }
     Scale {
       X: 1
@@ -6756,7 +6832,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       ObjectReference {
-        SelfId: 11843349404694977842
+        SelfId: 13274008502026769321
       }
     }
     Overrides {
@@ -6804,7 +6880,7 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 5947649812799017109
+      Id: 4291329358985077557
     }
   }
 }
