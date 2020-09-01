@@ -6,26 +6,18 @@
     Table {
       Entries {
         Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Rock Gnome"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 25
-        }
-      }
-      Entries {
-        Key {
           StringVar: "description"
         }
         SimpleValue {
-          StringVar: "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes."
+          StringVar: "The sun elves of Faer\303\273n are highly intelligent. "
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "High Elf"
         }
       }
       Entries {
@@ -47,7 +39,7 @@
                 IntVar: 2
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 1
               }
             }
             Entries {
@@ -55,7 +47,7 @@
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -63,7 +55,7 @@
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -93,6 +85,14 @@
           }
         }
       }
+      Entries {
+        Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 30
+        }
+      }
     }
   }
 }
@@ -104,18 +104,18 @@ Entries {
     Table {
       Entries {
         Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Novice"
-        }
-      }
-      Entries {
-        Key {
           StringVar: "hit"
         }
         SimpleValue {
           IntVar: 100
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Novice"
         }
       }
     }

@@ -783,7 +783,7 @@ function endCombat(victory)
     
 end
 function respawnPlayer(p)
-    local spawn=World.FindObjectById("DC98C1DEF301876B:Combat_Spawn")
+    local spawn=World.FindObjectById("23E9C6AD56BEBE5B:Combat_Spawn")
     p:Respawn(spawn:GetWorldPosition(), Rotation.New(0, 0, 45))
 
 end
