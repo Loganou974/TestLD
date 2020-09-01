@@ -55,7 +55,7 @@ local speeches=World.FindObjectById("12C0A430C309174F:NarratorSpeech")
 
 function GetSpeech(messageId,params)
     --local speeches=World.FindObjectById("8A4AB8499744FEA5:NarratorSpeech")
-   
+   if(speeches==nil ) then speeches=World.FindObjectById("12C0A430C309174F:NarratorSpeech") end
     local speech=speeches:FindDescendantByName(messageId)
     if speech ==nil then 
         if params then

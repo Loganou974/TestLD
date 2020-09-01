@@ -419,7 +419,7 @@ function Tick(deltaTime)
 
 end
 function OnCombatEnded(victory)
-    combatMusic:Destroy()
+    
     if victory then
         World.SpawnAsset("627421049F5776A0:CombatMusicVictory",{position=me:GetWorldPosition()})
     else
@@ -431,6 +431,7 @@ function OnCombatEnded(victory)
     canAct=false
     stepBar.progress=1
     me.clientUserData.turnNumberAction=0
+    combatMusic:Destroy()
 
 end
 function OnTurnOff()

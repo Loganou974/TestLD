@@ -399,8 +399,8 @@ function levelup(player,level)
     addSystemCombatTexte("LevelUp",{player.name,player:GetResource("level")})
     player:AddResource("statpoint",1)
     if( playerData.class.proficiency[player:GetResource("level")] ==nil) then  player:SetResource("Profiency",playerData.class.proficiency[player:GetResource("level")]) end
-    print(playerData.class.name)
-    print(playerData.class.skills[level])
+   -- print(playerData.class.name)
+    --print(playerData.class.skills[level])
     
     local skill=nil
      --for _, obj in ipairs(player:GetEquipment()) do
@@ -431,12 +431,12 @@ function levelup(player,level)
         player.maxHitPoints=player.maxHitPoints+math.random(12)+modifier(player:GetResource("CON"))
         player.hitPoints=player.maxHitPoints
     end
-   
-    activateAllAbilities(player)
-    savePlayerData(player,playerData)
     Task.Wait(0.2)
     Events.BroadcastToPlayer(player,"LEVEL_UP")
     Task.Wait(0.2)
+    activateAllAbilities(player)
+    savePlayerData(player,playerData)
+   
 end
 
 
@@ -526,12 +526,13 @@ function OnResourceChanged(player,resourceid,newvalue)
             end
         callbackPlayerDice[player.name](player)
     end 
-    --if(playerData.classe.name=="Barbarian") then
-             if(resourceid=="XP") then
-                if(newvalue>=300 and player:GetResource("level") == 1) then
-                    levelup(player,2)
-                end
-             end
+   
+    if(resourceid=="XP") then
+        print("xp "..newvalue.. "level= "..player:GetResource("level"))
+        if(newvalue>=300 and player:GetResource("level") == 1) then
+            levelup(player,2)
+        end
+    end
         if(resourceid=="STR") then
 
         end
