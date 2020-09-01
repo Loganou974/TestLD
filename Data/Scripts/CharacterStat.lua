@@ -446,7 +446,7 @@ function choixRace(player)
     
     local race=races[1+waitingBestPlayerDice[player.name]%nombreDeRace]
     print("choix race "..waitingBestPlayerDice[player.name])
-    local block=World.FindObjectById("75D41B378E0201FA:Lead Pencil")
+    local block=World.FindObjectById("74C5751693875502:Lead Pencil")
     if block then  block:Destroy() end
     
 
