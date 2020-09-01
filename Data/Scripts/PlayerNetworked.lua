@@ -1,6 +1,8 @@
 ﻿
 
 local canRoll=true
+
+local levelXP={0,300,900,2700,6500,14000,23000,34000,48000,64000,85000,100000,120000,140000,165000,195000,225000,265000,305000,355000}
 function relache(player,touche)
    
 end
@@ -14,9 +16,13 @@ function appuye(player,touche)
         player:SetWorldPosition(Vector3.New(-15135,74387.961,4960))
      end
      if touche == "ability_extra_57"  then
-        player:SetResource("STR",9999)
-        player:SetResource("actionMax",9999)
-        Events.Broadcast("LEVEL_UP",player,2) 
+        --player:SetResource("STR",9999)
+        --player:SetResource("actionMax",9999)
+        --Events.Broadcast("LEVEL_UP",player,player:GetResource("level")+1) 
+        for k,p in pairs(Game.GetPlayers()) do
+         p:SetResource("XP",levelXP[p:GetResource("level")+1])
+       end
+        
      end
         if touche == "ability_extra_22" then
         

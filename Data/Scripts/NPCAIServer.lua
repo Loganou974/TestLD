@@ -498,11 +498,11 @@ function FindAggroEnemy()
 	local hAggro=0
 
 	for p,a in pairs(AggroList) do
-		if hPlayer==nil then
+		if hPlayer==nil and not p.isDead then
 			hPlayer=p
 			hAggro=a
 			end
-		if hAggro<a then
+		if hAggro<a and not p.isDead then
 			hPlayer=p
 			hAggro=a
 		end
@@ -518,6 +518,10 @@ function EngageNearest()
 	if AggroListCount ==0 then enemy=FindNearestEnemy()
 	else
 		enemy=FindAggroEnemy()
+		if enemy == nil then 
+			enemy=FindNearestEnemy()
+
+		end
 	end
 	if enemy then
 		target = enemy
@@ -741,8 +745,13 @@ function OnObjectDamaged(id, prevHealth, dmgAmount, impactPosition, impactRotati
 			AggroList[sourceObject]=AggroList[sourceObject]+dmgAmount
 			
 		end
-		target=FindAggroEnemy()
+		local newtarget=FindAggroEnemy()
+		if newtarget ~=nil then 
 		print("new target from aggro "..target.name)
+			target=newtarget
+		else
+
+		end
 	end
 	if (currentState == STATE_SLEEPING or currentState == STATE_PATROLLING or currentState == STATE_LOOKING_AROUND) then
 		if Object.IsValid(sourceObject) and GetObjectTeam(sourceObject) ~= GetTeam() and 
