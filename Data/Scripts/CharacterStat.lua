@@ -764,8 +764,9 @@ function endCombat(victory)
         
         Task.Wait(0.1)
         addSystemCombatTexte("GameOver")
-        Task.Wait(2)
         playersAreInCombat=false;
+        Task.Wait(2)
+        
         for i,p in ipairs(playersInCombat) do
             p:SetResource("incombat",0)
             changeAnimationForPlayer(p,false)
@@ -778,6 +779,7 @@ function endCombat(victory)
         --unfreezePlayers()
     end
     playersAreInCombat=false;
+    playerDiedInCombat={}
     playersInCombat={}
     initiativeCombat={}
     initiativeCombatLength=0
@@ -998,6 +1000,7 @@ function Tick(deltaTime)
     if not playersAreInCombat then
         players=Game.GetPlayers()
         for i,p in ipairs(players) do
+            p.movementControlMode = MovementControlMode.VIEW_RELATIVE
             for _, obj in ipairs(p:GetEquipment()) do
             activateAllAbilities(obj)
             end
@@ -1054,11 +1057,14 @@ function newRound()
 
 end
 function OnEndTurn(player)
-    currentPlayer=getNextPlayer()
-    if currentPlayer~=nil then
-        newTurn()
-    else
-        newRound()
+
+    if( playersAreInCombat) then
+        currentPlayer=getNextPlayer()
+        if currentPlayer~=nil then
+            newTurn()
+        else
+            newRound()
+        end
     end
 end
 

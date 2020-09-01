@@ -97,6 +97,7 @@ local attackCooldown = 0
 local temporaryVisionAngle = nil
 local temporaryVisionRadius = nil
 local temporaryHearingRadius = nil
+local originalPosition=ROOT:GetWorldPosition()
 	
 function OnTurnOn(id)
 	--print("on turn npc "..id)
@@ -901,7 +902,7 @@ function OnCombatEnded(victory)
 		if MAX_HEALTH==nill then MAX_HEALTH=ROOT:GetCustomProperty("CurrentHealth") end
 		ROOT:SetNetworkedCustomProperty("CurrentHealth",MAX_HEALTH)
 		ROOT:SetNetworkedCustomProperty("CurrentState",0)
-		
+		ROOT:SetWorldPosition(originalPosition)
 end
 
 end
@@ -924,6 +925,7 @@ ROOT.networkedPropertyChangedEvent:Connect(OnPropertyChanged)
 
 NPC_MANAGER().Register(script)
 NPC_MANAGER().RegisterCollider(script, COLLIDER)
+
 
 
 

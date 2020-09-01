@@ -106,7 +106,7 @@ function Attack(target)
 		
 		if d20Total >= AC or d20 ==20 then
 			print("homing proj")
-		target = PLAYER_HOMING_TARGETS().GetTargetForPlayer(target)
+		--target = PLAYER_HOMING_TARGETS().GetTargetForPlayer(target)
 		end
 	end
 	
@@ -118,24 +118,24 @@ function Attack(target)
 		local v = target:GetWorldPosition() - startPos
 		direction = v:GetNormalized() + 200 * Vector3.UP * v.size * PROJECTILE_GRAVITY / PROJECTILE_SPEED / PROJECTILE_SPEED
 	end
-	
-	CROSS_CONTEXT_CALLER().Call(function()
-		print("context called spawning missile "..target.name)
-		local projectile = Projectile.Spawn(PROJECTILE_BODY, startPos, direction)
-		projectile.lifeSpan = PROJECTILE_LIFESPAN
-		projectile.speed = PROJECTILE_SPEED
-		projectile.gravityScale = PROJECTILE_GRAVITY
+	OnProjectileImpact(nil, target, nil)
+	--CROSS_CONTEXT_CALLER().Call(function()
+	--	print("context called spawning missile "..target.name)
+	--	local projectile = Projectile.Spawn(PROJECTILE_BODY, startPos, direction)
+	--	projectile.lifeSpan = PROJECTILE_LIFESPAN
+	--	projectile.speed = PROJECTILE_SPEED
+	--	projectile.gravityScale = PROJECTILE_GRAVITY
 		
-		if IS_PROJECTILE_HOMING then
-			projectile.homingTarget = target
-			projectile.drag = HOMING_DRAG
-			projectile.homingAcceleration = HOMING_ACCELERATION
-		end
+	--	if IS_PROJECTILE_HOMING then
+	--		projectile.homingTarget = target
+	--		projectile.drag = HOMING_DRAG
+	--		projectile.homingAcceleration = HOMING_ACCELERATION
+	--	end
 		
-		projectile.piercesRemaining = 999
+	--	projectile.piercesRemaining = 999
 		
-		projectileImpactListener = projectile.impactEvent:Connect(OnProjectileImpact)
-	end)
+	--	projectileImpactListener = projectile.impactEvent:Connect(OnProjectileImpact)
+	--end)
 	
 	SpawnAsset(MUZZLE_FLASH_VFX, startPos, rotation)
 end
@@ -152,9 +152,15 @@ function OnProjectileImpact(projectile, other, hitResult)
 	if (impactTeam ~= 0 and myTeam == impactTeam) then return end
 	
 	CleanupProjectileListener()
-	
-	local pos = hitResult:GetImpactPosition()
-	local rot = projectile:GetWorldTransform():GetRotation()
+	local pos = nil
+	local rot = nil
+	if( hitResult) then
+		 pos = hitResult:GetImpactPosition()
+		 rot = projectile:GetWorldTransform():GetRotation()
+	else
+		pos=other:GetWorldPosition()
+		rot=other:GetWorldRotation()
+	end
 	
 	local damageAmount = 0
 	print("projectiled 1")
@@ -211,12 +217,12 @@ function OnProjectileImpact(projectile, other, hitResult)
 	end
 	print("projectiled 3")
 	local dmg = Damage.New(damageAmount)
-	dmg:SetHitResult(hitResult)
+	dmg:SetHitResult(dmg:GetHitResult())
 	dmg.reason = DamageReason.COMBAT
 		
 	COMBAT().ApplyDamage(other, dmg, script, pos, rot)
 		
-	projectile:Destroy()
+	if(projectile) then projectile:Destroy() end
 end
 
 
