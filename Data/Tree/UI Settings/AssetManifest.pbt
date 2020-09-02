@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12421442902732296472
+  Name: "Meta Fantasy Heal 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_meta_fantasy_heal_02_Cue_ref"
+  }
+}
+Assets {
   Id: 11757390778361009318
   Name: "Icon Profile"
   PlatformAssetType: 9

@@ -9500,6 +9500,9 @@ Objects {
   ParentId: 4483607704190141439
   ChildIds: 3555355684162300806
   ChildIds: 16099635661608739008
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   Folder {
     IsGroup: true
   }
@@ -9773,6 +9776,7 @@ Objects {
   }
   ParentId: 16874730708892829300
   ChildIds: 11330145955081851603
+  ChildIds: 14456210015115589308
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9813,6 +9817,130 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 14456210015115589308
+  Name: "UI Button"
+  Transform {
+    Location {
+      X: 8301.87305
+      Y: -7296.77832
+      Z: 186.661011
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16385971167238048197
+  ChildIds: 15685010813855929668
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Titre"
+      String: "CHARISMA"
+    }
+    Overrides {
+      Name: "cs:Display"
+      String: "Charisma helps you manipulate others either by buffing you allies or deceive your ennemies"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 65
+    Height: 49
+    UIX: -50
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 15685010813855929668
+  Name: "TooltipedTemplate"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14456210015115589308
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5728405751673614456
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TooltipedTemplate"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6084210277653274580
     }
   }
 }
@@ -10126,6 +10254,7 @@ Objects {
   }
   ParentId: 7268861541802845272
   ChildIds: 1507128156911447868
+  ChildIds: 10852315348732238540
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10166,6 +10295,130 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 10852315348732238540
+  Name: "UI Button"
+  Transform {
+    Location {
+      X: 8301.87305
+      Y: -7296.77832
+      Z: 186.661011
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5392110424034393624
+  ChildIds: 398507491825172501
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Titre"
+      String: "WISDOM"
+    }
+    Overrides {
+      Name: "cs:Display"
+      String: "Wisdom helps you understand complex situation and perceive their real nature"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 65
+    Height: 49
+    UIX: -54.0684814
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 398507491825172501
+  Name: "TooltipedTemplate"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10852315348732238540
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5728405751673614456
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TooltipedTemplate"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6084210277653274580
     }
   }
 }
@@ -10479,6 +10732,7 @@ Objects {
   }
   ParentId: 17206673416805824427
   ChildIds: 3880394990503911631
+  ChildIds: 2168170422256481559
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10519,6 +10773,130 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 2168170422256481559
+  Name: "UI Button"
+  Transform {
+    Location {
+      X: 8301.87305
+      Y: -7296.77832
+      Z: 186.661011
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6197162978256235533
+  ChildIds: 14448729206199387744
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Titre"
+      String: "INTELLIGENCE"
+    }
+    Overrides {
+      Name: "cs:Display"
+      String: "Intelligence gives you magic power, it will be use to properly cast spells"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 65
+    Height: 49
+    UIX: -50
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 14448729206199387744
+  Name: "TooltipedTemplate"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2168170422256481559
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5728405751673614456
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TooltipedTemplate"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6084210277653274580
     }
   }
 }
@@ -10832,6 +11210,7 @@ Objects {
   }
   ParentId: 5812191219634621623
   ChildIds: 6741831575826840087
+  ChildIds: 10150883565244189282
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10872,6 +11251,130 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 10150883565244189282
+  Name: "UI Button"
+  Transform {
+    Location {
+      X: 8301.87305
+      Y: -7296.77832
+      Z: 186.661011
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1548433808460042306
+  ChildIds: 13553872571022246246
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Titre"
+      String: "CONSTITUTION"
+    }
+    Overrides {
+      Name: "cs:Display"
+      String: "Constitution defines your survivability, the more you have, the more you live. High consitution will increase your life recovery"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 65
+    Height: 49
+    UIX: -50
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13553872571022246246
+  Name: "TooltipedTemplate"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10150883565244189282
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5728405751673614456
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TooltipedTemplate"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6084210277653274580
     }
   }
 }
@@ -11185,6 +11688,7 @@ Objects {
   }
   ParentId: 14020679706103604011
   ChildIds: 9837443836253827493
+  ChildIds: 5856704214611316505
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -11225,6 +11729,130 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 5856704214611316505
+  Name: "UI Button"
+  Transform {
+    Location {
+      X: 8301.87305
+      Y: -7296.77832
+      Z: 186.661011
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11672763798432636901
+  ChildIds: 16844309459181417472
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Titre"
+      String: "DEXTERITY"
+    }
+    Overrides {
+      Name: "cs:Display"
+      String: "Dexterity helps you evade attack and used in finesse skills. High dexterity allow you to perform acrobatics jumps"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 65
+    Height: 49
+    UIX: -49.2976074
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16844309459181417472
+  Name: "TooltipedTemplate"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5856704214611316505
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5728405751673614456
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TooltipedTemplate"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6084210277653274580
     }
   }
 }
@@ -11478,6 +12106,7 @@ Objects {
   }
   ParentId: 12396362434394781470
   ChildIds: 6846802186769369125
+  ChildIds: 2680724541014675123
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -11519,6 +12148,129 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 2680724541014675123
+  Name: "UI Button"
+  Transform {
+    Location {
+      X: 8301.87305
+      Y: -7296.77832
+      Z: 186.661011
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 620414675659603299
+  ChildIds: 10913791404700039233
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Titre"
+      String: "STRENGTH"
+    }
+    Overrides {
+      Name: "cs:Display"
+      String: "Strength is raw combat power, you will more efficient at attacking and dealing damage. Makes your jump more potent"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 65
+    Height: 49
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 10913791404700039233
+  Name: "TooltipedTemplate"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2680724541014675123
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5728405751673614456
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TooltipedTemplate"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6084210277653274580
     }
   }
 }

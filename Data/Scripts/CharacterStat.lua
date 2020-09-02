@@ -1,5 +1,7 @@
 ﻿local propLastSpawn = script:GetCustomProperty("LastSpawn")
+
 local MODULE = require( script:GetCustomProperty("ModuleManager") )
+function COMBAT() return MODULE:Get("standardcombo.Combat.Wrap") end
 local waitingPlayerDice={}
 local waitingBestPlayerDice={}
 local callbackPlayerDice={}
@@ -100,7 +102,7 @@ function OnStrDown(player)
      
     playerData=loadPlayerData(player)
 
-   
+    if player:GetResource("STR") == 0 then return end
     player:RemoveResource("STR",1)
     player:AddResource("statpoint",1)
     
@@ -125,7 +127,7 @@ function OnDexDown(player)
     addDebugCombatTexte("dex down",debug)
     playerData=loadPlayerData(player)
 
-   
+    if player:GetResource("DEX") == 0 then return end
     player:RemoveResource("DEX",1)
     player:AddResource("statpoint",1)
     
@@ -151,7 +153,7 @@ function OnConDown(player)
     addDebugCombatTexte("con down",debug)
     playerData=loadPlayerData(player)
 
-   
+    if player:GetResource("CON") == 0 then return end
     player:RemoveResource("CON",1)
     player:AddResource("statpoint",1)
     
@@ -176,7 +178,7 @@ function OnIntDown(player)
     addDebugCombatTexte("int down",debug)
     playerData=loadPlayerData(player)
 
-   
+    if player:GetResource("INT") == 0 then return end
     player:RemoveResource("INT",1)
     player:AddResource("statpoint",1)
     
@@ -200,7 +202,7 @@ function OnWisDown(player)
     addDebugCombatTexte("wis down",debug)
     playerData=loadPlayerData(player)
 
-    
+    if player:GetResource("WIS") == 0 then return end
     player:RemoveResource("WIS",1)
     player:AddResource("statpoint",1)
     
@@ -225,7 +227,7 @@ function OnCharDown(player)
     addDebugCombatTexte("char down",debug)
     playerData=loadPlayerData(player)
 
-  
+    if player:GetResource("CHA") == 0 then return end
     player:RemoveResource("CHA",1)
     player:AddResource("statpoint",1)
     
@@ -357,6 +359,8 @@ local gameplay=World.FindObjectById("83D47359D7CB64F1:Gameplay")
 function OnPlayerJoined(player)
     
     Task.Wait(0.5)
+    player.maxJumpCount=1
+    player.jumpVelocity=300
    -- print("allo? "..player.animationStance)
     --Task.Spawn(function() GetStat(player) end,math.random(1))
    
@@ -538,11 +542,12 @@ function OnResourceChanged(player,resourceid,newvalue)
        
     end
         if(resourceid=="STR") then
-
+            player.jumpVelocity=400*(modifier(player:GetResource("STR"))+1)+50
         end
 
         if(resourceid=="DEX") then
             local newDex=modifier(newvalue)
+            player.maxJumpCount=newDex+1
             local newCon=modifier(player:GetResource("CON"))
             if(playerData.class.name=="Barbarian") then
              
@@ -557,7 +562,13 @@ function OnResourceChanged(player,resourceid,newvalue)
         end
 
         if(resourceid=="CON") then
+            
             local newCon=modifier(newvalue)
+                if newCon >=1 then
+                    player:SetResource("Endurance",newCon)
+                else  
+                    player:SetResource("Endurance",0)
+                end
             if(playerData.class.name=="Barbarian") then
              
              local newDex=modifier(player:GetResource("DEX"))
@@ -776,6 +787,8 @@ function endCombat(victory)
              respawnPlayer(p)
             
         end
+        local trigger=currentCombatZone:FindDescendantByName("Trigger")
+        trigger.collision = Collision.FORCE_ON
         --unfreezePlayers()
     end
     playersAreInCombat=false;
@@ -783,8 +796,7 @@ function endCombat(victory)
     playersInCombat={}
     initiativeCombat={}
     initiativeCombatLength=0
-    local trigger=currentCombatZone:FindDescendantByName("Trigger")
-    trigger.collision = Collision.FORCE_ON
+  
     
 end
 function respawnPlayer(p)
@@ -985,6 +997,11 @@ function newTurn()
     else
         currentPlayer=getCurrentPlayer()
         local mob=World.FindObjectById(currentPlayer)
+        if (mob == nil) then
+            OnEndTurn()
+            print("probleme avec id "..currentPlayer)
+           
+        end
         Events.BroadcastToAllPlayers("BannerMessage","CurrentPlayerIsPlaying",1,Color.RED,{mob.name})
        
         Events.Broadcast("BEGIN_TURN_NPC",currentPlayer)
@@ -1016,6 +1033,15 @@ end
 
 function UpdateBuffEtDebuff(player)
     addDebugCombatTexte("mise à jour buff et debuff",debug)
+
+    if player:GetResource("Endurance") >0 then
+        local amount=player:GetResource("Endurance")
+        local dmg = Damage.New( -amount)
+        dmg.reason = DamageReason.COMBAT
+        dmg.sourcePlayer=player
+        COMBAT().ApplyDamage(player,dmg, script, player:GetWorldPosition(), player:GetWorldRotation())
+               
+    end
     
     if player:GetResource("Enraged") >0 then
             if player:GetResource("EnragedHitOrGotHit") == 1 then

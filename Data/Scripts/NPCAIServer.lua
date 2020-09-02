@@ -903,7 +903,7 @@ function OnCombatEnded(victory)
 		ROOT:SetNetworkedCustomProperty("CurrentHealth",MAX_HEALTH)
 		ROOT:SetNetworkedCustomProperty("CurrentState",0)
 		ROOT:SetWorldPosition(originalPosition)
-end
+	end
 
 end
 Events.Connect("END_COMBAT", OnCombatEnded)

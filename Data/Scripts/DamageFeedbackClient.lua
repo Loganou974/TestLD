@@ -29,6 +29,7 @@ local IS_BIG_TEXT = COMPONENT_ROOT:GetCustomProperty("DisplayBigText")
 local SHOW_HIT_FEEDBACK = COMPONENT_ROOT:GetCustomProperty("ShowHitFeedback")
 local SHOW_HEALTH_CHANGE_EFFECT = COMPONENT_ROOT:GetCustomProperty("ShowHealthChangeEffect")
 local HIT_FEEDBACK_SOUND = COMPONENT_ROOT:GetCustomProperty("HitFeedbackSound"):WaitForObject()
+local HEALING_SOUND = COMPONENT_ROOT:GetCustomProperty("HealingSound"):WaitForObject()
 
 -- Constant variables
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -85,18 +86,26 @@ end
 
 -- ShowFlyUpText(number, Vector3)
 -- Display damage at position
-function ShowFlyUpText(damage, position, color)
+function ShowFlyUpText(damage, position, color,source)
     if not SHOW_FLY_UP_TEXT then return end
 
     local newColor = color
     if not color then
         newColor = TARGET_DAMAGE_TEXT_COLOR
     end
+    if source==nil then
+        UI.ShowFlyUpText(string.format("%.0f", damage), position,
+        {duration = DAMAGE_TEXT_DURATION,
+        color = newColor,
+        isBig = IS_BIG_TEXT})
 
-    UI.ShowFlyUpText(string.format("%.0f", damage), position,
-    {duration = DAMAGE_TEXT_DURATION,
-    color = newColor,
-    isBig = IS_BIG_TEXT})
+    else 
+
+        UI.ShowFlyUpText(source.." heals you for "..string.format("%.0f", damage), position,
+        {duration = DAMAGE_TEXT_DURATION,
+        color = newColor,
+        isBig = IS_BIG_TEXT})
+    end
 end
 
 -- nil DisplayDamage(float, Vector3, Player, Player)
@@ -107,12 +116,17 @@ function DisplayDamage(damage, position, targetPlayer, sourcePlayer)
     if sourcePlayer == LOCAL_PLAYER then
         if position ~= Vector3.ZERO then
             -- Show fly up damage text at the specified position
-            ShowFlyUpText(damage, position, TARGET_DAMAGE_TEXT_COLOR)
+            print("healing?")
+            ShowFlyUpText(-damage, position, Color.GREEN,sourcePlayer.name)
+            if HEALING_SOUND then
+                HEALING_SOUND:Play()
+            end
+
         end
 
         -- Play the damage feedback sound to the source player
         if HIT_FEEDBACK_SOUND then
-            HIT_FEEDBACK_SOUND:Play()
+           -- HIT_FEEDBACK_SOUND:Play()
         end
 
         -- Show the hit indicator feedback for this damage
@@ -144,7 +158,9 @@ function DisplayDamage(damage, position, targetPlayer, sourcePlayer)
            
             if SHOW_HEALTH_CHANGE_EFFECT then
                 TriggerHitPostProcess(Color.GREEN)
-                ShowFlyUpText(math.abs(damage), LOCAL_PLAYER:GetWorldPosition(), Color.GREEN)
+                
+
+                ShowFlyUpText(math.abs(damage), LOCAL_PLAYER:GetWorldPosition(), Color.GREEN,sourcePlayer.name)
             end
         end
     end

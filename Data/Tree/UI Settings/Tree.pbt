@@ -1084,7 +1084,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DamageTextDuration"
-      Float: 1
+      Float: 1.5
     }
     Overrides {
       Name: "cs:TargetDamageTextColor"
@@ -1112,7 +1112,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ShowHitFeedback"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:ShowHealthChangeEffect"
@@ -1122,6 +1122,12 @@ Objects {
       Name: "cs:HitFeedbackSound"
       ObjectReference {
         SelfId: 9970440836707719573
+      }
+    }
+    Overrides {
+      Name: "cs:HealingSound"
+      ObjectReference {
+        SelfId: 8236949533569119972
       }
     }
     Overrides {
@@ -1180,6 +1186,7 @@ Objects {
   ParentId: 17898270300584147422
   ChildIds: 15895003289758955096
   ChildIds: 5524830958013648574
+  ChildIds: 8236949533569119972
   ChildIds: 9970440836707719573
   ChildIds: 14415327329460288084
   UnregisteredParameters {
@@ -1314,6 +1321,36 @@ Objects {
     Volume: 0.8
     Falloff: 3600
     Radius: 400
+  }
+}
+Objects {
+  Id: 8236949533569119972
+  Name: "Meta Fantasy Heal 02 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 544368719919285967
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 12421442902732296472
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
   }
 }
 Objects {

@@ -16,7 +16,8 @@ function OnExecute(ability)
                 --allies.hitPoints=allies.hitPoints+math.random(6)
                 local dmg = Damage.New( -math.random(6))
 	            --dmg:SetHitResult(hitResult)
-	            dmg.reason = DamageReason.COMBAT
+                dmg.reason = DamageReason.COMBAT
+                dmg.sourcePlayer=ability.owner
                 COMBAT().ApplyDamage(allies,dmg, script, ABILITY.owner:GetWorldPosition(), ABILITY.owner:GetWorldRotation())
                 --enemy:AddResource("actionMax",1)
                 --Task.Spawn(function() enemy:SetResource("Inspired",0),ABILITY.recoveryPhaseSettings.duration)

@@ -82,11 +82,34 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 459324289789659706
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 36.3705292
+            Y: -17.1258221
+            Z: -36.8812943
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 5972149454929132874
       value {
         Overrides {
           Name: "AnimatedMeshStance"
           String: "unarmed_idle_relaxed"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11156844241672315200
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
         }
       }
     }
