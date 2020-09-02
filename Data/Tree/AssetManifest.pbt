@@ -377,6 +377,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16740235137211270422
+  Name: "Column Segment 1m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_segment_001"
+  }
+}
+Assets {
   Id: 16433616250941258546
   Name: "Text 01: R"
   PlatformAssetType: 1
@@ -917,12 +926,30 @@ Assets {
   }
 }
 Assets {
+  Id: 13413789669352052459
+  Name: "Large Round Wood Beam 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_beam_round_6m"
+  }
+}
+Assets {
   Id: 13405450940038911275
   Name: "Fantasy Castle Stairs Spiral 01 - Small 150cm"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_stairs_spiral_001_sm_150cm"
+  }
+}
+Assets {
+  Id: 13391838123976515507
+  Name: "Big Rock Boulder Ground Impact 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_big_rock_boulder_ground_impact_01a_Cue_ref"
   }
 }
 Assets {
@@ -2804,6 +2831,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_stairs_001"
+  }
+}
+Assets {
+  Id: 3090596827184957478
+  Name: "Rope"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_rope_001"
   }
 }
 Assets {

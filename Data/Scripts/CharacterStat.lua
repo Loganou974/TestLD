@@ -542,7 +542,7 @@ function OnResourceChanged(player,resourceid,newvalue)
        
     end
         if(resourceid=="STR") then
-            player.jumpVelocity=400*(modifier(player:GetResource("STR"))+1)+50
+            player.jumpVelocity=400*(modifier(player:GetResource("STR"))+1)+100
         end
 
         if(resourceid=="DEX") then

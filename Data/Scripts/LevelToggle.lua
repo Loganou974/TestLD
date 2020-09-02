@@ -1,11 +1,14 @@
 ﻿local switch = script.parent
-    local switchTrigger = switch.parent:FindChildByType("Trigger")
+    local switchTrigger = switch:FindChildByType("Trigger")
     local switchStartingRotation = switch:GetRotation()
     local isLightOn = false
+    local ROOT=switch.parent
+    
+    local revealAction=ROOT:GetCustomProperty("Reveal"):WaitForObject()
     -- Rotate the switch when the player interacts with switchTrigger
   
   local function OnSwitchInteraction()
-  
+    revealAction.context.reveal()
   if not isLightOn then
         switch:RotateTo(Rotation.New(0, -45, 0), .5, true)
         
