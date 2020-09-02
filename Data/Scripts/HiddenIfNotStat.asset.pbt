@@ -12,6 +12,10 @@
         Name: "cs:StatSeuil"
         Int: 0
       }
+      Overrides {
+        Name: "cs:Message"
+        String: "Someone build this, you\'re intelligence lead you to a lever next to the entrance"
+      }
     }
   }
   SerializationVersion: 62

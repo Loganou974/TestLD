@@ -1,6 +1,7 @@
 ﻿local trigger = script.parent
 local statName=script:GetCustomProperty("StatName")
 local statSeuil=script:GetCustomProperty("StatSeuil")
+local message=script:GetCustomProperty("Message")
 local ROOT=script.parent.parent
 ROOT.visibility=Visibility.FORCE_OFF
 
@@ -9,7 +10,8 @@ function OnBeginOverlap(whichTrigger, other)
 		--print(whichTrigger.name .. ": Begin Trigger Overlap with " .. other.name)
 		if(other:GetResource(statName)>=statSeuil) then
 			 ROOT.visibility=Visibility.FORCE_ON
-			 Events.BroadcastToPlayer(other,"BannerMessage","Somethings is hidden nearby ("..statName.." checked)")
+			 if message==nil then message=script:GetCustomProperty("Message") end
+			 Events.BroadcastToPlayer(other,"BannerMessage",message.. "("..statName.." checked)")
 		else
 			--Events.BroadcastToPlayer(other,"BannerMessage","lava brrr")
 	
