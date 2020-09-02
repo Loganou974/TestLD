@@ -948,6 +948,9 @@ function getNextPlayer()
 end
 
 function isPlayer(p)
+  -- print("is "..type(p)..)
+   if type(p) ~="string" and  p:IsA("Player") then return p  end
+
     for i,p1 in ipairs(playersInCombat) do
        if p == p1.name then
         return p1
@@ -967,7 +970,8 @@ function newTurn()
     if currentPlayer ==nil then
         addDebugCombatTexte("1er tour donc le joueur est nil",debug)
         currentPlayer=getCurrentPlayer()
-       
+    else
+       -- addDebugCombatTexte("current player "..currentPlayer)
     end 
     if isPlayer(currentPlayer)~=nil then 
         currentPlayer=isPlayer(currentPlayer)
