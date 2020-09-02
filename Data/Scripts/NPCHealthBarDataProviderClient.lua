@@ -42,6 +42,9 @@ end
 
 -- Creates the health bar UI and places it as a child of this script
 local hpBar = World.SpawnAsset(HEALTH_BAR_TEMPLATE, {parent = script})
+local pos=hpBar:GetWorldPosition()
+pos.z=pos.z+150
+hpBar:SetWorldPosition(pos)
 Task.Wait()
 local hpBarScript = hpBar:FindChildByType("Script")
 
