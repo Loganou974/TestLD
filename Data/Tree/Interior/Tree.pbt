@@ -1701,10 +1701,6 @@ Objects {
             Yaw: -83.9482117
           }
         }
-        Overrides {
-          Name: "cs:AttackRange"
-          Float: 350
-        }
       }
     }
     TemplateAsset {

@@ -111,7 +111,7 @@ function OnTurnOn(id)
 		Tack(10)
 		if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
 			--SetState(STATE_ATTACK_CAST)
-			--ExecuteAttack()
+			ExecuteAttack()
 		else
 			--SetState(STATE_ENGAGING)
 			--UpdateMovement(250)
@@ -488,8 +488,9 @@ function UpdateMovement(deltaTime)
 		end
 	end
 	ROOT:SetWorldPosition(stepDestination)
+	
 	if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
-		ExecuteAttack()
+		Task.Spawn(function() ExecuteAttack() end,1)
 		return
 	end
 end

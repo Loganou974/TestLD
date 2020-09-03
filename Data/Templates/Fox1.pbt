@@ -85,7 +85,7 @@
           }
           Overrides {
             Name: "cs:AttackRange"
-            Float: 650
+            Float: 350
           }
           Overrides {
             Name: "cs:AttackCast"
@@ -529,9 +529,9 @@
           Rotation {
           }
           Scale {
-            X: 5
-            Y: 5
-            Z: 5
+            X: 10
+            Y: 10
+            Z: 10
           }
         }
         ParentId: 4294956528477227064
