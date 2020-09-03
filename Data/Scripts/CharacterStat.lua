@@ -787,7 +787,7 @@ function endCombat(victory)
         if FinalBoss~=nil and FinalBoss==true then
             for i,p in ipairs(Game.GetPlayers()) do
                 --lancez cinematic + temps du run
-                
+                Events.BroadcastToAllPlayers("cine_Ending")
                p:SetWorldPosition(village)
                 
             end
