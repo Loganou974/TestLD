@@ -22,9 +22,10 @@ function OnInteracted(whichTrigger, other)
 		originalStance=other.animationStance
 		other.animationStance="unarmed_carry_object_heavy"
 		whichTrigger.parent.collision=Collision.FORCE_OFF
-		whichTrigger.parent:AttachToPlayer(other,"righthand")
+		whichTrigger.parent:AttachToPlayer(other,"right_hand")
 		originalY=whichTrigger.parent:GetWorldPosition().z
-		whichTrigger.parent:SetPosition(Vector3.New(80,0,120))
+		whichTrigger.parent:SetPosition(Vector3.New(130,0,120))
+		whichTrigger.parent:SetWorldRotation(Rotation.New(0,0,0))
 		carrying=true
 		whichTrigger.interactionLabel="Drop"
 	else if other:IsA("Player") then
