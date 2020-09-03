@@ -1,6 +1,71 @@
 ﻿Name: "NAVMESH_FOLDER"
 RootId: 7384543298023093305
 Objects {
+  Id: 10085357433360813678
+  Name: "WolfPlane"
+  Transform {
+    Location {
+      X: -13469.9561
+      Y: -49990.0313
+      Z: -494.282043
+    }
+    Rotation {
+      Pitch: 2.85073638
+      Yaw: -0.15057373
+      Roll: 4.35943651
+    }
+    Scale {
+      X: 42.2901726
+      Y: 34.999115
+      Z: 0.00162120163
+    }
+  }
+  ParentId: 7384543298023093305
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10753749476555219330
+    SubobjectId: 11271811155913409773
+    InstanceId: 13987306807766383274
+    TemplateId: 11211358545227472859
+  }
+}
+Objects {
   Id: 10612478908979512280
   Name: "VampirePlante"
   Transform {

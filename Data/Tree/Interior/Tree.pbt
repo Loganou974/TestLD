@@ -18,6 +18,7 @@ Objects {
     }
   }
   ParentId: 493094663894712063
+  ChildIds: 9231578123535937101
   ChildIds: 1413591978020585781
   ChildIds: 259287209507503813
   ChildIds: 1184779590893413199
@@ -406,6 +407,10 @@ Objects {
           Name: "cs:ObjectId"
           Int: 32
         }
+        Overrides {
+          Name: "cs:RewardResourceAmount"
+          Int: 120
+        }
       }
     }
     TemplateAsset {
@@ -455,6 +460,10 @@ Objects {
           Name: "cs:ObjectId"
           Int: 31
         }
+        Overrides {
+          Name: "cs:RewardResourceAmount"
+          Int: 120
+        }
       }
     }
     TemplateAsset {
@@ -502,6 +511,10 @@ Objects {
         Overrides {
           Name: "cs:ObjectId"
           Int: 30
+        }
+        Overrides {
+          Name: "cs:RewardResourceAmount"
+          Int: 120
         }
       }
     }
@@ -720,6 +733,10 @@ Objects {
           Name: "cs:ObjectId"
           Int: 22
         }
+        Overrides {
+          Name: "cs:RewardResourceAmount"
+          Int: 60
+        }
       }
     }
     TemplateAsset {
@@ -787,6 +804,10 @@ Objects {
           Name: "cs:ObjectId"
           Int: 21
         }
+        Overrides {
+          Name: "cs:RewardResourceAmount"
+          Int: 60
+        }
       }
     }
     TemplateAsset {
@@ -837,6 +858,10 @@ Objects {
         Overrides {
           Name: "cs:ObjectId"
           Int: 20
+        }
+        Overrides {
+          Name: "cs:RewardResourceAmount"
+          Int: 60
         }
       }
     }
@@ -1525,6 +1550,280 @@ Objects {
   }
 }
 Objects {
+  Id: 9231578123535937101
+  Name: "FirstFightCombat"
+  Transform {
+    Location {
+      X: -8369.24219
+      Y: -23236.9258
+      Z: 271.721619
+    }
+    Rotation {
+      Yaw: -98.3722534
+    }
+    Scale {
+      X: 0.50000006
+      Y: 0.50000006
+      Z: 0.50000006
+    }
+  }
+  ParentId: 16546432617048368361
+  ChildIds: 18068195500193280467
+  ChildIds: 5007794866494690503
+  ChildIds: 9375252549271368348
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9375252549271368348
+  Name: "Wolf1"
+  Transform {
+    Location {
+      X: -20614.293
+      Y: -41659.1328
+      Z: 465.779053
+    }
+    Rotation {
+      Yaw: 177.679535
+    }
+    Scale {
+      X: 0.757080615
+      Y: 0.757080615
+      Z: 0.757080615
+    }
+  }
+  ParentId: 9231578123535937101
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4294956528477227064
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Wolf2"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 70.6610947
+            Y: -248.895142
+            Z: -77.6641769
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -83.9482117
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.637996614
+            Y: 0.637996614
+            Z: 0.637996614
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6171404902838667154
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 5.70130157
+            Y: 3.3653388
+            Z: 1.77569258
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17863765882253399240
+    }
+  }
+}
+Objects {
+  Id: 5007794866494690503
+  Name: "Wolf1"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9231578123535937101
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4294956528477227064
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Wolf1"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 385.337799
+            Y: -202.583466
+            Z: -16.6102886
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -83.9482117
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17863765882253399240
+    }
+  }
+}
+Objects {
+  Id: 18068195500193280467
+  Name: "CombatZone3"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9231578123535937101
+  ChildIds: 3255967130625328590
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 3255967130625328590
+  Name: "Trigger"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 37.1223145
+      Y: 33.1061
+      Z: 9.15510654
+    }
+  }
+  ParentId: 18068195500193280467
+  ChildIds: 5087188857779785455
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 5087188857779785455
+  Name: "CombatZone"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.235294119
+      Y: 0.0396039598
+      Z: 0.190476179
+    }
+  }
+  ParentId: 3255967130625328590
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NombreMonstre"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Monster1"
+      ObjectReference {
+        SelfId: 3956998259609570014
+        SubObjectId: 4294956528477227064
+        InstanceId: 5007794866494690503
+        TemplateId: 17863765882253399240
+      }
+    }
+    Overrides {
+      Name: "cs:Monster2"
+      ObjectReference {
+        SelfId: 5584448868474085053
+        SubObjectId: 4294956528477227064
+        InstanceId: 9375252549271368348
+        TemplateId: 17863765882253399240
+      }
+    }
+    Overrides {
+      Name: "cs:Monster3"
+      ObjectReference {
+        SelfId: 10097709892159328792
+        SubObjectId: 18005923331114773312
+        InstanceId: 6564411352709047931
+        TemplateId: 15728781663253921388
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17051536529361390619
+    }
+  }
+}
+Objects {
   Id: 7541522980628058162
   Name: "Esthetique"
   Transform {
@@ -1994,6 +2293,24 @@ Objects {
             X: 0.7
             Y: 0.7
             Z: 0.7
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13942691728744513144
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -10.2883301
+            Yaw: -22.9092407
+            Roll: -22.9098206
           }
         }
       }

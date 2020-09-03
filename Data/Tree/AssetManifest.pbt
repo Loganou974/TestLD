@@ -1754,6 +1754,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8510606183072625655
+  Name: "Fox Mob"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_fox_default_basic_001_ref"
+  }
+}
+Assets {
   Id: 8507899735169492709
   Name: "Cylinder"
   PlatformAssetType: 1

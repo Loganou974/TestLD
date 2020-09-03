@@ -6,6 +6,7 @@ local propTransient = script:GetCustomProperty("Transient")
 local enterSpeech = trigger:GetCustomProperty("OnEnter"):WaitForObject()
 local leaveSpeech = trigger:GetCustomProperty("OnLeave"):WaitForObject()
 local interactSpeech = trigger:GetCustomProperty("OnInteract"):WaitForObject()
+
 if propAllPlayers==nil then propAllPlayers=false end
 local delay = script:GetCustomProperty("delay")
 
@@ -13,18 +14,29 @@ local active=false
 Task.Spawn(function() active=true end,delay)
 
 local enterSpeeches=enterSpeech:GetChildren()
+local enterEvents=enterSpeech:GetCustomProperties()
 local leaveSpeeches=leaveSpeech:GetChildren()
+
 local interactSpeeches=interactSpeech:GetChildren()
+local interactEvents=interactSpeech:GetCustomProperties()
+
 function OnBeginOverlap(whichTrigger, other)
 	
 	
 	if other:IsA("Player") and active then
+		
 		for i=1,#enterSpeeches do
+			
 			local propOnEnterSpeech=enterSpeeches[i]:GetCustomProperty("Texte")
+			print(i..") "..propOnEnterSpeech)
 			local newMessage=sanitise(propOnEnterSpeech,other)
 			
 			
 		speak(enterSpeeches[i].id,other)
+			
+		end
+		for i=1,#enterEvents do
+
 		end
 	end
 end
@@ -66,6 +78,12 @@ function OnEndOverlap(whichTrigger, other)
 			
 		speak(leaveSpeeches[i].id,other)
 		end
+		if leaveSpeech:GetCustomProperty("Script1") then
+			local leaveEvent1=World.FindObjectById(leaveSpeech:GetCustomProperty("Script1"))
+			if leaveEvent1 then 
+				leaveEvent1.context.process(other)
+			end
+		end
 	end
 end
 
@@ -73,6 +91,8 @@ function OnInteracted(whichTrigger, other)
 	if other:IsA("Player") and active then
 		for i=1,#interactSpeeches do
 			local propOnEnterSpeech=interactSpeeches[i]:GetCustomProperty("Texte")
+			print(i..") "..propOnEnterSpeech)
+			--Task.Wait(0.1)
 			local newMessage=sanitise(propOnEnterSpeech,other)
 			
 			

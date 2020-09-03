@@ -14,22 +14,22 @@ local playersAreInCombat=false
 local currentCombatZone=nil
 local levelXP={0,300,900,2700,6500,14000,23000,34000,48000,64000,85000,100000,120000,140000,165000,195000,225000,265000,305000,355000}
 local races={
-    {name ="Dwarf",bonus={0,0,0,2,0,0,0},speed=25,description="Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor"},
-    {name ="Hill Dwarf",bonus={0,0,0,2,1,0,0},speed=25,description="As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience."},
-    {name ="Mountain Dwarf",bonus={2,0,0,2,0,0,0},speed=25,description="As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain."},
-    {name ="Elf",bonus={0,0,2,0,0,0,0},speed=30,description="Your size is Medium. Speed. Your base walking speed is 30 feet."},
-    {name ="High Elf",bonus={0,1,2,0,0,0,0},speed=30,description="The sun elves of Faerûn are highly intelligent. "},
-    {name ="Wood Elf",bonus={0,0,2,0,1,0,5},speed=35,description="As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests."},
-    {name ="Half Orc",bonus={2,0,0,1,0,0,0},speed=30,description="Your base walking speed is 30 feet."},
-    {name ="Halfling",bonus={0,0,2,0,0,0,0},speed=25,description="Your base walking speed is 25 feet."},
-    {name ="Lightfoot",bonus={0,0,2,0,0,1,0},speed=25,description="As a lightfoot halfling, you can easily hide from notice, even using other people as cover."},
-    {name ="Stout Halfling",bonus={0,0,2,1,0,0,0},speed=25,description="As a stout halfling, you’re hardier than average and have some resistance to poison. Some say that stouts have dwarven blood."},
-    {name ="Human",bonus={1,1,1,1,1,1,0},speed=30,description=" Your base walking speed is 30 feet."},
-    {name ="Dragonborn",bonus={2,0,0,0,0,1,0},speed=30,description=" Your base walking speed is 30 feet."},
-    {name ="Gnome",bonus={0,2,0,0,0,0,0},speed=25,description=" Your base walking speed is 25 feet."},
-    {name ="Rock Gnome",bonus={0,2,0,1,0,0,0},speed=25,description="As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes."},
-    {name ="Tiefling",bonus={0,1,0,0,0,2,0},speed=30,description="Your base walking speed is 30 feet."},
-    {name ="Aarakocra",bonus={0,0,2,0,1,0,0},speed=50,description="Sequestered in high mountains atop tall trees, the aarakocra, sometimes called birdfolk, evoke fear and wonder."}
+    {name ="Dwarf",size="S",bonus={0,0,0,2,0,0,0},speed=25,description="Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor"},
+    {name ="Hill Dwarf",size="S",bonus={0,0,0,2,1,0,0},speed=25,description="As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience."},
+    {name ="Mountain Dwarf",size="S",bonus={2,0,0,2,0,0,0},speed=25,description="As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain."},
+    {name ="Elf",size="N",bonus={0,0,2,0,0,0,0},speed=30,description="Your size is Medium. Speed. Your base walking speed is 30 feet."},
+    {name ="High Elf",size="N",bonus={0,1,2,0,0,0,0},speed=30,description="The sun elves of Faerûn are highly intelligent. "},
+    {name ="Wood Elf",size="N",bonus={0,0,2,0,1,0,5},speed=35,description="As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests."},
+    {name ="Half Orc",size="L",bonus={2,0,0,1,0,0,0},speed=30,description="Your base walking speed is 30 feet."},
+    {name ="Halfling",size="S",bonus={0,0,2,0,0,0,0},speed=25,description="Your base walking speed is 25 feet."},
+    {name ="Lightfoot",size="S",bonus={0,0,2,0,0,1,0},speed=25,description="As a lightfoot halfling, you can easily hide from notice, even using other people as cover."},
+    {name ="Stout Halfling",size="S",bonus={0,0,2,1,0,0,0},speed=25,description="As a stout halfling, you’re hardier than average and have some resistance to poison. Some say that stouts have dwarven blood."},
+    {name ="Human",size="N",bonus={1,1,1,1,1,1,0},speed=30,description=" Your base walking speed is 30 feet."},
+    {name ="Dragonborn",size="L",bonus={2,0,0,0,0,1,0},speed=30,description=" Your base walking speed is 30 feet."},
+    {name ="Gnome",size="S",bonus={0,2,0,0,0,0,0},speed=25,description=" Your base walking speed is 25 feet."},
+    {name ="Rock Gnome",size="S",bonus={0,2,0,1,0,0,0},speed=25,description="As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes."},
+    {name ="Tiefling",size="S",bonus={0,1,0,0,0,2,0},speed=30,description="Your base walking speed is 30 feet."},
+    {name ="Aarakocra",size="L",bonus={0,0,2,0,1,0,0},speed=50,description="Sequestered in high mountains atop tall trees, the aarakocra, sometimes called birdfolk, evoke fear and wonder."}
 }
 
 local nombreDeRace=16
@@ -453,7 +453,21 @@ function choixRace(player)
     local block=World.FindObjectById("74C5751693875502:Lead Pencil")
     if block then  block:Destroy() end
     
+    if race.size =="S" then
+        local currentScale = player:GetWorldScale()
+            local newScale = currentScale * 0.8
+            if newScale.x > 5 then newScale = Vector3.New(1.0) end
 
+            player:SetWorldScale(newScale)
+    end
+
+    if race.size =="L" then
+        local currentScale = player:GetWorldScale()
+            local newScale = currentScale * 1.3
+            if newScale.x > 5 then newScale = Vector3.New(1.0) end
+
+            player:SetWorldScale(newScale)
+    end
     player:AddResource("STR",race.bonus[1])
     player:AddResource("INT",race.bonus[2])
     player:AddResource("DEX",race.bonus[3])
@@ -1028,7 +1042,7 @@ function Tick(deltaTime)
             
         end
     end
-    Task.Wait(1)
+    Task.Wait(5)
 end
 
 function OnPlayerLeft(player)

@@ -16,6 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 9727234593544387152
         ChildIds: 16731051360617795441
         ChildIds: 937826533456595707
         ChildIds: 5190349005861014096
@@ -72,6 +73,61 @@
           SocketName: "right_prop"
           PickupTrigger {
             SubObjectId: 16731051360617795441
+          }
+        }
+      }
+      Objects {
+        Id: 9727234593544387152
+        Name: "Point Light"
+        Transform {
+          Location {
+            X: 82.4101563
+            Y: -9.8046875
+            Z: 162.011658
+          }
+          Rotation {
+            Pitch: -10.2883301
+            Yaw: -22.9092102
+            Roll: -22.909729
+          }
+          Scale {
+            X: 0.7
+            Y: 0.7
+            Z: 0.7
+          }
+        }
+        ParentId: 4934646683071322016
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Light {
+          Intensity: 9.27479744
+          Color {
+            R: 1
+            G: 0.473245025
+            B: 0.18
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 6000
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
           }
         }
       }
