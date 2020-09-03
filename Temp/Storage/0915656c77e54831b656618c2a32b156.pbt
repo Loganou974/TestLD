@@ -6,188 +6,10 @@
     Table {
       Entries {
         Key {
-          StringVar: "proficiency"
-        }
-        SimpleValue {
-          Table {
-            Entries {
-              Key {
-                IntVar: 1
-              }
-              SimpleValue {
-                IntVar: 2
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 2
-              }
-              SimpleValue {
-                IntVar: 2
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 3
-              }
-              SimpleValue {
-                IntVar: 2
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 4
-              }
-              SimpleValue {
-                IntVar: 2
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 5
-              }
-              SimpleValue {
-                IntVar: 3
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 6
-              }
-              SimpleValue {
-                IntVar: 3
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 7
-              }
-              SimpleValue {
-                IntVar: 3
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 8
-              }
-              SimpleValue {
-                IntVar: 3
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 9
-              }
-              SimpleValue {
-                IntVar: 4
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 10
-              }
-              SimpleValue {
-                IntVar: 4
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 11
-              }
-              SimpleValue {
-                IntVar: 4
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 12
-              }
-              SimpleValue {
-                IntVar: 4
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 13
-              }
-              SimpleValue {
-                IntVar: 5
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 14
-              }
-              SimpleValue {
-                IntVar: 5
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 15
-              }
-              SimpleValue {
-                IntVar: 5
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 16
-              }
-              SimpleValue {
-                IntVar: 5
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 17
-              }
-              SimpleValue {
-                IntVar: 6
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 18
-              }
-              SimpleValue {
-                IntVar: 6
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 19
-              }
-              SimpleValue {
-                IntVar: 6
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 20
-              }
-              SimpleValue {
-                IntVar: 6
-              }
-            }
-          }
-        }
-      }
-      Entries {
-        Key {
           StringVar: "hit"
         }
         SimpleValue {
-          IntVar: 12
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "skills"
-        }
-        SimpleValue {
-          Table {
-          }
+          IntVar: 100
         }
       }
       Entries {
@@ -195,7 +17,7 @@
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Barbarian"
+          StringVar: "Novice"
         }
       }
     }
@@ -226,7 +48,7 @@ Entries {
                 IntVar: 2
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -242,7 +64,7 @@ Entries {
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -274,6 +96,14 @@ Entries {
       }
       Entries {
         Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: " Your base walking speed is 25 feet."
+        }
+      }
+      Entries {
+        Key {
           StringVar: "speed"
         }
         SimpleValue {
@@ -282,10 +112,10 @@ Entries {
       }
       Entries {
         Key {
-          StringVar: "description"
+          StringVar: "size"
         }
         SimpleValue {
-          StringVar: " (/CON+2)"
+          StringVar: "S"
         }
       }
       Entries {
@@ -293,7 +123,7 @@ Entries {
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Dwarf"
+          StringVar: "Gnome"
         }
       }
     }
