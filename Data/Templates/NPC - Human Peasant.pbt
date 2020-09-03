@@ -7,7 +7,7 @@
       RootId: 7893311972705795633
       Objects {
         Id: 7893311972705795633
-        Name: "NPC - Human Peasant"
+        Name: "Georges"
         Transform {
           Scale {
             X: 1
@@ -25,7 +25,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:ObjectId"
-            Int: 0
+            Int: 20
           }
           Overrides {
             Name: "cs:Team"
@@ -109,7 +109,7 @@
           }
           Overrides {
             Name: "cs:RewardResourceAmount"
-            Int: 10
+            Int: 60
           }
           Overrides {
             Name: "cs:LootId"
@@ -154,6 +154,10 @@
           Overrides {
             Name: "cs:BonusToHit"
             Int: 2
+          }
+          Overrides {
+            Name: "cs:Opportunity"
+            Int: 0
           }
           Overrides {
             Name: "cs:CurrentState:isrep"
@@ -262,6 +266,10 @@
           Overrides {
             Name: "cs:RewardResourceAmount:tooltip"
             String: "Some NPCs can grant resources to players that kill them. The RewardResourceAmount is the Amount of the resource to grant to players"
+          }
+          Overrides {
+            Name: "cs:Opportunity:isrep"
+            Bool: true
           }
         }
         WantsNetworking: true
