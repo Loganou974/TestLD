@@ -1,7 +1,7 @@
 ﻿Name: "OnInteract_7"
-RootId: 1520006473055631264
+RootId: 10976782948903174668
 Objects {
-  Id: 12042098920444977095
+  Id: 2571101617327571014
   Name: "Speech1"
   Transform {
     Location {
@@ -14,11 +14,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1520006473055631264
+  ParentId: 10976782948903174668
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Go away !"
+      String: "Before you go, you can hear him moan."
     }
   }
   Collidable_v2 {
@@ -39,7 +39,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8477873930909464969
+  Id: 11676241632653139123
   Name: "Speech1"
   Transform {
     Location {
@@ -52,11 +52,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1520006473055631264
+  ParentId: 10976782948903174668
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "I don\'t want any trouble."
+      String: "You try to speak with in vain."
     }
   }
   Collidable_v2 {
@@ -77,7 +77,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13548223335360069803
+  Id: 5929215194130559523
   Name: "Speech1"
   Transform {
     Location {
@@ -90,11 +90,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1520006473055631264
+  ParentId: 10976782948903174668
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Get out of my sight, you are Strahd\'s meat."
+      String: "He looks at you, but there is no spark in his eyes."
     }
   }
   Collidable_v2 {
@@ -115,7 +115,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14882707692383947156
+  Id: 10477597429064752199
   Name: "Speech1"
   Transform {
     Location {
@@ -128,11 +128,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1520006473055631264
+  ParentId: 10976782948903174668
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Why are you here, stranger ?"
+      String: "You look the villager in the eyes."
     }
   }
   Collidable_v2 {
