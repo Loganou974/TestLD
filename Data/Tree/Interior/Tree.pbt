@@ -1632,10 +1632,14 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 0.637996614
-            Y: 0.637996614
-            Z: 0.637996614
+            X: 0.435004741
+            Y: 0.435004741
+            Z: 0.43500483
           }
+        }
+        Overrides {
+          Name: "cs:AttackRange"
+          Float: 350
         }
       }
     }
@@ -1697,6 +1701,10 @@ Objects {
             Yaw: -83.9482117
           }
         }
+        Overrides {
+          Name: "cs:AttackRange"
+          Float: 350
+        }
       }
     }
     TemplateAsset {
@@ -1740,9 +1748,9 @@ Objects {
       Yaw: -179.999954
     }
     Scale {
-      X: 37.1223145
-      Y: 33.1061
-      Z: 9.15510654
+      X: 25.3110676
+      Y: 22.5727
+      Z: 6.24222136
     }
   }
   ParentId: 18068195500193280467

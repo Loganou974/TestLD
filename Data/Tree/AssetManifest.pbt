@@ -1169,6 +1169,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11936277478737969408
+  Name: "Creature Wolf Howl Far Reverb 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_creature_wolf_howl_far_reverb_01_Cue_ref"
+  }
+}
+Assets {
   Id: 11919845756441757590
   Name: "Ellipsoid - Truncated"
   PlatformAssetType: 1

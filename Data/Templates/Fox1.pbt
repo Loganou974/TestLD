@@ -10,9 +10,9 @@
         Name: "Wolf1"
         Transform {
           Scale {
-            X: 0.637996614
-            Y: 0.637996614
-            Z: 0.637996614
+            X: 0.435004741
+            Y: 0.435004741
+            Z: 0.43500483
           }
         }
         ParentId: 9231578123535937101
@@ -85,7 +85,7 @@
           }
           Overrides {
             Name: "cs:AttackRange"
-            Float: 350
+            Float: 650
           }
           Overrides {
             Name: "cs:AttackCast"
@@ -468,9 +468,9 @@
         Name: "Collider"
         Transform {
           Location {
-            X: 110.628708
-            Y: 4.48287582
-            Z: 109.999985
+            X: 110.629967
+            Y: 4.48292685
+            Z: -137.171402
           }
           Rotation {
           }
@@ -529,9 +529,9 @@
           Rotation {
           }
           Scale {
-            X: 1.99963439
-            Y: 1.99963439
-            Z: 1.99963439
+            X: 5
+            Y: 5
+            Z: 5
           }
         }
         ParentId: 4294956528477227064
@@ -845,7 +845,6 @@
         Name: "Wolf"
         Transform {
           Location {
-            Z: -0.000244140625
           }
           Rotation {
           }
