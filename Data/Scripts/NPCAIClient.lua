@@ -79,6 +79,12 @@ function OnPropertyChanged(object, propertyName)
 		local health = GetHealth()
 		--
 	end
+	if (propertyName=="Opportunity") then
+	UI.ShowFlyUpText("OPPORTUNITY ATTACK", ROOT:GetWorldPosition(),
+			{duration = 2,
+			color = Color.RED,
+			isBig = true})
+	end
 end
 ROOT.networkedPropertyChangedEvent:Connect(OnPropertyChanged)
 

@@ -7,7 +7,7 @@
       RootId: 4212840905289249936
       Objects {
         Id: 4212840905289249936
-        Name: "Raptor 1"
+        Name: "Raptor 2"
         Transform {
           Scale {
             X: 0.5
@@ -25,7 +25,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:ObjectId"
-            Int: 0
+            Int: 11
           }
           Overrides {
             Name: "cs:Team"
@@ -156,6 +156,10 @@
             String: "Lizard"
           }
           Overrides {
+            Name: "cs:Opportunity"
+            Int: 0
+          }
+          Overrides {
             Name: "cs:CurrentState:isrep"
             Bool: true
           }
@@ -262,6 +266,10 @@
           Overrides {
             Name: "cs:RewardResourceAmount:tooltip"
             String: "Some NPCs can grant resources to players that kill them. The RewardResourceAmount is the Amount of the resource to grant to players"
+          }
+          Overrides {
+            Name: "cs:Opportunity:isrep"
+            Bool: true
           }
         }
         WantsNetworking: true

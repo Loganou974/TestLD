@@ -508,14 +508,6 @@ Objects {
             Yaw: 177.890457
           }
         }
-        Overrides {
-          Name: "cs:ObjectId"
-          Int: 30
-        }
-        Overrides {
-          Name: "cs:RewardResourceAmount"
-          Int: 120
-        }
       }
     }
     TemplateAsset {
@@ -817,7 +809,7 @@ Objects {
 }
 Objects {
   Id: 15558294256519260212
-  Name: "NPC - Human Peasant"
+  Name: "Georges"
   Transform {
     Scale {
       X: 1
@@ -854,14 +846,6 @@ Objects {
           Rotator {
             Yaw: -54.6590576
           }
-        }
-        Overrides {
-          Name: "cs:ObjectId"
-          Int: 20
-        }
-        Overrides {
-          Name: "cs:RewardResourceAmount"
-          Int: 60
         }
       }
     }
@@ -1273,20 +1257,12 @@ Objects {
 }
 Objects {
   Id: 17782289207182935358
-  Name: "NPC - Raptor"
+  Name: "Raptor 2"
   Transform {
-    Location {
-      X: -6177.35742
-      Y: 7806.2666
-      Z: 712.661072
-    }
-    Rotation {
-      Yaw: 177.679459
-    }
     Scale {
-      X: 0.5
-      Y: 0.5
-      Z: 0.5
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 1413591978020585781
@@ -1318,38 +1294,6 @@ Objects {
           Rotator {
             Yaw: 177.679459
           }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-        Overrides {
-          Name: "cs:Speed"
-          Int: 2
-        }
-        Overrides {
-          Name: "cs:RewardResourceAmount"
-          Int: 60
-        }
-        Overrides {
-          Name: "cs:AttackRange"
-          Float: 350
-        }
-        Overrides {
-          Name: "cs:MoveSpeed"
-          Float: 400
-        }
-        Overrides {
-          Name: "cs:AttackCast"
-          Float: 0.4
-        }
-        Overrides {
-          Name: "cs:ObjectId"
-          Int: 11
         }
       }
     }
@@ -1583,20 +1527,12 @@ Objects {
 }
 Objects {
   Id: 9375252549271368348
-  Name: "Wolf1"
+  Name: "Wolf2"
   Transform {
-    Location {
-      X: -20614.293
-      Y: -41659.1328
-      Z: 465.779053
-    }
-    Rotation {
-      Yaw: 177.679535
-    }
     Scale {
-      X: 0.757080615
-      Y: 0.757080615
-      Z: 0.757080615
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 9231578123535937101
@@ -1627,31 +1563,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -83.9482117
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.435004741
-            Y: 0.435004741
-            Z: 0.43500483
-          }
-        }
-        Overrides {
-          Name: "cs:AttackRange"
-          Float: 350
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 6171404902838667154
-      value {
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 5.70130157
-            Y: 3.3653388
-            Z: 1.77569258
           }
         }
       }

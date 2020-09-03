@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 1413591978020585781
+        ParentId: 1184779590893413199
         ChildIds: 2246318296637878086
         ChildIds: 6437137228495040271
         ChildIds: 16407974604998684743
@@ -25,7 +25,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:ObjectId"
-            Int: 0
+            Int: 30
           }
           Overrides {
             Name: "cs:Team"
@@ -109,7 +109,7 @@
           }
           Overrides {
             Name: "cs:RewardResourceAmount"
-            Int: 1
+            Int: 120
           }
           Overrides {
             Name: "cs:LootId"
@@ -154,6 +154,10 @@
           Overrides {
             Name: "cs:MobType"
             String: "FlyingSnake"
+          }
+          Overrides {
+            Name: "cs:Opportunity"
+            Int: 0
           }
           Overrides {
             Name: "cs:CurrentState:isrep"
@@ -262,6 +266,10 @@
           Overrides {
             Name: "cs:LootId:tooltip"
             String: "The ID of the group of loot from the Loot Factory. E.g. \"Common\" will drop a common loot when the NPC is killed. To drop nothing remove this property."
+          }
+          Overrides {
+            Name: "cs:Opportunity:isrep"
+            Bool: true
           }
         }
         WantsNetworking: true

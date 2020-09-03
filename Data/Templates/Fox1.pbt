@@ -7,7 +7,7 @@
       RootId: 4294956528477227064
       Objects {
         Id: 4294956528477227064
-        Name: "Wolf1"
+        Name: "Wolf2"
         Transform {
           Scale {
             X: 0.435004741
@@ -156,6 +156,10 @@
             String: "Lizard"
           }
           Overrides {
+            Name: "cs:Opportunity"
+            Int: 0
+          }
+          Overrides {
             Name: "cs:CurrentState:isrep"
             Bool: true
           }
@@ -262,6 +266,10 @@
           Overrides {
             Name: "cs:RewardResourceAmount:tooltip"
             String: "Some NPCs can grant resources to players that kill them. The RewardResourceAmount is the Amount of the resource to grant to players"
+          }
+          Overrides {
+            Name: "cs:Opportunity:isrep"
+            Bool: true
           }
         }
         WantsNetworking: true

@@ -122,7 +122,61 @@ function OnTurnOn(id)
 	end
 end
 Events.Connect("BEGIN_TURN_NPC", OnTurnOn)
+local ENGAGED_RANGE=500
+local engagedEnnemies={}
+function Tick(deltaTime)
+	local myPos = ROOT:GetWorldPosition()
+	
+	for i=1,#engagedEnnemies  do
+		local e=engagedEnnemies[i]
+		if (e~=nil and (e:GetWorldPosition()-myPos).size > ENGAGED_RANGE) then
+			if Object.IsValid(ROOT) then
+				ROOT:SetNetworkedCustomProperty("Opportunity", math.random(100000))
+			end
+			ATTACK_COMPONENT.context.Attack(e)
+			table.remove(engagedEnnemies, i)
+			break;
+		end
+	end
 
+	engagedEnnemies=FindEngagedEnnemy()
+end
+
+function FindEngagedEnnemy()
+	local engaged={}
+	local myPos = ROOT:GetWorldPosition()
+	local forwardVector = ROTATION_ROOT:GetWorldRotation() * Vector3.FORWARD
+	local myTeam = GetTeam()
+	
+	local nearestEnemy = nil
+	local nearestDistSquared = 9999999999
+	
+	-- Players
+	for _,enemy in ipairs(Game.GetPlayers()) do
+		if (enemy.team ~= myTeam and not enemy.isDead) then
+			if (enemy:GetWorldPosition()-myPos).size <= ENGAGED_RANGE then
+				table.insert(engaged, enemy)
+				print(" "..enemy.name.."engaged "..#engaged)
+			end
+		end
+	end
+	
+	-- Other NPCs
+	local enemyNPCs = NPC_MANAGER().GetEnemies(myTeam)
+	
+	for _,enemy in ipairs(enemyNPCs) do
+		if enemy.context.IsAlive() then
+			if (enemy:GetWorldPosition()-myPos).size < ENGAGED_RANGE then
+				table.insert(engaged, enemy)
+			end
+		end
+	end
+	
+
+
+	return engaged
+
+end
 function SetState(newState)
 	--print("NewState = " .. newState)
 
