@@ -9,9 +9,10 @@ function OnBeginOverlap(whichTrigger, other)
 	end
 	if other.name =="Pillar" and propRealOne then
 		propPlayerLauncher.isEnabled=true
+		Events.BroadcastToAllPlayers("BannerMessage","You hear a weird noise to your left",3,Color.WHITE)
 	end
 	if other.name =="Pillar" and not propRealOne then
-		Events.BroadcastToPlayer(player,"BannerMessage","It does nothing",3,Color.WHITE)
+		Events.BroadcastToAllPlayers("BannerMessage","It does nothing",3,Color.WHITE)
 	end
 end
 
