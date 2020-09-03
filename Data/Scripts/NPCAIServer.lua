@@ -122,7 +122,7 @@ function OnTurnOn(id)
 	end
 end
 Events.Connect("BEGIN_TURN_NPC", OnTurnOn)
-local ENGAGED_RANGE=500
+local ENGAGED_RANGE=350
 local engagedEnnemies={}
 function Tick(deltaTime)
 	local myPos = ROOT:GetWorldPosition()
@@ -156,7 +156,7 @@ function FindEngagedEnnemy()
 		if (enemy.team ~= myTeam and not enemy.isDead) then
 			if (enemy:GetWorldPosition()-myPos).size <= ENGAGED_RANGE then
 				table.insert(engaged, enemy)
-				print(" "..enemy.name.."engaged "..#engaged)
+				--print(" "..enemy.name.."engaged "..#engaged)
 			end
 		end
 	end

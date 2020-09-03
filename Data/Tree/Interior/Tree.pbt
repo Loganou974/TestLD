@@ -65,7 +65,7 @@ Objects {
 }
 Objects {
   Id: 15351009731763020096
-  Name: "VampireAi"
+  Name: "Strahd"
   Transform {
     Scale {
       X: 1
@@ -83,38 +83,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 459324289789659706
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 36.3705292
-            Y: -17.1258221
-            Z: -36.8812943
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 5972149454929132874
-      value {
-        Overrides {
-          Name: "AnimatedMeshStance"
-          String: "unarmed_idle_relaxed"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11156844241672315200
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 12185706750530733991
       value {
         Overrides {
@@ -131,58 +99,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-        Overrides {
-          Name: "cs:TurnSpeed"
-          Float: 5
-        }
-        Overrides {
-          Name: "cs:MoveSpeed"
-          Float: 600
-        }
-        Overrides {
-          Name: "cs:CurrentHealth"
-          Float: 144
-        }
-        Overrides {
-          Name: "cs:Speed"
-          Int: 3
-        }
-        Overrides {
-          Name: "cs:STR"
-          Int: 14
-        }
-        Overrides {
-          Name: "cs:DEX"
-          Int: 18
-        }
-        Overrides {
-          Name: "cs:INT"
-          Int: 20
-        }
-        Overrides {
-          Name: "cs:WIS"
-          Int: 15
-        }
-        Overrides {
-          Name: "cs:CHA"
-          Int: 18
-        }
-        Overrides {
-          Name: "cs:CON"
-          Int: 18
-        }
-        Overrides {
-          Name: "cs:AC"
-          Int: 16
-        }
-        Overrides {
-          Name: "cs:BonusToHit"
-          Int: 9
-        }
-        Overrides {
-          Name: "cs:MobType"
-          String: "Strahd"
         }
       }
     }
@@ -207,6 +123,12 @@ Objects {
   }
   ParentId: 3757148221842553656
   ChildIds: 15676300473390880167
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:FinalBoss"
+      Bool: true
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -318,6 +240,10 @@ Objects {
     Overrides {
       Name: "cs:introSpeech"
       String: "You shivers as your eyes come upon the creature, you\'re in danger"
+    }
+    Overrides {
+      Name: "cs:FinalBoss"
+      Bool: true
     }
   }
   Collidable_v2 {

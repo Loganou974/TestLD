@@ -7,7 +7,7 @@
       RootId: 12185706750530733991
       Objects {
         Id: 12185706750530733991
-        Name: "VampireAi"
+        Name: "Strahd"
         Transform {
           Scale {
             X: 0.5
@@ -37,15 +37,15 @@
           }
           Overrides {
             Name: "cs:CurrentHealth"
-            Float: 426
+            Float: 144
           }
           Overrides {
             Name: "cs:MoveSpeed"
-            Float: 400
+            Float: 600
           }
           Overrides {
             Name: "cs:TurnSpeed"
-            Float: 2
+            Float: 5
           }
           Overrides {
             Name: "cs:LogicalPeriod"
@@ -117,43 +117,47 @@
           }
           Overrides {
             Name: "cs:Speed"
-            Int: 2
-          }
-          Overrides {
-            Name: "cs:STR"
-            Int: 2
-          }
-          Overrides {
-            Name: "cs:DEX"
-            Int: 11
-          }
-          Overrides {
-            Name: "cs:INT"
-            Int: 1
-          }
-          Overrides {
-            Name: "cs:WIS"
-            Int: 8
-          }
-          Overrides {
-            Name: "cs:CHA"
             Int: 3
           }
           Overrides {
+            Name: "cs:STR"
+            Int: 14
+          }
+          Overrides {
+            Name: "cs:DEX"
+            Int: 18
+          }
+          Overrides {
+            Name: "cs:INT"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:WIS"
+            Int: 15
+          }
+          Overrides {
+            Name: "cs:CHA"
+            Int: 18
+          }
+          Overrides {
             Name: "cs:CON"
-            Int: 10
+            Int: 18
           }
           Overrides {
             Name: "cs:AC"
-            Int: 10
+            Int: 16
           }
           Overrides {
             Name: "cs:BonusToHit"
-            Int: 0
+            Int: 9
           }
           Overrides {
             Name: "cs:MobType"
-            String: "Lizard"
+            String: "Strahd"
+          }
+          Overrides {
+            Name: "cs:Opportunity"
+            Int: 0
           }
           Overrides {
             Name: "cs:CurrentState:isrep"
@@ -262,6 +266,10 @@
           Overrides {
             Name: "cs:RewardResourceAmount:tooltip"
             String: "Some NPCs can grant resources to players that kill them. The RewardResourceAmount is the Amount of the resource to grant to players"
+          }
+          Overrides {
+            Name: "cs:Opportunity:isrep"
+            Bool: true
           }
         }
         WantsNetworking: true
@@ -872,7 +880,6 @@
         Name: "costume"
         Transform {
           Location {
-            Y: -286.775391
           }
           Rotation {
           }
@@ -1699,8 +1706,8 @@
         Name: "Toga Lower"
         Transform {
           Location {
-            X: 14.7621555
-            Y: -0.0205592103
+            X: 36.3705292
+            Y: -17.1258221
             Z: -36.8812943
           }
           Rotation {
