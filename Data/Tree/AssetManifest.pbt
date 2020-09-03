@@ -1655,6 +1655,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9275377007693399912
+  Name: "Pyramid - 6-Sided Hollow Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_6_sided_hollow_thick_001"
+  }
+}
+Assets {
   Id: 9199751096616988864
   Name: "Candle Flame VFX"
   PlatformAssetType: 1
@@ -2402,6 +2411,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5783799310634416146
+  Name: "Bone Human Skull Pile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_skull_pile_01_ref"
+  }
+}
+Assets {
   Id: 5672121546631582196
   Name: "Craftsman Dining Table"
   PlatformAssetType: 1
@@ -2633,6 +2651,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_marble_tiles_001_uv"
+  }
+}
+Assets {
+  Id: 4455965295306149658
+  Name: "Bone Human Skull 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_skull_01_ref"
   }
 }
 Assets {
@@ -2996,6 +3023,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2190457221850332053
+  Name: "Bone Human Skull Pile 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_skull_pile_02_ref"
+  }
+}
+Assets {
   Id: 2160476303725884379
   Name: "Chandelier"
   PlatformAssetType: 1
@@ -3128,6 +3164,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_terrain_concrete-moss_001_wa"
+  }
+}
+Assets {
+  Id: 1364294402302747595
+  Name: "Amethyst"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_amethyst"
   }
 }
 Assets {
@@ -3275,6 +3320,15 @@ Assets {
   }
 }
 Assets {
+  Id: 545684254880897270
+  Name: "Ring - Beveled Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_002"
+  }
+}
+Assets {
   Id: 529047569542828914
   Name: "Whitebox Wall 01 Window Slot 2x"
   PlatformAssetType: 1
@@ -3317,6 +3371,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_01"
+  }
+}
+Assets {
+  Id: 215002042044260533
+  Name: "Gem - Diamond 6-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_diamond_6_sided_polished_001"
   }
 }
 Assets {
