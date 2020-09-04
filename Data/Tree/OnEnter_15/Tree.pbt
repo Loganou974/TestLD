@@ -1,7 +1,7 @@
 ﻿Name: "OnEnter_15"
-RootId: 5074041851823983411
+RootId: 16297688716898737107
 Objects {
-  Id: 4218048750167173624
+  Id: 1468327024494981697
   Name: "Speech1"
   Transform {
     Location {
@@ -14,14 +14,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5074041851823983411
+  ParentId: 16297688716898737107
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Please roll a dice to choose a race"
+      String: "Coucou $ name"
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -30,11 +29,11 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_25"
+    FilePartitionName: "Speech1_24"
   }
   InstanceHistory {
-    SelfId: 4218048750167173624
-    SubobjectId: 5931333257356285073
+    SelfId: 1468327024494981697
+    SubobjectId: 8987315099311083304
     InstanceId: 9209928760912629969
     TemplateId: 4980364898667106966
   }

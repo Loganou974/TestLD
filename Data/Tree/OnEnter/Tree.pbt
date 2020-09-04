@@ -1,7 +1,7 @@
 ﻿Name: "OnEnter"
-RootId: 9849829553249324486
+RootId: 16542916344820443259
 Objects {
-  Id: 5257736253213219754
+  Id: 1042751174245548167
   Name: "Speech2"
   Transform {
     Location {
@@ -14,11 +14,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9849829553249324486
+  ParentId: 16542916344820443259
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "The cemetery in front of you is the only way."
+      String: "You hear Strahd laughing in the distance."
     }
   }
   Collidable_v2 {
@@ -39,7 +39,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14599571926373401442
+  Id: 2203246527906784413
   Name: "Speech1"
   Transform {
     Location {
@@ -52,11 +52,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9849829553249324486
+  ParentId: 16542916344820443259
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "As you approach RavenLoft, you can feel Strahd\'s dark influence growing."
+      String: "You can finally see the Immortal\'s Cursed Castle. "
     }
   }
   Collidable_v2 {

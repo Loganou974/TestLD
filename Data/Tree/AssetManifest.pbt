@@ -1241,6 +1241,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11761871474221141479
+  Name: "Fantasy Castle Door 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_door_002"
+  }
+}
+Assets {
   Id: 11691100420648372282
   Name: "Whitebox Wall 01 Doorway 01"
   PlatformAssetType: 1
@@ -1319,6 +1328,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_roof_square_shingles_001_uv"
+  }
+}
+Assets {
+  Id: 11432305031592539291
+  Name: "Fantasy Castle Wall 02 - Doorway 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_002_door_02"
   }
 }
 Assets {
@@ -1625,15 +1643,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half_octagon_001"
-  }
-}
-Assets {
-  Id: 9842143421296066252
-  Name: "Fantasy Castle Stairs 01 - 150cm"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_stairs_001_150cm"
   }
 }
 Assets {
@@ -2435,15 +2444,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_stairs_001_post"
-  }
-}
-Assets {
-  Id: 6349783742165771315
-  Name: "Bannister Single Post"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bannister_post_001"
   }
 }
 Assets {
@@ -3308,15 +3308,6 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_object_domestic_door_ref"
-  }
-}
-Assets {
-  Id: 1045886897154383739
-  Name: "Skeleton Mob"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_guy_skelington_001_ref"
   }
 }
 Assets {
