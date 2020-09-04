@@ -60,6 +60,7 @@ Objects {
       String: "Suddently, an eerie myst invades all the space around you. You\'re totally lost and hopeless."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

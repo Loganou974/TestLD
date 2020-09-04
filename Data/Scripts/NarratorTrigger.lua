@@ -2,7 +2,7 @@
 
 local propAllPlayers = trigger:GetCustomProperty("AllPlayers")
 
-local propTransient = script:GetCustomProperty("Transient")
+local propTransient = trigger:GetCustomProperty("Transient")
 local enterSpeech = trigger:GetCustomProperty("OnEnter"):WaitForObject()
 local leaveSpeech = trigger:GetCustomProperty("OnLeave"):WaitForObject()
 local interactSpeech = trigger:GetCustomProperty("OnInteract"):WaitForObject()
@@ -24,7 +24,7 @@ function OnBeginOverlap(whichTrigger, other)
 	
 	
 	if other:IsA("Player") and active then
-		
+		if propTransient then script.parent.collision=Collision.FORCE_OFF end
 		for i=1,#enterSpeeches do
 			
 			local propOnEnterSpeech=enterSpeeches[i]:GetCustomProperty("Texte")
@@ -39,6 +39,7 @@ function OnBeginOverlap(whichTrigger, other)
 
 		end
 	end
+	
 end
 
 function speak(message,other)
@@ -71,6 +72,7 @@ function speakToPlayers(message)
 end
 function OnEndOverlap(whichTrigger, other)
 	if other:IsA("Player") and active then
+		if propTransient then script.parent.collision=Collision.FORCE_OFF end
 		for i=1,#leaveSpeeches do
 			local propOnEnterSpeech=leaveSpeeches[i]:GetCustomProperty("Texte")
 			local newMessage=sanitise(propOnEnterSpeech,other)
@@ -89,6 +91,7 @@ end
 
 function OnInteracted(whichTrigger, other)
 	if other:IsA("Player") and active then
+		if propTransient then script.parent.collision=Collision.FORCE_OFF end
 		for i=1,#interactSpeeches do
 			local propOnEnterSpeech=interactSpeeches[i]:GetCustomProperty("Texte")
 			print(i..") "..propOnEnterSpeech)

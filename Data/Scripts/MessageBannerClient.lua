@@ -45,7 +45,7 @@ end
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 -- Variables
-local messageEndTime = 0.0
+local messageEndTime = {0.0,0}
 local localMessageTime = 0
 local localBigMessageTime = 0
 local localMessageBanners = {}
@@ -82,9 +82,9 @@ function OnBannerMessageEvent(message,params,duration)
     local message=GetSpeech(message,params)
     print("recu "..message.."from banner event")
     if duration then
-        messageEndTime = time() + duration
+        messageEndTime = {time() + duration,duration}
     else
-        messageEndTime = time() + DEFAULT_DURATION
+        messageEndTime = {time() + DEFAULT_DURATION,DEFAULT_DURATION}
     end
 
     PANEL.visibility = Visibility.INHERIT
@@ -102,7 +102,7 @@ function OnLongBannerMessageEvent(message,duration,color,params)
         localMessageBanners={}
         table.insert(localMessageBanners, {
             message = message,
-            duration = 6,
+            duration = 3,
             etat="big",
             color = color})
            
@@ -173,7 +173,7 @@ local nextMessageTime=0
 function SpawnLocalBigMessage(message, duration, color)
     PANEL.visibility = Visibility.FORCE_ON
     TEXT_BOX.text = message
-    local mot=message:len()/7
+   --local mot=message:len()/7
     
     
     --for i=1,mot do
@@ -184,33 +184,35 @@ function SpawnLocalBigMessage(message, duration, color)
     --end
    
     if duration then
-        messageEndTime = time() + duration
+        messageEndTime = {time() + duration,duration}
     else
-        messageEndTime = time() + 3
+        messageEndTime = {time() + 3,3}
     end
 end
 -- nil Tick(float)
 -- Hides the banner when the message has expired
-
+local nextMessage=true
 function Tick(deltaTime)
-    if time() > messageEndTime  then
+    if time() > messageEndTime[1]  then
         PANEL.visibility = Visibility.FORCE_OFF
         
-        nextMessageTime=nextMessageTime-3
+        nextMessageTime=nextMessageTime-messageEndTime[2]
         nextMessageTime=math.max(0,nextMessageTime)
+        nextMessage=true
     end
 
    
     if time() > localMessageTime then
         for i, value in ipairs(localMessageBanners) do
             if value.duration==nil then value.duration=3 end
-            if LOCAL_PLAYER  then
+            if LOCAL_PLAYER  and nextMessage then
+                nextMessage=false
                 if value.etat=="small" then
                 SpawnLocalMessage(value.message, value.duration, value.color)
                 end
                 if value.etat =="big" then
-                    
-                    Task.Spawn(function () SpawnLocalBigMessage(value.message, value.duration, value.color) end,nextMessageTime)
+                    SpawnLocalBigMessage(value.message, value.duration, value.color)
+                    --Task.Spawn(function () SpawnLocalBigMessage(value.message, value.duration, value.color) end,nextMessageTime)
                     
                     nextMessageTime=nextMessageTime+value.duration
                 end
@@ -222,10 +224,16 @@ function Tick(deltaTime)
         end
     end
 end
+function appuye(player,touche)   
 
+    if touche=="ability_primary" then
+        messageEndTime[1]=time()
+    end
+end
 -- Initialize
 PANEL.visibility = Visibility.FORCE_OFF
 Events.Connect("BannerMessage", OnBigBannerMessage)
 Events.Connect("SubBannerMessage", OnSubBannerMessage)
 Events.Connect("BigBannerMessage", OnBigBannerMessage)
 Events.Connect("LongBannerMessage", OnLongBannerMessageEvent)
+LOCAL_PLAYER.bindingPressedEvent:Connect(appuye)
