@@ -4,13 +4,53 @@ local BuffContainerTemplate=ROOT:GetCustomProperty("BuffContainer")
 local BuffContainerRage = script:GetCustomProperty("BuffContainerRage")
 local BuffContainerInspired = script:GetCustomProperty("BuffContainerInspired")
 local BuffContainerReckless = script:GetCustomProperty("BuffContainerReckless")
+local BuffContainerAthletics = script:GetCustomProperty("BuffContainerAthletics")
+local BuffContainerAcrobatics = script:GetCustomProperty("BuffContainerAcrobatics")
 
 
+function modifier(value)
+
+    return math.floor((value-10)/2)
+end
 
 local buffs={}
 local nbBuff=0
 function OnResourceChanged(player,resourceid,newvalue)
     
+    if(resourceid=="STR") then
+        if modifier(newvalue) >0 then
+            if buffs["Athletics"]==nil then
+                local x=nbBuff*50
+                local buff=World.SpawnAsset(BuffContainerAthletics,{parent=ROOT})
+                local turnText=buff:FindDescendantByName("TurnText")
+                turnText.text=""..modifier(newvalue)
+                buff.x=x
+               buffs["Athletics"]=buff
+               nbBuff=nbBuff+1
+            else
+               local buff=buffs["Athletics"]
+               local turnText=buff:FindDescendantByName("TurnText")
+               turnText.text="".. modifier(newvalue)
+            end
+        end
+    end
+    if(resourceid=="DEX") then
+        if modifier(newvalue) >0 then
+            if buffs["Acrobatics"]==nil then
+                local x=nbBuff*50
+                local buff=World.SpawnAsset(BuffContainerAcrobatics,{parent=ROOT})
+                local turnText=buff:FindDescendantByName("TurnText")
+                turnText.text=""..modifier(newvalue)
+                buff.x=x
+               buffs["Acrobatics"]=buff
+               nbBuff=nbBuff+1
+            else
+               local buff=buffs["Acrobatics"]
+               local turnText=buff:FindDescendantByName("TurnText")
+               turnText.text="".. modifier(newvalue)
+            end
+        end
+    end
     if(resourceid=="Inspired") then
         if newvalue >0 then
          if buffs["Inspired"]==nil then

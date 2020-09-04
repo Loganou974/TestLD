@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 736486886789853640
-  Name: "BuffContainer_Rage"
+  Id: 13040078757201398098
+  Name: "BuffContainer_Athletics"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -27,8 +27,6 @@
         Control {
           Width: 40
           Height: 40
-          UIX: 1084.64807
-          UIY: 679.047729
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"

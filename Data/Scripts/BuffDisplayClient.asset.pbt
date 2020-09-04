@@ -22,6 +22,18 @@
           Id: 13618414274088177065
         }
       }
+      Overrides {
+        Name: "cs:BuffContainerAthletics"
+        AssetReference {
+          Id: 13040078757201398098
+        }
+      }
+      Overrides {
+        Name: "cs:BuffContainerAcrobatics"
+        AssetReference {
+          Id: 7460255129682767979
+        }
+      }
     }
   }
   SerializationVersion: 62
