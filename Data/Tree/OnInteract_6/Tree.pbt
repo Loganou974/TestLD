@@ -1,7 +1,7 @@
 ﻿Name: "OnInteract_6"
-RootId: 7226499133757095775
+RootId: 196510557205366320
 Objects {
-  Id: 232194834306472478
+  Id: 422260772472443674
   Name: "Speech1"
   Transform {
     Location {
@@ -14,11 +14,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7226499133757095775
+  ParentId: 196510557205366320
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Welcome to Boravia. The place you never leave alive."
+      String: "The guard is not impressed."
     }
   }
   Collidable_v2 {
@@ -29,12 +29,12 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_13"
+    FilePartitionName: "Speech1_5"
   }
   InstanceHistory {
-    SelfId: 232194834306472478
-    SubobjectId: 14528817226602697304
-    InstanceId: 16122403184916844978
-    TemplateId: 12287563631168970081
+    SelfId: 4282248599225536052
+    SubobjectId: 7907731027658196644
+    InstanceId: 11972336444180036880
+    TemplateId: 4160431205403122694
   }
 }

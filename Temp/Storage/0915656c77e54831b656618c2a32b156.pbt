@@ -1,15 +1,40 @@
 ﻿Entries {
   Key {
+    StringVar: "class"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Novice"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
     StringVar: "race"
   }
   SimpleValue {
     Table {
       Entries {
         Key {
-          StringVar: "description"
+          StringVar: "name"
         }
         SimpleValue {
-          StringVar: "As a lightfoot halfling, you can easily hide from notice, even using other people as cover."
+          StringVar: "Human"
         }
       }
       Entries {
@@ -17,15 +42,15 @@
           StringVar: "size"
         }
         SimpleValue {
-          StringVar: "S"
+          StringVar: "N"
         }
       }
       Entries {
         Key {
-          StringVar: "name"
+          StringVar: "description"
         }
         SimpleValue {
-          StringVar: "Lightfoot"
+          StringVar: " Your base walking speed is 30 feet."
         }
       }
       Entries {
@@ -39,7 +64,7 @@
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -47,7 +72,7 @@
                 IntVar: 2
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -55,7 +80,7 @@
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 1
               }
             }
             Entries {
@@ -63,7 +88,7 @@
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -71,7 +96,7 @@
                 IntVar: 5
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -98,32 +123,7 @@
           StringVar: "speed"
         }
         SimpleValue {
-          IntVar: 25
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
-    StringVar: "class"
-  }
-  SimpleValue {
-    Table {
-      Entries {
-        Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Novice"
+          IntVar: 30
         }
       }
     }

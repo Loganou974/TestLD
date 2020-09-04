@@ -557,57 +557,6 @@ Objects {
   }
 }
 Objects {
-  Id: 7294820243635615038
-  Name: "Fantasy Human Gal 1"
-  Transform {
-    Location {
-      X: 153.761719
-      Y: 1089.0498
-      Z: 105.961792
-    }
-    Rotation {
-      Yaw: 81.6487885
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10042813735280099622
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9928537974828225292
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 7294820243635615038
-    SubobjectId: 7489811866563941016
-    InstanceId: 1672567905579778153
-    TemplateId: 9323984862848679036
-  }
-}
-Objects {
   Id: 291289984796009183
   Name: "Decal Leaves 01"
   Transform {

@@ -80,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15686909077460378362
+  Name: "Fantasy Castle Trim - Parapet 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_parapet_001"
+  }
+}
+Assets {
   Id: 15212185774203157141
   Name: "Fantasy Castle Floor 01 - Curved 4m "
   PlatformAssetType: 1
@@ -323,6 +332,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8983708969469221779
+  Name: "Fantasy Castle Wall 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_003"
+  }
+}
+Assets {
   Id: 8923097217195002125
   Name: "Fantasy Castle Wall 02 Half"
   PlatformAssetType: 1
@@ -473,6 +491,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_001"
+  }
+}
+Assets {
+  Id: 4565574025644870814
+  Name: "Fantasy Castle Trim - Battlement 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_battlement_001"
   }
 }
 Assets {

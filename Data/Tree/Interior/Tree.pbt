@@ -1,6 +1,231 @@
 ﻿Name: "Interior"
 RootId: 493094663894712063
 Objects {
+  Id: 95063269926583494
+  Name: "NavMesh"
+  Transform {
+    Location {
+      X: -646.202148
+      Y: 358.957031
+      Z: 1125.0199
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 493094663894712063
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "NavMesh"
+  }
+  InstanceHistory {
+    SelfId: 95063269926583494
+    SubobjectId: 576673097922763177
+    InstanceId: 13987306807766383274
+    TemplateId: 11211358545227472859
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 10952578360977829720
+  Name: "Fantasy Castle Wall 03 - Top Template"
+  Transform {
+    Location {
+      X: 2801.6582
+      Y: 835.236328
+      Z: 1954.51807
+    }
+    Rotation {
+      Yaw: -91.5634308
+    }
+    Scale {
+      X: 1.92129779
+      Y: 1.92129779
+      Z: 1.92129779
+    }
+  }
+  ParentId: 493094663894712063
+  ChildIds: 15881272263183889141
+  ChildIds: 8861265091037778199
+  ChildIds: 9762437979776917853
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 5369776658602040897
+    SubobjectId: 16193557727069144048
+    InstanceId: 1195034662527718815
+    TemplateId: 11359393822066748618
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 9762437979776917853
+  Name: "Fantasy Castle Trim - Battlement 01"
+  Transform {
+    Location {
+      X: 0.000432834524
+      Y: 50.3395042
+      Z: 600.000061
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.00001717
+      Y: 1.46037912
+      Z: 1
+    }
+  }
+  ParentId: 10952578360977829720
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3786993995377456510
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4565574025644870814
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15917241449447088861
+    SubobjectId: 8564495590077988716
+    InstanceId: 1195034662527718815
+    TemplateId: 11359393822066748618
+  }
+}
+Objects {
+  Id: 8861265091037778199
+  Name: "Fantasy Castle Wall 03"
+  Transform {
+    Location {
+      X: 8.73611e-05
+      Y: 119.914742
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.00000238
+      Y: 7.1291151
+      Z: 1
+    }
+  }
+  ParentId: 10952578360977829720
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallInner:id"
+      AssetReference {
+        Id: 11995432055657484480
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8983708969469221779
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 1259859498791249064
+    SubobjectId: 13494400856238274841
+    InstanceId: 1195034662527718815
+    TemplateId: 11359393822066748618
+  }
+}
+Objects {
+  Id: 15881272263183889141
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: 8.73611e-05
+      Y: 119.914742
+      Z: 600.000061
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.00000238
+      Y: 7.1291151
+      Z: 1
+    }
+  }
+  ParentId: 10952578360977829720
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12066027515862693180
+    SubobjectId: 958547123782035597
+    InstanceId: 1195034662527718815
+    TemplateId: 11359393822066748618
+  }
+}
+Objects {
   Id: 16546432617048368361
   Name: "SallesDeCombat"
   Transform {
