@@ -8,15 +8,6 @@
   }
 }
 Assets {
-  Id: 14565775355962623059
-  Name: "Manticore Logo"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_logo_manticore_01"
-  }
-}
-Assets {
   Id: 11629561176250569778
   Name: "Gold Treasure 02"
   PlatformAssetType: 2

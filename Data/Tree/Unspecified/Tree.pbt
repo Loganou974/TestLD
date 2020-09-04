@@ -197,54 +197,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11076563725031482557
-  Name: "Manticore Logo"
-  Transform {
-    Location {
-      X: 293
-      Y: -60
-      Z: 440
-    }
-    Rotation {
-      Pitch: 14.9995041
-      Yaw: 89.9998
-      Roll: 89.9999084
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17941265209770119915
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14565775355962623059
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 11076563725031482557
-    SubobjectId: 15241304068405054995
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
-}
-Objects {
   Id: 12328560472720554841
   Name: "Gold Treasure 2"
   Transform {
