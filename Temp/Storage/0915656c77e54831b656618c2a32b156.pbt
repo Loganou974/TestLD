@@ -1,5 +1,30 @@
 ﻿Entries {
   Key {
+    StringVar: "class"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Novice"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
     StringVar: "race"
   }
   SimpleValue {
@@ -9,23 +34,7 @@
           StringVar: "description"
         }
         SimpleValue {
-          StringVar: "As a lightfoot halfling, you can easily hide from notice, even using other people as cover."
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "size"
-        }
-        SimpleValue {
-          StringVar: "S"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Lightfoot"
+          StringVar: "Your base walking speed is 30 feet."
         }
       }
       Entries {
@@ -47,7 +56,7 @@
                 IntVar: 2
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -55,7 +64,7 @@
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -79,7 +88,7 @@
                 IntVar: 6
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 2
               }
             }
             Entries {
@@ -95,35 +104,26 @@
       }
       Entries {
         Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 25
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
-    StringVar: "class"
-  }
-  SimpleValue {
-    Table {
-      Entries {
-        Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
-        }
-      }
-      Entries {
-        Key {
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Novice"
+          StringVar: "Tiefling"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 30
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "size"
+        }
+        SimpleValue {
+          StringVar: "S"
         }
       }
     }

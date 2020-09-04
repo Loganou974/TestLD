@@ -782,6 +782,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14255948036312198080
+  Name: "Short Banner Fleur-de-lis"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_banner_003"
+  }
+}
+Assets {
   Id: 14239651366895723018
   Name: "Ellipsoid - Truncated"
   PlatformAssetType: 1
@@ -1598,6 +1607,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_arch_001"
+  }
+}
+Assets {
+  Id: 9996725459975783452
+  Name: "Fantasy Human Guy"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_fantasy_001_ref"
   }
 }
 Assets {
@@ -2438,6 +2456,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6135087217397369287
+  Name: "Fantasy Human Guy 2"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_fantasy_003_ref"
+  }
+}
+Assets {
   Id: 6128482554642267748
   Name: "Text 03: V"
   PlatformAssetType: 1
@@ -2642,6 +2669,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_023"
+  }
+}
+Assets {
+  Id: 5118655240401685855
+  Name: "Metal Diamond Plates 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_rust_diamond-plate_001"
   }
 }
 Assets {
@@ -3191,6 +3227,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_broken_04"
+  }
+}
+Assets {
+  Id: 1739996898153061063
+  Name: "Small Open Crate"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_narrow_open_simple_160cm_001"
   }
 }
 Assets {

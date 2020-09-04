@@ -1,7 +1,7 @@
 ﻿Name: "Lights"
-RootId: 6304346993332013430
+RootId: 14197137891795426865
 Objects {
-  Id: 1116269135970746415
+  Id: 6843272149449832601
   Name: "Fantasy Candle Lit - 02 (Prop)"
   Transform {
     Location {
@@ -17,9 +17,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6304346993332013430
-  ChildIds: 725063023652129062
-  ChildIds: 9002918973584173904
+  ParentId: 14197137891795426865
+  ChildIds: 9599332033403916317
+  ChildIds: 8122908216925018838
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -37,7 +37,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9002918973584173904
+  Id: 8122908216925018838
   Name: "Candle 03"
   Transform {
     Location {
@@ -50,7 +50,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1116269135970746415
+  ParentId: 6843272149449832601
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -79,7 +79,7 @@ Objects {
   }
 }
 Objects {
-  Id: 725063023652129062
+  Id: 9599332033403916317
   Name: "ClientContext"
   Transform {
     Location {
@@ -93,9 +93,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1116269135970746415
-  ChildIds: 7773266563914879056
-  ChildIds: 14630269959055690392
+  ParentId: 6843272149449832601
+  ChildIds: 12627077231324091086
+  ChildIds: 90330842780194714
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -112,7 +112,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14630269959055690392
+  Id: 90330842780194714
   Name: "Point Light"
   Transform {
     Location {
@@ -127,7 +127,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 725063023652129062
+  ParentId: 9599332033403916317
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -168,7 +168,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7773266563914879056
+  Id: 12627077231324091086
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -182,7 +182,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 725063023652129062
+  ParentId: 9599332033403916317
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -211,7 +211,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17416300523174377931
+  Id: 8643589435812759431
   Name: "Fantasy Candle  Lit - Group 02 (Prop)"
   Transform {
     Location {
@@ -228,9 +228,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6304346993332013430
-  ChildIds: 1512922384677194181
-  ChildIds: 4850014135972065545
+  ParentId: 14197137891795426865
+  ChildIds: 10463845131554274664
+  ChildIds: 4069996106446885457
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -248,7 +248,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4850014135972065545
+  Id: 4069996106446885457
   Name: "ClientContext"
   Transform {
     Location {
@@ -262,11 +262,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17416300523174377931
-  ChildIds: 10390931064665561005
-  ChildIds: 2598662250541628931
-  ChildIds: 16344679981945219753
-  ChildIds: 8835960506253719427
+  ParentId: 8643589435812759431
+  ChildIds: 5819346998105654233
+  ChildIds: 16852810649725800754
+  ChildIds: 15000371576850346923
+  ChildIds: 1881601968016416617
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -283,7 +283,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8835960506253719427
+  Id: 1881601968016416617
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -300,7 +300,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 4850014135972065545
+  ParentId: 4069996106446885457
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -329,7 +329,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16344679981945219753
+  Id: 15000371576850346923
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -346,7 +346,7 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 4850014135972065545
+  ParentId: 4069996106446885457
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -375,7 +375,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2598662250541628931
+  Id: 16852810649725800754
   Name: "Point Light"
   Transform {
     Location {
@@ -390,7 +390,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4850014135972065545
+  ParentId: 4069996106446885457
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -431,7 +431,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10390931064665561005
+  Id: 5819346998105654233
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -447,7 +447,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 4850014135972065545
+  ParentId: 4069996106446885457
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -476,7 +476,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1512922384677194181
+  Id: 10463845131554274664
   Name: "Candle Group Melted 02"
   Transform {
     Location {
@@ -489,7 +489,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17416300523174377931
+  ParentId: 8643589435812759431
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -518,7 +518,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16760000648726691521
+  Id: 11702450848560207339
   Name: "Fantasy Candle Lit - Holder 01 (Prop)"
   Transform {
     Location {
@@ -534,9 +534,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6304346993332013430
-  ChildIds: 15917399729450769417
-  ChildIds: 7856592764599957723
+  ParentId: 14197137891795426865
+  ChildIds: 7209836928849174225
+  ChildIds: 1072704707527353013
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -554,7 +554,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7856592764599957723
+  Id: 1072704707527353013
   Name: "ClientContext"
   Transform {
     Location {
@@ -570,9 +570,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16760000648726691521
-  ChildIds: 5716058991540669867
-  ChildIds: 3206367000420199121
+  ParentId: 11702450848560207339
+  ChildIds: 16511002670724557398
+  ChildIds: 222092248727034981
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -589,7 +589,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3206367000420199121
+  Id: 222092248727034981
   Name: "Point Light"
   Transform {
     Location {
@@ -604,7 +604,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7856592764599957723
+  ParentId: 1072704707527353013
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -645,7 +645,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5716058991540669867
+  Id: 16511002670724557398
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -659,7 +659,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 7856592764599957723
+  ParentId: 1072704707527353013
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -688,7 +688,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15917399729450769417
+  Id: 7209836928849174225
   Name: "Floor Candle Holder 01"
   Transform {
     Location {
@@ -701,7 +701,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16760000648726691521
+  ParentId: 11702450848560207339
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -730,7 +730,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7057763777003664328
+  Id: 2291446855973101441
   Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
   Transform {
     Location {
@@ -747,9 +747,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6304346993332013430
-  ChildIds: 10916901887697880889
-  ChildIds: 10887101500625960970
+  ParentId: 14197137891795426865
+  ChildIds: 15971968316941123025
+  ChildIds: 7773187311502120220
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -767,7 +767,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10887101500625960970
+  Id: 7773187311502120220
   Name: "Sconce 02"
   Transform {
     Location {
@@ -780,7 +780,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7057763777003664328
+  ParentId: 2291446855973101441
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -809,7 +809,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10916901887697880889
+  Id: 15971968316941123025
   Name: "ClientContext"
   Transform {
     Location {
@@ -825,10 +825,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7057763777003664328
-  ChildIds: 6858100230339951241
-  ChildIds: 15432251856472339618
-  ChildIds: 11486649927390927089
+  ParentId: 2291446855973101441
+  ChildIds: 2039457405645816962
+  ChildIds: 2792519770545290534
+  ChildIds: 3326290481532422520
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -845,7 +845,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11486649927390927089
+  Id: 3326290481532422520
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -862,7 +862,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 10916901887697880889
+  ParentId: 15971968316941123025
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -891,7 +891,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15432251856472339618
+  Id: 2792519770545290534
   Name: "Point Light"
   Transform {
     Location {
@@ -906,7 +906,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10916901887697880889
+  ParentId: 15971968316941123025
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -947,7 +947,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6858100230339951241
+  Id: 2039457405645816962
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -963,7 +963,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 10916901887697880889
+  ParentId: 15971968316941123025
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -992,7 +992,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6229425275311152050
+  Id: 605086467537028345
   Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
   Transform {
     Location {
@@ -1009,9 +1009,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6304346993332013430
-  ChildIds: 10231918380013924792
-  ChildIds: 16059274471063814492
+  ParentId: 14197137891795426865
+  ChildIds: 17835246612583553945
+  ChildIds: 8486167223877126519
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1029,7 +1029,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16059274471063814492
+  Id: 8486167223877126519
   Name: "Sconce 02"
   Transform {
     Location {
@@ -1042,7 +1042,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6229425275311152050
+  ParentId: 605086467537028345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1071,7 +1071,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10231918380013924792
+  Id: 17835246612583553945
   Name: "ClientContext"
   Transform {
     Location {
@@ -1087,10 +1087,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6229425275311152050
-  ChildIds: 11412040320576778515
-  ChildIds: 9486026209501153513
-  ChildIds: 11764869250059743294
+  ParentId: 605086467537028345
+  ChildIds: 11867262981813501722
+  ChildIds: 18419374393547974350
+  ChildIds: 3301636124001390688
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1107,7 +1107,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11764869250059743294
+  Id: 3301636124001390688
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -1124,7 +1124,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 10231918380013924792
+  ParentId: 17835246612583553945
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1153,7 +1153,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9486026209501153513
+  Id: 18419374393547974350
   Name: "Point Light"
   Transform {
     Location {
@@ -1168,7 +1168,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10231918380013924792
+  ParentId: 17835246612583553945
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1209,7 +1209,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11412040320576778515
+  Id: 11867262981813501722
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -1225,7 +1225,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 10231918380013924792
+  ParentId: 17835246612583553945
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1254,7 +1254,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4656892755660091979
+  Id: 13580780036456041797
   Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
   Transform {
     Location {
@@ -1270,9 +1270,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6304346993332013430
-  ChildIds: 8260017097911347204
-  ChildIds: 6229463781408301895
+  ParentId: 14197137891795426865
+  ChildIds: 9385477737397542631
+  ChildIds: 737486133265078944
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1290,7 +1290,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6229463781408301895
+  Id: 737486133265078944
   Name: "Sconce 01"
   Transform {
     Location {
@@ -1303,7 +1303,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4656892755660091979
+  ParentId: 13580780036456041797
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1332,7 +1332,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8260017097911347204
+  Id: 9385477737397542631
   Name: "ClientContext"
   Transform {
     Location {
@@ -1348,9 +1348,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4656892755660091979
-  ChildIds: 11081396241217455451
-  ChildIds: 11104194480629487364
+  ParentId: 13580780036456041797
+  ChildIds: 12504822638953284752
+  ChildIds: 17656816591608258931
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1367,7 +1367,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11104194480629487364
+  Id: 17656816591608258931
   Name: "Point Light"
   Transform {
     Location {
@@ -1382,7 +1382,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8260017097911347204
+  ParentId: 9385477737397542631
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1423,7 +1423,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11081396241217455451
+  Id: 12504822638953284752
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -1437,7 +1437,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 8260017097911347204
+  ParentId: 9385477737397542631
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1466,7 +1466,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5617283539130793800
+  Id: 3991746751547551046
   Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
   Transform {
     Location {
@@ -1482,9 +1482,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6304346993332013430
-  ChildIds: 12530326336768791890
-  ChildIds: 13022279948802358530
+  ParentId: 14197137891795426865
+  ChildIds: 6658232711746937111
+  ChildIds: 15421782009682951521
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1502,7 +1502,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13022279948802358530
+  Id: 15421782009682951521
   Name: "Sconce 01"
   Transform {
     Location {
@@ -1515,7 +1515,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5617283539130793800
+  ParentId: 3991746751547551046
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1544,7 +1544,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12530326336768791890
+  Id: 6658232711746937111
   Name: "ClientContext"
   Transform {
     Location {
@@ -1560,9 +1560,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5617283539130793800
-  ChildIds: 17488609550739232538
-  ChildIds: 14379543619990095373
+  ParentId: 3991746751547551046
+  ChildIds: 17419249820589966966
+  ChildIds: 14155983856704170499
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1579,7 +1579,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14379543619990095373
+  Id: 14155983856704170499
   Name: "Point Light"
   Transform {
     Location {
@@ -1594,7 +1594,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12530326336768791890
+  ParentId: 6658232711746937111
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1635,7 +1635,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17488609550739232538
+  Id: 17419249820589966966
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -1649,7 +1649,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 12530326336768791890
+  ParentId: 6658232711746937111
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1678,7 +1678,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7193682717603044274
+  Id: 10908270405100808901
   Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
   Transform {
     Location {
@@ -1694,9 +1694,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6304346993332013430
-  ChildIds: 10156415539981993038
-  ChildIds: 17006898180708818139
+  ParentId: 14197137891795426865
+  ChildIds: 6583618033152293104
+  ChildIds: 1502194150648553094
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1714,7 +1714,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17006898180708818139
+  Id: 1502194150648553094
   Name: "Sconce 01"
   Transform {
     Location {
@@ -1727,7 +1727,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7193682717603044274
+  ParentId: 10908270405100808901
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1756,7 +1756,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10156415539981993038
+  Id: 6583618033152293104
   Name: "ClientContext"
   Transform {
     Location {
@@ -1772,9 +1772,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7193682717603044274
-  ChildIds: 9020061258260442631
-  ChildIds: 15852395001432042114
+  ParentId: 10908270405100808901
+  ChildIds: 4464497746773066573
+  ChildIds: 4810712797440276384
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1791,7 +1791,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15852395001432042114
+  Id: 4810712797440276384
   Name: "Point Light"
   Transform {
     Location {
@@ -1806,7 +1806,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10156415539981993038
+  ParentId: 6583618033152293104
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1847,7 +1847,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9020061258260442631
+  Id: 4464497746773066573
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -1861,7 +1861,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 10156415539981993038
+  ParentId: 6583618033152293104
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1890,7 +1890,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11145635267376455836
+  Id: 8071570496577988038
   Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
   Transform {
     Location {
@@ -1906,9 +1906,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6304346993332013430
-  ChildIds: 845677209495924292
-  ChildIds: 15986295473297166899
+  ParentId: 14197137891795426865
+  ChildIds: 12313028339035251861
+  ChildIds: 12818251474693258468
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1926,7 +1926,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15986295473297166899
+  Id: 12818251474693258468
   Name: "Sconce 01"
   Transform {
     Location {
@@ -1939,7 +1939,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11145635267376455836
+  ParentId: 8071570496577988038
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1968,7 +1968,7 @@ Objects {
   }
 }
 Objects {
-  Id: 845677209495924292
+  Id: 12313028339035251861
   Name: "ClientContext"
   Transform {
     Location {
@@ -1984,9 +1984,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11145635267376455836
-  ChildIds: 473129629167317485
-  ChildIds: 4247182104806645147
+  ParentId: 8071570496577988038
+  ChildIds: 13128351454726383866
+  ChildIds: 17473285747919063278
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2003,7 +2003,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4247182104806645147
+  Id: 17473285747919063278
   Name: "Point Light"
   Transform {
     Location {
@@ -2018,7 +2018,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 845677209495924292
+  ParentId: 12313028339035251861
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2059,7 +2059,7 @@ Objects {
   }
 }
 Objects {
-  Id: 473129629167317485
+  Id: 13128351454726383866
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -2073,7 +2073,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 845677209495924292
+  ParentId: 12313028339035251861
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

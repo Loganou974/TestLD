@@ -1,7 +1,7 @@
 ﻿Name: "OnInteract_5"
-RootId: 15144365341908396007
+RootId: 3755270202291497126
 Objects {
-  Id: 13326598602334535416
+  Id: 15005516319381771769
   Name: "Speech1"
   Transform {
     Location {
@@ -14,11 +14,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15144365341908396007
+  ParentId: 3755270202291497126
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Krezk Village."
+      String: "The guard is not impressed."
     }
   }
   Collidable_v2 {
@@ -29,12 +29,12 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_12"
+    FilePartitionName: "Speech1_4"
   }
   InstanceHistory {
-    SelfId: 13326598602334535416
-    SubobjectId: 8244339810490365630
-    InstanceId: 16122403184916844978
-    TemplateId: 12287563631168970081
+    SelfId: 4282248599225536052
+    SubobjectId: 7907731027658196644
+    InstanceId: 11972336444180036880
+    TemplateId: 4160431205403122694
   }
 }

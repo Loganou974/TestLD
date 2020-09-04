@@ -1,7 +1,46 @@
 ﻿Name: "OnEnter_16"
-RootId: 5074041851823983411
+RootId: 15933472271951582580
 Objects {
-  Id: 4218048750167173624
+  Id: 1051516595115544522
+  Name: "Speech2"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -1.7075472e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15933472271951582580
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Texte"
+      String: "One by one, the team coughts then faints. You can hear your mates falling while your eyes close."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Speech2_5"
+  }
+  InstanceHistory {
+    SelfId: 1051516595115544522
+    SubobjectId: 14127771653470685068
+    InstanceId: 16122403184916844978
+    TemplateId: 12287563631168970081
+  }
+}
+Objects {
+  Id: 4297625655677334818
   Name: "Speech1"
   Transform {
     Location {
@@ -14,11 +53,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5074041851823983411
+  ParentId: 15933472271951582580
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Please roll a dice to choose a race"
+      String: "Suddently, an eerie myst invades all the space around you. You\'re totally lost and hopeless."
     }
   }
   WantsNetworking: true
@@ -30,12 +69,12 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_26"
+    FilePartitionName: "Speech1_22"
   }
   InstanceHistory {
-    SelfId: 4218048750167173624
-    SubobjectId: 5931333257356285073
-    InstanceId: 9209928760912629969
-    TemplateId: 4980364898667106966
+    SelfId: 4297625655677334818
+    SubobjectId: 17382885696515013988
+    InstanceId: 16122403184916844978
+    TemplateId: 12287563631168970081
   }
 }

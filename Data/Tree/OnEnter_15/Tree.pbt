@@ -1,7 +1,46 @@
 ﻿Name: "OnEnter_15"
-RootId: 16297688716898737107
+RootId: 10631914342970985434
 Objects {
-  Id: 1468327024494981697
+  Id: 9877105561863816836
+  Name: "Speech2"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -1.7075472e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10631914342970985434
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Texte"
+      String: "You feel trapped, like animals in a cage and powerless : as you feel being watched by an evil force."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Speech2_4"
+  }
+  InstanceHistory {
+    SelfId: 9877105561863816836
+    SubobjectId: 4866938328807886530
+    InstanceId: 16122403184916844978
+    TemplateId: 12287563631168970081
+  }
+}
+Objects {
+  Id: 4577931487445664844
   Name: "Speech1"
   Transform {
     Location {
@@ -14,11 +53,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16297688716898737107
+  ParentId: 10631914342970985434
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Coucou $ name"
+      String: "As you wake up, you notice everything around is different, darker."
     }
   }
   Collidable_v2 {
@@ -29,12 +68,12 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_24"
+    FilePartitionName: "Speech1_21"
   }
   InstanceHistory {
-    SelfId: 1468327024494981697
-    SubobjectId: 8987315099311083304
-    InstanceId: 9209928760912629969
-    TemplateId: 4980364898667106966
+    SelfId: 4577931487445664844
+    SubobjectId: 17658690950332419082
+    InstanceId: 16122403184916844978
+    TemplateId: 12287563631168970081
   }
 }

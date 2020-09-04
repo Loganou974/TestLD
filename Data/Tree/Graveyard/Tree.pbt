@@ -557,65 +557,6 @@ Objects {
   }
 }
 Objects {
-  Id: 7829738878909073487
-  Name: "NPC_Villager"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10042813735280099622
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7399701286820520638
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -6.32131195
-            Y: 47.8687706
-            Z: -12.0916748
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -81.6487427
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 7519593789568846750
-      value {
-        Overrides {
-          Name: "Name"
-          String: "NPC_Villager"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 153.761719
-            Y: 1089.0498
-            Z: 105.961792
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 81.6487503
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4160431205403122694
-    }
-  }
-}
-Objects {
   Id: 291289984796009183
   Name: "Decal Leaves 01"
   Transform {

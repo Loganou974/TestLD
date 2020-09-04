@@ -1,7 +1,7 @@
 ﻿Name: "Roof"
-RootId: 6409849448599702534
+RootId: 10452782156350239310
 Objects {
-  Id: 1163620157418682293
+  Id: 11052337874515998024
   Name: "Fantasy Castle Pillar 01 Mid"
   Transform {
     Location {
@@ -20,7 +20,7 @@ Objects {
       Z: 0.57
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Trim2:id"
@@ -63,7 +63,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9914781304418194031
+  Id: 8993366421897196293
   Name: "Fantasy Castle Pillar 01 Mid"
   Transform {
     Location {
@@ -82,7 +82,7 @@ Objects {
       Z: 0.7
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Trim2:id"
@@ -125,7 +125,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1774387884602620271
+  Id: 15760431613905245093
   Name: "Whitebox Wall 01 Triangle Top"
   Transform {
     Location {
@@ -142,7 +142,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -185,7 +185,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6371686213491419069
+  Id: 16928809936253399689
   Name: "Fantasy Castle Pillar 01 Mid"
   Transform {
     Location {
@@ -204,7 +204,7 @@ Objects {
       Z: 0.8
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Trim2:id"
@@ -247,7 +247,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7224993168711820767
+  Id: 17904199979960022677
   Name: "Fantasy Castle Pillar 01 Mid"
   Transform {
     Location {
@@ -266,7 +266,7 @@ Objects {
       Z: 0.8
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Trim2:id"
@@ -309,7 +309,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11558251808848259652
+  Id: 9231378786341839677
   Name: "Fantasy Castle Pillar 01 Mid"
   Transform {
     Location {
@@ -328,7 +328,7 @@ Objects {
       Z: 0.57
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Trim2:id"
@@ -371,7 +371,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12978438743584516776
+  Id: 17036495141013769112
   Name: "Anvil"
   Transform {
     Location {
@@ -388,15 +388,15 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 6409849448599702534
-  ChildIds: 5961876779645309358
-  ChildIds: 17718368891448607741
-  ChildIds: 15610747909109446465
-  ChildIds: 11424982553388409758
-  ChildIds: 4208138915369641904
-  ChildIds: 17556082090473052373
-  ChildIds: 6232687312956335128
-  ChildIds: 9732447830218649214
+  ParentId: 10452782156350239310
+  ChildIds: 12972008773408099513
+  ChildIds: 968170297677998692
+  ChildIds: 12634687367011111313
+  ChildIds: 7653681561843081317
+  ChildIds: 5138851431468104330
+  ChildIds: 3754550608427416975
+  ChildIds: 7614780264067621251
+  ChildIds: 9400335262604661121
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -414,7 +414,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9732447830218649214
+  Id: 9400335262604661121
   Name: "Whitebox Wall 01 Triangle"
   Transform {
     Location {
@@ -433,7 +433,7 @@ Objects {
       Z: 0.016576685
     }
   }
-  ParentId: 12978438743584516776
+  ParentId: 17036495141013769112
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -476,7 +476,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6232687312956335128
+  Id: 7614780264067621251
   Name: "Whitebox Wall 01 Triangle"
   Transform {
     Location {
@@ -495,7 +495,7 @@ Objects {
       Z: 0.0229543783
     }
   }
-  ParentId: 12978438743584516776
+  ParentId: 17036495141013769112
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -538,7 +538,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17556082090473052373
+  Id: 3754550608427416975
   Name: "Whitebox Wall 01 Triangle"
   Transform {
     Location {
@@ -557,7 +557,7 @@ Objects {
       Z: 0.0229543783
     }
   }
-  ParentId: 12978438743584516776
+  ParentId: 17036495141013769112
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -600,7 +600,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4208138915369641904
+  Id: 5138851431468104330
   Name: "Horn"
   Transform {
     Location {
@@ -619,7 +619,7 @@ Objects {
       Z: 0.0927205458
     }
   }
-  ParentId: 12978438743584516776
+  ParentId: 17036495141013769112
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -656,7 +656,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11424982553388409758
+  Id: 7653681561843081317
   Name: "Cube"
   Transform {
     Location {
@@ -672,7 +672,7 @@ Objects {
       Z: 0.156481981
     }
   }
-  ParentId: 12978438743584516776
+  ParentId: 17036495141013769112
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -709,7 +709,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15610747909109446465
+  Id: 12634687367011111313
   Name: "Cube"
   Transform {
     Location {
@@ -725,7 +725,7 @@ Objects {
       Z: 0.190079644
     }
   }
-  ParentId: 12978438743584516776
+  ParentId: 17036495141013769112
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -762,7 +762,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17718368891448607741
+  Id: 968170297677998692
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -779,7 +779,7 @@ Objects {
       Z: 0.155044049
     }
   }
-  ParentId: 12978438743584516776
+  ParentId: 17036495141013769112
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -816,7 +816,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5961876779645309358
+  Id: 12972008773408099513
   Name: "Pyramid - 4-Sided Truncated"
   Transform {
     Location {
@@ -832,7 +832,7 @@ Objects {
       Z: 0.288073808
     }
   }
-  ParentId: 12978438743584516776
+  ParentId: 17036495141013769112
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -869,7 +869,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9058645043201598950
+  Id: 14004552674441238781
   Name: "Fantasy Castle Pillar 02 - Top"
   Transform {
     Location {
@@ -886,7 +886,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Trim:id"
@@ -923,7 +923,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9729635859723448844
+  Id: 5186495317463288191
   Name: "Fantasy Castle Pillar 01 Mid"
   Transform {
     Location {
@@ -942,7 +942,7 @@ Objects {
       Z: 0.57
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Trim2:id"
@@ -985,7 +985,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13953744454656988104
+  Id: 14183869244594536657
   Name: "Fantasy Castle Pillar 01 Mid"
   Transform {
     Location {
@@ -1002,7 +1002,7 @@ Objects {
       Z: 0.57
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Trim2:id"
@@ -1045,7 +1045,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7599463520218386030
+  Id: 6042125905031519105
   Name: "Fantasy Castle Pillar 01 Mid"
   Transform {
     Location {
@@ -1062,7 +1062,7 @@ Objects {
       Z: 0.7
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Trim2:id"
@@ -1105,7 +1105,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11255032059049884243
+  Id: 6072794419018302123
   Name: "Fantasy Castle Pillar 01 Mid"
   Transform {
     Location {
@@ -1122,7 +1122,7 @@ Objects {
       Z: 0.8
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Trim2:id"
@@ -1165,7 +1165,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9417139434426766752
+  Id: 15436178125982189372
   Name: "Fantasy Castle Pillar 01 Mid"
   Transform {
     Location {
@@ -1182,7 +1182,7 @@ Objects {
       Z: 0.8
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Trim2:id"
@@ -1225,7 +1225,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9228067008089599117
+  Id: 14477649644224741906
   Name: "Whitebox Wall 01 Triangle Top"
   Transform {
     Location {
@@ -1242,7 +1242,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -1285,7 +1285,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1308132980544950812
+  Id: 7625279100657123232
   Name: "Craftsman Roof 01 Peak"
   Transform {
     Location {
@@ -1302,7 +1302,7 @@ Objects {
       Z: 1.30000007
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1331,7 +1331,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9691864462818910541
+  Id: 3656206087628037888
   Name: "Craftsman Roof 01 Peak"
   Transform {
     Location {
@@ -1348,7 +1348,7 @@ Objects {
       Z: 1.30000007
     }
   }
-  ParentId: 6409849448599702534
+  ParentId: 10452782156350239310
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
