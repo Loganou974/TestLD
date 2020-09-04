@@ -6,18 +6,18 @@
     Table {
       Entries {
         Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Novice"
-        }
-      }
-      Entries {
-        Key {
           StringVar: "hit"
         }
         SimpleValue {
           IntVar: 100
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Novice"
         }
       }
     }
@@ -31,34 +31,10 @@ Entries {
     Table {
       Entries {
         Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 25
-        }
-      }
-      Entries {
-        Key {
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Rock Gnome"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes."
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "size"
-        }
-        SimpleValue {
-          StringVar: "S"
+          StringVar: "Dragonborn"
         }
       }
       Entries {
@@ -72,7 +48,7 @@ Entries {
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -80,7 +56,7 @@ Entries {
                 IntVar: 2
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -96,7 +72,7 @@ Entries {
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -112,7 +88,7 @@ Entries {
                 IntVar: 6
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -124,6 +100,30 @@ Entries {
               }
             }
           }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "size"
+        }
+        SimpleValue {
+          StringVar: "L"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 30
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: " Your base walking speed is 30 feet."
         }
       }
     }
