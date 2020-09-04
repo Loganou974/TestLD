@@ -126,11 +126,14 @@
         Name: "Point Light"
         Transform {
           Location {
+            X: 37.4736557
+            Y: 54.0768318
+            Z: 83.1790543
           }
           Rotation {
-            Pitch: -10.2883339
-            Yaw: -22.9092464
-            Roll: -22.909832
+            Pitch: -10.2883301
+            Yaw: -22.9092102
+            Roll: -22.90979
           }
           Scale {
             X: 1

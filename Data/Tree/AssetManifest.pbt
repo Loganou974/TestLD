@@ -854,6 +854,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14324138183023436972
+  Name: "Fantasy Castle Wall 01 - Curved Doorway"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_curve_001_door_01"
+  }
+}
+Assets {
   Id: 14299811882235610539
   Name: "Creature Bat Squeaks 01 SFX"
   PlatformAssetType: 7
@@ -896,6 +905,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_030"
+  }
+}
+Assets {
+  Id: 14206563083884513420
+  Name: "Plane 1m - Two Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_002"
   }
 }
 Assets {
@@ -1601,6 +1619,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11170718094288466283
+  Name: "Magic Glass"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_magic_glass"
+  }
+}
+Assets {
   Id: 11111447611931661974
   Name: "Craftsman Stairs 01 Railing"
   PlatformAssetType: 1
@@ -1805,6 +1832,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_human_guy_fantasy_001_ref"
+  }
+}
+Assets {
+  Id: 9983658571787861754
+  Name: "Opaque Bubble Glass"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_opaque_bubble_glass"
   }
 }
 Assets {
@@ -2240,6 +2276,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8034501453144055069
+  Name: "Electric Surface"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_electrical_surface"
+  }
+}
+Assets {
   Id: 7909321749664205074
   Name: "Craftsman Part - Stair Rail"
   PlatformAssetType: 1
@@ -2498,6 +2543,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_arcade_cube_001"
+  }
+}
+Assets {
+  Id: 7009141724016820431
+  Name: "Marble Tiles Square 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_marble_tiles_002_uv"
   }
 }
 Assets {
@@ -3149,6 +3203,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4437004262752996340
+  Name: "Bubble"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_bubble"
+  }
+}
+Assets {
   Id: 4418826023755822974
   Name: "Shield 03"
   PlatformAssetType: 1
@@ -3749,6 +3812,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_sphere_002"
+  }
+}
+Assets {
+  Id: 1209265149492341398
+  Name: "Magic Glass"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_magic_glass"
   }
 }
 Assets {
