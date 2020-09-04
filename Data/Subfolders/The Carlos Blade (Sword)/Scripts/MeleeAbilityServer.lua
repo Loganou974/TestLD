@@ -85,8 +85,12 @@ function MeleeAttack(other)
 		local STR=player:GetResource("STR")
 		local BonusToHit=player:GetResource("Proficiency")
 		d20=math.random(20)
+		AC=0
+		AC=automaticTarget:GetCustomProperty("AC")
+		print("AC of "..automaticTarget.name.."is "..AC)
+		
 		print("Attack roll from "..player.name.." d20="..d20.."total="..(d20+modifier(STR)+BonusToHit))
-		addEnnemyCombatTexte(player.name, " Attack roll to hit "..other.name.." :"..d20..", total with bonus="..(d20+math.max(modifier(STR),modifier(DEX))+BonusToHit))
+		addEnnemyCombatTexte(player.name, " Attack roll to hit "..other.name.." :"..d20..", total with bonus="..(d20+math.max(modifier(STR),modifier(DEX))+BonusToHit).." vs "..AC)
 		d20Total=d20+modifier(STR)+BonusToHit
 
 		if player:GetResource("Reckless")>0 then
@@ -99,10 +103,7 @@ function MeleeAttack(other)
 		end
 
 		local cc=""
-		AC=0
-		--if target:IsA("Player") then
-			AC=automaticTarget:GetCustomProperty("AC")
-			print("AC of "..automaticTarget.name.."is "..AC)
+		
 		--end
 		if d20Total >= AC and d20~=1 or d20 ==20 then
 			local maxRange=ABILITY:GetCustomProperty("Dice")
@@ -122,7 +123,7 @@ function MeleeAttack(other)
 		else
 			dmg.amount=0
 			if d20==1 then cc=" (Critical fail) " end
-			addEnnemyCombatTexte(player.name," miss "..cc)
+			addEnnemyCombatTexte(player.name," miss "..cc.." "..d20Total.." vs "..AC)
 			BroadcastMissFeedback()
 		end
 		

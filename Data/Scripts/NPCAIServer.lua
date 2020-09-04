@@ -110,7 +110,7 @@ function OnTurnOn(id)
 		--SetState(STATE_ENGAGING)
 		Tack(10)
 		if IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then
-			--SetState(STATE_ATTACK_CAST)
+			SetState(STATE_ATTACK_CAST)
 			ExecuteAttack()
 		else
 			--SetState(STATE_ENGAGING)
@@ -125,6 +125,9 @@ Events.Connect("BEGIN_TURN_NPC", OnTurnOn)
 local ENGAGED_RANGE=350
 local engagedEnnemies={}
 function Tick(deltaTime)
+	if  currentState==STATE_DEAD_1 then 
+		engagedEnnemies={}
+		return end
 	local myPos = ROOT:GetWorldPosition()
 	
 	for i=1,#engagedEnnemies  do
@@ -133,8 +136,12 @@ function Tick(deltaTime)
 			if Object.IsValid(ROOT) then
 				ROOT:SetNetworkedCustomProperty("Opportunity", math.random(100000))
 			end
+			Task.Wait(math.random(0,1))
+			SetState(STATE_ATTACK_CAST)
 			ATTACK_COMPONENT.context.Attack(e)
 			table.remove(engagedEnnemies, i)
+			Task.Wait(math.random(0,1))
+			SetState(STATE_ENGAGING)
 			break;
 		end
 	end
@@ -203,6 +210,9 @@ function SetState(newState)
 	elseif (newState == STATE_PATROLLING) then
 		newState=STATE_ENGAGING
 		if (not IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED)) then
+			if target==nil then target=FindNearestEnemy() end
+			if target==nil then return end
+
 			local targetPosition = target:GetWorldPosition()
 			StepTowards(targetPosition)
 		end
@@ -803,7 +813,7 @@ function OnObjectDamaged(id, prevHealth, dmgAmount, impactPosition, impactRotati
 		end
 		local newtarget=FindAggroEnemy()
 		if newtarget ~=nil then 
-		print("new target from aggro "..target.name)
+		print("new target from aggro "..newtarget.name)
 			target=newtarget
 		else
 

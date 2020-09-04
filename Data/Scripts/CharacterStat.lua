@@ -456,7 +456,7 @@ function choixRace(player)
     
     if race.size =="S" then
         local currentScale = player:GetWorldScale()
-            local newScale = currentScale * 0.8
+            local newScale = currentScale * math.random(0.7,0.9)
             if newScale.x > 5 then newScale = Vector3.New(1.0) end
 
             player:SetWorldScale(newScale)
@@ -464,7 +464,7 @@ function choixRace(player)
 
     if race.size =="L" then
         local currentScale = player:GetWorldScale()
-            local newScale = currentScale * 1.3
+            local newScale = currentScale * math.random(1,1.2)
             if newScale.x > 5 then newScale = Vector3.New(1.0) end
 
             player:SetWorldScale(newScale)
@@ -1072,9 +1072,11 @@ function UpdateBuffEtDebuff(player)
     
     if player:GetResource("Enraged") >0 then
             if player:GetResource("EnragedHitOrGotHit") == 1 then
+                print("rage on")
                 player:SetResource("Enraged", player:GetResource("EnragedBonus"))
                 
             else
+                print("rage over")
                 player:SetResource("Enraged",0)
                 
             end
