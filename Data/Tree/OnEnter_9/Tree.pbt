@@ -21,6 +21,7 @@ Objects {
       String: "You wake up in a campfire near your home town."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
