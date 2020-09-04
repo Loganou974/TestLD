@@ -11,20 +11,20 @@ function OnBeginOverlap(whichTrigger, other)
      if propSound~=nil then  World.SpawnAsset(propSound,{position=script.parent:GetWorldPosition()}) end
         if propAllPlayers==true then
             
-            cinematicForAll(propOnEnterCinematic)
+            cinematicForAll(propOnEnterCinematic,other)
         else
             cinematicForOne(other,propOnEnterCinematic)
 
         end
 	end
 end
-function cinematicForAll(eventName)
-
+function cinematicForAll(eventName,player)
+    _G.LastCheckPoint=player:GetWorldPosition()
     if eventName~=nil and eventName~="" then  Events.BroadcastToAllPlayers(eventName) end
 end
 
 function cinematicForOne(player,eventName)
-
+    _G.LastCheckPoint=player:GetWorldPosition()
     if eventName~=nil and eventName~="" then Events.BroadcastToPlayer(player,eventName) end
 end
 function OnEndOverlap(whichTrigger, other)

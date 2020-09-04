@@ -360,6 +360,8 @@ local gameplay=World.FindObjectById("83D47359D7CB64F1:Gameplay")
 function OnPlayerJoined(player)
     
     Task.Wait(1)
+    local spawn=World.FindObjectById("23E9C6AD56BEBE5B:Combat_Spawn")
+    _G.LastCheckPoint=spawn:GetWorldPosition()
     player.maxJumpCount=1
     player.jumpVelocity=300
    -- print("allo? "..player.animationStance)
@@ -774,7 +776,7 @@ function endCombat(victory)
         
         for i,p in ipairs(playersInCombat) do
             p:SetResource("incombat",0)
-            if(p.isDead) then respawnPlayer(p) end
+            if(p.isDead) then respawnPlayer(p) else _G.LastCheckPoint=p:GetWorldPosition() end
             changeAnimationForPlayer(p,false)
 
             
