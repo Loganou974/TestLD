@@ -2384,15 +2384,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6489011520945115537
-  Name: "Raptor Mob"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_raptor_default_basic_001_ref"
-  }
-}
-Assets {
   Id: 6474768715633236406
   Name: "Fire Volume VFX"
   PlatformAssetType: 8

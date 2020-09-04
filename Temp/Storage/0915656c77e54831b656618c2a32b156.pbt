@@ -1,9 +1,50 @@
 ﻿Entries {
   Key {
+    StringVar: "class"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Novice"
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
     StringVar: "race"
   }
   SimpleValue {
     Table {
+      Entries {
+        Key {
+          StringVar: "size"
+        }
+        SimpleValue {
+          StringVar: "S"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Mountain Dwarf"
+        }
+      }
       Entries {
         Key {
           StringVar: "speed"
@@ -14,10 +55,10 @@
       }
       Entries {
         Key {
-          StringVar: "name"
+          StringVar: "description"
         }
         SimpleValue {
-          StringVar: "Stout Halfling"
+          StringVar: "As a mountain dwarf, you\342\200\231re strong and hardy, accustomed to a difficult life in rugged terrain."
         }
       }
       Entries {
@@ -31,7 +72,7 @@
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -47,7 +88,7 @@
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -55,7 +96,7 @@
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 2
               }
             }
             Entries {
@@ -83,47 +124,6 @@
               }
             }
           }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "size"
-        }
-        SimpleValue {
-          StringVar: "S"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: "As a stout halfling, you\342\200\231re hardier than average and have some resistance to poison. Some say that stouts have dwarven blood."
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
-    StringVar: "class"
-  }
-  SimpleValue {
-    Table {
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Novice"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
         }
       }
     }
