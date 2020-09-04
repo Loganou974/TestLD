@@ -6,18 +6,18 @@
     Table {
       Entries {
         Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Novice"
-        }
-      }
-      Entries {
-        Key {
           StringVar: "hit"
         }
         SimpleValue {
           IntVar: 100
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Novice"
         }
       }
     }
@@ -31,10 +31,18 @@ Entries {
     Table {
       Entries {
         Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: "Your size is Medium. Speed. Your base walking speed is 30 feet."
+        }
+      }
+      Entries {
+        Key {
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Human"
+          StringVar: "Elf"
         }
       }
       Entries {
@@ -47,10 +55,10 @@ Entries {
       }
       Entries {
         Key {
-          StringVar: "description"
+          StringVar: "speed"
         }
         SimpleValue {
-          StringVar: " Your base walking speed is 30 feet."
+          IntVar: 30
         }
       }
       Entries {
@@ -64,7 +72,7 @@ Entries {
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -72,7 +80,7 @@ Entries {
                 IntVar: 2
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -80,7 +88,7 @@ Entries {
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 2
               }
             }
             Entries {
@@ -88,7 +96,7 @@ Entries {
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -96,7 +104,7 @@ Entries {
                 IntVar: 5
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -104,7 +112,7 @@ Entries {
                 IntVar: 6
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -116,14 +124,6 @@ Entries {
               }
             }
           }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 30
         }
       }
     }

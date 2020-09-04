@@ -26,6 +26,24 @@ Assets {
   }
 }
 Assets {
+  Id: 18024040266898552292
+  Name: "Ring - Quarter Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_torus_003"
+  }
+}
+Assets {
+  Id: 17927785296012505733
+  Name: "Additive Soft Edge"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_additive_edgefade"
+  }
+}
+Assets {
   Id: 17718112535551741152
   Name: "Fantasy Castle Wall Foundation 01 - Pillar 01"
   PlatformAssetType: 1
@@ -77,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_bark_redwood_001_uv"
+  }
+}
+Assets {
+  Id: 16028483828593820972
+  Name: "Metal Gold 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_001"
   }
 }
 Assets {
@@ -188,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14027783486601827876
+  Name: "Leather Tufted 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fabric_tufted_001_uv_ref"
+  }
+}
+Assets {
   Id: 13868889675930197036
   Name: "Fantasy Castle Floor 02 - Corner 01"
   PlatformAssetType: 1
@@ -215,12 +251,39 @@ Assets {
   }
 }
 Assets {
+  Id: 13588168874842906464
+  Name: "Cone - Truncated Wide"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_003"
+  }
+}
+Assets {
+  Id: 13372972268553014344
+  Name: "Ring - Beveled"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_001"
+  }
+}
+Assets {
   Id: 12874084555355652477
   Name: "Fantasy Castle Trim - Battlement 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_battlement_001"
+  }
+}
+Assets {
+  Id: 12095835209017042614
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
   }
 }
 Assets {
@@ -287,6 +350,24 @@ Assets {
   }
 }
 Assets {
+  Id: 10202581226678424507
+  Name: "Gem - Trillion Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gem_trillion_polished_001"
+  }
+}
+Assets {
+  Id: 10184847056121543272
+  Name: "Basic Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_pbr_material_001"
+  }
+}
+Assets {
   Id: 10107062091948111687
   Name: "Fantasy Castle Wall 01 - Cellar"
   PlatformAssetType: 1
@@ -320,6 +401,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_door_001"
+  }
+}
+Assets {
+  Id: 9476605368855983895
+  Name: "Cube - Chamfered Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_chamfer"
   }
 }
 Assets {
@@ -413,6 +503,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7615878362670647554
+  Name: "Pipe - Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half-pipe_001"
+  }
+}
+Assets {
   Id: 7604214927870778612
   Name: "Fantasy Castle Wall 03 - Arch 01"
   PlatformAssetType: 1
@@ -428,6 +527,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_half_002_win_01"
+  }
+}
+Assets {
+  Id: 7452506898564974989
+  Name: "Metal Gold 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_001"
+  }
+}
+Assets {
+  Id: 7379539457708468975
+  Name: "Text 01: S"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_018"
   }
 }
 Assets {
@@ -458,12 +575,39 @@ Assets {
   }
 }
 Assets {
+  Id: 6846695554095725190
+  Name: "Voice Character Evil Pirate Laughing 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_vo_evil_pirate_laughter_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 6665120206912032206
+  Name: "Smoke Puff Radial VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_smoke_puff_radial"
+  }
+}
+Assets {
   Id: 6651434759116104397
   Name: "Fantasy Castle Bannister 01 - Spiral"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_bannister_001_spiral"
+  }
+}
+Assets {
+  Id: 5930170301003509857
+  Name: "Fantasy Human Gal 2"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_fantasy_001_ref"
   }
 }
 Assets {
@@ -512,12 +656,30 @@ Assets {
   }
 }
 Assets {
+  Id: 4172228961562724850
+  Name: "Metal Old Beaten Gold 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_002"
+  }
+}
+Assets {
   Id: 3597564178429038724
   Name: "Fantasy Castle Wall 02 - Curved"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_curve_002"
+  }
+}
+Assets {
+  Id: 3593597783924766211
+  Name: "Cone - Bullet"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bullet_001"
   }
 }
 Assets {
@@ -554,6 +716,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_floor_002_4m"
+  }
+}
+Assets {
+  Id: 2354717027850780617
+  Name: "Grass and Soil"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_grass_003_uv"
   }
 }
 Assets {
@@ -626,6 +797,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_object_domestic_door_ref"
+  }
+}
+Assets {
+  Id: 916665379155427451
+  Name: "Capsule"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_capsule_001"
   }
 }
 Assets {
