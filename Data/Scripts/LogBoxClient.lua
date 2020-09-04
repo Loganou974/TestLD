@@ -51,7 +51,7 @@ end
 
 function addSystemCombatTexte(message,params)
     local message=GetSpeech(message,params)
-    print("recu dans sct")
+  --  print("recu dans sct")
 
     addSimpleTexte("Game Master: "..message,Color.WHITE)
    
