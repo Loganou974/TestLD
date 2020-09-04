@@ -6,18 +6,26 @@
     Table {
       Entries {
         Key {
-          StringVar: "name"
+          StringVar: "description"
         }
         SimpleValue {
-          StringVar: "Halfling"
+          StringVar: "As a lightfoot halfling, you can easily hide from notice, even using other people as cover."
         }
       }
       Entries {
         Key {
-          StringVar: "speed"
+          StringVar: "size"
         }
         SimpleValue {
-          IntVar: 25
+          StringVar: "S"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Lightfoot"
         }
       }
       Entries {
@@ -71,7 +79,7 @@
                 IntVar: 6
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -87,18 +95,10 @@
       }
       Entries {
         Key {
-          StringVar: "size"
+          StringVar: "speed"
         }
         SimpleValue {
-          StringVar: "S"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: "Your base walking speed is 25 feet."
+          IntVar: 25
         }
       }
     }
