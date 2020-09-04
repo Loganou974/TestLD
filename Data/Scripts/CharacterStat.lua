@@ -456,16 +456,16 @@ function choixRace(player)
     
     if race.size =="S" then
         local currentScale = player:GetWorldScale()
-            local newScale = currentScale *(0.5+ math.random(0,1)/3)
-            if newScale.x > 5 then newScale = Vector3.New(1.0) end
+            local newScale = currentScale *(0.7+ math.random(0,1)/3)
+           -- if newScale.x > 5 then newScale = Vector3.New(1.0) end
 
             player:SetWorldScale(newScale)
     end
 
     if race.size =="L" then
         local currentScale = player:GetWorldScale()
-            local newScale = currentScale  *(1+ math.random(0,1)/3)
-            if newScale.x > 5 then newScale = Vector3.New(1.0) end
+            local newScale = currentScale  *(1+ math.random(0,1)/4)
+           -- if newScale.x > 5 then newScale = Vector3.New(1.0) end
 
             player:SetWorldScale(newScale)
     end

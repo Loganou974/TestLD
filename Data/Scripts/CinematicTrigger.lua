@@ -4,10 +4,10 @@ local propOnLeaveCinematic = trigger:GetCustomProperty("OnLeaveCinematic")
 local propOnInteractCinematic = trigger:GetCustomProperty("OnInteractCinematic")
 local propAllPlayers = trigger:GetCustomProperty("AllPlayers")
 local propSound = trigger:GetCustomProperty("SoundMUID")
-local propTransient = script:GetCustomProperty("Transient")
+local propTransient = trigger:GetCustomProperty("Transient")
 function OnBeginOverlap(whichTrigger, other)
     if other:IsA("Player") then
-        if propTransient then script.parent.collision=Collision.FORCE_OFF end
+        if propTransient then trigger.collision=Collision.FORCE_OFF end
      if propSound~=nil then  World.SpawnAsset(propSound,{position=script.parent:GetWorldPosition()}) end
         if propAllPlayers==true then
             
@@ -29,7 +29,7 @@ function cinematicForOne(player,eventName)
 end
 function OnEndOverlap(whichTrigger, other)
     if other:IsA("Player") then
-        if propTransient then script.parent.collision=Collision.FORCE_OFF end
+        if propTransient then trigger.collision=Collision.FORCE_OFF end
         if propAllPlayers then
             
             cinematicForAll(propOnLeaveCinematic)
@@ -42,7 +42,7 @@ end
 
 function OnInteracted(whichTrigger, other)
     if other:IsA("Player") then
-        if propTransient then script.parent.collision=Collision.FORCE_OFF end
+        if propTransient then trigger.collision=Collision.FORCE_OFF end
         if propAllPlayers then
             
             cinematicForAll(propOnInteractCinematic)

@@ -80,7 +80,7 @@ end
 -- Handles a client side banner message event
 function OnBannerMessageEvent(message,params,duration)
     local message=GetSpeech(message,params)
-    print("recu "..message.."from banner event")
+    --print("recu "..message.."from banner event")
     if duration then
         messageEndTime = {time() + duration,duration}
     else
