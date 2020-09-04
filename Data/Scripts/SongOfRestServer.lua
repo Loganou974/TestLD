@@ -15,6 +15,18 @@ function OnExecute(ability)
                 --enemy:AddResource("Inspired",2)
                 --allies.hitPoints=allies.hitPoints+math.random(6)
                 local dmg = Damage.New( -math.random(6))
+                if(ability.owner:GetResource("level")<9) then
+                  dmg = Damage.New( -math.random(6))
+               
+                elseif(ability.owner:GetResource("level")<13) then
+                  dmg = Damage.New( -math.random(8))
+               
+                elseif(ability.owner:GetResource("level")<17) then
+                  dmg = Damage.New( -math.random(10))
+                
+                else
+                     dmg = Damage.New( -math.random(12))
+                end
 	            --dmg:SetHitResult(hitResult)
                 dmg.reason = DamageReason.COMBAT
                 dmg.sourcePlayer=ability.owner
