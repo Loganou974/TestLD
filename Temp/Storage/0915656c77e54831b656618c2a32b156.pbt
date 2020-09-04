@@ -1,64 +1,15 @@
 ﻿Entries {
   Key {
-    StringVar: "class"
-  }
-  SimpleValue {
-    Table {
-      Entries {
-        Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Novice"
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
     StringVar: "race"
   }
   SimpleValue {
     Table {
       Entries {
         Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: "Your size is Medium. Speed. Your base walking speed is 30 feet."
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Elf"
-        }
-      }
-      Entries {
-        Key {
           StringVar: "size"
         }
         SimpleValue {
-          StringVar: "N"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 30
+          StringVar: "L"
         }
       }
       Entries {
@@ -72,7 +23,7 @@ Entries {
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -88,7 +39,7 @@ Entries {
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -112,7 +63,7 @@ Entries {
                 IntVar: 6
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -124,6 +75,55 @@ Entries {
               }
             }
           }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: " Your base walking speed is 30 feet."
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Dragonborn"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 30
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "class"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Novice"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
         }
       }
     }
