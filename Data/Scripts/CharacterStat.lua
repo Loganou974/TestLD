@@ -360,6 +360,8 @@ local gameplay=World.FindObjectById("83D47359D7CB64F1:Gameplay")
 function OnPlayerJoined(player)
     
     Task.Wait(1)
+    local spawn=World.FindObjectById("23E9C6AD56BEBE5B:Combat_Spawn")
+    _G.LastCheckPoint=spawn:GetWorldPosition()
     player.maxJumpCount=1
     player.jumpVelocity=300
    -- print("allo? "..player.animationStance)
@@ -456,16 +458,16 @@ function choixRace(player)
     
     if race.size =="S" then
         local currentScale = player:GetWorldScale()
-            local newScale = currentScale *(0.5+ math.random(0,1)/3)
-            if newScale.x > 5 then newScale = Vector3.New(1.0) end
+            local newScale = currentScale *(0.7+ math.random(0,1)/3)
+           -- if newScale.x > 5 then newScale = Vector3.New(1.0) end
 
             player:SetWorldScale(newScale)
     end
 
     if race.size =="L" then
         local currentScale = player:GetWorldScale()
-            local newScale = currentScale  *(1+ math.random(0,1)/3)
-            if newScale.x > 5 then newScale = Vector3.New(1.0) end
+            local newScale = currentScale  *(1+ math.random(0,1)/4)
+           -- if newScale.x > 5 then newScale = Vector3.New(1.0) end
 
             player:SetWorldScale(newScale)
     end
@@ -774,7 +776,7 @@ function endCombat(victory)
         
         for i,p in ipairs(playersInCombat) do
             p:SetResource("incombat",0)
-            if(p.isDead) then respawnPlayer(p) end
+            if(p.isDead) then respawnPlayer(p) else _G.LastCheckPoint=p:GetWorldPosition() end
             changeAnimationForPlayer(p,false)
 
             
@@ -832,7 +834,7 @@ end
 function respawnPlayer(p)
     local spawn=World.FindObjectById("23E9C6AD56BEBE5B:Combat_Spawn")
     
-    p:Respawn(spawn:GetWorldPosition(), Rotation.New(0, 0, 45))
+    p:Respawn(_G.LastCheckPoint, Rotation.New(0, 0, 45))
 
 end
 function changeAnimationForPlayer(p,inCombat)

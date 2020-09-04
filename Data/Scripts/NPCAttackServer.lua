@@ -340,9 +340,9 @@ function DropRewards(killer)
 	if REWARD_RESOURCE_TYPE 
 	and Object.IsValid(killer) 	then
 		local otherplayers= Game.GetPlayers()
-       
+		local mult=5-#otherplayers
         for k,p in pairs(otherplayers) do
-            p:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT)
+            p:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT*mult)
         end
 		
 	end
