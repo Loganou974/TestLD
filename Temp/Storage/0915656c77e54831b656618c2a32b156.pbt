@@ -1,30 +1,5 @@
 ﻿Entries {
   Key {
-    StringVar: "class"
-  }
-  SimpleValue {
-    Table {
-      Entries {
-        Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Novice"
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
     StringVar: "race"
   }
   SimpleValue {
@@ -42,23 +17,7 @@ Entries {
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Mountain Dwarf"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 25
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: "As a mountain dwarf, you\342\200\231re strong and hardy, accustomed to a difficult life in rugged terrain."
+          StringVar: "Dwarf"
         }
       }
       Entries {
@@ -72,7 +31,7 @@ Entries {
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -124,6 +83,47 @@ Entries {
               }
             }
           }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 25
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: "Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor"
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "class"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Novice"
         }
       }
     }

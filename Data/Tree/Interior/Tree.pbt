@@ -583,7 +583,7 @@ Objects {
     }
     Overrides {
       Name: "cs:introSpeech"
-      String: "Corpses rise from the ground, you\'re being attacked"
+      String: "As you walk into the room, a bunch of Commoners attacks you"
     }
     Overrides {
       Name: "cs:Monster4"
@@ -1510,7 +1510,7 @@ Objects {
   ChildIds: 9691294331620525267
   ChildIds: 3666792920856837793
   ChildIds: 17782289207182935358
-  ChildIds: 8045767808244707804
+  ChildIds: 1117549770783589693
   ChildIds: 9247533430041725103
   ChildIds: 13205681438796070082
   Collidable_v2 {
@@ -1555,7 +1555,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Lizard 5"
+          String: "Raptor 5"
         }
         Overrides {
           Name: "Position"
@@ -1642,7 +1642,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Lizartd 4"
+          String: "Raptor 4"
         }
         Overrides {
           Name: "Position"
@@ -1692,33 +1692,27 @@ Objects {
         }
       }
     }
-    ParameterOverrideMap {
-      key: 16077362410574787463
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:color"
-          Color {
-            R: 1
-            G: 0.837748408
-            B: 0.0199999809
-            A: 1
-          }
-        }
-      }
-    }
     TemplateAsset {
       Id: 11690617892301932464
     }
   }
 }
 Objects {
-  Id: 8045767808244707804
-  Name: "Lizard 1"
+  Id: 1117549770783589693
+  Name: "NPC - Raptor"
   Transform {
+    Location {
+      X: -6177.35742
+      Y: 7604.28906
+      Z: 712.661072
+    }
+    Rotation {
+      Yaw: 177.679459
+    }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
     }
   }
   ParentId: 1413591978020585781
@@ -1731,17 +1725,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 12069757475032437356
+      key: 4212840905289249936
       value {
         Overrides {
           Name: "Name"
-          String: "Lizard 1"
+          String: "Raptor 3"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -2955.54541
-            Y: 4340.05664
+            X: -2955.54639
+            Y: 4340.06299
             Z: 712.661072
           }
         }
@@ -1751,10 +1745,22 @@ Objects {
             Yaw: 177.679459
           }
         }
+        Overrides {
+          Name: "cs:AttackRange"
+          Float: 350
+        }
+        Overrides {
+          Name: "cs:AttackCast"
+          Float: 0.4
+        }
+        Overrides {
+          Name: "cs:ObjectId"
+          Int: 12
+        }
       }
     }
     TemplateAsset {
-      Id: 8714707871607180575
+      Id: 11690617892301932464
     }
   }
 }
@@ -1782,7 +1788,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Lizard 3"
+          String: "Raptor 2"
         }
         Overrides {
           Name: "Position"
@@ -1796,19 +1802,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 177.679459
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 16077362410574787463
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:color"
-          Color {
-            R: 0.0488080531
-            B: 0.669999957
-            A: 1
           }
         }
       }
@@ -1842,7 +1835,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Lizard 2"
+          String: "Raptor 1"
         }
         Overrides {
           Name: "Position"
@@ -1861,19 +1854,6 @@ Objects {
         Overrides {
           Name: "cs:ObjectId"
           Int: 10
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 16077362410574787463
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:color"
-          Color {
-            R: 0.679999948
-            G: 3.24249243e-07
-            A: 1
-          }
         }
       }
     }
@@ -1985,10 +1965,10 @@ Objects {
     Overrides {
       Name: "cs:Monster3"
       ObjectReference {
-        SelfId: 15866908976433388893
-        SubObjectId: 12069757475032437356
-        InstanceId: 8045767808244707804
-        TemplateId: 8714707871607180575
+        SelfId: 5194622097913176328
+        SubObjectId: 4212840905289249936
+        InstanceId: 1117549770783589693
+        TemplateId: 11690617892301932464
       }
     }
     Overrides {
@@ -2253,10 +2233,6 @@ Objects {
         InstanceId: 6564411352709047931
         TemplateId: 15728781663253921388
       }
-    }
-    Overrides {
-      Name: "cs:introSpeech"
-      String: "The howling seems really close, in the darkness you can barely see the 2 wolfs drooling at you"
     }
   }
   Collidable_v2 {

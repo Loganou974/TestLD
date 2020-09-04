@@ -21,7 +21,6 @@ Objects {
       String: "You hear Strahd laughing in the distance."
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -60,7 +59,6 @@ Objects {
       String: "You can finally see the Immortal\'s Cursed Castle. "
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
