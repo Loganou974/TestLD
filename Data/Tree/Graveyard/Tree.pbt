@@ -557,17 +557,9 @@ Objects {
   }
 }
 Objects {
-  Id: 7294820243635615038
-  Name: "Fantasy Human Gal 1"
+  Id: 7829738878909073487
+  Name: "NPC_Villager"
   Transform {
-    Location {
-      X: 153.761719
-      Y: 1089.0498
-      Z: 105.961792
-    }
-    Rotation {
-      Yaw: 81.6487885
-    }
     Scale {
       X: 1
       Y: 1
@@ -575,36 +567,52 @@ Objects {
     }
   }
   ParentId: 10042813735280099622
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9928537974828225292
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7399701286820520638
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6.32131195
+            Y: 47.8687706
+            Z: -12.0916748
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -81.6487427
+          }
+        }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 7294820243635615038
-    SubobjectId: 7489811866563941016
-    InstanceId: 1672567905579778153
-    TemplateId: 9323984862848679036
+    ParameterOverrideMap {
+      key: 7519593789568846750
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NPC_Villager"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 153.761719
+            Y: 1089.0498
+            Z: 105.961792
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 81.6487503
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4160431205403122694
+    }
   }
 }
 Objects {

@@ -44,15 +44,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9928537974828225292
-  Name: "Fantasy Human Gal 1"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_fantasy_003_ref"
-  }
-}
-Assets {
   Id: 8698530872141969228
   Name: "Fern 01"
   PlatformAssetType: 1
