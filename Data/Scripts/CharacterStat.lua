@@ -773,7 +773,9 @@ function endCombat(victory)
         
         for i,p in ipairs(playersInCombat) do
             p:SetResource("incombat",0)
+            if(p.isDead) then respawnPlayer(p) end
             changeAnimationForPlayer(p,false)
+
             
         end
         unfreezePlayers()
@@ -787,7 +789,11 @@ function endCombat(victory)
         if FinalBoss~=nil and FinalBoss==true then
             for i,p in ipairs(Game.GetPlayers()) do
                 --lancez cinematic + temps du run
+                
+                
                 Events.BroadcastToAllPlayers("cine_Ending")
+                Task.Wait(1)
+                Events.BroadcastToAllPlayers("DAY")
                p:SetWorldPosition(village)
                 
             end

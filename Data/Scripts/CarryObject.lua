@@ -47,6 +47,7 @@ function OnInteracted(whichTrigger, other)
 		Task.Wait(0.2)
 		whichTrigger.parent.collision=Collision.FORCE_ON
 		carrying=false
+		carried:SetWorldRotation(Rotation.New(0,0,0))
 		carried=nil
 	end
 end
