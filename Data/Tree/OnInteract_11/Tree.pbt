@@ -21,6 +21,7 @@ Objects {
       String: "Wise ones, strong ones, and smart ones always think different."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -59,6 +60,7 @@ Objects {
       String: "Three ways to complete this challenge."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

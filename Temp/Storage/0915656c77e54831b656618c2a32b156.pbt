@@ -1,30 +1,5 @@
 ﻿Entries {
   Key {
-    StringVar: "class"
-  }
-  SimpleValue {
-    Table {
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Novice"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
     StringVar: "race"
   }
   SimpleValue {
@@ -34,23 +9,7 @@ Entries {
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Elf"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "size"
-        }
-        SimpleValue {
-          StringVar: "N"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: "Your size is Medium. Speed. Your base walking speed is 30 feet."
+          StringVar: "Halfling"
         }
       }
       Entries {
@@ -58,7 +17,7 @@ Entries {
           StringVar: "speed"
         }
         SimpleValue {
-          IntVar: 30
+          IntVar: 25
         }
       }
       Entries {
@@ -124,6 +83,47 @@ Entries {
               }
             }
           }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "size"
+        }
+        SimpleValue {
+          StringVar: "S"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: "Your base walking speed is 25 feet."
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "class"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Novice"
         }
       }
     }

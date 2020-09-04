@@ -197,6 +197,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17597952520423298902
+  Name: "Energy Tube Glow"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "Energy_Tube_Glow"
+  }
+}
+Assets {
   Id: 17583281951396407341
   Name: "Cliff 01"
   PlatformAssetType: 2
@@ -392,6 +401,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_column_segment_001"
+  }
+}
+Assets {
+  Id: 16435027106714152550
+  Name: "Text 02: ["
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_053"
   }
 }
 Assets {
@@ -1139,6 +1157,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_siding_white_001_uv"
+  }
+}
+Assets {
+  Id: 12140743477354897552
+  Name: "Text 01: U"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_020"
   }
 }
 Assets {
@@ -2276,6 +2303,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6837531020219578149
+  Name: "Gem - Pear Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gem_pear_polished_001"
+  }
+}
+Assets {
   Id: 6796769041854594011
   Name: "Weapon Pickup Reload 01 SFX"
   PlatformAssetType: 7
@@ -2870,6 +2906,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3875627150020485932
+  Name: "Text 01: &"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_043"
+  }
+}
+Assets {
   Id: 3841538424324598553
   Name: "Plane 1m - One Sided"
   PlatformAssetType: 1
@@ -2996,6 +3041,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3099552636141207940
+  Name: "Text 02: ]"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_054"
+  }
+}
+Assets {
   Id: 3090596827184957478
   Name: "Rope"
   PlatformAssetType: 2
@@ -3065,6 +3119,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_ember_volume_vfx"
+  }
+}
+Assets {
+  Id: 2620636604253528568
+  Name: "Text 01: C"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_002"
   }
 }
 Assets {
