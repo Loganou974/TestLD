@@ -9,6 +9,13 @@ function OnBeginOverlap(whichTrigger, other)
 
 			if nbPlayers>=#players then
 				for _,p in pairs(players) do
+					playerData=Storage.GetPlayerData(p)
+					if playerData.class.name =="Novice" then
+						Events.BroadcastToAllPlayers("BannerMessage","Please "..p.name..", you must choose a class before we can start the campaign")
+						return
+					end
+				end
+				for _,p in pairs(players) do
 					p:SetWorldPosition(target:GetWorldPosition())
 
 				end

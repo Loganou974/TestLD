@@ -73,10 +73,10 @@ end
 
 function savePlayerData(player,playerData)
     
-    print("sending refresh to "..player.name)
+   -- print("sending refresh to "..player.name)
     --addDebugCombatTexte("player "..player.name.." "..player:GetResource("STR"),debug)
     Events.BroadcastToPlayer(player,"STAT_REFRESH",playerData.race.name,playerData.class.name)
-    print("senT WITH "..player.name.." race="..playerData.race.name.." class="..playerData.class.name)
+   -- print("senT WITH "..player.name.." race="..playerData.race.name.." class="..playerData.class.name)
     --Events.BroadcastToPlayer(player,"STATPOINT_REFRESH",playerData.statPoint,)
     local resultCode,errorMessage =Storage.SetPlayerData(player, playerData)
    --print("Storage "..resultCode.." :"..errorMessage.." for player "..player.name)
@@ -339,7 +339,7 @@ end
 function GetSpeech(messageId,params)
     local message=""
     --local speeches=World.FindObjectById("8A4AB8499744FEA5:NarratorSpeech")
-    print("message "..messageId)
+    --print("message "..messageId)
     local speech=speeches:FindDescendantByName(messageId)
     if speech==nil then
          message= messageId 
