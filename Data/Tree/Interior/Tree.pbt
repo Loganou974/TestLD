@@ -846,12 +846,12 @@ Objects {
   Name: "SalleCombat3"
   Transform {
     Location {
-      X: -397.466797
-      Y: 1341.56396
+      X: -1350.69897
+      Y: 286.10376
       Z: 1017.86011
     }
     Rotation {
-      Yaw: -98.3722534
+      Yaw: -1.18707275
     }
     Scale {
       X: 0.5
@@ -2321,6 +2321,16 @@ Objects {
   ChildIds: 13117859248669772738
   ChildIds: 2047131564192980251
   ChildIds: 3783357018459072624
+  ChildIds: 11763825390987095233
+  ChildIds: 16559459825416992499
+  ChildIds: 2327257004822479953
+  ChildIds: 13703692867604395068
+  ChildIds: 8795775028118092457
+  ChildIds: 11464204142048578293
+  ChildIds: 16868218069454879085
+  ChildIds: 14844888250069660611
+  ChildIds: 1798811435861109814
+  ChildIds: 9246496408322238003
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2329,6 +2339,685 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 9246496408322238003
+  Name: "Rock Hexagonal"
+  Transform {
+    Location {
+      X: 2757.2832
+      Y: 871.057617
+      Z: 1071.6864
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.08722234
+      Y: 2.08722234
+      Z: 2.68892622
+    }
+  }
+  ParentId: 7541522980628058162
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4262625313857521013
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1798811435861109814
+  Name: "Torch"
+  Transform {
+    Location {
+      X: -3717.04248
+      Y: 7228.36523
+      Z: 2812.12598
+    }
+    Rotation {
+      Yaw: 90.2596588
+    }
+    Scale {
+      X: 0.7
+      Y: 0.7
+      Z: 0.7
+    }
+  }
+  ParentId: 7541522980628058162
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2692120690036244047
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3744.94434
+            Y: -151.564453
+            Z: 3037.12598
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 90.2596588
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.7
+            Y: 0.7
+            Z: 0.7
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13942691728744513144
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 30.1271114
+            Y: 35.0242805
+            Z: 77.772049
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -10.2883301
+            Yaw: -22.9092102
+            Roll: -22.90979
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 457972271455997478
+    }
+  }
+}
+Objects {
+  Id: 14844888250069660611
+  Name: "Torch"
+  Transform {
+    Location {
+      X: -7213.72
+      Y: 6680.00391
+      Z: 1150
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.7
+      Y: 0.7
+      Z: 0.7
+    }
+  }
+  ParentId: 7541522980628058162
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2692120690036244047
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3709.58472
+            Y: -1515.77539
+            Z: 3037.12598
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 90.2596588
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.7
+            Y: 0.7
+            Z: 0.7
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13942691728744513144
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 30.1271114
+            Y: 35.0242805
+            Z: 77.772049
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -10.2883301
+            Yaw: -22.9092102
+            Roll: -22.90979
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 457972271455997478
+    }
+  }
+}
+Objects {
+  Id: 16868218069454879085
+  Name: "Torch"
+  Transform {
+    Location {
+      X: -8101.229
+      Y: 6165.27246
+      Z: 1141.05847
+    }
+    Rotation {
+      Yaw: -38.9151649
+    }
+    Scale {
+      X: 0.7
+      Y: 0.7
+      Z: 0.7
+    }
+  }
+  ParentId: 7541522980628058162
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2692120690036244047
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -673.43457
+            Y: -2576.40283
+            Z: 2570.02734
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -38.9151
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.7
+            Y: 0.7
+            Z: 0.7
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13942691728744513144
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -10.2883301
+            Yaw: -22.9092407
+            Roll: -22.9098206
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 457972271455997478
+    }
+  }
+}
+Objects {
+  Id: 11464204142048578293
+  Name: "Torch"
+  Transform {
+    Location {
+      X: -7213.72
+      Y: 6680.00391
+      Z: 1150
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.7
+      Y: 0.7
+      Z: 0.7
+    }
+  }
+  ParentId: 7541522980628058162
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2692120690036244047
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -675.428223
+            Y: -2578.87207
+            Z: 1366.05847
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -38.9151611
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.7
+            Y: 0.7
+            Z: 0.7
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13942691728744513144
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -10.2883301
+            Yaw: -22.9092407
+            Roll: -22.9098206
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 457972271455997478
+    }
+  }
+}
+Objects {
+  Id: 8795775028118092457
+  Name: "Rock Hexagonal"
+  Transform {
+    Location {
+      X: 2761.20264
+      Y: -2675.83789
+      Z: 1071.68628
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.51127422
+      Y: 1.51127422
+      Z: 1.94694424
+    }
+  }
+  ParentId: 7541522980628058162
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4262625313857521013
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13703692867604395068
+  Name: "Rustic Wooden Fence Panel (broken)"
+  Transform {
+    Location {
+      X: -4235.05664
+      Y: 8668.60449
+      Z: 1364.69849
+    }
+    Rotation {
+      Yaw: 94.0198288
+    }
+    Scale {
+      X: 0.617267787
+      Y: 0.617267787
+      Z: 0.617267787
+    }
+  }
+  ParentId: 7541522980628058162
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 861713250353254354
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Rustic Wooden Fence Panel (broken)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3208.24023
+            Y: -1711.82373
+            Z: 1580.46838
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 94.0198288
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.617267787
+            Y: 0.617267787
+            Z: 0.617267787
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3436797639530522162
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 25.7397842
+            Y: 50.8417778
+            Z: 109.047852
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -5.73477173
+            Yaw: -9.00640869
+            Roll: 104.178589
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6350421232979342945
+    }
+  }
+}
+Objects {
+  Id: 2327257004822479953
+  Name: "Rustic Wooden Fence Panel (broken)"
+  Transform {
+    Location {
+      X: -5047.58203
+      Y: 8068.52295
+      Z: 745.656494
+    }
+    Rotation {
+      Yaw: 6.36941
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 7541522980628058162
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 861713250353254354
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Rustic Wooden Fence Panel (broken)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3190.74414
+            Y: -75.5400391
+            Z: 1589.69849
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 94.0198288
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.617267787
+            Y: 0.617267787
+            Z: 0.617267787
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3436797639530522162
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 25.7397842
+            Y: 50.8417778
+            Z: 109.047852
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -5.73477173
+            Yaw: -9.00640869
+            Roll: 104.178589
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6350421232979342945
+    }
+  }
+}
+Objects {
+  Id: 16559459825416992499
+  Name: "Torch"
+  Transform {
+    Location {
+      X: -7239.91406
+      Y: 8989.20898
+      Z: 1137.45361
+    }
+    Rotation {
+      Yaw: 176.335632
+    }
+    Scale {
+      X: 0.7
+      Y: 0.7
+      Z: 0.7
+    }
+  }
+  ParentId: 7541522980628058162
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2692120690036244047
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 584.224609
+            Y: 256.694336
+            Z: 1701.76172
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 176.335632
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.7
+            Y: 0.7
+            Z: 0.7
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13942691728744513144
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -10.2883301
+            Yaw: -22.9092407
+            Roll: -22.9098206
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 457972271455997478
+    }
+  }
+}
+Objects {
+  Id: 11763825390987095233
+  Name: "Torch"
+  Transform {
+    Location {
+      X: -5635
+      Y: 6680.00391
+      Z: 1150
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.7
+      Y: 0.7
+      Z: 0.7
+    }
+  }
+  ParentId: 7541522980628058162
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2692120690036244047
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 185.886719
+            Y: 245.064453
+            Z: 1362.45361
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 176.335632
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.7
+            Y: 0.7
+            Z: 0.7
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13942691728744513144
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -10.2883301
+            Yaw: -22.9092407
+            Roll: -22.9098206
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 457972271455997478
+    }
   }
 }
 Objects {
@@ -2471,8 +3160,8 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: -705.542
-      Y: 798.087891
+      X: -819.132813
+      Y: 866.707031
       Z: 1071.6864
     }
     Rotation {
@@ -2701,7 +3390,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1790.80078
+            X: 212.080566
             Y: -2064.14063
             Z: 1375
           }
@@ -2765,7 +3454,8 @@ Objects {
   ChildIds: 538566266720808459
   ChildIds: 3804454682997505410
   ChildIds: 2959048745508084293
-  ChildIds: 5590408504632789830
+  ChildIds: 17330108939803602540
+  ChildIds: 2695158992460506575
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2777,12 +3467,53 @@ Objects {
   }
 }
 Objects {
-  Id: 5590408504632789830
+  Id: 2695158992460506575
   Name: "Carpet Tile 01"
   Transform {
     Location {
-      X: 1600
-      Z: 0.158081055
+      X: 2802.87207
+      Y: 127.101074
+      Z: 1205.75989
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4227748524032739493
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1715337818415023444
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17330108939803602540
+  Name: "Carpet Tile 01"
+  Transform {
+    Location {
+      X: 3518.7998
+      Y: 127.101074
+      Z: 1205.75989
     }
     Rotation {
       Yaw: -90
@@ -55912,7 +56643,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 210.800781
+            X: 1818.43506
             Y: -2039.14063
             Z: 960
           }

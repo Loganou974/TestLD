@@ -1,7 +1,7 @@
 ﻿Name: "OnEnter_11"
-RootId: 13528845306878451906
+RootId: 16542916344820443259
 Objects {
-  Id: 4620486833017305937
+  Id: 1042751174245548167
   Name: "Speech2"
   Transform {
     Location {
@@ -14,11 +14,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13528845306878451906
+  ParentId: 16542916344820443259
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: " The stranger delivers a letter from his master,inviting them to the village of Barovia with an urgent request for your assistance."
+      String: "You hear Strahd laughing in the distance."
     }
   }
   Collidable_v2 {
@@ -39,7 +39,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6736037589197127828
+  Id: 2203246527906784413
   Name: "Speech1"
   Transform {
     Location {
@@ -52,11 +52,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13528845306878451906
+  ParentId: 16542916344820443259
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: " a colorfully dressed stranger approaches you while you are resting at a campfire near your home town."
+      String: "You can finally see the Immortal\'s Cursed Castle. "
     }
   }
   Collidable_v2 {

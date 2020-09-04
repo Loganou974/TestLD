@@ -305,15 +305,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17148810838103658535
-  Name: "Dragon"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_icon_Dragon"
-  }
-}
-Assets {
   Id: 17108871192860831370
   Name: "Text 02: Z"
   PlatformAssetType: 1
@@ -347,6 +338,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_candle_holder_floor_002"
+  }
+}
+Assets {
+  Id: 16910967692750356778
+  Name: "Text 03: H"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_007"
   }
 }
 Assets {
@@ -428,15 +428,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_sixsided_hq_001"
-  }
-}
-Assets {
-  Id: 16241833908851998054
-  Name: "BG Flat 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_020"
   }
 }
 Assets {
@@ -980,6 +971,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13294902272889086201
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
   Id: 13080073069178962316
   Name: "Prism - 8-Sided Polished"
   PlatformAssetType: 1
@@ -1058,6 +1058,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_eighsided_hq_001"
+  }
+}
+Assets {
+  Id: 12589101061743811579
+  Name: "Text 03: C"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_002"
   }
 }
 Assets {
@@ -1241,12 +1250,48 @@ Assets {
   }
 }
 Assets {
+  Id: 11672107140865784037
+  Name: "Text 03: T"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_019"
+  }
+}
+Assets {
   Id: 11669484600232390848
   Name: "Candle Group Melted 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_candles_melted_001"
+  }
+}
+Assets {
+  Id: 11585801559919915394
+  Name: "Pipe - Half Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half-pipe_002"
+  }
+}
+Assets {
+  Id: 11536791283922121103
+  Name: "Text 03: E"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_004"
+  }
+}
+Assets {
+  Id: 11536504689324123806
+  Name: "Grass Clumps"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_grass_002_uv"
   }
 }
 Assets {
@@ -1337,6 +1382,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_003"
+  }
+}
+Assets {
+  Id: 11201079080483063210
+  Name: "Cone - Truncated Hollow Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_hollow_002"
   }
 }
 Assets {
@@ -1691,6 +1745,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9160892207707406562
+  Name: "Text 03: S"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_018"
+  }
+}
+Assets {
   Id: 9019619946449915588
   Name: "Text 02: R"
   PlatformAssetType: 1
@@ -1844,6 +1907,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8308774238362705919
+  Name: "Text 03: I"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_008"
+  }
+}
+Assets {
   Id: 8232445715546955040
   Name: "Cube - Chamfered Large Polished"
   PlatformAssetType: 1
@@ -1868,6 +1940,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_gen_whitebox_wall_001_tri"
+  }
+}
+Assets {
+  Id: 8085858612236310995
+  Name: "Text 03: L"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_011"
   }
 }
 Assets {
@@ -2204,12 +2285,12 @@ Assets {
   }
 }
 Assets {
-  Id: 6745130297959255030
-  Name: "Clover Patch 01"
+  Id: 6747614045051753376
+  Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_foliage_gen_clover_patch_001"
+    AssetId: "sm_cylinder_001"
   }
 }
 Assets {
@@ -2273,6 +2354,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crate_reinforced_150cm_001"
+  }
+}
+Assets {
+  Id: 6611378559053753307
+  Name: "Metal Iron Rusted 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_003"
   }
 }
 Assets {
@@ -2474,6 +2564,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5489775416547967874
+  Name: "Hemisphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_001"
+  }
+}
+Assets {
   Id: 5475761223416488121
   Name: "Fabric Burlap New 01"
   PlatformAssetType: 2
@@ -2525,6 +2624,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bucket_001"
+  }
+}
+Assets {
+  Id: 5252633986049924065
+  Name: "Text 03: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_017"
   }
 }
 Assets {
@@ -2600,15 +2708,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4878364448582661331
-  Name: "Frame Beveled 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameSolid8px__019"
-  }
-}
-Assets {
   Id: 4861863141257811858
   Name: "Text 01: B"
   PlatformAssetType: 1
@@ -2669,6 +2768,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_street-sign_triangle_001"
+  }
+}
+Assets {
+  Id: 4499101245765914520
+  Name: "Grass Basic"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_grass_001_uv"
   }
 }
 Assets {
@@ -2933,15 +3041,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2930657386823014542
-  Name: "Terrain - Grass Cliffs"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_terrain_cliff-grass-001_wa"
-  }
-}
-Assets {
   Id: 2895835542917439843
   Name: "Stone Block Long"
   PlatformAssetType: 1
@@ -2984,15 +3083,6 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_ember_volume_vfx"
-  }
-}
-Assets {
-  Id: 2719732194574913068
-  Name: "Gem - Diamond 8-Sided Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_diamond_8_sided_polished_001"
   }
 }
 Assets {
@@ -3212,15 +3302,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1270718178470299888
-  Name: "Icon Fist"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Fist"
-  }
-}
-Assets {
   Id: 1137112816547272582
   Name: "Cylinder"
   PlatformAssetType: 1
@@ -3371,6 +3452,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_gen_whitebox_wall_001_winSlot2x"
+  }
+}
+Assets {
+  Id: 463551904379093076
+  Name: "Cube - Rounded Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_001"
   }
 }
 Assets {
