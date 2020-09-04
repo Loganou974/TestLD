@@ -3167,6 +3167,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2734225717732972981
+  Name: "Fantasy Castle Stairs 01 - U"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_001_U_ref"
+  }
+}
+Assets {
   Id: 2620636604253528568
   Name: "Text 01: C"
   PlatformAssetType: 1
