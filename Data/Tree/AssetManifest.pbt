@@ -2879,15 +2879,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5599344634825943141
-  Name: "Fantasy Castle Wall 03 - Doorway 01 Half"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_half_003_door_01"
-  }
-}
-Assets {
   Id: 5589893270462602294
   Name: "Text 01: L"
   PlatformAssetType: 1

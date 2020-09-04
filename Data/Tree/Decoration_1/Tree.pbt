@@ -1,6 +1,39 @@
 ﻿Name: "Decoration_1"
 RootId: 5789870069651336630
 Objects {
+  Id: 6687487591566049827
+  Name: "Pillars"
+  Transform {
+    Location {
+      Z: 613.956543
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5789870069651336630
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Pillars_1"
+  }
+  InstanceHistory {
+    SelfId: 9229501217626936643
+    SubobjectId: 14565176918370762733
+    InstanceId: 14737302652441600329
+    TemplateId: 14730459556242977614
+  }
+}
+Objects {
   Id: 9229501217626936643
   Name: "Pillars"
   Transform {
@@ -23,7 +56,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Pillars_1"
+    FilePartitionName: "Pillars"
   }
   InstanceHistory {
     SelfId: 9229501217626936643
