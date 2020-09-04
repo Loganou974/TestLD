@@ -21,6 +21,7 @@ Objects {
       String: " The stranger delivers a letter from his master,inviting them to the village of Barovia with an urgent request for your assistance."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -59,6 +60,7 @@ Objects {
       String: " a colorfully dressed stranger approaches you while you are resting at a campfire near your home town."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
