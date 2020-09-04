@@ -1,7 +1,7 @@
 ﻿-- example of button click and hover events.
 -- Should be in client context, as buttons would generally be per-player
 local button = script.parent
-local ROOT=script.parent.parent.parent
+local ROOT=script.parent.parent.parent.parent
 
 function OnClicked(whichButton)
 	ROOT.context.showCharacterScreen()

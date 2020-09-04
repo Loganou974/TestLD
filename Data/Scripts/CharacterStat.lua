@@ -11,6 +11,7 @@ function NAV_MESH() return _G.NavMesh end
 local debug=false
 local currentTurn=0;
 local playersAreInCombat=false
+local village=Vector3.New(-32824.297,-9718.195,-923.089)
 local currentCombatZone=nil
 local levelXP={0,300,900,2700,6500,14000,23000,34000,48000,64000,85000,100000,120000,140000,165000,195000,225000,265000,305000,355000}
 local races={
@@ -455,7 +456,7 @@ function choixRace(player)
     
     if race.size =="S" then
         local currentScale = player:GetWorldScale()
-            local newScale = currentScale * 0.8
+            local newScale = currentScale * math.random(0.7,0.9)
             if newScale.x > 5 then newScale = Vector3.New(1.0) end
 
             player:SetWorldScale(newScale)
@@ -463,7 +464,7 @@ function choixRace(player)
 
     if race.size =="L" then
         local currentScale = player:GetWorldScale()
-            local newScale = currentScale * 1.3
+            local newScale = currentScale * math.random(1,1.2)
             if newScale.x > 5 then newScale = Vector3.New(1.0) end
 
             player:SetWorldScale(newScale)
@@ -782,7 +783,15 @@ function endCombat(victory)
         Task.Wait(1)
         Events.BroadcastToAllPlayers("BannerMessage","Victory")
         
-        
+        local FinalBoss = currentCombatZone:GetCustomProperty("FinalBoss")
+        if FinalBoss~=nil and FinalBoss==true then
+            for i,p in ipairs(Game.GetPlayers()) do
+                --lancez cinematic + temps du run
+                Events.BroadcastToAllPlayers("cine_Ending")
+               p:SetWorldPosition(village)
+                
+            end
+        end
        
     else 
         Events.BroadcastToAllPlayers("BannerMessage","GAME OVER")
@@ -1063,9 +1072,11 @@ function UpdateBuffEtDebuff(player)
     
     if player:GetResource("Enraged") >0 then
             if player:GetResource("EnragedHitOrGotHit") == 1 then
+                print("rage on")
                 player:SetResource("Enraged", player:GetResource("EnragedBonus"))
                 
             else
+                print("rage over")
                 player:SetResource("Enraged",0)
                 
             end

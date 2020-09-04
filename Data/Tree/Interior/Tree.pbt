@@ -23,6 +23,7 @@ Objects {
   ChildIds: 259287209507503813
   ChildIds: 1184779590893413199
   ChildIds: 3757148221842553656
+  ChildIds: 9467718523194333222
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -31,6 +32,588 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 9467718523194333222
+  Name: "SalleCimettierre"
+  Transform {
+    Location {
+      X: -10161.2871
+      Y: 5350.51807
+      Z: -338.697571
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 16546432617048368361
+  ChildIds: 4075887265191385551
+  ChildIds: 17205616029014732556
+  ChildIds: 14565015733638894341
+  ChildIds: 16563297465671631418
+  ChildIds: 9422706479895910592
+  ChildIds: 12970445702438348299
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12970445702438348299
+  Name: "Undead Soldier"
+  Transform {
+    Location {
+      X: -24759.6797
+      Y: 15103.3447
+      Z: -677.394897
+    }
+    Rotation {
+      Yaw: -54.6590538
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9467718523194333222
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2008988579537210386
+      value {
+        Overrides {
+          Name: "PlayOnStartAnimation"
+          String: "unarmed_sit_ground_crossed"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3534694078586759183
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enormous Undead Soldier "
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 53.1875
+            Y: -1205.09668
+            Z: 0.000244140625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.6590576
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.56852925
+            Y: 1.56852925
+            Z: 1.56852925
+          }
+        }
+        Overrides {
+          Name: "cs:STR"
+          Int: 14
+        }
+        Overrides {
+          Name: "cs:DEX"
+          Int: 14
+        }
+        Overrides {
+          Name: "cs:CON"
+          Int: 14
+        }
+        Overrides {
+          Name: "cs:AC"
+          Int: 12
+        }
+        Overrides {
+          Name: "cs:Speed"
+          Int: 1
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4580842713439293799
+      value {
+        Overrides {
+          Name: "cs:Root"
+          ObjectReference {
+            SelfId: 5861900570475327402
+            SubObjectId: 3534694078586759183
+            InstanceId: 12970445702438348299
+            TemplateId: 2425084943472469545
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2425084943472469545
+    }
+  }
+}
+Objects {
+  Id: 9422706479895910592
+  Name: "Undead Soldier"
+  Transform {
+    Location {
+      X: -23941.8496
+      Y: 15867.4902
+      Z: -677.395142
+    }
+    Rotation {
+      Yaw: -54.6590538
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9467718523194333222
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2008988579537210386
+      value {
+        Overrides {
+          Name: "PlayOnStartAnimation"
+          String: "unarmed_sit_ground_crossed"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3534694078586759183
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Undead Soldier 4"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -817.828125
+            Y: -764.142578
+            Z: 0.000244140625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.6590576
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4580842713439293799
+      value {
+        Overrides {
+          Name: "cs:Root"
+          ObjectReference {
+            SelfId: 11383509182177281425
+            SubObjectId: 3534694078586759183
+            InstanceId: 9422706479895910592
+            TemplateId: 2425084943472469545
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2425084943472469545
+    }
+  }
+}
+Objects {
+  Id: 16563297465671631418
+  Name: "Undead Soldier"
+  Transform {
+    Location {
+      X: -23941.8496
+      Y: 17024.9023
+      Z: -677.395142
+    }
+    Rotation {
+      Yaw: -54.6590538
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9467718523194333222
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3534694078586759183
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Undead Soldier 3"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -817.828125
+            Y: 393.267578
+            Z: 0.000244140625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.6590576
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4580842713439293799
+      value {
+        Overrides {
+          Name: "cs:Root"
+          ObjectReference {
+            SelfId: 14371412693054361414
+            SubObjectId: 3534694078586759183
+            InstanceId: 16563297465671631418
+            TemplateId: 2425084943472469545
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2425084943472469545
+    }
+  }
+}
+Objects {
+  Id: 14565015733638894341
+  Name: "Undead Soldier"
+  Transform {
+    Location {
+      X: -23941.8496
+      Y: 15867.4902
+      Z: -677.395142
+    }
+    Rotation {
+      Yaw: -54.6590538
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9467718523194333222
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3534694078586759183
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Undead Soldier 2"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.001953125
+            Y: 1157.41504
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.6590576
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4580842713439293799
+      value {
+        Overrides {
+          Name: "cs:Root"
+          ObjectReference {
+            SelfId: 2776559934307204267
+            SubObjectId: 3534694078586759183
+            InstanceId: 14565015733638894341
+            TemplateId: 2425084943472469545
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2425084943472469545
+    }
+  }
+}
+Objects {
+  Id: 17205616029014732556
+  Name: "Undead Soldier"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9467718523194333222
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3534694078586759183
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Undead Soldier 1"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.001953125
+            Y: 0.0029296875
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.6590538
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4580842713439293799
+      value {
+        Overrides {
+          Name: "cs:Root"
+          ObjectReference {
+            SelfId: 5637783828212844689
+            SubObjectId: 3534694078586759183
+            InstanceId: 17205616029014732556
+            TemplateId: 2425084943472469545
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2425084943472469545
+    }
+  }
+}
+Objects {
+  Id: 4075887265191385551
+  Name: "CombatZone2"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9467718523194333222
+  ChildIds: 10369556929389728028
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 10369556929389728028
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -1703.64063
+      Y: 49.0634766
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 39.6582642
+      Y: 31.4727211
+      Z: 1
+    }
+  }
+  ParentId: 4075887265191385551
+  ChildIds: 4032310267686429560
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 4032310267686429560
+  Name: "CombatZone"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.235294119
+      Y: 0.0396039598
+      Z: 0.190476179
+    }
+  }
+  ParentId: 10369556929389728028
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NombreMonstre"
+      Int: 5
+    }
+    Overrides {
+      Name: "cs:Monster1"
+      ObjectReference {
+        SelfId: 5637783828212844689
+        SubObjectId: 3534694078586759183
+        InstanceId: 17205616029014732556
+        TemplateId: 2425084943472469545
+      }
+    }
+    Overrides {
+      Name: "cs:Monster2"
+      ObjectReference {
+        SelfId: 2776559934307204267
+        SubObjectId: 3534694078586759183
+        InstanceId: 14565015733638894341
+        TemplateId: 2425084943472469545
+      }
+    }
+    Overrides {
+      Name: "cs:Monster3"
+      ObjectReference {
+        SelfId: 14371412693054361414
+        SubObjectId: 3534694078586759183
+        InstanceId: 16563297465671631418
+        TemplateId: 2425084943472469545
+      }
+    }
+    Overrides {
+      Name: "cs:introSpeech"
+      String: "As you walk into the room, a bunch of Commoners attacks you"
+    }
+    Overrides {
+      Name: "cs:Monster4"
+      ObjectReference {
+        SelfId: 11383509182177281425
+        SubObjectId: 3534694078586759183
+        InstanceId: 9422706479895910592
+        TemplateId: 2425084943472469545
+      }
+    }
+    Overrides {
+      Name: "cs:Monster5"
+      ObjectReference {
+        SelfId: 5861900570475327402
+        SubObjectId: 3534694078586759183
+        InstanceId: 12970445702438348299
+        TemplateId: 2425084943472469545
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17051536529361390619
+    }
   }
 }
 Objects {
@@ -65,7 +648,7 @@ Objects {
 }
 Objects {
   Id: 15351009731763020096
-  Name: "VampireAi"
+  Name: "Strahd"
   Transform {
     Scale {
       X: 1
@@ -83,38 +666,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 459324289789659706
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 36.3705292
-            Y: -17.1258221
-            Z: -36.8812943
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 5972149454929132874
-      value {
-        Overrides {
-          Name: "AnimatedMeshStance"
-          String: "unarmed_idle_relaxed"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11156844241672315200
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 12185706750530733991
       value {
         Overrides {
@@ -131,58 +682,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-        Overrides {
-          Name: "cs:TurnSpeed"
-          Float: 5
-        }
-        Overrides {
-          Name: "cs:MoveSpeed"
-          Float: 600
-        }
-        Overrides {
-          Name: "cs:CurrentHealth"
-          Float: 144
-        }
-        Overrides {
-          Name: "cs:Speed"
-          Int: 3
-        }
-        Overrides {
-          Name: "cs:STR"
-          Int: 14
-        }
-        Overrides {
-          Name: "cs:DEX"
-          Int: 18
-        }
-        Overrides {
-          Name: "cs:INT"
-          Int: 20
-        }
-        Overrides {
-          Name: "cs:WIS"
-          Int: 15
-        }
-        Overrides {
-          Name: "cs:CHA"
-          Int: 18
-        }
-        Overrides {
-          Name: "cs:CON"
-          Int: 18
-        }
-        Overrides {
-          Name: "cs:AC"
-          Int: 16
-        }
-        Overrides {
-          Name: "cs:BonusToHit"
-          Int: 9
-        }
-        Overrides {
-          Name: "cs:MobType"
-          String: "Strahd"
         }
       }
     }
@@ -207,6 +706,12 @@ Objects {
   }
   ParentId: 3757148221842553656
   ChildIds: 15676300473390880167
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:FinalBoss"
+      Bool: true
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -318,6 +823,10 @@ Objects {
     Overrides {
       Name: "cs:introSpeech"
       String: "You shivers as your eyes come upon the creature, you\'re in danger"
+    }
+    Overrides {
+      Name: "cs:FinalBoss"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -1652,11 +2161,11 @@ Objects {
     Location {
     }
     Rotation {
-      Yaw: -179.999954
+      Yaw: -152.232819
     }
     Scale {
-      X: 25.3110676
-      Y: 22.5727
+      X: 27.6644363
+      Y: 36.4251175
       Z: 6.24222136
     }
   }

@@ -15,6 +15,14 @@ end
 local carrying=false;
 local originalStance=nil
 local originalY=0
+local carried=nil
+
+function Tick(deltaTime)
+
+	if carrying then
+		carried:SetWorldRotation(Rotation.New(0,0,0))
+	end
+end
 function OnInteracted(whichTrigger, other)
 	if other:IsA("Player") and not carrying then
 		
@@ -22,10 +30,12 @@ function OnInteracted(whichTrigger, other)
 		originalStance=other.animationStance
 		other.animationStance="unarmed_carry_object_heavy"
 		whichTrigger.parent.collision=Collision.FORCE_OFF
-		whichTrigger.parent:AttachToPlayer(other,"righthand")
+		whichTrigger.parent:AttachToPlayer(other,"right_hand")
 		originalY=whichTrigger.parent:GetWorldPosition().z
-		whichTrigger.parent:SetPosition(Vector3.New(80,0,120))
+		whichTrigger.parent:SetPosition(Vector3.New(130,0,120))
+		whichTrigger.parent:SetWorldRotation(Rotation.New(0,0,0))
 		carrying=true
+		carried=whichTrigger.parent
 		whichTrigger.interactionLabel="Drop"
 	else if other:IsA("Player") then
 		local tmpPos=whichTrigger.parent:GetWorldPosition()
@@ -37,6 +47,7 @@ function OnInteracted(whichTrigger, other)
 		Task.Wait(0.2)
 		whichTrigger.parent.collision=Collision.FORCE_ON
 		carrying=false
+		carried=nil
 	end
 end
 

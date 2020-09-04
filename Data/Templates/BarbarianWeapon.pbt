@@ -21,6 +21,7 @@
         ChildIds: 4516292792756104505
         ChildIds: 4999321100341044062
         ChildIds: 776813545924892702
+        ChildIds: 11238362738513307760
         UnregisteredParameters {
           Overrides {
             Name: "cs:EquipmentStance"
@@ -869,6 +870,60 @@
         Script {
           ScriptAsset {
             Id: 9835685409538525721
+          }
+        }
+      }
+      Objects {
+        Id: 11238362738513307760
+        Name: "Point Light"
+        Transform {
+          Location {
+            X: 5.375
+            Z: 68.8828125
+          }
+          Rotation {
+            Pitch: -10.2883301
+            Yaw: -22.9091187
+            Roll: -22.9096069
+          }
+          Scale {
+            X: 0.7
+            Y: 0.7
+            Z: 0.7
+          }
+        }
+        ParentId: 10258044214500017752
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Light {
+          Intensity: 9.27479744
+          Color {
+            R: 1
+            G: 0.473245025
+            B: 0.18
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 6000
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
           }
         }
       }

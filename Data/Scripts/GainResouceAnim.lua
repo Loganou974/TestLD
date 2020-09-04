@@ -31,6 +31,7 @@ function OnResourceChanged(player,resourceid,newvalue)
         startTime=time();started=true;
         oldValue=player:GetResource("dice")
     end
+    if(resourceid=="dice") then oldValue=newvalue end
 end    
 function OnPlayerJoined(player)
     oldValue=player:GetResource("dice")
