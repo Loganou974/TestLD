@@ -8,7 +8,28 @@
     ParameterOverrides {
       Overrides {
         Name: "wind_weight"
-        Float: 0
+        Float: 1
+      }
+      Overrides {
+        Name: "color"
+        Color {
+          R: 0.363
+          G: 0.363
+          B: 0.363
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "color_accent"
+        Color {
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "SSS"
+        Color {
+          A: 1
+        }
       }
     }
     Assets {
