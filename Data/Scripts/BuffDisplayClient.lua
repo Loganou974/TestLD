@@ -21,7 +21,7 @@ end
 local buffs={}
 local nbBuff=0
 function OnResourceChanged(player,resourceid,newvalue)
-    
+    refreshDisplay()
     if(resourceid=="WIS") then
         if modifier(newvalue) >0 then
             if buffs["KeenSense"]==nil then
@@ -37,6 +37,12 @@ function OnResourceChanged(player,resourceid,newvalue)
                local turnText=buff:FindDescendantByName("TurnText")
                turnText.text="".. modifier(newvalue)
             end
+        else
+            local tmp=buffs["KeenSense"]
+            if tmp ==nil then return end
+            buffs["KeenSense"]=nil
+            tmp:Destroy()
+            nbBuff=nbBuff-1
         end
     end
     if(resourceid=="CHA") then
@@ -54,7 +60,13 @@ function OnResourceChanged(player,resourceid,newvalue)
                local turnText=buff:FindDescendantByName("TurnText")
                turnText.text="".. modifier(newvalue)
             end
-        end
+        else
+            local tmp=buffs["Charming"]
+            if tmp ==nil then return end
+                        buffs["Charming"]=nil
+            tmp:Destroy()
+            nbBuff=nbBuff-1
+           end
     end
 
     if(resourceid=="CON") then
@@ -72,7 +84,13 @@ function OnResourceChanged(player,resourceid,newvalue)
                local turnText=buff:FindDescendantByName("TurnText")
                turnText.text="".. modifier(newvalue)
             end
-        end
+        else
+            local tmp=buffs["Endurant"]
+            if tmp ==nil then return end
+            buffs["Endurant"]=nil
+            tmp:Destroy()
+            nbBuff=nbBuff-1
+           end
     end
 
       
@@ -87,11 +105,17 @@ function OnResourceChanged(player,resourceid,newvalue)
                buffs["Smart"]=buff
                nbBuff=nbBuff+1
             else
-               local buff=buffs["KeenSense"]
+               local buff=buffs["Smart"]
                local turnText=buff:FindDescendantByName("TurnText")
                turnText.text="".. modifier(newvalue)
             end
-        end
+        else
+            local tmp=buffs["Smart"]
+            if tmp ==nil then return end
+            buffs["Smart"]=nil
+            tmp:Destroy()
+            nbBuff=nbBuff-1
+           end
     end
 
     if(resourceid=="STR") then
@@ -109,7 +133,13 @@ function OnResourceChanged(player,resourceid,newvalue)
                local turnText=buff:FindDescendantByName("TurnText")
                turnText.text="".. modifier(newvalue)
             end
-        end
+        else
+            local tmp=buffs["Athletics"]
+            if tmp ==nil then return end
+            buffs["Athletics"]=nil
+            tmp:Destroy()
+            nbBuff=nbBuff-1
+           end
     end
     if(resourceid=="DEX") then
         if modifier(newvalue) >0 then
@@ -126,7 +156,15 @@ function OnResourceChanged(player,resourceid,newvalue)
                local turnText=buff:FindDescendantByName("TurnText")
                turnText.text="".. modifier(newvalue)
             end
-        end
+        else
+            local tmp=buffs["Acrobatics"]
+
+            if tmp ==nil then return end
+            buffs["Acrobatics"]=nil
+            tmp:Destroy()
+            nbBuff=nbBuff-1
+           -- refreshDisplay()
+           end
     end
     if(resourceid=="Inspired") then
         if newvalue >0 then
@@ -140,12 +178,14 @@ function OnResourceChanged(player,resourceid,newvalue)
             nbBuff=nbBuff+1
          else
             local buff=buffs["Inspired"]
+          
             local turnText=buff:FindDescendantByName("TurnText")
             turnText.text=""..newvalue
          end
              --buffs[#buffs+1].y=0
         else
          local tmp=buffs["Inspired"]
+         if tmp ==nil then return end
          buffs["Inspired"]=nil
          tmp:Destroy()
          nbBuff=nbBuff-1
@@ -164,6 +204,7 @@ function OnResourceChanged(player,resourceid,newvalue)
             nbBuff=nbBuff+1
          else
             local buff=buffs["Reckless"]
+            
             local turnText=buff:FindDescendantByName("TurnText")
             turnText.text=""..newvalue
          end
@@ -188,6 +229,7 @@ function OnResourceChanged(player,resourceid,newvalue)
              --buffs[#buffs+1].y=0
         else
          local tmp=buffs["Enraged"]
+         if tmp ==nil then return end
          buffs["Enraged"]=nil
          tmp:Destroy()
          nbBuff=nbBuff-1
@@ -196,6 +238,17 @@ function OnResourceChanged(player,resourceid,newvalue)
     
 end 
 
+function refreshDisplay()
+    local i=0
+    for k,v in pairs(buffs) do
+        if v ~=nil then 
+         local x=i*50
+         v.x=x
+        end
+        i=i+1
+    end
+
+end
 
 function OnPlayerJoined(player)
    -- oldValue=player:GetResource("dice")

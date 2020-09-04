@@ -438,6 +438,7 @@ function levelup(player,level)
     if(playerData.class.name=="Barbarian") then
         player.maxHitPoints=player.maxHitPoints+math.random(12)+modifier(player:GetResource("CON"))
         player.hitPoints=player.maxHitPoints
+        
     end
     Task.Wait(0.2)
     Events.BroadcastToPlayer(player,"LEVEL_UP")
@@ -559,22 +560,23 @@ function OnResourceChanged(player,resourceid,newvalue)
        
     end
         if(resourceid=="STR") then
-            player.jumpVelocity=math.max(400*(modifier(player:GetResource("STR"))+1),200)
+            player.jumpVelocity=math.max(400*(modifier(player:GetResource("STR"))+1),700)
             player.jumpVelocity=math.min(1200,player.jumpVelocity)
         end
 
         if(resourceid=="DEX") then
             local newDex=modifier(newvalue)
             player.maxJumpCount=math.max(1,newDex+1)
+            player.maxJumpCount=math.min(3,player.maxJumpCount)
             local newCon=modifier(player:GetResource("CON"))
             if(playerData.class.name=="Barbarian") then
              
              
-             player:SetResource("AC",(10+newDex+newCon))
+             player:SetResource("AC",(10+newDex*2+newCon))
 
             else
 
-                player:SetResource("AC",(10+newDex))
+                player:SetResource("AC",(10+newDex*2))
             end
             
         end

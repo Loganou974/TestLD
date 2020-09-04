@@ -342,7 +342,7 @@ function DropRewards(killer)
 		local otherplayers= Game.GetPlayers()
 		local mult=5-#otherplayers
         for k,p in pairs(otherplayers) do
-            p:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT*mult)
+            p:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT*mult*10)
         end
 		
 	end
