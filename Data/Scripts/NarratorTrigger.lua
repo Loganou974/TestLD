@@ -64,11 +64,11 @@ end
 function speakToPlayer(message,player)
 	
 
-	Events.BroadcastToPlayer(player,"LongBannerMessage",message,3,Color.WHITE,{})
+	Events.BroadcastToPlayer(player,"LongBannerMessage",message,5,Color.WHITE,{})
 end
 
 function speakToPlayers(message)
-	Events.BroadcastToAllPlayers("LongBannerMessage",message,3,Color.WHITE,{})
+	Events.BroadcastToAllPlayers("LongBannerMessage",message,5,Color.WHITE,{})
 end
 function OnEndOverlap(whichTrigger, other)
 	if other:IsA("Player") and active then
