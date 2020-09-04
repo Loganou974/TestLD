@@ -10,6 +10,7 @@ local BuffContainerKeenSense = script:GetCustomProperty("BuffContainerKeenSense"
 local BuffContainerSmart = script:GetCustomProperty("BuffContainerSmart")
 local BuffContainerEndurant = script:GetCustomProperty("BuffContainerEndurant")
 local BuffContainerCharming = script:GetCustomProperty("BuffContainerCharming")
+local LOCAL=Game.GetLocalPlayer()
 
 
 function modifier(value)
@@ -197,7 +198,8 @@ end
 
 
 function OnPlayerJoined(player)
-    oldValue=player:GetResource("dice")
-    player.resourceChangedEvent:Connect(OnResourceChanged)
+   -- oldValue=player:GetResource("dice")
+   -- player.resourceChangedEvent:Connect(OnResourceChanged)
 end
-Game.playerJoinedEvent:Connect(OnPlayerJoined)
+--Game.playerJoinedEvent:Connect(OnPlayerJoined)
+LOCAL.resourceChangedEvent:Connect(OnResourceChanged)
