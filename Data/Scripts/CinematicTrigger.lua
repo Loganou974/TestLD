@@ -9,7 +9,7 @@ function OnBeginOverlap(whichTrigger, other)
     if other:IsA("Player") then
         if propTransient then script.parent.collision=Collision.FORCE_OFF end
      if propSound~=nil then  World.SpawnAsset(propSound,{position=script.parent:GetWorldPosition()}) end
-        if propAllPlayers then
+        if propAllPlayers==true then
             
             cinematicForAll(propOnEnterCinematic)
         else

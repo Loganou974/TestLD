@@ -456,7 +456,7 @@ function choixRace(player)
     
     if race.size =="S" then
         local currentScale = player:GetWorldScale()
-            local newScale = currentScale *(1+ math.random(0,1)/3)
+            local newScale = currentScale *(0.5+ math.random(0,1)/3)
             if newScale.x > 5 then newScale = Vector3.New(1.0) end
 
             player:SetWorldScale(newScale)
@@ -464,7 +464,7 @@ function choixRace(player)
 
     if race.size =="L" then
         local currentScale = player:GetWorldScale()
-            local newScale = currentScale * math.random(1,1.2)
+            local newScale = currentScale  *(1+ math.random(0,1)/3)
             if newScale.x > 5 then newScale = Vector3.New(1.0) end
 
             player:SetWorldScale(newScale)
@@ -557,7 +557,8 @@ function OnResourceChanged(player,resourceid,newvalue)
        
     end
         if(resourceid=="STR") then
-            player.jumpVelocity=math.max(400*(modifier(player:GetResource("STR"))+1),100)
+            player.jumpVelocity=math.max(400*(modifier(player:GetResource("STR"))+1),200)
+            player.jumpVelocity=math.min(1200,player.jumpVelocity)
         end
 
         if(resourceid=="DEX") then
