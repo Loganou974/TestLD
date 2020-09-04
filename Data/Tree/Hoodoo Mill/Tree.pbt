@@ -1,6 +1,76 @@
 ﻿Name: "Hoodoo Mill"
 RootId: 7031988295180753614
 Objects {
+  Id: 10256313907269709100
+  Name: "Fantasy Castle Stairs 01 - 150cm"
+  Transform {
+    Location {
+      X: 1173.74792
+      Y: 1940.13477
+      Z: 23.2753906
+    }
+    Rotation {
+      Yaw: 8.11178112
+    }
+    Scale {
+      X: 0.90157479
+      Y: 0.90157479
+      Z: 0.90157479
+    }
+  }
+  ParentId: 7031988295180753614
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 1789893508489549274
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.762000084
+        G: 0.24190405
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.0740001202
+        G: 0.0293651205
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9842143421296066252
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 1644666331897074297
+    SubobjectId: 1449674443184092639
+    InstanceId: 1672567905579778153
+    TemplateId: 9323984862848679036
+  }
+}
+Objects {
   Id: 9043491111127152845
   Name: "Bush 01"
   Transform {
