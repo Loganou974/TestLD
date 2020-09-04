@@ -1,66 +1,9 @@
 ﻿Entries {
   Key {
-    StringVar: "class"
-  }
-  SimpleValue {
-    Table {
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Novice"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
     StringVar: "race"
   }
   SimpleValue {
     Table {
-      Entries {
-        Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 25
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Rock Gnome"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes."
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "size"
-        }
-        SimpleValue {
-          StringVar: "S"
-        }
-      }
       Entries {
         Key {
           StringVar: "bonus"
@@ -96,7 +39,7 @@ Entries {
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -124,6 +67,63 @@ Entries {
               }
             }
           }
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "size"
+        }
+        SimpleValue {
+          StringVar: "S"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Gnome"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 25
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: " Your base walking speed is 25 feet."
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "class"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Novice"
         }
       }
     }
