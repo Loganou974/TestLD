@@ -3480,7 +3480,6 @@
           }
         }
         ParentId: 5748307072170281525
-        ChildIds: 18172318553179814645
         UnregisteredParameters {
           Overrides {
             Name: "bp:Burst"
@@ -3518,44 +3517,6 @@
           }
           Vfx {
             AutoPlay: true
-          }
-        }
-      }
-      Objects {
-        Id: 18172318553179814645
-        Name: "FollowPlayer"
-        Transform {
-          Location {
-            Y: 684.5
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 11564011019697691657
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:offsetZ"
-            Int: 100
-          }
-          Overrides {
-            Name: "cs:active"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 7176726157606569124
           }
         }
       }

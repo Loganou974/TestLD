@@ -359,7 +359,7 @@ local waitTime=1
 local gameplay=World.FindObjectById("83D47359D7CB64F1:Gameplay")
 function OnPlayerJoined(player)
     
-    Task.Wait(0.5)
+    Task.Wait(1)
     player.maxJumpCount=1
     player.jumpVelocity=300
    -- print("allo? "..player.animationStance)
