@@ -32,7 +32,7 @@ function OnEndOverlap(whichTrigger, other)
         if propTransient then trigger.collision=Collision.FORCE_OFF end
         if propAllPlayers then
             
-            cinematicForAll(propOnLeaveCinematic)
+            cinematicForAll(propOnLeaveCinematic,other)
         else
             cinematicForOne(other,propOnLeaveCinematic)
 
@@ -45,7 +45,7 @@ function OnInteracted(whichTrigger, other)
         if propTransient then trigger.collision=Collision.FORCE_OFF end
         if propAllPlayers then
             
-            cinematicForAll(propOnInteractCinematic)
+            cinematicForAll(propOnInteractCinematic,other)
         else
             cinematicForOne(other,propOnInteractCinematic)
 

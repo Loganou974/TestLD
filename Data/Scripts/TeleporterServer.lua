@@ -66,6 +66,7 @@ function OnBeginOverlap(trigger, other)
 	end
 
 	other:SetWorldPosition(destinationPosition)
+	_G.LastCheckPoint=destinationPosition
 
 	Events.BroadcastToAllPlayers("PlayerTeleport_Internal", COMPONENT_ROOT:GetWorldPosition(), destinationPosition)
 
