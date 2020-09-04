@@ -34,6 +34,30 @@
           Id: 7460255129682767979
         }
       }
+      Overrides {
+        Name: "cs:BuffContainerKeenSense"
+        AssetReference {
+          Id: 8163372720689514729
+        }
+      }
+      Overrides {
+        Name: "cs:BuffContainerSmart"
+        AssetReference {
+          Id: 8873590264757511395
+        }
+      }
+      Overrides {
+        Name: "cs:BuffContainerEndurant"
+        AssetReference {
+          Id: 15299430199254757129
+        }
+      }
+      Overrides {
+        Name: "cs:BuffContainerCharming"
+        AssetReference {
+          Id: 4491437129729311929
+        }
+      }
     }
   }
   SerializationVersion: 62

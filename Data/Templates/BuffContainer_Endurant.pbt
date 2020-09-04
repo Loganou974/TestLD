@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 736486886789853640
-  Name: "BuffContainer_Rage"
+  Id: 15299430199254757129
+  Name: "BuffContainer_Endurant"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 4869455760592547147
+      RootId: 7133198327434234835
       Objects {
-        Id: 4869455760592547147
-        Name: "BuffContainer_Rage"
+        Id: 7133198327434234835
+        Name: "BuffContainer_Endurant"
         Transform {
           Scale {
             X: 1
@@ -16,8 +16,8 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 3237728462728810871
-        ChildIds: 2391236596056696963
+        ChildIds: 18190987156483260410
+        ChildIds: 15867473159727806966
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -60,7 +60,7 @@
         }
       }
       Objects {
-        Id: 3237728462728810871
+        Id: 18190987156483260410
         Name: "UI Image"
         Transform {
           Location {
@@ -74,9 +74,9 @@
             Z: 1
           }
         }
-        ParentId: 4869455760592547147
-        ChildIds: 16416061886021934899
-        ChildIds: 11526069380550938723
+        ParentId: 7133198327434234835
+        ChildIds: 9005569524273179336
+        ChildIds: 14911506185775341084
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -118,7 +118,7 @@
         }
       }
       Objects {
-        Id: 16416061886021934899
+        Id: 9005569524273179336
         Name: "GainResourceTemplateDice"
         Transform {
           Location {
@@ -132,8 +132,8 @@
             Z: 1
           }
         }
-        ParentId: 3237728462728810871
-        ChildIds: 12200431824919385427
+        ParentId: 18190987156483260410
+        ChildIds: 371635462788064766
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -144,7 +144,7 @@
         }
       }
       Objects {
-        Id: 12200431824919385427
+        Id: 371635462788064766
         Name: "UI Image"
         Transform {
           Location {
@@ -157,8 +157,8 @@
             Z: 1
           }
         }
-        ParentId: 16416061886021934899
-        ChildIds: 5290310810540708743
+        ParentId: 9005569524273179336
+        ChildIds: 1698693241829290368
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -201,7 +201,7 @@
         }
       }
       Objects {
-        Id: 5290310810540708743
+        Id: 1698693241829290368
         Name: "GainResouceAnim"
         Transform {
           Location {
@@ -214,7 +214,7 @@
             Z: 1
           }
         }
-        ParentId: 12200431824919385427
+        ParentId: 371635462788064766
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -228,7 +228,7 @@
         }
       }
       Objects {
-        Id: 11526069380550938723
+        Id: 14911506185775341084
         Name: "TurnText"
         Transform {
           Location {
@@ -245,7 +245,7 @@
             Z: 1
           }
         }
-        ParentId: 3237728462728810871
+        ParentId: 18190987156483260410
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -292,7 +292,7 @@
         }
       }
       Objects {
-        Id: 2391236596056696963
+        Id: 15867473159727806966
         Name: "RageIcon"
         Transform {
           Location {
@@ -308,8 +308,8 @@
             Z: 1
           }
         }
-        ParentId: 4869455760592547147
-        ChildIds: 14580973478141493952
+        ParentId: 7133198327434234835
+        ChildIds: 6942674973606525873
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -344,7 +344,7 @@
         }
       }
       Objects {
-        Id: 14580973478141493952
+        Id: 6942674973606525873
         Name: "UI Button"
         Transform {
           Location {
@@ -361,9 +361,9 @@
             Z: 1
           }
         }
-        ParentId: 2391236596056696963
-        ChildIds: 17652089181431548433
-        ChildIds: 16439244356263512112
+        ParentId: 15867473159727806966
+        ChildIds: 14596497938553377506
+        ChildIds: 14649552495243274858
         UnregisteredParameters {
           Overrides {
             Name: "cs:Titre"
@@ -440,7 +440,7 @@
         }
       }
       Objects {
-        Id: 17652089181431548433
+        Id: 14596497938553377506
         Name: "UI Image"
         Transform {
           Location {
@@ -457,7 +457,7 @@
             Z: 1
           }
         }
-        ParentId: 14580973478141493952
+        ParentId: 6942674973606525873
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -477,7 +477,7 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 17148810838103658535
+              Id: 16327934883181731081
             }
             Color {
               R: 1
@@ -503,7 +503,7 @@
         }
       }
       Objects {
-        Id: 16439244356263512112
+        Id: 14649552495243274858
         Name: "TooltipedTemplate"
         Transform {
           Rotation {
@@ -515,8 +515,8 @@
             Z: 1
           }
         }
-        ParentId: 14580973478141493952
-        ChildIds: 13526807766735459855
+        ParentId: 6942674973606525873
+        ChildIds: 6810229014597700946
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -528,7 +528,7 @@
         }
       }
       Objects {
-        Id: 13526807766735459855
+        Id: 6810229014597700946
         Name: "Tooltipped"
         Transform {
           Location {
@@ -542,7 +542,7 @@
             Z: 1
           }
         }
-        ParentId: 16439244356263512112
+        ParentId: 14649552495243274858
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -581,6 +581,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_icon_Dragon"
+      }
+    }
+    Assets {
+      Id: 16327934883181731081
+      Name: "Icon Food"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "Icon_Food"
       }
     }
     PrimaryAssetId {

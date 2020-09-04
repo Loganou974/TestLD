@@ -557,12 +557,12 @@ function OnResourceChanged(player,resourceid,newvalue)
        
     end
         if(resourceid=="STR") then
-            player.jumpVelocity=400*(modifier(player:GetResource("STR"))+1)+100
+            player.jumpVelocity=math.max(400*(modifier(player:GetResource("STR"))+1),100)
         end
 
         if(resourceid=="DEX") then
             local newDex=modifier(newvalue)
-            player.maxJumpCount=newDex+1
+            player.maxJumpCount=math.max(1,newDex+1)
             local newCon=modifier(player:GetResource("CON"))
             if(playerData.class.name=="Barbarian") then
              
