@@ -1,7 +1,7 @@
 ﻿Name: "Layer 3"
-RootId: 4453636334157309378
+RootId: 14505821396430365560
 Objects {
-  Id: 8229417149063488526
+  Id: 9706869465616605876
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -18,7 +18,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 4453636334157309378
+  ParentId: 14505821396430365560
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -42,14 +42,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8229417149063488526
+    SelfId: 9706869465616605876
     SubobjectId: 8140681986208023464
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10377997160917695529
+  Id: 7243886605562608275
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -66,7 +66,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 4453636334157309378
+  ParentId: 14505821396430365560
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -90,14 +90,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10377997160917695529
+    SelfId: 7243886605562608275
     SubobjectId: 10577632845620370319
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 18000039292692761029
+  Id: 958568858996739967
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -114,7 +114,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 4453636334157309378
+  ParentId: 14505821396430365560
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -138,14 +138,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18000039292692761029
+    SelfId: 958568858996739967
     SubobjectId: 18086944524100218467
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11663983252190647187
+  Id: 6151833433911579945
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -162,7 +162,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 4453636334157309378
+  ParentId: 14505821396430365560
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -186,14 +186,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11663983252190647187
+    SelfId: 6151833433911579945
     SubobjectId: 11750888209118917685
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3999405060822544086
+  Id: 14051728524087928940
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -210,7 +210,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 4453636334157309378
+  ParentId: 14505821396430365560
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -234,14 +234,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3999405060822544086
+    SelfId: 14051728524087928940
     SubobjectId: 3841005194054470000
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8815917526512373309
+  Id: 10293284099278702727
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -258,7 +258,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 4453636334157309378
+  ParentId: 14505821396430365560
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -282,14 +282,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8815917526512373309
+    SelfId: 10293284099278702727
     SubobjectId: 8688901775616321947
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1793275558866784258
+  Id: 17033607253760087736
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -306,7 +306,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 4453636334157309378
+  ParentId: 14505821396430365560
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -330,14 +330,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1793275558866784258
+    SelfId: 17033607253760087736
     SubobjectId: 1886936739265853348
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8558751211735031218
+  Id: 9387669807709494024
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -354,7 +354,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 4453636334157309378
+  ParentId: 14505821396430365560
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -378,14 +378,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8558751211735031218
+    SelfId: 9387669807709494024
     SubobjectId: 8361929452403243540
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2891054070091665173
+  Id: 15897266097326705071
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -402,7 +402,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 4453636334157309378
+  ParentId: 14505821396430365560
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -426,14 +426,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2891054070091665173
+    SelfId: 15897266097326705071
     SubobjectId: 3085623471434426547
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6659761538122745707
+  Id: 12172456594480267729
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -449,7 +449,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 4453636334157309378
+  ParentId: 14505821396430365560
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -473,14 +473,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6659761538122745707
+    SelfId: 12172456594480267729
     SubobjectId: 6818865161721061581
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17969165779550335519
+  Id: 999293343495484581
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -497,7 +497,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 4453636334157309378
+  ParentId: 14505821396430365560
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -521,14 +521,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17969165779550335519
+    SelfId: 999293343495484581
     SubobjectId: 18127566274048677305
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5407050774966953273
+  Id: 13801506569782944643
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -544,7 +544,7 @@ Objects {
       Z: 1.2
     }
   }
-  ParentId: 4453636334157309378
+  ParentId: 14505821396430365560
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -568,9 +568,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5407050774966953273
+    SelfId: 13801506569782944643
     SubobjectId: 5315642158245593759
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }

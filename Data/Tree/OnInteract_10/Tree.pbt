@@ -1,28 +1,24 @@
 ﻿Name: "OnInteract_10"
-RootId: 8472818487869900873
+RootId: 15065103278687716599
 Objects {
-  Id: 6411195493580011909
-  Name: "Speech1"
+  Id: 7052903118092687796
+  Name: "Speech4"
   Transform {
     Location {
-      X: -73.408
-      Y: 36.6851692
-      Z: -4.49830055
     }
     Rotation {
-      Yaw: 178.355438
     }
     Scale {
-      X: 0.80173254
-      Y: 0.80173254
-      Z: 0.80173254
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 8472818487869900873
+  ParentId: 15065103278687716599
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Before you go, you can hear him moan."
+      String: " Strahd named the valley Barovia, after his deceased father, and was so struck by its scenic beautythat he decided to settle there."
     }
   }
   Collidable_v2 {
@@ -33,38 +29,34 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_13"
+    FilePartitionName: "Speech4_1"
   }
   InstanceHistory {
-    SelfId: 18030036464210208814
-    SubobjectId: 3508267902327890024
-    InstanceId: 16122403184916844978
-    TemplateId: 12287563631168970081
+    SelfId: 7052903118092687796
+    SubobjectId: 10929334145118697640
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5106207748210270705
-  Name: "Speech1"
+  Id: 860653872079894915
+  Name: "Speech3"
   Transform {
     Location {
-      X: -73.408
-      Y: 36.6851692
-      Z: -4.49830055
     }
     Rotation {
-      Yaw: 178.355438
     }
     Scale {
-      X: 0.80173254
-      Y: 0.80173254
-      Z: 0.80173254
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 8472818487869900873
+  ParentId: 15065103278687716599
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "You try to speak with in vain."
+      String: "He and his army cornered the last of these enemies in a remote mountain valley before slaying them all."
     }
   }
   Collidable_v2 {
@@ -75,38 +67,34 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_14"
+    FilePartitionName: "Speech3_1"
   }
   InstanceHistory {
-    SelfId: 18030036464210208814
-    SubobjectId: 3508267902327890024
-    InstanceId: 16122403184916844978
-    TemplateId: 12287563631168970081
+    SelfId: 860653872079894915
+    SubobjectId: 18283929877215369375
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10073026682889629915
-  Name: "Speech1"
+  Id: 5655414117784518373
+  Name: "Speech2"
   Transform {
     Location {
-      X: -73.408
-      Y: 36.6851692
-      Z: -4.49830055
     }
     Rotation {
-      Yaw: 178.355438
     }
     Scale {
-      X: 0.80173254
-      Y: 0.80173254
-      Z: 0.80173254
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 8472818487869900873
+  ParentId: 15065103278687716599
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "He looks at you, but there is no spark in his eyes."
+      String: "After the death of bis father,King Barov, Strahd waged long, bloody wars against his family\'s enemies."
     }
   }
   Collidable_v2 {
@@ -117,38 +105,34 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_15"
+    FilePartitionName: "Speech2_4"
   }
   InstanceHistory {
-    SelfId: 16260886817252354877
-    SubobjectId: 3112576521103401851
-    InstanceId: 16122403184916844978
-    TemplateId: 12287563631168970081
+    SelfId: 5655414117784518373
+    SubobjectId: 13272152451797377017
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15535076392549879088
+  Id: 11045671817982081287
   Name: "Speech1"
   Transform {
     Location {
-      X: -73.408
-      Y: 36.6851692
-      Z: -4.49830055
     }
     Rotation {
-      Yaw: 178.355438
     }
     Scale {
-      X: 0.80173254
-      Y: 0.80173254
-      Z: 0.80173254
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 8472818487869900873
+  ParentId: 15065103278687716599
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "You look the villager in the eyes."
+      String: "Rudolph explains that Strahd von Zarovich was a count, a prince, asoldier, and a conqueror."
     }
   }
   Collidable_v2 {
@@ -159,12 +143,12 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_16"
+    FilePartitionName: "Speech1_9"
   }
   InstanceHistory {
-    SelfId: 8011791814024859842
-    SubobjectId: 11941236714437859460
-    InstanceId: 16122403184916844978
-    TemplateId: 12287563631168970081
+    SelfId: 11045671817982081287
+    SubobjectId: 8000119746222446619
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
   }
 }

@@ -1,7 +1,7 @@
 ﻿Name: "OnEnter_21"
-RootId: 16297688716898737107
+RootId: 7661151547496255440
 Objects {
-  Id: 1468327024494981697
+  Id: 10154152484848250758
   Name: "Speech1"
   Transform {
     Location {
@@ -14,13 +14,14 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16297688716898737107
+  ParentId: 7661151547496255440
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Coucou $ name"
+      String: "You wake up in a campfire near your home town."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -29,12 +30,12 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_30"
+    FilePartitionName: "Speech1_27"
   }
   InstanceHistory {
-    SelfId: 1468327024494981697
-    SubobjectId: 8987315099311083304
-    InstanceId: 9209928760912629969
-    TemplateId: 4980364898667106966
+    SelfId: 10154152484848250758
+    SubobjectId: 5076289398677039040
+    InstanceId: 16122403184916844978
+    TemplateId: 12287563631168970081
   }
 }

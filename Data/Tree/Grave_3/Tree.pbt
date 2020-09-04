@@ -1,7 +1,7 @@
 ﻿Name: "Grave_3"
-RootId: 9004745413096942100
+RootId: 9833100902620114094
 Objects {
-  Id: 18081834584434952999
+  Id: 1040030052346514845
   Name: "Gem - Round Polished"
   Transform {
     Location {
@@ -16,7 +16,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9004745413096942100
+  ParentId: 9833100902620114094
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -46,14 +46,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18081834584434952999
+    SelfId: 1040030052346514845
     SubobjectId: 17880087295808793729
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 673014741466216550
+  Id: 18290945772721012444
   Name: "Door, Rounded Top"
   Transform {
     Location {
@@ -69,7 +69,7 @@ Objects {
       Z: 0.6
     }
   }
-  ParentId: 9004745413096942100
+  ParentId: 9833100902620114094
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -105,9 +105,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 673014741466216550
+    SelfId: 18290945772721012444
     SubobjectId: 836059014164373440
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }

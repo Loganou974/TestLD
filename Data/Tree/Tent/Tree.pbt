@@ -1,7 +1,7 @@
 ﻿Name: "Tent"
-RootId: 8830143596014792680
+RootId: 10235417253610842450
 Objects {
-  Id: 10498613005610031548
+  Id: 7292429463020150534
   Name: "Back Canopy"
   Transform {
     Location {
@@ -19,7 +19,7 @@ Objects {
       Z: 0.179316193
     }
   }
-  ParentId: 8830143596014792680
+  ParentId: 10235417253610842450
   UnregisteredParameters {
     Overrides {
       Name: "ma:Street_CenterStripe:id"
@@ -59,14 +59,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10498613005610031548
+    SelfId: 7292429463020150534
     SubobjectId: 10628442956179750426
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 287075487286945933
+  Id: 17832737955432885815
   Name: "Top Canopy"
   Transform {
     Location {
@@ -84,7 +84,7 @@ Objects {
       Z: 0.179316193
     }
   }
-  ParentId: 8830143596014792680
+  ParentId: 10235417253610842450
   UnregisteredParameters {
     Overrides {
       Name: "ma:Street_CenterStripe:id"
@@ -124,14 +124,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 287075487286945933
+    SelfId: 17832737955432885815
     SubobjectId: 87439535893630763
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6434184643865296173
+  Id: 12523289874848758679
   Name: "Horizontal Support"
   Transform {
     Location {
@@ -147,7 +147,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 8830143596014792680
+  ParentId: 10235417253610842450
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_LowerTrimInner:id"
@@ -181,14 +181,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6434184643865296173
+    SelfId: 12523289874848758679
     SubobjectId: 6595399269525166731
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 927953757660969861
+  Id: 17897788792603475263
   Name: "Horizontal Support"
   Transform {
     Location {
@@ -204,7 +204,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 8830143596014792680
+  ParentId: 10235417253610842450
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_LowerTrimInner:id"
@@ -238,14 +238,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 927953757660969861
+    SelfId: 17897788792603475263
     SubobjectId: 1021615007351757859
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10699081922371628711
+  Id: 6988389529476769821
   Name: "Support"
   Transform {
     Location {
@@ -262,7 +262,7 @@ Objects {
       Z: 5.3
     }
   }
-  ParentId: 8830143596014792680
+  ParentId: 10235417253610842450
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -304,14 +304,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10699081922371628711
+    SelfId: 6988389529476769821
     SubobjectId: 10860296616182909185
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15289770675209734413
+  Id: 2355756961381322679
   Name: "Support"
   Transform {
     Location {
@@ -328,7 +328,7 @@ Objects {
       Z: 5.3
     }
   }
-  ParentId: 8830143596014792680
+  ParentId: 10235417253610842450
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -370,14 +370,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15289770675209734413
+    SelfId: 2355756961381322679
     SubobjectId: 15491658151638970027
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12755520857112296003
+  Id: 5009638521515130105
   Name: "Support"
   Transform {
     Location {
@@ -394,7 +394,7 @@ Objects {
       Z: 5.3
     }
   }
-  ParentId: 8830143596014792680
+  ParentId: 10235417253610842450
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -436,14 +436,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12755520857112296003
+    SelfId: 5009638521515130105
     SubobjectId: 12955157152069426661
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15829258838615601631
+  Id: 3399560321443247973
   Name: "Support"
   Transform {
     Location {
@@ -460,7 +460,7 @@ Objects {
       Z: 5.3
     }
   }
-  ParentId: 8830143596014792680
+  ParentId: 10235417253610842450
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Bevel:id"
@@ -502,9 +502,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15829258838615601631
+    SelfId: 3399560321443247973
     SubobjectId: 15663963031884469881
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }

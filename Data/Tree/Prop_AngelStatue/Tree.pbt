@@ -1,7 +1,7 @@
 ﻿Name: "Prop_AngelStatue"
-RootId: 5013015748027368542
+RootId: 12758898205494231780
 Objects {
-  Id: 8003569140950301029
+  Id: 11210333209010700255
   Name: "AngelStatueScaled"
   Transform {
     Location {
@@ -17,13 +17,13 @@ Objects {
       Z: 0.42274797
     }
   }
-  ParentId: 5013015748027368542
-  ChildIds: 6367114949138922510
-  ChildIds: 158188966043651181
-  ChildIds: 15076661620072700566
-  ChildIds: 11706854498482230108
-  ChildIds: 4268385392897700642
-  ChildIds: 8074245466135104660
+  ParentId: 12758898205494231780
+  ChildIds: 12456376430605318836
+  ChildIds: 17776685285081156311
+  ChildIds: 2718615956945689644
+  ChildIds: 6266305016025421286
+  ChildIds: 14969156970293245336
+  ChildIds: 9551011567710800430
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -36,14 +36,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 8003569140950301029
+    SelfId: 11210333209010700255
     SubobjectId: 7917086061412015811
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8074245466135104660
+  Id: 9551011567710800430
   Name: "MossAndVines"
   Transform {
     Location {
@@ -59,13 +59,13 @@ Objects {
       Z: 2.36547565
     }
   }
-  ParentId: 8003569140950301029
-  ChildIds: 5181401810391665448
-  ChildIds: 3121248593638338444
-  ChildIds: 9693368570122950956
-  ChildIds: 12799641791614977149
-  ChildIds: 10027965520345520575
-  ChildIds: 6722735191672848272
+  ParentId: 11210333209010700255
+  ChildIds: 12927987817584266642
+  ChildIds: 16127845588833544502
+  ChildIds: 8215896444643270550
+  ChildIds: 4980998191046623943
+  ChildIds: 9199451682927894277
+  ChildIds: 12234746488968411434
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -78,14 +78,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 8074245466135104660
+    SelfId: 9551011567710800430
     SubobjectId: 8268673864104192818
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6722735191672848272
+  Id: 12234746488968411434
   Name: "Plane"
   Transform {
     Location {
@@ -104,7 +104,7 @@ Objects {
       Z: 0.37042293
     }
   }
-  ParentId: 8074245466135104660
+  ParentId: 9551011567710800430
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -138,14 +138,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6722735191672848272
+    SelfId: 12234746488968411434
     SubobjectId: 6883387408610187318
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10027965520345520575
+  Id: 9199451682927894277
   Name: "Liquid Decal"
   Transform {
     Location {
@@ -164,7 +164,7 @@ Objects {
       Z: 0.624357104
     }
   }
-  ParentId: 8074245466135104660
+  ParentId: 9551011567710800430
   UnregisteredParameters {
     Overrides {
       Name: "bp:Type"
@@ -208,14 +208,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10027965520345520575
+    SelfId: 9199451682927894277
     SubobjectId: 9936979185349787161
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12799641791614977149
+  Id: 4980998191046623943
   Name: "Plane"
   Transform {
     Location {
@@ -234,7 +234,7 @@ Objects {
       Z: 0.450062573
     }
   }
-  ParentId: 8074245466135104660
+  ParentId: 9551011567710800430
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -268,14 +268,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12799641791614977149
+    SelfId: 4980998191046623943
     SubobjectId: 12928768063867888603
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9693368570122950956
+  Id: 8215896444643270550
   Name: "Plane"
   Transform {
     Location {
@@ -294,7 +294,7 @@ Objects {
       Z: 0.450058073
     }
   }
-  ParentId: 8074245466135104660
+  ParentId: 9551011567710800430
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -328,14 +328,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9693368570122950956
+    SelfId: 8215896444643270550
     SubobjectId: 9532012863379177098
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3121248593638338444
+  Id: 16127845588833544502
   Name: "Plane"
   Transform {
     Location {
@@ -354,7 +354,7 @@ Objects {
       Z: 0.450060368
     }
   }
-  ParentId: 8074245466135104660
+  ParentId: 9551011567710800430
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -388,14 +388,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3121248593638338444
+    SelfId: 16127845588833544502
     SubobjectId: 2998736983841703978
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5181401810391665448
+  Id: 12927987817584266642
   Name: "Decal Moss Patch"
   Transform {
     Location {
@@ -414,7 +414,7 @@ Objects {
       Z: 1.77507007
     }
   }
-  ParentId: 8074245466135104660
+  ParentId: 9551011567710800430
   UnregisteredParameters {
     Overrides {
       Name: "bp:color"
@@ -440,14 +440,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5181401810391665448
+    SelfId: 12927987817584266642
     SubobjectId: 4982468928535014542
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4268385392897700642
+  Id: 14969156970293245336
   Name: "RightSide"
   Transform {
     Location {
@@ -463,9 +463,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8003569140950301029
-  ChildIds: 2140494933811637371
-  ChildIds: 5356793433997688347
+  ParentId: 11210333209010700255
+  ChildIds: 16804594728860101313
+  ChildIds: 13751282059955255457
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -478,14 +478,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 4268385392897700642
+    SelfId: 14969156970293245336
     SubobjectId: 4175146433450873988
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5356793433997688347
+  Id: 13751282059955255457
   Name: "Hand"
   Transform {
     Location {
@@ -504,45 +504,45 @@ Objects {
       Z: 1.68431783
     }
   }
-  ParentId: 4268385392897700642
-  ChildIds: 14815731283111644226
-  ChildIds: 18094695456842087369
-  ChildIds: 10280283053156705384
-  ChildIds: 9742494855245982451
-  ChildIds: 8362280544785364425
-  ChildIds: 17254114227981117411
-  ChildIds: 12153120738804413867
-  ChildIds: 7407160599934785476
-  ChildIds: 706172565421480717
-  ChildIds: 17742313507842260371
-  ChildIds: 10050041326064754874
-  ChildIds: 2787981626649355023
-  ChildIds: 12035240313588754288
-  ChildIds: 18048640451494649033
-  ChildIds: 3556600221961809464
-  ChildIds: 7582414718372061903
-  ChildIds: 8514313763418197756
-  ChildIds: 16241916375284795190
-  ChildIds: 15552093528206777827
-  ChildIds: 13664155771164115901
-  ChildIds: 1152523408252794039
-  ChildIds: 16402728419433785649
-  ChildIds: 3546641308099675236
-  ChildIds: 7882471222968378957
-  ChildIds: 839765607571989681
-  ChildIds: 18376911725718124790
-  ChildIds: 13997361615342547246
-  ChildIds: 8633932984078722924
-  ChildIds: 5107653773586855625
-  ChildIds: 6802295410682988219
-  ChildIds: 16737020227513803543
-  ChildIds: 2245101490267566893
-  ChildIds: 6089228938244874064
-  ChildIds: 10067016552497238281
-  ChildIds: 13200154901258526641
-  ChildIds: 4535035633490711318
-  ChildIds: 8639951216239820807
-  ChildIds: 12442235013806325201
+  ParentId: 14969156970293245336
+  ChildIds: 4115573216033180408
+  ChildIds: 1124840767147507059
+  ChildIds: 8803305724141216466
+  ChildIds: 8337625680766823497
+  ChildIds: 9263254397000971123
+  ChildIds: 2014116647217258841
+  ChildIds: 6641111796794569489
+  ChildIds: 10541515230094545278
+  ChildIds: 18252435246967741879
+  ChildIds: 195947488216841001
+  ChildIds: 9221562535177872896
+  ChildIds: 15146062491060413877
+  ChildIds: 6018139917122347466
+  ChildIds: 1078858192438663795
+  ChildIds: 14256967179078330498
+  ChildIds: 11365782612980573301
+  ChildIds: 9415217385260238918
+  ChildIds: 1578399458695397772
+  ChildIds: 2546042011978079065
+  ChildIds: 5269682520383898887
+  ChildIds: 18122463995951378957
+  ChildIds: 1667259324592304011
+  ChildIds: 14247500709624021726
+  ChildIds: 11089358452965957879
+  ChildIds: 18385394953333056011
+  ChildIds: 830525777176280652
+  ChildIds: 3945688909256079252
+  ChildIds: 9462235851939144150
+  ChildIds: 12854242116168446067
+  ChildIds: 12315060955741519873
+  ChildIds: 2072973225355830701
+  ChildIds: 16981186312702735767
+  ChildIds: 11529268265836304874
+  ChildIds: 9166024970664761267
+  ChildIds: 4877723730566142219
+  ChildIds: 14586833684808455596
+  ChildIds: 9468322100275824317
+  ChildIds: 6353114254091778923
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -555,14 +555,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 5356793433997688347
+    SelfId: 13751282059955255457
     SubobjectId: 5231607537276918205
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12442235013806325201
+  Id: 6353114254091778923
   Name: "Sphere"
   Transform {
     Location {
@@ -581,7 +581,7 @@ Objects {
       Z: 0.190447733
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -611,14 +611,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12442235013806325201
+    SelfId: 6353114254091778923
     SubobjectId: 12566998698802567799
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8639951216239820807
+  Id: 9468322100275824317
   Name: "Sphere"
   Transform {
     Location {
@@ -637,7 +637,7 @@ Objects {
       Z: 0.042308338
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -667,14 +667,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8639951216239820807
+    SelfId: 9468322100275824317
     SubobjectId: 8442566721165584289
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4535035633490711318
+  Id: 14586833684808455596
   Name: "Sphere"
   Transform {
     Location {
@@ -693,7 +693,7 @@ Objects {
       Z: 0.040135365
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -723,14 +723,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4535035633490711318
+    SelfId: 14586833684808455596
     SubobjectId: 4333288062030574768
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13200154901258526641
+  Id: 4877723730566142219
   Name: "Sphere"
   Transform {
     Location {
@@ -749,7 +749,7 @@ Objects {
       Z: 0.042308338
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -779,14 +779,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13200154901258526641
+    SelfId: 4877723730566142219
     SubobjectId: 13113671332092147735
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10067016552497238281
+  Id: 9166024970664761267
   Name: "Sphere"
   Transform {
     Location {
@@ -805,7 +805,7 @@ Objects {
       Z: 0.042308338
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -835,14 +835,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10067016552497238281
+    SelfId: 9166024970664761267
     SubobjectId: 9905801926705247919
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6089228938244874064
+  Id: 11529268265836304874
   Name: "Sphere"
   Transform {
     Location {
@@ -861,7 +861,7 @@ Objects {
       Z: 0.0630807877
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -891,14 +891,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6089228938244874064
+    SelfId: 11529268265836304874
     SubobjectId: 6218355201811380470
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2245101490267566893
+  Id: 16981186312702735767
   Name: "Sphere"
   Transform {
     Location {
@@ -916,7 +916,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -946,14 +946,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2245101490267566893
+    SelfId: 16981186312702735767
     SubobjectId: 2154254990815728779
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16737020227513803543
+  Id: 2072973225355830701
   Name: "Sphere"
   Transform {
     Location {
@@ -971,7 +971,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1001,14 +1001,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16737020227513803543
+    SelfId: 2072973225355830701
     SubobjectId: 16899923977941206193
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6802295410682988219
+  Id: 12315060955741519873
   Name: "Sphere"
   Transform {
     Location {
@@ -1026,7 +1026,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1056,14 +1056,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6802295410682988219
+    SelfId: 12315060955741519873
     SubobjectId: 6677672541125976349
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5107653773586855625
+  Id: 12854242116168446067
   Name: "Sphere"
   Transform {
     Location {
@@ -1081,7 +1081,7 @@ Objects {
       Z: 0.109490521
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1111,14 +1111,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5107653773586855625
+    SelfId: 12854242116168446067
     SubobjectId: 4913225307406061935
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8633932984078722924
+  Id: 9462235851939144150
   Name: "Sphere"
   Transform {
     Location {
@@ -1137,7 +1137,7 @@ Objects {
       Z: 0.097209841
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1167,14 +1167,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8633932984078722924
+    SelfId: 9462235851939144150
     SubobjectId: 8438800280165564618
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13997361615342547246
+  Id: 3945688909256079252
   Name: "Sphere"
   Transform {
     Location {
@@ -1193,7 +1193,7 @@ Objects {
       Z: 0.0529071465
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1223,14 +1223,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13997361615342547246
+    SelfId: 3945688909256079252
     SubobjectId: 13874990476338665096
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 18376911725718124790
+  Id: 830525777176280652
   Name: "Sphere"
   Transform {
     Location {
@@ -1249,7 +1249,7 @@ Objects {
       Z: 0.0529061854
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1279,14 +1279,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18376911725718124790
+    SelfId: 830525777176280652
     SubobjectId: 18287613613111091024
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 839765607571989681
+  Id: 18385394953333056011
   Name: "Sphere"
   Transform {
     Location {
@@ -1305,7 +1305,7 @@ Objects {
       Z: 0.0758107528
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1335,14 +1335,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 839765607571989681
+    SelfId: 18385394953333056011
     SubobjectId: 678409909886059287
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7882471222968378957
+  Id: 11089358452965957879
   Name: "Sphere"
   Transform {
     Location {
@@ -1361,7 +1361,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1391,14 +1391,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7882471222968378957
+    SelfId: 11089358452965957879
     SubobjectId: 8046078454618309099
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3546641308099675236
+  Id: 14247500709624021726
   Name: "Sphere"
   Transform {
     Location {
@@ -1417,7 +1417,7 @@ Objects {
       Z: 0.0672322363
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1447,14 +1447,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3546641308099675236
+    SelfId: 14247500709624021726
     SubobjectId: 3744025192888017858
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16402728419433785649
+  Id: 1667259324592304011
   Name: "Sphere"
   Transform {
     Location {
@@ -1473,7 +1473,7 @@ Objects {
       Z: 0.0758116543
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1503,14 +1503,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16402728419433785649
+    SelfId: 1667259324592304011
     SubobjectId: 16244328818422582935
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1152523408252794039
+  Id: 18122463995951378957
   Name: "Sphere"
   Transform {
     Location {
@@ -1529,7 +1529,7 @@ Objects {
       Z: 0.0670713708
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1559,14 +1559,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1152523408252794039
+    SelfId: 18122463995951378957
     SubobjectId: 951338726113202961
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13664155771164115901
+  Id: 5269682520383898887
   Name: "Sphere"
   Transform {
     Location {
@@ -1585,7 +1585,7 @@ Objects {
       Z: 0.0455764681
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1615,14 +1615,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13664155771164115901
+    SelfId: 5269682520383898887
     SubobjectId: 13793845259461026843
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15552093528206777827
+  Id: 2546042011978079065
   Name: "Sphere"
   Transform {
     Location {
@@ -1641,7 +1641,7 @@ Objects {
       Z: 0.0421754681
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1671,14 +1671,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15552093528206777827
+    SelfId: 2546042011978079065
     SubobjectId: 15355412995251157573
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16241916375284795190
+  Id: 1578399458695397772
   Name: "Sphere"
   Transform {
     Location {
@@ -1697,7 +1697,7 @@ Objects {
       Z: 0.0455747135
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1727,14 +1727,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16241916375284795190
+    SelfId: 1578399458695397772
     SubobjectId: 16405382585469198480
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8514313763418197756
+  Id: 9415217385260238918
   Name: "Sphere"
   Transform {
     Location {
@@ -1753,7 +1753,7 @@ Objects {
       Z: 0.028047014
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1783,14 +1783,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8514313763418197756
+    SelfId: 9415217385260238918
     SubobjectId: 8423326870010128730
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7582414718372061903
+  Id: 11365782612980573301
   Name: "Sphere"
   Transform {
     Location {
@@ -1809,7 +1809,7 @@ Objects {
       Z: 0.0342601426
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1839,14 +1839,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7582414718372061903
+    SelfId: 11365782612980573301
     SubobjectId: 7779799487890097513
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3556600221961809464
+  Id: 14256967179078330498
   Name: "Sphere"
   Transform {
     Location {
@@ -1865,7 +1865,7 @@ Objects {
       Z: 0.0556706786
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1895,14 +1895,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3556600221961809464
+    SelfId: 14256967179078330498
     SubobjectId: 3717393184845580702
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 18048640451494649033
+  Id: 1078858192438663795
   Name: "Sphere"
   Transform {
     Location {
@@ -1921,7 +1921,7 @@ Objects {
       Z: 0.0515184104
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1951,14 +1951,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18048640451494649033
+    SelfId: 1078858192438663795
     SubobjectId: 17921202479880715119
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12035240313588754288
+  Id: 6018139917122347466
   Name: "Sphere"
   Transform {
     Location {
@@ -1977,7 +1977,7 @@ Objects {
       Z: 0.0556728132
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2007,14 +2007,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12035240313588754288
+    SelfId: 6018139917122347466
     SubobjectId: 11945942209403879638
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2787981626649355023
+  Id: 15146062491060413877
   Name: "Sphere"
   Transform {
     Location {
@@ -2033,7 +2033,7 @@ Objects {
       Z: 0.0599898174
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2063,14 +2063,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2787981626649355023
+    SelfId: 15146062491060413877
     SubobjectId: 2629441297378051241
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10050041326064754874
+  Id: 9221562535177872896
   Name: "Sphere"
   Transform {
     Location {
@@ -2089,7 +2089,7 @@ Objects {
       Z: 0.0653474
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2119,14 +2119,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10050041326064754874
+    SelfId: 9221562535177872896
     SubobjectId: 9923025643822630684
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17742313507842260371
+  Id: 195947488216841001
   Name: "Sphere"
   Transform {
     Location {
@@ -2144,7 +2144,7 @@ Objects {
       Z: 0.0653474
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2174,14 +2174,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17742313507842260371
+    SelfId: 195947488216841001
     SubobjectId: 17650763939022854709
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 706172565421480717
+  Id: 18252435246967741879
   Name: "Sphere"
   Transform {
     Location {
@@ -2199,7 +2199,7 @@ Objects {
       Z: 0.0653474
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2229,14 +2229,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 706172565421480717
+    SelfId: 18252435246967741879
     SubobjectId: 793078140424748203
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7407160599934785476
+  Id: 10541515230094545278
   Name: "Sphere"
   Transform {
     Location {
@@ -2254,7 +2254,7 @@ Objects {
       Z: 0.06479159
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2284,14 +2284,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7407160599934785476
+    SelfId: 10541515230094545278
     SubobjectId: 7207665111758532706
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12153120738804413867
+  Id: 6641111796794569489
   Name: "Sphere"
   Transform {
     Location {
@@ -2309,7 +2309,7 @@ Objects {
       Z: 0.0616617277
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2339,14 +2339,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12153120738804413867
+    SelfId: 6641111796794569489
     SubobjectId: 12278447030055506445
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17254114227981117411
+  Id: 2014116647217258841
   Name: "Sphere"
   Transform {
     Location {
@@ -2364,7 +2364,7 @@ Objects {
       Z: 0.055167526
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2394,14 +2394,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17254114227981117411
+    SelfId: 2014116647217258841
     SubobjectId: 17131601793783283781
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8362280544785364425
+  Id: 9263254397000971123
   Name: "Sphere"
   Transform {
     Location {
@@ -2419,7 +2419,7 @@ Objects {
       Z: 0.0612692945
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2449,14 +2449,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8362280544785364425
+    SelfId: 9263254397000971123
     SubobjectId: 8557272159194534511
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9742494855245982451
+  Id: 8337625680766823497
   Name: "Sphere"
   Transform {
     Location {
@@ -2474,7 +2474,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2504,14 +2504,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9742494855245982451
+    SelfId: 8337625680766823497
     SubobjectId: 9653759486404840789
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10280283053156705384
+  Id: 8803305724141216466
   Name: "Sphere"
   Transform {
     Location {
@@ -2529,7 +2529,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2559,14 +2559,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10280283053156705384
+    SelfId: 8803305724141216466
     SubobjectId: 10117238230197306318
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 18094695456842087369
+  Id: 1124840767147507059
   Name: "Sphere"
   Transform {
     Location {
@@ -2584,7 +2584,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2614,14 +2614,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18094695456842087369
+    SelfId: 1124840767147507059
     SubobjectId: 18000894088504958063
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14815731283111644226
+  Id: 4115573216033180408
   Name: "Sphere"
   Transform {
     Location {
@@ -2640,7 +2640,7 @@ Objects {
       Z: 0.0630807877
     }
   }
-  ParentId: 5356793433997688347
+  ParentId: 13751282059955255457
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2670,14 +2670,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14815731283111644226
+    SelfId: 4115573216033180408
     SubobjectId: 14938806598749203428
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2140494933811637371
+  Id: 16804594728860101313
   Name: "Arm"
   Transform {
     Location {
@@ -2695,19 +2695,19 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4268385392897700642
-  ChildIds: 4136727122749835933
-  ChildIds: 14375370133833267164
-  ChildIds: 9356233353417450236
-  ChildIds: 15626835835932082797
-  ChildIds: 6301106113507104296
-  ChildIds: 10303883597322912020
-  ChildIds: 1090559647340529097
-  ChildIds: 7864539400429420185
-  ChildIds: 17372309567808431290
-  ChildIds: 12952653511414944964
-  ChildIds: 14097827478619556052
-  ChildIds: 13729339435200118810
+  ParentId: 14969156970293245336
+  ChildIds: 14837639437902171175
+  ChildIds: 3746691335518826854
+  ChildIds: 8455928021358863430
+  ChildIds: 3196664545981859031
+  ChildIds: 11813926650522112146
+  ChildIds: 8826992151413786542
+  ChildIds: 18132348802413986675
+  ChildIds: 11071270620345841699
+  ChildIds: 402982626514788864
+  ChildIds: 5134218663881904766
+  ChildIds: 3973567367561743982
+  ChildIds: 5334813288005600928
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -2720,14 +2720,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 2140494933811637371
+    SelfId: 16804594728860101313
     SubobjectId: 2268073291131096029
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13729339435200118810
+  Id: 5334813288005600928
   Name: "Ring"
   Transform {
     Location {
@@ -2746,7 +2746,7 @@ Objects {
       Z: 1.69103968
     }
   }
-  ParentId: 2140494933811637371
+  ParentId: 16804594728860101313
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2776,14 +2776,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13729339435200118810
+    SelfId: 5334813288005600928
     SubobjectId: 13566294604255045564
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14097827478619556052
+  Id: 3973567367561743982
   Name: "Sphere"
   Transform {
     Location {
@@ -2802,7 +2802,7 @@ Objects {
       Z: 4.21479797
     }
   }
-  ParentId: 2140494933811637371
+  ParentId: 16804594728860101313
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2832,14 +2832,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14097827478619556052
+    SelfId: 3973567367561743982
     SubobjectId: 13936612303071489906
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12952653511414944964
+  Id: 5134218663881904766
   Name: "Ring"
   Transform {
     Location {
@@ -2858,7 +2858,7 @@ Objects {
       Z: 2.21938133
     }
   }
-  ParentId: 2140494933811637371
+  ParentId: 16804594728860101313
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2888,14 +2888,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12952653511414944964
+    SelfId: 5134218663881904766
     SubobjectId: 12757661828321686370
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17372309567808431290
+  Id: 402982626514788864
   Name: "Ring"
   Transform {
     Location {
@@ -2914,7 +2914,7 @@ Objects {
       Z: 2.92911911
     }
   }
-  ParentId: 2140494933811637371
+  ParentId: 16804594728860101313
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2948,14 +2948,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17372309567808431290
+    SelfId: 402982626514788864
     SubobjectId: 17571805408742425372
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7864539400429420185
+  Id: 11071270620345841699
   Name: "Ring"
   Transform {
     Location {
@@ -2974,7 +2974,7 @@ Objects {
       Z: 2.92911696
     }
   }
-  ParentId: 2140494933811637371
+  ParentId: 16804594728860101313
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3008,14 +3008,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7864539400429420185
+    SelfId: 11071270620345841699
     SubobjectId: 8064034348042459455
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1090559647340529097
+  Id: 18132348802413986675
   Name: "Ring"
   Transform {
     Location {
@@ -3034,7 +3034,7 @@ Objects {
       Z: 2.3392427
     }
   }
-  ParentId: 2140494933811637371
+  ParentId: 16804594728860101313
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3068,14 +3068,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1090559647340529097
+    SelfId: 18132348802413986675
     SubobjectId: 1004076568440316527
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10303883597322912020
+  Id: 8826992151413786542
   Name: "Ring"
   Transform {
     Location {
@@ -3094,7 +3094,7 @@ Objects {
       Z: 2.33924174
     }
   }
-  ParentId: 2140494933811637371
+  ParentId: 16804594728860101313
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3124,14 +3124,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10303883597322912020
+    SelfId: 8826992151413786542
     SubobjectId: 10102699739785864882
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6301106113507104296
+  Id: 11813926650522112146
   Name: "Sphere"
   Transform {
     Location {
@@ -3150,7 +3150,7 @@ Objects {
       Z: 3.42911243
     }
   }
-  ParentId: 2140494933811637371
+  ParentId: 16804594728860101313
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3180,14 +3180,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6301106113507104296
+    SelfId: 11813926650522112146
     SubobjectId: 6178735043760107918
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15626835835932082797
+  Id: 3196664545981859031
   Name: "Sphere"
   Transform {
     Location {
@@ -3206,7 +3206,7 @@ Objects {
       Z: 1.19793403
     }
   }
-  ParentId: 2140494933811637371
+  ParentId: 16804594728860101313
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3236,14 +3236,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15626835835932082797
+    SelfId: 3196664545981859031
     SubobjectId: 15713318639990318539
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9356233353417450236
+  Id: 8455928021358863430
   Name: "Ring"
   Transform {
     Location {
@@ -3262,7 +3262,7 @@ Objects {
       Z: 1.69103932
     }
   }
-  ParentId: 2140494933811637371
+  ParentId: 16804594728860101313
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3292,14 +3292,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9356233353417450236
+    SelfId: 8455928021358863430
     SubobjectId: 9445531388346221914
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14375370133833267164
+  Id: 3746691335518826854
   Name: "Ring"
   Transform {
     Location {
@@ -3318,7 +3318,7 @@ Objects {
       Z: 1.69103932
     }
   }
-  ParentId: 2140494933811637371
+  ParentId: 16804594728860101313
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3348,14 +3348,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14375370133833267164
+    SelfId: 3746691335518826854
     SubobjectId: 14245680087559180410
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4136727122749835933
+  Id: 14837639437902171175
   Name: "Sphere"
   Transform {
     Location {
@@ -3374,7 +3374,7 @@ Objects {
       Z: 3.52476978
     }
   }
-  ParentId: 2140494933811637371
+  ParentId: 16804594728860101313
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3404,14 +3404,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4136727122749835933
+    SelfId: 14837639437902171175
     SubobjectId: 4298082279198846267
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11706854498482230108
+  Id: 6266305016025421286
   Name: "Torso"
   Transform {
     Location {
@@ -3427,41 +3427,41 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8003569140950301029
-  ChildIds: 9447742892243084337
-  ChildIds: 11928166781414547278
-  ChildIds: 793507162458036197
-  ChildIds: 9908914971437589810
-  ChildIds: 5001467617631666856
-  ChildIds: 6846833006772815917
-  ChildIds: 18212029669290761246
-  ChildIds: 9966911582726590477
-  ChildIds: 7251658961136699664
-  ChildIds: 6711672662252477141
-  ChildIds: 14877011583835478502
-  ChildIds: 11850981588266610869
-  ChildIds: 9751310304053520807
-  ChildIds: 2740946806307841045
-  ChildIds: 4043406533294366144
-  ChildIds: 5038941511220635785
-  ChildIds: 1123489312135902106
-  ChildIds: 9063743109794526498
-  ChildIds: 7014469015210889745
-  ChildIds: 17227605592977962493
-  ChildIds: 4071493324740797610
-  ChildIds: 16549099955719801087
-  ChildIds: 16503611077414922678
-  ChildIds: 8664835597972041620
-  ChildIds: 2486304539489593237
-  ChildIds: 5314302423634976204
-  ChildIds: 76783585259607400
-  ChildIds: 13178250399143428444
-  ChildIds: 12779514226636653667
-  ChildIds: 6003333332865937766
-  ChildIds: 17892901620403480966
-  ChildIds: 10672702496823582048
-  ChildIds: 6538871859667609388
-  ChildIds: 16454303259776659722
+  ParentId: 11210333209010700255
+  ChildIds: 8618861680192447115
+  ChildIds: 5838958077412514292
+  ChildIds: 18411387754153513311
+  ChildIds: 9008026880096363400
+  ChildIds: 12819972834219000850
+  ChildIds: 12359477466637209239
+  ChildIds: 594291996658850468
+  ChildIds: 9138063494579689143
+  ChildIds: 10385978543591051178
+  ChildIds: 12224422692572650607
+  ChildIds: 4248225014591299420
+  ChildIds: 5833953605921895951
+  ChildIds: 8345983871383334685
+  ChildIds: 15170574953930973871
+  ChildIds: 14743775568739113850
+  ChildIds: 12784755660311014963
+  ChildIds: 18092673298789365024
+  ChildIds: 9892608773257982872
+  ChildIds: 10797696171366618283
+  ChildIds: 1987698292929983303
+  ChildIds: 14700207170390762000
+  ChildIds: 1237170108440940101
+  ChildIds: 1263791618482417420
+  ChildIds: 10141779820163262766
+  ChildIds: 15420423925593661743
+  ChildIds: 13637261376115481462
+  ChildIds: 17695121574320722898
+  ChildIds: 4783937677237815270
+  ChildIds: 5032928064724304601
+  ChildIds: 12092559491312809948
+  ChildIds: 923556967210757948
+  ChildIds: 6961570300393561050
+  ChildIds: 12555970193702986134
+  ChildIds: 1213742849561737136
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -3474,14 +3474,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 11706854498482230108
+    SelfId: 6266305016025421286
     SubobjectId: 11581668678965507322
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16454303259776659722
+  Id: 1213742849561737136
   Name: "Ring"
   Transform {
     Location {
@@ -3497,7 +3497,7 @@ Objects {
       Z: 1.71898401
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3533,14 +3533,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16454303259776659722
+    SelfId: 1213742849561737136
     SubobjectId: 16614955278646646444
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6538871859667609388
+  Id: 12555970193702986134
   Name: "Hemisphere"
   Transform {
     Location {
@@ -3559,7 +3559,7 @@ Objects {
       Z: 1.77554965
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3589,14 +3589,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6538871859667609388
+    SelfId: 12555970193702986134
     SubobjectId: 6373716240740843658
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10672702496823582048
+  Id: 6961570300393561050
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -3615,7 +3615,7 @@ Objects {
       Z: 0.173711896
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3645,14 +3645,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10672702496823582048
+    SelfId: 6961570300393561050
     SubobjectId: 10867271898097400518
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17892901620403480966
+  Id: 923556967210757948
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -3671,7 +3671,7 @@ Objects {
       Z: 0.303711474
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3701,14 +3701,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17892901620403480966
+    SelfId: 923556967210757948
     SubobjectId: 18058620111406698016
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6003333332865937766
+  Id: 12092559491312809948
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -3727,7 +3727,7 @@ Objects {
       Z: 0.303711474
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3757,14 +3757,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6003333332865937766
+    SelfId: 12092559491312809948
     SubobjectId: 5880961910325270208
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12779514226636653667
+  Id: 5032928064724304601
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -3783,7 +3783,7 @@ Objects {
       Z: 0.303711474
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3813,14 +3813,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12779514226636653667
+    SelfId: 5032928064724304601
     SubobjectId: 12940165627058627525
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13178250399143428444
+  Id: 4783937677237815270
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -3839,7 +3839,7 @@ Objects {
       Z: 0.303711474
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3869,14 +3869,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13178250399143428444
+    SelfId: 4783937677237815270
     SubobjectId: 12983821116919129850
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 76783585259607400
+  Id: 17695121574320722898
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -3895,7 +3895,7 @@ Objects {
       Z: 0.303711474
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3925,14 +3925,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 76783585259607400
+    SelfId: 17695121574320722898
     SubobjectId: 278530667188122318
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5314302423634976204
+  Id: 13637261376115481462
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -3951,7 +3951,7 @@ Objects {
       Z: 0.303711474
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3981,14 +3981,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5314302423634976204
+    SelfId: 13637261376115481462
     SubobjectId: 5408103577056229994
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2486304539489593237
+  Id: 15420423925593661743
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -4007,7 +4007,7 @@ Objects {
       Z: 0.303711474
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4037,14 +4037,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2486304539489593237
+    SelfId: 15420423925593661743
     SubobjectId: 2327341378499100723
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8664835597972041620
+  Id: 10141779820163262766
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -4063,7 +4063,7 @@ Objects {
       Z: 0.303711474
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4093,14 +4093,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8664835597972041620
+    SelfId: 10141779820163262766
     SubobjectId: 8859405618192992306
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16503611077414922678
+  Id: 1263791618482417420
   Name: "Sphere"
   Transform {
     Location {
@@ -4119,7 +4119,7 @@ Objects {
       Z: 3.52476907
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4149,14 +4149,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16503611077414922678
+    SelfId: 1263791618482417420
     SubobjectId: 16700995297713753616
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16549099955719801087
+  Id: 1237170108440940101
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -4175,7 +4175,7 @@ Objects {
       Z: 0.766726077
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4205,14 +4205,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16549099955719801087
+    SelfId: 1237170108440940101
     SubobjectId: 16674426796156563289
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4071493324740797610
+  Id: 14700207170390762000
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -4231,7 +4231,7 @@ Objects {
       Z: 0.303716123
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4261,14 +4261,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4071493324740797610
+    SelfId: 14700207170390762000
     SubobjectId: 4201183294109942540
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17227605592977962493
+  Id: 1987698292929983303
   Name: "Ring"
   Transform {
     Location {
@@ -4287,7 +4287,7 @@ Objects {
       Z: 2.21937728
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4321,14 +4321,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17227605592977962493
+    SelfId: 1987698292929983303
     SubobjectId: 17138871057286812251
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7014469015210889745
+  Id: 10797696171366618283
   Name: "Ring"
   Transform {
     Location {
@@ -4347,7 +4347,7 @@ Objects {
       Z: 2.21937966
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4381,14 +4381,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7014469015210889745
+    SelfId: 10797696171366618283
     SubobjectId: 7175683425617524151
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9063743109794526498
+  Id: 9892608773257982872
   Name: "Sphere"
   Transform {
     Location {
@@ -4407,7 +4407,7 @@ Objects {
       Z: 2.6570611
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4437,14 +4437,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9063743109794526498
+    SelfId: 9892608773257982872
     SubobjectId: 9152900210199122564
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1123489312135902106
+  Id: 18092673298789365024
   Name: "Ring"
   Transform {
     Location {
@@ -4463,7 +4463,7 @@ Objects {
       Z: 4.91919804
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4497,14 +4497,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1123489312135902106
+    SelfId: 18092673298789365024
     SubobjectId: 962134224305443900
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5038941511220635785
+  Id: 12784755660311014963
   Name: "Ring"
   Transform {
     Location {
@@ -4523,7 +4523,7 @@ Objects {
       Z: 4.28732538
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4557,14 +4557,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5038941511220635785
+    SelfId: 12784755660311014963
     SubobjectId: 5125284334243188527
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4043406533294366144
+  Id: 14743775568739113850
   Name: "Ring"
   Transform {
     Location {
@@ -4583,7 +4583,7 @@ Objects {
       Z: 2.42701507
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4617,14 +4617,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4043406533294366144
+    SelfId: 14743775568739113850
     SubobjectId: 4237976003323312742
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2740946806307841045
+  Id: 15170574953930973871
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -4643,7 +4643,7 @@ Objects {
       Z: 0.510577917
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4673,14 +4673,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2740946806307841045
+    SelfId: 15170574953930973871
     SubobjectId: 2649397444110861235
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9751310304053520807
+  Id: 8345983871383334685
   Name: "Truncated Cone"
   Transform {
     Location {
@@ -4698,7 +4698,7 @@ Objects {
       Z: 12.0894499
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4732,14 +4732,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9751310304053520807
+    SelfId: 8345983871383334685
     SubobjectId: 9628376490374680065
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11850981588266610869
+  Id: 5833953605921895951
   Name: "Truncated Cone"
   Transform {
     Location {
@@ -4755,7 +4755,7 @@ Objects {
       Z: 8.70949
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4789,14 +4789,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11850981588266610869
+    SelfId: 5833953605921895951
     SubobjectId: 12014025586661218067
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14877011583835478502
+  Id: 4248225014591299420
   Name: "Truncated Cone"
   Transform {
     Location {
@@ -4815,7 +4815,7 @@ Objects {
       Z: 8.70949
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4849,14 +4849,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14877011583835478502
+    SelfId: 4248225014591299420
     SubobjectId: 14751685026229042752
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6711672662252477141
+  Id: 12224422692572650607
   Name: "Truncated Cone"
   Transform {
     Location {
@@ -4875,7 +4875,7 @@ Objects {
       Z: 8.70949
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4909,14 +4909,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6711672662252477141
+    SelfId: 12224422692572650607
     SubobjectId: 6911308888053939571
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7251658961136699664
+  Id: 10385978543591051178
   Name: "Truncated Cone"
   Transform {
     Location {
@@ -4935,7 +4935,7 @@ Objects {
       Z: 8.70949
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4969,14 +4969,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7251658961136699664
+    SelfId: 10385978543591051178
     SubobjectId: 7380925961721802422
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9966911582726590477
+  Id: 9138063494579689143
   Name: "Truncated Cone"
   Transform {
     Location {
@@ -4995,7 +4995,7 @@ Objects {
       Z: 8.70949
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5029,14 +5029,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9966911582726590477
+    SelfId: 9138063494579689143
     SubobjectId: 9843977279524517803
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 18212029669290761246
+  Id: 594291996658850468
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -5055,7 +5055,7 @@ Objects {
       Z: 0.510577917
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5085,14 +5085,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18212029669290761246
+    SelfId: 594291996658850468
     SubobjectId: 18335104160724515768
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6846833006772815917
+  Id: 12359477466637209239
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -5111,7 +5111,7 @@ Objects {
       Z: 0.303716123
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5141,14 +5141,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6846833006772815917
+    SelfId: 12359477466637209239
     SubobjectId: 6758097912672759691
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5001467617631666856
+  Id: 12819972834219000850
   Name: "Cylinder - Rounded"
   Transform {
     Location {
@@ -5167,7 +5167,7 @@ Objects {
       Z: 0.494894832
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5197,14 +5197,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5001467617631666856
+    SelfId: 12819972834219000850
     SubobjectId: 5162682243427607822
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9908914971437589810
+  Id: 9008026880096363400
   Name: "Truncated Cone"
   Transform {
     Location {
@@ -5222,7 +5222,7 @@ Objects {
       Z: 12.0894499
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5252,14 +5252,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9908914971437589810
+    SelfId: 9008026880096363400
     SubobjectId: 10038182461514465940
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 793507162458036197
+  Id: 18411387754153513311
   Name: "Ring"
   Transform {
     Location {
@@ -5278,7 +5278,7 @@ Objects {
       Z: 3.67938328
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5316,14 +5316,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 793507162458036197
+    SelfId: 18411387754153513311
     SubobjectId: 706602137416380483
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11928166781414547278
+  Id: 5838958077412514292
   Name: "Truncated Cone"
   Transform {
     Location {
@@ -5342,7 +5342,7 @@ Objects {
       Z: 8.90848064
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5376,14 +5376,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11928166781414547278
+    SelfId: 5838958077412514292
     SubobjectId: 12052789376130889960
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9447742892243084337
+  Id: 8618861680192447115
   Name: "Truncated Cone"
   Transform {
     Location {
@@ -5402,7 +5402,7 @@ Objects {
       Z: 8.90848064
     }
   }
-  ParentId: 11706854498482230108
+  ParentId: 6266305016025421286
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5436,14 +5436,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9447742892243084337
+    SelfId: 8618861680192447115
     SubobjectId: 9354082476213453719
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15076661620072700566
+  Id: 2718615956945689644
   Name: "Wing"
   Transform {
     Location {
@@ -5462,90 +5462,90 @@ Objects {
       Z: 1.53468919
     }
   }
-  ParentId: 8003569140950301029
-  ChildIds: 17075672238069515678
-  ChildIds: 10102884091160465856
-  ChildIds: 12502890310199350591
-  ChildIds: 2627021537694082786
-  ChildIds: 7411812377604988317
-  ChildIds: 1398876443834144675
-  ChildIds: 4140590685300025289
-  ChildIds: 5063730002537145831
-  ChildIds: 17586796071331626297
-  ChildIds: 3214332926898336175
-  ChildIds: 1551901546423593648
-  ChildIds: 9981154666374007832
-  ChildIds: 17954117437753340170
-  ChildIds: 17268579518351907536
-  ChildIds: 13939361632336102392
-  ChildIds: 6238829748427484248
-  ChildIds: 6999007678278942346
-  ChildIds: 14669979163414208702
-  ChildIds: 4028619523820282408
-  ChildIds: 12143888959586321891
-  ChildIds: 8587099552737092588
-  ChildIds: 18024916316787510875
-  ChildIds: 1963751474513713614
-  ChildIds: 838580313372240445
-  ChildIds: 9614387410959673274
-  ChildIds: 2891201336575145299
-  ChildIds: 10065019276032659165
-  ChildIds: 15126243520124562693
-  ChildIds: 1958195491112927532
-  ChildIds: 8409093733192952580
-  ChildIds: 2030345783504456066
-  ChildIds: 16749248034192098897
-  ChildIds: 7322917037741283869
-  ChildIds: 2388538614138201663
-  ChildIds: 7827023698765049594
-  ChildIds: 6083717872327530023
-  ChildIds: 9189034295487593446
-  ChildIds: 15613060785029386395
-  ChildIds: 3614129892872951535
-  ChildIds: 2969403538135753345
-  ChildIds: 1384529479629973129
-  ChildIds: 16462737036247296010
-  ChildIds: 17607802767336487551
-  ChildIds: 13836609808315476182
-  ChildIds: 8216976145986162951
-  ChildIds: 15031054613337882534
-  ChildIds: 6427976043001128562
-  ChildIds: 7056575433581700101
-  ChildIds: 6803608110325733534
-  ChildIds: 7350279194684968764
-  ChildIds: 380783145888838679
-  ChildIds: 12867159800737731965
-  ChildIds: 8852722581714832583
-  ChildIds: 11944950534824485066
-  ChildIds: 4823166921336102812
-  ChildIds: 4183769464016358263
-  ChildIds: 6692817400857659572
-  ChildIds: 2797205880014150760
-  ChildIds: 203014620169120462
-  ChildIds: 3854824486264152346
-  ChildIds: 7696999471047038593
-  ChildIds: 2190472727988565134
-  ChildIds: 15868773999324297421
-  ChildIds: 5255822135073356082
-  ChildIds: 17736037900296613814
-  ChildIds: 6293183515928154596
-  ChildIds: 15032287755088716102
-  ChildIds: 2481968164099706966
-  ChildIds: 14259882208724353322
-  ChildIds: 1000270876802177203
-  ChildIds: 9403849935972915757
-  ChildIds: 6208306289491190155
-  ChildIds: 17990772417795392484
-  ChildIds: 14451003985042486888
-  ChildIds: 9683037957988519036
-  ChildIds: 15378966856717801670
-  ChildIds: 14042903461892561111
-  ChildIds: 12873684978350702792
-  ChildIds: 14530606635045966138
-  ChildIds: 1699701705946117549
-  ChildIds: 52019537445091285
-  ChildIds: 6553674824734542108
-  ChildIds: 2154042287451011058
+  ParentId: 11210333209010700255
+  ChildIds: 1763582000203301668
+  ChildIds: 8698103032129689466
+  ChildIds: 6413769548748362629
+  ChildIds: 15056790544104054872
+  ChildIds: 10546714565527935783
+  ChildIds: 16710808336423145753
+  ChildIds: 14841379855116755315
+  ChildIds: 12881564363318682461
+  ChildIds: 40990665994337155
+  ChildIds: 15572009171809990421
+  ChildIds: 16215227130566618122
+  ChildIds: 9080759174051302050
+  ChildIds: 984229746905266096
+  ChildIds: 1956577119168732266
+  ChildIds: 3887722065144071490
+  ChildIds: 11679451815672212194
+  ChildIds: 10781619108090361904
+  ChildIds: 4546178495350941188
+  ChildIds: 14081050756572832914
+  ChildIds: 6631193903899362137
+  ChildIds: 9487668904353949014
+  ChildIds: 1055008834059569377
+  ChildIds: 17276332216544927604
+  ChildIds: 18384332805014695047
+  ChildIds: 8209028008644387072
+  ChildIds: 15897395927056659433
+  ChildIds: 9164641238054652007
+  ChildIds: 2696054484275178431
+  ChildIds: 17270620119169025942
+  ChildIds: 9237554776066747838
+  ChildIds: 16765852107658547000
+  ChildIds: 2085220824484675819
+  ChildIds: 10457713672154225831
+  ChildIds: 15394625297458716805
+  ChildIds: 10961292583794534464
+  ChildIds: 11595867708180205725
+  ChildIds: 10018111220565769564
+  ChildIds: 3183417243203802657
+  ChildIds: 14314285622952857685
+  ChildIds: 15975404615199401019
+  ChildIds: 16697006746394206259
+  ChildIds: 1222196296076095152
+  ChildIds: 61364025727728837
+  ChildIds: 3784424866737974892
+  ChildIds: 9694536231825381309
+  ChildIds: 2600953692501195036
+  ChildIds: 12517116576837378248
+  ChildIds: 10767126949896954559
+  ChildIds: 12315722742780960292
+  ChildIds: 10556462720069290374
+  ChildIds: 17422642806575264429
+  ChildIds: 5048584352585126855
+  ChildIds: 10257591756337384061
+  ChildIds: 5856232212069181040
+  ChildIds: 13145494735930071334
+  ChildIds: 14884050675860524493
+  ChildIds: 12132927080013401614
+  ChildIds: 15154844739911981778
+  ChildIds: 17748749536226061428
+  ChildIds: 13978732753425180576
+  ChildIds: 11407693925124067387
+  ChildIds: 16926610171381576244
+  ChildIds: 2934179761643847287
+  ChildIds: 13578660123968585608
+  ChildIds: 189830210345855244
+  ChildIds: 11805227660160522078
+  ChildIds: 2601975591116892156
+  ChildIds: 15488092385425741548
+  ChildIds: 3559038063695595408
+  ChildIds: 17969595619063389705
+  ChildIds: 8502891356031081623
+  ChildIds: 11720948705614112561
+  ChildIds: 949530699261609310
+  ChildIds: 4327183662973989074
+  ChildIds: 8277746589599107782
+  ChildIds: 2444445030273621628
+  ChildIds: 3918997377749589613
+  ChildIds: 5055850600523515506
+  ChildIds: 4406328778827978624
+  ChildIds: 16363816739278762775
+  ChildIds: 17598297595502752111
+  ChildIds: 12570159630082052006
+  ChildIds: 16818071713260106056
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5558,14 +5558,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 15076661620072700566
+    SelfId: 2718615956945689644
     SubobjectId: 15273482821591956784
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2154042287451011058
+  Id: 16818071713260106056
   Name: "Sphere"
   Transform {
     Location {
@@ -5584,7 +5584,7 @@ Objects {
       Z: 1.41636658
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5614,14 +5614,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2154042287451011058
+    SelfId: 16818071713260106056
     SubobjectId: 2245592405524467796
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6553674824734542108
+  Id: 12570159630082052006
   Name: "Sphere"
   Transform {
     Location {
@@ -5640,7 +5640,7 @@ Objects {
       Z: 1.41636658
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5670,14 +5670,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6553674824734542108
+    SelfId: 12570159630082052006
     SubobjectId: 6358542739190001338
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 52019537445091285
+  Id: 17598297595502752111
   Name: "Sphere"
   Transform {
     Location {
@@ -5696,7 +5696,7 @@ Objects {
       Z: 1.83912337
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5726,14 +5726,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 52019537445091285
+    SelfId: 17598297595502752111
     SubobjectId: 177205091277557875
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1699701705946117549
+  Id: 16363816739278762775
   Name: "Sphere"
   Transform {
     Location {
@@ -5752,7 +5752,7 @@ Objects {
       Z: 0.733534873
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5782,14 +5782,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1699701705946117549
+    SelfId: 16363816739278762775
     SubobjectId: 1539050038699561483
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14530606635045966138
+  Id: 4406328778827978624
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -5808,7 +5808,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5838,14 +5838,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14530606635045966138
+    SelfId: 4406328778827978624
     SubobjectId: 14657622317324007068
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12873684978350702792
+  Id: 5055850600523515506
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -5864,7 +5864,7 @@ Objects {
       Z: 0.505146623
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5894,14 +5894,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12873684978350702792
+    SelfId: 5055850600523515506
     SubobjectId: 12710781227919370094
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14042903461892561111
+  Id: 3918997377749589613
   Name: "Sphere"
   Transform {
     Location {
@@ -5920,7 +5920,7 @@ Objects {
       Z: 1.42377961
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5950,14 +5950,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14042903461892561111
+    SelfId: 3918997377749589613
     SubobjectId: 13848333708362497905
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15378966856717801670
+  Id: 2444445030273621628
   Name: "Sphere"
   Transform {
     Location {
@@ -5976,7 +5976,7 @@ Objects {
       Z: 1.80530715
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6006,14 +6006,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15378966856717801670
+    SelfId: 2444445030273621628
     SubobjectId: 15537507461003853664
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9683037957988519036
+  Id: 8277746589599107782
   Name: "Sphere"
   Transform {
     Location {
@@ -6032,7 +6032,7 @@ Objects {
       Z: 1.21482408
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6062,14 +6062,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9683037957988519036
+    SelfId: 8277746589599107782
     SubobjectId: 9560103869672958938
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14451003985042486888
+  Id: 4327183662973989074
   Name: "Sphere"
   Transform {
     Location {
@@ -6087,7 +6087,7 @@ Objects {
       Z: 1.21482408
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6117,14 +6117,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14451003985042486888
+    SelfId: 4327183662973989074
     SubobjectId: 14573938555165348302
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17990772417795392484
+  Id: 949530699261609310
   Name: "Sphere"
   Transform {
     Location {
@@ -6143,7 +6143,7 @@ Objects {
       Z: 1.21482408
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6173,14 +6173,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17990772417795392484
+    SelfId: 949530699261609310
     SubobjectId: 18113847518547747906
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6208306289491190155
+  Id: 11720948705614112561
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6199,7 +6199,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6229,14 +6229,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6208306289491190155
+    SelfId: 11720948705614112561
     SubobjectId: 6117319602403018285
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9403849935972915757
+  Id: 8502891356031081623
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6255,7 +6255,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6285,14 +6285,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9403849935972915757
+    SelfId: 8502891356031081623
     SubobjectId: 9244887110694534539
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1000270876802177203
+  Id: 17969595619063389705
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6311,7 +6311,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6341,14 +6341,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1000270876802177203
+    SelfId: 17969595619063389705
     SubobjectId: 1093509913587515157
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14259882208724353322
+  Id: 3559038063695595408
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6367,7 +6367,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6397,14 +6397,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14259882208724353322
+    SelfId: 3559038063695595408
     SubobjectId: 14350728149763597964
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2481968164099706966
+  Id: 15488092385425741548
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6423,7 +6423,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6453,14 +6453,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2481968164099706966
+    SelfId: 15488092385425741548
     SubobjectId: 2359033586017630192
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15032287755088716102
+  Id: 2601975591116892156
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6479,7 +6479,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6509,14 +6509,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15032287755088716102
+    SelfId: 2601975591116892156
     SubobjectId: 15154659443346654944
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6293183515928154596
+  Id: 11805227660160522078
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6535,7 +6535,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6565,14 +6565,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6293183515928154596
+    SelfId: 11805227660160522078
     SubobjectId: 6167857233734137410
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17736037900296613814
+  Id: 189830210345855244
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6591,7 +6591,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6621,14 +6621,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17736037900296613814
+    SelfId: 189830210345855244
     SubobjectId: 17649132951993927696
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5255822135073356082
+  Id: 13578660123968585608
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6647,7 +6647,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6677,14 +6677,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5255822135073356082
+    SelfId: 13578660123968585608
     SubobjectId: 5349482560195436180
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15868773999324297421
+  Id: 2934179761643847287
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6703,7 +6703,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6733,14 +6733,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15868773999324297421
+    SelfId: 2934179761643847287
     SubobjectId: 16065595003444649835
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2190472727988565134
+  Id: 16926610171381576244
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6759,7 +6759,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6789,14 +6789,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2190472727988565134
+    SelfId: 16926610171381576244
     SubobjectId: 2065849575025300264
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7696999471047038593
+  Id: 11407693925124067387
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6815,7 +6815,7 @@ Objects {
       Z: 0.603576362
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6845,14 +6845,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7696999471047038593
+    SelfId: 11407693925124067387
     SubobjectId: 7502007779965989159
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3854824486264152346
+  Id: 13978732753425180576
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6871,7 +6871,7 @@ Objects {
       Z: 0.603576362
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6901,14 +6901,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3854824486264152346
+    SelfId: 13978732753425180576
     SubobjectId: 4013364893388801724
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 203014620169120462
+  Id: 17748749536226061428
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6927,7 +6927,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6957,14 +6957,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 203014620169120462
+    SelfId: 17748749536226061428
     SubobjectId: 7882200088448360
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2797205880014150760
+  Id: 15154844739911981778
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -6983,7 +6983,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7013,14 +7013,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2797205880014150760
+    SelfId: 15154844739911981778
     SubobjectId: 2602213638741081038
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6692817400857659572
+  Id: 12132927080013401614
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -7039,7 +7039,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7069,14 +7069,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6692817400857659572
+    SelfId: 12132927080013401614
     SubobjectId: 6786055604891463442
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4183769464016358263
+  Id: 14884050675860524493
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -7095,7 +7095,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7125,14 +7125,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4183769464016358263
+    SelfId: 14884050675860524493
     SubobjectId: 4090108764016110801
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4823166921336102812
+  Id: 13145494735930071334
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -7151,7 +7151,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7181,14 +7181,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4823166921336102812
+    SelfId: 13145494735930071334
     SubobjectId: 4621278895152379962
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11944950534824485066
+  Id: 5856232212069181040
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -7207,7 +7207,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7237,14 +7237,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11944950534824485066
+    SelfId: 5856232212069181040
     SubobjectId: 12036359632447686508
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8852722581714832583
+  Id: 10257591756337384061
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -7263,7 +7263,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7293,14 +7293,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8852722581714832583
+    SelfId: 10257591756337384061
     SubobjectId: 8653227024783453025
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12867159800737731965
+  Id: 5048584352585126855
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -7319,7 +7319,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7349,14 +7349,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12867159800737731965
+    SelfId: 5048584352585126855
     SubobjectId: 12708056177676563163
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 380783145888838679
+  Id: 17422642806575264429
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -7375,7 +7375,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7405,14 +7405,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 380783145888838679
+    SelfId: 17422642806575264429
     SubobjectId: 541997839763297201
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7350279194684968764
+  Id: 10556462720069290374
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -7431,7 +7431,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7461,14 +7461,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7350279194684968764
+    SelfId: 10556462720069290374
     SubobjectId: 7263232607315454106
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6803608110325733534
+  Id: 12315722742780960292
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -7487,7 +7487,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7517,14 +7517,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6803608110325733534
+    SelfId: 12315722742780960292
     SubobjectId: 6676030019159506744
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7056575433581700101
+  Id: 10767126949896954559
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -7543,7 +7543,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7573,14 +7573,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7056575433581700101
+    SelfId: 10767126949896954559
     SubobjectId: 7142917440120587171
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6427976043001128562
+  Id: 12517116576837378248
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -7599,7 +7599,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7629,14 +7629,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6427976043001128562
+    SelfId: 12517116576837378248
     SubobjectId: 6627471599999877588
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15031054613337882534
+  Id: 2600953692501195036
   Name: "Sphere"
   Transform {
     Location {
@@ -7654,7 +7654,7 @@ Objects {
       Z: 1.44126022
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7684,14 +7684,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15031054613337882534
+    SelfId: 2600953692501195036
     SubobjectId: 15155818779305711616
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8216976145986162951
+  Id: 9694536231825381309
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -7710,7 +7710,7 @@ Objects {
       Z: 0.505146623
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7740,14 +7740,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8216976145986162951
+    SelfId: 9694536231825381309
     SubobjectId: 8126129998150710945
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13836609808315476182
+  Id: 3784424866737974892
   Name: "Sphere"
   Transform {
     Location {
@@ -7766,7 +7766,7 @@ Objects {
       Z: 1.21482408
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7796,14 +7796,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13836609808315476182
+    SelfId: 3784424866737974892
     SubobjectId: 14035682809887215472
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17607802767336487551
+  Id: 61364025727728837
   Name: "Sphere"
   Transform {
     Location {
@@ -7821,7 +7821,7 @@ Objects {
       Z: 1.21482408
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7851,14 +7851,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17607802767336487551
+    SelfId: 61364025727728837
     SubobjectId: 17768454503101439449
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16462737036247296010
+  Id: 1222196296076095152
   Name: "Sphere"
   Transform {
     Location {
@@ -7876,7 +7876,7 @@ Objects {
       Z: 1.56332016
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7906,14 +7906,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16462737036247296010
+    SelfId: 1222196296076095152
     SubobjectId: 16625641060984016812
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1384529479629973129
+  Id: 16697006746394206259
   Name: "Sphere"
   Transform {
     Location {
@@ -7932,7 +7932,7 @@ Objects {
       Z: 1.16706121
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7962,14 +7962,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1384529479629973129
+    SelfId: 16697006746394206259
     SubobjectId: 1295794592189284655
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2969403538135753345
+  Id: 15975404615199401019
   Name: "Sphere"
   Transform {
     Location {
@@ -7988,7 +7988,7 @@ Objects {
       Z: 1.42377961
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8018,14 +8018,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2969403538135753345
+    SelfId: 15975404615199401019
     SubobjectId: 3168335802051101991
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3614129892872951535
+  Id: 14314285622952857685
   Name: "Sphere"
   Transform {
     Location {
@@ -8044,7 +8044,7 @@ Objects {
       Z: 1.80530715
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8074,14 +8074,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3614129892872951535
+    SelfId: 14314285622952857685
     SubobjectId: 3524831505256165705
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15613060785029386395
+  Id: 3183417243203802657
   Name: "Sphere"
   Transform {
     Location {
@@ -8100,7 +8100,7 @@ Objects {
       Z: 1.80530715
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8130,14 +8130,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15613060785029386395
+    SelfId: 3183417243203802657
     SubobjectId: 15736136091976349501
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9189034295487593446
+  Id: 10018111220565769564
   Name: "Sphere"
   Transform {
     Location {
@@ -8156,7 +8156,7 @@ Objects {
       Z: 1.80530715
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8186,14 +8186,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9189034295487593446
+    SelfId: 10018111220565769564
     SubobjectId: 9028382894659034176
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6083717872327530023
+  Id: 11595867708180205725
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8212,7 +8212,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8242,14 +8242,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6083717872327530023
+    SelfId: 11595867708180205725
     SubobjectId: 6242258760554852737
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7827023698765049594
+  Id: 10961292583794534464
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8268,7 +8268,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8298,14 +8298,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7827023698765049594
+    SelfId: 10961292583794534464
     SubobjectId: 7949536124974811484
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2388538614138201663
+  Id: 15394625297458716805
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8324,7 +8324,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8354,14 +8354,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2388538614138201663
+    SelfId: 15394625297458716805
     SubobjectId: 2587471230277042585
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7322917037741283869
+  Id: 10457713672154225831
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8380,7 +8380,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8410,14 +8410,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7322917037741283869
+    SelfId: 10457713672154225831
     SubobjectId: 7452747469312474555
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16749248034192098897
+  Id: 2085220824484675819
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8436,7 +8436,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8466,14 +8466,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16749248034192098897
+    SelfId: 2085220824484675819
     SubobjectId: 16914403309523575287
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2030345783504456066
+  Id: 16765852107658547000
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8492,7 +8492,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8522,14 +8522,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2030345783504456066
+    SelfId: 16765852107658547000
     SubobjectId: 2224915459651202596
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8409093733192952580
+  Id: 9237554776066747838
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8548,7 +8548,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8578,14 +8578,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8409093733192952580
+    SelfId: 9237554776066747838
     SubobjectId: 8538361292155243682
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1958195491112927532
+  Id: 17270620119169025942
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8604,7 +8604,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8634,14 +8634,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1958195491112927532
+    SelfId: 17270620119169025942
     SubobjectId: 1864956462547658378
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15126243520124562693
+  Id: 2696054484275178431
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8660,7 +8660,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8690,14 +8690,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15126243520124562693
+    SelfId: 2696054484275178431
     SubobjectId: 15214978407497599651
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10065019276032659165
+  Id: 9164641238054652007
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8716,7 +8716,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8746,14 +8746,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10065019276032659165
+    SelfId: 9164641238054652007
     SubobjectId: 9899864009758534011
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2891201336575145299
+  Id: 15897395927056659433
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8772,7 +8772,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8802,14 +8802,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2891201336575145299
+    SelfId: 15897395927056659433
     SubobjectId: 3085770747105514229
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9614387410959673274
+  Id: 8209028008644387072
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8828,7 +8828,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8858,14 +8858,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9614387410959673274
+    SelfId: 8209028008644387072
     SubobjectId: 9772927740365439004
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 838580313372240445
+  Id: 18384332805014695047
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8884,7 +8884,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8914,14 +8914,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 838580313372240445
+    SelfId: 18384332805014695047
     SubobjectId: 679617152416091547
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1963751474513713614
+  Id: 17276332216544927604
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -8940,7 +8940,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8970,14 +8970,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1963751474513713614
+    SelfId: 17276332216544927604
     SubobjectId: 1841380602406518376
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 18024916316787510875
+  Id: 1055008834059569377
   Name: "Sphere"
   Transform {
     Location {
@@ -8996,7 +8996,7 @@ Objects {
       Z: 1.42377818
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9026,14 +9026,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18024916316787510875
+    SelfId: 1055008834059569377
     SubobjectId: 17935617998026254845
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8587099552737092588
+  Id: 9487668904353949014
   Name: "Sphere"
   Transform {
     Location {
@@ -9052,7 +9052,7 @@ Objects {
       Z: 1.4237783
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9082,14 +9082,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8587099552737092588
+    SelfId: 9487668904353949014
     SubobjectId: 8495690927463547978
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12143888959586321891
+  Id: 6631193903899362137
   Name: "Sphere"
   Transform {
     Location {
@@ -9108,7 +9108,7 @@ Objects {
       Z: 1.4237783
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9138,14 +9138,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12143888959586321891
+    SelfId: 6631193903899362137
     SubobjectId: 12270763912996610629
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4028619523820282408
+  Id: 14081050756572832914
   Name: "Sphere"
   Transform {
     Location {
@@ -9164,7 +9164,7 @@ Objects {
       Z: 1.56331849
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9194,14 +9194,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4028619523820282408
+    SelfId: 14081050756572832914
     SubobjectId: 3829687466537043342
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14669979163414208702
+  Id: 4546178495350941188
   Name: "Sphere"
   Transform {
     Location {
@@ -9219,7 +9219,7 @@ Objects {
       Z: 1.0253371
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9249,14 +9249,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14669979163414208702
+    SelfId: 4546178495350941188
     SubobjectId: 14509327213433292568
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6999007678278942346
+  Id: 10781619108090361904
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -9275,7 +9275,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9305,14 +9305,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6999007678278942346
+    SelfId: 10781619108090361904
     SubobjectId: 7200191544475392300
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6238829748427484248
+  Id: 11679451815672212194
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -9331,7 +9331,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9361,14 +9361,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6238829748427484248
+    SelfId: 11679451815672212194
     SubobjectId: 6078037541458463742
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13939361632336102392
+  Id: 3887722065144071490
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -9387,7 +9387,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9417,14 +9417,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13939361632336102392
+    SelfId: 3887722065144071490
     SubobjectId: 14105221144364475486
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17268579518351907536
+  Id: 1956577119168732266
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -9443,7 +9443,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9473,14 +9473,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17268579518351907536
+    SelfId: 1956577119168732266
     SubobjectId: 17107787388522184054
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17954117437753340170
+  Id: 984229746905266096
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -9499,7 +9499,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9529,14 +9529,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17954117437753340170
+    SelfId: 984229746905266096
     SubobjectId: 18150798176764368556
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9981154666374007832
+  Id: 9080759174051302050
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -9555,7 +9555,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9585,14 +9585,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9981154666374007832
+    SelfId: 9080759174051302050
     SubobjectId: 9820502647671794622
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1551901546423593648
+  Id: 16215227130566618122
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -9611,7 +9611,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9641,14 +9641,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1551901546423593648
+    SelfId: 16215227130566618122
     SubobjectId: 1676524690992205078
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3214332926898336175
+  Id: 15572009171809990421
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -9667,7 +9667,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9697,14 +9697,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3214332926898336175
+    SelfId: 15572009171809990421
     SubobjectId: 3339096611894318601
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17586796071331626297
+  Id: 40990665994337155
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -9723,7 +9723,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9753,14 +9753,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17586796071331626297
+    SelfId: 40990665994337155
     SubobjectId: 17788543084641049247
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5063730002537145831
+  Id: 12881564363318682461
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -9779,7 +9779,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9809,14 +9809,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5063730002537145831
+    SelfId: 12881564363318682461
     SubobjectId: 4938403642966327873
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4140590685300025289
+  Id: 14841379855116755315
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -9835,7 +9835,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9865,14 +9865,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4140590685300025289
+    SelfId: 14841379855116755315
     SubobjectId: 4304057110203678831
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1398876443834144675
+  Id: 16710808336423145753
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -9891,7 +9891,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9921,14 +9921,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1398876443834144675
+    SelfId: 16710808336423145753
     SubobjectId: 1271298086883520517
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7411812377604988317
+  Id: 10546714565527935783
   Name: "Sphere"
   Transform {
     Location {
@@ -9946,7 +9946,7 @@ Objects {
       Z: 1.0253371
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9976,14 +9976,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7411812377604988317
+    SelfId: 10546714565527935783
     SubobjectId: 7210628589221001787
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2627021537694082786
+  Id: 15056790544104054872
   Name: "Sphere"
   Transform {
     Location {
@@ -10001,7 +10001,7 @@ Objects {
       Z: 1.0253371
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10031,14 +10031,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2627021537694082786
+    SelfId: 15056790544104054872
     SubobjectId: 2790066017025933636
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12502890310199350591
+  Id: 6413769548748362629
   Name: "Sphere"
   Transform {
     Location {
@@ -10057,7 +10057,7 @@ Objects {
       Z: 3.07914567
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10087,14 +10087,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12502890310199350591
+    SelfId: 6413769548748362629
     SubobjectId: 12632157250554507929
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10102884091160465856
+  Id: 8698103032129689466
   Name: "Sphere"
   Transform {
     Location {
@@ -10112,7 +10112,7 @@ Objects {
       Z: 2.28384757
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10142,14 +10142,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10102884091160465856
+    SelfId: 8698103032129689466
     SubobjectId: 10302520591770891878
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17075672238069515678
+  Id: 1763582000203301668
   Name: "Sphere"
   Transform {
     Location {
@@ -10165,7 +10165,7 @@ Objects {
       Z: 1.02903295
     }
   }
-  ParentId: 15076661620072700566
+  ParentId: 2718615956945689644
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10195,14 +10195,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17075672238069515678
+    SelfId: 1763582000203301668
     SubobjectId: 17164828994845286968
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 158188966043651181
+  Id: 17776685285081156311
   Name: "Wing"
   Transform {
     Location {
@@ -10220,90 +10220,90 @@ Objects {
       Z: 1.53468919
     }
   }
-  ParentId: 8003569140950301029
-  ChildIds: 18025907015864542369
-  ChildIds: 10320832168744337409
-  ChildIds: 1135282002029841477
-  ChildIds: 16022952592893687544
-  ChildIds: 13743070640313428507
-  ChildIds: 2917338450263889892
-  ChildIds: 9042078310490436645
-  ChildIds: 3771630923596702105
-  ChildIds: 8396167135841073906
-  ChildIds: 11255927539776588021
-  ChildIds: 6865383090395833575
-  ChildIds: 13361309332110140347
-  ChildIds: 3523270200998708203
-  ChildIds: 13659157678415381733
-  ChildIds: 14333813308043460232
-  ChildIds: 15903277904592140974
-  ChildIds: 13486434280812368822
-  ChildIds: 10556746531106852285
-  ChildIds: 4622486943968542866
-  ChildIds: 10841652983738071045
-  ChildIds: 8193735458974701902
-  ChildIds: 4588551026373892139
-  ChildIds: 8453361247854238542
-  ChildIds: 14055181559023869026
-  ChildIds: 3096190831710104648
-  ChildIds: 5051954406532885702
-  ChildIds: 11157448441990666986
-  ChildIds: 8206713383316519566
-  ChildIds: 5173539440186554797
-  ChildIds: 1506977529531590403
-  ChildIds: 3776271141880491969
-  ChildIds: 536315403057852108
-  ChildIds: 12294526036338772526
-  ChildIds: 12258500516988197671
-  ChildIds: 17988289235063621069
-  ChildIds: 4540099498773511644
-  ChildIds: 6905008251169934009
-  ChildIds: 2483959060119032506
-  ChildIds: 17302140043353140436
-  ChildIds: 640964601935447036
-  ChildIds: 8222707968650095349
-  ChildIds: 3443352788749292560
-  ChildIds: 4642060597516884040
-  ChildIds: 8967802276644808547
-  ChildIds: 11454361847932953458
-  ChildIds: 2467027949406204927
-  ChildIds: 931342087394452621
-  ChildIds: 13472948435944880708
-  ChildIds: 16379366964846826416
-  ChildIds: 5403727045080350969
-  ChildIds: 11310477021239558787
-  ChildIds: 2145356884156047474
-  ChildIds: 9266376071733116724
-  ChildIds: 9687655927743516667
-  ChildIds: 2969639643130737920
-  ChildIds: 9844779651634452405
-  ChildIds: 1719362817218201342
-  ChildIds: 12029047713062658370
-  ChildIds: 15713901338869757074
-  ChildIds: 6997399289419968273
-  ChildIds: 11593365545278639725
-  ChildIds: 8096865419775497936
-  ChildIds: 951080879432254377
-  ChildIds: 11058028287467706994
-  ChildIds: 490689880259648088
-  ChildIds: 6888132419747779343
-  ChildIds: 4317330723198309527
-  ChildIds: 12623169340047887439
-  ChildIds: 13991559660109083270
-  ChildIds: 5205685311168509741
-  ChildIds: 7075140477984327699
-  ChildIds: 16884180161626698450
-  ChildIds: 14460760807621537206
-  ChildIds: 11420232554425865618
-  ChildIds: 5117107205683443894
-  ChildIds: 7140308726965334912
-  ChildIds: 3893780573389120916
-  ChildIds: 8236989432170500165
-  ChildIds: 16396465012429707002
-  ChildIds: 10288304560385621305
-  ChildIds: 12545731140019247192
-  ChildIds: 16729896738553394298
-  ChildIds: 13691390587282253668
+  ParentId: 11210333209010700255
+  ChildIds: 1056547106301796891
+  ChildIds: 8915877387404068539
+  ChildIds: 18104520965741611775
+  ChildIds: 3088782627643863106
+  ChildIds: 5348104808089611425
+  ChildIds: 15923900140156834142
+  ChildIds: 9942421044374401695
+  ChildIds: 13895574375028631331
+  ChildIds: 9224590932666203208
+  ChildIds: 7544777752057843279
+  ChildIds: 12378078266072916573
+  ChildIds: 5615303850850215169
+  ChildIds: 14151526667125343569
+  ChildIds: 5264262216411611743
+  ChildIds: 3632881322922637362
+  ChildIds: 2896575338807983124
+  ChildIds: 5739848256599282956
+  ChildIds: 7349980263217105671
+  ChildIds: 13017415511748003368
+  ChildIds: 7130377849814711999
+  ChildIds: 9598446166047170548
+  ChildIds: 14640278570468056721
+  ChildIds: 9354300053396758004
+  ChildIds: 4003541993307970264
+  ChildIds: 16030167298641816306
+  ChildIds: 12870545384616405628
+  ChildIds: 7950613851380178000
+  ChildIds: 9612198129562582068
+  ChildIds: 12920092478908727063
+  ChildIds: 16170355907555746233
+  ChildIds: 13900777560412678523
+  ChildIds: 17577576929040754806
+  ChildIds: 6782305969272884372
+  ChildIds: 6818318270911749533
+  ChildIds: 946394544356017015
+  ChildIds: 14663955006556011366
+  ChildIds: 12345208227718630403
+  ChildIds: 15490608694701593600
+  ChildIds: 332410543810161262
+  ChildIds: 18186750233905481030
+  ChildIds: 9700072204392180815
+  ChildIds: 15800956310461518506
+  ChildIds: 13036391049349750514
+  ChildIds: 9868919202232689113
+  ChildIds: 7671715370147947976
+  ChildIds: 15473767760308680005
+  ChildIds: 17901161609057952311
+  ChildIds: 5654548790600809726
+  ChildIds: 1715390332238075146
+  ChildIds: 13726017340551300675
+  ChildIds: 7527656821129331769
+  ChildIds: 16808752854097028808
+  ChildIds: 8365927665581095310
+  ChildIds: 8282135859954321729
+  ChildIds: 15976307024518427578
+  ChildIds: 8943823390941925647
+  ChildIds: 16383284336931651652
+  ChildIds: 5939889724034721784
+  ChildIds: 3356174655338312232
+  ChildIds: 10780131544941242795
+  ChildIds: 6080582529877805271
+  ChildIds: 9573704073112899690
+  ChildIds: 17992885565611033875
+  ChildIds: 7923937522113961160
+  ChildIds: 17459961845258869986
+  ChildIds: 12328312484282570165
+  ChildIds: 14946115075299840557
+  ChildIds: 6606772614657346293
+  ChildIds: 3939937685933306940
+  ChildIds: 13600648943329145239
+  ChildIds: 10857769499981532841
+  ChildIds: 2220786390171579496
+  ChildIds: 4336834794729646860
+  ChildIds: 7709502934263911208
+  ChildIds: 12935152826670939660
+  ChildIds: 10922920037683950906
+  ChildIds: 14017460295986504494
+  ChildIds: 9713933638632822527
+  ChildIds: 1660292366100615232
+  ChildIds: 8810764281987922819
+  ChildIds: 6528562574267604706
+  ChildIds: 2066573215214793408
+  ChildIds: 5368552580409713118
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -10316,14 +10316,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 158188966043651181
+    SelfId: 17776685285081156311
     SubobjectId: 71846968294190027
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13691390587282253668
+  Id: 5368552580409713118
   Name: "Sphere"
   Transform {
     Location {
@@ -10342,7 +10342,7 @@ Objects {
       Z: 1.41636658
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10376,14 +10376,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13691390587282253668
+    SelfId: 5368552580409713118
     SubobjectId: 13604485364032192706
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16729896738553394298
+  Id: 2066573215214793408
   Name: "Sphere"
   Transform {
     Location {
@@ -10402,7 +10402,7 @@ Objects {
       Z: 1.41636658
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10436,14 +10436,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16729896738553394298
+    SelfId: 2066573215214793408
     SubobjectId: 16925028884087755740
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12545731140019247192
+  Id: 6528562574267604706
   Name: "Sphere"
   Transform {
     Location {
@@ -10462,7 +10462,7 @@ Objects {
       Z: 1.83912337
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10496,14 +10496,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12545731140019247192
+    SelfId: 6528562574267604706
     SubobjectId: 12454181854663245822
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10288304560385621305
+  Id: 8810764281987922819
   Name: "Sphere"
   Transform {
     Location {
@@ -10522,7 +10522,7 @@ Objects {
       Z: 0.733534873
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10556,14 +10556,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10288304560385621305
+    SelfId: 8810764281987922819
     SubobjectId: 10090919790771624607
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16396465012429707002
+  Id: 1660292366100615232
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -10582,7 +10582,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10616,14 +10616,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16396465012429707002
+    SelfId: 1660292366100615232
     SubobjectId: 16232858064146428252
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8236989432170500165
+  Id: 9713933638632822527
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -10642,7 +10642,7 @@ Objects {
       Z: 0.505146623
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10676,14 +10676,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8236989432170500165
+    SelfId: 9713933638632822527
     SubobjectId: 8107299935719618531
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3893780573389120916
+  Id: 14017460295986504494
   Name: "Sphere"
   Transform {
     Location {
@@ -10702,7 +10702,7 @@ Objects {
       Z: 1.42377961
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10736,14 +10736,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3893780573389120916
+    SelfId: 14017460295986504494
     SubobjectId: 3802230661303681586
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7140308726965334912
+  Id: 10922920037683950906
   Name: "Sphere"
   Transform {
     Location {
@@ -10762,7 +10762,7 @@ Objects {
       Z: 1.80530715
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10796,14 +10796,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7140308726965334912
+    SelfId: 10922920037683950906
     SubobjectId: 7051010417293120550
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5117107205683443894
+  Id: 12935152826670939660
   Name: "Sphere"
   Transform {
     Location {
@@ -10822,7 +10822,7 @@ Objects {
       Z: 1.21482408
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10856,14 +10856,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5117107205683443894
+    SelfId: 12935152826670939660
     SubobjectId: 5030201432812052240
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11420232554425865618
+  Id: 7709502934263911208
   Name: "Sphere"
   Transform {
     Location {
@@ -10882,7 +10882,7 @@ Objects {
       Z: 1.21482408
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10916,14 +10916,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11420232554425865618
+    SelfId: 7709502934263911208
     SubobjectId: 11290965622123524660
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14460760807621537206
+  Id: 4336834794729646860
   Name: "Sphere"
   Transform {
     Location {
@@ -10942,7 +10942,7 @@ Objects {
       Z: 1.21482408
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10976,14 +10976,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14460760807621537206
+    SelfId: 4336834794729646860
     SubobjectId: 14583694904763484688
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16884180161626698450
+  Id: 2220786390171579496
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11002,7 +11002,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11036,14 +11036,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16884180161626698450
+    SelfId: 2220786390171579496
     SubobjectId: 16761808541651752308
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 7075140477984327699
+  Id: 10857769499981532841
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11062,7 +11062,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11096,14 +11096,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7075140477984327699
+    SelfId: 10857769499981532841
     SubobjectId: 6981338834802339765
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5205685311168509741
+  Id: 13600648943329145239
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11122,7 +11122,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11156,14 +11156,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5205685311168509741
+    SelfId: 13600648943329145239
     SubobjectId: 5400677269173489803
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13991559660109083270
+  Id: 3939937685933306940
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11182,7 +11182,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11216,14 +11216,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13991559660109083270
+    SelfId: 3939937685933306940
     SubobjectId: 13898461429625427232
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12623169340047887439
+  Id: 6606772614657346293
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11242,7 +11242,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11276,14 +11276,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12623169340047887439
+    SelfId: 6606772614657346293
     SubobjectId: 12530071667811953641
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4317330723198309527
+  Id: 14946115075299840557
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11302,7 +11302,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11336,14 +11336,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4317330723198309527
+    SelfId: 14946115075299840557
     SubobjectId: 4118397832621962033
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6888132419747779343
+  Id: 12328312484282570165
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11362,7 +11362,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11396,14 +11396,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6888132419747779343
+    SelfId: 12328312484282570165
     SubobjectId: 6726917252888474793
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 490689880259648088
+  Id: 17459961845258869986
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11422,7 +11422,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11456,14 +11456,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 490689880259648088
+    SelfId: 17459961845258869986
     SubobjectId: 288801785864748542
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11058028287467706994
+  Id: 7923937522113961160
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11482,7 +11482,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11516,14 +11516,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11058028287467706994
+    SelfId: 7923937522113961160
     SubobjectId: 11221635784829173204
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 951080879432254377
+  Id: 17992885565611033875
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11542,7 +11542,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11576,14 +11576,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 951080879432254377
+    SelfId: 17992885565611033875
     SubobjectId: 1152828511116846095
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8096865419775497936
+  Id: 9573704073112899690
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11602,7 +11602,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11636,14 +11636,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8096865419775497936
+    SelfId: 9573704073112899690
     SubobjectId: 8255265630709281142
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11593365545278639725
+  Id: 6080582529877805271
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11662,7 +11662,7 @@ Objects {
       Z: 0.603576362
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11696,14 +11696,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11593365545278639725
+    SelfId: 6080582529877805271
     SubobjectId: 11686463776296544715
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6997399289419968273
+  Id: 10780131544941242795
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11722,7 +11722,7 @@ Objects {
       Z: 0.603576362
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11756,14 +11756,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6997399289419968273
+    SelfId: 10780131544941242795
     SubobjectId: 7194080380046313655
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15713901338869757074
+  Id: 3356174655338312232
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11782,7 +11782,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11816,14 +11816,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15713901338869757074
+    SelfId: 3356174655338312232
     SubobjectId: 15627418594976715572
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12029047713062658370
+  Id: 5939889724034721784
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11842,7 +11842,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11876,14 +11876,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12029047713062658370
+    SelfId: 5939889724034721784
     SubobjectId: 11827159884550702820
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1719362817218201342
+  Id: 16383284336931651652
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11902,7 +11902,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11936,14 +11936,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1719362817218201342
+    SelfId: 16383284336931651652
     SubobjectId: 1518037664420880728
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9844779651634452405
+  Id: 8943823390941925647
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -11962,7 +11962,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11996,14 +11996,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9844779651634452405
+    SelfId: 8943823390941925647
     SubobjectId: 9967291193150435347
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2969639643130737920
+  Id: 15976307024518427578
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -12022,7 +12022,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12056,14 +12056,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2969639643130737920
+    SelfId: 15976307024518427578
     SubobjectId: 3169135475404280486
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9687655927743516667
+  Id: 8282135859954321729
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -12082,7 +12082,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12116,14 +12116,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9687655927743516667
+    SelfId: 8282135859954321729
     SubobjectId: 9564581093112948829
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9266376071733116724
+  Id: 8365927665581095310
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -12142,7 +12142,7 @@ Objects {
       Z: 0.603576303
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12176,14 +12176,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9266376071733116724
+    SelfId: 8365927665581095310
     SubobjectId: 9391561685021677714
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2145356884156047474
+  Id: 16808752854097028808
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -12202,7 +12202,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12236,14 +12236,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2145356884156047474
+    SelfId: 16808752854097028808
     SubobjectId: 2236203039981127636
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11310477021239558787
+  Id: 7527656821129331769
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -12262,7 +12262,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12296,14 +12296,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11310477021239558787
+    SelfId: 7527656821129331769
     SubobjectId: 11401885577826919717
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5403727045080350969
+  Id: 13726017340551300675
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -12322,7 +12322,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12356,14 +12356,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5403727045080350969
+    SelfId: 13726017340551300675
     SubobjectId: 5201839500637611871
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16379366964846826416
+  Id: 1715390332238075146
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -12382,7 +12382,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12416,14 +12416,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16379366964846826416
+    SelfId: 1715390332238075146
     SubobjectId: 16249676918167745558
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13472948435944880708
+  Id: 5654548790600809726
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -12442,7 +12442,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12476,14 +12476,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13472948435944880708
+    SelfId: 5654548790600809726
     SubobjectId: 13273453153926258146
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 931342087394452621
+  Id: 17901161609057952311
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -12502,7 +12502,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12536,14 +12536,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 931342087394452621
+    SelfId: 17901161609057952311
     SubobjectId: 1018247654245810987
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2467027949406204927
+  Id: 15473767760308680005
   Name: "Sphere"
   Transform {
     Location {
@@ -12562,7 +12562,7 @@ Objects {
       Z: 1.44126022
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12596,14 +12596,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2467027949406204927
+    SelfId: 15473767760308680005
     SubobjectId: 2373929924381054041
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11454361847932953458
+  Id: 7671715370147947976
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -12622,7 +12622,7 @@ Objects {
       Z: 0.505146623
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12656,14 +12656,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11454361847932953458
+    SelfId: 7671715370147947976
     SubobjectId: 11257680756767622356
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8967802276644808547
+  Id: 9868919202232689113
   Name: "Sphere"
   Transform {
     Location {
@@ -12682,7 +12682,7 @@ Objects {
       Z: 1.21482408
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12716,14 +12716,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8967802276644808547
+    SelfId: 9868919202232689113
     SubobjectId: 9131409713981571269
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4642060597516884040
+  Id: 13036391049349750514
   Name: "Sphere"
   Transform {
     Location {
@@ -12742,7 +12742,7 @@ Objects {
       Z: 1.21482408
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12776,14 +12776,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4642060597516884040
+    SelfId: 13036391049349750514
     SubobjectId: 4802712891698642926
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3443352788749292560
+  Id: 15800956310461518506
   Name: "Sphere"
   Transform {
     Location {
@@ -12802,7 +12802,7 @@ Objects {
       Z: 1.56332016
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12836,14 +12836,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3443352788749292560
+    SelfId: 15800956310461518506
     SubobjectId: 3243857781613573046
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8222707968650095349
+  Id: 9700072204392180815
   Name: "Sphere"
   Transform {
     Location {
@@ -12862,7 +12862,7 @@ Objects {
       Z: 1.16706121
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12896,14 +12896,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8222707968650095349
+    SelfId: 9700072204392180815
     SubobjectId: 8129469284114992467
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 640964601935447036
+  Id: 18186750233905481030
   Name: "Sphere"
   Transform {
     Location {
@@ -12922,7 +12922,7 @@ Objects {
       Z: 1.42377961
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -12956,14 +12956,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 640964601935447036
+    SelfId: 18186750233905481030
     SubobjectId: 731950945520346202
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17302140043353140436
+  Id: 332410543810161262
   Name: "Sphere"
   Transform {
     Location {
@@ -12982,7 +12982,7 @@ Objects {
       Z: 1.80530715
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13016,14 +13016,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17302140043353140436
+    SelfId: 332410543810161262
     SubobjectId: 17496709797416143730
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2483959060119032506
+  Id: 15490608694701593600
   Name: "Sphere"
   Transform {
     Location {
@@ -13042,7 +13042,7 @@ Objects {
       Z: 1.80530715
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13076,14 +13076,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2483959060119032506
+    SelfId: 15490608694701593600
     SubobjectId: 2356943859284718876
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6905008251169934009
+  Id: 12345208227718630403
   Name: "Sphere"
   Transform {
     Location {
@@ -13102,7 +13102,7 @@ Objects {
       Z: 1.80530715
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13136,14 +13136,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6905008251169934009
+    SelfId: 12345208227718630403
     SubobjectId: 6710016010265963807
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4540099498773511644
+  Id: 14663955006556011366
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13162,7 +13162,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13196,14 +13196,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4540099498773511644
+    SelfId: 14663955006556011366
     SubobjectId: 4453193726271216250
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17988289235063621069
+  Id: 946394544356017015
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13222,7 +13222,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13256,14 +13256,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17988289235063621069
+    SelfId: 946394544356017015
     SubobjectId: 18117556519045522027
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12258500516988197671
+  Id: 6818318270911749533
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13282,7 +13282,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13316,14 +13316,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12258500516988197671
+    SelfId: 6818318270911749533
     SubobjectId: 12165261823363267713
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12294526036338772526
+  Id: 6782305969272884372
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13342,7 +13342,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13376,14 +13376,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12294526036338772526
+    SelfId: 6782305969272884372
     SubobjectId: 12129229688446233992
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 536315403057852108
+  Id: 17577576929040754806
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13402,7 +13402,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13436,14 +13436,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 536315403057852108
+    SelfId: 17577576929040754806
     SubobjectId: 413240920111270250
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3776271141880491969
+  Id: 13900777560412678523
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13462,7 +13462,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13496,14 +13496,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3776271141880491969
+    SelfId: 13900777560412678523
     SubobjectId: 3937627054281738343
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1506977529531590403
+  Id: 16170355907555746233
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13522,7 +13522,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13556,14 +13556,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1506977529531590403
+    SelfId: 16170355907555746233
     SubobjectId: 1595572229671731365
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5173539440186554797
+  Id: 12920092478908727063
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13582,7 +13582,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13616,14 +13616,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5173539440186554797
+    SelfId: 12920092478908727063
     SubobjectId: 4972355367837949451
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8206713383316519566
+  Id: 9612198129562582068
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13642,7 +13642,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13676,14 +13676,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8206713383316519566
+    SelfId: 9612198129562582068
     SubobjectId: 8298263011902119208
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11157448441990666986
+  Id: 7950613851380178000
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13702,7 +13702,7 @@ Objects {
       Z: 0.603576422
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13736,14 +13736,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11157448441990666986
+    SelfId: 7950613851380178000
     SubobjectId: 10960204959821397324
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5051954406532885702
+  Id: 12870545384616405628
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13762,7 +13762,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13796,14 +13796,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5051954406532885702
+    SelfId: 12870545384616405628
     SubobjectId: 4958856459387046752
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3096190831710104648
+  Id: 16030167298641816306
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13822,7 +13822,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13856,14 +13856,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3096190831710104648
+    SelfId: 16030167298641816306
     SubobjectId: 2898806611513494510
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14055181559023869026
+  Id: 4003541993307970264
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13882,7 +13882,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13916,14 +13916,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14055181559023869026
+    SelfId: 4003541993307970264
     SubobjectId: 13962083809408793540
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8453361247854238542
+  Id: 9354300053396758004
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -13942,7 +13942,7 @@ Objects {
       Z: 0.603575885
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -13976,14 +13976,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8453361247854238542
+    SelfId: 9354300053396758004
     SubobjectId: 8619079541992832232
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4588551026373892139
+  Id: 14640278570468056721
   Name: "Sphere"
   Transform {
     Location {
@@ -14002,7 +14002,7 @@ Objects {
       Z: 1.42377818
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14036,14 +14036,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4588551026373892139
+    SelfId: 14640278570468056721
     SubobjectId: 4422691729232314253
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8193735458974701902
+  Id: 9598446166047170548
   Name: "Sphere"
   Transform {
     Location {
@@ -14062,7 +14062,7 @@ Objects {
       Z: 1.4237783
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14096,14 +14096,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8193735458974701902
+    SelfId: 9598446166047170548
     SubobjectId: 8320609861956255464
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10841652983738071045
+  Id: 7130377849814711999
   Name: "Sphere"
   Transform {
     Location {
@@ -14122,7 +14122,7 @@ Objects {
       Z: 1.4237783
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14156,14 +14156,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10841652983738071045
+    SelfId: 7130377849814711999
     SubobjectId: 10716325876514217891
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4622486943968542866
+  Id: 13017415511748003368
   Name: "Sphere"
   Transform {
     Location {
@@ -14182,7 +14182,7 @@ Objects {
       Z: 1.56331849
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14216,14 +14216,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4622486943968542866
+    SelfId: 13017415511748003368
     SubobjectId: 4821981959831316276
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10556746531106852285
+  Id: 7349980263217105671
   Name: "Sphere"
   Transform {
     Location {
@@ -14242,7 +14242,7 @@ Objects {
       Z: 1.0253371
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14276,14 +14276,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10556746531106852285
+    SelfId: 7349980263217105671
     SubobjectId: 10397783911450028571
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13486434280812368822
+  Id: 5739848256599282956
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -14302,7 +14302,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14336,14 +14336,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13486434280812368822
+    SelfId: 5739848256599282956
     SubobjectId: 13394884995387946000
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15903277904592140974
+  Id: 2896575338807983124
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -14362,7 +14362,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14396,14 +14396,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15903277904592140974
+    SelfId: 2896575338807983124
     SubobjectId: 16032404107528396040
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14333813308043460232
+  Id: 3632881322922637362
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -14422,7 +14422,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14456,14 +14456,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14333813308043460232
+    SelfId: 3632881322922637362
     SubobjectId: 14134177082208704814
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13659157678415381733
+  Id: 5264262216411611743
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -14482,7 +14482,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14516,14 +14516,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13659157678415381733
+    SelfId: 5264262216411611743
     SubobjectId: 13781670044663128899
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3523270200998708203
+  Id: 14151526667125343569
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -14542,7 +14542,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14576,14 +14576,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3523270200998708203
+    SelfId: 14151526667125343569
     SubobjectId: 3614257438507230285
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13361309332110140347
+  Id: 5615303850850215169
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -14602,7 +14602,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14636,14 +14636,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13361309332110140347
+    SelfId: 5615303850850215169
     SubobjectId: 13520272698655065117
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6865383090395833575
+  Id: 12378078266072916573
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -14662,7 +14662,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14696,14 +14696,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6865383090395833575
+    SelfId: 12378078266072916573
     SubobjectId: 6740760417770029889
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11255927539776588021
+  Id: 7544777752057843279
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -14722,7 +14722,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14756,14 +14756,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11255927539776588021
+    SelfId: 7544777752057843279
     SubobjectId: 11455000343744458579
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8396167135841073906
+  Id: 9224590932666203208
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -14782,7 +14782,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14816,14 +14816,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8396167135841073906
+    SelfId: 9224590932666203208
     SubobjectId: 8523183169701911892
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3771630923596702105
+  Id: 13895574375028631331
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -14842,7 +14842,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14876,14 +14876,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3771630923596702105
+    SelfId: 13895574375028631331
     SubobjectId: 3934675196332082751
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9042078310490436645
+  Id: 9942421044374401695
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -14902,7 +14902,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14936,14 +14936,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9042078310490436645
+    SelfId: 9942421044374401695
     SubobjectId: 9202730046463005571
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2917338450263889892
+  Id: 15923900140156834142
   Name: "Thin Parallelepiped"
   Transform {
     Location {
@@ -14962,7 +14962,7 @@ Objects {
       Z: 0.603576
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14996,14 +14996,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2917338450263889892
+    SelfId: 15923900140156834142
     SubobjectId: 3076301267621343298
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13743070640313428507
+  Id: 5348104808089611425
   Name: "Sphere"
   Transform {
     Location {
@@ -15022,7 +15022,7 @@ Objects {
       Z: 1.0253371
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15056,14 +15056,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13743070640313428507
+    SelfId: 5348104808089611425
     SubobjectId: 13579603604851740093
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16022952592893687544
+  Id: 3088782627643863106
   Name: "Sphere"
   Transform {
     Location {
@@ -15082,7 +15082,7 @@ Objects {
       Z: 1.0253371
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15116,14 +15116,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16022952592893687544
+    SelfId: 3088782627643863106
     SubobjectId: 15893684758717927774
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1135282002029841477
+  Id: 18104520965741611775
   Name: "Sphere"
   Transform {
     Location {
@@ -15142,7 +15142,7 @@ Objects {
       Z: 3.07914567
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15176,14 +15176,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1135282002029841477
+    SelfId: 18104520965741611775
     SubobjectId: 940149092490947555
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10320832168744337409
+  Id: 8915877387404068539
   Name: "Sphere"
   Transform {
     Location {
@@ -15202,7 +15202,7 @@ Objects {
       Z: 2.28384757
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15236,14 +15236,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10320832168744337409
+    SelfId: 8915877387404068539
     SubobjectId: 10229845490147026855
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 18025907015864542369
+  Id: 1056547106301796891
   Name: "Sphere"
   Transform {
     Location {
@@ -15259,7 +15259,7 @@ Objects {
       Z: 1.02903295
     }
   }
-  ParentId: 158188966043651181
+  ParentId: 17776685285081156311
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15293,14 +15293,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18025907015864542369
+    SelfId: 1056547106301796891
     SubobjectId: 17934919787044258567
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6367114949138922510
+  Id: 12456376430605318836
   Name: "LeftSide"
   Transform {
     Location {
@@ -15319,18 +15319,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8003569140950301029
-  ChildIds: 1645963972660399755
-  ChildIds: 2831990987393078711
-  ChildIds: 12671049399333717060
-  ChildIds: 13545512882520933258
-  ChildIds: 18175012595101605505
-  ChildIds: 14336782808044251920
-  ChildIds: 3869790336866077886
-  ChildIds: 717998579303244848
-  ChildIds: 11583062139817021299
-  ChildIds: 8009918967607096439
-  ChildIds: 15855748058737955889
+  ParentId: 11210333209010700255
+  ChildIds: 16309463417188878385
+  ChildIds: 15261636864372249357
+  ChildIds: 6582544502268920574
+  ChildIds: 5726939496757675312
+  ChildIds: 629348063987505211
+  ChildIds: 3636380803860114858
+  ChildIds: 13922096344075487748
+  ChildIds: 18264259182756422282
+  ChildIds: 6070347309438716361
+  ChildIds: 11216650067759100621
+  ChildIds: 2921595669006013067
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -15343,14 +15343,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 6367114949138922510
+    SelfId: 12456376430605318836
     SubobjectId: 6526218503382834088
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15855748058737955889
+  Id: 2921595669006013067
   Name: "Hand"
   Transform {
     Location {
@@ -15369,45 +15369,45 @@ Objects {
       Z: 1.68431783
     }
   }
-  ParentId: 6367114949138922510
-  ChildIds: 719031511171704827
-  ChildIds: 843269240018878242
-  ChildIds: 9281874462817708056
-  ChildIds: 10405469672216521120
-  ChildIds: 18093673062405788125
-  ChildIds: 17161160781194497648
-  ChildIds: 5132811092983193409
-  ChildIds: 11021060237795486705
-  ChildIds: 3819828715277345789
-  ChildIds: 5269103806082764785
-  ChildIds: 3327582378135845710
-  ChildIds: 17489187214154520074
-  ChildIds: 12511748323124219213
-  ChildIds: 15192507722994015752
-  ChildIds: 17713535966739532560
-  ChildIds: 4332117694918798145
-  ChildIds: 15775423973222783582
-  ChildIds: 8815982513901571630
-  ChildIds: 13692576292670871273
-  ChildIds: 8973395858746171301
-  ChildIds: 2534777690642472404
-  ChildIds: 16383681014573532386
-  ChildIds: 17996870777295336652
-  ChildIds: 8705862797827550316
-  ChildIds: 9587308145979317039
-  ChildIds: 3142933576494146118
-  ChildIds: 11706568506563163463
-  ChildIds: 8693488332555475822
-  ChildIds: 5323667373894206152
-  ChildIds: 3594485820312827567
-  ChildIds: 9391535117986843559
-  ChildIds: 17372630854434481976
-  ChildIds: 6828809793112386082
-  ChildIds: 10210694064913077864
-  ChildIds: 13968869309726008393
-  ChildIds: 429069234968478862
-  ChildIds: 11739516813732839670
-  ChildIds: 13361951685387777199
+  ParentId: 12456376430605318836
+  ChildIds: 18265467916729557313
+  ChildIds: 18388933907590461848
+  ChildIds: 8380828058713779874
+  ChildIds: 7270743407630675738
+  ChildIds: 1123888741489203047
+  ChildIds: 1921288665820072138
+  ChildIds: 12950682837051546107
+  ChildIds: 7814821735990914379
+  ChildIds: 13944192179212084551
+  ChildIds: 13663610024360855883
+  ChildIds: 15757122684785589748
+  ChildIds: 447943297126486192
+  ChildIds: 6423208242619255799
+  ChildIds: 2762914759776524466
+  ChildIds: 95250755545173418
+  ChildIds: 14456483359084752379
+  ChildIds: 3345305460736924900
+  ChildIds: 10293487607525312660
+  ChildIds: 5369615142240850003
+  ChildIds: 9801696391318264095
+  ChildIds: 15540849134974163822
+  ChildIds: 1720372885336457816
+  ChildIds: 954978130958611062
+  ChildIds: 10110591080434674390
+  ChildIds: 8182351011902938517
+  ChildIds: 16076874843191174396
+  ChildIds: 6266599565600683005
+  ChildIds: 10098196840764595668
+  ChildIds: 13645922639872197746
+  ChildIds: 14223305356744503317
+  ChildIds: 8562493514820111645
+  ChildIds: 402652865933926786
+  ChildIds: 12269414252735507608
+  ChildIds: 8733277052982218962
+  ChildIds: 3844417885431997171
+  ChildIds: 17398853555239928372
+  ChildIds: 6226891989217150540
+  ChildIds: 5615506399166362133
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -15420,14 +15420,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 15855748058737955889
+    SelfId: 2921595669006013067
     SubobjectId: 16052991481515635607
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13361951685387777199
+  Id: 5615506399166362133
   Name: "Sphere"
   Transform {
     Location {
@@ -15446,7 +15446,7 @@ Objects {
       Z: 0.190447733
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15480,14 +15480,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13361951685387777199
+    SelfId: 5615506399166362133
     SubobjectId: 13520492358995432201
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11739516813732839670
+  Id: 6226891989217150540
   Name: "Sphere"
   Transform {
     Location {
@@ -15506,7 +15506,7 @@ Objects {
       Z: 0.042308338
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15540,14 +15540,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11739516813732839670
+    SelfId: 6226891989217150540
     SubobjectId: 11540021316836108112
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 429069234968478862
+  Id: 17398853555239928372
   Name: "Sphere"
   Transform {
     Location {
@@ -15566,7 +15566,7 @@ Objects {
       Z: 0.040135365
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15600,14 +15600,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 429069234968478862
+    SelfId: 17398853555239928372
     SubobjectId: 520478409934922536
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13968869309726008393
+  Id: 3844417885431997171
   Name: "Sphere"
   Transform {
     Location {
@@ -15626,7 +15626,7 @@ Objects {
       Z: 0.042308338
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15660,14 +15660,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13968869309726008393
+    SelfId: 3844417885431997171
     SubobjectId: 14057463735126393839
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10210694064913077864
+  Id: 8733277052982218962
   Name: "Sphere"
   Transform {
     Location {
@@ -15686,7 +15686,7 @@ Objects {
       Z: 0.042308338
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15720,14 +15720,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10210694064913077864
+    SelfId: 8733277052982218962
     SubobjectId: 10339961615824417230
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6828809793112386082
+  Id: 12269414252735507608
   Name: "Sphere"
   Transform {
     Location {
@@ -15746,7 +15746,7 @@ Objects {
       Z: 0.0630807877
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15780,14 +15780,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6828809793112386082
+    SelfId: 12269414252735507608
     SubobjectId: 6631988308490194308
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17372630854434481976
+  Id: 402652865933926786
   Name: "Sphere"
   Transform {
     Location {
@@ -15805,7 +15805,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15839,14 +15839,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17372630854434481976
+    SelfId: 402652865933926786
     SubobjectId: 17571563461982863518
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9391535117986843559
+  Id: 8562493514820111645
   Name: "Sphere"
   Transform {
     Location {
@@ -15864,7 +15864,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15898,14 +15898,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9391535117986843559
+    SelfId: 8562493514820111645
     SubobjectId: 9266207942506474497
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3594485820312827567
+  Id: 14223305356744503317
   Name: "Sphere"
   Transform {
     Location {
@@ -15923,7 +15923,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -15957,14 +15957,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3594485820312827567
+    SelfId: 14223305356744503317
     SubobjectId: 3688287180424909065
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5323667373894206152
+  Id: 13645922639872197746
   Name: "Sphere"
   Transform {
     Location {
@@ -15982,7 +15982,7 @@ Objects {
       Z: 0.109490521
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16016,14 +16016,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5323667373894206152
+    SelfId: 13645922639872197746
     SubobjectId: 5416765115355309422
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8693488332555475822
+  Id: 10098196840764595668
   Name: "Sphere"
   Transform {
     Location {
@@ -16042,7 +16042,7 @@ Objects {
       Z: 0.097209841
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16076,14 +16076,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8693488332555475822
+    SelfId: 10098196840764595668
     SubobjectId: 8820363629125631176
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11706568506563163463
+  Id: 6266599565600683005
   Name: "Sphere"
   Transform {
     Location {
@@ -16102,7 +16102,7 @@ Objects {
       Z: 0.0529071465
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16136,14 +16136,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11706568506563163463
+    SelfId: 6266599565600683005
     SubobjectId: 11581945842588635873
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3142933576494146118
+  Id: 16076874843191174396
   Name: "Sphere"
   Transform {
     Location {
@@ -16162,7 +16162,7 @@ Objects {
       Z: 0.0529061854
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16196,14 +16196,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3142933576494146118
+    SelfId: 16076874843191174396
     SubobjectId: 2977073995245077984
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9587308145979317039
+  Id: 8182351011902938517
   Name: "Sphere"
   Transform {
     Location {
@@ -16222,7 +16222,7 @@ Objects {
       Z: 0.0758107528
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16256,14 +16256,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9587308145979317039
+    SelfId: 8182351011902938517
     SubobjectId: 9782299562788551817
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8705862797827550316
+  Id: 10110591080434674390
   Name: "Sphere"
   Transform {
     Location {
@@ -16282,7 +16282,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16316,14 +16316,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8705862797827550316
+    SelfId: 10110591080434674390
     SubobjectId: 8798961097500167114
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17996870777295336652
+  Id: 954978130958611062
   Name: "Sphere"
   Transform {
     Location {
@@ -16342,7 +16342,7 @@ Objects {
       Z: 0.0672322363
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16376,14 +16376,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17996870777295336652
+    SelfId: 954978130958611062
     SubobjectId: 18090109745267331946
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16383681014573532386
+  Id: 1720372885336457816
   Name: "Sphere"
   Transform {
     Location {
@@ -16402,7 +16402,7 @@ Objects {
       Z: 0.0758116543
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16436,14 +16436,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16383681014573532386
+    SelfId: 1720372885336457816
     SubobjectId: 16254554820294320964
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2534777690642472404
+  Id: 15540849134974163822
   Name: "Sphere"
   Transform {
     Location {
@@ -16462,7 +16462,7 @@ Objects {
       Z: 0.0670713708
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16496,14 +16496,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2534777690642472404
+    SelfId: 15540849134974163822
     SubobjectId: 2440975772150823538
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8973395858746171301
+  Id: 9801696391318264095
   Name: "Sphere"
   Transform {
     Location {
@@ -16522,7 +16522,7 @@ Objects {
       Z: 0.0455764681
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16556,14 +16556,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8973395858746171301
+    SelfId: 9801696391318264095
     SubobjectId: 9100270253747795971
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13692576292670871273
+  Id: 5369615142240850003
   Name: "Sphere"
   Transform {
     Location {
@@ -16582,7 +16582,7 @@ Objects {
       Z: 0.0421754681
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16616,14 +16616,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13692576292670871273
+    SelfId: 5369615142240850003
     SubobjectId: 13603278799077847375
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8815982513901571630
+  Id: 10293487607525312660
   Name: "Sphere"
   Transform {
     Location {
@@ -16642,7 +16642,7 @@ Objects {
       Z: 0.0455747135
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16676,14 +16676,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8815982513901571630
+    SelfId: 10293487607525312660
     SubobjectId: 8689107286047500680
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15775423973222783582
+  Id: 3345305460736924900
   Name: "Sphere"
   Transform {
     Location {
@@ -16702,7 +16702,7 @@ Objects {
       Z: 0.028047014
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16736,14 +16736,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15775423973222783582
+    SelfId: 3345305460736924900
     SubobjectId: 15573677225861856760
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4332117694918798145
+  Id: 14456483359084752379
   Name: "Sphere"
   Transform {
     Location {
@@ -16762,7 +16762,7 @@ Objects {
       Z: 0.0342601426
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16796,14 +16796,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4332117694918798145
+    SelfId: 14456483359084752379
     SubobjectId: 4527109927736937703
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17713535966739532560
+  Id: 95250755545173418
   Name: "Sphere"
   Transform {
     Location {
@@ -16822,7 +16822,7 @@ Objects {
       Z: 0.0556706786
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16856,14 +16856,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17713535966739532560
+    SelfId: 95250755545173418
     SubobjectId: 17806774935246056630
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15192507722994015752
+  Id: 2762914759776524466
   Name: "Sphere"
   Transform {
     Location {
@@ -16882,7 +16882,7 @@ Objects {
       Z: 0.0515184104
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16916,14 +16916,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15192507722994015752
+    SelfId: 2762914759776524466
     SubobjectId: 14995826975356615086
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12511748323124219213
+  Id: 6423208242619255799
   Name: "Sphere"
   Transform {
     Location {
@@ -16942,7 +16942,7 @@ Objects {
       Z: 0.0556728132
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -16976,14 +16976,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12511748323124219213
+    SelfId: 6423208242619255799
     SubobjectId: 12641578480222251755
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17489187214154520074
+  Id: 447943297126486192
   Name: "Sphere"
   Transform {
     Location {
@@ -17002,7 +17002,7 @@ Objects {
       Z: 0.0599898174
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17036,14 +17036,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17489187214154520074
+    SelfId: 447943297126486192
     SubobjectId: 17328535753664098732
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3327582378135845710
+  Id: 15757122684785589748
   Name: "Sphere"
   Transform {
     Location {
@@ -17062,7 +17062,7 @@ Objects {
       Z: 0.0653474
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17096,14 +17096,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3327582378135845710
+    SelfId: 15757122684785589748
     SubobjectId: 3233781224750505192
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5269103806082764785
+  Id: 13663610024360855883
   Name: "Sphere"
   Transform {
     Location {
@@ -17121,7 +17121,7 @@ Objects {
       Z: 0.0653474
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17155,14 +17155,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5269103806082764785
+    SelfId: 13663610024360855883
     SubobjectId: 5463672941534177367
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3819828715277345789
+  Id: 13944192179212084551
   Name: "Sphere"
   Transform {
     Location {
@@ -17180,7 +17180,7 @@ Objects {
       Z: 0.0653474
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17214,14 +17214,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3819828715277345789
+    SelfId: 13944192179212084551
     SubobjectId: 4021575462701974619
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11021060237795486705
+  Id: 7814821735990914379
   Name: "Sphere"
   Transform {
     Location {
@@ -17239,7 +17239,7 @@ Objects {
       Z: 0.06479159
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17273,14 +17273,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11021060237795486705
+    SelfId: 7814821735990914379
     SubobjectId: 11114861400471456855
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5132811092983193409
+  Id: 12950682837051546107
   Name: "Sphere"
   Transform {
     Location {
@@ -17298,7 +17298,7 @@ Objects {
       Z: 0.0616617277
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17332,14 +17332,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5132811092983193409
+    SelfId: 12950682837051546107
     SubobjectId: 5041260914809288935
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17161160781194497648
+  Id: 1921288665820072138
   Name: "Sphere"
   Transform {
     Location {
@@ -17357,7 +17357,7 @@ Objects {
       Z: 0.055167526
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17391,14 +17391,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17161160781194497648
+    SelfId: 1921288665820072138
     SubobjectId: 17070314565339752918
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 18093673062405788125
+  Id: 1123888741489203047
   Name: "Sphere"
   Transform {
     Location {
@@ -17416,7 +17416,7 @@ Objects {
       Z: 0.0612692945
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17450,14 +17450,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18093673062405788125
+    SelfId: 1123888741489203047
     SubobjectId: 18002263887813441147
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10405469672216521120
+  Id: 7270743407630675738
   Name: "Sphere"
   Transform {
     Location {
@@ -17475,7 +17475,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17509,14 +17509,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10405469672216521120
+    SelfId: 7270743407630675738
     SubobjectId: 10568514426357861894
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9281874462817708056
+  Id: 8380828058713779874
   Name: "Sphere"
   Transform {
     Location {
@@ -17534,7 +17534,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17568,14 +17568,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9281874462817708056
+    SelfId: 8380828058713779874
     SubobjectId: 9368217079078113214
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 843269240018878242
+  Id: 18388933907590461848
   Name: "Sphere"
   Transform {
     Location {
@@ -17593,7 +17593,7 @@ Objects {
       Z: 0.0758110508
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17627,14 +17627,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 843269240018878242
+    SelfId: 18388933907590461848
     SubobjectId: 684165127399839876
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 719031511171704827
+  Id: 18265467916729557313
   Name: "Sphere"
   Transform {
     Location {
@@ -17653,7 +17653,7 @@ Objects {
       Z: 0.0630807877
     }
   }
-  ParentId: 15855748058737955889
+  ParentId: 2921595669006013067
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17687,14 +17687,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 719031511171704827
+    SelfId: 18265467916729557313
     SubobjectId: 808329271654580317
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8009918967607096439
+  Id: 11216650067759100621
   Name: "Forearm Sleeve"
   Transform {
     Location {
@@ -17713,7 +17713,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6367114949138922510
+  ParentId: 12456376430605318836
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -17727,14 +17727,14 @@ Objects {
     FilePartitionName: "Forearm Sleeve"
   }
   InstanceHistory {
-    SelfId: 8009918967607096439
+    SelfId: 11216650067759100621
     SubobjectId: 7918932013494850513
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11583062139817021299
+  Id: 6070347309438716361
   Name: "Sphere"
   Transform {
     Location {
@@ -17753,7 +17753,7 @@ Objects {
       Z: 3.5247705
     }
   }
-  ParentId: 6367114949138922510
+  ParentId: 12456376430605318836
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17783,14 +17783,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11583062139817021299
+    SelfId: 6070347309438716361
     SubobjectId: 11705433553061275861
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 717998579303244848
+  Id: 18264259182756422282
   Name: "Ring"
   Transform {
     Location {
@@ -17809,7 +17809,7 @@ Objects {
       Z: 1.69103944
     }
   }
-  ParentId: 6367114949138922510
+  ParentId: 12456376430605318836
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17839,14 +17839,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 717998579303244848
+    SelfId: 18264259182756422282
     SubobjectId: 809407195453899670
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3869790336866077886
+  Id: 13922096344075487748
   Name: "Ring"
   Transform {
     Location {
@@ -17865,7 +17865,7 @@ Objects {
       Z: 1.6910398
     }
   }
-  ParentId: 6367114949138922510
+  ParentId: 12456376430605318836
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17895,14 +17895,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3869790336866077886
+    SelfId: 13922096344075487748
     SubobjectId: 3997227964915936024
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14336782808044251920
+  Id: 3636380803860114858
   Name: "Sphere"
   Transform {
     Location {
@@ -17919,7 +17919,7 @@ Objects {
       Z: 4.21479845
     }
   }
-  ParentId: 6367114949138922510
+  ParentId: 12456376430605318836
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -17949,14 +17949,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14336782808044251920
+    SelfId: 3636380803860114858
     SubobjectId: 14139961872573631670
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 18175012595101605505
+  Id: 629348063987505211
   Name: "Ring"
   Transform {
     Location {
@@ -17975,7 +17975,7 @@ Objects {
       Z: 2.21938157
     }
   }
-  ParentId: 6367114949138922510
+  ParentId: 12456376430605318836
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -18005,14 +18005,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18175012595101605505
+    SelfId: 629348063987505211
     SubobjectId: 18372397030048676135
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13545512882520933258
+  Id: 5726939496757675312
   Name: "Sphere"
   Transform {
     Location {
@@ -18031,7 +18031,7 @@ Objects {
       Z: 3.4291122
     }
   }
-  ParentId: 6367114949138922510
+  ParentId: 12456376430605318836
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -18061,14 +18061,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13545512882520933258
+    SelfId: 5726939496757675312
     SubobjectId: 13345876922942710828
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12671049399333717060
+  Id: 6582544502268920574
   Name: "Sphere"
   Transform {
     Location {
@@ -18087,7 +18087,7 @@ Objects {
       Z: 1.19793403
     }
   }
-  ParentId: 6367114949138922510
+  ParentId: 12456376430605318836
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -18117,14 +18117,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12671049399333717060
+    SelfId: 6582544502268920574
     SubobjectId: 12472116783765038050
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2831990987393078711
+  Id: 15261636864372249357
   Name: "Sphere"
   Transform {
     Location {
@@ -18143,7 +18143,7 @@ Objects {
       Z: 2.31383371
     }
   }
-  ParentId: 6367114949138922510
+  ParentId: 12456376430605318836
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -18173,14 +18173,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2831990987393078711
+    SelfId: 15261636864372249357
     SubobjectId: 2702160487199158801
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1645963972660399755
+  Id: 16309463417188878385
   Name: "Ring"
   Transform {
     Location {
@@ -18199,7 +18199,7 @@ Objects {
       Z: 1.69103944
     }
   }
-  ParentId: 6367114949138922510
+  ParentId: 12456376430605318836
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -18229,14 +18229,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1645963972660399755
+    SelfId: 16309463417188878385
     SubobjectId: 1448720825266317613
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13933622556810295247
+  Id: 3881912622081782133
   Name: "Colliders"
   Transform {
     Location {
@@ -18252,11 +18252,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5013015748027368542
-  ChildIds: 14009966691524433067
-  ChildIds: 1966745417444315502
-  ChildIds: 6037752466558361848
-  ChildIds: 9544639361743417210
+  ParentId: 12758898205494231780
+  ChildIds: 3957572705801753105
+  ChildIds: 17278677463477737428
+  ChildIds: 12054762857681987138
+  ChildIds: 8139174390734219712
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18269,14 +18269,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 13933622556810295247
+    SelfId: 3881912622081782133
     SubobjectId: 14092725913418076265
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9544639361743417210
+  Id: 8139174390734219712
   Name: "StatueColliders"
   Transform {
     Location {
@@ -18295,7 +18295,7 @@ Objects {
       Z: 1.49224102
     }
   }
-  ParentId: 13933622556810295247
+  ParentId: 3881912622081782133
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18322,14 +18322,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9544639361743417210
+    SelfId: 8139174390734219712
     SubobjectId: 9707542562484209884
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6037752466558361848
+  Id: 12054762857681987138
   Name: "StatueColliders"
   Transform {
     Location {
@@ -18348,7 +18348,7 @@ Objects {
       Z: 1.61735737
     }
   }
-  ParentId: 13933622556810295247
+  ParentId: 3881912622081782133
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18375,14 +18375,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6037752466558361848
+    SelfId: 12054762857681987138
     SubobjectId: 5838678907343406942
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1966745417444315502
+  Id: 17278677463477737428
   Name: "StatueColliders"
   Transform {
     Location {
@@ -18401,7 +18401,7 @@ Objects {
       Z: 2.33777165
     }
   }
-  ParentId: 13933622556810295247
+  ParentId: 3881912622081782133
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18428,14 +18428,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1966745417444315502
+    SelfId: 17278677463477737428
     SubobjectId: 1839167257693091528
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14009966691524433067
+  Id: 3957572705801753105
   Name: "StatueColliders"
   Transform {
     Location {
@@ -18454,7 +18454,7 @@ Objects {
       Z: 0.242741838
     }
   }
-  ParentId: 13933622556810295247
+  ParentId: 3881912622081782133
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18481,9 +18481,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14009966691524433067
+    SelfId: 3957572705801753105
     SubobjectId: 13880135915884016397
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }

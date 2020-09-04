@@ -1,7 +1,7 @@
 ﻿Name: "Well Top"
-RootId: 17604733150317440000
+RootId: 59086193713801914
 Objects {
-  Id: 16952577547892358506
+  Id: 2288636082476350416
   Name: "Handle Piece 2"
   Transform {
     Location {
@@ -18,7 +18,7 @@ Objects {
       Z: 0.2
     }
   }
-  ParentId: 17604733150317440000
+  ParentId: 59086193713801914
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -66,14 +66,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16952577547892358506
+    SelfId: 2288636082476350416
     SubobjectId: 16829642977966349004
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2417403935711252986
+  Id: 15351962990537955136
   Name: "Handle Piece"
   Transform {
     Location {
@@ -90,7 +90,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 17604733150317440000
+  ParentId: 59086193713801914
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -124,14 +124,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2417403935711252986
+    SelfId: 15351962990537955136
     SubobjectId: 2540338582540088924
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11344384871268710165
+  Id: 7633074690815127983
   Name: "Wooden Bucket"
   Transform {
     Location {
@@ -148,7 +148,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17604733150317440000
+  ParentId: 59086193713801914
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -172,14 +172,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11344384871268710165
+    SelfId: 7633074690815127983
     SubobjectId: 11502784463595589811
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 13572856781416271776
+  Id: 5250353043896502554
   Name: "Hanging Rope"
   Transform {
     Location {
@@ -196,7 +196,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17604733150317440000
+  ParentId: 59086193713801914
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -238,14 +238,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13572856781416271776
+    SelfId: 5250353043896502554
     SubobjectId: 13731819676016027654
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2744671481737384756
+  Id: 15174440486436607374
   Name: "Rope Beam"
   Transform {
     Location {
@@ -262,7 +262,7 @@ Objects {
       Z: 0.3
     }
   }
-  ParentId: 17604733150317440000
+  ParentId: 59086193713801914
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -304,14 +304,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2744671481737384756
+    SelfId: 15174440486436607374
     SubobjectId: 2655514381297398930
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 9527976552892295354
+  Id: 8123179964827921920
   Name: "Pole"
   Transform {
     Location {
@@ -327,7 +327,7 @@ Objects {
       Z: 4
     }
   }
-  ParentId: 17604733150317440000
+  ParentId: 59086193713801914
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -361,14 +361,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9527976552892295354
+    SelfId: 8123179964827921920
     SubobjectId: 9725361047964176156
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 950107887416245616
+  Id: 17991334074651507658
   Name: "Pole"
   Transform {
     Location {
@@ -384,7 +384,7 @@ Objects {
       Z: 4
     }
   }
-  ParentId: 17604733150317440000
+  ParentId: 59086193713801914
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -418,14 +418,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 950107887416245616
+    SelfId: 17991334074651507658
     SubobjectId: 1144537178161535702
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17680954110123275278
+  Id: 134587953688572596
   Name: "Roof"
   Transform {
     Location {
@@ -442,7 +442,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 17604733150317440000
+  ParentId: 59086193713801914
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -506,9 +506,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17680954110123275278
+    SelfId: 134587953688572596
     SubobjectId: 17839354595262288808
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }

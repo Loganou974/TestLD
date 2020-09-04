@@ -1,7 +1,7 @@
 ﻿Name: "Well"
-RootId: 1181717945559438346
+RootId: 16494212804610380464
 Objects {
-  Id: 8908233979005174352
+  Id: 10313558195883017450
   Name: "Grating"
   Transform {
     Location {
@@ -19,7 +19,7 @@ Objects {
       Z: 0.431585252
     }
   }
-  ParentId: 1181717945559438346
+  ParentId: 16494212804610380464
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -53,14 +53,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8908233979005174352
+    SelfId: 10313558195883017450
     SubobjectId: 8749693572218693110
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17604733150317440000
+  Id: 59086193713801914
   Name: "Well Top"
   Transform {
     Location {
@@ -76,7 +76,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1181717945559438346
+  ParentId: 16494212804610380464
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -90,14 +90,14 @@ Objects {
     FilePartitionName: "Well Top"
   }
   InstanceHistory {
-    SelfId: 17604733150317440000
+    SelfId: 59086193713801914
     SubobjectId: 17770592730959891366
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 14646450519523488562
+  Id: 4594758175941358984
   Name: "Outer Rocks"
   Transform {
     Location {
@@ -114,7 +114,7 @@ Objects {
       Z: 1.5
     }
   }
-  ParentId: 1181717945559438346
+  ParentId: 16494212804610380464
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -128,14 +128,14 @@ Objects {
     FilePartitionName: "Layer 2"
   }
   InstanceHistory {
-    SelfId: 14646450519523488562
+    SelfId: 4594758175941358984
     SubobjectId: 14524079440620573844
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15089147346572476373
+  Id: 2730890577338759535
   Name: "Water"
   Transform {
     Location {
@@ -150,7 +150,7 @@ Objects {
       Z: 28.6443
     }
   }
-  ParentId: 1181717945559438346
+  ParentId: 16494212804610380464
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -180,14 +180,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15089147346572476373
+    SelfId: 2730890577338759535
     SubobjectId: 15252051440597522547
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4453636334157309378
+  Id: 14505821396430365560
   Name: "Top Rocks"
   Transform {
     Location {
@@ -204,7 +204,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1181717945559438346
+  ParentId: 16494212804610380464
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -218,14 +218,14 @@ Objects {
     FilePartitionName: "Layer 3"
   }
   InstanceHistory {
-    SelfId: 4453636334157309378
+    SelfId: 14505821396430365560
     SubobjectId: 4540541909693497956
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 15571571048804190296
+  Id: 3213367055231028962
   Name: "Inner Rocks 2"
   Transform {
     Location {
@@ -242,7 +242,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1181717945559438346
+  ParentId: 16494212804610380464
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -256,14 +256,14 @@ Objects {
     FilePartitionName: "Layer 2_1"
   }
   InstanceHistory {
-    SelfId: 15571571048804190296
+    SelfId: 3213367055231028962
     SubobjectId: 15768251512331775998
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 4775039726825696018
+  Id: 13169968175377608104
   Name: "Inner Rocks 1"
   Transform {
     Location {
@@ -279,7 +279,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1181717945559438346
+  ParentId: 16494212804610380464
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -293,9 +293,9 @@ Objects {
     FilePartitionName: "Layer 1"
   }
   InstanceHistory {
-    SelfId: 4775039726825696018
+    SelfId: 13169968175377608104
     SubobjectId: 4650275835841137844
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }

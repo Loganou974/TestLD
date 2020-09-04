@@ -1,28 +1,138 @@
 ﻿Name: "OnInteract_9"
-RootId: 6457151545216976001
+RootId: 8113980489965599872
 Objects {
-  Id: 18062319635945755135
-  Name: "Speech1"
+  Id: 13865364846036427203
+  Name: "Speech4"
   Transform {
     Location {
-      X: -81.4399948
-      Y: 149.354095
-      Z: -4.49830055
     }
     Rotation {
-      Yaw: -124.221748
     }
     Scale {
-      X: 0.801732481
-      Y: 0.801732481
-      Z: 0.801732481
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 6457151545216976001
+  ParentId: 8113980489965599872
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Go away !"
+      String: "but that his Barovian honor dictates to him to allow you to pass and go meet the count."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Speech4"
+  }
+  InstanceHistory {
+    SelfId: 13865364846036427203
+    SubobjectId: 3902248846809399519
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
+  }
+}
+Objects {
+  Id: 12284396998173032948
+  Name: "Speech3"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8113980489965599872
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Texte"
+      String: "He makes you understand that strangers are not welcome."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Speech3"
+  }
+  InstanceHistory {
+    SelfId: 12284396998173032948
+    SubobjectId: 6644718755828637928
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
+  }
+}
+Objects {
+  Id: 17291369507798779538
+  Name: "Speech2"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8113980489965599872
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Texte"
+      String: "His ancestors built Krezk at the foot of the abbey after Strahd\'s armies conquered the valley."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Speech2_2"
+  }
+  InstanceHistory {
+    SelfId: 17291369507798779538
+    SubobjectId: 1854200530623932302
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
+  }
+}
+Objects {
+  Id: 4089622676132659568
+  Name: "Speech1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8113980489965599872
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Texte"
+      String: "Dmitri look down at you. He is the lord here."
     }
   }
   Collidable_v2 {
@@ -36,135 +146,9 @@ Objects {
     FilePartitionName: "Speech1_8"
   }
   InstanceHistory {
-    SelfId: 18030036464210208814
-    SubobjectId: 3508267902327890024
-    InstanceId: 16122403184916844978
-    TemplateId: 12287563631168970081
-  }
-}
-Objects {
-  Id: 2401521773413780512
-  Name: "Speech1"
-  Transform {
-    Location {
-      X: -81.4399948
-      Y: 149.354095
-      Z: -4.49830055
-    }
-    Rotation {
-      Yaw: -124.221748
-    }
-    Scale {
-      X: 0.801732481
-      Y: 0.801732481
-      Z: 0.801732481
-    }
-  }
-  ParentId: 6457151545216976001
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Texte"
-      String: "I don\'t want any trouble."
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Speech1_9"
-  }
-  InstanceHistory {
-    SelfId: 18030036464210208814
-    SubobjectId: 3508267902327890024
-    InstanceId: 16122403184916844978
-    TemplateId: 12287563631168970081
-  }
-}
-Objects {
-  Id: 5244932154631930481
-  Name: "Speech1"
-  Transform {
-    Location {
-      X: -81.4399948
-      Y: 149.354095
-      Z: -4.49830055
-    }
-    Rotation {
-      Yaw: -124.221748
-    }
-    Scale {
-      X: 0.801732481
-      Y: 0.801732481
-      Z: 0.801732481
-    }
-  }
-  ParentId: 6457151545216976001
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Texte"
-      String: "Get out of my sight, you are Strahd\'s meat."
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Speech1_10"
-  }
-  InstanceHistory {
-    SelfId: 16260886817252354877
-    SubobjectId: 3112576521103401851
-    InstanceId: 16122403184916844978
-    TemplateId: 12287563631168970081
-  }
-}
-Objects {
-  Id: 13663728900915180016
-  Name: "Speech1"
-  Transform {
-    Location {
-      X: -81.4399948
-      Y: 149.354095
-      Z: -4.49830055
-    }
-    Rotation {
-      Yaw: -124.221748
-    }
-    Scale {
-      X: 0.801732481
-      Y: 0.801732481
-      Z: 0.801732481
-    }
-  }
-  ParentId: 6457151545216976001
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Texte"
-      String: "Why are you here, stranger ?"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Speech1_12"
-  }
-  InstanceHistory {
-    SelfId: 8011791814024859842
-    SubobjectId: 11941236714437859460
-    InstanceId: 16122403184916844978
-    TemplateId: 12287563631168970081
+    SelfId: 4089622676132659568
+    SubobjectId: 14883687982190370924
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
   }
 }

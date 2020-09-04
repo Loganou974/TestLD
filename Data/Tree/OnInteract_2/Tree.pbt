@@ -1,7 +1,7 @@
 ﻿Name: "OnInteract_2"
-RootId: 578594052667667953
+RootId: 18196492115778663243
 Objects {
-  Id: 17955620220352948239
+  Id: 985818170448375477
   Name: "Speech1"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 578594052667667953
+  ParentId: 18196492115778663243
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
@@ -32,9 +32,9 @@ Objects {
     FilePartitionName: "Speech1_2"
   }
   InstanceHistory {
-    SelfId: 4282248599225536052
-    SubobjectId: 7907731027658196644
-    InstanceId: 11972336444180036880
-    TemplateId: 4160431205403122694
+    SelfId: 985818170448375477
+    SubobjectId: 18150189415497158569
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
   }
 }

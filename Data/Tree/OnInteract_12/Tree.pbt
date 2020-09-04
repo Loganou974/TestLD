@@ -1,100 +1,28 @@
 ﻿Name: "OnInteract_12"
-RootId: 544178570261529343
+RootId: 12474144187899691579
 Objects {
-  Id: 15955435688740159371
-  Name: "Speech3"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 544178570261529343
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Texte"
-      String: "She tried to attack him, he is terrified."
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Speech3"
-  }
-  InstanceHistory {
-    SelfId: 15955435688740159371
-    SubobjectId: 18376468397267961376
-    InstanceId: 3074614577790143644
-    TemplateId: 4160431205403122694
-  }
-}
-Objects {
-  Id: 11015981946082097389
-  Name: "Speech2"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 544178570261529343
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Texte"
-      String: "He says his daughter changed into a monster."
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Speech2_2"
-  }
-  InstanceHistory {
-    SelfId: 11015981946082097389
-    SubobjectId: 13442098830824554822
-    InstanceId: 3074614577790143644
-    TemplateId: 4160431205403122694
-  }
-}
-Objects {
-  Id: 5752974574724448015
+  Id: 1020972483649083205
   Name: "Speech1"
   Transform {
     Location {
+      X: -81.4399948
+      Y: 149.354095
+      Z: -4.49830055
     }
     Rotation {
+      Yaw: -124.221748
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.801732481
+      Y: 0.801732481
+      Z: 0.801732481
     }
   }
-  ParentId: 544178570261529343
+  ParentId: 12474144187899691579
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "The Merchant can\'t sell you anything."
+      String: "Go away !"
     }
   }
   Collidable_v2 {
@@ -105,12 +33,138 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_17"
+    FilePartitionName: "Speech1_10"
   }
   InstanceHistory {
-    SelfId: 5752974574724448015
-    SubobjectId: 7907731027658196644
-    InstanceId: 3074614577790143644
-    TemplateId: 4160431205403122694
+    SelfId: 1020972483649083205
+    SubobjectId: 17899275706507605593
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
+  }
+}
+Objects {
+  Id: 15407538106646645402
+  Name: "Speech1"
+  Transform {
+    Location {
+      X: -81.4399948
+      Y: 149.354095
+      Z: -4.49830055
+    }
+    Rotation {
+      Yaw: -124.221748
+    }
+    Scale {
+      X: 0.801732481
+      Y: 0.801732481
+      Z: 0.801732481
+    }
+  }
+  ParentId: 12474144187899691579
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Texte"
+      String: "I don\'t want any trouble."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Speech1_12"
+  }
+  InstanceHistory {
+    SelfId: 15407538106646645402
+    SubobjectId: 2566677117597641606
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
+  }
+}
+Objects {
+  Id: 13567312763056440523
+  Name: "Speech1"
+  Transform {
+    Location {
+      X: -81.4399948
+      Y: 149.354095
+      Z: -4.49830055
+    }
+    Rotation {
+      Yaw: -124.221748
+    }
+    Scale {
+      X: 0.801732481
+      Y: 0.801732481
+      Z: 0.801732481
+    }
+  }
+  ParentId: 12474144187899691579
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Texte"
+      String: "Get out of my sight, you are Strahd\'s meat."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Speech1_13"
+  }
+  InstanceHistory {
+    SelfId: 13567312763056440523
+    SubobjectId: 5333667583170864599
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
+  }
+}
+Objects {
+  Id: 5268692699947448138
+  Name: "Speech1"
+  Transform {
+    Location {
+      X: -81.4399948
+      Y: 149.354095
+      Z: -4.49830055
+    }
+    Rotation {
+      Yaw: -124.221748
+    }
+    Scale {
+      X: 0.801732481
+      Y: 0.801732481
+      Z: 0.801732481
+    }
+  }
+  ParentId: 12474144187899691579
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Texte"
+      String: "Why are you here, stranger ?"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Speech1_14"
+  }
+  InstanceHistory {
+    SelfId: 5268692699947448138
+    SubobjectId: 13786100528943437398
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
   }
 }
