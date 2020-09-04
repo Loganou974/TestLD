@@ -305,15 +305,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17148810838103658535
-  Name: "Dragon"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_icon_Dragon"
-  }
-}
-Assets {
   Id: 17108871192860831370
   Name: "Text 02: Z"
   PlatformAssetType: 1
@@ -428,15 +419,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_sixsided_hq_001"
-  }
-}
-Assets {
-  Id: 16241833908851998054
-  Name: "BG Flat 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_020"
   }
 }
 Assets {
@@ -2597,15 +2579,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_roof_asphalt_001_uv"
-  }
-}
-Assets {
-  Id: 4878364448582661331
-  Name: "Frame Beveled 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameSolid8px__019"
   }
 }
 Assets {
