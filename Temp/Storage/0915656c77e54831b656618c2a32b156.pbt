@@ -31,10 +31,26 @@ Entries {
     Table {
       Entries {
         Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Human"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "size"
+        }
+        SimpleValue {
+          StringVar: "N"
+        }
+      }
+      Entries {
+        Key {
           StringVar: "description"
         }
         SimpleValue {
-          StringVar: "Your base walking speed is 30 feet."
+          StringVar: " Your base walking speed is 30 feet."
         }
       }
       Entries {
@@ -48,7 +64,7 @@ Entries {
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -64,7 +80,7 @@ Entries {
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -72,7 +88,7 @@ Entries {
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -80,7 +96,7 @@ Entries {
                 IntVar: 5
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -88,7 +104,7 @@ Entries {
                 IntVar: 6
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 1
               }
             }
             Entries {
@@ -104,26 +120,10 @@ Entries {
       }
       Entries {
         Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Tiefling"
-        }
-      }
-      Entries {
-        Key {
           StringVar: "speed"
         }
         SimpleValue {
           IntVar: 30
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "size"
-        }
-        SimpleValue {
-          StringVar: "S"
         }
       }
     }
