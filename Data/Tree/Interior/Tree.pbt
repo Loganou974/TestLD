@@ -583,7 +583,7 @@ Objects {
     }
     Overrides {
       Name: "cs:introSpeech"
-      String: "As you walk into the room, a bunch of Commoners attacks you"
+      String: "Rising from the ground a bunch of undead warrior attacks you"
     }
     Overrides {
       Name: "cs:Monster4"
@@ -2233,6 +2233,10 @@ Objects {
         InstanceId: 6564411352709047931
         TemplateId: 15728781663253921388
       }
+    }
+    Overrides {
+      Name: "cs:introSpeech"
+      String: "As the howling grows closer you notice 2 dire wolfs in the dark"
     }
   }
   Collidable_v2 {
