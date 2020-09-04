@@ -1,7 +1,7 @@
 ﻿Name: "Furniture and Props"
-RootId: 17908887203251147697
+RootId: 867047470273975563
 Objects {
-  Id: 10920624944112666436
+  Id: 7137259369457844734
   Name: "Reinforced Crate 150cm"
   Transform {
     Location {
@@ -16,7 +16,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17908887203251147697
+  ParentId: 867047470273975563
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -52,14 +52,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10920624944112666436
+    SelfId: 7137259369457844734
     SubobjectId: 10754766264672788706
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 16391868086814618997
+  Id: 1727944368077386703
   Name: "Wooden Barrel"
   Transform {
     Location {
@@ -75,7 +75,7 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 17908887203251147697
+  ParentId: 867047470273975563
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -111,14 +111,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16391868086814618997
+    SelfId: 1727944368077386703
     SubobjectId: 16264430389506052819
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1356097180460769821
+  Id: 16595951687165011111
   Name: "Wooden Barrel"
   Transform {
     Location {
@@ -134,7 +134,7 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 17908887203251147697
+  ParentId: 867047470273975563
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -170,14 +170,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1356097180460769821
+    SelfId: 16595951687165011111
     SubobjectId: 1160964820681606587
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12166529454303739350
+  Id: 6654432395780946796
   Name: "Small Open Crate"
   Transform {
     Location {
@@ -193,7 +193,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17908887203251147697
+  ParentId: 867047470273975563
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -223,14 +223,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12166529454303739350
+    SelfId: 6654432395780946796
     SubobjectId: 12255827833400580720
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 3757740375985202517
+  Id: 13882158815509193711
   Name: "Table Backing"
   Transform {
     Location {
@@ -248,7 +248,7 @@ Objects {
       Z: 1.0709306
     }
   }
-  ParentId: 17908887203251147697
+  ParentId: 867047470273975563
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -278,14 +278,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3757740375985202517
+    SelfId: 13882158815509193711
     SubobjectId: 3957376129803453171
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1011515425326328731
+  Id: 18052933066491522337
   Name: "Table Assembled"
   Transform {
     Location {
@@ -300,7 +300,7 @@ Objects {
       Z: 0.791766822
     }
   }
-  ParentId: 17908887203251147697
+  ParentId: 867047470273975563
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -336,14 +336,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1011515425326328731
+    SelfId: 18052933066491522337
     SubobjectId: 920105975951739965
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10126978469572695669
+  Id: 8650069431645294799
   Name: "Wooden Barrel"
   Transform {
     Location {
@@ -359,7 +359,7 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 17908887203251147697
+  ParentId: 867047470273975563
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -395,14 +395,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10126978469572695669
+    SelfId: 8650069431645294799
     SubobjectId: 10252164357737607635
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2062139295314542441
+  Id: 16726168704481425875
   Name: "Wooden Barrel"
   Transform {
     Location {
@@ -418,7 +418,7 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 17908887203251147697
+  ParentId: 867047470273975563
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -454,9 +454,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2062139295314542441
+    SelfId: 16726168704481425875
     SubobjectId: 2185214121693075663
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }

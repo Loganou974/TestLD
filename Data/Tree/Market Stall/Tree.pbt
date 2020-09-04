@@ -1,7 +1,7 @@
 ﻿Name: "Market Stall"
-RootId: 11986333812397392385
+RootId: 5969936967284376763
 Objects {
-  Id: 11215739729255960272
+  Id: 8009430720874252394
   Name: "Front Row"
   Transform {
     Location {
@@ -17,7 +17,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11986333812397392385
+  ParentId: 5969936967284376763
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -31,14 +31,14 @@ Objects {
     FilePartitionName: "Front Row"
   }
   InstanceHistory {
-    SelfId: 11215739729255960272
+    SelfId: 8009430720874252394
     SubobjectId: 11054946980923943286
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5978871904534057036
+  Id: 11995409367380186870
   Name: "Back Row"
   Transform {
     Location {
@@ -54,7 +54,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11986333812397392385
+  ParentId: 5969936967284376763
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -68,14 +68,14 @@ Objects {
     FilePartitionName: "Back Row"
   }
   InstanceHistory {
-    SelfId: 5978871904534057036
+    SelfId: 11995409367380186870
     SubobjectId: 5779376407165990890
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 17908887203251147697
+  Id: 867047470273975563
   Name: "Furniture and Props"
   Transform {
     Location {
@@ -91,7 +91,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11986333812397392385
+  ParentId: 5969936967284376763
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -105,14 +105,14 @@ Objects {
     FilePartitionName: "Furniture and Props"
   }
   InstanceHistory {
-    SelfId: 17908887203251147697
+    SelfId: 867047470273975563
     SubobjectId: 18033651438036775959
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8830143596014792680
+  Id: 10235417253610842450
   Name: "Tent"
   Transform {
     Location {
@@ -127,7 +127,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11986333812397392385
+  ParentId: 5969936967284376763
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -141,9 +141,9 @@ Objects {
     FilePartitionName: "Tent"
   }
   InstanceHistory {
-    SelfId: 8830143596014792680
+    SelfId: 10235417253610842450
     SubobjectId: 8667099108631169102
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }

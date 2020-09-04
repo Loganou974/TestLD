@@ -1,7 +1,121 @@
 ﻿Name: "OnInteract_14"
-RootId: 7226499133757095775
+RootId: 1103991693180041429
 Objects {
-  Id: 232194834306472478
+  Id: 13808923767848805782
+  Name: "Speech4"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1103991693180041429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Texte"
+      String: "You can see him smiling."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Speech4_2"
+  }
+  InstanceHistory {
+    SelfId: 13808923767848805782
+    SubobjectId: 5327510394131154058
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
+  }
+}
+Objects {
+  Id: 15398507684199761313
+  Name: "Speech3"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1103991693180041429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Texte"
+      String: "He tells you he had to kill all his family to survive."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Speech3_2"
+  }
+  InstanceHistory {
+    SelfId: 15398507684199761313
+    SubobjectId: 2593585598441301181
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
+  }
+}
+Objects {
+  Id: 10394242144167330503
+  Name: "Speech2"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1103991693180041429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Texte"
+      String: "The priest approches and whispers to you."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Speech2_5"
+  }
+  InstanceHistory {
+    SelfId: 10394242144167330503
+    SubobjectId: 7382522749564822491
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
+  }
+}
+Objects {
+  Id: 5118850030734017829
   Name: "Speech1"
   Transform {
     Location {
@@ -14,11 +128,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7226499133757095775
+  ParentId: 1103991693180041429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Welcome to Boravia. The place you never leave alive."
+      String: "Half of the villagers have been doomed by the count."
     }
   }
   Collidable_v2 {
@@ -32,9 +146,9 @@ Objects {
     FilePartitionName: "Speech1_19"
   }
   InstanceHistory {
-    SelfId: 232194834306472478
-    SubobjectId: 14528817226602697304
-    InstanceId: 16122403184916844978
-    TemplateId: 12287563631168970081
+    SelfId: 5118850030734017829
+    SubobjectId: 12773888048410010681
+    InstanceId: 3057980555259558267
+    TemplateId: 9323984862848679036
   }
 }

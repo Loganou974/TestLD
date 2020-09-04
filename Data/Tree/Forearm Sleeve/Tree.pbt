@@ -1,7 +1,7 @@
 ﻿Name: "Forearm Sleeve"
-RootId: 8009918967607096439
+RootId: 11216650067759100621
 Objects {
-  Id: 12245038286467175995
+  Id: 6732428873367621761
   Name: "Ring"
   Transform {
     Location {
@@ -20,7 +20,7 @@ Objects {
       Z: 2.92911911
     }
   }
-  ParentId: 8009918967607096439
+  ParentId: 11216650067759100621
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -54,14 +54,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12245038286467175995
+    SelfId: 6732428873367621761
     SubobjectId: 12331521091026104733
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10433991203863276221
+  Id: 7227576625982090247
   Name: "Ring"
   Transform {
     Location {
@@ -79,7 +79,7 @@ Objects {
       Z: 2.92911696
     }
   }
-  ParentId: 8009918967607096439
+  ParentId: 11216650067759100621
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -113,14 +113,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10433991203863276221
+    SelfId: 7227576625982090247
     SubobjectId: 10520896770041711899
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5255597503663583674
+  Id: 13578030752583005952
   Name: "Ring"
   Transform {
     Location {
@@ -137,7 +137,7 @@ Objects {
       Z: 2.33924246
     }
   }
-  ParentId: 8009918967607096439
+  ParentId: 11216650067759100621
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -171,14 +171,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5255597503663583674
+    SelfId: 13578030752583005952
     SubobjectId: 5342081132491576860
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8143036399985446351
+  Id: 9619857460776094581
   Name: "Ring"
   Transform {
     Location {
@@ -195,7 +195,7 @@ Objects {
       Z: 2.33924174
     }
   }
-  ParentId: 8009918967607096439
+  ParentId: 11216650067759100621
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -229,9 +229,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8143036399985446351
+    SelfId: 9619857460776094581
     SubobjectId: 8344220266108512873
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }

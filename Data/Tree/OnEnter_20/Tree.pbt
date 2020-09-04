@@ -1,12 +1,13 @@
 ﻿Name: "OnEnter_20"
-RootId: 13528845306878451906
+RootId: 15933472271951582580
 Objects {
-  Id: 4620486833017305937
+  Id: 1051516595115544522
   Name: "Speech2"
   Transform {
     Location {
     }
     Rotation {
+      Yaw: -1.7075472e-05
     }
     Scale {
       X: 1
@@ -14,14 +15,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13528845306878451906
+  ParentId: 15933472271951582580
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: " The stranger delivers a letter from his master,inviting them to the village of Barovia with an urgent request for your assistance."
+      String: "One by one, the team coughts then faints. You can hear your mates falling while your eyes close."
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -30,17 +30,17 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech2_6"
+    FilePartitionName: "Speech2_9"
   }
   InstanceHistory {
-    SelfId: 4620486833017305937
-    SubobjectId: 9981971260644782871
+    SelfId: 1051516595115544522
+    SubobjectId: 14127771653470685068
     InstanceId: 16122403184916844978
     TemplateId: 12287563631168970081
   }
 }
 Objects {
-  Id: 6736037589197127828
+  Id: 4297625655677334818
   Name: "Speech1"
   Transform {
     Location {
@@ -53,11 +53,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13528845306878451906
+  ParentId: 15933472271951582580
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "A colorfully dressed stranger approaches you while you are resting at a campfire near your home town."
+      String: "Suddently, an eerie myst invades all the space around you. You\'re totally lost and hopeless."
     }
   }
   WantsNetworking: true
@@ -69,11 +69,11 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Speech1_29"
+    FilePartitionName: "Speech1_26"
   }
   InstanceHistory {
-    SelfId: 6736037589197127828
-    SubobjectId: 10944705650922899666
+    SelfId: 4297625655677334818
+    SubobjectId: 17382885696515013988
     InstanceId: 16122403184916844978
     TemplateId: 12287563631168970081
   }

@@ -2159,15 +2159,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8340639316453361724
-  Name: "Wood 2x4 4m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_two-by-four_3m"
-  }
-}
-Assets {
   Id: 8316304890888688716
   Name: "Long Banner Manticore"
   PlatformAssetType: 1
@@ -3191,15 +3182,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_parameter_driven_water_nodistortion"
-  }
-}
-Assets {
-  Id: 4289160600405295316
-  Name: "Metal Basic 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_basic_001"
   }
 }
 Assets {

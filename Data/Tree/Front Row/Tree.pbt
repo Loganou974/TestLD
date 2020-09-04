@@ -1,7 +1,7 @@
 ﻿Name: "Front Row"
-RootId: 11215739729255960272
+RootId: 8009430720874252394
 Objects {
-  Id: 7022717389443650190
+  Id: 10805487165672870964
   Name: "Crate 5"
   Transform {
     Location {
@@ -16,8 +16,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11215739729255960272
-  ChildIds: 18276777553400063467
+  ParentId: 8009430720874252394
+  ChildIds: 659022305467851601
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -41,14 +41,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7022717389443650190
+    SelfId: 10805487165672870964
     SubobjectId: 7185761662073926952
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 18276777553400063467
+  Id: 659022305467851601
   Name: "Contents"
   Transform {
     Location {
@@ -65,7 +65,7 @@ Objects {
       Z: 0.522161603
     }
   }
-  ParentId: 7022717389443650190
+  ParentId: 10805487165672870964
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -107,14 +107,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18276777553400063467
+    SelfId: 659022305467851601
     SubobjectId: 18404355910715064909
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6797290405438070017
+  Id: 12309932683584641979
   Name: "Crate 4"
   Transform {
     Location {
@@ -129,8 +129,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11215739729255960272
-  ChildIds: 11711407962745428981
+  ParentId: 8009430720874252394
+  ChildIds: 6198710571544173903
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -154,14 +154,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6797290405438070017
+    SelfId: 12309932683584641979
     SubobjectId: 6672527004014262951
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11711407962745428981
+  Id: 6198710571544173903
   Name: "Contents"
   Transform {
     Location {
@@ -178,7 +178,7 @@ Objects {
       Z: 0.522161603
     }
   }
-  ParentId: 6797290405438070017
+  ParentId: 12309932683584641979
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -212,14 +212,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11711407962745428981
+    SelfId: 6198710571544173903
     SubobjectId: 11550051990116072531
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 1614005917503187968
+  Id: 16350143378385660602
   Name: "Crate 3"
   Transform {
     Location {
@@ -234,8 +234,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11215739729255960272
-  ChildIds: 2042764333335096353
+  ParentId: 8009430720874252394
+  ChildIds: 16778198090124405403
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -259,14 +259,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1614005917503187968
+    SelfId: 16350143378385660602
     SubobjectId: 1489382773097614246
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 2042764333335096353
+  Id: 16778198090124405403
   Name: "Contents"
   Transform {
     Location {
@@ -283,7 +283,7 @@ Objects {
       Z: 0.522161603
     }
   }
-  ParentId: 1614005917503187968
+  ParentId: 16350143378385660602
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -313,14 +313,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2042764333335096353
+    SelfId: 16778198090124405403
     SubobjectId: 2203416077360204679
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 10058506347312965287
+  Id: 9157936978382020637
   Name: "Crate 2"
   Transform {
     Location {
@@ -335,8 +335,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11215739729255960272
-  ChildIds: 8329032357019180283
+  ParentId: 8009430720874252394
+  ChildIds: 9734482072430107201
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -360,14 +360,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10058506347312965287
+    SelfId: 9157936978382020637
     SubobjectId: 9897713865971450113
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 8329032357019180283
+  Id: 9734482072430107201
   Name: "Contents"
   Transform {
     Location {
@@ -384,7 +384,7 @@ Objects {
       Z: 0.522161603
     }
   }
-  ParentId: 10058506347312965287
+  ParentId: 9157936978382020637
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -427,14 +427,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8329032357019180283
+    SelfId: 9734482072430107201
     SubobjectId: 8168380346340670301
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 6593651613051651764
+  Id: 12610116508172288014
   Name: "Crate 1"
   Transform {
     Location {
@@ -449,8 +449,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11215739729255960272
-  ChildIds: 12247500264243536353
+  ParentId: 8009430720874252394
+  ChildIds: 6734752311647348571
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -474,14 +474,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6593651613051651764
+    SelfId: 12610116508172288014
     SubobjectId: 6434548049818034450
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 12247500264243536353
+  Id: 6734752311647348571
   Name: "Contents"
   Transform {
     Location {
@@ -498,7 +498,7 @@ Objects {
       Z: 0.522161603
     }
   }
-  ParentId: 6593651613051651764
+  ParentId: 12610116508172288014
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -540,9 +540,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12247500264243536353
+    SelfId: 6734752311647348571
     SubobjectId: 12338346686887429703
-    InstanceId: 1672567905579778153
+    InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
