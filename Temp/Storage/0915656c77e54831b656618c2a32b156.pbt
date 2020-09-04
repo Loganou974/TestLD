@@ -1,15 +1,15 @@
 ﻿Entries {
   Key {
-    StringVar: "class"
+    StringVar: "race"
   }
   SimpleValue {
     Table {
       Entries {
         Key {
-          StringVar: "hit"
+          StringVar: "speed"
         }
         SimpleValue {
-          IntVar: 100
+          IntVar: 25
         }
       }
       Entries {
@@ -17,18 +17,9 @@
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Novice"
+          StringVar: "Stout Halfling"
         }
       }
-    }
-  }
-}
-Entries {
-  Key {
-    StringVar: "race"
-  }
-  SimpleValue {
-    Table {
       Entries {
         Key {
           StringVar: "bonus"
@@ -48,7 +39,7 @@ Entries {
                 IntVar: 2
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -56,7 +47,7 @@ Entries {
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -64,7 +55,7 @@ Entries {
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -96,22 +87,6 @@ Entries {
       }
       Entries {
         Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: " Your base walking speed is 25 feet."
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 25
-        }
-      }
-      Entries {
-        Key {
           StringVar: "size"
         }
         SimpleValue {
@@ -120,10 +95,35 @@ Entries {
       }
       Entries {
         Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: "As a stout halfling, you\342\200\231re hardier than average and have some resistance to poison. Some say that stouts have dwarven blood."
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "class"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Gnome"
+          StringVar: "Novice"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
         }
       }
     }
