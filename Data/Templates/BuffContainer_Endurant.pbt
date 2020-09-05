@@ -367,11 +367,11 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:Titre"
-            String: "Athletics"
+            String: "Endurant"
           }
           Overrides {
             Name: "cs:Display"
-            String: "Your strength gives you an athletic figure, you\'re jumped are empowered"
+            String: "Your constitution grant you endurance"
           }
         }
         WantsNetworking: true

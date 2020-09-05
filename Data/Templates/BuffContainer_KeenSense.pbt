@@ -367,11 +367,11 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:Titre"
-            String: "Athletics"
+            String: "KeenSense"
           }
           Overrides {
             Name: "cs:Display"
-            String: "Your strength gives you an athletic figure, you\'re jumped are empowered"
+            String: "Your wisdom helps your perceive things that others wont"
           }
         }
         WantsNetworking: true
