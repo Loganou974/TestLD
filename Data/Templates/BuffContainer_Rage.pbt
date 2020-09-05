@@ -367,11 +367,11 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:Titre"
-            String: "Athletics"
+            String: "Enraged"
           }
           Overrides {
             Name: "cs:Display"
-            String: "Your strength gives you an athletic figure, you\'re jumped are empowered"
+            String: "You\'re enraged dealing bonus damage and resistance in combat"
           }
         }
         WantsNetworking: true

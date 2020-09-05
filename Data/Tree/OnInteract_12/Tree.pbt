@@ -25,6 +25,7 @@ Objects {
       String: "Go away !"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -67,6 +68,7 @@ Objects {
       String: "I don\'t want any trouble."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -109,6 +111,7 @@ Objects {
       String: "Get out of my sight, you are Strahd\'s meat."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -151,6 +154,7 @@ Objects {
       String: "Why are you here, stranger ?"
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
