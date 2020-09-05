@@ -452,8 +452,8 @@ function OnClassChanged(equipementName,classNom)
             --showCharacterScreen()
 
 end
-function levelup(abilityName)
-    
+function levelup(player)
+    local levelupFX=World.SpawnAsset("E3FA9BCA7F309A4B:Level UpFX",{position=player:GetWorldPosition()})
 end
 function OnWeaponChanged(equipementName)
     local equipement=nil

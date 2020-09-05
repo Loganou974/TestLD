@@ -401,6 +401,7 @@ function modifier(value)
 end
 
 function levelup(player,level)
+    if level==nil then return end
     print("level up")
     local playerData=loadPlayerData(player)
     player:SetResource("level",level)
@@ -441,7 +442,8 @@ function levelup(player,level)
         
     end
     Task.Wait(0.2)
-    Events.BroadcastToPlayer(player,"LEVEL_UP")
+    Events.BroadcastToAllPlayers("LEVEL_UP",player)
+    --Events.Broadcast("LEVEL_UPFX",player)
     Task.Wait(0.2)
     activateAllAbilities(player)
     savePlayerData(player,playerData)

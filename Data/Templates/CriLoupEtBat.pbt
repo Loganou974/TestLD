@@ -45,8 +45,8 @@
         Transform {
           Location {
             X: -550
-            Y: -250
-            Z: 5
+            Y: 570
+            Z: 1335
           }
           Rotation {
           }
@@ -209,7 +209,7 @@
           }
           AutoPlay: true
           Repeat: true
-          Volume: 2
+          Volume: 2.03528214
           Falloff: 3000
           Radius: -1
           EnableOcclusion: true
@@ -253,7 +253,7 @@
           AutoPlay: true
           Repeat: true
           Pitch: 1
-          Volume: 2
+          Volume: 0.920036077
           Falloff: -1
           Radius: -1
           EnableOcclusion: true

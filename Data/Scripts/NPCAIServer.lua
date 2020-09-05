@@ -120,8 +120,9 @@ function OnTurnOn(id)
 		end
 		
 		Events.Broadcast("END_TURN")
-		isPlaying=false
+	
 	end
+	isPlaying=false
 end
 Events.Connect("BEGIN_TURN_NPC", OnTurnOn)
 local ENGAGED_RANGE=350

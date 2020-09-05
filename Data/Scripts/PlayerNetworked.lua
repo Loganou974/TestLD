@@ -67,6 +67,12 @@ function OnDamagedPlayer()
 
 
 end
+
+function levelupfx(player)
+   print("level up from networked")
+   local levelupFX=World.SpawnAsset("E3FA9BCA7F309A4B:Level UpFX",{position=player:GetWorldPosition()})
+end
+
 canRoll=true
 local throwDice=nil
 function OnPlayerJoined(player)
@@ -84,6 +90,6 @@ function OnPlayerJoined(player)
     
   
 end
-
+Events.Connect("LEVEL_UPFX", levelupfx)
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
