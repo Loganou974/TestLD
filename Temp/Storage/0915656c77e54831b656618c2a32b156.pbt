@@ -1,6 +1,6 @@
 ﻿Entries {
   Key {
-    StringVar: "class"
+    StringVar: "race"
   }
   SimpleValue {
     Table {
@@ -9,32 +9,15 @@
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Novice"
+          StringVar: "Dwarf"
         }
       }
-      Entries {
-        Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
-    StringVar: "race"
-  }
-  SimpleValue {
-    Table {
       Entries {
         Key {
           StringVar: "size"
         }
         SimpleValue {
-          StringVar: "N"
+          StringVar: "S"
         }
       }
       Entries {
@@ -64,7 +47,7 @@ Entries {
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -72,7 +55,7 @@ Entries {
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -107,15 +90,7 @@ Entries {
           StringVar: "speed"
         }
         SimpleValue {
-          IntVar: 30
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Elf"
+          IntVar: 25
         }
       }
       Entries {
@@ -123,7 +98,32 @@ Entries {
           StringVar: "description"
         }
         SimpleValue {
-          StringVar: " (/DEX+2)"
+          StringVar: "Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor"
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "class"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Novice"
         }
       }
     }

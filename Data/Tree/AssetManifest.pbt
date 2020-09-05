@@ -2501,15 +2501,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7356107339198211253
-  Name: "Bannister Single Post"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bannister_post_001"
-  }
-}
-Assets {
   Id: 7309675890137531592
   Name: "Ring - Beveled Thick"
   PlatformAssetType: 1

@@ -18,7 +18,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "She let you goes as she prays for your return."
+      String: "She lets you go as she prays for your return."
     }
   }
   Collidable_v2 {
