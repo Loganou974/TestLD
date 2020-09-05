@@ -3572,6 +3572,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2375418497636226163
+  Name: "Text 01: G"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_006"
+  }
+}
+Assets {
   Id: 2354717027850780617
   Name: "Grass and Soil"
   PlatformAssetType: 2
@@ -4073,6 +4082,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "fxsm_waterfall_straight"
+  }
+}
+Assets {
+  Id: 132672053610873933
+  Name: "Plastic Matte"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_matte_001"
   }
 }
 Assets {

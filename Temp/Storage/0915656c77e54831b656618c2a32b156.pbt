@@ -1,23 +1,40 @@
 ﻿Entries {
   Key {
+    StringVar: "class"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Novice"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
     StringVar: "race"
   }
   SimpleValue {
     Table {
       Entries {
         Key {
-          StringVar: "speed"
+          StringVar: "size"
         }
         SimpleValue {
-          IntVar: 25
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Mountain Dwarf"
+          StringVar: "N"
         }
       }
       Entries {
@@ -31,7 +48,7 @@
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -47,7 +64,7 @@
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -55,7 +72,7 @@
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -87,43 +104,26 @@
       }
       Entries {
         Key {
-          StringVar: "description"
+          StringVar: "speed"
         }
         SimpleValue {
-          StringVar: " (/STR+2/CON+2)"
+          IntVar: 30
         }
       }
-      Entries {
-        Key {
-          StringVar: "size"
-        }
-        SimpleValue {
-          StringVar: "S"
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
-    StringVar: "class"
-  }
-  SimpleValue {
-    Table {
       Entries {
         Key {
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Novice"
+          StringVar: "Elf"
         }
       }
       Entries {
         Key {
-          StringVar: "hit"
+          StringVar: "description"
         }
         SimpleValue {
-          IntVar: 100
+          StringVar: " (/DEX+2)"
         }
       }
     }
