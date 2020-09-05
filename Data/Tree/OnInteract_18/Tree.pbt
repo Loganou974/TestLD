@@ -21,6 +21,7 @@ Objects {
       String: "Welcome to Boravia. The place you never leave alive."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

@@ -226,7 +226,7 @@ function Tick(deltaTime)
 end
 function appuye(player,touche)   
 
-    if touche=="ability_primary" then
+    if touche=="ability_extra_33" then
         messageEndTime[1]=time()
     end
 end

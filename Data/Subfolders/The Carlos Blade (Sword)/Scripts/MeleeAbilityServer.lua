@@ -83,7 +83,7 @@ function MeleeAttack(other)
 		local player=ABILITY.owner
 		local DEX=player:GetResource("DEX")
 		local STR=player:GetResource("STR")
-		local BonusToHit=player:GetResource("Proficiency")+player:GetResource("level")/5
+		local BonusToHit=player:GetResource("Proficiency")+math.floor(player:GetResource("level")/5)
 		d20=math.random(20)
 		AC=0
 		AC=automaticTarget:GetCustomProperty("AC")
@@ -113,7 +113,7 @@ function MeleeAttack(other)
 				cc=" with a Critical hit " 
 			end
 			--if(player:GetResource("Enraged")>0) then 
-			dmg.amount=dmg.amount+player:GetResource("Enraged")+player:GetResource("level")/5
+			dmg.amount=dmg.amount+player:GetResource("Enraged")+math.floor(player:GetResource("level")/5)
 			local bonus=""
 			if player:GetResource("Enraged") >0 then bonus="(+"..player:GetResource("Enraged").."Rage bonus)" end
 

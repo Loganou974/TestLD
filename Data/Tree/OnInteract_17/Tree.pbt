@@ -21,6 +21,7 @@ Objects {
       String: "Krezk Village."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

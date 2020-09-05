@@ -15,6 +15,8 @@ local classes={
     {name="Wizard",hit=6}
 
 }
+local propTitle = script:GetCustomProperty("Title"):WaitForObject()
+local propLevelTxt = script:GetCustomProperty("LevelTxt"):WaitForObject()
 local throwDice=nil
 local turnColorGreen=Color.FromStandardHex("14C600FF")
 local turnColorOrange=Color.FromStandardHex("EA7F00FF")
@@ -160,7 +162,7 @@ function stat_refresh(race,classe)
         ability.castEvent:Connect(OnCast)
         ability.executeEvent:Connect(OnExecuteAbility)
     end
-   
+    propTitle.text="Character sheet of "..me.name
     propSTRValueText.text="".. me:GetResource("STR")
     propDEXValueText.text="".. me:GetResource("DEX")
     propCONValueText.text="".. me:GetResource("CON")
@@ -168,6 +170,7 @@ function stat_refresh(race,classe)
     propWISValueText.text="".. me:GetResource("WIS")
     propCHARValueText.text="".. me:GetResource("CHA")
     propSTAT_POINTText.text="Point available:"..me:GetResource("statpoint")
+    propLevelTxt.text="Level "..me:GetResource("level")
     if race ~= nil then
         propRaceText.text="Race: " .. race
     end

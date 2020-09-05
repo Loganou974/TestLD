@@ -171,6 +171,18 @@ Objects {
         SelfId: 16595526421524315207
       }
     }
+    Overrides {
+      Name: "cs:LevelTxt"
+      ObjectReference {
+        SelfId: 11477883621896853775
+      }
+    }
+    Overrides {
+      Name: "cs:Title"
+      ObjectReference {
+        SelfId: 7252713461454105752
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9666,7 +9678,7 @@ Objects {
   ChildIds: 3555355684162300806
   ChildIds: 16099635661608739008
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Folder {
     IsGroup: true
@@ -9744,6 +9756,7 @@ Objects {
   ChildIds: 7268861541802845272
   ChildIds: 16874730708892829300
   ChildIds: 13154348986990571380
+  ChildIds: 11477883621896853775
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9774,6 +9787,68 @@ Objects {
       SelfAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11477883621896853775
+  Name: "LevelTxt"
+  Transform {
+    Location {
+      X: 200
+      Y: -1900
+    }
+    Rotation {
+      Yaw: -79.9998398
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12396362434394781470
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 250
+    Height: 30
+    UIX: 435
+    UIY: 117.504547
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Level:"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 16
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
@@ -12916,7 +12991,7 @@ Objects {
 }
 Objects {
   Id: 7252713461454105752
-  Name: "UI Text Box"
+  Name: "Title"
   Transform {
     Location {
       X: 200

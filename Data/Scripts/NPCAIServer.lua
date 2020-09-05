@@ -98,8 +98,9 @@ local temporaryVisionAngle = nil
 local temporaryVisionRadius = nil
 local temporaryHearingRadius = nil
 local originalPosition=ROOT:GetWorldPosition()
-	
+local isPlaying=false
 function OnTurnOn(id)
+	isPlaying=true
 	--print("on turn npc "..id)
 	if Object.IsValid(script) and  Object.IsValid(script.parent) and script.parent.id == id then
 		print("c'est le tour de "..id)
@@ -119,12 +120,14 @@ function OnTurnOn(id)
 		end
 		
 		Events.Broadcast("END_TURN")
+		isPlaying=false
 	end
 end
 Events.Connect("BEGIN_TURN_NPC", OnTurnOn)
 local ENGAGED_RANGE=350
 local engagedEnnemies={}
 function Tick(deltaTime)
+	if    isPlaying then return end
 	if  currentState==STATE_DEAD_1 then 
 		engagedEnnemies={}
 		return end

@@ -7,7 +7,7 @@
       RootId: 4294956528477227064
       Objects {
         Id: 4294956528477227064
-        Name: "Wolf2"
+        Name: "Wolf1"
         Transform {
           Scale {
             X: 0.435004741
@@ -773,7 +773,7 @@
         Name: "NPCHealthBarDataProviderClient"
         Transform {
           Location {
-            Z: 297.38916
+            Z: 99.23349
           }
           Rotation {
           }

@@ -363,7 +363,7 @@ function OnPlayerJoined(player)
     local spawn=World.FindObjectById("23E9C6AD56BEBE5B:Combat_Spawn")
     _G.LastCheckPoint=spawn:GetWorldPosition()
     player.maxJumpCount=1
-    player.jumpVelocity=300
+    player.jumpVelocity=600
    -- print("allo? "..player.animationStance)
     --Task.Spawn(function() GetStat(player) end,math.random(1))
    
@@ -1060,6 +1060,12 @@ function Tick(deltaTime)
             activateAllAbilities(obj)
             end
             
+        end
+    else
+        if playersAreInCombat and phasePrecombat==true then
+            for i,p in ipairs(players) do
+                --if p:GetResource("dice")==0 then p:AddResource("dice",1) end
+            end
         end
     end
     Task.Wait(5)

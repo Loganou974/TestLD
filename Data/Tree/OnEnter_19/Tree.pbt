@@ -22,6 +22,7 @@ Objects {
       String: "You feel trapped, like animals in a cage and powerless : as you feel being watched by an evil force."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -60,6 +61,7 @@ Objects {
       String: "As you wake up, you notice everything around is different, darker."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

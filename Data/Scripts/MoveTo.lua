@@ -1,4 +1,6 @@
 ﻿local endPos= script:GetCustomProperty("endPos")
 local startPos= script:GetCustomProperty("startPos")
+startPos=script:GetWorldPosition()
+endPos=startPos+Vector3.New(1500,0,0)
 script.parent:SetWorldPosition(startPos)
 script.parent:MoveTo(endPos, 5)

@@ -22,6 +22,7 @@ Objects {
       String: "One by one, the team coughts then faints. You can hear your mates falling while your eyes close."
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

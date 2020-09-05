@@ -6,7 +6,7 @@ local propTransient = trigger:GetCustomProperty("Transient")
 local enterSpeech = trigger:GetCustomProperty("OnEnter"):WaitForObject()
 local leaveSpeech = trigger:GetCustomProperty("OnLeave"):WaitForObject()
 local interactSpeech = trigger:GetCustomProperty("OnInteract"):WaitForObject()
-
+local interacting=false
 if propAllPlayers==nil then propAllPlayers=false end
 local delay = script:GetCustomProperty("delay")
 
@@ -24,6 +24,7 @@ function OnBeginOverlap(whichTrigger, other)
 	
 	
 	if other:IsA("Player") and active then
+		interacting=false
 		if propTransient then script.parent.collision=Collision.FORCE_OFF end
 		for i=1,#enterSpeeches do
 			
@@ -72,6 +73,7 @@ function speakToPlayers(message)
 end
 function OnEndOverlap(whichTrigger, other)
 	if other:IsA("Player") and active then
+		interacting=false
 		if propTransient then script.parent.collision=Collision.FORCE_OFF end
 		for i=1,#leaveSpeeches do
 			local propOnEnterSpeech=leaveSpeeches[i]:GetCustomProperty("Texte")
@@ -83,15 +85,23 @@ function OnEndOverlap(whichTrigger, other)
 		if leaveSpeech:GetCustomProperty("Script1") then
 			local leaveEvent1=World.FindObjectById(leaveSpeech:GetCustomProperty("Script1"))
 			if leaveEvent1 then 
+				if propAllPlayers then
+					for _,p in pairs(Game.GetPlayers()) do
+						leaveEvent1.context.process(p)
+					end
+				else
 				leaveEvent1.context.process(other)
+				end
 			end
 		end
 	end
 end
 
 function OnInteracted(whichTrigger, other)
+	if interacting then return end
 	if other:IsA("Player") and active then
 		if propTransient then script.parent.collision=Collision.FORCE_OFF end
+		interacting=true
 		for i=1,#interactSpeeches do
 			local propOnEnterSpeech=interactSpeeches[i]:GetCustomProperty("Texte")
 			print(i..") "..propOnEnterSpeech)

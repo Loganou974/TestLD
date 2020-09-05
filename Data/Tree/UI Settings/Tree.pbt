@@ -983,42 +983,6 @@ Objects {
   }
   ParentId: 18408397323090915061
   ChildIds: 6397715574525569096
-  ChildIds: 7107999735149724951
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 7107999735149724951
-  Name: "Resource To Ignore"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15166308599859267028
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Resource"
-      String: "XP"
-    }
-    Overrides {
-      Name: "cs:Resource:tooltip"
-      String: "Set resource that will be ignored by this component."
-    }
-  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2082,6 +2046,7 @@ Objects {
   }
   ParentId: 4202076143022678041
   ChildIds: 3314979055967662714
+  ChildIds: 7056511349152743146
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2126,6 +2091,75 @@ Objects {
     SubobjectId: 704446603937829647
     InstanceId: 4972742490433167697
     TemplateId: 6297665059397647461
+  }
+}
+Objects {
+  Id: 7056511349152743146
+  Name: "BigBannerText"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6159069582032322391
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 180
+    Height: 50
+    UIX: -180
+    UIY: -40
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    Text {
+      Label: "[Press F to skip]"
+      Color {
+        R: 0.246201396
+        G: 0.246201396
+        B: 0.246201396
+        A: 0.533333361
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 3314979055967662714
+    SubobjectId: 17910083475289763716
+    InstanceId: 4535861492562284004
+    TemplateId: 9733770735026828808
+    WasRoot: true
   }
 }
 Objects {

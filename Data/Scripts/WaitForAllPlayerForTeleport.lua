@@ -15,10 +15,15 @@ function OnBeginOverlap(whichTrigger, other)
 						return
 					end
 				end
+				Events.BroadcastToAllPlayers("BannerMessage","At last we can start! Sooo it all begin in the darknest night")
+				Task.Wait(3)
+					
 				for _,p in pairs(players) do
 					p:SetWorldPosition(target:GetWorldPosition())
 
 				end
+			else
+				Events.BroadcastToAllPlayers("BannerMessage","Everyone must gather in front of the portal to begin the campaign")
 			end
 	end
 end
