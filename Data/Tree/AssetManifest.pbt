@@ -728,6 +728,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15014673493578494873
+  Name: "\"Dark Cryptic Ambient Horror\" Music Construction Kit (Layers) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_dark_cryptic_ambient_horror_layers_kit_ref"
+  }
+}
+Assets {
   Id: 14937890536117064298
   Name: "Simple Crate 150cm"
   PlatformAssetType: 1
@@ -2132,15 +2141,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8752278443307564032
-  Name: "Chest Small Closed"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_chest_001"
-  }
-}
-Assets {
   Id: 8698530872141969228
   Name: "Fern 01"
   PlatformAssetType: 1
@@ -2498,15 +2498,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_005"
-  }
-}
-Assets {
-  Id: 7356107339198211253
-  Name: "Bannister Single Post"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bannister_post_001"
   }
 }
 Assets {
@@ -3581,6 +3572,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2375418497636226163
+  Name: "Text 01: G"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_006"
+  }
+}
+Assets {
   Id: 2354717027850780617
   Name: "Grass and Soil"
   PlatformAssetType: 2
@@ -4082,6 +4082,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "fxsm_waterfall_straight"
+  }
+}
+Assets {
+  Id: 132672053610873933
+  Name: "Plastic Matte"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_matte_001"
   }
 }
 Assets {

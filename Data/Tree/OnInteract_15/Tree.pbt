@@ -1,7 +1,7 @@
 ﻿Name: "OnInteract_15"
-RootId: 17513433064441087045
+RootId: 10216068774275659719
 Objects {
-  Id: 3020896287684065585
+  Id: 12728470808137503380
   Name: "Speech3"
   Transform {
     Location {
@@ -14,11 +14,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17513433064441087045
+  ParentId: 10216068774275659719
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "She tried to attack him, he is terrified."
+      String: "Now he\'s just waiting for braver adventurers. He really hopes that you are the ones."
     }
   }
   Collidable_v2 {
@@ -39,7 +39,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7809760881206689367
+  Id: 16132307069920332706
   Name: "Speech2"
   Transform {
     Location {
@@ -52,11 +52,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17513433064441087045
+  ParentId: 10216068774275659719
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "He says his daughter changed into a monster."
+      String: "His crew went to save the village but every one died at the cemetery at ten feet."
     }
   }
   Collidable_v2 {
@@ -77,7 +77,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13499490366718212533
+  Id: 15965090317971479305
   Name: "Speech1"
   Transform {
     Location {
@@ -90,11 +90,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17513433064441087045
+  ParentId: 10216068774275659719
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "The Merchant can\'t sell you anything."
+      String: "The adventurer sadly smiles at you."
     }
   }
   Collidable_v2 {

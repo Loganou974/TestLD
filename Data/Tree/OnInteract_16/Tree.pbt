@@ -1,45 +1,7 @@
 ﻿Name: "OnInteract_16"
-RootId: 6669945657389032
+RootId: 17513433064441087045
 Objects {
-  Id: 12747086756436619947
-  Name: "Speech4"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6669945657389032
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Texte"
-      String: "You accept this quest as she kindly waves goodbye at you."
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Speech4_3"
-  }
-  InstanceHistory {
-    SelfId: 12747086756436619947
-    SubobjectId: 5092030372394144695
-    InstanceId: 3057980555259558267
-    TemplateId: 9323984862848679036
-  }
-}
-Objects {
-  Id: 15778332674251788956
+  Id: 3020896287684065585
   Name: "Speech3"
   Transform {
     Location {
@@ -52,11 +14,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6669945657389032
+  ParentId: 17513433064441087045
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "She begs you to stop him."
+      String: "She tried to attack him, he is terrified."
     }
   }
   Collidable_v2 {
@@ -70,14 +32,14 @@ Objects {
     FilePartitionName: "Speech3_4"
   }
   InstanceHistory {
-    SelfId: 15778332674251788956
-    SubobjectId: 3223412415639565184
+    SelfId: 3020896287684065585
+    SubobjectId: 16113976568304654381
     InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 11491599617382094330
+  Id: 7809760881206689367
   Name: "Speech2"
   Transform {
     Location {
@@ -90,11 +52,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6669945657389032
+  ParentId: 17513433064441087045
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "She says that Strahd want to turn her into a slave."
+      String: "He says his daughter changed into a monster."
     }
   }
   Collidable_v2 {
@@ -108,14 +70,14 @@ Objects {
     FilePartitionName: "Speech2_7"
   }
   InstanceHistory {
-    SelfId: 11491599617382094330
-    SubobjectId: 7581358677603595494
+    SelfId: 7809760881206689367
+    SubobjectId: 11109783657880018763
     InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }
 }
 Objects {
-  Id: 5209633582972670488
+  Id: 13499490366718212533
   Name: "Speech1"
   Transform {
     Location {
@@ -128,11 +90,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6669945657389032
+  ParentId: 17513433064441087045
   UnregisteredParameters {
     Overrides {
       Name: "cs:Texte"
-      String: "Ireena is a beautiful young woman."
+      String: "The Merchant can\'t sell you anything."
     }
   }
   Collidable_v2 {
@@ -146,8 +108,8 @@ Objects {
     FilePartitionName: "Speech1_22"
   }
   InstanceHistory {
-    SelfId: 5209633582972670488
-    SubobjectId: 13691065323056804612
+    SelfId: 13499490366718212533
+    SubobjectId: 5556293552884668585
     InstanceId: 3057980555259558267
     TemplateId: 9323984862848679036
   }

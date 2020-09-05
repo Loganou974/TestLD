@@ -1,12 +1,14 @@
 ﻿GameId: "a1869dc729174e82955d25ac5a0a617c"
 ClientVersion: "1.0.150-prod-s"
 Name: "[DnD] Curse of Strahd"
-Description: "[DnD] Wrath of Strahd is a turn-based RPG game in which adventurers will have to find and destroy the evil vampire of Barovia : Strahd. This story is based on the famous DND Campaign. We tried to integrate as much as real DND features (stats, dice rolls, plot) with the time constraints. \r\n\r\n-----\r\nDeveloper : S\303\251bastien Manglou\r\nLevel Design : Lo\303\257c Manglou"
-MaxPlayers: 3
-IsPrivate: true
-Tags: "Medieval"
+Description: "Submitted for Strongholds and Towers category\r\n\r\n[DnD] Curse of Strahd is a turn-based RPG coop game in which adventurers (2-4) will have to find and destroy the evil vampire of Barovia : Strahd. This story is based on the famous DND Campaign. We tried to create a totally novel combat system and integrated as much as real DND features (stats, dice rolls, plot) with the time constraints. \r\n\r\nFeatures :\r\n\r\n- Random Race choice from start dice roll\r\n- 2 classes : Barb, Barbarian\r\n- Level up System : Stat upgrade choices : STR, DEX, INT, WIS, CHA\r\n- Combat System : Novel turn based RPG combat system with smart features (opportunity attacks, buffs, strategical placements, attack focus, etc.)\r\n- A vast immersive land : explore the mysterious landscape of Barovia, village of Krezk, and the Castle of Ravenloft in which Strahd is hiding.\r\n- 3 kinds of challenges : Combat, Riddle, Parcours.\r\n\r\n-----\r\nThis game was made in a 3 weeks-long gamejam by a team of 2 french folks :\r\nDeveloper : S\303\251bastien Manglou\r\nLevel Design : Lo\303\257c Manglou\r\n\r\nWe enjoyed so much learning this totally new engine. So much things left to do but, we hope you enjoy our little experience as much as we did as we created it."
+MaxPlayers: 4
 Tags: "Cooperative"
-Tags: "Multiplayer"
 Tags: "Fantasy"
 Tags: "Strategy"
-ScreenshotPaths: "C:\\Users\\Logan\\Documents\\My Games\\CORE\\Saved\\Maps\\Screenshots\\Screenshot0008.png"
+Tags: "TurnBased"
+Tags: "RPG"
+ScreenshotPaths: "C:\\Users\\Logan\\Documents\\My Games\\CORE\\Saved\\Maps\\Screenshots\\Screenshot0013.png"
+ScreenshotPaths: "C:\\Users\\Logan\\Documents\\My Games\\CORE\\Saved\\Maps\\Screenshots\\Screenshot0014.png"
+ScreenshotPaths: "C:\\Users\\Logan\\Documents\\My Games\\CORE\\Saved\\Maps\\Screenshots\\Screenshot0039.png"
+ScreenshotPaths: "C:/Users/Logan/Documents/My Games/CORE/Saved/Maps/Screenshots/Screenshot0040.png"

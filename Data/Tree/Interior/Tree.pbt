@@ -2500,7 +2500,6 @@ Objects {
   ChildIds: 449783949085583830
   ChildIds: 15428176064461625744
   ChildIds: 14568029140175490331
-  ChildIds: 14237905932926927141
   ChildIds: 3582004077122987238
   ChildIds: 1636869481216898510
   ChildIds: 8962702818625269389
@@ -2542,14 +2541,12 @@ Objects {
   ChildIds: 9843597882214114854
   ChildIds: 4227748524032739493
   ChildIds: 8497407527610659370
-  ChildIds: 4476772215370645978
   ChildIds: 14595179632786628107
   ChildIds: 3071179706369963105
   ChildIds: 17011626956590268781
   ChildIds: 12718660784024576835
   ChildIds: 13117859248669772738
   ChildIds: 2047131564192980251
-  ChildIds: 3783357018459072624
   ChildIds: 11763825390987095233
   ChildIds: 16559459825416992499
   ChildIds: 2327257004822479953
@@ -3250,53 +3247,6 @@ Objects {
   }
 }
 Objects {
-  Id: 3783357018459072624
-  Name: "Fantasy Chest Common 01 (Prop)"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7541522980628058162
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 10285885887561277160
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Fantasy Chest Common 01 (Prop)"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -184.981445
-            Y: 1366.7627
-            Z: 925.063538
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 806621756637888837
-    }
-  }
-}
-Objects {
   Id: 2047131564192980251
   Name: "Torch"
   Transform {
@@ -3546,54 +3496,6 @@ Objects {
     StaticMesh {
       Physics {
       }
-    }
-  }
-}
-Objects {
-  Id: 4476772215370645978
-  Name: "Resource Pickup"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7541522980628058162
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 595226879220310474
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Resource Pickup"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2149.38428
-            Y: -78.0419922
-            Z: 1422.62378
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 3302786312727831383
     }
   }
 }
@@ -56681,53 +56583,6 @@ Objects {
     SubobjectId: 15099608268669641332
     InstanceId: 13819381693285171438
     TemplateId: 1739276918071831387
-  }
-}
-Objects {
-  Id: 14237905932926927141
-  Name: "Fantasy Chest Rare 01 (Prop)"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7541522980628058162
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1763424924619870858
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Fantasy Chest Rare 01 (Prop)"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 202.398926
-            Y: 358.580078
-            Z: 1777.75195
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15830487202351888839
-    }
   }
 }
 Objects {
