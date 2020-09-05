@@ -728,6 +728,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15014673493578494873
+  Name: "\"Dark Cryptic Ambient Horror\" Music Construction Kit (Layers) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_dark_cryptic_ambient_horror_layers_kit_ref"
+  }
+}
+Assets {
   Id: 14937890536117064298
   Name: "Simple Crate 150cm"
   PlatformAssetType: 1

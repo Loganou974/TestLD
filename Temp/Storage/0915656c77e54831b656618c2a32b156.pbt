@@ -1,6 +1,6 @@
 ﻿Entries {
   Key {
-    StringVar: "race"
+    StringVar: "class"
   }
   SimpleValue {
     Table {
@@ -9,15 +9,40 @@
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Dwarf"
+          StringVar: "Novice"
         }
       }
       Entries {
         Key {
-          StringVar: "size"
+          StringVar: "hit"
         }
         SimpleValue {
-          StringVar: "S"
+          IntVar: 100
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "race"
+  }
+  SimpleValue {
+    Table {
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: " (/DEX+2/CHA+1)"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Lightfoot"
         }
       }
       Entries {
@@ -47,7 +72,7 @@
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -55,7 +80,7 @@
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -71,7 +96,7 @@
                 IntVar: 6
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -87,43 +112,18 @@
       }
       Entries {
         Key {
+          StringVar: "size"
+        }
+        SimpleValue {
+          StringVar: "S"
+        }
+      }
+      Entries {
+        Key {
           StringVar: "speed"
         }
         SimpleValue {
           IntVar: 25
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "description"
-        }
-        SimpleValue {
-          StringVar: "Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor"
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
-    StringVar: "class"
-  }
-  SimpleValue {
-    Table {
-      Entries {
-        Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Novice"
         }
       }
     }
