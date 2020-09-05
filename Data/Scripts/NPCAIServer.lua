@@ -198,6 +198,7 @@ function SetState(newState)
 		--print("target = " .. tostring(target) .. ", moveSpeed = " .. tostring(MOVE_SPEED) .. ", attackRange = " .. ATTACK_RANGE)
 
 		if (not IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED)) then
+			if target==nil then return end 
 			local targetPosition = target:GetWorldPosition()
 			StepTowards(targetPosition)
 		end
