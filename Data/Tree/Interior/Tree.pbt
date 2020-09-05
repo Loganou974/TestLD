@@ -1355,6 +1355,10 @@ Objects {
         TemplateId: 15728781663253921388
       }
     }
+    Overrides {
+      Name: "cs:introSpeech"
+      String: "Just by the stairs a group of flying snake attacks you"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1780,7 +1784,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Raptor 5"
+          String: "Lizard 5"
         }
         Overrides {
           Name: "Position"
@@ -1867,7 +1871,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Raptor 4"
+          String: "Lizard 4"
         }
         Overrides {
           Name: "Position"
@@ -1954,7 +1958,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Raptor 3"
+          String: "Lizard 3"
         }
         Overrides {
           Name: "Position"
@@ -2013,7 +2017,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Raptor 2"
+          String: "Lizard 2"
         }
         Overrides {
           Name: "Position"
@@ -2060,7 +2064,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Raptor 1"
+          String: "Lizard 1"
         }
         Overrides {
           Name: "Position"

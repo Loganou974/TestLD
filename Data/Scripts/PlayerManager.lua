@@ -454,6 +454,11 @@ function OnClassChanged(equipementName,classNom)
 end
 function levelup(player)
     local levelupFX=World.SpawnAsset("E3FA9BCA7F309A4B:Level UpFX",{position=player:GetWorldPosition()})
+    UI.ShowFlyUpText("LEVEL UP", player:GetWorldPosition(),
+    {duration = 3,
+    color = Color.YELLOW,
+    isBig = true})
+    
 end
 function OnWeaponChanged(equipementName)
     local equipement=nil

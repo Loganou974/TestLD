@@ -445,7 +445,7 @@ function levelup(player,level)
     Events.BroadcastToAllPlayers("LEVEL_UP",player)
     --Events.Broadcast("LEVEL_UPFX",player)
     Task.Wait(0.2)
-    activateAllAbilities(player)
+    --activateAllAbilities(player)
     savePlayerData(player,playerData)
    
 end

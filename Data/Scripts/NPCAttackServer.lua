@@ -333,7 +333,7 @@ if MobType=="FlyingSnake" then SetHealth(math.random(4)+math.random(4)) end
 if MobType=="Commoner" then SetHealth(math.random(8)) end
 if MobType=="Lizard" then SetHealth(math.random(4)) end
 if MobType=="Strahd" then SetHealth(17*math.random(8)+68) end
-local levelXP={0,300,900,2700,6500,14000,23000,34000,48000,64000,85000,100000,120000,140000,165000,195000,225000,265000,305000,355000}
+local levelXP={0,300,900,2700,6500,14000,23000,34000,48000,64000,85000,100000,120000,140000,165000,195000,225000,265000,305000,355000,455000,555000,655000,755000,855000,955000,1355000,1455000,1555000,1655000}
 function DropRewards(killer)
 	-- Give resources
 	--TODO give xp in range
@@ -343,7 +343,7 @@ function DropRewards(killer)
 		local mult=5-#otherplayers
         for k,p in pairs(otherplayers) do
 		   -- p:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT*mult*10)
-		   p:SetResource(REWARD_RESOURCE_TYPE,levelXP[p:GetResource("level")+1])
+		  if p:GetResource("level")<30 then  p:SetResource(REWARD_RESOURCE_TYPE,levelXP[p:GetResource("level")+1]) end
         end
 		
 	end
