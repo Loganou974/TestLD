@@ -2141,15 +2141,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8752278443307564032
-  Name: "Chest Small Closed"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_chest_001"
-  }
-}
-Assets {
   Id: 8698530872141969228
   Name: "Fern 01"
   PlatformAssetType: 1
