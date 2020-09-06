@@ -31,18 +31,34 @@ Entries {
     Table {
       Entries {
         Key {
-          StringVar: "description"
+          StringVar: "name"
         }
         SimpleValue {
-          StringVar: " (/DEX+2/CHA+1)"
+          StringVar: "Wood Elf"
         }
       }
       Entries {
         Key {
-          StringVar: "name"
+          StringVar: "size"
         }
         SimpleValue {
-          StringVar: "Lightfoot"
+          StringVar: "N"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 35
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: "As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests."
         }
       }
       Entries {
@@ -88,7 +104,7 @@ Entries {
                 IntVar: 5
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -96,7 +112,7 @@ Entries {
                 IntVar: 6
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -104,26 +120,10 @@ Entries {
                 IntVar: 7
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 5
               }
             }
           }
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "size"
-        }
-        SimpleValue {
-          StringVar: "S"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 25
         }
       }
     }

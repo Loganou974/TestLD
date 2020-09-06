@@ -37,12 +37,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2607838530724810311
-    SubobjectId: 7927679060860773609
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 14117725456443688147
@@ -80,12 +74,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 14117725456443688147
-    SubobjectId: 9932721728353840765
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }
 Objects {
@@ -125,12 +113,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 15516351807413148090
-    SubobjectId: 11340352533825368852
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 14193104905631985623
@@ -168,12 +150,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 14193104905631985623
-    SubobjectId: 10289644326137431417
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }
 Objects {
@@ -213,12 +189,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7136117788908731210
-    SubobjectId: 2971447870265577956
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 11516177254854990167
@@ -256,12 +226,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11516177254854990167
-    SubobjectId: 15412883059843134457
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }
 Objects {
@@ -301,12 +265,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14996416107327224212
-    SubobjectId: 11108649336050422586
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 2444144878836711484
@@ -344,11 +302,5 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 2444144878836711484
-    SubobjectId: 7773065178259810962
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }

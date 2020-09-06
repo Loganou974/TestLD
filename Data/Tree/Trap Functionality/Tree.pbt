@@ -28,12 +28,6 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Effects"
   }
-  InstanceHistory {
-    SelfId: 1669060501478975385
-    SubobjectId: 6709678342063213879
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 7232462223100061520
@@ -200,12 +194,6 @@ Objects {
       Id: 16786317491469411269
     }
   }
-  InstanceHistory {
-    SelfId: 7232462223100061520
-    SubobjectId: 3344766441056030206
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 14188840881053068054
@@ -244,12 +232,6 @@ Objects {
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
     }
-  }
-  InstanceHistory {
-    SelfId: 14188840881053068054
-    SubobjectId: 10294317058769289656
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }
 Objects {
@@ -291,11 +273,5 @@ Objects {
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
     }
-  }
-  InstanceHistory {
-    SelfId: 8305622583098193003
-    SubobjectId: 4140882776746548933
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }

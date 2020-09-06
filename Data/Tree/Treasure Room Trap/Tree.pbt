@@ -135,12 +135,6 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Trap Functionality"
   }
-  InstanceHistory {
-    SelfId: 2737585815220577858
-    SubobjectId: 8055244847580941548
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 13797435961465287099
@@ -168,12 +162,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Room"
-  }
-  InstanceHistory {
-    SelfId: 13797435961465287099
-    SubobjectId: 17676197178341841685
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
+    FilePartitionName: "Room_1"
   }
 }

@@ -1,7 +1,7 @@
 ﻿Name: "Pillars"
-RootId: 9229501217626936643
+RootId: 17094679194377088251
 Objects {
-  Id: 10242647791900445408
+  Id: 6564183085119771149
   Name: "Fantasy Castle Pillar 02 - Mid"
   Transform {
     Location {
@@ -17,7 +17,7 @@ Objects {
       Z: 1.53
     }
   }
-  ParentId: 9229501217626936643
+  ParentId: 17094679194377088251
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -58,15 +58,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10242647791900445408
-    SubobjectId: 14128091853453467726
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
-  Id: 6553860247691423770
+  Id: 17747123574250282982
   Name: "Fantasy Castle Pillar 02 - Mid"
   Transform {
     Location {
@@ -82,7 +76,7 @@ Objects {
       Z: 1.53
     }
   }
-  ParentId: 9229501217626936643
+  ParentId: 17094679194377088251
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -123,15 +117,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 6553860247691423770
-    SubobjectId: 1209177339237636788
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
-  Id: 11508020793091547711
+  Id: 5074005183936226246
   Name: "Fantasy Castle Pillar 02 - Mid"
   Transform {
     Location {
@@ -147,7 +135,7 @@ Objects {
       Z: 1.53
     }
   }
-  ParentId: 9229501217626936643
+  ParentId: 17094679194377088251
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -188,15 +176,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11508020793091547711
-    SubobjectId: 15384457653526890641
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
-  Id: 5185290047277766028
+  Id: 7401145212116562254
   Name: "Fantasy Castle Pillar 02 - Mid"
   Transform {
     Location {
@@ -212,7 +194,7 @@ Objects {
       Z: 1.53
     }
   }
-  ParentId: 9229501217626936643
+  ParentId: 17094679194377088251
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -253,15 +235,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 5185290047277766028
-    SubobjectId: 991346737364434722
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
-  Id: 5641707123781042455
+  Id: 5835447527381161793
   Name: "Fantasy Castle Pillar 02 - Mid"
   Transform {
     Location {
@@ -277,7 +253,7 @@ Objects {
       Z: 1.53
     }
   }
-  ParentId: 9229501217626936643
+  ParentId: 17094679194377088251
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -318,15 +294,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 5641707123781042455
-    SubobjectId: 324118389029596089
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
-  Id: 7952110486767817664
+  Id: 11909299316280503647
   Name: "Fantasy Castle Pillar 02 - Mid"
   Transform {
     Location {
@@ -342,7 +312,7 @@ Objects {
       Z: 1.53
     }
   }
-  ParentId: 9229501217626936643
+  ParentId: 17094679194377088251
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -383,15 +353,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7952110486767817664
-    SubobjectId: 2625514001008769390
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
-  Id: 9915195005437108034
+  Id: 8910918366643454918
   Name: "Fantasy Castle Pillar 02 - Mid"
   Transform {
     Location {
@@ -407,7 +371,7 @@ Objects {
       Z: 1.53
     }
   }
-  ParentId: 9229501217626936643
+  ParentId: 17094679194377088251
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -448,15 +412,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9915195005437108034
-    SubobjectId: 14100198802632422892
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
-  Id: 16110494250274162854
+  Id: 1558063050766108738
   Name: "Fantasy Castle Pillar 02 - Mid"
   Transform {
     Location {
@@ -472,7 +430,7 @@ Objects {
       Z: 1.53
     }
   }
-  ParentId: 9229501217626936643
+  ParentId: 17094679194377088251
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -512,11 +470,5 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 16110494250274162854
-    SubobjectId: 10783825739910603272
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }

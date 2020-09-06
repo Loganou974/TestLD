@@ -36,12 +36,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 17989035676321426467
-    SubobjectId: 12939340817359881869
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 7532499108434828246
@@ -78,12 +72,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 7532499108434828246
-    SubobjectId: 2503140812128334200
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }
 Objects {
@@ -122,12 +110,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 683246523258995407
-    SubobjectId: 4850166096245483617
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 17295657767086680458
@@ -164,12 +146,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 17295657767086680458
-    SubobjectId: 13416966918953763620
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }
 Objects {
@@ -208,12 +184,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1019833770735571218
-    SubobjectId: 4905277753099647932
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 1842580987054623733
@@ -250,12 +220,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1842580987054623733
-    SubobjectId: 6027514965278253403
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }
 Objects {
@@ -294,12 +258,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 18059247852663163985
-    SubobjectId: 12730400114950809343
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 2240580512736403050
@@ -336,11 +294,5 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 2240580512736403050
-    SubobjectId: 6137286247260206276
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }

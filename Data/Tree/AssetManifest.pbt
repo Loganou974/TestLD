@@ -2420,6 +2420,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7601309285964343631
+  Name: "Text 01: W"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_022"
+  }
+}
+Assets {
   Id: 7595204127155017249
   Name: "Table Assembled"
   PlatformAssetType: 1

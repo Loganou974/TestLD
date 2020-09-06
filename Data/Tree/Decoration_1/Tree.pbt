@@ -1,7 +1,7 @@
 ﻿Name: "Decoration_1"
-RootId: 5789870069651336630
+RootId: 12148541278346389338
 Objects {
-  Id: 6687487591566049827
+  Id: 9059716786505588194
   Name: "Pillars"
   Transform {
     Location {
@@ -15,7 +15,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5789870069651336630
+  ParentId: 12148541278346389338
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -26,15 +26,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Pillars_1"
   }
-  InstanceHistory {
-    SelfId: 9229501217626936643
-    SubobjectId: 14565176918370762733
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
-  Id: 9229501217626936643
+  Id: 17094679194377088251
   Name: "Pillars"
   Transform {
     Location {
@@ -47,7 +41,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5789870069651336630
+  ParentId: 12148541278346389338
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -58,15 +52,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Pillars"
   }
-  InstanceHistory {
-    SelfId: 9229501217626936643
-    SubobjectId: 14565176918370762733
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
-  Id: 17941265209770119915
+  Id: 17577193486205189957
   Name: "Unspecified"
   Transform {
     Location {
@@ -81,7 +69,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5789870069651336630
+  ParentId: 12148541278346389338
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -92,15 +80,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Unspecified"
   }
-  InstanceHistory {
-    SelfId: 17941265209770119915
-    SubobjectId: 12882560954963425349
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
-  Id: 15495081537682760363
+  Id: 16173766141494887706
   Name: "Throne Pedestal"
   Transform {
     Location {
@@ -115,7 +97,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5789870069651336630
+  ParentId: 12148541278346389338
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -126,49 +108,9 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Throne Pedestal"
   }
-  InstanceHistory {
-    SelfId: 15495081537682760363
-    SubobjectId: 11330414299367475205
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
-  Id: 3714997273117952737
-  Name: "CandleHolders"
-  Transform {
-    Location {
-      X: 670
-      Y: 175
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5789870069651336630
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "CandleHolders"
-  }
-  InstanceHistory {
-    SelfId: 3714997273117952737
-    SubobjectId: 8771449803540848719
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
-}
-Objects {
-  Id: 6335478079361315102
+  Id: 2623852085695018398
   Name: "Carpet"
   Transform {
     Location {
@@ -182,7 +124,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5789870069651336630
+  ParentId: 12148541278346389338
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -192,11 +134,5 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Carpet"
-  }
-  InstanceHistory {
-    SelfId: 6335478079361315102
-    SubobjectId: 2150472081381235632
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }

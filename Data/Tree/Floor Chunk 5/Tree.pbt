@@ -36,12 +36,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 12821035282705055277
-    SubobjectId: 18147631697345582211
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 1739638174616967361
@@ -78,12 +72,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1739638174616967361
-    SubobjectId: 5913313147045130863
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }
 Objects {
@@ -122,12 +110,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 13658726439058188584
-    SubobjectId: 17850485641751151494
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 1601218103659125187
@@ -164,12 +146,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1601218103659125187
-    SubobjectId: 6632828257626731373
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }
 Objects {
@@ -208,12 +184,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 15546868616004858958
-    SubobjectId: 11382201456861257440
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 7795517278023662032
@@ -250,12 +220,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 7795517278023662032
-    SubobjectId: 2745820149322896254
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }
 Objects {
@@ -294,12 +258,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4232782544124402338
-    SubobjectId: 8109289706732597260
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
   Id: 17553395177083745768
@@ -336,11 +294,5 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 17553395177083745768
-    SubobjectId: 13379647626151255878
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }

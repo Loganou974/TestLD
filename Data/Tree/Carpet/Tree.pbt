@@ -1,7 +1,7 @@
 ﻿Name: "Carpet"
-RootId: 6335478079361315102
+RootId: 2623852085695018398
 Objects {
-  Id: 11249165359872136613
+  Id: 7079185194183170561
   Name: "Carpet Tile 01"
   Transform {
     Location {
@@ -17,7 +17,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6335478079361315102
+  ParentId: 2623852085695018398
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -38,15 +38,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11249165359872136613
-    SubobjectId: 15431919485007413003
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
-  Id: 1934210816134056795
+  Id: 4319917062134158592
   Name: "Carpet Tile 01"
   Transform {
     Location {
@@ -62,7 +56,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6335478079361315102
+  ParentId: 2623852085695018398
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -83,15 +77,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1934210816134056795
-    SubobjectId: 5828664196524859893
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
-  }
 }
 Objects {
-  Id: 13738627748838815090
+  Id: 7795347428338529605
   Name: "Carpet Tile 01"
   Transform {
     Location {
@@ -107,7 +95,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6335478079361315102
+  ParentId: 2623852085695018398
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -127,11 +115,5 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 13738627748838815090
-    SubobjectId: 17626324146941714396
-    InstanceId: 14737302652441600329
-    TemplateId: 14730459556242977614
   }
 }
