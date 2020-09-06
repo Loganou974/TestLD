@@ -64,8 +64,8 @@ function OnBeginOverlap(trigger, other)
 		if applied then
 			if PICKUP_EFFECTS then
                 -- This is about to be destroyed, but we want the effects to persist, so they can't be parented
-                Events.Broadcast("STOP_MUSIC")
-                Task.Spawn(function() Events.Broadcast("START_MUSIC") end, 5.5)
+               -- Events.Broadcast("STOP_MUSIC")
+                --Task.Spawn(function() Events.Broadcast("START_MUSIC") end, 5.5)
 				local args = {position = COMPONENT_ROOT:GetWorldPosition(), rotation = COMPONENT_ROOT:GetWorldRotation()}
 				World.SpawnAsset(PICKUP_EFFECTS, args)
 			end
@@ -76,9 +76,9 @@ function OnBeginOverlap(trigger, other)
 		end
 	end
 end
-function Tick()
+function Tick(deltaTime)
 
-    COMPONENT_ROOT:SetWorldRotation(COMPONENT_ROOT:GetWorldRotation()+Rotation.New(0,0,2))
+    COMPONENT_ROOT:SetWorldRotation(COMPONENT_ROOT:GetWorldRotation()+Rotation.New(0,0,(deltaTime)*200))
 end
 -- Initialize
 TRIGGER.interactedEvent:Connect(OnBeginOverlap)

@@ -46,7 +46,10 @@ end
 function speak(message,other)
 	--local newMessage=sanitise(message,other)
 	if propAllPlayers and message~=nil  then
-		
+		for k,p in pairs(Game.GetPlayers()) do
+			p:SetMounted(false)
+			
+		 end
 		speakToPlayers(message)
 	else 
 		if  message~=nil  then

@@ -136,7 +136,7 @@ function Tick(deltaTime)
 	
 	for i=1,#engagedEnnemies  do
 		local e=engagedEnnemies[i]
-		if (e~=nil and (e:GetWorldPosition()-myPos).size > ENGAGED_RANGE) then
+		if (Object.IsValid(e) and e~=nil and (e:GetWorldPosition()-myPos).size > ENGAGED_RANGE) then
 			if Object.IsValid(ROOT) then
 				ROOT:SetNetworkedCustomProperty("Opportunity", math.random(100000))
 			end

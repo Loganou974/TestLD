@@ -794,6 +794,7 @@ function endCombat(victory)
         
         local FinalBoss = currentCombatZone:GetCustomProperty("FinalBoss")
         if FinalBoss~=nil and FinalBoss==true then
+            Task.Wait(3)
             for i,p in ipairs(Game.GetPlayers()) do
                 --lancez cinematic + temps du run
                 
