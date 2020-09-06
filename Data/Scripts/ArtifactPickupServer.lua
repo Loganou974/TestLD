@@ -52,9 +52,13 @@ function OnBeginOverlap(trigger, other)
 
 			for k,p in pairs(Game.GetPlayers()) do
                 p:SetResource("XP",levelXP[p:GetResource("level")+RESOURCE_CHANGE])
-              end
-              Events.BroadcastToAllPlayers("BannerMessage", "You found "..NAME.." a legendary artifact it grants you great power")
-            applied=true
+            end
+             applied=true
+            if(_G.numberOfArtifact==nil ) then _G.numberOfArtifact=1
+            else _G.numberOfArtifact=_G.numberOfArtifact+1
+            end
+            Events.BroadcastToAllPlayers("BannerMessage", "You found "..NAME.." a legendary artifact it grants you great power ".._G.numberOfArtifact.."/3")
+          
             end
 
 		if applied then

@@ -811,6 +811,12 @@ function endCombat(victory)
         
         Task.Wait(0.1)
         addSystemCombatTexte("GameOver")
+        local FinalBoss = currentCombatZone:GetCustomProperty("FinalBoss")
+        if FinalBoss then
+            if _G.numberOfArtifact < 3 then
+                Events.BroadcastToAllPlayers("BannerMessage","You should find all the artifact to gain more power")
+            end
+        end
         playersAreInCombat=false;
         Task.Wait(2)
         
