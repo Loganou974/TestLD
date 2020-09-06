@@ -19,8 +19,6 @@
         ChildIds: 14574975630369807515
         ChildIds: 13846498630167117932
         ChildIds: 587065744474922149
-        ChildIds: 5049657806125398858
-        ChildIds: 8492537368277732499
         UnregisteredParameters {
           Overrides {
             Name: "cs:HealthChange"
@@ -32,7 +30,7 @@
           }
           Overrides {
             Name: "cs:ResourceChange"
-            Int: 5
+            Int: 4
           }
           Overrides {
             Name: "cs:MaxResource"
@@ -177,6 +175,8 @@
         }
         ParentId: 17797541099976161364
         ChildIds: 4274821860529708905
+        ChildIds: 5049657806125398858
+        ChildIds: 8492537368277732499
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -1037,12 +1037,12 @@
         Name: "Fire Volume VFX"
         Transform {
           Location {
-            Z: 70
+            Z: 25
           }
           Rotation {
             Pitch: 2.73207552e-05
-            Yaw: -15.0001221
-            Roll: -3.05175781e-05
+            Yaw: -15.0001392
+            Roll: -3.05175727e-05
           }
           Scale {
             X: 0.405600697
@@ -1050,7 +1050,7 @@
             Z: 0.405600697
           }
         }
-        ParentId: 17797541099976161364
+        ParentId: 587065744474922149
         UnregisteredParameters {
           Overrides {
             Name: "bp:Volume Type"
@@ -1099,7 +1099,6 @@
             }
           }
         }
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1122,12 +1121,12 @@
         Name: "Ember Volume VFX"
         Transform {
           Location {
-            Z: 70
+            Z: 25
           }
           Rotation {
             Pitch: 6.83018879e-06
-            Yaw: -15.0001221
-            Roll: -3.05175781e-05
+            Yaw: -15.0001392
+            Roll: -3.05175727e-05
           }
           Scale {
             X: 1
@@ -1135,7 +1134,7 @@
             Z: 4.3430438
           }
         }
-        ParentId: 17797541099976161364
+        ParentId: 587065744474922149
         UnregisteredParameters {
           Overrides {
             Name: "bp:Gravity"
@@ -1159,7 +1158,6 @@
             }
           }
         }
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
