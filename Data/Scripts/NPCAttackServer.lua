@@ -342,8 +342,8 @@ function DropRewards(killer)
 		local otherplayers= Game.GetPlayers()
 		local mult=5-#otherplayers
         for k,p in pairs(otherplayers) do
-		   -- p:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT*mult*10)
-		  if p:GetResource("level")<30 then  p:SetResource(REWARD_RESOURCE_TYPE,levelXP[p:GetResource("level")+1]) end
+		    p:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT*mult)
+		  --if p:GetResource("level")<30 then  p:SetResource(REWARD_RESOURCE_TYPE,levelXP[p:GetResource("level")+1]) end
         end
 		
 	end

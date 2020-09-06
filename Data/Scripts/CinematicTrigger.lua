@@ -11,7 +11,7 @@ function OnBeginOverlap(whichTrigger, other)
         if propTransient then trigger.collision=Collision.FORCE_OFF end
      if propSound~=nil then  World.SpawnAsset(propSound,{position=script.parent:GetWorldPosition()}) end
      for k,p in pairs(Game.GetPlayers()) do
-        
+        -- p:AddResource(REWARD_RESOURCE_TYPE, REWARD_RESOURCE_AMOUNT*mult*10)
         p:SetResource("XP",levelXP[p:GetResource("level")+1])
      end
         if propAllPlayers==true then
