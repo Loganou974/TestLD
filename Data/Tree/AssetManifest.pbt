@@ -737,6 +737,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15014605124972019495
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
+  }
+}
+Assets {
   Id: 14937890536117064298
   Name: "Simple Crate 150cm"
   PlatformAssetType: 1
@@ -1841,15 +1850,6 @@ Assets {
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_human_guy_fantasy_001_ref"
-  }
-}
-Assets {
-  Id: 9983658571787861754
-  Name: "Opaque Bubble Glass"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_opaque_bubble_glass"
   }
 }
 Assets {

@@ -1,16 +1,23 @@
 ﻿Entries {
   Key {
-    StringVar: "class"
+    StringVar: "race"
   }
   SimpleValue {
     Table {
       Entries {
         Key {
-          StringVar: "skills"
+          StringVar: "description"
         }
         SimpleValue {
-          Table {
-          }
+          StringVar: "As a mountain dwarf, you\342\200\231re strong and hardy, accustomed to a difficult life in rugged terrain."
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 25
         }
       }
       Entries {
@@ -18,201 +25,15 @@
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Bard"
+          StringVar: "Mountain Dwarf"
         }
       }
       Entries {
         Key {
-          StringVar: "hit"
+          StringVar: "size"
         }
         SimpleValue {
-          IntVar: 8
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "proficiency"
-        }
-        SimpleValue {
-          Table {
-            Entries {
-              Key {
-                IntVar: 1
-              }
-              SimpleValue {
-                IntVar: 2
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 2
-              }
-              SimpleValue {
-                IntVar: 2
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 3
-              }
-              SimpleValue {
-                IntVar: 2
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 4
-              }
-              SimpleValue {
-                IntVar: 2
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 5
-              }
-              SimpleValue {
-                IntVar: 3
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 6
-              }
-              SimpleValue {
-                IntVar: 3
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 7
-              }
-              SimpleValue {
-                IntVar: 3
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 8
-              }
-              SimpleValue {
-                IntVar: 3
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 9
-              }
-              SimpleValue {
-                IntVar: 4
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 10
-              }
-              SimpleValue {
-                IntVar: 4
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 11
-              }
-              SimpleValue {
-                IntVar: 4
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 12
-              }
-              SimpleValue {
-                IntVar: 4
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 13
-              }
-              SimpleValue {
-                IntVar: 5
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 14
-              }
-              SimpleValue {
-                IntVar: 5
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 15
-              }
-              SimpleValue {
-                IntVar: 5
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 16
-              }
-              SimpleValue {
-                IntVar: 5
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 17
-              }
-              SimpleValue {
-                IntVar: 6
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 18
-              }
-              SimpleValue {
-                IntVar: 6
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 19
-              }
-              SimpleValue {
-                IntVar: 6
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 20
-              }
-              SimpleValue {
-                IntVar: 6
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
-    StringVar: "race"
-  }
-  SimpleValue {
-    Table {
-      Entries {
-        Key {
-          StringVar: "speed"
-        }
-        SimpleValue {
-          IntVar: 35
+          StringVar: "S"
         }
       }
       Entries {
@@ -226,7 +47,7 @@ Entries {
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -242,7 +63,7 @@ Entries {
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -250,7 +71,7 @@ Entries {
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -258,7 +79,7 @@ Entries {
                 IntVar: 5
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -274,34 +95,35 @@ Entries {
                 IntVar: 7
               }
               SimpleValue {
-                IntVar: 5
+                IntVar: 0
               }
             }
           }
         }
       }
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "class"
+  }
+  SimpleValue {
+    Table {
       Entries {
         Key {
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Wood Elf"
+          StringVar: "Novice"
         }
       }
       Entries {
         Key {
-          StringVar: "description"
+          StringVar: "hit"
         }
         SimpleValue {
-          StringVar: " (/DEX+2/WIS+1)"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "size"
-        }
-        SimpleValue {
-          StringVar: "N"
+          IntVar: 100
         }
       }
     }
