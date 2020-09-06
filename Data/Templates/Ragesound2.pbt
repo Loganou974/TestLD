@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 12277237473601707719
+        ChildIds: 2552703907252319418
         Lifespan: 3
         WantsNetworking: true
         Collidable_v2 {
@@ -41,6 +41,32 @@
         }
       }
       Objects {
+        Id: 2552703907252319418
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6866929665529458376
+        ChildIds: 12277237473601707719
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
         Id: 12277237473601707719
         Name: "RageSFX"
         Transform {
@@ -54,7 +80,7 @@
             Z: 100
           }
         }
-        ParentId: 6866929665529458376
+        ParentId: 2552703907252319418
         UnregisteredParameters {
           Overrides {
             Name: "bp:color"
@@ -81,7 +107,6 @@
             Float: 0.139130592
           }
         }
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

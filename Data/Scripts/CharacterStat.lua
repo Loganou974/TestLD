@@ -8,7 +8,7 @@ local callbackPlayerDice={}
 local speeches=World.FindObjectById("12C0A430C309174F:NarratorSpeech")
 function NPC_MANAGER() return MODULE.Get("standardcombo.NPCKit.NPCManager") end
 function NAV_MESH() return _G.NavMesh end
-local debug=false
+local debug=true
 local currentTurn=0;
 local playersAreInCombat=false
 local village=Vector3.New(-32824.297,-9718.195,-923.089)
@@ -668,10 +668,13 @@ function addSystemCombatTexte(message,params,dest)
   -- end
     Task.Wait(0.1)
 end
-function addDebugCombatTexte(message,params)
+function addDebugCombatTexte(message,debug,params)
     local message =GetSpeech(message,params)
     --Events.Broadcast("addDebugCombatTexte",message,debug,params)
-   if debug then gameplay:SetNetworkedCustomProperty("debugCombatTexte", message) end
+    if debug then 
+        gameplay:SetNetworkedCustomProperty("debugCombatTexte", message) 
+     print(message)
+    end
     --Task.Wait(0.5)
     --print(message)
 end
@@ -722,7 +725,7 @@ function startRound1()
     phasePrecombat=false;
     currentRound=1
     currentPlayerIndex=1
-   
+    currentPlayer=nil
     combatOrder={}
    
     for k,v in spairs(initiativeCombat, function(t,a,b) return t[b] < t[a] end) do
@@ -730,7 +733,7 @@ function startRound1()
     end
   
     for i=1,#combatOrder  do
-        addDebugCombatTexte("initiative "..i.."= "..combatOrder[i],debug)
+        print("initiative "..i.."= "..combatOrder[i])
        
     end
     if currentTurn == 0 then
@@ -739,7 +742,7 @@ function startRound1()
 end
 function npcDied(idCible)
     local inst=World.FindObjectById(idCible)
-    Task.Spawn(function() inst:Destroy() end,5)
+    --Task.Spawn(function() inst:Destroy() end,5)
     addSystemCombatTexte("CharDied",{ inst.name})
     local tempInit={}
     tempLength=0
@@ -774,7 +777,7 @@ function npcDied(idCible)
 end
 
 function endCombat(victory)
-    
+    currentPlayer=nil
     Events.BroadcastToAllPlayers("END_COMBAT",victory)
     if victory then
         
@@ -878,10 +881,10 @@ function changeAnimationForPlayer(p,inCombat)
     
 end
 function startCombat(player,combatZone)
-    
+    print("wanting to start combat in combat?"..tostring(playersAreInCombat))    
     if playersAreInCombat == false then
         currentTurn=0
-        
+        currentPlayer=nil
         initiativecombat={}
         combatOrder={}
         addDebugCombatTexte(" "..combatZone,debug)
@@ -910,19 +913,26 @@ function startCombat(player,combatZone)
         local mobs={}
         local maxMob=cZ:GetCustomProperty("NombreMonstre")
         for i= 1,maxMob do
-            local mobTemp=cZ:GetCustomProperty("Monster"..i):WaitForObject()
-            mobs[#mobs+1]=mobTemp
-            local id=mobTemp.id
-            local r=math.random(20)
-            local DEX=math.floor((mobTemp:GetCustomProperty("DEX")-10)/2)
-            initiativeCombat[id]=r+DEX
-            addDebugCombatTexte("Tour "..currentTurn..":"..mobTemp.name.." initiative="..initiativeCombat[id].." ",debug)
-            --Events.BroadcastToAllPlayers("BigBannerMessage",id.." rolled an "..r,3,Color.FromStandardHex("#FFFFFF"))
-            addSystemCombatTexte("RollAbilityCheck01",{mobTemp.name,(r+DEX),r,DEX})
-           --Events.BroadcastToAllPlayers("addSystemCombatTexte",)
-            --Task.Wait(0.1)
-            initiativeCombatLength=initiativeCombatLength+1
+            --print(" "..cZ:GetCustomProperty("Monster"..i))
+            
+                local mobTemp=cZ:GetCustomProperty("Monster"..i):WaitForObject()
+                local ai=mobTemp:FindDescendantByName("NPCAIServer")
+                    if ai.context.IsAlive() then
+                        mobs[#mobs+1]=mobTemp
+                        local id=mobTemp.id
+                        local r=math.random(20)
+                        local DEX=math.floor((mobTemp:GetCustomProperty("DEX")-10)/2)
+                        initiativeCombat[id]=r+DEX
+                        addDebugCombatTexte("Tour "..currentTurn..":"..mobTemp.name.." initiative="..initiativeCombat[id].." ",debug)
+                        --Events.BroadcastToAllPlayers("BigBannerMessage",id.." rolled an "..r,3,Color.FromStandardHex("#FFFFFF"))
+                        addSystemCombatTexte("RollAbilityCheck01",{mobTemp.name,(r+DEX),r,DEX})
+                    --Events.BroadcastToAllPlayers("addSystemCombatTexte",)
+                        --Task.Wait(0.1)
+                        initiativeCombatLength=initiativeCombatLength+1
+                    end
         end
+
+        print("debut combat")
         phasePrecombat=true
         waitingPlayerDice={}
         waitingBestPlayerDice={}
@@ -968,7 +978,10 @@ end
 function getCurrentPlayer()
     print("currentPlayerIndex "..currentPlayerIndex.."combat order "..#combatOrder)
 
-    
+    if currentPlayerIndex>#combatOrder then
+        currentPlayerIndex=#combatOrder
+        
+    end
     local temp=combatOrder[currentPlayerIndex]
 
     return temp
@@ -1007,8 +1020,7 @@ function newTurn()
     print("new turn")
     currentTurn=currentTurn+1
     freezePlayers()
-    --Events.BroadcastToAllPlayers("BannerMessage","Round "..currentRound.." : Tour "..currentTurn)
-    --addFriendCombatTexte("Round "..currentRound.." : Tour "..currentTurn)
+   
     addDebugCombatTexte("Round "..currentRound.." : Tour "..currentTurn,debug)
     if currentPlayer ==nil then
         addDebugCombatTexte("1er tour donc le joueur est nil",debug)
@@ -1043,6 +1055,11 @@ function newTurn()
             Events.Broadcast("BEGIN_TURN",currentPlayer)
     else
         currentPlayer=getCurrentPlayer()
+        if (currentPlayer == nil) then
+            OnEndTurn()
+            print("probleme avec id current player is nil on mob turn")
+           
+        end
         local mob=World.FindObjectById(currentPlayer)
         if (mob == nil) then
             OnEndTurn()
@@ -1071,9 +1088,17 @@ function Tick(deltaTime)
             
         end
     else
-        if playersAreInCombat and phasePrecombat==true then
-            for i,p in ipairs(players) do
-                --if p:GetResource("dice")==0 then p:AddResource("dice",1) end
+        if phasePrecombat==true then
+            print("pre combat")
+            for i,p in ipairs(playersInCombat) do
+                print(" "..p.name.." in combat")
+                print("waiting dice= "..waitingPlayerDice[p.name].." ")
+                print(" dice= "..p:GetResource("dice").." ")
+                if  waitingPlayerDice[p.name]>0 and p:GetResource("dice")==0 then
+                p:SetResource("Dice",1)
+                end
+               -- p:SetResource("Dice",1)
+                
             end
         end
     end
@@ -1129,11 +1154,12 @@ function newRound()
     
     currentRound=currentRound+1
     currentPlayerIndex=1
+    
     addDebugCombatTexte("Round "..currentRound,debug)
     currentTurn=0
     currentPlayer=nil
     --UpdateBuffEtDebuff()
-    
+    print("new Round")
     newTurn()
 
 end
@@ -1142,6 +1168,7 @@ function OnEndTurn(player)
     if( playersAreInCombat) then
         currentPlayer=getNextPlayer()
         if currentPlayer~=nil then
+            print("End turn of receive ")
             newTurn()
         else
             newRound()

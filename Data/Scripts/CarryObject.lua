@@ -1,4 +1,5 @@
 ﻿local trigger = script.parent
+local propROOT = script:GetCustomProperty("ROOT"):WaitForObject()
 
 function OnBeginOverlap(whichTrigger, other)
 	if other:IsA("Player") then
@@ -35,7 +36,7 @@ function OnInteracted(whichTrigger, other)
 		whichTrigger.parent:SetPosition(Vector3.New(130,0,120))
 		whichTrigger.parent:SetWorldRotation(Rotation.New(0,0,0))
 		carrying=true
-		carried=whichTrigger.parent
+		carried=propROOT
 		whichTrigger.interactionLabel="Drop"
 	else if other:IsA("Player") then
 		local tmpPos=whichTrigger.parent:GetWorldPosition()

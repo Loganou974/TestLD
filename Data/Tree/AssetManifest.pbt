@@ -1817,15 +1817,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10044739311796676125
-  Name: "Cube - Arcade 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_arcade_cube_004"
-  }
-}
-Assets {
   Id: 10044556425249133227
   Name: "Wood Raw"
   PlatformAssetType: 2
