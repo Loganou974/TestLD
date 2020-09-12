@@ -8,7 +8,7 @@ local callbackPlayerDice={}
 local speeches=World.FindObjectById("12C0A430C309174F:NarratorSpeech")
 function NPC_MANAGER() return MODULE.Get("standardcombo.NPCKit.NPCManager") end
 function NAV_MESH() return _G.NavMesh end
-local debug=true
+local debug=false
 local currentTurn=0;
 local playersAreInCombat=false
 local village=Vector3.New(-32824.297,-9718.195,-923.089)
@@ -612,6 +612,7 @@ function OnResourceChanged(player,resourceid,newvalue)
 
 end
 function FindNearestTarget(me)
+    if me==nil then return nil end
     local myPos = me:GetWorldPosition()
    
     local myTeam = me.team;
@@ -796,15 +797,25 @@ function endCombat(victory)
         Events.BroadcastToAllPlayers("BannerMessage","Victory")
         
         local FinalBoss = currentCombatZone:GetCustomProperty("FinalBoss")
+        --FinalBoss = true
         if FinalBoss~=nil and FinalBoss==true then
-            Task.Wait(3)
+            Task.Wait(5)
+            Events.BroadcastToAllPlayers("cine_Ending")
+            Task.Wait(1)
+            Events.BroadcastToAllPlayers("BannerMessage","Strahd is back in his coffin, the village is free",5,Color.WHITE)
+            Task.Wait(1)
+            Events.BroadcastToAllPlayers("BannerMessage","For now...",5,Color.WHITE)
+            Task.Wait(1)
+            Events.BroadcastToAllPlayers("BannerMessage","OK Guys! How did you find this first chapter of this campaign?",5,Color.WHITE)
+            Task.Wait(1)
+            Events.BroadcastToAllPlayers("BannerMessage","Let's grab some pizza and we can go on to the next chapter",5,Color.WHITE)
+            Task.Wait(1)
+            Events.BroadcastToAllPlayers("DAY")
             for i,p in ipairs(Game.GetPlayers()) do
                 --lancez cinematic + temps du run
                 
                 
-                Events.BroadcastToAllPlayers("cine_Ending")
-                Task.Wait(1)
-                Events.BroadcastToAllPlayers("DAY")
+               
                p:SetWorldPosition(village)
                 
             end

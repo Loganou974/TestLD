@@ -6,6 +6,14 @@
     Table {
       Entries {
         Key {
+          StringVar: "speed"
+        }
+        SimpleValue {
+          IntVar: 25
+        }
+      }
+      Entries {
+        Key {
           StringVar: "bonus"
         }
         SimpleValue {
@@ -23,7 +31,7 @@
                 IntVar: 2
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 2
               }
             }
             Entries {
@@ -31,7 +39,7 @@
                 IntVar: 3
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -39,7 +47,7 @@
                 IntVar: 4
               }
               SimpleValue {
-                IntVar: 1
+                IntVar: 0
               }
             }
             Entries {
@@ -71,10 +79,10 @@
       }
       Entries {
         Key {
-          StringVar: "speed"
+          StringVar: "description"
         }
         SimpleValue {
-          IntVar: 25
+          StringVar: " Your base walking speed is 25 feet."
         }
       }
       Entries {
@@ -82,15 +90,15 @@
           StringVar: "name"
         }
         SimpleValue {
-          StringVar: "Stout Halfling"
+          StringVar: "Gnome"
         }
       }
       Entries {
         Key {
-          StringVar: "description"
+          StringVar: "size"
         }
         SimpleValue {
-          StringVar: " (/DEX+2/CON+1)"
+          StringVar: "S"
         }
       }
     }

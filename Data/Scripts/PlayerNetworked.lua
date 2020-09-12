@@ -9,19 +9,19 @@ end
 function appuye(player,touche)     
    -- print(" "..player.name.." appuye sur touche "..touche)
    if touche == "ability_extra_54" then
-    player:SetWorldPosition(Vector3.New(-8199.677,7666.757,795.076))
+    --player:SetWorldPosition(Vector3.New(-8199.677,7666.757,795.076))
     end
 
     if touche == "ability_extra_56"  then
-        player:SetWorldPosition(Vector3.New(-15135,74387.961,4960))
+      --player:SetWorldPosition(Vector3.New(-5260.386,73882.609,-139.128))
      end
      if touche == "ability_extra_57"  then
         --player:SetResource("STR",9999)
         --player:SetResource("actionMax",9999)
         --Events.Broadcast("LEVEL_UP",player,player:GetResource("level")+1) 
-        for k,p in pairs(Game.GetPlayers()) do
-         p:SetResource("XP",levelXP[p:GetResource("level")+1])
-       end
+       -- for k,p in pairs(Game.GetPlayers()) do
+         --p:SetResource("XP",levelXP[p:GetResource("level")+1])
+       --end
         
      end
         if touche == "ability_extra_22" then

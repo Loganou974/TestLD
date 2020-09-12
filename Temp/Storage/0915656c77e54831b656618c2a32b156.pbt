@@ -1,17 +1,34 @@
 ﻿Entries {
   Key {
-    StringVar: "race"
+    StringVar: "class"
   }
   SimpleValue {
     Table {
       Entries {
         Key {
-          StringVar: "description"
+          StringVar: "name"
         }
         SimpleValue {
-          StringVar: "As a mountain dwarf, you\342\200\231re strong and hardy, accustomed to a difficult life in rugged terrain."
+          StringVar: "Novice"
         }
       }
+      Entries {
+        Key {
+          StringVar: "hit"
+        }
+        SimpleValue {
+          IntVar: 100
+        }
+      }
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "race"
+  }
+  SimpleValue {
+    Table {
       Entries {
         Key {
           StringVar: "speed"
@@ -22,18 +39,26 @@
       }
       Entries {
         Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Mountain Dwarf"
-        }
-      }
-      Entries {
-        Key {
           StringVar: "size"
         }
         SimpleValue {
           StringVar: "S"
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "description"
+        }
+        SimpleValue {
+          StringVar: "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience."
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "name"
+        }
+        SimpleValue {
+          StringVar: "Hill Dwarf"
         }
       }
       Entries {
@@ -47,7 +72,7 @@
                 IntVar: 1
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 0
               }
             }
             Entries {
@@ -79,7 +104,7 @@
                 IntVar: 5
               }
               SimpleValue {
-                IntVar: 0
+                IntVar: 1
               }
             }
             Entries {
@@ -99,31 +124,6 @@
               }
             }
           }
-        }
-      }
-    }
-  }
-}
-Entries {
-  Key {
-    StringVar: "class"
-  }
-  SimpleValue {
-    Table {
-      Entries {
-        Key {
-          StringVar: "name"
-        }
-        SimpleValue {
-          StringVar: "Novice"
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "hit"
-        }
-        SimpleValue {
-          IntVar: 100
         }
       }
     }
